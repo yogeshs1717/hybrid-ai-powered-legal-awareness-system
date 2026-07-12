@@ -31,16 +31,17 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
-from app.knowledge_base_loader import KnowledgeBase
+from app.knowledge_base_loader import MAX_ACTION_STEPS, KnowledgeBase
 
 # The gate (CLAUDE.md 7.5). Both must hold; neither alone is sufficient.
 ELIGIBLE_VERIFICATION_STATUS = "manually_verified"
 ELIGIBLE_PROVISION_STATUSES = frozenset({"in_force"})  # Phase 1
 
-# Portal rules (CLAUDE.md Section 8).
+# Portal rules (CLAUDE.md Section 8). MAX_ACTION_STEPS is imported from the
+# loader, which owns the limit at validation time; the slice in
+# _action_steps() is defense-in-depth against a KB edited after startup.
 _PRIORITY_ORDER = {"immediate": 0, "primary": 1, "secondary": 2}
 MAX_PORTALS = 3
-MAX_ACTION_STEPS = 5
 
 LEGAL_INFO_PROVISIONS_AVAILABLE = "provisions_available"
 LEGAL_INFO_NO_VERIFIED_PROVISION = "no_verified_provision_available"

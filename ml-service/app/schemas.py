@@ -19,6 +19,8 @@ from typing import List, Optional
 
 from pydantic import BaseModel, Field
 
+from app.knowledge_base_loader import APPROVED_DOMAINS
+
 # ---------------------------------------------------------------------------
 # Shared constants
 # ---------------------------------------------------------------------------
@@ -29,7 +31,10 @@ DISCLAIMER = (
     "specific to your situation."
 )
 
-# The five approved Phase 1 domains (CLAUDE.md Section 3.1). Stable IDs.
+# Citizen-facing display names for the five approved Phase 1 domains
+# (CLAUDE.md Section 3.1). The domain ID set itself is canonical in
+# knowledge_base_loader.APPROVED_DOMAINS; the guard below keeps this map from
+# ever drifting out of sync with it.
 DOMAIN_DISPLAY_NAMES = {
     "cyber_fraud": "Cyber Fraud",
     "consumer_issues": "Consumer Issues",
@@ -37,9 +42,13 @@ DOMAIN_DISPLAY_NAMES = {
     "workplace_wage": "Workplace / Wage",
     "contractual_disputes": "Contractual Disputes",
 }
+assert set(DOMAIN_DISPLAY_NAMES) == APPROVED_DOMAINS, (
+    "DOMAIN_DISPLAY_NAMES is out of sync with APPROVED_DOMAINS"
+)
 
-LEGAL_INFO_PROVISIONS_AVAILABLE = "provisions_available"
-LEGAL_INFO_NO_VERIFIED_PROVISION = "no_verified_provision_available"
+# legal_information_status values are defined in app.legal_intelligence (the
+# module that produces them): "provisions_available" |
+# "no_verified_provision_available".
 
 # Input bounds mirror TRAINING_DATA_PLAN.md Section 6 (20-2000 chars). The
 # Node.js gateway performs the authoritative validation later; the ML service

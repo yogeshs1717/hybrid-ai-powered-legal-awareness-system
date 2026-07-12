@@ -58,11 +58,11 @@ async def lifespan(app: FastAPI):
     A KB that fails validation aborts startup — loud failure over silently
     serving corrupted legal data."""
     kb = load_knowledge_base(KB_DIR)
-    classifier, classifier_mode = create_domain_classifier(MODELS_DIR)
+    classifier = create_domain_classifier(MODELS_DIR)
     issue_detector = IssueDetector(kb)
 
     app.state.kb = kb
-    app.state.classifier_mode = classifier_mode
+    app.state.classifier_mode = classifier.mode
     app.state.issue_detector_mode = issue_detector.mode
     app.state.pipeline = AnalysisPipeline(
         classifier=classifier,

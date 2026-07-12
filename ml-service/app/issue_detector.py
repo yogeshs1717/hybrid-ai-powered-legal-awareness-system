@@ -70,13 +70,16 @@ class IssueDetector:
 
         self._vectorizer = None
         self._prototype_matrix = None
+        self._cosine_similarity = None
         if self._corpus_texts:
             try:
                 from sklearn.feature_extraction.text import TfidfVectorizer
+                from sklearn.metrics.pairwise import cosine_similarity
             except ImportError:
                 # Dependency absent: stay in no-data mode rather than crash the
                 # whole service; /health will show issue_detector_mode.
                 return
+            self._cosine_similarity = cosine_similarity
             # LOCKED (6.4): fit globally over ALL issue prototypes, in memory,
             # at startup. No .pkl artifact. Vectorizer parameters are
             # experiment-level configuration, kept at library defaults until
@@ -108,10 +111,8 @@ class IssueDetector:
         if not candidate_rows:
             return None
 
-        from sklearn.metrics.pairwise import cosine_similarity
-
         scenario_vector = self._vectorizer.transform([scenario_text])
-        similarities = cosine_similarity(
+        similarities = self._cosine_similarity(
             scenario_vector, self._prototype_matrix[candidate_rows]
         )[0]
         best_position = int(similarities.argmax())
@@ -144,6 +145,9 @@ class IssueDetector:
     def _overlap_signals(scenario_text: str, prototype_text: str) -> List[str]:
         """Supporting explanation only (6.6): terms the scenario shares with
         the matched prototype. Never a decision input."""
-        tokenize = lambda text: set(re.findall(r"[a-z]{3,}", text.lower()))
-        overlap = tokenize(scenario_text) & tokenize(prototype_text) - _SIGNAL_NOISE
+
+        def tokenize(text: str) -> set:
+            return set(re.findall(r"[a-z]{3,}", text.lower()))
+
+        overlap = (tokenize(scenario_text) & tokenize(prototype_text)) - _SIGNAL_NOISE
         return sorted(overlap)[:_MAX_SIGNALS]

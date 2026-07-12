@@ -26,15 +26,12 @@ import hashlib
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Tuple
 
-APPROVED_DOMAIN_IDS = (
-    "cyber_fraud",
-    "consumer_issues",
-    "traffic_enforcement",
-    "workplace_wage",
-    "contractual_disputes",
-)
+from app.knowledge_base_loader import APPROVED_DOMAINS
+
+# Deterministic ordering for the mock's hash-based domain pick; the set itself
+# is defined once, in knowledge_base_loader (the stdlib-only canonical home).
+APPROVED_DOMAIN_IDS = tuple(sorted(APPROVED_DOMAINS))
 
 VECTORIZER_FILENAME = "tfidf_domain_vectorizer.pkl"
 MODEL_FILENAME = "domain_classifier.pkl"
@@ -117,16 +114,15 @@ class MockDomainClassifier(DomainClassifier):
         return DomainPrediction(domain_id=domain_id, confidence=self._MOCK_CONFIDENCE)
 
 
-def create_domain_classifier(models_dir: Path) -> Tuple[DomainClassifier, str]:
+def create_domain_classifier(models_dir: Path) -> DomainClassifier:
     """Factory: trained classifier if both artifacts exist, else the mock.
 
-    Returns (classifier, mode) so the caller can log/report which one is live.
+    Which implementation is live is exposed by the instance's ``mode``
+    attribute (surfaced operationally via GET /health).
     """
     models_dir = Path(models_dir)
     vectorizer_path = models_dir / VECTORIZER_FILENAME
     model_path = models_dir / MODEL_FILENAME
     if vectorizer_path.is_file() and model_path.is_file():
-        classifier: DomainClassifier = TrainedDomainClassifier(vectorizer_path, model_path)
-    else:
-        classifier = MockDomainClassifier()
-    return classifier, classifier.mode
+        return TrainedDomainClassifier(vectorizer_path, model_path)
+    return MockDomainClassifier()

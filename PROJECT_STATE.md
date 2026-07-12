@@ -46,9 +46,13 @@ four user-directed enhancements) — modify only on a genuine discovered contrad
 This file remains the living state tracker per its maintenance rule. The taxonomy
 remains **WORKING until explicit user sign-off**.
 
-**Immediate Next Task:** User reviews the Phase 1B ML service structure
-(`ml-service/`), then approves the next step. Dataset V1 and training remain gated
-(taxonomy sign-off + `TRAINING_DATA_PLAN.md` approval).
+**Immediate Next Task:** User approves the next milestone. Dataset V1 and training
+remain gated (taxonomy sign-off + `TRAINING_DATA_PLAN.md` approval).
+
+**Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
+renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
+foundation re-committed as `b0f887f` (the prior `70e6049` lived in the deleted parent
+repo). No remotes configured.
 
 ---
 
@@ -487,7 +491,22 @@ in one step (Step 10) — population is incremental and each provision starts
 
 ## SECTION 11 — LAST COMPLETED TASK
 
-**Most recent (batch 7 — KB schema enhancements + Phase 1B ML Service Foundation):**
+**Most recent (batch 8 — Git re-configuration + Phase 1B implementation review):**
+Git: repo now rooted at `Demo/`, branch `main`, improved `.gitignore`, foundation
+committed as `b0f887f`, tree clean, no remotes. Code review of all 10 Phase 1B files —
+quality fixes only, no new functionality, no contract changes: single-sourced the
+approved-domain set in `knowledge_base_loader` (classifier + schemas now import it,
+with an import-time display-name consistency guard); removed duplicate
+`LEGAL_INFO_*` constants from `schemas.py` (owner: `legal_intelligence`); Module 3 now
+imports `MAX_ACTION_STEPS` from the loader; classifier factory returns the classifier
+only (mode read from the instance); issue_detector hoisted the cosine-similarity
+import to startup and cleaned style; training script now exits cleanly when a domain
+has <2 rows instead of crashing in StratifiedKFold. `response_builder.py`,
+`pipeline.py`, `tests/test_loader.py` already satisfactory — unchanged. Re-verified:
+compile OK, loader self-check OK, 12/12 tests pass, pipeline smoke test OK (mock mode,
+safe state). Review changes are uncommitted, pending user approval.
+
+**Batch 7 (KB schema enhancements + Phase 1B ML Service Foundation):**
 applied the four user-directed schema enhancements (explicit `issue_id` per issue,
 explicit `portal_id` per portal, `taxonomy_status` enum per issue, `keywords` +
 `citation` per provision record), re-validated, and froze the schemas. Built the
@@ -595,6 +614,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-10 | Batch 5 — blocker-model split (KB structures vs verified provisions) in §9; performed the Issue Support Review for all 22 working issues and created `docs/issue_support_review.md` (14 taxonomy_supported [originally labeled "approved"], 8 provision_research_required, 0 rejected/merged; conditional bribe_demand recommendation; wage issues gated on wage-law research; no bike_key_removal added; merge fallbacks recorded for misleading_ad/UTP and delayed/unpaid wages). Taxonomy unchanged, still WORKING pending user sign-off. No verification statuses set; no KB/dataset/ML/backend/frontend files created | Claude |
 | 2026-07-10 | Batch 6 — user approved the Issue Support Review with status rename `approved` → `taxonomy_supported` (applied in the review; enum synced in `CLAUDE.md` §6.10 + `TRAINING_DATA_PLAN.md` §3.2 as an authorized contradiction fix); governance documents frozen. Phase 1A: created `knowledge_base/` with the three schema-only JSON files (validated; empty data containers; zero legal content; no verification statuses; no Dataset V1; no training; no BERT/RAG; no wage provisions) | Claude |
 | 2026-07-10 | Batch 7 — four user-directed KB schema enhancements (issue_id, portal_id, taxonomy_status, keywords+citation) applied and schemas frozen. Phase 1B ML Service Foundation created: 8 app modules + training script + loader tests + requirements.txt. Verified: all compile, loader self-check on real skeletons passes, 12/12 tests pass, end-to-end smoke test returns honest safe state (mock classifier, Low confidence, no fabricated legal content). No Dataset V1 / trained model / BERT / RAG / provisions / frontend / backend / DB | Claude |
+| 2026-07-12 | Batch 8 — Git re-configured (root = Demo, branch main, .gitignore extended, foundation re-committed as b0f887f after user removed parent repo; no remotes). Phase 1B implementation review: de-duplicated domain-set / status-constant / action-step-limit definitions, simplified classifier factory, cleaned issue_detector style, fixed training-script crash on <2-row domains. No new functionality; contracts unchanged. All verification re-passed (12/12 tests, smoke OK). Review changes uncommitted pending approval | Claude |
 
 ---
 

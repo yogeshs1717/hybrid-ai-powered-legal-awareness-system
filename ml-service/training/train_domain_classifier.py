@@ -139,12 +139,19 @@ def cross_validate(scenarios, domains, issue_ids, folds: int, seed: int,
 
     class_counts = Counter(domains)
     smallest = min(class_counts.values())
+    if smallest < 2:
+        starved = [d for d, c in class_counts.items() if c < 2]
+        sys.exit(
+            f"Cannot cross-validate: domain(s) {starved} have fewer than 2 "
+            "rows. Stratified K-Fold needs at least 2 rows per class — add "
+            "rows or fix labels before evaluating."
+        )
     if smallest < folds:
         print(
             f"NOTE: smallest domain has {smallest} row(s) < {folds} folds; "
             f"reducing folds to {smallest}."
         )
-        folds = max(2, smallest)
+        folds = smallest
 
     labels = sorted(class_counts)
     y = np.array(domains)

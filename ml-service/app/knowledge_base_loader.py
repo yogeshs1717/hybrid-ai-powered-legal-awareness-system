@@ -43,6 +43,9 @@ from typing import Any, Dict, List, Optional
 # Controlled vocabularies (mirrors of the frozen KB schemas / CLAUDE.md)
 # ---------------------------------------------------------------------------
 
+# CANONICAL definition of the five approved Phase 1 domains (CLAUDE.md 3.1).
+# Other modules import this rather than redefining it — this module is
+# stdlib-only, so importing it never drags in heavy dependencies.
 APPROVED_DOMAINS = frozenset(
     {
         "cyber_fraud",
@@ -128,7 +131,7 @@ class KnowledgeBase:
 # JSON parsing with duplicate-key detection
 # ---------------------------------------------------------------------------
 
-def _duplicate_guard_hook(pairs):
+def _duplicate_guard_hook(pairs: List[tuple]) -> Dict[str, Any]:
     """object_pairs_hook that rejects duplicate keys instead of silently
     keeping the last one — a duplicated act/issue/portal ID is data corruption,
     not a tie to be broken arbitrarily."""
