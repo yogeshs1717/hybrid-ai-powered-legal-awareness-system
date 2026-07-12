@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "file": "acts_and_sections.json",
+    "role": "Legal Truth Store — the single place statutory content lives (Act -> Section)",
+    "schema_version": "1.0.0",
+    "created": "2026-07-10",
+    "population_status": "SKELETON - no acts or provisions populated yet",
+    "governance": [
+      "CLAUDE.md Section 7.2 (three-file structure), 7.4 (record format), 7.5 (human-only verification), 7.6 (legal source rules)",
+      "Modified by human curation only. Legal text enters this file only from an approved official source (India Code, or an official central-government ministry / regulator / statutory-authority publication).",
+      "No AI assistant may set verification.status = 'manually_verified' or provision_status = 'in_force' as a final verified fact. Every new provision starts at the defaults below.",
+      "Citizen-facing eligibility (Phase 1) requires BOTH verification.status == 'manually_verified' AND provision_status == 'in_force'. Neither field alone is sufficient.",
+      "If a source URL is unconfirmed, official_source_url must be null - never a placeholder URL."
+    ],
+    "consumed_by": [
+      "Module 3 (Legal Intelligence Engine): resolves act_id + section_id references from issue_mappings.json against this file, then applies the eligibility check before anything is returned.",
+      "knowledge_base_loader: loads and reference-validates this file at ML-service startup (read-only at runtime)."
+    ]
+  },
+
+  "_schema": {
+    "acts": {
+      "<act_id>": {
+        "_id_rule": "act_id is a stable snake_case string, e.g. 'it_act_2000'. Referenced by ID everywhere; never duplicated as free text.",
+        "official_act_name": "string - official name as published on the official source, e.g. 'Information Technology Act, 2000'",
+        "act_year": "integer - year of the Act",
+        "short_name": "string - display short form, e.g. 'IT Act 2000'",
+        "official_source_name": "string - e.g. 'India Code'",
+        "official_source_url": "string | null - confirmed URL only; null until a human confirms it",
+        "sections": {
+          "<section_id>": {
+            "_id_rule": "section_id is a stable lowercase string, e.g. '66d'. The pair (act_id, section_id) is the provision reference used by issue_mappings.json.",
+            "section_number": "string - official section number as displayed, e.g. '66D'",
+            "official_section_title": "string | null - official title; null until sourced from the approved official source",
+            "official_text": "string | null - official statutory text; populated ONLY from an approved official source, never from AI memory. Never shown raw in the default citizen response.",
+            "simplified_explanation": "string | null - plain-language explanation for citizens. May be AI-drafted but is human-reviewed; must follow CLAUDE.md Section 10 wording rules (no 'definitely applies', no legal-certainty claims).",
+            "applicability_notes": "string | null - conditions/context for when this provision may be relevant",
+            "keywords": "array of strings - supporting/debugging signals only (may feed scenario_signals display). NEVER a primary decision mechanism (CLAUDE.md Section 6.6). May be empty.",
+            "citation": "string | null - formal human-readable citation, e.g. 'Section 66D, Information Technology Act, 2000'. Display/audit aid only; never a substitute for official_source_name/official_source_url.",
+            "provision_status": "enum: 'unverified' (DEFAULT for every new candidate) | 'in_force' | 'omitted' | 'repealed' | 'amended_review_required' | 'applicability_uncertain'. Human-governed; only 'in_force' is citizen-facing eligible in Phase 1, and only together with manual verification.",
+            "verification": {
+              "status": "enum: 'pending_manual_verification' (DEFAULT) | 'manually_verified'. Human-only transition; set only after a human checks the provision against an approved official source under CLAUDE.md Section 7.6.",
+              "verified_by": "string | null - human verifier's name; null until verified",
+              "verified_on": "string | null - date 'YYYY-MM-DD'; null until verified"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "acts": {}
+}

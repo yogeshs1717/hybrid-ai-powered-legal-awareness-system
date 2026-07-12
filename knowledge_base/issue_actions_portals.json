@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "file": "issue_actions_portals.json",
+    "role": "Practical Guidance Store - per-issue action steps and official portal definitions. Highest change-rate, lowest legal-risk file of the three; kept separate so editing steps/URLs can never corrupt verified legal text.",
+    "schema_version": "1.0.0",
+    "created": "2026-07-10",
+    "population_status": "SKELETON - no guidance or portals populated. Populated per issue only after taxonomy sign-off.",
+    "governance": [
+      "CLAUDE.md Section 8 (action-step and portal rules), Section 7.2 (why three files).",
+      "Action steps are issue-specific (never generic domain boilerplate), most time-sensitive first, max 5, no FIR filing as primary advice, no criminal procedure steps. Curated by humans - an LLM must not freely generate legally sensitive procedure steps at request time.",
+      "Portals: only official government / regulator / statutory-authority portals. Conditional portals (e.g. a banking ombudsman) must carry a usage_condition and must not be returned unconditionally.",
+      "Wording in action steps must follow CLAUDE.md Section 10 (no 'you will win', no 'definitely applies', etc.)."
+    ],
+    "consumed_by": [
+      "Module 3 (Legal Intelligence Engine): given the detected issue_id, reads action_steps; resolves portal_ids against 'portals'; filters portals to those whose supported_issue_ids contain the issue_id; sorts by priority (immediate -> primary -> secondary); returns max 3.",
+      "Module 4 (Response Builder): places the returned steps/portals into the response contract fields 'action_steps' and 'portals'.",
+      "knowledge_base_loader: loads and reference-validates this file at startup (read-only at runtime)."
+    ]
+  },
+
+  "_schema": {
+    "issue_guidance": {
+      "<issue_id>": {
+        "_id_rule": "issue_id must exist in issue_mappings.json (same signed-off taxonomy).",
+        "action_steps": [
+          "array of 1-5 strings - ordered, issue-specific steps; index 0 is the most time-sensitive. Plain language, awareness-safe wording."
+        ],
+        "portal_ids": [
+          "array of strings - each must resolve to an entry in 'portals'. Order here is informational; Module 3's priority sort decides final order."
+        ]
+      }
+    },
+    "portals": {
+      "<portal_id>": {
+        "_id_rule": "portal_id is a stable snake_case string, e.g. 'cybercrime_gov_in'.",
+        "portal_id": "string - MUST equal the object key. Explicit self-identifier so records are safe to validate, iterate, and pass around detached from their key.",
+        "name": "string - official portal name",
+        "official_url": "string | null - confirmed official URL only; null until confirmed, never a placeholder",
+        "purpose": "string - what a citizen uses this portal for",
+        "priority": "enum: 'immediate' (time-sensitive, contact within ~24h) | 'primary' (main formal complaint avenue) | 'secondary' (alternative/supplementary)",
+        "usage_condition": "string | null - REQUIRED (non-null) for conditional portals; describes when this portal applies (e.g. only after an initial complaint to the bank). null means unconditional for its supported issues.",
+        "official_source": "string - owning authority, e.g. 'Ministry of Home Affairs, Government of India'",
+        "supported_issue_ids": [
+          "array of strings - issue IDs this portal supports; Module 3 filters on membership here"
+        ]
+      }
+    }
+  },
+
+  "issue_guidance": {},
+  "portals": {}
+}

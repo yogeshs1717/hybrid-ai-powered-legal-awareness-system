@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "file": "issue_mappings.json",
+    "role": "Bridge File - connects the ML taxonomy (Domain -> Issue) to legal truth (Act -> Section). Holds issue prototype texts (Module 2) and issue-to-provision references (Module 3).",
+    "schema_version": "1.0.0",
+    "created": "2026-07-10",
+    "population_status": "SKELETON - no issues populated. The 22-issue taxonomy remains WORKING pending user sign-off (docs/issue_support_review.md); issues enter this file only after sign-off, and issues at provision_research_required only after their research completes.",
+    "governance": [
+      "CLAUDE.md Section 6.3-6.4 (prototypes are Module 2's similarity corpus), 6.7 Layer B (provision_relevance_rationale is human-curated), 6.9 (this file is NOT training data - Module 2 is not a trained classifier), 7.3 (reference integrity).",
+      "Reference integrity: every (act_id, section_id) pair in provision_references must resolve to a real entry in acts_and_sections.json. Legal text is never duplicated here.",
+      "provision_relevance_rationale explains why a provision is mapped to an issue TYPE (curated, written by a human). It is not generated at request time and must never be merged with the request-time issue_match_reason (Layer A)."
+    ],
+    "consumed_by": [
+      "Module 2 (Issue Detector): at service startup, fits its own in-memory TF-IDF vectorizer over ALL prototype_texts across all issues (no .pkl saved); per request, compares the scenario only against prototypes of issues whose domain_id matches Module 1's predicted domain.",
+      "Module 3 (Legal Intelligence Engine): given the detected issue_id, reads provision_references and resolves them against acts_and_sections.json.",
+      "knowledge_base_loader: loads and reference-validates this file at startup (read-only at runtime)."
+    ]
+  },
+
+  "_schema": {
+    "issues": {
+      "<issue_id>": {
+        "_id_rule": "issue_id is a stable snake_case string from the signed-off taxonomy, e.g. 'otp_fraud'. Must belong to exactly one domain.",
+        "issue_id": "string - MUST equal the object key. Explicit self-identifier so records are safe to validate, iterate, and pass around detached from their key.",
+        "taxonomy_status": "enum: 'working' | 'provision_research_required' | 'taxonomy_supported' | 'rejected' | 'merged' - governance state carried from docs/issue_support_review.md. Population rule: an issue enters this file only after user taxonomy sign-off, and issues at 'provision_research_required' only after their research completes.",
+        "domain_id": "string - one of the 5 approved domain IDs: 'cyber_fraud' | 'consumer_issues' | 'traffic_enforcement' | 'workplace_wage' | 'contractual_disputes'",
+        "display_name": "string - citizen-facing issue name, e.g. 'OTP / Financial Impersonation Fraud'",
+        "issue_definition": "string - the what-happened scenario definition (mirrors the signed-off taxonomy definition; issues represent what happened, never a desired remedy/procedure/portal)",
+        "prototype_texts": [
+          "array of 3-5 strings - curated, well-differentiated citizen-voice descriptions of how this issue typically sounds. Module 2's similarity corpus. NOT training data; NOT drawn from training_data_v1.csv. Must be written to keep sibling issues separable (see flagged weak boundaries in docs/issue_support_review.md Section 6)."
+        ],
+        "provision_references": [
+          {
+            "act_id": "string - must resolve in acts_and_sections.json",
+            "section_id": "string - must resolve under that act's sections",
+            "provision_relevance_rationale": "string - Layer B (CLAUDE.md Section 6.7): human-curated reason this provision is associated with this issue type. Not request-time generated; not legal certainty."
+          }
+        ]
+      }
+    },
+    "_runtime_note": "Module 3 must apply the citizen-facing eligibility check (manually_verified AND in_force) AFTER resolving each reference - a reference existing here never implies the provision is verified or returnable. If no referenced provision is eligible, Module 3 reports the explicit safe state (legal_information_status = 'no_verified_provision_available')."
+  },
+
+  "issues": {}
+}

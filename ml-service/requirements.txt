@@ -1,0 +1,12 @@
+# ML Service dependencies — Phase 1 stack only (CLAUDE.md Section 16).
+# Each entry has a stated reason (CLAUDE.md Section 15 — no unexplained installs).
+
+fastapi          # Web framework for the ML service (Module 1-4 host)
+uvicorn          # ASGI server to run FastAPI
+pydantic         # Response-contract models (app/schemas.py)
+scikit-learn     # TF-IDF, Logistic Regression, cosine similarity, CV, metrics
+joblib           # Serialize/deserialize the two .pkl model artifacts
+numpy            # Array operations used by scikit-learn and the training script
+
+# Development / testing
+pytest           # Unit tests (tests/)
