@@ -58,31 +58,44 @@
         "43": {
           "section_number": "43",
           "official_section_title": "Penalty and compensation for damage to computer, computer system, etc.",
-          "official_text": null,
+          "official_text": "43A. Compensation for failure to protect data.–Where a body corporate, possessing, dealing or\nhandling any sensitive personal data or information in a computer resource which it owns, controls or\noperates, is negligent in implementing and maintaining reasonable security practices and procedures and\nthereby causes wrongful loss or wrongful gain to any person, such body corporate shall be liable to pay\ndamages by way of compensation to the person so affected.",
           "simplified_explanation": "This provision concerns unauthorized access to or damage involving a computer, computer system, or network, and provides for compensation to the affected person. If someone accessed your account, device, or data without permission, this kind of provision may be relevant to seeking compensation.",
           "applicability_notes": "May be relevant where another person accessed, downloaded from, damaged, or disrupted the citizen's computer, account, or data without permission. It is a civil compensation provision rather than a purely penal one. Whether it applies to a specific case depends on facts a qualified professional should assess.",
-          "keywords": ["unauthorized access", "hacking", "compensation", "computer system", "data", "account access"],
+          "keywords": [
+            "unauthorized access",
+            "hacking",
+            "compensation",
+            "computer system",
+            "data",
+            "account access"
+          ],
           "citation": "Section 43, Information Technology Act, 2000",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         },
         "66": {
           "section_number": "66",
           "official_section_title": "Computer related offences",
-          "official_text": null,
+          "official_text": "Computer related offences.–If any person, dishonestly or fraudulently, does any act referred to\nin section 43, he shall be punishable with imprisonment for a term which may extend to three years or\nwith fine which may extend to five lakh rupees or with both.",
           "simplified_explanation": "This provision concerns dishonestly or fraudulently doing any of the acts covered by the unauthorized-access provision (Section 43), such as accessing someone's computer, account, or data without permission with dishonest intent.",
           "applicability_notes": "May be relevant where the unauthorized access to the citizen's account or system appears to have been done dishonestly or fraudulently, for example taking over an account to misuse it. Whether it applies to a specific case depends on facts a qualified professional should assess.",
-          "keywords": ["hacking", "dishonest", "fraudulent", "computer related offence", "account takeover"],
+          "keywords": [
+            "hacking",
+            "dishonest",
+            "fraudulent",
+            "computer related offence",
+            "account takeover"
+          ],
           "citation": "Section 66, Information Technology Act, 2000",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         },
         "66c": {
@@ -136,46 +149,85 @@
       "act_year": 2019,
       "short_name": "CPA 2019",
       "official_source_name": "India Code",
-      "official_source_url": null,
+      "official_source_url": "https://www.indiacode.nic.in/bitstream/123456789/16939/1/a2019-35.pdf",
       "sections": {
         "2_10": {
           "section_number": "2(10)",
           "official_section_title": "Definition of 'defect'",
-          "official_text": null,
+          "official_text": "defect means any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard which is required to be maintained by or under any law for the time being in force or under any contract, express or implied or as is claimed by the trader in any manner whatsoever in relation to any goods or product and the expression \"defective\" shall be construed accordingly;",
           "simplified_explanation": "This provision defines what counts as a 'defect' in goods - broadly, a fault, imperfection, or shortcoming in the quality, quantity, or standard that is required to be maintained, or that was promised by the seller or manufacturer.",
           "applicability_notes": "May be relevant for understanding whether the problem with a purchased product can be described as a defect in the legal sense - for example goods that are broken, faulty, below the promised standard, or not what was represented. Whether it applies to a specific case depends on facts a qualified professional should assess.",
-          "keywords": ["defect", "faulty product", "quality", "standard", "broken goods"],
+          "keywords": [
+            "defect",
+            "faulty product",
+            "quality",
+            "standard",
+            "broken goods"
+          ],
           "citation": "Section 2(10), Consumer Protection Act, 2019",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         },
         "35": {
           "section_number": "35",
           "official_section_title": "Manner in which complaint shall be made",
-          "official_text": null,
+          "official_text": "Manner in which complaint shall be made.—(1) A complaint, in relation to any goods sold or\ndelivered or agreed to be sold or delivered or any service provided or agreed to be provided, may be filed\nwith a District Commission by—\n(a) the consumer,—\n(i) to whom such goods are sold or delivered or agreed to be sold or delivered or such service\nis provided or agreed to be provided; or\n(ii) who alleges unfair trade practice in respect of such goods or service;\n(b) any recognised consumer association, whether the consumer to whom such goods are sold or\ndelivered or agreed to be sold or delivered or such service is provided or agreed to be provided, or\nwho alleges unfair trade practice in respect of such goods or service, is a member of such association\nor not;\n(c) one or more consumers, where there are numerous consumers having the same interest, with\nthe permission of the District Commission, on behalf of, or for the benefit of, all consumers so\ninterested; or\n(d) the Central Government, the Central Authority or the State Government, as the case may be:\nProvided that the complaint under this sub-section may be filed electronically in such manner as may\nbe prescribed.",
           "simplified_explanation": "This provision concerns how a consumer complaint can be filed before a District Consumer Commission - including that a consumer can file a complaint about defective goods, and that complaints can be filed electronically.",
           "applicability_notes": "May be relevant when the citizen wants to understand their ability to formally complain to a Consumer Commission about a defective product. Whether and where a complaint lies depends on facts such as the value involved, which a qualified professional can advise on.",
-          "keywords": ["complaint", "consumer commission", "district commission", "file complaint", "electronic filing"],
+          "keywords": [
+            "complaint",
+            "consumer commission",
+            "district commission",
+            "file complaint",
+            "electronic filing"
+          ],
           "citation": "Section 35, Consumer Protection Act, 2019",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         },
         "84": {
           "section_number": "84",
           "official_section_title": "Liability of product manufacturer",
-          "official_text": null,
+          "official_text": "Liability of product manufacturer.—(1) A product manufacturer shall be liable in a product\nliability action, if—\n(a) the product contains a manufacturing defect; or\n(b) the product is defective in design; or\n(c) there is a deviation from manufacturing specifications; or\n(d) the product does not conform to the express warranty; or\n(e) the product fails to contain adequate instructions of correct usage to prevent any harm or any\nwarning regarding improper or incorrect usage.\n(2) A product manufacturer shall be liable in a product liability action even if he proves that he was\nnot negligent or fraudulent in making the express warranty of a product.",
           "simplified_explanation": "This provision concerns when a product manufacturer may be liable in a product liability action - for example where the product contains a manufacturing defect, is deficient in design, or does not conform to an express warranty.",
           "applicability_notes": "May be relevant where a defective product caused harm and the citizen is considering the manufacturer's responsibility. Product liability involves specific conditions that a qualified professional should assess against the facts.",
-          "keywords": ["product liability", "manufacturer", "manufacturing defect", "design", "warranty"],
+          "keywords": [
+            "product liability",
+            "manufacturer",
+            "manufacturing defect",
+            "design",
+            "warranty"
+          ],
           "citation": "Section 84, Consumer Protection Act, 2019",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
+          }
+        },
+        "2_47": {
+          "section_number": "2(47)",
+          "official_section_title": "Definition of 'unfair trade practice'",
+          "official_text": null,
+          "simplified_explanation": "This provision defines 'unfair trade practice' - trade practices that use unfair methods or deceptive practices to promote or sell goods or services. Its clauses include, among other things, situations concerning refusal to take back or withdraw defective goods or to refund the amount paid within the promised or stipulated period.",
+          "applicability_notes": "May be relevant where a seller or service provider refuses to refund an amount the citizen appears entitled to under the stated policy, promise, or circumstances. The exact clause and its conditions should be checked during verification and assessed by a qualified professional against the facts.",
+          "keywords": [
+            "refund",
+            "unfair trade practice",
+            "return",
+            "refusal to refund",
+            "deceptive practice"
+          ],
+          "citation": "Section 2(47), Consumer Protection Act, 2019",
           "provision_status": "unverified",
           "verification": {
             "status": "pending_manual_verification",

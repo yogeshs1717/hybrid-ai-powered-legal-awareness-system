@@ -191,6 +191,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because where a defective product causes harm, the manufacturer's product liability conditions described in this provision may become relevant."
         }
       ]
+    },
+    "refund_denial": {
+      "issue_id": "refund_denial",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Refund Denial",
+      "issue_definition": "A seller, platform, or service provider refuses a refund the citizen appears entitled to under the stated policy, promise, or circumstances - for example a return window ignored, a cancelled booking not refunded, a promised refund never credited, or a double charge not reversed.",
+      "prototype_texts": [
+        "I cancelled within the allowed period and was promised a refund, but the money has not been returned even after many weeks of following up.",
+        "The seller's own return policy allows returns, but my refund request was rejected with excuses that were never mentioned at the time of purchase.",
+        "I was charged twice for the same order and the company accepted the double payment happened but has not credited the extra amount back.",
+        "I paid an advance or booking amount, the purchase or service was cancelled, and the shop or company is refusing to return my money."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the statutory definition of unfair trade practice includes, among its clauses, conduct concerning refusal to refund the amount paid within the promised or stipulated period."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer whose refund is wrongly denied may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
+        }
+      ]
     }
   }
 }

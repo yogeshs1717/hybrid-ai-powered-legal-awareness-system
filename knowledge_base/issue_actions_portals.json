@@ -17,7 +17,6 @@
       "knowledge_base_loader: loads and reference-validates this file at startup (read-only at runtime)."
     ]
   },
-
   "_schema": {
     "issue_guidance": {
       "<issue_id>": {
@@ -46,7 +45,6 @@
       }
     }
   },
-
   "issue_guidance": {
     "otp_fraud": {
       "action_steps": [
@@ -56,7 +54,10 @@
         "File a written complaint on the National Cyber Crime Reporting Portal and keep the acknowledgment number for follow-up.",
         "Follow up with your bank in writing about reversal or chargeback of the unauthorised transaction, and keep copies of every communication."
       ],
-      "portal_ids": ["cybercrime_gov_in", "rbi_cms"]
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "rbi_cms"
+      ]
     },
     "online_impersonation": {
       "action_steps": [
@@ -66,7 +67,10 @@
         "File a complaint on the National Cyber Crime Reporting Portal with the collected evidence and keep the acknowledgment number for follow-up.",
         "Inform the people being contacted in your name - a simple warning message prevents relatives, friends, or colleagues from being cheated."
       ],
-      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_chakshu"
+      ]
     },
     "phishing": {
       "action_steps": [
@@ -76,7 +80,10 @@
         "File a complaint on the National Cyber Crime Reporting Portal with the evidence and keep the acknowledgment number for follow-up.",
         "Report the fraudulent SMS, call, or WhatsApp message on the Chakshu facility of Sanchar Saathi so the sender can be acted against."
       ],
-      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_chakshu"
+      ]
     },
     "identity_theft": {
       "action_steps": [
@@ -86,7 +93,11 @@
         "If your Aadhaar may have been misused, lock your Aadhaar biometrics through UIDAI's official service and raise a grievance with UIDAI.",
         "Check your credit report for accounts you did not open, raise disputes with the credit bureau in writing, and keep every acknowledgment safely."
       ],
-      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_tafcop", "uidai"]
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_tafcop",
+        "uidai"
+      ]
     },
     "unauthorized_account_access": {
       "action_steps": [
@@ -96,7 +107,9 @@
         "Preserve evidence: screenshots of unauthorized activity, alert emails about password or recovery changes, and the dates and times you noticed the misuse.",
         "File a complaint on the National Cyber Crime Reporting Portal with the evidence, and warn your contacts if the account is being used to message them."
       ],
-      "portal_ids": ["cybercrime_gov_in"]
+      "portal_ids": [
+        "cybercrime_gov_in"
+      ]
     },
     "defective_product": {
       "action_steps": [
@@ -106,7 +119,23 @@
         "If the issue remains unresolved, you can file a formal consumer complaint before the appropriate Consumer Commission, which can be done online through the e-daakhil facility.",
         "Keep every receipt, service-visit record, and acknowledgment safely - they form the evidence for your complaint."
       ],
-      "portal_ids": ["consumer_helpline_ingram", "edaakhil"]
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
+    },
+    "refund_denial": {
+      "action_steps": [
+        "Send the seller or company a written refund demand (email or letter) stating the amount, the date of payment, the policy or promise you are relying on, and a clear deadline - keep proof that you sent it.",
+        "Collect and keep your payment proof: order confirmation, invoice, bank or UPI statement entry, and any screenshots of the refund policy or the refund promise.",
+        "Escalate to the platform's or company's grievance officer if the first-level support keeps closing your request without resolving it.",
+        "If it remains unresolved, register a grievance with the National Consumer Helpline by calling 1915 or through its online portal.",
+        "As the next step, you can file a formal consumer complaint before the appropriate Consumer Commission, which can be done online through the e-daakhil facility."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
     }
   },
   "portals": {
@@ -118,7 +147,13 @@
       "priority": "immediate",
       "usage_condition": null,
       "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
-      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing", "identity_theft", "unauthorized_account_access"]
+      "supported_issue_ids": [
+        "otp_fraud",
+        "online_impersonation",
+        "phishing",
+        "identity_theft",
+        "unauthorized_account_access"
+      ]
     },
     "rbi_cms": {
       "portal_id": "rbi_cms",
@@ -128,7 +163,9 @@
       "priority": "secondary",
       "usage_condition": "Use only if you have already complained to your bank about the unauthorised transaction and it has not been resolved satisfactorily within the bank's stipulated time (typically 30 days).",
       "official_source": "Reserve Bank of India",
-      "supported_issue_ids": ["otp_fraud"]
+      "supported_issue_ids": [
+        "otp_fraud"
+      ]
     },
     "sanchar_saathi_chakshu": {
       "portal_id": "sanchar_saathi_chakshu",
@@ -138,7 +175,10 @@
       "priority": "secondary",
       "usage_condition": "Use when the fraudulent communication (impersonation, fake link, or fraud attempt) came through a phone call, SMS, or WhatsApp, in addition to filing the main complaint on the cyber crime portal.",
       "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
-      "supported_issue_ids": ["online_impersonation", "phishing"]
+      "supported_issue_ids": [
+        "online_impersonation",
+        "phishing"
+      ]
     },
     "sanchar_saathi_tafcop": {
       "portal_id": "sanchar_saathi_tafcop",
@@ -148,7 +188,9 @@
       "priority": "primary",
       "usage_condition": "Use when you suspect that SIM cards or mobile connections were taken in your name without your knowledge.",
       "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
-      "supported_issue_ids": ["identity_theft"]
+      "supported_issue_ids": [
+        "identity_theft"
+      ]
     },
     "uidai": {
       "portal_id": "uidai",
@@ -158,7 +200,9 @@
       "priority": "secondary",
       "usage_condition": "Use when the identity misuse involves, or may involve, your Aadhaar number or biometrics.",
       "official_source": "Unique Identification Authority of India, Government of India",
-      "supported_issue_ids": ["identity_theft"]
+      "supported_issue_ids": [
+        "identity_theft"
+      ]
     },
     "consumer_helpline_ingram": {
       "portal_id": "consumer_helpline_ingram",
@@ -168,7 +212,10 @@
       "priority": "primary",
       "usage_condition": null,
       "official_source": "Department of Consumer Affairs, Government of India",
-      "supported_issue_ids": ["defective_product"]
+      "supported_issue_ids": [
+        "defective_product",
+        "refund_denial"
+      ]
     },
     "edaakhil": {
       "portal_id": "edaakhil",
@@ -178,7 +225,10 @@
       "priority": "secondary",
       "usage_condition": "Use when the complaint is not resolved through the seller or the National Consumer Helpline and you want to file a formal complaint before a Consumer Commission.",
       "official_source": "National Informatics Centre for the Consumer Commissions, Government of India",
-      "supported_issue_ids": ["defective_product"]
+      "supported_issue_ids": [
+        "defective_product",
+        "refund_denial"
+      ]
     }
   }
 }
