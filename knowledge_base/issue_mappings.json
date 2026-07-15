@@ -16,7 +16,6 @@
       "knowledge_base_loader: loads and reference-validates this file at startup (read-only at runtime)."
     ]
   },
-
   "_schema": {
     "issues": {
       "<issue_id>": {
@@ -40,7 +39,6 @@
     },
     "_runtime_note": "Module 3 must apply the citizen-facing eligibility check (manually_verified AND in_force) AFTER resolving each reference - a reference existing here never implies the provision is verified or returnable. If no referenced provision is eligible, Module 3 reports the explicit safe state (legal_information_status = 'no_verified_provision_available')."
   },
-
   "issues": {
     "otp_fraud": {
       "issue_id": "otp_fraud",
@@ -214,6 +212,36 @@
           "act_id": "cpa_2019",
           "section_id": "35",
           "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer whose refund is wrongly denied may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
+        }
+      ]
+    },
+    "misleading_advertisement": {
+      "issue_id": "misleading_advertisement",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Misleading Advertisement",
+      "issue_definition": "A purchase or payment was influenced by false product claims, fake discounts, or misrepresentation in advertising or promotional claims - the deception is located in the advertisement or claim itself.",
+      "prototype_texts": [
+        "An advertisement claimed results or features that turned out to be completely false after I bought the product.",
+        "The ad or hoarding promised a big discount or offer, but at the shop or checkout the real price or conditions were totally different.",
+        "An institute or company advertised guarantees like assured placement, assured returns, or certified quality, and the reality was nothing like the advertisement.",
+        "The advertisement showed a product, price, or amenity that does not actually exist or applies to something different from what was shown."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_28",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns advertisements that falsely describe a product or service or are likely to mislead the consumer, which is what the statutory definition addresses."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "21",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because complaints about false or misleading advertisements can lead to regulator action by the Central Consumer Protection Authority under this provision, including directions to discontinue the advertisement and penalties."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by a misleading advertisement may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
         }
       ]
     }

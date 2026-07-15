@@ -136,6 +136,19 @@
         "consumer_helpline_ingram",
         "edaakhil"
       ]
+    },
+    "misleading_advertisement": {
+      "action_steps": [
+        "Save the advertisement itself before it disappears - screenshots, photos, or a recording of the ad, along with where and when you saw it, plus your purchase proof.",
+        "Complain in writing to the seller or advertiser pointing out the difference between what was advertised and what was delivered, and ask for the promised remedy - keep proof of your complaint.",
+        "Register a grievance with the National Consumer Helpline by calling 1915 or through its online portal - misleading advertisement complaints can also be taken up by the Central Consumer Protection Authority (CCPA).",
+        "If it remains unresolved, you can file a formal consumer complaint before the appropriate Consumer Commission through the e-daakhil facility.",
+        "Keep all bills, packaging, and communications safely - your evidence needs to show the gap between the advertised claim and the reality."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
     }
   },
   "portals": {
@@ -214,7 +227,8 @@
       "official_source": "Department of Consumer Affairs, Government of India",
       "supported_issue_ids": [
         "defective_product",
-        "refund_denial"
+        "refund_denial",
+        "misleading_advertisement"
       ]
     },
     "edaakhil": {
@@ -227,7 +241,8 @@
       "official_source": "National Informatics Centre for the Consumer Commissions, Government of India",
       "supported_issue_ids": [
         "defective_product",
-        "refund_denial"
+        "refund_denial",
+        "misleading_advertisement"
       ]
     }
   }

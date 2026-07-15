@@ -58,7 +58,7 @@
         "43": {
           "section_number": "43",
           "official_section_title": "Penalty and compensation for damage to computer, computer system, etc.",
-          "official_text": "43A. Compensation for failure to protect data.–Where a body corporate, possessing, dealing or\nhandling any sensitive personal data or information in a computer resource which it owns, controls or\noperates, is negligent in implementing and maintaining reasonable security practices and procedures and\nthereby causes wrongful loss or wrongful gain to any person, such body corporate shall be liable to pay\ndamages by way of compensation to the person so affected.",
+          "official_text": "[Penalty and compensation] for damage to computer, computer system, etc.–If any person\nwithout permission of the owner or any other person who is in charge of a computer, computer system or\ncomputer network,–\n(a) accesses or secures access to such computer, computer system or computer network\n7\n[or computer resource\n          ]\n(b) downloads, copies or extracts any data, computer data base or information from such\ncomputer, computer system or computer network including information or data held or stored in any\nremovable storage medium;\n(c) introduces or causes to be introduced any computer contaminant or computer virus into any\ncomputer, computer system or computer network;\n(d) damages or causes to be damaged any computer, computer system or computer network, data,\ncomputer data base or any other programmes residing in such computer, computer system or\ncomputer network;\n(e) disrupts or causes disruption of any computer, computer system or computer network;\n(f) denies or causes the denial of access to any person authorised to access any computer,\ncomputer system or computer network by any means;\n(g) provides any assistance to any person to facilitate access to a computer, computer system or\ncomputer network in contravention of the provisions of this Act, rules or regulations made\nthereunder;\n(h) charges the services availed of by a person to the account of another person by tampering with\nor manipulating any computer, computer system, or computer network;\n1\n[(i) destroys, deletes or alters any information residing in a computer resource or diminishes its\nvalue or utility or affects it injuriously by any means;\n(j) steal, conceal, destroys or alters or causes any person to steal, conceal, destroy or alter any\ncomputer source code used for a computer resource with an intention to cause damage;\n          ]",
           "simplified_explanation": "This provision concerns unauthorized access to or damage involving a computer, computer system, or network, and provides for compensation to the affected person. If someone accessed your account, device, or data without permission, this kind of provision may be relevant to seeking compensation.",
           "applicability_notes": "May be relevant where another person accessed, downloaded from, damaged, or disrupted the citizen's computer, account, or data without permission. It is a civil compensation provision rather than a purely penal one. Whether it applies to a specific case depends on facts a qualified professional should assess.",
           "keywords": [
@@ -228,6 +228,48 @@
             "deceptive practice"
           ],
           "citation": "Section 2(47), Consumer Protection Act, 2019",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "2_28": {
+          "section_number": "2(28)",
+          "official_section_title": "Definition of 'misleading advertisement'",
+          "official_text": null,
+          "simplified_explanation": "This provision defines a 'misleading advertisement' - broadly, an advertisement that falsely describes a product or service, gives a false guarantee, is likely to mislead consumers about its nature or quality, or deliberately conceals important information.",
+          "applicability_notes": "May be relevant where the citizen was influenced by an advertisement whose claims (price, discount, quality, guarantee, results) did not match reality. Whether a specific advertisement meets the statutory definition depends on facts a qualified professional should assess.",
+          "keywords": [
+            "misleading advertisement",
+            "false claim",
+            "fake discount",
+            "false guarantee",
+            "concealment"
+          ],
+          "citation": "Section 2(28), Consumer Protection Act, 2019",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "21": {
+          "section_number": "21",
+          "official_section_title": "Power of Central Authority to issue directions and penalties against false or misleading advertisements",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns the Central Consumer Protection Authority's (CCPA) powers regarding false or misleading advertisements - including directing that such an advertisement be discontinued or modified, and imposing penalties on manufacturers, advertisers, and endorsers.",
+          "applicability_notes": "May be relevant as the regulator-side mechanism against a misleading advertisement, separate from the citizen's own consumer complaint. A complaint about a misleading advertisement can reach the CCPA for such action. Specific conditions should be assessed by a qualified professional.",
+          "keywords": [
+            "ccpa",
+            "central consumer protection authority",
+            "misleading advertisement",
+            "penalty",
+            "discontinue advertisement"
+          ],
+          "citation": "Section 21, Consumer Protection Act, 2019",
           "provision_status": "unverified",
           "verification": {
             "status": "pending_manual_verification",
