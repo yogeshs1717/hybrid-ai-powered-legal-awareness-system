@@ -49,5 +49,45 @@
     }
   },
 
-  "acts": {}
+  "acts": {
+    "it_act_2000": {
+      "official_act_name": "Information Technology Act, 2000",
+      "act_year": 2000,
+      "short_name": "IT Act 2000",
+      "official_source_name": "India Code",
+      "official_source_url": null,
+      "sections": {
+        "66c": {
+          "section_number": "66C",
+          "official_section_title": "Punishment for identity theft",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns the fraudulent or dishonest use of another person's electronic identity features, such as a password, electronic signature, or other unique identification. In an OTP fraud situation, the misuse of your banking credentials or one-time password by another person may relate to this kind of provision.",
+          "applicability_notes": "May be relevant where someone else has fraudulently used the citizen's electronic identification or authentication details (for example, an OTP or password) to carry out a transaction. Whether it applies to a specific case depends on facts a qualified professional should assess.",
+          "keywords": ["otp", "password", "identity", "electronic signature", "unique identification", "fraudulent use"],
+          "citation": "Section 66C, Information Technology Act, 2000",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "66d": {
+          "section_number": "66D",
+          "official_section_title": "Punishment for cheating by personation by using computer resource",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns cheating carried out by pretending to be someone else using a communication device or computer resource. In an OTP fraud situation, a caller pretending to be a bank or payment-app representative in order to deceive you may relate to this kind of provision.",
+          "applicability_notes": "May be relevant where deception involved someone impersonating a bank, company, official, or other person through a phone call, message, app, or website, leading to the citizen being cheated. Whether it applies to a specific case depends on facts a qualified professional should assess.",
+          "keywords": ["impersonation", "personation", "fake caller", "bank fraud call", "cheating", "communication device"],
+          "citation": "Section 66D, Information Technology Act, 2000",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        }
+      }
+    }
+  }
 }

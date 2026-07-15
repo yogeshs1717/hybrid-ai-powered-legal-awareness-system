@@ -47,6 +47,38 @@
     }
   },
 
-  "issue_guidance": {},
-  "portals": {}
+  "issue_guidance": {
+    "otp_fraud": {
+      "action_steps": [
+        "Contact your bank immediately and report the unauthorised transaction. Ask the bank to block the card, account, or UPI ID involved to prevent further loss.",
+        "Call the national cyber crime helpline 1930 as soon as possible - early reporting improves the chance of freezing the fraudulent transfer.",
+        "Preserve all evidence: the caller's number, SMS alerts, transaction IDs, screenshots, and the exact time of the calls and debits.",
+        "File a written complaint on the National Cyber Crime Reporting Portal and keep the acknowledgment number for follow-up.",
+        "Follow up with your bank in writing about reversal or chargeback of the unauthorised transaction, and keep copies of every communication."
+      ],
+      "portal_ids": ["cybercrime_gov_in", "rbi_cms"]
+    }
+  },
+  "portals": {
+    "cybercrime_gov_in": {
+      "portal_id": "cybercrime_gov_in",
+      "name": "National Cyber Crime Reporting Portal",
+      "official_url": "https://cybercrime.gov.in",
+      "purpose": "File complaints about cybercrime incidents, including online financial fraud, and track their status.",
+      "priority": "immediate",
+      "usage_condition": null,
+      "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
+      "supported_issue_ids": ["otp_fraud"]
+    },
+    "rbi_cms": {
+      "portal_id": "rbi_cms",
+      "name": "RBI Complaint Management System (Integrated Ombudsman Scheme)",
+      "official_url": "https://cms.rbi.org.in",
+      "purpose": "Escalate a complaint about an unauthorised banking transaction against a bank or regulated entity.",
+      "priority": "secondary",
+      "usage_condition": "Use only if you have already complained to your bank about the unauthorised transaction and it has not been resolved satisfactorily within the bank's stipulated time (typically 30 days).",
+      "official_source": "Reserve Bank of India",
+      "supported_issue_ids": ["otp_fraud"]
+    }
+  }
 }

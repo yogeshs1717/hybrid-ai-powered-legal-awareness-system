@@ -46,8 +46,17 @@ four user-directed enhancements) — modify only on a genuine discovered contrad
 This file remains the living state tracker per its maintenance rule. The taxonomy
 remains **WORKING until explicit user sign-off**.
 
-**Immediate Next Task:** User approves the next milestone. Dataset V1 and training
-remain gated (taxonomy sign-off + `TRAINING_DATA_PLAN.md` approval).
+**Dataset V1: FROZEN (2026-07-13)** — 133 rows, accepted by user as baseline after a
+targeted quality pass (17 rows rewritten: typos/informal/style/boundary; distribution
+unchanged). Do not modify unless explicitly instructed.
+
+**Current milestone: incremental KB population** — one issue at a time,
+taxonomy_supported issues only, stop for user review after each. Populated so far:
+`otp_fraud` (1/14). Every provision remains `pending_manual_verification` +
+`unverified`; the eligibility gate verified to withhold them from citizens.
+
+**Immediate Next Task:** User reviews the `otp_fraud` population, then instructs the
+next issue.
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -341,7 +350,7 @@ touched cosmetically.
 | Item | Status |
 |---|---|
 | `TRAINING_DATA_PLAN.md` | DRAFT — pending Issue Support Review + user approval (Section 8) |
-| `data/training_data_v1.csv` | **PENDING** — not created; blocked on taxonomy sign-off + plan approval |
+| `ml-service/data/training_data_v1.csv` | **DRAFT CREATED (2026-07-13)** — 133 rows (28 cyber / 27 consumer / 26 traffic / 26 wage / 26 contractual), schema `scenario,domain,issue_id`, all 22 issues covered, quality-reviewed (no duplicates/near-duplicates, labels valid, lengths in bounds, accepted by the training script's validator). All rows are Claude-drafted candidates — **pending human annotation review (user is the final annotator, TRAINING_DATA_PLAN §12)** |
 | `data/training_data_v2.csv`+ | **PENDING** — blocked on V1 evaluation |
 | Issue taxonomy | **WORKING — 22 issues** (6 cyber / 5 consumer / 5 traffic / 4 wage / 2 contractual) — `TRAINING_DATA_PLAN.md` §2. Issue Support Review **approved by user** (`docs/issue_support_review.md`: 14 taxonomy_supported / 8 provision_research_required); taxonomy stays WORKING pending explicit user sign-off |
 | Training pipeline (`train_domain_classifier.py`) | **COMPLETE — STRUCTURAL** — exists, runnable on any valid CSV (pipeline-before-data); refuses politely when the CSV is absent; Stratified 5-Fold CV; imports the same `preprocess_text` inference uses |
@@ -366,15 +375,15 @@ No dataset CSV, real or synthetic, has been generated in this repository.
 
 | File | Status |
 |---|---|
-| `knowledge_base/acts_and_sections.json` | **SKELETON** — exists; `_meta` + `_schema` contract; `acts = {}` |
-| `knowledge_base/issue_mappings.json` | **SKELETON** — exists; `_meta` + `_schema` contract; `issues = {}` |
-| `knowledge_base/issue_actions_portals.json` | **SKELETON** — exists; `_meta` + `_schema` contract; `issue_guidance = {}`, `portals = {}` |
+| `knowledge_base/acts_and_sections.json` | **POPULATING** — `it_act_2000` with sections `66c`, `66d` (both `pending_manual_verification` + `unverified`; official_text/URL null awaiting human verification against India Code) |
+| `knowledge_base/issue_mappings.json` | **POPULATING** — `otp_fraud` (4 prototypes, 2 provision references with Layer-B rationales) |
+| `knowledge_base/issue_actions_portals.json` | **POPULATING** — `otp_fraud` guidance (5 steps) + portals `cybercrime_gov_in` (immediate, URL confirmed), `rbi_cms` (secondary, conditional, URL confirmed) |
 
-All three validated as parseable JSON. **No legal provisions populated. No verification
-status set anywhere.** Population gates: taxonomy sign-off (all issues); per-issue
-research completion (the 8 `provision_research_required` issues); wage-law research
-(`docs/wage_law_research.md`, still absent) for all `workplace_wage` provisions
-(see Section 9).
+**Populated: 1 of 14 taxonomy_supported issues (`otp_fraud`).** Zero provisions
+manually verified; the eligibility gate is verified to return the safe state. Rules in
+force: one issue at a time; never a whole domain at once; `provision_research_required`
+issues (8) blocked until instructed; wage-law research still gates all
+`workplace_wage` provisions (see Section 9).
 
 ---
 
@@ -491,7 +500,40 @@ in one step (Step 10) — population is incremental and each provision starts
 
 ## SECTION 11 — LAST COMPLETED TASK
 
-**Most recent (batch 8 — Git re-configuration + Phase 1B implementation review):**
+**Most recent (batch 10 — dataset quality pass + freeze; KB population begins,
+2026-07-13):** Rewrote 17 of 133 dataset rows in place (realistic typos: salry, accont,
+instgram, whatsap, recived, reciept, cleand, becoz; fragmented/complaint/conversational
+styles; more informal Indian English; 2 boundary rewrites — Instagram-seller
+non-delivery kept `cyber_fraud`, advance-paid salon package kept `consumer_issues`).
+Row count, schema, domain counts, and issue distribution unchanged; all validations
+re-passed (no dupes/near-dupes, 22 issues, training-script validator OK). **Dataset V1
+frozen.** Populated first KB issue `otp_fraud`: IT Act 2000 act record + sections
+66c/66d (official_text and India Code URL left null — India Code blocks automated
+fetch (HTTP 403), so URLs are unconfirmed per the null-not-placeholder rule;
+candidate URLs handed to user for human verification), simplified explanations,
+applicability notes, keywords, citations, 4 prototype texts, 2 Layer-B rationales,
+5 action steps, 2 portals (cybercrime.gov.in confirmed official via fetch — MHA/I4C;
+cms.rbi.org.in confirmed official — RBI, conditional usage). All provisions
+`pending_manual_verification` + `unverified`. Verified: loader validation + reference
+integrity pass; 12/12 tests (one test updated — it had hardcoded the KB being empty);
+engine gate check confirms 0 provisions returned and explicit safe state while
+unverified, with action steps and portals served.
+
+**Batch 9 (Dataset V1 draft, 2026-07-13):** generated
+`ml-service/data/training_data_v1.csv` — 133 scenarios (28/27/26/26/26 per domain),
+locked schema `scenario,domain,issue_id` (issue_id = analysis metadata per CLAUDE.md
+11.1; user asked for two columns but the frozen schema and the training script's
+validator require three — noted as an assumption). Scenario mix per TRAINING_DATA_PLAN
+§7: standard / informal-noisy Indian English / narrative / cross-domain boundary rows
+(freelancer-vs-employee, online-fraud-vs-consumer, consumer-vs-contract), English only,
+no Hinglish. Quality review passed: no exact or near duplicates (token-Jaccard check),
+all labels valid and domain-consistent, all 22 issues covered, lengths 20–2000,
+accepted by `load_dataset()`. Status: DRAFT pending human annotation review — Claude
+drafted, user is the final annotator. issue_id values for the 8
+provision_research_required issues are provisional metadata (does not affect Module 1
+training). No training performed; no model artifacts exist.
+
+**Batch 8 (Git re-configuration + Phase 1B implementation review):**
 Git: repo now rooted at `Demo/`, branch `main`, improved `.gitignore`, foundation
 committed as `b0f887f`, tree clean, no remotes. Code review of all 10 Phase 1B files —
 quality fixes only, no new functionality, no contract changes: single-sourced the
@@ -615,6 +657,8 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-10 | Batch 6 — user approved the Issue Support Review with status rename `approved` → `taxonomy_supported` (applied in the review; enum synced in `CLAUDE.md` §6.10 + `TRAINING_DATA_PLAN.md` §3.2 as an authorized contradiction fix); governance documents frozen. Phase 1A: created `knowledge_base/` with the three schema-only JSON files (validated; empty data containers; zero legal content; no verification statuses; no Dataset V1; no training; no BERT/RAG; no wage provisions) | Claude |
 | 2026-07-10 | Batch 7 — four user-directed KB schema enhancements (issue_id, portal_id, taxonomy_status, keywords+citation) applied and schemas frozen. Phase 1B ML Service Foundation created: 8 app modules + training script + loader tests + requirements.txt. Verified: all compile, loader self-check on real skeletons passes, 12/12 tests pass, end-to-end smoke test returns honest safe state (mock classifier, Low confidence, no fabricated legal content). No Dataset V1 / trained model / BERT / RAG / provisions / frontend / backend / DB | Claude |
 | 2026-07-12 | Batch 8 — Git re-configured (root = Demo, branch main, .gitignore extended, foundation re-committed as b0f887f after user removed parent repo; no remotes). Phase 1B implementation review: de-duplicated domain-set / status-constant / action-step-limit definitions, simplified classifier factory, cleaned issue_detector style, fixed training-script crash on <2-row domains. No new functionality; contracts unchanged. All verification re-passed (12/12 tests, smoke OK). Review changes uncommitted pending approval | Claude |
+| 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
+| 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 
 ---
 

@@ -41,5 +41,31 @@
     "_runtime_note": "Module 3 must apply the citizen-facing eligibility check (manually_verified AND in_force) AFTER resolving each reference - a reference existing here never implies the provision is verified or returnable. If no referenced provision is eligible, Module 3 reports the explicit safe state (legal_information_status = 'no_verified_provision_available')."
   },
 
-  "issues": {}
+  "issues": {
+    "otp_fraud": {
+      "issue_id": "otp_fraud",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "OTP / Financial Impersonation Fraud",
+      "issue_definition": "The citizen was manipulated - typically by a caller or message impersonating a bank, wallet, or official - into revealing an OTP, PIN, or banking credential, followed by (or aimed at) an unauthorized financial transaction.",
+      "prototype_texts": [
+        "Someone called me pretending to be from my bank and asked for the OTP that came on my phone, and after I told them money was taken from my account.",
+        "A caller claiming to be from bank or wallet customer support tricked me into sharing an OTP or PIN and an unauthorized transaction happened right after that.",
+        "I received a phone call about KYC verification or card blocking, the person asked me to read out the code sent by SMS, and then money got debited from my account without my permission.",
+        "A fraudster acting like customer care of a payment app made me share a verification code on call and immediately transferred money out of my wallet or account."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition involves another person fraudulently using the citizen's electronic authentication details, such as an OTP or password, to carry out a transaction."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition involves alleged impersonation of a bank, company, or official through a communication device in order to deceive the citizen."
+        }
+      ]
+    }
+  }
 }

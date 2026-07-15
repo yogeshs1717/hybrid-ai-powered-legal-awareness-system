@@ -118,13 +118,16 @@ def write_kb(tmp_path: Path, acts: dict, mappings: dict, guidance: dict) -> Path
 # Tests
 # ---------------------------------------------------------------------------
 
-def test_real_repo_skeleton_loads_and_is_empty():
-    """The actual frozen skeletons must validate, with zero content."""
+def test_real_repo_kb_loads_and_validates():
+    """The actual repository KB must always pass full structural validation.
+    (Originally asserted emptiness; the KB is now being populated issue by
+    issue, so the invariant is validity + index consistency, not emptiness.)"""
     kb = load_knowledge_base(REPO_KB_DIR)
     counts = kb.counts()
-    assert counts["acts"] == 0
-    assert counts["issues"] == 0
-    assert counts["portals"] == 0
+    # Every issue is indexed under exactly one approved domain.
+    assert sum(len(v) for v in kb.issues_by_domain.values()) == counts["issues"]
+    # Guidance entries can never exceed issues (validated 1:1 by issue_id).
+    assert counts["guidance_entries"] <= counts["issues"]
 
 
 def test_minimal_fixture_loads_and_builds_indexes(tmp_path):
