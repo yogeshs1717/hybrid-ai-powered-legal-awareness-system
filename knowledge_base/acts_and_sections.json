@@ -130,6 +130,60 @@
           }
         }
       }
+    },
+    "cpa_2019": {
+      "official_act_name": "Consumer Protection Act, 2019",
+      "act_year": 2019,
+      "short_name": "CPA 2019",
+      "official_source_name": "India Code",
+      "official_source_url": null,
+      "sections": {
+        "2_10": {
+          "section_number": "2(10)",
+          "official_section_title": "Definition of 'defect'",
+          "official_text": null,
+          "simplified_explanation": "This provision defines what counts as a 'defect' in goods - broadly, a fault, imperfection, or shortcoming in the quality, quantity, or standard that is required to be maintained, or that was promised by the seller or manufacturer.",
+          "applicability_notes": "May be relevant for understanding whether the problem with a purchased product can be described as a defect in the legal sense - for example goods that are broken, faulty, below the promised standard, or not what was represented. Whether it applies to a specific case depends on facts a qualified professional should assess.",
+          "keywords": ["defect", "faulty product", "quality", "standard", "broken goods"],
+          "citation": "Section 2(10), Consumer Protection Act, 2019",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "35": {
+          "section_number": "35",
+          "official_section_title": "Manner in which complaint shall be made",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns how a consumer complaint can be filed before a District Consumer Commission - including that a consumer can file a complaint about defective goods, and that complaints can be filed electronically.",
+          "applicability_notes": "May be relevant when the citizen wants to understand their ability to formally complain to a Consumer Commission about a defective product. Whether and where a complaint lies depends on facts such as the value involved, which a qualified professional can advise on.",
+          "keywords": ["complaint", "consumer commission", "district commission", "file complaint", "electronic filing"],
+          "citation": "Section 35, Consumer Protection Act, 2019",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "84": {
+          "section_number": "84",
+          "official_section_title": "Liability of product manufacturer",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns when a product manufacturer may be liable in a product liability action - for example where the product contains a manufacturing defect, is deficient in design, or does not conform to an express warranty.",
+          "applicability_notes": "May be relevant where a defective product caused harm and the citizen is considering the manufacturer's responsibility. Product liability involves specific conditions that a qualified professional should assess against the facts.",
+          "keywords": ["product liability", "manufacturer", "manufacturing defect", "design", "warranty"],
+          "citation": "Section 84, Consumer Protection Act, 2019",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        }
+      }
     }
   }
 }

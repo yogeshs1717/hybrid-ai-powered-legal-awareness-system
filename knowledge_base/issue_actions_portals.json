@@ -97,6 +97,16 @@
         "File a complaint on the National Cyber Crime Reporting Portal with the evidence, and warn your contacts if the account is being used to message them."
       ],
       "portal_ids": ["cybercrime_gov_in"]
+    },
+    "defective_product": {
+      "action_steps": [
+        "Stop using the product and preserve it in its current condition along with the bill, warranty card, box, and photos or a video clearly showing the defect.",
+        "Complain to the seller and the manufacturer in writing (email or letter), ask for repair, replacement, or refund as per the warranty terms, and keep proof of your complaint.",
+        "If the seller does not resolve it, register a grievance with the National Consumer Helpline by calling 1915 or through its online portal.",
+        "If the issue remains unresolved, you can file a formal consumer complaint before the appropriate Consumer Commission, which can be done online through the e-daakhil facility.",
+        "Keep every receipt, service-visit record, and acknowledgment safely - they form the evidence for your complaint."
+      ],
+      "portal_ids": ["consumer_helpline_ingram", "edaakhil"]
     }
   },
   "portals": {
@@ -149,6 +159,26 @@
       "usage_condition": "Use when the identity misuse involves, or may involve, your Aadhaar number or biometrics.",
       "official_source": "Unique Identification Authority of India, Government of India",
       "supported_issue_ids": ["identity_theft"]
+    },
+    "consumer_helpline_ingram": {
+      "portal_id": "consumer_helpline_ingram",
+      "name": "National Consumer Helpline (INGRAM)",
+      "official_url": null,
+      "purpose": "Register a consumer grievance (helpline 1915 or online) for guidance and company-level resolution before formal proceedings.",
+      "priority": "primary",
+      "usage_condition": null,
+      "official_source": "Department of Consumer Affairs, Government of India",
+      "supported_issue_ids": ["defective_product"]
+    },
+    "edaakhil": {
+      "portal_id": "edaakhil",
+      "name": "e-daakhil (Online Consumer Commission Complaint Filing)",
+      "official_url": null,
+      "purpose": "File a formal consumer complaint online before the appropriate Consumer Commission.",
+      "priority": "secondary",
+      "usage_condition": "Use when the complaint is not resolved through the seller or the National Consumer Helpline and you want to file a formal complaint before a Consumer Commission.",
+      "official_source": "National Informatics Centre for the Consumer Commissions, Government of India",
+      "supported_issue_ids": ["defective_product"]
     }
   }
 }

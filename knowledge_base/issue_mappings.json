@@ -161,6 +161,36 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because taking over or misusing another person's account dishonestly or fraudulently involves the computer-related offences this provision addresses."
         }
       ]
+    },
+    "defective_product": {
+      "issue_id": "defective_product",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Defective Product",
+      "issue_definition": "Purchased goods are broken, faulty, or materially not as specified - for example a product that stops working within days, arrives damaged, is a duplicate sold as genuine, or fails to meet the promised quality or standard.",
+      "prototype_texts": [
+        "The product I bought is broken or faulty - it stopped working within days of purchase and the seller or company is not fixing it.",
+        "I received a damaged or non-working item and the shop or online seller refuses to repair or replace it under the warranty.",
+        "The goods I purchased are of much lower quality than what was promised, or turned out to be duplicate items sold as genuine.",
+        "A new appliance or device I bought has a manufacturing fault and even after service visits it is still not working properly."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_10",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns goods with a fault, imperfection, or shortcoming in quality or standard, which is what the statutory definition of 'defect' addresses."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer with defective goods may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "84",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because where a defective product causes harm, the manufacturer's product liability conditions described in this provision may become relevant."
+        }
+      ]
     }
   }
 }

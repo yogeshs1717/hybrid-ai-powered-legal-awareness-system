@@ -53,13 +53,16 @@ unchanged). Do not modify unless explicitly instructed.
 **Current milestone: incremental KB population** — one issue at a time,
 taxonomy_supported issues only, stop for user review after each. Populated so far:
 `otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
-`unauthorized_account_access` (5/14 — cyber_fraud's supported issues complete;
-`other_online_financial_fraud` stays provision_research_required).
+`unauthorized_account_access`, `defective_product` (6/14 — cyber_fraud's supported
+issues complete; consumer_issues started; `other_online_financial_fraud` stays
+provision_research_required).
 
-**Pending human verification:** IT Act sections **43** and **66** entered as
-candidates (`pending_manual_verification` / `unverified`, official_text null) — the
-gate withholds them, so `unauthorized_account_access` correctly returns the safe
-state until Shreeharsha N L verifies them against India Code.
+**Pending human verification:** IT Act sections **43**, **66**; CPA 2019 act record
+(India Code URL null) and sections **2(10)**, **35**, **84** — all
+`pending_manual_verification` / `unverified`, official_text null. Portal URLs pending
+confirmation: `consumer_helpline_ingram` (candidate: consumerhelpline.gov.in) and
+`edaakhil` (candidate: edaakhil.nic.in) — fetch confirmation failed this session, so
+both stored as null per the no-placeholder rule.
 
 **First human verification completed (2026-07-16):** IT Act 2000 sections 66C and 66D
 were manually verified by **Shreeharsha N L** against India Code (official text +
@@ -70,10 +73,10 @@ direction in chat, Claude applied the clerical correction to the stated values (
 loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
 **returns** 66C/66D for all three populated issues (`provisions_available`).
 
-**Immediate Next Task:** User reviews the `unauthorized_account_access` population
-(and optionally verifies sections 43/66), then instructs the next issue (suggested
-next: move to `consumer_issues` — `defective_product`, which introduces the Consumer
-Protection Act 2019 and the e-daakhil / NCH portals).
+**Immediate Next Task:** User reviews the `defective_product` population (and
+optionally verifies IT Act 43/66, CPA 2019 sections, and the two consumer portal
+URLs), then instructs the next issue (suggested next: `refund_denial` — reuses CPA
+2019; likely adds section 2(47) unfair trade practice definition as a candidate).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -677,6 +680,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 15 — populated `defective_product` (6/14; consumer domain opened): new act `cpa_2019` (India Code URL null pending confirmation) with candidate sections 2(10) defect definition, 35 complaint filing, 84 product liability — all pending/unverified with null official_text; 4 prototypes, 3 Layer-B rationales, 5 action steps (evidence preservation first), 2 new portals `consumer_helpline_ingram` (primary) + `edaakhil` (secondary, conditional) with null URLs (fetch confirmation unavailable this session; candidates recorded for verifier). Gate withholds unverified CPA sections (safe state); 5 prior issues regression-checked; loader + 12/12 tests pass. KB state: 2 acts, 7 sections (2 verified), 6 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 14 — populated `unauthorized_account_access` (5/14; cyber_fraud supported issues complete): added new IT Act candidate sections 43 (compensation for unauthorized access — primary) and 66 (computer-related offences), both `pending_manual_verification`/`unverified` with null official_text awaiting human verification; 4 prototypes, 5 action steps (recovery+2FA first), reused cybercrime_gov_in. Gate correctly withholds unverified 43/66 (safe state) while still serving verified 66C/66D for prior issues; loader + 12/12 tests pass. KB state: 1 act, 4 sections (2 verified, 2 pending), 5 issues, 5 portals | Claude |
 | 2026-07-16 | Batch 13 — populated `identity_theft` (4/14): reused verified IT Act 66C (single reference, per support review), 4 prototypes, 5 action steps, 2 new portals — `sanchar_saathi_tafcop` (DoT; SIMs in your name; parent portal fetch-confirmed) and `uidai` (fetch-confirmed official; Aadhaar biometric lock/grievance; conditional); extended cybercrime_gov_in. No new act/section needed. Gate returns 66C (`provisions_available`); portal sort immediate→primary→secondary verified; prior 3 issues regression-checked. Loader + 12/12 tests pass. KB state: 1 act, 2 sections, 4 issues, 5 portals | Claude |
 | 2026-07-16 | Batch 12 — populated `phishing` (3/14): reused 66C (primary) + 66D, 4 prototypes, 5 action steps, extended cybercrime_gov_in + sanchar_saathi_chakshu (usage condition generalized to fraud communications). Human verification recorded: 66C/66D manually verified by Shreeharsha N L against India Code (official text + PDF URL added by verifier); Claude applied a disclosed clerical fix of the verifier's invalid enum literal (`verification_done` → `manually_verified`) and missing `provision_status = in_force` at the verifier's explicit direction — loader was rejecting the KB. Gate now returns both provisions for all 3 issues. Loader + 12/12 tests pass. KB state: 1 act, 2 sections (both in_force/verified), 3 issues, 3 portals | Claude |
