@@ -67,6 +67,16 @@
         "Inform the people being contacted in your name - a simple warning message prevents relatives, friends, or colleagues from being cheated."
       ],
       "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
+    },
+    "phishing": {
+      "action_steps": [
+        "If you entered any password, PIN, or card details on the suspicious page, change those passwords immediately and contact your bank to block the card or account before further misuse.",
+        "If any money was debited, call the national cyber crime helpline 1930 right away - early reporting improves the chance of freezing the fraudulent transfer.",
+        "Do not click the link again or forward it. Preserve evidence: screenshots of the message and page, the sender's number or email address, and the link itself.",
+        "File a complaint on the National Cyber Crime Reporting Portal with the evidence and keep the acknowledgment number for follow-up.",
+        "Report the fraudulent SMS, call, or WhatsApp message on the Chakshu facility of Sanchar Saathi so the sender can be acted against."
+      ],
+      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
     }
   },
   "portals": {
@@ -78,7 +88,7 @@
       "priority": "immediate",
       "usage_condition": null,
       "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
-      "supported_issue_ids": ["otp_fraud", "online_impersonation"]
+      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing"]
     },
     "rbi_cms": {
       "portal_id": "rbi_cms",
@@ -96,9 +106,9 @@
       "official_url": "https://sancharsaathi.gov.in",
       "purpose": "Report suspected fraud calls, SMS, or WhatsApp communications, including impersonation of officials, companies, or known persons.",
       "priority": "secondary",
-      "usage_condition": "Use when the impersonation happened through a phone call, SMS, or WhatsApp communication, in addition to filing the main complaint on the cyber crime portal.",
+      "usage_condition": "Use when the fraudulent communication (impersonation, fake link, or fraud attempt) came through a phone call, SMS, or WhatsApp, in addition to filing the main complaint on the cyber crime portal.",
       "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
-      "supported_issue_ids": ["online_impersonation"]
+      "supported_issue_ids": ["online_impersonation", "phishing"]
     }
   }
 }

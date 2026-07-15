@@ -4,7 +4,7 @@
     "role": "Legal Truth Store — the single place statutory content lives (Act -> Section)",
     "schema_version": "1.0.0",
     "created": "2026-07-10",
-    "population_status": "SKELETON - no acts or provisions populated yet",
+    "population_status": "POPULATING - incremental, one issue at a time; IT Act 2000 sections 66C/66D human-verified 2026-07-16",
     "governance": [
       "CLAUDE.md Section 7.2 (three-file structure), 7.4 (record format), 7.5 (human-only verification), 7.6 (legal source rules)",
       "Modified by human curation only. Legal text enters this file only from an approved official source (India Code, or an official central-government ministry / regulator / statutory-authority publication).",
@@ -17,7 +17,6 @@
       "knowledge_base_loader: loads and reference-validates this file at ML-service startup (read-only at runtime)."
     ]
   },
-
   "_schema": {
     "acts": {
       "<act_id>": {
@@ -48,43 +47,56 @@
       }
     }
   },
-
   "acts": {
     "it_act_2000": {
       "official_act_name": "Information Technology Act, 2000",
       "act_year": 2000,
       "short_name": "IT Act 2000",
       "official_source_name": "India Code",
-      "official_source_url": null,
+      "official_source_url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
       "sections": {
         "66c": {
           "section_number": "66C",
           "official_section_title": "Punishment for identity theft",
-          "official_text": null,
+          "official_text": "Whoever, fraudulently or dishonestly make use of the electronic signature, password or any other unique identification feature of any other person, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh.",
           "simplified_explanation": "This provision concerns the fraudulent or dishonest use of another person's electronic identity features, such as a password, electronic signature, or other unique identification. In an OTP fraud situation, the misuse of your banking credentials or one-time password by another person may relate to this kind of provision.",
           "applicability_notes": "May be relevant where someone else has fraudulently used the citizen's electronic identification or authentication details (for example, an OTP or password) to carry out a transaction. Whether it applies to a specific case depends on facts a qualified professional should assess.",
-          "keywords": ["otp", "password", "identity", "electronic signature", "unique identification", "fraudulent use"],
+          "keywords": [
+            "otp",
+            "password",
+            "identity",
+            "electronic signature",
+            "unique identification",
+            "fraudulent use"
+          ],
           "citation": "Section 66C, Information Technology Act, 2000",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Shreeharsha N L",
+            "verified_on": "2026-07-16"
           }
         },
         "66d": {
           "section_number": "66D",
           "official_section_title": "Punishment for cheating by personation by using computer resource",
-          "official_text": null,
+          "official_text": "Whoever, by means of any communication device or computer resource cheats by personation, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to one lakh rupees.",
           "simplified_explanation": "This provision concerns cheating carried out by pretending to be someone else using a communication device or computer resource. In an OTP fraud situation, a caller pretending to be a bank or payment-app representative in order to deceive you may relate to this kind of provision.",
           "applicability_notes": "May be relevant where deception involved someone impersonating a bank, company, official, or other person through a phone call, message, app, or website, leading to the citizen being cheated. Whether it applies to a specific case depends on facts a qualified professional should assess.",
-          "keywords": ["impersonation", "personation", "fake caller", "bank fraud call", "cheating", "communication device"],
+          "keywords": [
+            "impersonation",
+            "personation",
+            "fake caller",
+            "bank fraud call",
+            "cheating",
+            "communication device"
+          ],
           "citation": "Section 66D, Information Technology Act, 2000",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Shreeharsha N L",
+            "verified_on": "2026-07-16"
           }
         }
       }

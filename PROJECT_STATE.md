@@ -52,14 +52,20 @@ unchanged). Do not modify unless explicitly instructed.
 
 **Current milestone: incremental KB population** — one issue at a time,
 taxonomy_supported issues only, stop for user review after each. Populated so far:
-`otp_fraud`, `online_impersonation` (2/14). Every provision remains
-`pending_manual_verification` + `unverified` in the repository (user reported review
-of otp_fraud; no verification fields changed in the KB files — those stay human-only);
-the eligibility gate verified to withhold provisions for both issues.
+`otp_fraud`, `online_impersonation`, `phishing` (3/14).
 
-**Immediate Next Task:** User reviews the `online_impersonation` population, then
-instructs the next issue (suggested next: `phishing` — same act, likely no new
-sections beyond candidates already present).
+**First human verification completed (2026-07-16):** IT Act 2000 sections 66C and 66D
+were manually verified by **Shreeharsha N L** against India Code (official text +
+source URL added by the verifier). `verification.status = manually_verified` and
+`provision_status = in_force` — the verifier's edit initially saved an invalid literal
+(`verification_done`) and missed `provision_status`; at the verifier's explicit
+direction in chat, Claude applied the clerical correction to the stated values (a
+loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
+**returns** 66C/66D for all three populated issues (`provisions_available`).
+
+**Immediate Next Task:** User reviews the `phishing` population, then instructs the
+next issue (suggested next: `identity_theft` — reuses 66C; may add UIDAI/TAFCOP
+portals).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -663,6 +669,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 12 — populated `phishing` (3/14): reused 66C (primary) + 66D, 4 prototypes, 5 action steps, extended cybercrime_gov_in + sanchar_saathi_chakshu (usage condition generalized to fraud communications). Human verification recorded: 66C/66D manually verified by Shreeharsha N L against India Code (official text + PDF URL added by verifier); Claude applied a disclosed clerical fix of the verifier's invalid enum literal (`verification_done` → `manually_verified`) and missing `provision_status = in_force` at the verifier's explicit direction — loader was rejecting the KB. Gate now returns both provisions for all 3 issues. Loader + 12/12 tests pass. KB state: 1 act, 2 sections (both in_force/verified), 3 issues, 3 portals | Claude |
 
 ---
 

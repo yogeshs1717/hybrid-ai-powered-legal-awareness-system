@@ -91,6 +91,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because impersonation scenarios can involve the fraudulent use of another person's identity features, such as their name, photographs, or credentials, to pose as them online."
         }
       ]
+    },
+    "phishing": {
+      "issue_id": "phishing",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Phishing / Fake Links and Websites",
+      "issue_definition": "The citizen received fake links, websites, login pages, emails, or SMS engineered to harvest credentials or payments - for example a fake bank page, a fake KYC-update link, or a fake bill-payment or delivery-fee page.",
+      "prototype_texts": [
+        "I got an SMS or email with a link that opened a page looking exactly like my bank or a government website and it asked me to enter my card details or login password.",
+        "A message warned that my electricity or KYC or SIM will be blocked today and asked me to click a link and update my details, and the link led to a fake page.",
+        "I clicked a link offering a gift, refund, or prize, and it asked me to fill in my phone number, bank details, or card information on a form.",
+        "A fake payment request or fake refund link was sent to me on a UPI or messaging app, designed so that accepting it would take money from my account."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because phishing pages and links are typically designed to capture and fraudulently use the citizen's passwords, card details, or other unique identification features."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a fake website, page, or message that pretends to be a real bank, company, or government service in order to deceive the citizen involves alleged cheating by personation through a computer resource."
+        }
+      ]
     }
   }
 }
