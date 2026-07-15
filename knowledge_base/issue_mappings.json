@@ -116,6 +116,26 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because a fake website, page, or message that pretends to be a real bank, company, or government service in order to deceive the citizen involves alleged cheating by personation through a computer resource."
         }
       ]
+    },
+    "identity_theft": {
+      "issue_id": "identity_theft",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Identity Theft / Misuse of Personal Identifiers",
+      "issue_definition": "The citizen's identity documents or identifiers (Aadhaar, PAN, photographs, credentials) have been misused by another person - for example loans, SIM cards, wallet accounts, or other services obtained in the citizen's name without their knowledge.",
+      "prototype_texts": [
+        "A SIM card or mobile connection was issued in my name in another place which I never applied for, probably using a copy of my Aadhaar.",
+        "My credit report shows a loan or credit card that I never took, and someone appears to have used my PAN details to get it.",
+        "A wallet or bank account was opened using my identity documents and it is being used for transactions, and recovery agents are now calling me.",
+        "Photocopies of my identity documents given somewhere were misused to obtain a connection, account, or loan in my name without my knowledge."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the fraudulent or dishonest use of another person's unique identification features - such as identity documents, numbers, or credentials - by someone else."
+        }
+      ]
     }
   }
 }

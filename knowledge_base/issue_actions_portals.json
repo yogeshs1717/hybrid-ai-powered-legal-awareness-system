@@ -77,6 +77,16 @@
         "Report the fraudulent SMS, call, or WhatsApp message on the Chakshu facility of Sanchar Saathi so the sender can be acted against."
       ],
       "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
+    },
+    "identity_theft": {
+      "action_steps": [
+        "If a loan, account, or transaction exists in your name that you never took, immediately inform the concerned bank, lender, or wallet company in writing that it is not yours and ask them to mark it as disputed.",
+        "File a complaint on the National Cyber Crime Reporting Portal with whatever proof you have (recovery calls, credit report entries, SIM details), and call the 1930 helpline if money was actually taken from you.",
+        "Check how many mobile connections exist in your name using the TAFCOP facility on Sanchar Saathi and report any SIM you did not take.",
+        "If your Aadhaar may have been misused, lock your Aadhaar biometrics through UIDAI's official service and raise a grievance with UIDAI.",
+        "Check your credit report for accounts you did not open, raise disputes with the credit bureau in writing, and keep every acknowledgment safely."
+      ],
+      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_tafcop", "uidai"]
     }
   },
   "portals": {
@@ -88,7 +98,7 @@
       "priority": "immediate",
       "usage_condition": null,
       "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
-      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing"]
+      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing", "identity_theft"]
     },
     "rbi_cms": {
       "portal_id": "rbi_cms",
@@ -109,6 +119,26 @@
       "usage_condition": "Use when the fraudulent communication (impersonation, fake link, or fraud attempt) came through a phone call, SMS, or WhatsApp, in addition to filing the main complaint on the cyber crime portal.",
       "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
       "supported_issue_ids": ["online_impersonation", "phishing"]
+    },
+    "sanchar_saathi_tafcop": {
+      "portal_id": "sanchar_saathi_tafcop",
+      "name": "Sanchar Saathi - TAFCOP (Know Mobile Connections in Your Name)",
+      "official_url": "https://sancharsaathi.gov.in",
+      "purpose": "Check how many mobile connections have been issued in your name and report SIM cards you did not authorize.",
+      "priority": "primary",
+      "usage_condition": "Use when you suspect that SIM cards or mobile connections were taken in your name without your knowledge.",
+      "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
+      "supported_issue_ids": ["identity_theft"]
+    },
+    "uidai": {
+      "portal_id": "uidai",
+      "name": "UIDAI (Aadhaar) Official Portal",
+      "official_url": "https://uidai.gov.in",
+      "purpose": "Lock or unlock Aadhaar biometrics and raise grievances about suspected misuse of your Aadhaar.",
+      "priority": "secondary",
+      "usage_condition": "Use when the identity misuse involves, or may involve, your Aadhaar number or biometrics.",
+      "official_source": "Unique Identification Authority of India, Government of India",
+      "supported_issue_ids": ["identity_theft"]
     }
   }
 }
