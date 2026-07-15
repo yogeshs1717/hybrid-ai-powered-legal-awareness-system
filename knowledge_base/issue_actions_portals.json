@@ -57,6 +57,16 @@
         "Follow up with your bank in writing about reversal or chargeback of the unauthorised transaction, and keep copies of every communication."
       ],
       "portal_ids": ["cybercrime_gov_in", "rbi_cms"]
+    },
+    "online_impersonation": {
+      "action_steps": [
+        "If any money was transferred because of the impersonation, contact your bank immediately and call the national cyber crime helpline 1930 to report the financial fraud.",
+        "Preserve evidence before it can be deleted: take screenshots of the fake profile or messages, and note the profile link, caller numbers, and dates and times.",
+        "Report the fake profile or account to the platform (social media site, messaging app, or website) using its impersonation reporting option and request its removal.",
+        "File a complaint on the National Cyber Crime Reporting Portal with the collected evidence and keep the acknowledgment number for follow-up.",
+        "Inform the people being contacted in your name - a simple warning message prevents relatives, friends, or colleagues from being cheated."
+      ],
+      "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_chakshu"]
     }
   },
   "portals": {
@@ -68,7 +78,7 @@
       "priority": "immediate",
       "usage_condition": null,
       "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
-      "supported_issue_ids": ["otp_fraud"]
+      "supported_issue_ids": ["otp_fraud", "online_impersonation"]
     },
     "rbi_cms": {
       "portal_id": "rbi_cms",
@@ -79,6 +89,16 @@
       "usage_condition": "Use only if you have already complained to your bank about the unauthorised transaction and it has not been resolved satisfactorily within the bank's stipulated time (typically 30 days).",
       "official_source": "Reserve Bank of India",
       "supported_issue_ids": ["otp_fraud"]
+    },
+    "sanchar_saathi_chakshu": {
+      "portal_id": "sanchar_saathi_chakshu",
+      "name": "Sanchar Saathi - Chakshu (Report Suspected Fraud Communication)",
+      "official_url": "https://sancharsaathi.gov.in",
+      "purpose": "Report suspected fraud calls, SMS, or WhatsApp communications, including impersonation of officials, companies, or known persons.",
+      "priority": "secondary",
+      "usage_condition": "Use when the impersonation happened through a phone call, SMS, or WhatsApp communication, in addition to filing the main complaint on the cyber crime portal.",
+      "official_source": "Department of Telecommunications, Ministry of Communications, Government of India",
+      "supported_issue_ids": ["online_impersonation"]
     }
   }
 }

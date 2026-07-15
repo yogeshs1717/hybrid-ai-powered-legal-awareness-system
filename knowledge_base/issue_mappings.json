@@ -66,6 +66,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition involves alleged impersonation of a bank, company, or official through a communication device in order to deceive the citizen."
         }
       ]
+    },
+    "online_impersonation": {
+      "issue_id": "online_impersonation",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Online Impersonation / Fake Identity",
+      "issue_definition": "Someone poses online or via a phone/digital channel as a real person, official, or organization - a fake profile, a fake officer call, a spoofed business identity - to deceive, intimidate, or defraud, where the scenario does not center on OTP extraction or a fake login page.",
+      "prototype_texts": [
+        "Someone has created a fake social media profile using my name and photos and is contacting people I know to ask them for money.",
+        "A person called claiming to be a police officer or government official and threatened action against my family member unless money was paid to settle a case.",
+        "Somebody is pretending to be my employer or a senior person on a messaging app and instructing colleagues to make urgent purchases or money transfers.",
+        "A fake profile pretending to be a real company or a known person deceived me during online conversations and took money from me under false pretences."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns alleged cheating by pretending to be another person, official, or organization through a communication device or computer resource."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because impersonation scenarios can involve the fraudulent use of another person's identity features, such as their name, photographs, or credentials, to pose as them online."
+        }
+      ]
     }
   }
 }
