@@ -87,6 +87,16 @@
         "Check your credit report for accounts you did not open, raise disputes with the credit bureau in writing, and keep every acknowledgment safely."
       ],
       "portal_ids": ["cybercrime_gov_in", "sanchar_saathi_tafcop", "uidai"]
+    },
+    "unauthorized_account_access": {
+      "action_steps": [
+        "Try to recover the account immediately using the platform's official account-recovery option, then change the password and enable two-factor authentication on it and on any account that shared the same password.",
+        "If the account has saved cards, bank links, or wallet balances, inform your bank or the payment provider immediately, and call the 1930 cyber crime helpline if any money was taken.",
+        "Report the takeover to the platform through its hacked-account or compromised-account reporting form so the account can be secured or suspended.",
+        "Preserve evidence: screenshots of unauthorized activity, alert emails about password or recovery changes, and the dates and times you noticed the misuse.",
+        "File a complaint on the National Cyber Crime Reporting Portal with the evidence, and warn your contacts if the account is being used to message them."
+      ],
+      "portal_ids": ["cybercrime_gov_in"]
     }
   },
   "portals": {
@@ -98,7 +108,7 @@
       "priority": "immediate",
       "usage_condition": null,
       "official_source": "Ministry of Home Affairs (Indian Cyber Crime Coordination Centre), Government of India",
-      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing", "identity_theft"]
+      "supported_issue_ids": ["otp_fraud", "online_impersonation", "phishing", "identity_theft", "unauthorized_account_access"]
     },
     "rbi_cms": {
       "portal_id": "rbi_cms",

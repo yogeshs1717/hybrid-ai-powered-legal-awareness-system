@@ -136,6 +136,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the fraudulent or dishonest use of another person's unique identification features - such as identity documents, numbers, or credentials - by someone else."
         }
       ]
+    },
+    "unauthorized_account_access": {
+      "issue_id": "unauthorized_account_access",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Unauthorized Account Access / Account Takeover",
+      "issue_definition": "The citizen's existing email, social media, messaging, or financial account has been accessed or taken over without authorization - for example the password was changed, the citizen is locked out, or the account is being misused.",
+      "prototype_texts": [
+        "My email or social media account was hacked, the password and recovery details were changed, and I cannot log in anymore.",
+        "Someone took over my messaging account and is sending messages to my contacts asking for money or posting things as me.",
+        "I found logins and activity on my account that I never did, and someone has been using my saved cards or account details for orders.",
+        "My account was accessed without my permission after someone got hold of my password, and it is being misused."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns access to the citizen's account, system, or data without permission, for which this provision provides a compensation-oriented remedy."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because taking over or misusing another person's account dishonestly or fraudulently involves the computer-related offences this provision addresses."
+        }
+      ]
     }
   }
 }
