@@ -280,7 +280,7 @@
         "2_11": {
           "section_number": "2(11)",
           "official_section_title": "Definition of 'deficiency'",
-          "official_text": null,
+          "official_text": "\"deficiency\" means any fault, imperfection, shortcoming or inadequacy in the quality, nature\nand manner of performance which is required to be maintained by or under any law for the time being\nin force or has been undertaken to be performed by a person in pursuance of a contract or otherwise in\nrelation to any service and includes—\n(i) any act of negligence or omission or commission by such person which causes loss or\ninjury to the consumer; and\n(ii) deliberate withholding of relevant information by such person to the consumer;",
           "simplified_explanation": "This provision defines 'deficiency' in a service - broadly, any fault, imperfection, shortcoming, or inadequacy in the quality or manner of performance of a service that is required by law or promised in a contract, including negligent acts or withholding of relevant information by the provider.",
           "applicability_notes": "May be relevant where a paid service was not delivered, was delivered far below the promised standard, or caused loss due to the provider's negligence. Whether a specific situation meets the statutory definition depends on facts a qualified professional should assess.",
           "keywords": [
@@ -292,11 +292,11 @@
             "quality of service"
           ],
           "citation": "Section 2(11), Consumer Protection Act, 2019",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         }
       }
