@@ -314,6 +314,26 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the detention of a vehicle by an authorised officer and its release procedure, which is what this provision addresses."
         }
       ]
+    },
+    "document_seizure_or_retention": {
+      "issue_id": "document_seizure_or_retention",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Document Seizure or Retention",
+      "issue_definition": "An enforcement authority takes, seizes, or retains the citizen's licence, registration certificate, or another traffic-related document, and the citizen questions the authority, basis, or procedure for the retention. The document has physically been taken - distinct from a dispute about whether a document is valid or accepted.",
+      "prototype_texts": [
+        "A traffic officer took away my driving licence or RC on the spot and did not give me any receipt or paper about it.",
+        "The police kept my original documents during checking and told me to collect them later, but nobody is returning them or telling me the procedure.",
+        "My licence was seized saying it will be sent to court, but the challan copy does not mention any seizure of documents.",
+        "The authorities collected the permits and licences of drivers during a drive and are retaining them for days without any acknowledgment."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns an officer seizing or impounding a traffic document and the acknowledgment and procedure that accompany such a seizure, which is what this provision addresses."
+        }
+      ]
     }
   }
 }

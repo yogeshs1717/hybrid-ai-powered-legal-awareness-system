@@ -306,12 +306,34 @@
       "act_year": 1988,
       "short_name": "MV Act 1988",
       "official_source_name": "India Code",
-      "official_source_url": null,
+      "official_source_url": "https://www.indiacode.nic.in/bitstream/123456789/15390/1/the_motor_vehicles_act%2C_1988.pdf",
       "sections": {
+        "206": {
+          "section_number": "206",
+          "official_section_title": "Power of police officer to impound document",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns the power of an authorised officer to seize or impound documents such as a driving licence in specified situations, and the giving of a temporary acknowledgment or receipt for the seized document.",
+          "applicability_notes": "May be relevant where an officer has taken or retained the citizen's licence, registration certificate, or another traffic document, and the citizen wants to understand the basis, the acknowledgment they should receive, and how the document is returned. Whether a specific seizure was proper depends on facts a qualified professional should assess.",
+          "keywords": [
+            "document seizure",
+            "impound",
+            "licence taken",
+            "RC taken",
+            "acknowledgment",
+            "receipt"
+          ],
+          "citation": "Section 206, Motor Vehicles Act, 1988",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
         "207": {
           "section_number": "207",
           "official_section_title": "Power to detain vehicles used without certificate of registration, permit, etc.",
-          "official_text": null,
+          "official_text": "An Act to consolidate and amend the law relating to motor vehicles.\nBe it enacted by parliament in the Thirty-ninth Year of the Republic of India\nas follows",
           "simplified_explanation": "This provision concerns the power of an authorised officer to detain a vehicle in certain situations - such as when it is being used without a valid certificate of registration or permit, or by a driver without a valid licence - and the procedure for its release.",
           "applicability_notes": "May be relevant where a citizen's vehicle has been detained or impounded and they want to understand the stated legal ground and the release procedure. Whether the detention was proper depends on facts (registration, permit, licence status) that a qualified professional should assess.",
           "keywords": [
@@ -323,11 +345,11 @@
             "release procedure"
           ],
           "citation": "Section 207, Motor Vehicles Act, 1988",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         }
       }

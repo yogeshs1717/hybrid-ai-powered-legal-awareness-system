@@ -187,6 +187,18 @@
       "portal_ids": [
         "parivahan"
       ]
+    },
+    "document_seizure_or_retention": {
+      "action_steps": [
+        "At the spot, ask for a temporary acknowledgment or seizure receipt for the document taken, and note the officer's name, buckle or ID number, and the stated reason.",
+        "Check whether the challan or any paper you were given mentions the seizure - if it does not, point this out and request it in writing.",
+        "Ask specifically where and when the document will be returned or produced (for example whether it is being sent to a court or an office), and note that down.",
+        "If the document is retained for long or without explanation, submit a written request to the concerned traffic or transport authority asking for its return or status, and keep a copy.",
+        "Keep the acknowledgment, challan, and all communications safely - they are your record that the document is with the authority and not lost by you."
+      ],
+      "portal_ids": [
+        "parivahan"
+      ]
     }
   },
   "portals": {
@@ -290,13 +302,14 @@
     "parivahan": {
       "portal_id": "parivahan",
       "name": "Parivahan (Ministry of Road Transport and Highways)",
-      "official_url": null,
+      "official_url": "https://parivahan.gov.in/",
       "purpose": "Access vehicle and transport-related services and grievance options of the transport department.",
       "priority": "secondary",
       "usage_condition": "Use for transport-department services or to escalate a grievance about the detention process, in addition to dealing with the detaining authority directly.",
       "official_source": "Ministry of Road Transport and Highways, Government of India",
       "supported_issue_ids": [
-        "vehicle_detention"
+        "vehicle_detention",
+        "document_seizure_or_retention"
       ]
     }
   }
