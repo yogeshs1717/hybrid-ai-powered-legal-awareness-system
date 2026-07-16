@@ -58,11 +58,20 @@ taxonomy_supported issues only, stop for user review after each. Populated so fa
 consumer_issues 4/5; `other_online_financial_fraud` stays
 provision_research_required).
 
-**Verification state:** 7 of 11 sections human-verified + in_force (66C/66D by
-Shreeharsha N L; 43 [text corrected], 66, 2(10), 35, 84 by Yogesh; both act URLs set).
-Pending verification: CPA **2(47)**, **2(28)**, **21**, **2(11)**. Portal URLs still
-null: `consumer_helpline_ingram` (candidate consumerhelpline.gov.in), `edaakhil`
-(candidate edaakhil.nic.in).
+**Verification state:** 10 of 11 sections human-verified + in_force (66C/66D by
+Shreeharsha N L; 43, 66, 2(10), 35, 84, 2(47), 2(28), 21 by Yogesh; both act URLs
+set). Pending verification: CPA **2(11)** only (restored from HEAD after accidental
+deletion — see batch 19). Portal URLs still null: `consumer_helpline_ingram`
+(candidate consumerhelpline.gov.in), `edaakhil` (candidate edaakhil.nic.in).
+
+**PERMANENT WORKFLOW RULE (2026-07-16):** after every modification to any KB JSON
+file — by anyone — (1) validate every modified JSON file parses, (2) run the loader,
+(3) run the tests; only then report the task complete. Never report a KB task complete
+with a syntactically invalid JSON file. **Verifier-paste guidance:** pasting statutory
+text directly into the JSON in an editor keeps corrupting the file (raw newlines,
+unescaped quotes, collapsed neighboring fields, and once an accidental deletion of an
+adjacent section). Safer: paste the text to Claude in chat, or into a scratch .txt
+file, and let the tooling insert it with proper escaping.
 
 **First human verification completed (2026-07-16):** IT Act 2000 sections 66C and 66D
 were manually verified by **Shreeharsha N L** against India Code (official text +
@@ -680,6 +689,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 19 — repository repair: verifier's post-commit paste (verifying CPA 2(47)/2(28)/21 with statutory text) broke acts_and_sections.json — unescaped quotes at value start (e.g. `" "unfair trade practice" means…`), raw newlines across ~90 lines, collapsed neighboring fields, and accidental deletion of the entire §2(11) record. Repaired surgically: three official_text values re-encoded (text preserved verbatim), §2(11) restored exactly from HEAD (still pending/unverified). All three KB files strict-valid; loader + 12/12 tests pass; gate serves newly verified 2(47)/2(28)/21 and withholds restored 2(11). Permanent rule added: validate JSON + loader + tests after every KB edit; verifier advised to route statutory-text pastes through tooling instead of direct editor edits | Claude |
 | 2026-07-16 | Batch 18 — populated `service_deficiency` (9/14): new candidate CPA §2(11) deficiency definition (pending/unverified, text null), reuse of verified §35; 4 prototypes, 2 Layer-B rationales, 5 action steps (promised-vs-delivered evidence first), both consumer portals extended. Gate: serves verified §35 only, withholds 2(11); 8 prior issues regression-checked. Loader + 12/12 tests pass. KB: 2 acts, 11 sections (7 verified), 9 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 17 — verifier corrected §43 official_text (43A mismatch RESOLVED); Claude clerically re-repaired JSON after the paste (raw newlines; content verbatim). Populated `misleading_advertisement` (8/14): new candidate CPA sections 2(28) definition + 21 CCPA powers (pending/unverified, text null), reuse of verified §35; 4 prototypes, 3 Layer-B rationales, 5 action steps (save-the-ad first), both consumer portals extended. Gate: serves verified §35 only, withholds 2(28)/21; 7 prior issues regression-checked. Loader + 12/12 tests pass. KB: 2 acts, 10 sections (7 verified), 8 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 16 — populated `refund_denial` (7/14): new candidate CPA §2(47) (UTP definition; pending/unverified, text null) + reuse of verified §35; 4 prototypes, 2 Layer-B rationales, 5 action steps (written refund demand first), reused both consumer portals. Also this batch: clerically repaired acts_and_sections.json after verifier paste made it invalid JSON (raw newlines in strings + one unescaped quote — content preserved verbatim, re-serialized); recorded new verification state (7/8 sections verified by Shreeharsha N L / Yogesh); **flagged §43 official_text mismatch (contains §43A's text) for human correction — not touched**. Gate: refund_denial serves verified §35 only, withholds 2(47); all 6 prior issues re-checked against new verification state (acct_access 2, defective 3). Loader + 12/12 tests pass. KB: 2 acts, 8 sections (7 verified), 7 issues, 7 portals | Claude |
