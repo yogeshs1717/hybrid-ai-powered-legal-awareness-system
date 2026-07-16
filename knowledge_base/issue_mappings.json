@@ -269,6 +269,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by a deficient service may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
         }
       ]
+    },
+    "unfair_trade_practice": {
+      "issue_id": "unfair_trade_practice",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Unfair Trade Practice",
+      "issue_definition": "A deceptive commercial practice at or around the sale that is not primarily an advertising claim and not a product defect - for example charging above the printed MRP, a demo or old item sold as new and sealed, fake or inflated billing, refusal to issue a bill, or forced bundling of extra items to get a discount.",
+      "prototype_texts": [
+        "The shop charged me more than the printed MRP on the product and claimed extra charges apply.",
+        "I was sold a used, demo, or old item as if it were a brand new sealed product.",
+        "The seller gave a fake or inflated bill, or refused to give a proper bill for what I paid.",
+        "I was forced to buy extra items or an add-on I did not want in order to get the offer or discount, without the real prices being told to me."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns deceptive commercial practices at the point of sale, which is what the statutory definition of 'unfair trade practice' addresses across its clauses."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by an unfair trade practice may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
+        }
+      ]
     }
   }
 }

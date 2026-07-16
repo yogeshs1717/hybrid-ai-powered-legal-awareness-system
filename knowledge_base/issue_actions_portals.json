@@ -162,6 +162,19 @@
         "consumer_helpline_ingram",
         "edaakhil"
       ]
+    },
+    "unfair_trade_practice": {
+      "action_steps": [
+        "Keep the evidence of the practice: the bill or receipt, the product packaging showing the MRP, and photos or notes of what was charged versus what was promised.",
+        "Raise the issue with the seller in writing, point out the specific unfair practice (overcharging, wrong billing, forced bundling), and ask for a corrected bill or refund - keep proof of your complaint.",
+        "For overcharging above MRP or weight or measurement issues, you may also raise it with the Legal Metrology department of your state in addition to the consumer route.",
+        "Register a grievance with the National Consumer Helpline by calling 1915 or through its online portal.",
+        "If it remains unresolved, you can file a formal consumer complaint before the appropriate Consumer Commission through the e-daakhil facility."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
     }
   },
   "portals": {
@@ -242,7 +255,8 @@
         "defective_product",
         "refund_denial",
         "misleading_advertisement",
-        "service_deficiency"
+        "service_deficiency",
+        "unfair_trade_practice"
       ]
     },
     "edaakhil": {
@@ -257,7 +271,8 @@
         "defective_product",
         "refund_denial",
         "misleading_advertisement",
-        "service_deficiency"
+        "service_deficiency",
+        "unfair_trade_practice"
       ]
     }
   }

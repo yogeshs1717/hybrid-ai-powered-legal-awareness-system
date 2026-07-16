@@ -54,9 +54,11 @@ unchanged). Do not modify unless explicitly instructed.
 taxonomy_supported issues only, stop for user review after each. Populated so far:
 `otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
 `unauthorized_account_access`, `defective_product`, `refund_denial`,
-`misleading_advertisement`, `service_deficiency` (9/14 — cyber_fraud complete;
-consumer_issues 4/5; `other_online_financial_fraud` stays
-provision_research_required).
+`misleading_advertisement`, `service_deficiency`, `unfair_trade_practice` (10/14 —
+**cyber_fraud and consumer_issues domains complete**; `other_online_financial_fraud`
+stays provision_research_required). Remaining 4 supported issues: traffic
+(document_acceptance_or_verification, document_seizure_or_retention, vehicle_detention)
+and contractual (breach_of_contract).
 
 **Verification state:** 10 of 11 sections human-verified + in_force (66C/66D by
 Shreeharsha N L; 43, 66, 2(10), 35, 84, 2(47), 2(28), 21 by Yogesh; both act URLs
@@ -86,10 +88,10 @@ direction in chat, Claude applied the clerical correction to the stated values (
 loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
 **returns** 66C/66D for all three populated issues (`provisions_available`).
 
-**Immediate Next Task:** User reviews the `service_deficiency` population and
-optionally verifies the four pending CPA sections + the two consumer portal URLs; then
-instructs the next issue (suggested next: `unfair_trade_practice` — completes the
-consumer domain; reuses §2(47) candidate and verified §35, likely no new sections).
+**Immediate Next Task:** User reviews the `unfair_trade_practice` population; then
+instructs the next issue. Suggested next: open the traffic domain with
+`document_acceptance_or_verification` (needs MV Act 1988 + likely CMV Rules 1989 as new
+candidate act/sections) or `breach_of_contract` (needs Indian Contract Act 1872).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -693,6 +695,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 22 — populated `unfair_trade_practice` (10/14; **consumer_issues domain complete**): reused verified CPA §2(47) (primary) + §35, no new sections; 4 transaction-centered prototypes (kept distinct from misleading_advertisement's ad-centered ones per support-review boundary), 5 action steps (evidence first, Legal Metrology note for MRP overcharge), both consumer portals extended. Gate serves both verified provisions; all 3 JSON valid; loader + 12/12 tests pass. KB: 2 acts, 11 sections, 10 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 21 — integrity check: user verified CPA 2(11) (in_force, Yogesh) and pasted its statutory text, again breaking JSON (unescaped quotes at value start `""deficiency"`, raw newlines, stray trailing comma). Re-escaped the 2(11) official_text verbatim (dropped one stray trailing paste-comma so text ends at `consumer;`, matching the statute); semantic diff confirmed 2(11) was the ONLY section changed vs HEAD, in exactly the 3 fields the user updated. All 11 sections now verified+in_force; service_deficiency serves 2(11)+35. All 3 JSON valid; loader + 12/12 tests + gate pass | Claude |
 | 2026-07-16 | Batch 20 — integrity audit after editor undo/redo: stale buffers had re-saved the pre-repair broken acts_and_sections.json (identical corruption, char 18831) and an old issue_actions_portals.json (missing guidance for refund_denial/misleading_advertisement/service_deficiency and portal issue-extensions) over commit 7607028's repairs. Semantic diff vs HEAD found exactly one piece of new user work in the stale buffers: confirmed portal URLs for consumer_helpline_ingram and edaakhil. Restored both files from HEAD, re-applied the two user-confirmed URLs, deleted stray diff.txt debug dump. All three KB files valid; loader + 12/12 tests + gate pass; 2(11) present (pending); 2(47)/2(28)/21 verifications intact | Claude |
 | 2026-07-16 | Batch 19 — repository repair: verifier's post-commit paste (verifying CPA 2(47)/2(28)/21 with statutory text) broke acts_and_sections.json — unescaped quotes at value start (e.g. `" "unfair trade practice" means…`), raw newlines across ~90 lines, collapsed neighboring fields, and accidental deletion of the entire §2(11) record. Repaired surgically: three official_text values re-encoded (text preserved verbatim), §2(11) restored exactly from HEAD (still pending/unverified). All three KB files strict-valid; loader + 12/12 tests pass; gate serves newly verified 2(47)/2(28)/21 and withholds restored 2(11). Permanent rule added: validate JSON + loader + tests after every KB edit; verifier advised to route statutory-text pastes through tooling instead of direct editor edits | Claude |
