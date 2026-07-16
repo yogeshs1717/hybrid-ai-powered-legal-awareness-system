@@ -294,6 +294,26 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by an unfair trade practice may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
         }
       ]
+    },
+    "vehicle_detention": {
+      "issue_id": "vehicle_detention",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Vehicle Detention / Impoundment",
+      "issue_definition": "The citizen's vehicle is detained or impounded and the citizen questions the basis or procedure - for example detention for alleged missing registration, permit, or licence, prolonged retention, or an unclear release process.",
+      "prototype_texts": [
+        "The traffic police or transport authority has detained or impounded my vehicle and I want to know on what ground and how to get it released.",
+        "My vehicle was seized and kept at the station or pound, and there is no clear written order explaining why it is being held.",
+        "My auto or commercial vehicle was detained saying the permit was expired, but I have the valid papers and the vehicle is standing idle causing daily loss.",
+        "They towed and detained my vehicle and are asking for charges and a fine before releasing it, without explaining the breakup or giving a receipt."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "207",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the detention of a vehicle by an authorised officer and its release procedure, which is what this provision addresses."
+        }
+      ]
     }
   }
 }

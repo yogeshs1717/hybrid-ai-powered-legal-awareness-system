@@ -175,6 +175,18 @@
         "consumer_helpline_ingram",
         "edaakhil"
       ]
+    },
+    "vehicle_detention": {
+      "action_steps": [
+        "Ask the detaining officer for the written detention order or seizure memo, and note the stated legal ground, the officer's details, and the date and time.",
+        "Collect and keep your vehicle documents - registration certificate, permit (if applicable), insurance, and driving licence - as producing valid papers is usually central to release.",
+        "Ask about the release procedure, any fee or fine payable, and insist on an official receipt for any amount you pay.",
+        "If you believe the detention or the process is improper, escalate in writing to the concerned transport authority or its grievance channel, keeping copies.",
+        "Keep every document, receipt, and communication safely as a record of the detention and the release steps."
+      ],
+      "portal_ids": [
+        "parivahan"
+      ]
     }
   },
   "portals": {
@@ -273,6 +285,18 @@
         "misleading_advertisement",
         "service_deficiency",
         "unfair_trade_practice"
+      ]
+    },
+    "parivahan": {
+      "portal_id": "parivahan",
+      "name": "Parivahan (Ministry of Road Transport and Highways)",
+      "official_url": null,
+      "purpose": "Access vehicle and transport-related services and grievance options of the transport department.",
+      "priority": "secondary",
+      "usage_condition": "Use for transport-department services or to escalate a grievance about the detention process, in addition to dealing with the detaining authority directly.",
+      "official_source": "Ministry of Road Transport and Highways, Government of India",
+      "supported_issue_ids": [
+        "vehicle_detention"
       ]
     }
   }

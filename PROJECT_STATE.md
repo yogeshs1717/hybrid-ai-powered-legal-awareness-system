@@ -54,21 +54,28 @@ unchanged). Do not modify unless explicitly instructed.
 taxonomy_supported issues only, stop for user review after each. Populated so far:
 `otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
 `unauthorized_account_access`, `defective_product`, `refund_denial`,
-`misleading_advertisement`, `service_deficiency`, `unfair_trade_practice` (10/14 —
-**cyber_fraud and consumer_issues domains complete**; `other_online_financial_fraud`
-stays provision_research_required). Remaining 4 supported issues: traffic
-(document_acceptance_or_verification, document_seizure_or_retention, vehicle_detention)
-and contractual (breach_of_contract).
+`misleading_advertisement`, `service_deficiency`, `unfair_trade_practice`,
+`vehicle_detention` (11/14 — cyber_fraud + consumer_issues complete; traffic 1/3
+supported). Remaining 3 supported issues: traffic
+(document_acceptance_or_verification, document_seizure_or_retention) and contractual
+(breach_of_contract).
+
+**Note on workplace_wage:** user's latest roadmap says "no longer deferred," but all 4
+wage issues are `provision_research_required` (not taxonomy_supported) pending the
+Code-on-Wages research (`docs/wage_law_research.md`, still absent). Per governance they
+are NOT yet populatable as supported issues — flag for the user when the queue reaches
+them.
 
 **Verification state:** 10 of 11 sections human-verified + in_force (66C/66D by
 Shreeharsha N L; 43, 66, 2(10), 35, 84, 2(47), 2(28), 21 by Yogesh; both act URLs
-set). All 11 sections now human-verified + in_force (CPA **2(11)** verified by Yogesh
-2026-07-16 — its statutory text paste re-escaped in batch 21). Portal URLs
-**confirmed by the user (2026-07-16)**:
+set). Pending verification: **MV Act 1988 §207** (new candidate for vehicle_detention;
+official_text null, act URL null). All 11 prior sections human-verified + in_force.
+Portal URLs **confirmed by the user (2026-07-16)**:
 `consumer_helpline_ingram` → consumerhelpline.gov.in; `edaakhil` → an india.gov.in
 services-directory page for the e-daakhil portal (observation: this is the national
 portal's directory entry rather than the filing site itself — user's choice retained;
-may be revisited).
+may be revisited). New portal `parivahan` (MoRTH) added with url null — fetch
+confirmation failed this session (connection reset); candidate parivahan.gov.in.
 
 **PERMANENT WORKFLOW RULE (2026-07-16):** after every modification to any KB JSON
 file — by anyone — (1) validate every modified JSON file parses, (2) run the loader,
@@ -88,10 +95,11 @@ direction in chat, Claude applied the clerical correction to the stated values (
 loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
 **returns** 66C/66D for all three populated issues (`provisions_available`).
 
-**Immediate Next Task:** User reviews the `unfair_trade_practice` population; then
-instructs the next issue. Suggested next: open the traffic domain with
-`document_acceptance_or_verification` (needs MV Act 1988 + likely CMV Rules 1989 as new
-candidate act/sections) or `breach_of_contract` (needs Indian Contract Act 1872).
+**Immediate Next Task:** User reviews the `vehicle_detention` population (and
+optionally verifies MV Act §207 + the parivahan URL); then instructs the next issue.
+Suggested next: `document_seizure_or_retention` (MV Act 1988 §206, reuses the MV Act
+record) or `document_acceptance_or_verification` (needs §130 + likely CMV Rules 1989 +
+IT Act §4).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -695,6 +703,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 23 — populated `vehicle_detention` (11/14; **traffic domain opened**): new act `mv_act_1988` (Motor Vehicles Act 1988; India Code URL null) + candidate §207 (detain vehicles; pending/unverified, official_text null); 4 prototypes, 1 Layer-B rationale, 5 action steps (get written detention order first; no FIR/criminal steps), new portal `parivahan` (MoRTH; url null, fetch failed — candidate parivahan.gov.in; secondary/conditional). Gate withholds unverified §207 (safe state); 10 prior issues regression-checked. All 3 JSON valid; loader + 12/12 tests pass. KB: 3 acts, 12 sections, 11 issues, 8 portals | Claude |
 | 2026-07-16 | Batch 22 — populated `unfair_trade_practice` (10/14; **consumer_issues domain complete**): reused verified CPA §2(47) (primary) + §35, no new sections; 4 transaction-centered prototypes (kept distinct from misleading_advertisement's ad-centered ones per support-review boundary), 5 action steps (evidence first, Legal Metrology note for MRP overcharge), both consumer portals extended. Gate serves both verified provisions; all 3 JSON valid; loader + 12/12 tests pass. KB: 2 acts, 11 sections, 10 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 21 — integrity check: user verified CPA 2(11) (in_force, Yogesh) and pasted its statutory text, again breaking JSON (unescaped quotes at value start `""deficiency"`, raw newlines, stray trailing comma). Re-escaped the 2(11) official_text verbatim (dropped one stray trailing paste-comma so text ends at `consumer;`, matching the statute); semantic diff confirmed 2(11) was the ONLY section changed vs HEAD, in exactly the 3 fields the user updated. All 11 sections now verified+in_force; service_deficiency serves 2(11)+35. All 3 JSON valid; loader + 12/12 tests + gate pass | Claude |
 | 2026-07-16 | Batch 20 — integrity audit after editor undo/redo: stale buffers had re-saved the pre-repair broken acts_and_sections.json (identical corruption, char 18831) and an old issue_actions_portals.json (missing guidance for refund_denial/misleading_advertisement/service_deficiency and portal issue-extensions) over commit 7607028's repairs. Semantic diff vs HEAD found exactly one piece of new user work in the stale buffers: confirmed portal URLs for consumer_helpline_ingram and edaakhil. Restored both files from HEAD, re-applied the two user-confirmed URLs, deleted stray diff.txt debug dump. All three KB files valid; loader + 12/12 tests + gate pass; 2(11) present (pending); 2(47)/2(28)/21 verifications intact | Claude |

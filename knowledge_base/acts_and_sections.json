@@ -300,6 +300,37 @@
           }
         }
       }
+    },
+    "mv_act_1988": {
+      "official_act_name": "Motor Vehicles Act, 1988",
+      "act_year": 1988,
+      "short_name": "MV Act 1988",
+      "official_source_name": "India Code",
+      "official_source_url": null,
+      "sections": {
+        "207": {
+          "section_number": "207",
+          "official_section_title": "Power to detain vehicles used without certificate of registration, permit, etc.",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns the power of an authorised officer to detain a vehicle in certain situations - such as when it is being used without a valid certificate of registration or permit, or by a driver without a valid licence - and the procedure for its release.",
+          "applicability_notes": "May be relevant where a citizen's vehicle has been detained or impounded and they want to understand the stated legal ground and the release procedure. Whether the detention was proper depends on facts (registration, permit, licence status) that a qualified professional should assess.",
+          "keywords": [
+            "vehicle detention",
+            "impound",
+            "detain",
+            "registration",
+            "permit",
+            "release procedure"
+          ],
+          "citation": "Section 207, Motor Vehicles Act, 1988",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        }
+      }
     }
   }
 }
