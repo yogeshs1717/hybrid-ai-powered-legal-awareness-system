@@ -37,8 +37,9 @@ Windows repository. That was a governance failure. It is corrected below.
 
 ## SECTION 1 — CURRENT PHASE
 
-**Overall Status:** Phase 1B — ML Service Foundation (structural implementation
-complete; verified; no data, no trained model).
+**Overall Status:** Phase 1 KB milestone COMPLETE (tag `phase1-kb-complete`) — all 14
+taxonomy_supported issues populated, 16/17 provisions human-verified. Now training the
+Domain Classifier on frozen Dataset V1.
 
 **Current Focus:** Governance is complete and **FROZEN** (`CLAUDE.md` Rev 4,
 `TRAINING_DATA_PLAN.md`, `docs/issue_support_review.md`, and the KB schemas after the
@@ -71,11 +72,11 @@ them.
 
 **Verification state:** 10 of 11 sections human-verified + in_force (66C/66D by
 Shreeharsha N L; 43, 66, 2(10), 35, 84, 2(47), 2(28), 21 by Yogesh; both act URLs
-set). Pending verification: **MV Act 1988 §130**, **IT Act §4**, and **Contract Act 1872
-§39 + §73** (new act `contract_act_1872`, India Code URL null) — 4 candidates,
-official_text null. The other 13 sections are human-verified + in_force. New portal
-`nalsa` (nalsa.gov.in, fetch-confirmed official; legal-aid conditional). Portal URLs
-**confirmed by the user (2026-07-16)**:
+set). Pending verification: **IT Act §4** only (the other **16 of 17** sections are
+human-verified + in_force; MV Act §130 and Contract Act §39/§73 verified by Yogesh
+2026-07-16, Contract Act India Code URL confirmed). New portal `nalsa` (nalsa.gov.in,
+fetch-confirmed official; legal-aid conditional). Portal URLs **confirmed by the user
+(2026-07-16)**:
 `consumer_helpline_ingram` → consumerhelpline.gov.in; `edaakhil` → an india.gov.in
 services-directory page for the e-daakhil portal (observation: this is the national
 portal's directory entry rather than the filing site itself — user's choice retained;
@@ -708,6 +709,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 27 — finalize KB milestone: re-escaped verifier paste (MV Act §130, Contract Act §39/§73 verified + Contract Act URL set; raw newlines/unquoted values, verbatim preserved); 16/17 sections now verified+in_force (only IT Act §4 pending). Tagged `phase1-kb-complete`. All validations pass | Claude |
 | 2026-07-16 | Batch 26 — populated `breach_of_contract` (**14/14 supported issues COMPLETE**): new act `contract_act_1872` (India Code URL null) with candidate §§39, 73 (pending/unverified, text null); 4 prototypes (negotiated-agreement boundary vs consumer/wage siblings), 2 rationales, 5 steps (evidence → written demand → negotiate → professional advice → legal aid; no court procedure), new portal `nalsa` (fetch-confirmed, conditional legal aid). All validations pass. KB: 4 acts, 17 sections (13 verified), 14 issues, 9 portals | Claude |
 | 2026-07-16 | Batch 25 — added Success Reporting rule to CLAUDE.md §18 (concise success reports; all checks still executed, user-directed change). Pre-flight repair: user's §206 verification paste (unquoted value + raw newlines) and §207 correct-text re-paste re-escaped verbatim — §207 preamble mismatch RESOLVED; §206 + §207 both verified/in_force with correct texts. Populated `document_acceptance_or_verification` (13/14; traffic supported issues complete): new candidates MV Act §130 + IT Act §4 (pending/unverified, text null), 4 prototypes (document-stays-with-citizen boundary), 2 rationales, 5 steps, parivahan reused. All validations pass. KB: 3 acts, 15 sections (13 verified), 13 issues, 8 portals | Claude |
 | 2026-07-16 | Batch 24 — pre-flight found the recurring paste corruption: user's post-commit verification of §207 (in_force, Yogesh) + MV Act PDF URL + parivahan URL had raw newlines; re-escaped verbatim. **FLAG: §207 official_text contains the Act's preamble, not §207 — verifier to re-paste.** Populated `document_seizure_or_retention` (12/14; traffic 2/3): new candidate MV Act §206 (impound documents; pending/unverified, text null), 4 prototypes (physically-taken boundary vs acceptance/detention siblings), 1 rationale, 5 steps (seizure receipt first), parivahan reused. Gate withholds §206, serves verified §207 for vehicle_detention; 10 prior issues unchanged. All 3 JSON valid; loader + 12/12 tests pass. KB: 3 acts, 13 sections, 12 issues, 8 portals | Claude |
