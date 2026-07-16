@@ -233,7 +233,7 @@
     "consumer_helpline_ingram": {
       "portal_id": "consumer_helpline_ingram",
       "name": "National Consumer Helpline (INGRAM)",
-      "official_url": null,
+      "official_url": "https://consumerhelpline.gov.in",
       "purpose": "Register a consumer grievance (helpline 1915 or online) for guidance and company-level resolution before formal proceedings.",
       "priority": "primary",
       "usage_condition": null,
@@ -248,7 +248,7 @@
     "edaakhil": {
       "portal_id": "edaakhil",
       "name": "e-daakhil (Online Consumer Commission Complaint Filing)",
-      "official_url": null,
+      "official_url": "https://www.india.gov.in/category/justice-law-grievances/subcategory/courts-tribunals/details/e-daakhil-portal",
       "purpose": "File a formal consumer complaint online before the appropriate Consumer Commission.",
       "priority": "secondary",
       "usage_condition": "Use when the complaint is not resolved through the seller or the National Consumer Helpline and you want to file a formal complaint before a Consumer Commission.",
