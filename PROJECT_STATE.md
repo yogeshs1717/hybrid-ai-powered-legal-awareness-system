@@ -37,9 +37,9 @@ Windows repository. That was a governance failure. It is corrected below.
 
 ## SECTION 1 — CURRENT PHASE
 
-**Overall Status:** Phase 1 KB milestone COMPLETE (tag `phase1-kb-complete`) — all 14
-taxonomy_supported issues populated, 16/17 provisions human-verified. Now training the
-Domain Classifier on frozen Dataset V1.
+**Overall Status:** Phase 1 KB milestone COMPLETE (tag `phase1-kb-complete`). Domain
+Classifier trained + evaluated on frozen Dataset V1 (macro F1 0.799, accuracy 0.80);
+service runs in `classifier_mode="trained"`. See `docs/evaluation_notes.md`.
 
 **Current Focus:** Governance is complete and **FROZEN** (`CLAUDE.md` Rev 4,
 `TRAINING_DATA_PLAN.md`, `docs/issue_support_review.md`, and the KB schemas after the
@@ -402,8 +402,9 @@ touched cosmetically.
 | `ml-service/data/training_data_v1.csv` | **DRAFT CREATED (2026-07-13)** — 133 rows (28 cyber / 27 consumer / 26 traffic / 26 wage / 26 contractual), schema `scenario,domain,issue_id`, all 22 issues covered, quality-reviewed (no duplicates/near-duplicates, labels valid, lengths in bounds, accepted by the training script's validator). All rows are Claude-drafted candidates — **pending human annotation review (user is the final annotator, TRAINING_DATA_PLAN §12)** |
 | `data/training_data_v2.csv`+ | **PENDING** — blocked on V1 evaluation |
 | Issue taxonomy | **WORKING — 22 issues** (6 cyber / 5 consumer / 5 traffic / 4 wage / 2 contractual) — `TRAINING_DATA_PLAN.md` §2. Issue Support Review **approved by user** (`docs/issue_support_review.md`: 14 taxonomy_supported / 8 provision_research_required); taxonomy stays WORKING pending explicit user sign-off |
-| Training pipeline (`train_domain_classifier.py`) | **COMPLETE — STRUCTURAL** — exists, runnable on any valid CSV (pipeline-before-data); refuses politely when the CSV is absent; Stratified 5-Fold CV; imports the same `preprocess_text` inference uses |
-| Trained models (`.pkl` files) | **PENDING** — do not exist (blocked on Dataset V1) |
+| Training pipeline (`train_domain_classifier.py`) | **RUN** — executed on Dataset V1, 5-fold CV, artifacts saved |
+| Trained models (`.pkl` files) | **GENERATED (gitignored)** — `models/tfidf_domain_vectorizer.pkl`, `models/domain_classifier.pkl`; regenerable from V1 + seed 42; service loads in `trained` mode |
+| Evaluation | **Run 1 documented** in `docs/evaluation_notes.md` — macro F1 0.799, accuracy 0.80; weakest class consumer_issues (recall 0.56), main confusion consumer→contractual (known boundary pair) |
 
 **Locked Dataset V1 decisions** (authoritative text in `CLAUDE.md` §11 and
 `TRAINING_DATA_PLAN.md`):
@@ -709,6 +710,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 28 — Domain Classifier milestone: installed scikit-learn/joblib/numpy; trained TF-IDF+LogReg on frozen Dataset V1 with Stratified 5-Fold CV (macro F1 0.799 ±0.051, accuracy 0.80). Saved `.pkl` artifacts (gitignored); service confirmed in `trained` mode. Documented Run 1 in `docs/evaluation_notes.md` (weakest class consumer_issues recall 0.56; main confusion consumer→contractual, a pre-registered boundary pair). No KB/dataset change | Claude |
 | 2026-07-16 | Batch 27 — finalize KB milestone: re-escaped verifier paste (MV Act §130, Contract Act §39/§73 verified + Contract Act URL set; raw newlines/unquoted values, verbatim preserved); 16/17 sections now verified+in_force (only IT Act §4 pending). Tagged `phase1-kb-complete`. All validations pass | Claude |
 | 2026-07-16 | Batch 26 — populated `breach_of_contract` (**14/14 supported issues COMPLETE**): new act `contract_act_1872` (India Code URL null) with candidate §§39, 73 (pending/unverified, text null); 4 prototypes (negotiated-agreement boundary vs consumer/wage siblings), 2 rationales, 5 steps (evidence → written demand → negotiate → professional advice → legal aid; no court procedure), new portal `nalsa` (fetch-confirmed, conditional legal aid). All validations pass. KB: 4 acts, 17 sections (13 verified), 14 issues, 9 portals | Claude |
 | 2026-07-16 | Batch 25 — added Success Reporting rule to CLAUDE.md §18 (concise success reports; all checks still executed, user-directed change). Pre-flight repair: user's §206 verification paste (unquoted value + raw newlines) and §207 correct-text re-paste re-escaped verbatim — §207 preamble mismatch RESOLVED; §206 + §207 both verified/in_force with correct texts. Populated `document_acceptance_or_verification` (13/14; traffic supported issues complete): new candidates MV Act §130 + IT Act §4 (pending/unverified, text null), 4 prototypes (document-stays-with-citizen boundary), 2 rationales, 5 steps, parivahan reused. All validations pass. KB: 3 acts, 15 sections (13 verified), 13 issues, 8 portals | Claude |
