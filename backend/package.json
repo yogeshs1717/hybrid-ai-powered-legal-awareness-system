@@ -1,0 +1,24 @@
+{
+  "name": "legal-intelligence-gateway",
+  "version": "1.0.0",
+  "description": "Node.js/Express API Gateway for the Smart Legal Intelligence System. Validates input, rate-limits, and proxies to the Python FastAPI ML service. Contains no legal logic.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}

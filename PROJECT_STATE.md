@@ -465,7 +465,16 @@ fastapi/uvicorn/httpx/scikit-learn/joblib/numpy.
   a model is trained; the issue detector runs in **no_prototypes mode** until the KB
   is populated. Both modes are surfaced by GET /health.
 
-Node.js backend, React frontend, database schema: **all PENDING** — later phases.
+**Node.js/Express API Gateway (port 5000): COMPLETE (2026-07-16).** `backend/` —
+`POST /api/analyze` (validate 20–2000 chars → 400 on failure; UUID `request_id`;
+10 req/min/IP rate limit → 429; proxy to FastAPI via injectable `mlClient`; returns the
+ML contract UNCHANGED; ML-unreachable → 503, no fabricated answer), `GET /api/health`
+(gateway + ML status), `GET /api/domains`. Anonymized logging (CLAUDE.md §9): logs
+request_id/domain_id/issue_id/scores/status/SHA-256 hash — never raw scenario (test-
+asserted). helmet+cors+morgan(tiny). 9/9 `node --test` tests pass (DI fake ML client;
+node_modules gitignored). Feedback endpoint deferred (needs DB).
+
+React frontend, MySQL logging sink, database schema: **PENDING** — later phases.
 
 ---
 
@@ -719,6 +728,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 30 — implemented Node.js/Express API Gateway (`backend/`): /api/analyze (input validation→400, UUID request_id, 10/min rate limit→429, axios proxy to FastAPI, contract returned unchanged, ML-down→503), /api/health, /api/domains; anonymized logging (no raw scenario, SHA-256 dedup); helmet/cors/morgan; DI ML client. 9/9 node --test pass; node_modules gitignored. Python suite unaffected | Claude |
 | 2026-07-16 | Batch 29 — confirmed Module 2 is retrieval-based (TF-IDF+cosine, no training needed). Completed/verified the FastAPI backend LIVE end-to-end via TestClient (health=trained/active; /analyze returns verified provisions; short input=400); installed fastapi/uvicorn/httpx; added `tests/test_api.py` (5 end-to-end tests, importorskip-guarded). Full suite 17/17 pass. No source-code or KB change | Claude |
 | 2026-07-16 | Batch 28 — Domain Classifier milestone: installed scikit-learn/joblib/numpy; trained TF-IDF+LogReg on frozen Dataset V1 with Stratified 5-Fold CV (macro F1 0.799 ±0.051, accuracy 0.80). Saved `.pkl` artifacts (gitignored); service confirmed in `trained` mode. Documented Run 1 in `docs/evaluation_notes.md` (weakest class consumer_issues recall 0.56; main confusion consumer→contractual, a pre-registered boundary pair). No KB/dataset change | Claude |
 | 2026-07-16 | Batch 27 — finalize KB milestone: re-escaped verifier paste (MV Act §130, Contract Act §39/§73 verified + Contract Act URL set; raw newlines/unquoted values, verbatim preserved); 16/17 sections now verified+in_force (only IT Act §4 pending). Tagged `phase1-kb-complete`. All validations pass | Claude |
