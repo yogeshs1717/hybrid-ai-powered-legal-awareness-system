@@ -334,6 +334,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns an officer seizing or impounding a traffic document and the acknowledgment and procedure that accompany such a seizure, which is what this provision addresses."
         }
       ]
+    },
+    "document_acceptance_or_verification": {
+      "issue_id": "document_acceptance_or_verification",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Document Acceptance / Verification Dispute",
+      "issue_definition": "A dispute during enforcement or checking about whether the citizen's licence, registration, insurance, or other traffic document is accepted or considered valid - for example refusal of a digital document, a genuine document treated as invalid or fake, or time to produce documents being denied. The document remains with the citizen - distinct from a document being physically seized.",
+      "prototype_texts": [
+        "The traffic police refused to accept my driving licence or insurance shown from the DigiLocker or mParivahan app and insisted only physical copies are valid.",
+        "The officer said my genuine document looks fake or invalid during checking, even though I obtained it from the authorised office or centre.",
+        "I did not have the physical document with me and asked for time to produce it or offered the digital copy, but the officer refused and treated me as not having the document.",
+        "My out-of-state vehicle documents were questioned as not valid in this state during a checking, even though they are current and genuine."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the production and examination of a driver's documents on demand during checking, which is the situation this provision addresses."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "4",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because disputes about accepting digital documents involve the legal recognition of electronic records, which is what this provision addresses."
+        }
+      ]
     }
   }
 }

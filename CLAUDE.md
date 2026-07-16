@@ -847,6 +847,23 @@ dev is fine. Add complexity only when a real requirement justifies it.
   qualifies as COMPLETE. This file (`CLAUDE.md`) changes rarely and only on explicit
   architectural decisions.
 
+## 18. Success Reporting
+
+On **successful** task completion, report only:
+- Files modified
+- Manual verification required (if any)
+- Commit hash
+- Updated project progress
+
+Do **not** print detailed validation logs, loader summaries, regression summaries,
+gate summaries, or test summaries unless: a validation step fails, a repair is
+performed, human intervention is required, or the user explicitly requests a detailed
+report.
+
+**All validation, loader, test, and repository-integrity steps must still be executed
+in full — only the reporting is shortened.** Never skip a check because its output
+will not be shown.
+
 ---
 
 **This file supersedes all prior CLAUDE.md versions referenced in project history

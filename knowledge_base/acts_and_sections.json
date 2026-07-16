@@ -141,6 +141,27 @@
             "verified_by": "Shreeharsha N L",
             "verified_on": "2026-07-16"
           }
+        },
+        "4": {
+          "section_number": "4",
+          "official_section_title": "Legal recognition of electronic records",
+          "official_text": null,
+          "simplified_explanation": "This provision gives legal recognition to information in electronic form - where a law requires information to be in writing, that requirement is treated as satisfied if the information is available in an electronic form and accessible for later reference.",
+          "applicability_notes": "May be relevant where a citizen presents a document in recognised electronic form (for example through government digital-document facilities) and its acceptance is disputed. How this interacts with specific transport rules and advisories should be assessed by a qualified professional.",
+          "keywords": [
+            "electronic record",
+            "digital document",
+            "digilocker",
+            "mparivahan",
+            "legal recognition"
+          ],
+          "citation": "Section 4, Information Technology Act, 2000",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
         }
       }
     },
@@ -311,7 +332,7 @@
         "206": {
           "section_number": "206",
           "official_section_title": "Power of police officer to impound document",
-          "official_text": null,
+          "official_text": "Power of police officer to impound document.—(1) Any police officer or other person\nauthorised in this behalf by the State Government may, if he has reason to believe that any identification\nmark carried on a motor vehicle or any licence, permit, certificate of registration, certificate of insurance\nor other document produced to him by the driver or person in charge of a motor vehicle is a false\ndocument within the meaning of section 464 of the Indian Penal Code (45 of 1860), seize the mark or\ndocument and call upon the driver or owner of the vehicle to account for his possession of or the presence\nin the vehicle of such mark or document.\n(2) Any police officer or other person authorised in this behalf by the State Government may, if he\nhas reason to believe that the driver of amotor vehicle who is charged with any offence under this Act\nmay abscond or otherwise avoid the service of a summons, seize any licence held by such driver and\nforward it to the Court taking cognizance of the offence and the said Court shall on the first appearance of\n110\nsuch driver before it, return the licence to him in exchange for the temporary acknowledgment given\nunder sub-section (3).\n(3) A police officer or other person seizing a licence under sub-section (2) shall give to the person\nsurrendering the licence a temporary acknowledgment therefor and such acknowledgment shall authorise\nthe holder to drive until the licence has been returned to him or until such date as may be specified by the\npolice officer or other person in the acknowledgment, whichever is earlier:\nProvided that if any magistrate, police officer or other person authorised by the State Government in\nthis behalf is, on an application made to him, satisfied that the licence cannot be, or has not been, returned\nto the holder thereof before the date specified in the acknowledgment for any reason for which the holder\nis not responsible, the magistrate, police officer or other person, as the case may be, may extend the\nperiod of authorization to drive to such date as may be specified in the acknowledgment.\n1\n[(4) A police officer or other person authorised in this behalf by the State Government shall, if he has\nreason to believe that the driver of a motor vehicle has committed an offence under any of sections 183,\n184, 185, 189, 190, 194C, 194D, or 194E, seize the driving licence held by such driver and forward it to\nthe licensing authority for disqualification or revocation proceedings under section 19:\nProvided that the person seizing the licence shall give to the person surrendering the licence a\ntemporary acknowledgement therefor, but such acknowledgement shall not authorise the holder\nto drive until the licence has been returned to him.]",
           "simplified_explanation": "This provision concerns the power of an authorised officer to seize or impound documents such as a driving licence in specified situations, and the giving of a temporary acknowledgment or receipt for the seized document.",
           "applicability_notes": "May be relevant where an officer has taken or retained the citizen's licence, registration certificate, or another traffic document, and the citizen wants to understand the basis, the acknowledgment they should receive, and how the document is returned. Whether a specific seizure was proper depends on facts a qualified professional should assess.",
           "keywords": [
@@ -323,17 +344,17 @@
             "receipt"
           ],
           "citation": "Section 206, Motor Vehicles Act, 1988",
-          "provision_status": "unverified",
+          "provision_status": "in_force",
           "verification": {
-            "status": "pending_manual_verification",
-            "verified_by": null,
-            "verified_on": null
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-07-16"
           }
         },
         "207": {
           "section_number": "207",
           "official_section_title": "Power to detain vehicles used without certificate of registration, permit, etc.",
-          "official_text": "An Act to consolidate and amend the law relating to motor vehicles.\nBe it enacted by parliament in the Thirty-ninth Year of the Republic of India\nas follows",
+          "official_text": "Power to detain vehicles used without certificate of registration permit, etc.—(1) Any police\nofficer or other person authorised in this behalf by the State Government may, if he has reason to believe\nthat a motor vehicle has been or is being used in contravention of the provisions of section 3 or section 4\nor section 39 or without the permit required by sub-section (1) of section 66 or in contravention of any\ncondition of such permit relating to the route on which or the area in which or the purpose for which the\nvehicle may be used, seize and detain the vehicle, in the prescribed manner and for this purpose take or\ncause to be taken any steps he may consider proper for the temporary safe custody of the vehicle:\nProvided that where any such officer or person has reason to believe that a motor vehicle has been or\nis being used in contravention of section 3 or section 4 or without the permit required by sub-section (1)\nof section 66 he may, instead of seizing the vehicle, seize the certificate of registration of the vehicle and\nshall issue an acknowledgment in respect thereof.\n(2) Where a motor vehicle has been seized and detained under sub-section (1), the owner or person in\ncharge of the motor vehicle may apply to the transport authority or any officer authorised in this behalf by\nthe State Government together with the relevant documents for the release of the vehicle and such\nauthority or officer may, after verification of such documents, by order release the vehicle subject to such\nconditions as the authority or officer may deem fit to impose.",
           "simplified_explanation": "This provision concerns the power of an authorised officer to detain a vehicle in certain situations - such as when it is being used without a valid certificate of registration or permit, or by a driver without a valid licence - and the procedure for its release.",
           "applicability_notes": "May be relevant where a citizen's vehicle has been detained or impounded and they want to understand the stated legal ground and the release procedure. Whether the detention was proper depends on facts (registration, permit, licence status) that a qualified professional should assess.",
           "keywords": [
@@ -350,6 +371,27 @@
             "status": "manually_verified",
             "verified_by": "Yogesh",
             "verified_on": "2026-07-16"
+          }
+        },
+        "130": {
+          "section_number": "130",
+          "official_section_title": "Duty to produce licence and certificate of registration",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns the duty of a driver or conductor to produce their licence and other documents such as the certificate of registration for examination when demanded by an authorised officer, and the manner of producing them.",
+          "applicability_notes": "May be relevant where there is a dispute during checking about producing or accepting a licence, registration certificate, or related document - including questions about producing documents at a later time or through recognised electronic means. Whether a specific document had to be accepted depends on facts a qualified professional should assess.",
+          "keywords": [
+            "produce licence",
+            "produce documents",
+            "registration certificate",
+            "checking",
+            "demand by officer"
+          ],
+          "citation": "Section 130, Motor Vehicles Act, 1988",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
           }
         }
       }

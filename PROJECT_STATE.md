@@ -55,15 +55,11 @@ taxonomy_supported issues only, stop for user review after each. Populated so fa
 `otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
 `unauthorized_account_access`, `defective_product`, `refund_denial`,
 `misleading_advertisement`, `service_deficiency`, `unfair_trade_practice`,
-`vehicle_detention`, `document_seizure_or_retention` (12/14 — cyber_fraud +
-consumer_issues complete; traffic 2/3 supported). Remaining 2 supported issues:
-`document_acceptance_or_verification` (traffic) and `breach_of_contract` (contractual).
-
-**⚠ OPEN VERIFICATION CORRECTION (human-only):** MV Act §207's `official_text` was
-verified (Yogesh, 2026-07-16) but contains the **Act's preamble/long title** ("An Act
-to consolidate and amend the law relating to motor vehicles…"), not Section 207's
-text — likely copied from the top of the India Code PDF. Verifier to re-paste the
-actual §207 text. Not citizen-visible, but a Legal Truth Store integrity issue.
+`vehicle_detention`, `document_seizure_or_retention`,
+`document_acceptance_or_verification` (13/14 — cyber_fraud + consumer_issues complete;
+**traffic domain's supported issues complete**). Remaining supported issue:
+`breach_of_contract` (contractual). The §207 preamble-text mismatch is **RESOLVED** —
+verifier re-pasted the correct text (batch 25).
 
 **Note on workplace_wage:** user's latest roadmap says "no longer deferred," but all 4
 wage issues are `provision_research_required` (not taxonomy_supported) pending the
@@ -73,10 +69,9 @@ them.
 
 **Verification state:** 10 of 11 sections human-verified + in_force (66C/66D by
 Shreeharsha N L; 43, 66, 2(10), 35, 84, 2(47), 2(28), 21 by Yogesh; both act URLs
-set). Pending verification: **MV Act 1988 §206** (new candidate for
-document_seizure_or_retention; official_text null). §207 verified by Yogesh
-2026-07-16 (MV Act India Code PDF URL confirmed) — but see the §207 text-mismatch
-flag above. All 11 earlier sections human-verified + in_force.
+set). Pending verification: **MV Act 1988 §130** and **IT Act §4** (new candidates for
+document_acceptance_or_verification; official_text null). §206 and §207 verified by
+Yogesh 2026-07-16 with correct texts. All 13 other sections human-verified + in_force.
 Portal URLs **confirmed by the user (2026-07-16)**:
 `consumer_helpline_ingram` → consumerhelpline.gov.in; `edaakhil` → an india.gov.in
 services-directory page for the e-daakhil portal (observation: this is the national
@@ -101,10 +96,9 @@ direction in chat, Claude applied the clerical correction to the stated values (
 loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
 **returns** 66C/66D for all three populated issues (`provisions_available`).
 
-**Immediate Next Task:** User reviews the `document_seizure_or_retention` population,
-re-pastes the correct §207 text (mismatch flag above), and optionally verifies §206;
-then instructs the next issue. Suggested next: `document_acceptance_or_verification`
-(MV Act §130 + reuse of verified IT Act; possibly CMV Rules 1989 R.139 as candidate).
+**Immediate Next Task:** User reviews the `document_acceptance_or_verification`
+population and optionally verifies MV Act §130 + IT Act §4; then instructs the final
+supported issue: `breach_of_contract` (new act: Indian Contract Act 1872).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -708,6 +702,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 25 — added Success Reporting rule to CLAUDE.md §18 (concise success reports; all checks still executed, user-directed change). Pre-flight repair: user's §206 verification paste (unquoted value + raw newlines) and §207 correct-text re-paste re-escaped verbatim — §207 preamble mismatch RESOLVED; §206 + §207 both verified/in_force with correct texts. Populated `document_acceptance_or_verification` (13/14; traffic supported issues complete): new candidates MV Act §130 + IT Act §4 (pending/unverified, text null), 4 prototypes (document-stays-with-citizen boundary), 2 rationales, 5 steps, parivahan reused. All validations pass. KB: 3 acts, 15 sections (13 verified), 13 issues, 8 portals | Claude |
 | 2026-07-16 | Batch 24 — pre-flight found the recurring paste corruption: user's post-commit verification of §207 (in_force, Yogesh) + MV Act PDF URL + parivahan URL had raw newlines; re-escaped verbatim. **FLAG: §207 official_text contains the Act's preamble, not §207 — verifier to re-paste.** Populated `document_seizure_or_retention` (12/14; traffic 2/3): new candidate MV Act §206 (impound documents; pending/unverified, text null), 4 prototypes (physically-taken boundary vs acceptance/detention siblings), 1 rationale, 5 steps (seizure receipt first), parivahan reused. Gate withholds §206, serves verified §207 for vehicle_detention; 10 prior issues unchanged. All 3 JSON valid; loader + 12/12 tests pass. KB: 3 acts, 13 sections, 12 issues, 8 portals | Claude |
 | 2026-07-16 | Batch 23 — populated `vehicle_detention` (11/14; **traffic domain opened**): new act `mv_act_1988` (Motor Vehicles Act 1988; India Code URL null) + candidate §207 (detain vehicles; pending/unverified, official_text null); 4 prototypes, 1 Layer-B rationale, 5 action steps (get written detention order first; no FIR/criminal steps), new portal `parivahan` (MoRTH; url null, fetch failed — candidate parivahan.gov.in; secondary/conditional). Gate withholds unverified §207 (safe state); 10 prior issues regression-checked. All 3 JSON valid; loader + 12/12 tests pass. KB: 3 acts, 12 sections, 11 issues, 8 portals | Claude |
 | 2026-07-16 | Batch 22 — populated `unfair_trade_practice` (10/14; **consumer_issues domain complete**): reused verified CPA §2(47) (primary) + §35, no new sections; 4 transaction-centered prototypes (kept distinct from misleading_advertisement's ad-centered ones per support-review boundary), 5 action steps (evidence first, Legal Metrology note for MRP overcharge), both consumer portals extended. Gate serves both verified provisions; all 3 JSON valid; loader + 12/12 tests pass. KB: 2 acts, 11 sections, 10 issues, 7 portals | Claude |

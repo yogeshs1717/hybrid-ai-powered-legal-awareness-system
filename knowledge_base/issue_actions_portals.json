@@ -199,6 +199,18 @@
       "portal_ids": [
         "parivahan"
       ]
+    },
+    "document_acceptance_or_verification": {
+      "action_steps": [
+        "Stay calm and show the document again, pointing out where it can be verified - digital documents from official government apps carry a QR code or can be checked against the transport database on the spot.",
+        "If a challan is still issued, note the officer's name and ID, the exact objection raised, and the date, time, and place.",
+        "If you were given time to produce the document, produce it (or a recognised digital copy) at the specified office within the allowed period and take an acknowledgment.",
+        "If a genuine document was treated as fake or invalid, obtain a verification printout or confirmation from the issuing office (RTO, insurer, or pollution centre) to attach to your response.",
+        "Escalate in writing to the concerned traffic or transport authority's grievance channel with your evidence, and contest the challan through the official process if one was issued."
+      ],
+      "portal_ids": [
+        "parivahan"
+      ]
     }
   },
   "portals": {
@@ -309,7 +321,8 @@
       "official_source": "Ministry of Road Transport and Highways, Government of India",
       "supported_issue_ids": [
         "vehicle_detention",
-        "document_seizure_or_retention"
+        "document_seizure_or_retention",
+        "document_acceptance_or_verification"
       ]
     }
   }
