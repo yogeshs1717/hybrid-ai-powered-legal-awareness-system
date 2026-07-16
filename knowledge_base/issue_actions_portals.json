@@ -211,6 +211,18 @@
       "portal_ids": [
         "parivahan"
       ]
+    },
+    "breach_of_contract": {
+      "action_steps": [
+        "Gather the agreement and all proof of the breach: the contract or written terms, payment records, delivery or work records, and messages or emails showing what the other party did or failed to do.",
+        "Send the other party a written communication that states what was agreed, how it was breached, and what you expect (performance, payment, or refund) by a clear deadline - keep proof of sending.",
+        "Try a documented negotiation or settlement discussion first - many contractual disputes resolve faster and cheaper this way, and the record helps you later if it fails.",
+        "If it remains unresolved, consult a qualified legal professional about your options, which can include a formal legal notice and civil remedies such as compensation - court procedure itself is beyond this awareness tool's scope.",
+        "If you cannot afford a lawyer, you may be eligible for free legal aid through the Legal Services Authorities (NALSA helpline 15100), and Lok Adalats can help settle such disputes."
+      ],
+      "portal_ids": [
+        "nalsa"
+      ]
     }
   },
   "portals": {
@@ -323,6 +335,18 @@
         "vehicle_detention",
         "document_seizure_or_retention",
         "document_acceptance_or_verification"
+      ]
+    },
+    "nalsa": {
+      "portal_id": "nalsa",
+      "name": "NALSA (National Legal Services Authority)",
+      "official_url": "https://nalsa.gov.in",
+      "purpose": "Apply for free legal aid, find State Legal Services Authorities, and learn about Lok Adalats for dispute settlement.",
+      "priority": "secondary",
+      "usage_condition": "Use if you need free legal aid (subject to eligibility under the Legal Services Authorities Act) or want to explore Lok Adalat settlement for the dispute.",
+      "official_source": "National Legal Services Authority, constituted under the Legal Services Authorities Act, 1987",
+      "supported_issue_ids": [
+        "breach_of_contract"
       ]
     }
   }

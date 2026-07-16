@@ -395,6 +395,57 @@
           }
         }
       }
+    },
+    "contract_act_1872": {
+      "official_act_name": "Indian Contract Act, 1872",
+      "act_year": 1872,
+      "short_name": "Contract Act 1872",
+      "official_source_name": "India Code",
+      "official_source_url": null,
+      "sections": {
+        "39": {
+          "section_number": "39",
+          "official_section_title": "Effect of refusal of party to perform promise wholly",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns what happens when one party to a contract refuses to perform, or disables themselves from performing, their promise in its entirety - the other party may treat the contract as ended unless they have indicated that it should continue.",
+          "applicability_notes": "May be relevant where the other party has walked away from, abandoned, or refused to carry out an agreement. Whether a particular conduct amounts to such a refusal depends on facts a qualified professional should assess.",
+          "keywords": [
+            "refusal to perform",
+            "abandoned agreement",
+            "repudiation",
+            "walked away",
+            "contract ended"
+          ],
+          "citation": "Section 39, Indian Contract Act, 1872",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        },
+        "73": {
+          "section_number": "73",
+          "official_section_title": "Compensation for loss or damage caused by breach of contract",
+          "official_text": null,
+          "simplified_explanation": "This provision concerns compensation when a contract is broken - the party who suffers from the breach may be entitled to compensation for loss or damage that naturally arose from the breach or that the parties knew was likely to result from it.",
+          "applicability_notes": "May be relevant where the citizen suffered loss because the other party did not perform an agreement - for example money paid without the promised work or goods, or losses flowing from non-performance. What compensation may be available depends on facts a qualified professional should assess.",
+          "keywords": [
+            "compensation",
+            "damages",
+            "breach of contract",
+            "loss",
+            "non-performance"
+          ],
+          "citation": "Section 73, Indian Contract Act, 1872",
+          "provision_status": "unverified",
+          "verification": {
+            "status": "pending_manual_verification",
+            "verified_by": null,
+            "verified_on": null
+          }
+        }
+      }
     }
   }
 }

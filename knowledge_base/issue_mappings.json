@@ -359,6 +359,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because disputes about accepting digital documents involve the legal recognition of electronic records, which is what this provision addresses."
         }
       ]
+    },
+    "breach_of_contract": {
+      "issue_id": "breach_of_contract",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Breach of Contract",
+      "issue_definition": "A party fails to perform, or violates, an agreed contractual obligation - for example non-delivery under an agreement, abandoning agreed work midway, refusing to perform, not paying under a written arrangement, or materially substandard performance of a negotiated (non-consumer-context) agreement.",
+      "prototype_texts": [
+        "The other party signed an agreement with me and then did not do what was agreed - the work, delivery, or payment under the contract never happened.",
+        "I paid an advance under a written agreement and the person or company abandoned the work midway and stopped responding.",
+        "A business or client took my goods, services, or completed work under an agreement and is not paying the amount due as per the agreed terms.",
+        "The other side is openly refusing to honour the agreement we made, or has acted against specific terms that were clearly written in it."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns loss suffered when an agreement is broken, and this provision addresses compensation for loss or damage caused by a breach of contract."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "39",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because scenarios where the other party refuses to perform or abandons the agreement entirely involve the effect of such refusal on the contract, which is what this provision addresses."
+        }
+      ]
     }
   }
 }
