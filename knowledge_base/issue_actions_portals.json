@@ -149,6 +149,19 @@
         "consumer_helpline_ingram",
         "edaakhil"
       ]
+    },
+    "service_deficiency": {
+      "action_steps": [
+        "Collect what was promised versus what was delivered: the agreement or receipt, advertisements or brochures, chats or emails, and photos or videos of the poor or incomplete work.",
+        "Complain to the service provider in writing describing the deficiency specifically, and ask for completion, rectification, or refund with a clear deadline - keep proof of the complaint.",
+        "Escalate to the provider's grievance or customer-care escalation channel if first-level support does not resolve it.",
+        "Register a grievance with the National Consumer Helpline by calling 1915 or through its online portal.",
+        "If it remains unresolved, you can file a formal consumer complaint before the appropriate Consumer Commission through the e-daakhil facility."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
     }
   },
   "portals": {
@@ -228,7 +241,8 @@
       "supported_issue_ids": [
         "defective_product",
         "refund_denial",
-        "misleading_advertisement"
+        "misleading_advertisement",
+        "service_deficiency"
       ]
     },
     "edaakhil": {
@@ -242,7 +256,8 @@
       "supported_issue_ids": [
         "defective_product",
         "refund_denial",
-        "misleading_advertisement"
+        "misleading_advertisement",
+        "service_deficiency"
       ]
     }
   }

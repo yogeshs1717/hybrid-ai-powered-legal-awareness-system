@@ -244,6 +244,31 @@
           "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by a misleading advertisement may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
         }
       ]
+    },
+    "service_deficiency": {
+      "issue_id": "service_deficiency",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Service Deficiency",
+      "issue_definition": "A paid service was not delivered, or was delivered materially below the promised standard - for example classes stopped midway, a repair or renovation botched, promised sessions or visits skipped, or a service performed negligently.",
+      "prototype_texts": [
+        "I paid for a service in full but the provider did not deliver it, stopped it midway, or keeps postponing it endlessly.",
+        "The service I paid for was done so badly or carelessly that it is far below the standard that was promised to me.",
+        "The company or professional I hired skipped the promised sessions, visits, or deliverables even after taking the full payment.",
+        "The service provider damaged my things or caused me loss while doing the work and is not responding about fixing it or compensating."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns faults, shortcomings, or inadequacy in the quality or manner of performance of a paid service, which is what the statutory definition of 'deficiency' addresses."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because a consumer affected by a deficient service may file a complaint before a Consumer Commission, and this provision concerns how such a complaint is made."
+        }
+      ]
     }
   }
 }

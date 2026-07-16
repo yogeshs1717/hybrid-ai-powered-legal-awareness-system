@@ -54,15 +54,14 @@ unchanged). Do not modify unless explicitly instructed.
 taxonomy_supported issues only, stop for user review after each. Populated so far:
 `otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
 `unauthorized_account_access`, `defective_product`, `refund_denial`,
-`misleading_advertisement` (8/14 — cyber_fraud's supported issues complete;
-consumer_issues 3/5; `other_online_financial_fraud` stays
+`misleading_advertisement`, `service_deficiency` (9/14 — cyber_fraud complete;
+consumer_issues 4/5; `other_online_financial_fraud` stays
 provision_research_required).
 
-**Verification state:** 7 of 10 sections human-verified + in_force (66C/66D by
-Shreeharsha N L; 43 [text corrected 2026-07-16], 66, 2(10), 35, 84 by Yogesh; both act
-URLs set). The earlier §43/§43A text mismatch is **RESOLVED** — verifier re-pasted the
-correct §43 text. Pending verification: CPA **2(47)**, **2(28)**, **21**. Portal URLs
-still null: `consumer_helpline_ingram` (candidate consumerhelpline.gov.in), `edaakhil`
+**Verification state:** 7 of 11 sections human-verified + in_force (66C/66D by
+Shreeharsha N L; 43 [text corrected], 66, 2(10), 35, 84 by Yogesh; both act URLs set).
+Pending verification: CPA **2(47)**, **2(28)**, **21**, **2(11)**. Portal URLs still
+null: `consumer_helpline_ingram` (candidate consumerhelpline.gov.in), `edaakhil`
 (candidate edaakhil.nic.in).
 
 **First human verification completed (2026-07-16):** IT Act 2000 sections 66C and 66D
@@ -74,10 +73,10 @@ direction in chat, Claude applied the clerical correction to the stated values (
 loader-breaking enum error; disclosed here per §7.5). The eligibility gate now
 **returns** 66C/66D for all three populated issues (`provisions_available`).
 
-**Immediate Next Task:** User reviews the `misleading_advertisement` population and
-optionally verifies CPA 2(47)/2(28)/21 + the two consumer portal URLs; then instructs
-the next issue (suggested next: `service_deficiency` — reuses CPA 2019, likely adds
-§2(11) deficiency definition as a candidate).
+**Immediate Next Task:** User reviews the `service_deficiency` population and
+optionally verifies the four pending CPA sections + the two consumer portal URLs; then
+instructs the next issue (suggested next: `unfair_trade_practice` — completes the
+consumer domain; reuses §2(47) candidate and verified §35, likely no new sections).
 
 **Git:** repo re-rooted by user at `Demo/` (parent `PROGRAMS/.git` removed). Branch
 renamed to `main`; `.gitignore` extended (IDE/OS/build/model artifacts); Phase 1B
@@ -681,6 +680,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-07-16 | Batch 18 — populated `service_deficiency` (9/14): new candidate CPA §2(11) deficiency definition (pending/unverified, text null), reuse of verified §35; 4 prototypes, 2 Layer-B rationales, 5 action steps (promised-vs-delivered evidence first), both consumer portals extended. Gate: serves verified §35 only, withholds 2(11); 8 prior issues regression-checked. Loader + 12/12 tests pass. KB: 2 acts, 11 sections (7 verified), 9 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 17 — verifier corrected §43 official_text (43A mismatch RESOLVED); Claude clerically re-repaired JSON after the paste (raw newlines; content verbatim). Populated `misleading_advertisement` (8/14): new candidate CPA sections 2(28) definition + 21 CCPA powers (pending/unverified, text null), reuse of verified §35; 4 prototypes, 3 Layer-B rationales, 5 action steps (save-the-ad first), both consumer portals extended. Gate: serves verified §35 only, withholds 2(28)/21; 7 prior issues regression-checked. Loader + 12/12 tests pass. KB: 2 acts, 10 sections (7 verified), 8 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 16 — populated `refund_denial` (7/14): new candidate CPA §2(47) (UTP definition; pending/unverified, text null) + reuse of verified §35; 4 prototypes, 2 Layer-B rationales, 5 action steps (written refund demand first), reused both consumer portals. Also this batch: clerically repaired acts_and_sections.json after verifier paste made it invalid JSON (raw newlines in strings + one unescaped quote — content preserved verbatim, re-serialized); recorded new verification state (7/8 sections verified by Shreeharsha N L / Yogesh); **flagged §43 official_text mismatch (contains §43A's text) for human correction — not touched**. Gate: refund_denial serves verified §35 only, withholds 2(47); all 6 prior issues re-checked against new verification state (acct_access 2, defective 3). Loader + 12/12 tests pass. KB: 2 acts, 8 sections (7 verified), 7 issues, 7 portals | Claude |
 | 2026-07-16 | Batch 15 — populated `defective_product` (6/14; consumer domain opened): new act `cpa_2019` (India Code URL null pending confirmation) with candidate sections 2(10) defect definition, 35 complaint filing, 84 product liability — all pending/unverified with null official_text; 4 prototypes, 3 Layer-B rationales, 5 action steps (evidence preservation first), 2 new portals `consumer_helpline_ingram` (primary) + `edaakhil` (secondary, conditional) with null URLs (fetch confirmation unavailable this session; candidates recorded for verifier). Gate withholds unverified CPA sections (safe state); 5 prior issues regression-checked; loader + 12/12 tests pass. KB state: 2 acts, 7 sections (2 verified), 6 issues, 7 portals | Claude |
