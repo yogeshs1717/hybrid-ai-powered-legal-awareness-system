@@ -515,7 +515,35 @@ no similarity score displayed; short-input client gate; reset flow; 429 rate-lim
 card verified live (gateway 429 on 11th request); How-it-works (no ML internals leak,
 asserted) and 404 verified.
 
-MySQL logging sink, database schema: **PENDING** — later phases.
+**End-to-end integration COMPLETE (2026-07-17).** Full chain React (:3000, Vite proxy
+`/api`) → Node gateway (:5000) → FastAPI (:8000) → trained classifier + KB validated
+with realistic scenarios from **all 5 domains** — every one predicted correctly at the
+API level, and every one driven through the real UI: cyber_fraud (SMS-phishing card
+fraud → `unauthorized_account_access`, 2 IT-Act provisions), consumer_issues (warranty
+refusal → `defective_product`, 3 provisions), traffic_enforcement (licence/RC/scooter
+retention → `document_seizure_or_retention`, MV Act §130), contractual_disputes
+(abandoned renovation → `breach_of_contract`, 2 Contract-Act provisions), and
+workplace_wage (unpaid salary → **null issue + `no_verified_provision_available`** —
+the honest safe state, since all 4 wage issues remain `provision_research_required`).
+All UI states verified live: loading stages, success render (Layer A/B separate, no raw
+similarity score — asserted no numeric leak), low-confidence + clarification (every
+low-confidence run arrived on HTTP 200), safe state (domain card alone, no empty
+sections), client-side validation gate + gateway 400 (direct), 429 rate-limit card,
+503 service-unavailable card (ML killed live → honest card, no fabricated result →
+"Try again" → recovery verified after ML restart).
+
+**Integration fix applied (the only code change):** the ML service returns an
+**all-null `analysis.issue` object** when no issue can be detected in the predicted
+domain (e.g. unpopulated wage domain) — the frontend contract type assumed non-null
+and would have rendered an empty "Detected situation" card. `contract.ts` issue fields
+made nullable; `ResultView` renders the issue card only when `issue.id` is present;
+`IssueResultCard` guards the Layer-A block. Typecheck + production build re-verified.
+
+All Phase 1 confidences on realistic (non-dataset) scenarios land in the Low band
+(0.31–0.55) with clarification prompts — honest behavior for a 133-row model, noted
+for threshold tuning/dataset V2, not an integration defect.
+
+MySQL logging sink, database schema, feedback endpoint: **PENDING** — later phases.
 
 ---
 

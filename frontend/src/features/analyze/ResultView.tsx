@@ -39,6 +39,11 @@ export function ResultView({ data }: { data: AnalyzeResponse }) {
   const hasProvisions =
     data.legal_information_status === "provisions_available" &&
     data.legal_provisions.length > 0;
+  // The ML service returns an all-null issue when no situation type could be
+  // detected within the predicted domain — render the domain alone in that
+  // case rather than an empty issue card.
+  const issue = data.analysis.issue;
+  const hasIssue = issue.id != null && issue.display_name != null;
 
   return (
     <motion.div
@@ -53,16 +58,18 @@ export function ResultView({ data }: { data: AnalyzeResponse }) {
         </motion.div>
       )}
 
-      <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
+      <div className={hasIssue ? "grid gap-4 sm:gap-5 md:grid-cols-2" : "grid gap-4 sm:gap-5"}>
         <motion.div variants={item}>
           <DomainResultCard domain={data.analysis.domain} />
         </motion.div>
-        <motion.div variants={item}>
-          <IssueResultCard
-            issue={data.analysis.issue}
-            signals={data.analysis.scenario_signals}
-          />
-        </motion.div>
+        {hasIssue && (
+          <motion.div variants={item}>
+            <IssueResultCard
+              issue={issue}
+              signals={data.analysis.scenario_signals}
+            />
+          </motion.div>
+        )}
       </div>
 
       <motion.div variants={item} className="flex items-center gap-3 px-1 pt-3">

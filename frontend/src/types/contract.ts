@@ -20,16 +20,18 @@ export interface DomainAnalysis {
 }
 
 export interface IssueAnalysis {
-  id: string;
-  display_name: string;
+  /** Null when no issue could be detected (e.g. no prototypes exist yet for
+   *  the predicted domain) — the UI must skip the issue card in that case. */
+  id: string | null;
+  display_name: string | null;
   /**
    * Cosine similarity against curated prototypes. NEVER surfaced to citizens as
    * confidence/certainty (CLAUDE.md Section 6.2). Retained only for a dev debug
    * overlay — the citizen UI does not display this number.
    */
-  similarity_score: number;
+  similarity_score: number | null;
   /** Layer A — generated scenario→issue match reason (CLAUDE.md Section 6.7). */
-  issue_match_reason: string;
+  issue_match_reason: string | null;
 }
 
 export interface Analysis {

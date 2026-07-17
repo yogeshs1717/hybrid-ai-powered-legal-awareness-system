@@ -30,14 +30,16 @@ export function IssueResultCard({
             {issue.display_name}
           </h3>
 
-          <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.02] p-3.5">
-            <p className="text-xs font-medium text-muted-foreground/80">
-              Why your situation matched this
-            </p>
-            <p className="mt-1 text-sm leading-relaxed text-foreground/90 text-pretty">
-              {issue.issue_match_reason}
-            </p>
-          </div>
+          {issue.issue_match_reason && (
+            <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.02] p-3.5">
+              <p className="text-xs font-medium text-muted-foreground/80">
+                Why your situation matched this
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-foreground/90 text-pretty">
+                {issue.issue_match_reason}
+              </p>
+            </div>
+          )}
 
           {signals?.length > 0 && (
             <div className="mt-4">
