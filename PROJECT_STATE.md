@@ -474,7 +474,48 @@ request_id/domain_id/issue_id/scores/status/SHA-256 hash — never raw scenario 
 asserted). helmet+cors+morgan(tiny). 9/9 `node --test` tests pass (DI fake ML client;
 node_modules gitignored). Feedback endpoint deferred (needs DB).
 
-React frontend, MySQL logging sink, database schema: **PENDING** — later phases.
+**React frontend (LegalLens): IMPLEMENTED — build-verified; live visual QA pending
+(2026-07-16).** `frontend/` — Vite + React 18 + TypeScript + Tailwind + shadcn/ui
+(Radix) + Framer Motion + React Three Fiber. Architecture approved by the user with
+branding/design refinements (name **LegalLens**, tagline "See the law more clearly.",
+premium jade/brass legal palette — not corporate blue, dark-first, mobile-first,
+glassmorphism). Pages: Landing (artistic law-themed R3F hero — a magnifying lens
+revealing "law lines"; lazy-loaded, `aria-hidden`, DPR-capped, paused offscreen, static
+fallback under `prefers-reduced-motion`; **no 3D in the analyzer/results**), Analyze
+(staged input → loading → progressive result reveal), How LegalLens Works (product/scope/
+trust/limits/awareness-vs-advice — **no ML internals exposed**), 404.
+
+Talks ONLY to the Node gateway (:5000, dev proxy `/api`), never FastAPI directly.
+Contract fidelity (CLAUDE.md §8.1): `src/types/contract.ts` typed mirror; pure
+`components/legal/*` renderers (no legal logic client-side, §4.4/§14); explicit
+`no_verified_provision_available` safe state rendered as a real screen (§8/§14); Layer A
+`issue_match_reason` and Layer B `provision_relevance_rationale` kept visually separate
+(§6.7); mandatory disclaimer taken from the payload and always rendered (§10); issue
+`similarity_score` NOT shown to citizens (§6.2, approved design); low-confidence handled
+on the 200 path, 400/429/503 mapped to honest non-fabricating states (§8.2); scenario in
+POST body only, never in a URL (§9). Verified: `tsc` typecheck clean; `vite build` OK
+(2632 modules; Three.js in a lazy 818 kB chunk, out of the initial/analyzer bundle).
+
+**Refinement pass + full verification (2026-07-17), user-approved baseline:** hero
+recomposed (headline focal, vignette, subtler fog-depth lens scene high-right, slower
+motion); trust strip under the hero (human-verified provisions / official portals /
+awareness-not-advice); typography (eyebrow labels, larger display scale), button
+hover/sheen, glass-hover cards, labeled example chips, focus-halo textarea, branded
+loading state; WebGL additionally gated to ≥768px viewports (phones never download
+three.js) with rect-seeded visibility + resize fallback (robust when IO/matchMedia
+events are throttled). Dev-only `?no-anim` escape hatch (Framer `skipAnimations`) for
+automated checks. **Browser-verified** (DOM/a11y/computed-style probes at 375/768/1280/
+1680 px — the embedded pane is compositor-hidden, so pixel screenshots were impossible;
+rAF-frozen pane confirmed as environmental, not an app bug) and **end-to-end validated**
+against live gateway (:5000) + ML service (:8000): OTP scenario → 200 → full result
+render (low-confidence banner + clarification, domain card "Model confidence: Low",
+issue card + Layer A reason + signals, 66C/66D provision cards with Layer B rationales +
+India Code links, 5 action steps, 2 portals with priority labels, payload disclaimer);
+no similarity score displayed; short-input client gate; reset flow; 429 rate-limit error
+card verified live (gateway 429 on 11th request); How-it-works (no ML internals leak,
+asserted) and 404 verified.
+
+MySQL logging sink, database schema: **PENDING** — later phases.
 
 ---
 
