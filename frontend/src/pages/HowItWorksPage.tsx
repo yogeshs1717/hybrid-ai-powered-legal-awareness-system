@@ -1,262 +1,309 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import {
   PencilLine,
   ScanSearch,
   ScrollText,
   Compass,
-  ShieldCheck,
-  CircleAlert,
   ArrowRight,
+  CheckCircle2,
+  XCircle,
+  HelpCircle,
+  Sparkles,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
-/*
-  Product-level explanation only. Deliberately no ML internals (no classifiers,
-  similarity, model architecture) — focuses on what LegalLens does, its scope,
-  how it earns trust, its limits, and awareness-vs-advice.
-*/
-
-function fade(delay = 0) {
-  return {
-    initial: { opacity: 0, y: 18 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, margin: "-70px" },
-    transition: { duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] as const },
-  };
-}
-
-const STEPS = [
+const PIPELINE_STEPS = [
   {
+    step: "01",
+    label: "INPUT",
+    tagColor: "bg-[#f59e0b] text-black",
+    handwritten: "in your own words",
     icon: PencilLine,
-    title: "You describe what happened",
-    body: "Write your situation in plain, everyday language — no legal terms needed. Just tell LegalLens what happened to you.",
+    title: "You Describe What Happened",
+    body: "Write naturally in everyday English, हिन्दी, or ಕನ್ನಡ. No legal terminology, IPC sections, or formal jargon required.",
   },
   {
+    step: "02",
+    label: "NLP ENGINE",
+    tagColor: "bg-[#10b981] text-black",
+    handwritten: "AI domain match",
     icon: ScanSearch,
-    title: "LegalLens reads it carefully",
-    body: "It works out which area of law your situation relates to and the specific kind of issue it looks like.",
+    title: "LegalLens Identifies The Issue",
+    body: "The model extracts key factual signals and classifies the situation into specific Indian legal domains with strict confidence scoring.",
   },
   {
+    step: "03",
+    label: "STATUTE MAP",
+    tagColor: "bg-[#e11d48] text-white",
+    handwritten: "verified laws only",
     icon: ScrollText,
-    title: "It shows relevant provisions",
-    body: "You see legal provisions that may relate to your situation, explained simply — each linked to an official source you can check.",
+    title: "Matches Verified Statutes",
+    body: "We map your situation to checked provisions from Bharatiya Nyaya Sanhita 2024, IPC, IT Act, and Consumer Protection Act.",
   },
   {
+    step: "04",
+    label: "ACTION PLAN",
+    tagColor: "bg-[#00c5ff] text-black",
+    handwritten: "official next steps",
     icon: Compass,
-    title: "It points you to what's next",
-    body: "Practical next steps and the official government portals that handle your kind of issue, so you know where to go.",
+    title: "Grievance Channels & Next Steps",
+    body: "You receive ordered practical steps and direct links to official government reporting portals (cybercrime.gov.in, e-daakhil).",
   },
 ];
 
 const SCOPE_IN = [
-  "Cyber fraud (online scams, impersonation, unauthorised account access)",
-  "Consumer issues (defective products, refund denial, service problems)",
-  "Traffic enforcement situations",
-  "Workplace & wage concerns",
-  "Contractual disputes",
+  { title: "Cyber Fraud & Online Scams", desc: "OTP theft, UPI fraud, unauthorized banking, impersonation" },
+  { title: "Consumer Rights & Deficiencies", desc: "Defective goods, refund denials, misleading ads, unfair trade" },
+  { title: "Traffic & Motor Violations", desc: "Fine disputes, e-challans, license & vehicle documentation" },
+  { title: "Workplace & Wage Issues", desc: "Unpaid salary, wrongful termination, employment agreement breaches" },
+  { title: "Contractual & Tenancy Disputes", desc: "Security deposits, tenancy agreements, service agreement disputes" },
 ];
 
 const SCOPE_OUT = [
-  "Criminal matters, FIRs, arrest or bail guidance",
-  "Predicting the outcome of a case",
-  "Telling you whether you will win or have a case",
-  "Replacing a qualified advocate",
-  "Legal areas outside its five focus areas",
+  { title: "Criminal Trial Defense & Bail", desc: "Arrests, criminal trials, bail applications require an advocate" },
+  { title: "Predicting Case Outcomes", desc: "We never speculate on whether you will 'win' or 'lose' a case" },
+  { title: "Court Filing & Petitions", desc: "Filing formal petitions in high courts or district courts" },
+  { title: "Replacing a Licensed Lawyer", desc: "Educational awareness only — not personalized advocate representation" },
 ];
 
-const FAQ = [
+const FAQS = [
   {
-    q: "Is this legal advice?",
-    a: "No. LegalLens provides legal awareness — general information to help you understand your situation and where to turn. For advice specific to your circumstances, consult a qualified legal professional.",
+    q: "Is LegalLens a replacement for a lawyer?",
+    a: "No. LegalLens is a public legal awareness system. It helps you understand which Indian statutes may apply and directs you to official grievance mechanisms. For representation in court or formal legal documents, consult a licensed advocate.",
   },
   {
     q: "Where does the legal information come from?",
-    a: "Every provision shown has been checked by a person against an official Indian government source, and each one links back to that source so you can verify it yourself.",
+    a: "All provisions are grounded in official Indian statutory texts (Bharatiya Nyaya Sanhita, Information Technology Act, Consumer Protection Act, etc.) and checked by legal researchers. We never fabricate statutes.",
   },
   {
-    q: "What if there's nothing verified to show?",
-    a: "LegalLens will tell you plainly. Rather than guess or invent an answer, it's honest when there isn't a verified provision available — and still offers practical next steps and official portals where it can.",
+    q: "What languages can I write in?",
+    a: "You can write in English, हिन्दी (Hindi), or ಕನ್ನಡ (Kannada). Our system detects the language and matches provisions accordingly.",
   },
   {
-    q: "Does LegalLens store what I write?",
-    a: "Your description is used only to produce your analysis. It isn't shown in your browser's address bar and isn't part of any shareable link.",
-  },
-  {
-    q: "Which language should I write in?",
-    a: "English works best right now, including everyday, informal phrasing and small spelling mistakes — you don't need perfect grammar.",
+    q: "Is my scenario kept private?",
+    a: "Yes. Your description is processed only to perform the legal analysis. It is never logged in plaintext or shared with third parties.",
   },
 ];
 
 export function HowItWorksPage() {
   return (
-    <div className="container max-w-4xl py-14 sm:py-20">
-      {/* Intro */}
-      <motion.header {...fade()} className="mx-auto max-w-2xl text-center">
-        <span className="eyebrow justify-center">The product</span>
-        <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          How LegalLens works
-        </h1>
-        <p className="mt-4 text-muted-foreground text-pretty sm:text-lg">
-          A calm, trustworthy way to understand which laws may relate to a real-life
-          situation — and what you can do next.
-        </p>
-      </motion.header>
+    <div className="relative py-12 sm:py-16 px-4 sm:px-6 select-none max-w-5xl mx-auto">
+      {/* ---------- Sticky Notes on Top ---------- */}
+      <div className="relative w-full">
+        <div className="hidden lg:block absolute -top-6 left-4 z-10 -rotate-6">
+          <div className="bg-[#a7f3d0] dark:bg-[#065f46] text-emerald-950 dark:text-emerald-100 font-mono text-xs px-3.5 py-1.5 rounded shadow-sm border border-emerald-300 dark:border-emerald-700">
+            BNS 2024 · IPC · IT Act
+          </div>
+        </div>
+        <div className="hidden lg:block absolute -top-6 right-8 z-10 rotate-6">
+          <div className="bg-[#fef08a] dark:bg-[#854d0e] text-amber-950 dark:text-amber-100 font-mono text-xs px-3.5 py-1.5 rounded shadow-sm border border-amber-300 dark:border-amber-700">
+            100% Deterministic Grounding
+          </div>
+        </div>
+      </div>
 
-      {/* Steps */}
-      <section className="mt-16">
-        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
-          {STEPS.map((s, i) => (
-            <motion.div key={s.title} {...fade(i * 0.05)}>
-              <Card className="glass-hover h-full p-6">
-                <div className="flex items-center gap-3">
-                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary/12 text-primary">
-                    <s.icon className="h-5 w-5" aria-hidden />
+      {/* ---------- Header with Canvas Selection Box ---------- */}
+      <div className="flex flex-col items-center text-center mb-16">
+        <span className="font-handwriting text-2xl sm:text-3xl text-foreground/80 font-bold -rotate-2">
+          how it actually works
+        </span>
+        <div className="w-12 h-1 bg-foreground/20 rounded-full mt-0.5 mb-2" />
+
+        <div className="relative inline-block px-8 py-2.5 my-2 border-2 border-black dark:border-[#00c5ff] bg-background/80 backdrop-blur-sm">
+          <span className="canvas-handle -top-1.5 -left-1.5" />
+          <span className="canvas-handle -top-1.5 left-1/2 -translate-x-1/2" />
+          <span className="canvas-handle -top-1.5 -right-1.5" />
+          <span className="canvas-handle -bottom-1.5 -left-1.5" />
+          <span className="canvas-handle -bottom-1.5 left-1/2 -translate-x-1/2" />
+          <span className="canvas-handle -bottom-1.5 -right-1.5" />
+          <h1 className="font-mono text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-foreground">
+            HOW IT WORKS
+          </h1>
+        </div>
+
+        <p className="mt-3 font-mono text-xs sm:text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+          Plain language in · Verified Indian laws out
+        </p>
+      </div>
+
+      {/* ---------- 4 Studio Step Pipeline Cards ---------- */}
+      <section className="mb-20">
+        <div className="flex items-center gap-2 mb-6">
+          <span className="font-mono text-xs font-black uppercase tracking-wider text-muted-foreground">
+            01 / 4-STAGE PIPELINE
+          </span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+
+        <div className="grid gap-5 sm:grid-cols-2">
+          {PIPELINE_STEPS.map((s) => (
+            <div
+              key={s.step}
+              className="relative rounded-xl border-2 border-black dark:border-white/30 bg-card p-6 shadow-sm hover:-translate-y-1 transition-transform duration-200 select-none"
+            >
+              {/* Corner Handles */}
+              <span className="canvas-handle -top-1.5 -left-1.5" />
+              <span className="canvas-handle -top-1.5 -right-1.5" />
+              <span className="canvas-handle -bottom-1.5 -left-1.5" />
+              <span className="canvas-handle -bottom-1.5 -right-1.5" />
+
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <span className={`px-2.5 py-1 rounded font-mono text-xs font-black uppercase ${s.tagColor}`}>
+                    STEP {s.step}
                   </span>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/70">
-                    Step {i + 1}
+                  <span className="font-mono text-[11px] font-bold text-muted-foreground">
+                    [{s.label}]
                   </span>
                 </div>
-                <h3 className="mt-4 font-semibold text-foreground">{s.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-                  {s.body}
-                </p>
-              </Card>
-            </motion.div>
+                <span className="font-handwriting text-base font-bold text-foreground/70 -rotate-3">
+                  {s.handwritten}
+                </span>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="h-10 w-10 rounded-lg border-2 border-border bg-muted flex items-center justify-center text-foreground shrink-0 mt-0.5">
+                  <s.icon className="h-5 w-5 stroke-[2]" />
+                </div>
+                <div>
+                  <h3 className="font-mono text-base sm:text-lg font-bold text-foreground">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed font-medium">
+                    {s.body}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Scope */}
-      <section id="scope" className="mt-20 scroll-mt-24">
-        <motion.h2
-          {...fade()}
-          className="font-display text-2xl font-semibold tracking-tight sm:text-3xl"
-        >
-          What LegalLens covers
-        </motion.h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 sm:gap-5">
-          <motion.div {...fade()}>
-            <Card className="h-full p-6">
-              <h3 className="flex items-center gap-2 font-semibold text-primary">
-                <ShieldCheck className="h-5 w-5" /> In scope
-              </h3>
-              <ul className="mt-4 space-y-2.5">
-                {SCOPE_IN.map((s) => (
-                  <li key={s} className="flex items-start gap-2.5 text-sm text-foreground/90">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                    {s}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          </motion.div>
-          <motion.div {...fade(0.06)}>
-            <Card className="h-full p-6">
-              <h3 className="flex items-center gap-2 font-semibold text-muted-foreground">
-                <CircleAlert className="h-5 w-5" /> Not in scope
-              </h3>
-              <ul className="mt-4 space-y-2.5">
-                {SCOPE_OUT.map((s) => (
-                  <li
-                    key={s}
-                    className="flex items-start gap-2.5 text-sm text-muted-foreground"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-foreground/50" />
-                    {s}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          </motion.div>
+      {/* ---------- Transparent Scope Matrix ---------- */}
+      <section className="mb-20">
+        <div className="flex items-center gap-2 mb-6">
+          <span className="font-mono text-xs font-black uppercase tracking-wider text-muted-foreground">
+            02 / SYSTEM BOUNDARIES &amp; SCOPE
+          </span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          {/* Covered (In Scope) */}
+          <div className="rounded-xl border-2 border-emerald-500 bg-emerald-500/[0.04] p-6 shadow-sm select-none">
+            <div className="flex items-center justify-between mb-5">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#10b981] text-black font-mono text-xs font-black uppercase">
+                <CheckCircle2 className="h-3.5 w-3.5 stroke-[2.5]" />
+                <span>WHAT WE COVER</span>
+              </span>
+              <span className="font-mono text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                5 CORE DOMAINS
+              </span>
+            </div>
+
+            <ul className="space-y-4">
+              {SCOPE_IN.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2.5">
+                  <span className="text-[#10b981] font-black text-sm">✓</span>
+                  <div>
+                    <h4 className="font-mono text-xs sm:text-sm font-bold text-foreground">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] sm:text-xs text-muted-foreground font-medium mt-0.5">
+                      {item.desc}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Not Covered (Out of Scope) */}
+          <div className="rounded-xl border-2 border-rose-500 bg-rose-500/[0.04] p-6 shadow-sm select-none">
+            <div className="flex items-center justify-between mb-5">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#e11d48] text-white font-mono text-xs font-black uppercase">
+                <XCircle className="h-3.5 w-3.5 stroke-[2.5]" />
+                <span>WHAT WE DO NOT DO</span>
+              </span>
+              <span className="font-mono text-[11px] font-bold text-rose-600 dark:text-rose-400">
+                SAFETY LIMITS
+              </span>
+            </div>
+
+            <ul className="space-y-4">
+              {SCOPE_OUT.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2.5">
+                  <span className="text-[#e11d48] font-black text-sm">✕</span>
+                  <div>
+                    <h4 className="font-mono text-xs sm:text-sm font-bold text-foreground">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] sm:text-xs text-muted-foreground font-medium mt-0.5">
+                      {item.desc}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      {/* Trust */}
-      <section id="trust" className="mt-20 scroll-mt-24">
-        <motion.div
-          {...fade()}
-          className="rounded-3xl border border-primary/15 bg-primary/[0.05] p-8 sm:p-10"
-        >
-          <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-            Why you can trust what you see
-          </h2>
-          <div className="mt-6 grid gap-6 sm:grid-cols-3">
-            {[
-              {
-                t: "Human-checked",
-                d: "Provisions are verified by a person against official sources before they're ever shown.",
-              },
-              {
-                t: "Always sourced",
-                d: "Each provision links to its official government source so you can confirm it yourself.",
-              },
-              {
-                t: "Honest by design",
-                d: "When there's nothing verified to show, LegalLens says so — it never fabricates the law.",
-              },
-            ].map((c) => (
-              <div key={c.t}>
-                <h3 className="font-semibold text-foreground">{c.t}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground text-pretty">
-                  {c.d}
-                </p>
+      {/* ---------- Frequently Asked Questions ---------- */}
+      <section className="mb-20">
+        <div className="flex items-center gap-2 mb-6">
+          <span className="font-mono text-xs font-black uppercase tracking-wider text-muted-foreground">
+            03 / FREQUENTLY ASKED QUESTIONS
+          </span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          {FAQS.map((faq, idx) => (
+            <div
+              key={idx}
+              className="rounded-xl border-2 border-border bg-card p-5 shadow-sm select-none"
+            >
+              <div className="flex items-center gap-2 mb-2 text-[#00c5ff]">
+                <HelpCircle className="h-4 w-4 shrink-0" />
+                <h3 className="font-mono text-xs sm:text-sm font-bold text-foreground">
+                  {faq.q}
+                </h3>
               </div>
-            ))}
-          </div>
-        </motion.div>
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed font-medium pl-6">
+                {faq.a}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
-      {/* FAQ */}
-      <section className="mt-20">
-        <motion.h2
-          {...fade()}
-          className="font-display text-2xl font-semibold tracking-tight sm:text-3xl"
-        >
-          Common questions
-        </motion.h2>
-        <motion.div {...fade(0.05)} className="mt-4">
-          <Accordion type="single" collapsible className="w-full">
-            {FAQ.map((f, i) => (
-              <AccordionItem key={i} value={`item-${i}`}>
-                <AccordionTrigger>{f.q}</AccordionTrigger>
-                <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </motion.div>
-      </section>
+      {/* ---------- Bottom Studio Action Box ---------- */}
+      <div className="relative rounded-2xl border-2 border-black dark:border-white bg-foreground text-background p-8 text-center flex flex-col items-center select-none shadow-lg">
+        <span className="canvas-handle -top-1.5 -left-1.5" />
+        <span className="canvas-handle -top-1.5 -right-1.5" />
+        <span className="canvas-handle -bottom-1.5 -left-1.5" />
+        <span className="canvas-handle -bottom-1.5 -right-1.5" />
 
-      {/* Awareness vs advice + CTA */}
-      <section className="mt-16">
-        <motion.div
-          {...fade()}
-          className="rounded-3xl border border-accent/20 bg-accent/[0.05] p-8 text-center sm:p-10"
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00c5ff] text-black font-mono text-xs font-black uppercase mb-3">
+          <Sparkles className="h-3.5 w-3.5" />
+          <span>TRY IT NOW</span>
+        </div>
+
+        <h3 className="font-mono text-xl sm:text-3xl font-black uppercase tracking-tight">
+          Ready to understand your rights?
+        </h3>
+        <p className="mt-2 text-xs sm:text-sm opacity-80 max-w-md font-medium">
+          Describe any situation in plain words to get verified Indian legal provisions and official next steps.
+        </p>
+
+        <Link
+          to="/analyze"
+          className="mt-6 inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-[#00c5ff] text-black font-mono text-xs font-black uppercase tracking-wider shadow hover:scale-105 transition-transform"
         >
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-balance">
-            Awareness, not legal advice
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
-            This information is for legal awareness only and does not constitute legal
-            advice. Please consult a qualified legal professional for advice specific to
-            your situation.
-          </p>
-          <div className="mt-7">
-            <Button asChild size="lg">
-              <Link to="/analyze">
-                Analyze a situation <ArrowRight />
-              </Link>
-            </Button>
-          </div>
-        </motion.div>
-      </section>
+          <span>RUN LEGAL ANALYSIS</span>
+          <ArrowRight className="h-4 w-4 stroke-[2.5]" />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Info } from "lucide-react";
+import { ShieldAlert } from "lucide-react";
 
 /*
   Renders the disclaimer text supplied by the API (CLAUDE.md Section 10 — every
@@ -9,10 +9,17 @@ export function MandatoryDisclaimer({ text }: { text: string }) {
   return (
     <div
       role="note"
-      className="flex gap-3 rounded-2xl border border-accent/20 bg-accent/[0.06] p-4 sm:p-5"
+      className="rounded-xl border-2 border-border bg-card p-4 sm:p-5 select-none shadow-sm"
     >
-      <Info className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-      <p className="text-sm leading-relaxed text-muted-foreground text-pretty">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="p-1 rounded bg-amber-500/20 text-amber-600 dark:text-amber-400">
+          <ShieldAlert className="h-4 w-4" />
+        </span>
+        <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+          LEGAL AWARENESS NOTICE (NON-ADVICE)
+        </span>
+      </div>
+      <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground font-medium pl-7">
         {text}
       </p>
     </div>

@@ -72,11 +72,11 @@ export function ResultView({ data }: { data: AnalyzeResponse }) {
         )}
       </div>
 
-      <motion.div variants={item} className="flex items-center gap-3 px-1 pt-3">
-        <h2 className="shrink-0 font-display text-lg font-semibold text-foreground">
-          {hasProvisions ? "Provisions that may relate" : "Legal information"}
-        </h2>
-        <span aria-hidden className="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" />
+      <motion.div variants={item} className="flex items-center gap-3 px-1 pt-4">
+        <span className="shrink-0 font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-foreground">
+          {hasProvisions ? "APPLICABLE STATUTORY PROVISIONS" : "LEGAL INFORMATION"}
+        </span>
+        <span aria-hidden className="h-0.5 flex-1 bg-border" />
       </motion.div>
 
       {hasProvisions ? (

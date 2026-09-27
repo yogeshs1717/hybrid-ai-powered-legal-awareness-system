@@ -1,36 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Loader2, ShieldAlert, PackageX, Wallet } from "lucide-react";
+import { ArrowRight, Loader2, Scale } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const MIN = 20;
 const MAX = 2000;
 
-const EXAMPLES = [
-  {
-    icon: ShieldAlert,
-    label: "Bank OTP scam",
-    text: "Someone called pretending to be my bank and asked for an OTP, then money left my account.",
-  },
-  {
-    icon: PackageX,
-    label: "Refund refused",
-    text: "I bought a phone online but received a damaged product and the seller refuses a refund.",
-  },
-  {
-    icon: Wallet,
-    label: "Unpaid salary",
-    text: "My employer has not paid my salary for the last two months despite repeated reminders.",
-  },
-];
-
-/*
-  Scenario capture. Mirrors the gateway's 20–2000 char bound (backend remains the
-  authority). The scenario is only ever sent in the POST body — never persisted,
-  never placed in a URL (CLAUDE.md Section 9).
-*/
 export function ScenarioInput({
   onSubmit,
   loading,
@@ -53,80 +29,73 @@ export function ScenarioInput({
       }}
       className="w-full"
     >
-      {/* Soft halo behind the textarea when focused — calm, not flashy. */}
-      <div className="group relative rounded-2xl">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-br from-primary/25 via-transparent to-accent/20 opacity-0 blur-sm transition-opacity duration-500 group-focus-within:opacity-100"
-        />
+      <div className="relative rounded-xl border-2 border-border bg-card p-2 shadow-sm transition-colors focus-within:border-black dark:focus-within:border-[#00c5ff]">
+        <span className="canvas-handle -top-1.5 -left-1.5" />
+        <span className="canvas-handle -top-1.5 -right-1.5" />
+        <span className="canvas-handle -bottom-1.5 -left-1.5" />
+        <span className="canvas-handle -bottom-1.5 -right-1.5" />
         <Textarea
           value={value}
           onChange={(e) => setValue(e.target.value)}
           maxLength={MAX + 200}
-          placeholder="Describe what happened, in your own words. For example: “A shopkeeper sold me fake branded shoes and won't take them back.”"
+          placeholder="Describe your situation in plain words (English, हिन्दी, or ಕನ್ನಡ)..."
           aria-label="Describe your situation"
           aria-invalid={tooShort || tooLong}
-          className="relative min-h-[190px] bg-white/[0.035] pb-12 text-base backdrop-blur-sm sm:min-h-[200px]"
+          className="min-h-[200px] sm:min-h-[220px] bg-transparent border-0 text-base focus-visible:ring-0 focus-visible:outline-none resize-y pb-10"
           onKeyDown={(e) => {
             if ((e.metaKey || e.ctrlKey) && e.key === "Enter" && canSubmit) {
               onSubmit(trimmed);
             }
           }}
         />
-        <div className="pointer-events-none absolute bottom-3.5 left-4 right-4 flex items-center justify-between text-xs">
+
+        {/* Bottom Bar inside the box */}
+        <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs font-mono text-muted-foreground select-none">
           <span
-            aria-live="polite"
             className={cn(
-              "tabular-nums text-muted-foreground/70 transition-colors",
-              tooShort && "text-accent",
+              "tabular-nums transition-colors font-medium",
+              tooShort && "text-amber-500",
               tooLong && "text-destructive",
             )}
           >
             {tooShort
               ? `${MIN - len} more characters needed`
               : tooLong
-                ? `${len - MAX} over the limit`
+                ? `${len - MAX} over limit`
                 : `${len} / ${MAX}`}
           </span>
-          <span className="hidden text-muted-foreground/50 sm:inline">
-            Ctrl / ⌘ + Enter to analyze
+          <span className="hidden sm:inline opacity-70">
+            Press Ctrl + Enter to submit
           </span>
         </div>
       </div>
 
-      <div className="mt-5 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-        <div className="min-w-0">
-          <p className="mb-2 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-muted-foreground/60">
-            Try an example
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {EXAMPLES.map((ex) => (
-              <button
-                key={ex.label}
-                type="button"
-                disabled={loading}
-                onClick={() => setValue(ex.text)}
-                className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-2 text-xs text-muted-foreground transition-all duration-200 hover:border-primary/35 hover:bg-primary/[0.07] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97] disabled:opacity-50 motion-reduce:active:scale-100"
-              >
-                <ex.icon className="h-3.5 w-3.5 text-primary/80" aria-hidden />
-                {ex.label}
-              </button>
-            ))}
-          </div>
+      {/* Action Footer */}
+      <div className="mt-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-xs font-mono text-muted-foreground flex items-center gap-1.5">
+          <span className="h-2 w-2 rounded-full bg-[#10b981]" />
+          <span>Supports English, हिन्दी, &amp; ಕನ್ನಡ</span>
         </div>
 
-        <motion.div whileTap={{ scale: 0.98 }} className="sm:shrink-0">
-          <Button type="submit" size="lg" disabled={!canSubmit} className="w-full sm:w-auto">
+        <motion.div whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
+          <button
+            type="submit"
+            disabled={!canSubmit}
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-black text-white dark:bg-white dark:text-black font-mono text-xs font-bold tracking-wider uppercase shadow-md hover:bg-neutral-800 dark:hover:bg-neutral-200 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          >
             {loading ? (
               <>
-                <Loader2 className="animate-spin" /> Analyzing…
+                <Loader2 className="h-4 w-4 animate-spin text-[#00c5ff]" />
+                <span>ANALYZING STATUTES…</span>
               </>
             ) : (
               <>
-                See the law more clearly <ArrowRight />
+                <Scale className="h-4 w-4 text-[#00c5ff]" />
+                <span>RUN LEGAL ANALYSIS</span>
+                <ArrowRight className="h-4 w-4 ml-1" />
               </>
             )}
-          </Button>
+          </button>
         </motion.div>
       </div>
     </form>

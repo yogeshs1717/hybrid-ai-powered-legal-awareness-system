@@ -52,7 +52,7 @@ export function LensMark({
         strokeWidth="2.4"
       />
       {/* clarity lines — a document read clearly through the lens */}
-      <g stroke="hsl(var(--accent))" strokeWidth="1.7" strokeLinecap="round" opacity="0.95">
+      <g stroke="hsl(var(--primary))" strokeWidth="1.7" strokeLinecap="round" opacity="0.95">
         <line x1="12" y1="14" x2="22" y2="14" />
         <line x1="12" y1="17.5" x2="20.5" y2="17.5" />
         <line x1="12" y1="21" x2="18" y2="21" />

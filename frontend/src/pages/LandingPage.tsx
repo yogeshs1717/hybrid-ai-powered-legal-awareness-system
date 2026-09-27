@@ -1,259 +1,321 @@
-import { Link } from "react-router-dom";
-import { motion, useReducedMotion } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
-  ArrowRight,
-  BadgeCheck,
-  ShieldCheck,
-  Languages,
-  Landmark,
   Scale,
+  ShoppingBag,
+  Briefcase,
+  FileText,
+  ArrowRight,
+  Sparkles,
+  Search,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { HeroCanvas } from "@/components/three/HeroCanvas";
-
-/* Concise trust strip directly beneath the hero — trust before interaction. */
-const TRUST_STRIP = [
-  { icon: ShieldCheck, text: "Human-verified legal provisions" },
-  { icon: Landmark, text: "Official Government portals" },
-  { icon: Scale, text: "Legal awareness only — not legal advice" },
-];
-
-const TRUST = [
-  {
-    icon: ShieldCheck,
-    title: "Grounded in official sources",
-    body: "Every legal provision LegalLens shows is checked against official Indian government sources — with a link so you can verify it yourself.",
-  },
-  {
-    icon: Languages,
-    title: "Plain, human language",
-    body: "No dense legalese. LegalLens explains what a provision means in words anyone can follow.",
-  },
-  {
-    icon: Landmark,
-    title: "The right next step",
-    body: "Get practical steps and the official government portals that actually handle your kind of situation.",
-  },
-  {
-    icon: BadgeCheck,
-    title: "Awareness, not guesswork",
-    body: "LegalLens helps you understand the law. It never claims you have a case — and it's honest when there's nothing verified to show.",
-  },
-];
-
-function fade(delay = 0) {
-  return {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, margin: "-80px" },
-    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as const },
-  };
-}
+import { ScenarioInput } from "@/features/analyze/ScenarioInput";
 
 export function LandingPage() {
-  const reduce = useReducedMotion();
-
-  const rise = (delay: number) => ({
-    initial: reduce ? { opacity: 0 } : { opacity: 0, y: 18 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] as const },
-  });
-
+  const navigate = useNavigate();
   return (
-    <div className="overflow-x-clip">
-      {/* ---------- Hero ---------- */}
-      <section className="relative">
-        <div className="absolute inset-0 -z-10">
-          <HeroCanvas />
-          {/* keeps the headline unmistakably the focal point over the scene */}
-          <div className="hero-vignette absolute inset-0" aria-hidden />
-        </div>
-
-        <div className="container flex min-h-[calc(100svh-4rem)] flex-col items-center justify-center py-16 text-center sm:py-20">
-          <motion.div
-            {...rise(0)}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs text-muted-foreground backdrop-blur"
-          >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-pulse-ring rounded-full bg-primary motion-reduce:hidden" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary" />
-            </span>
-            Legal awareness for Indian citizens
-          </motion.div>
-
-          <motion.h1
-            {...rise(0.08)}
-            className="mt-7 max-w-4xl font-display text-[2.75rem] font-semibold leading-[1.04] tracking-tight text-balance sm:text-6xl md:text-7xl"
-          >
-            See the law
-            <br className="sm:hidden" />{" "}
-            <span className="text-jade-brass">more clearly.</span>
-          </motion.h1>
-
-          <motion.p
-            {...rise(0.16)}
-            className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground text-pretty sm:mt-7 sm:text-lg"
-          >
-            Describe a real-life situation in your own words. LegalLens shows you the
-            laws that may relate to it, in plain language — with official sources and
-            practical next steps.
-          </motion.p>
-
-          <motion.div
-            {...rise(0.24)}
-            className="mt-9 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-10 sm:w-auto sm:max-w-none sm:flex-row"
-          >
-            <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link to="/analyze">
-                Analyze a situation <ArrowRight />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
-              <Link to="/how-it-works">How LegalLens works</Link>
-            </Button>
-          </motion.div>
-
-          {/* Trust strip — concise, professional, beneath the CTAs */}
-          <motion.ul
-            {...rise(0.36)}
-            className="mt-14 flex w-full max-w-3xl flex-col items-stretch gap-2.5 sm:mt-16 sm:flex-row sm:items-center sm:justify-center sm:gap-0 sm:divide-x sm:divide-white/10"
-            aria-label="Why you can trust LegalLens"
-          >
-            {TRUST_STRIP.map(({ icon: Icon, text }) => (
-              <li
-                key={text}
-                className="flex items-center justify-center gap-2.5 rounded-xl border border-white/[0.07] bg-white/[0.03] px-4 py-3 text-sm text-muted-foreground backdrop-blur sm:rounded-none sm:border-0 sm:bg-transparent sm:px-6 sm:py-0 sm:backdrop-blur-none"
-              >
-                <Icon className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-                <span className="text-pretty">{text}</span>
-              </li>
-            ))}
-          </motion.ul>
-        </div>
-      </section>
-
-      {/* ---------- Trust, expanded ---------- */}
-      <section className="container py-20 sm:py-28">
-        <motion.div {...fade()} className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow justify-center">Why LegalLens</span>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-            Built to be trusted, not just clever
-          </h2>
-          <p className="mt-4 text-muted-foreground text-pretty">
-            Legal information is only useful if you can rely on it. LegalLens is
-            designed to be careful, transparent, and honest about its limits.
-          </p>
-        </motion.div>
-
-        <div className="mt-12 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
-          {TRUST.map((f, i) => (
-            <motion.div key={f.title} {...fade(i * 0.06)}>
-              <Card className="glass-hover h-full p-6">
-                <span className="grid h-11 w-11 place-items-center rounded-xl bg-primary/12 text-primary">
-                  <f.icon className="h-5 w-5" aria-hidden />
-                </span>
-                <h3 className="mt-4 font-semibold text-foreground">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-                  {f.body}
-                </p>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* ---------- Flow preview ---------- */}
-      <section className="container py-6 sm:py-12">
-        <div className="glass relative overflow-hidden rounded-3xl p-7 sm:p-12">
-          <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[radial-gradient(circle,hsl(var(--accent)/0.16),transparent_60%)] blur-2xl" />
-          <div className="relative grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
-            <motion.div {...fade()}>
-              <span className="eyebrow">One simple step</span>
-              <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-                From confusion to clarity
-              </h2>
-              <p className="mt-4 text-muted-foreground text-pretty">
-                You don't need to know any legal terms to start. Describe what happened
-                — LegalLens does the rest and shows you a calm, readable summary you can
-                act on.
-              </p>
-              <ul className="mt-7 space-y-3.5">
-                {[
-                  "The area of law your situation relates to",
-                  "Relevant legal provisions, explained simply",
-                  "Clear, practical steps you can take next",
-                  "Official government portals for your issue",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                    <span className="text-sm text-foreground/90">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-9">
-                <Button asChild>
-                  <Link to="/analyze">
-                    Try it now <ArrowRight />
-                  </Link>
-                </Button>
-              </div>
-            </motion.div>
-
-            <motion.div {...fade(0.1)} className="space-y-3">
-              {[
-                { k: "Area of law", v: "Cyber Fraud", tone: "primary" },
-                { k: "Detected situation", v: "OTP / impersonation fraud", tone: "accent" },
-                { k: "Next step", v: "Report on the official cybercrime portal", tone: "primary" },
-              ].map((row) => (
-                <div
-                  key={row.k}
-                  className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition-colors duration-300 hover:border-white/[0.16] sm:flex-row sm:items-center sm:justify-between sm:gap-4"
-                >
-                  <span className="text-[0.68rem] font-medium uppercase tracking-[0.14em] text-muted-foreground/70">
-                    {row.k}
-                  </span>
-                  <span
-                    className={
-                      row.tone === "accent"
-                        ? "text-sm font-medium text-accent"
-                        : "text-sm font-medium text-primary"
-                    }
-                  >
-                    {row.v}
-                  </span>
-                </div>
-              ))}
-              <p className="px-1 pt-2 text-xs text-muted-foreground/70">
-                Illustrative preview. Your actual results depend on what you describe.
-              </p>
-            </motion.div>
+    <div className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between overflow-x-hidden px-4 sm:px-6 py-10 sm:py-16 select-none">
+      {/* ---------- Canvas Sticky Notes / Tags (Like Reference Image 2) ---------- */}
+      <div className="max-w-5xl mx-auto w-full relative">
+        {/* Left Sticky Note (Mint Green, tilted -6deg) */}
+        <div className="hidden lg:block absolute -top-4 left-12 z-20 -rotate-6 transition-transform hover:rotate-0 duration-200">
+          <div className="bg-[#a7f3d0] dark:bg-[#065f46] text-emerald-950 dark:text-emerald-100 font-mono text-xs px-3.5 py-1.5 rounded shadow-sm border border-emerald-300 dark:border-emerald-700">
+            Updated for BNS 2024
           </div>
         </div>
-      </section>
 
-      {/* ---------- Awareness vs advice ---------- */}
-      <section className="container py-20 sm:py-28">
+        {/* Right Sticky Note (Warm Amber, tilted +6deg) */}
+        <div className="hidden lg:block absolute -top-4 right-16 z-20 rotate-6 transition-transform hover:rotate-0 duration-200">
+          <div className="bg-[#fef08a] dark:bg-[#854d0e] text-amber-950 dark:text-amber-100 font-mono text-xs px-3.5 py-1.5 rounded shadow-sm border border-amber-300 dark:border-amber-700">
+            Official Indian Law Data
+          </div>
+        </div>
+
+        {/* Floating Speech Bubble (Magenta, right side) */}
+        <div className="hidden md:block absolute top-36 right-0 sm:-right-4 z-20 rotate-3">
+          <div className="speech-bubble bg-[#e11d48] text-white text-[11px] font-mono font-bold px-3 py-1 rounded shadow-md">
+            All 28 States &amp; UTs 🇮🇳
+          </div>
+        </div>
+
+        {/* Floating User Cursor Sticker (Like Reference Image 2 "YOU") */}
+        <div className="hidden md:flex absolute top-24 -right-12 z-20 items-center gap-1.5">
+          <div className="h-7 w-7 rounded-full bg-black text-white dark:bg-white dark:text-black flex items-center justify-center text-[10px] font-mono font-bold shadow-md">
+            YOU
+          </div>
+          <svg className="w-4 h-4 -rotate-45 text-black dark:text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 3l7 18 3-7 7-3L3 3z" />
+          </svg>
+        </div>
+
+        {/* ---------- Left Polaroid Photo Card (Like Reference Image 1) ---------- */}
         <motion.div
-          {...fade()}
-          className="mx-auto max-w-3xl rounded-3xl border border-accent/20 bg-accent/[0.05] p-8 text-center sm:p-12"
+          initial={{ opacity: 0, x: -20, rotate: -8 }}
+          animate={{ opacity: 1, x: 0, rotate: -8 }}
+          transition={{ duration: 0.6 }}
+          className="hidden xl:block absolute top-16 -left-16 z-10 hover:rotate-0 transition-transform duration-300"
         >
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-balance sm:text-3xl">
-            Awareness, not legal advice
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground text-pretty">
-            LegalLens helps you understand which laws may relate to your situation and
-            where to turn next. It doesn't tell you whether a law definitely applies or
-            whether you have a case. For advice specific to your situation, always
-            consult a qualified legal professional.
-          </p>
-          <div className="mt-8">
-            <Button asChild variant="secondary">
-              <Link to="/how-it-works">Understand our scope &amp; limits</Link>
-            </Button>
+          <div className="polaroid-card w-44">
+            <div className="h-32 bg-slate-100 dark:bg-slate-800 rounded-sm flex flex-col items-center justify-center p-3 text-center border border-border/40">
+              <Scale className="h-10 w-10 text-primary mb-1 stroke-[1.75]" />
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-muted-foreground">
+                Bharatiya Nyaya
+              </span>
+            </div>
+            <p className="font-handwriting text-center text-lg text-slate-800 dark:text-slate-200 mt-2 font-bold">
+              legal rights 2026
+            </p>
           </div>
         </motion.div>
+
+        {/* ---------- Right Polaroid Photo Card (Like Reference Image 1) ---------- */}
+        <motion.div
+          initial={{ opacity: 0, x: 20, rotate: 8 }}
+          animate={{ opacity: 1, x: 0, rotate: 8 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="hidden xl:block absolute top-20 -right-20 z-10 hover:rotate-0 transition-transform duration-300"
+        >
+          <div className="polaroid-card w-44">
+            <div className="h-32 bg-slate-100 dark:bg-slate-800 rounded-sm flex flex-col items-center justify-center p-3 text-center border border-border/40">
+              <Sparkles className="h-10 w-10 text-[#00c5ff] mb-1 stroke-[1.75]" />
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-muted-foreground">
+                Grievance Portals
+              </span>
+            </div>
+            <p className="font-handwriting text-center text-lg text-slate-800 dark:text-slate-200 mt-2 font-bold">
+              official sources
+            </p>
+          </div>
+        </motion.div>
+
+        {/* ---------- Hero Center: Figma Selection Box (Like Reference Image 1 & 2) ---------- */}
+        <div className="flex flex-col items-center text-center">
+          {/* Handwritten Annotation above the selection box */}
+          <div className="mb-2 flex flex-col items-center">
+            <span className="font-handwriting text-2xl sm:text-3xl text-foreground/80 font-bold -rotate-2">
+              what's up
+            </span>
+            <div className="w-12 h-1 bg-foreground/20 rounded-full mt-0.5" />
+          </div>
+
+          {/* Interactive Bounding Selection Box */}
+          <div className="relative inline-block px-8 py-3 my-2 border-2 border-black dark:border-[#00c5ff] bg-background/80 backdrop-blur-sm shadow-sm select-none">
+            {/* 8 Transform Handles */}
+            <span className="canvas-handle -top-1.5 -left-1.5" />
+            <span className="canvas-handle -top-1.5 left-1/2 -translate-x-1/2" />
+            <span className="canvas-handle -top-1.5 -right-1.5" />
+            <span className="canvas-handle top-1/2 -translate-y-1/2 -left-1.5" />
+            <span className="canvas-handle top-1/2 -translate-y-1/2 -right-1.5" />
+            <span className="canvas-handle -bottom-1.5 -left-1.5" />
+            <span className="canvas-handle -bottom-1.5 left-1/2 -translate-x-1/2" />
+            <span className="canvas-handle -bottom-1.5 -right-1.5" />
+
+            <h1 className="font-mono text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-foreground">
+              LEGAL LENS
+            </h1>
+          </div>
+
+          {/* Tagline Pill */}
+          <div className="flex items-center gap-2 mt-3 text-xs font-mono font-bold text-muted-foreground tracking-wider uppercase">
+            <span className="h-2 w-2 rounded-full bg-[#00c5ff] animate-pulse" />
+            <span>100% Free Public Legal Awareness</span>
+          </div>
+
+          {/* Short, Minimal Subtitle (No bulky headings) */}
+          <p className="mt-3 font-mono text-sm sm:text-base font-semibold text-foreground/80 tracking-tight">
+            Indian Laws &amp; Legal Rights, Simplified.
+          </p>
+
+          {/* Main Action Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="#analyze-section"
+              className="inline-flex items-center gap-3 px-7 py-3.5 bg-black text-white dark:bg-white dark:text-black font-mono text-sm font-bold tracking-wider rounded-lg shadow-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-transform active:scale-95"
+            >
+              <div className="h-5 w-5 rounded bg-[#00c5ff] flex items-center justify-center text-black">
+                <Search className="h-3 w-3 stroke-[3]" />
+              </div>
+              <span>ANALYZE YOUR SITUATION</span>
+              <ArrowRight className="h-4 w-4" />
+            </a>
+
+            <a
+              href="#how-it-works-section"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-border bg-card/80 hover:bg-muted font-mono text-xs font-bold tracking-wider rounded-lg transition-colors"
+            >
+              <span>HOW IT WORKS</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------- Capability Tiles ---------- */}
+      <div className="max-w-4xl mx-auto w-full mt-14 sm:mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+          {/* Tile 1: Yellow (Cyber Fraud) */}
+          <div className="flex items-center justify-between bg-[#f59e0b] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+            <span>Cyber Fraud</span>
+            <span className="grid grid-cols-2 gap-0.5 p-1 bg-black/10 rounded">
+              <span className="w-1.5 h-1.5 bg-black rounded-[1px]" />
+              <span className="w-1.5 h-1.5 bg-black rounded-[1px]" />
+              <span className="w-1.5 h-1.5 bg-black rounded-[1px]" />
+              <span className="w-1.5 h-1.5 bg-black rounded-[1px]" />
+            </span>
+          </div>
+
+          {/* Tile 2: Green (Consumer Rights) */}
+          <div className="flex items-center justify-between bg-[#10b981] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+            <span>Consumer Rights</span>
+            <span className="p-1 bg-black/10 rounded">
+              <ShoppingBag className="w-4 h-4 text-black stroke-[2.5]" />
+            </span>
+          </div>
+
+          {/* Tile 3: Magenta (Labor & Wages) */}
+          <div className="flex items-center justify-between bg-[#e11d48] text-white px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+            <span>Labor &amp; Wages</span>
+            <span className="p-1 bg-white/20 rounded">
+              <Briefcase className="w-4 h-4 text-white stroke-[2.5]" />
+            </span>
+          </div>
+
+          {/* Tile 4: Cyan (Contract Law) */}
+          <div className="flex items-center justify-between bg-[#00c5ff] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+            <span>Contract Law</span>
+            <span className="p-1 bg-black/10 rounded">
+              <FileText className="w-4 h-4 text-black stroke-[2.5]" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------- Dedicated Section 02: ANALYZE YOUR SITUATION ---------- */}
+      <section id="analyze-section" className="max-w-3xl mx-auto w-full mt-24 sm:mt-32 pt-8 scroll-mt-20">
+        <div className="flex flex-col items-center text-center mb-8">
+          <span className="font-handwriting text-2xl sm:text-3xl text-foreground/80 font-bold -rotate-2">
+            try it right here
+          </span>
+          <div className="w-12 h-1 bg-foreground/20 rounded-full mt-0.5 mb-2" />
+
+          <div className="relative inline-block px-7 py-2.5 my-2 border-2 border-black dark:border-[#00c5ff] bg-background/80 backdrop-blur-sm">
+            <span className="canvas-handle -top-1.5 -left-1.5" />
+            <span className="canvas-handle -top-1.5 -right-1.5" />
+            <span className="canvas-handle -bottom-1.5 -left-1.5" />
+            <span className="canvas-handle -bottom-1.5 -right-1.5" />
+            <h2 className="font-mono text-xl sm:text-2xl font-extrabold uppercase tracking-tight text-foreground">
+              02 / LEGAL ANALYZER
+            </h2>
+          </div>
+
+          <p className="mt-2 text-xs sm:text-sm font-medium text-muted-foreground max-w-md">
+            Type what happened in plain language. We'll find relevant Indian statutory provisions and verified portals.
+          </p>
+        </div>
+
+        {/* Embedded Scenario Input */}
+        <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
+          <ScenarioInput
+            onSubmit={(scenario) => navigate("/analyze", { state: { scenario } })}
+            loading={false}
+          />
+        </div>
       </section>
+
+      {/* ---------- Dedicated Section 03: HOW IT WORKS ---------- */}
+      <section id="how-it-works-section" className="max-w-4xl mx-auto w-full mt-24 sm:mt-32 pt-8 scroll-mt-20">
+        <div className="flex flex-col items-center text-center mb-12">
+          <span className="font-handwriting text-2xl sm:text-3xl text-foreground/80 font-bold rotate-2">
+            4 simple steps
+          </span>
+          <div className="w-12 h-1 bg-foreground/20 rounded-full mt-0.5 mb-2" />
+
+          <div className="relative inline-block px-7 py-2.5 my-2 border-2 border-black dark:border-[#00c5ff] bg-background/80 backdrop-blur-sm">
+            <span className="canvas-handle -top-1.5 -left-1.5" />
+            <span className="canvas-handle -top-1.5 -right-1.5" />
+            <span className="canvas-handle -bottom-1.5 -left-1.5" />
+            <span className="canvas-handle -bottom-1.5 -right-1.5" />
+            <h2 className="font-mono text-xl sm:text-2xl font-extrabold uppercase tracking-tight text-foreground">
+              03 / HOW IT WORKS
+            </h2>
+          </div>
+
+          <p className="mt-2 text-xs sm:text-sm font-medium text-muted-foreground max-w-md">
+            A transparent pipeline from your real-life scenario to verified Indian legal protections.
+          </p>
+        </div>
+
+        {/* 4 Interactive Step Cards */}
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border-2 border-border bg-card p-5 shadow-sm hover:-translate-y-1 transition-transform">
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-2.5 py-1 rounded bg-[#f59e0b] text-black font-mono text-xs font-black">
+                STEP 01
+              </span>
+              <span className="font-mono text-[11px] text-muted-foreground">INPUT</span>
+            </div>
+            <h3 className="font-mono text-base font-bold text-foreground">Describe your situation</h3>
+            <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Write in plain English, Hindi, or Kannada. No legal jargon or section numbers needed.
+            </p>
+          </div>
+
+          <div className="rounded-xl border-2 border-border bg-card p-5 shadow-sm hover:-translate-y-1 transition-transform">
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-2.5 py-1 rounded bg-[#10b981] text-black font-mono text-xs font-black">
+                STEP 02
+              </span>
+              <span className="font-mono text-[11px] text-muted-foreground">AI NLP</span>
+            </div>
+            <h3 className="font-mono text-base font-bold text-foreground">LegalLens analyzes the issue</h3>
+            <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Extracts factual indicators and classifies the legal domain with strict confidence scoring.
+            </p>
+          </div>
+
+          <div className="rounded-xl border-2 border-border bg-card p-5 shadow-sm hover:-translate-y-1 transition-transform">
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-2.5 py-1 rounded bg-[#e11d48] text-white font-mono text-xs font-black">
+                STEP 03
+              </span>
+              <span className="font-mono text-[11px] text-muted-foreground">STATUTES</span>
+            </div>
+            <h3 className="font-mono text-base font-bold text-foreground">Matches verified statutes</h3>
+            <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Displays relevant sections from Bharatiya Nyaya Sanhita, IPC, IT Act, and Consumer Act.
+            </p>
+          </div>
+
+          <div className="rounded-xl border-2 border-border bg-card p-5 shadow-sm hover:-translate-y-1 transition-transform">
+            <div className="flex items-center justify-between mb-3">
+              <span className="px-2.5 py-1 rounded bg-[#00c5ff] text-black font-mono text-xs font-black">
+                STEP 04
+              </span>
+              <span className="font-mono text-[11px] text-muted-foreground">ACTION</span>
+            </div>
+            <h3 className="font-mono text-base font-bold text-foreground">Action steps &amp; portals</h3>
+            <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Direct access to official grievance portals (e.g. cybercrime.gov.in, National Consumer Helpline).
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-6 text-center">
+          <Link
+            to="/how-it-works"
+            className="inline-flex items-center gap-2 font-mono text-xs font-bold text-foreground hover:text-[#00c5ff] transition-colors underline underline-offset-4"
+          >
+            <span>VIEW FULL COVERAGE &amp; LIMITS GUIDE</span>
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Minimal Legal Awareness Notice */}
+      <div className="max-w-4xl mx-auto w-full mt-16 text-center">
+        <p className="text-[11px] font-mono text-muted-foreground/80">
+          LegalLens provides public legal awareness only and does not constitute formal legal advice.
+        </p>
+      </div>
     </div>
   );
 }

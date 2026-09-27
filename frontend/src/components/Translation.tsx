@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import { Globe, Check, Loader2, Sparkles } from "lucide-react";
+import { Globe, Check, ChevronDown, Loader2 } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 declare global {
@@ -21,23 +21,23 @@ declare global {
   }
 }
 
-type LangCode = "en" | "hi" | "kn";
+export type LangCode = "en" | "hi" | "kn";
 
-interface LanguageOption {
+export interface LanguageOption {
   code: LangCode;
   name: string;
   native: string;
 }
 
-const LANGUAGES: LanguageOption[] = [
+export const LANGUAGES: LanguageOption[] = [
   { code: "en", name: "English", native: "English" },
   { code: "hi", name: "Hindi", native: "हिन्दी" },
   { code: "kn", name: "Kannada", native: "ಕನ್ನಡ" },
 ];
 
-// In-memory cache for translated strings to avoid redundant API roundtrips
+// In-memory cache for translated strings
 const translationCache = new Map<string, string>();
-// Maps any translated text (Hindi / Kannada) back to its original English text
+// Maps any translated text back to its pristine English text
 const toEnglishMap = new Map<string, string>();
 
 /**
@@ -81,7 +81,7 @@ function getTranslatableNodes(root: Node): { node: Text; text: string }[] {
         tag === "path" ||
         tag === "code" ||
         parent.closest("[data-no-translate]") ||
-        parent.closest("aside[aria-label='Language Selector']")
+        parent.closest("[data-language-selector]")
       ) {
         return NodeFilter.FILTER_REJECT;
       }
@@ -104,12 +104,37 @@ function getTranslatableNodes(root: Node): { node: Text; text: string }[] {
   return results;
 }
 
-export function Translation() {
+/**
+ * Core Language Dropdown Component for the Navbar.
+ */
+export function LanguageDropdown({ className = "" }: { className?: string }) {
   const [currentLang, setCurrentLang] = useState<LangCode>("en");
+  const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const currentLangRef = useRef<LangCode>("en");
   currentLangRef.current = currentLang;
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   // Translate all DOM text nodes to target language using backend /api/translate
   const translateDom = useCallback(async (target: LangCode) => {
@@ -135,7 +160,7 @@ export function Translation() {
 
     if (!neededTexts.length) return;
 
-    // Batch translate uncached strings in chunks of 30
+    // Batch translate in chunks of 30
     setIsLoading(true);
     try {
       const CHUNK_SIZE = 30;
@@ -180,6 +205,7 @@ export function Translation() {
   // Handle language change
   const changeLanguage = useCallback(
     (lang: LangCode) => {
+      setIsOpen(false);
       if (lang === currentLangRef.current) return;
 
       setCurrentLang(lang);
@@ -205,7 +231,7 @@ export function Translation() {
             }
           }
         } catch (_e) {
-          // ignore walker error
+          // ignore
         }
 
         // 2. Try Google Translate built-in revert button if any
@@ -221,8 +247,7 @@ export function Translation() {
           // ignore
         }
 
-        // 3. Verify if any Indic characters (Devanagari \u0900-\u097F or Kannada \u0C80-\u0CFF) remain.
-        // If anything is still not English or in-place didn't match, reload to guarantee 100% original English
+        // 3. If any Indic characters remain, reload to guarantee 100% clean English
         const stillHasIndic = /[\u0900-\u097F\u0C80-\u0CFF]/.test(document.body.innerText);
         if (stillHasIndic || !anyReverted) {
           window.location.reload();
@@ -250,7 +275,7 @@ export function Translation() {
     [translateDom]
   );
 
-  // Initialize and load saved language or Google Translate
+  // Initialize and load saved language
   useEffect(() => {
     const saved = localStorage.getItem("legallens_lang") as LangCode | null;
     if (saved === "en") {
@@ -296,8 +321,15 @@ export function Translation() {
     }
   }, [location.pathname, translateDom]);
 
+  const activeOption = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[0];
+
   return (
-    <>
+    <div
+      ref={dropdownRef}
+      data-no-translate="true"
+      data-language-selector="true"
+      className={`relative inline-block text-left ${className}`}
+    >
       {/* Invisible container for Google Translate element */}
       <div
         id="google_translate_element"
@@ -341,59 +373,63 @@ export function Translation() {
         }
       `}</style>
 
-      {/* Floating Modern Language Selector Bar — bottom-right with maximum z-index */}
-      <aside
-        aria-label="Language Selector"
-        data-no-translate="true"
-        className="fixed bottom-5 right-5 z-[99999] pointer-events-auto select-none"
-        style={{ zIndex: 99999 }}
+      {/* Language Trigger Button in Navbar */}
+      <button
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+        aria-haspopup="listbox"
+        className="inline-flex items-center gap-1.5 h-9 px-3 rounded-full border border-border bg-card/60 hover:bg-muted/80 text-xs font-medium text-foreground transition-all duration-200 select-none cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
       >
-        <div className="flex items-center gap-1.5 p-1.5 rounded-full border border-white/20 bg-slate-950/90 shadow-2xl backdrop-blur-xl ring-1 ring-white/10">
-          {/* Label / Icon */}
-          <div className="flex items-center gap-1.5 pl-2.5 pr-2 py-1 text-slate-300 font-medium text-xs border-r border-white/10">
-            <Globe className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-            <span className="hidden sm:inline text-[11px] text-slate-400">Language:</span>
-          </div>
+        {isLoading ? (
+          <Loader2 className="w-3.5 h-3.5 animate-spin text-primary" />
+        ) : (
+          <Globe className="w-3.5 h-3.5 text-primary" />
+        )}
+        <span>{activeOption.native}</span>
+        <ChevronDown
+          className={`w-3 h-3 text-muted-foreground transition-transform duration-200 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
 
-          {/* Language Buttons */}
-          <div className="flex items-center gap-1">
+      {/* Dropdown Menu (opens downward directly beneath the button) */}
+      {isOpen && (
+        <div
+          role="listbox"
+          aria-label="Select Language"
+          className="absolute top-full mt-2 right-0 w-36 rounded-xl border border-border bg-card shadow-xl backdrop-blur-xl p-1 z-50 animate-in fade-in zoom-in-95 duration-100"
+        >
+          <div className="space-y-0.5">
             {LANGUAGES.map((lang) => {
               const isSelected = lang.code === currentLang;
               return (
                 <button
                   key={lang.code}
+                  role="option"
+                  aria-selected={isSelected}
                   type="button"
                   onClick={() => changeLanguage(lang.code)}
-                  className={`cursor-pointer flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold transition-all duration-200 active:scale-95 ${
+                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     isSelected
-                      ? "bg-emerald-500 text-slate-950 shadow-md scale-105"
-                      : "text-slate-300 hover:text-white hover:bg-white/10"
+                      ? "bg-primary text-primary-foreground font-semibold"
+                      : "text-foreground hover:bg-muted"
                   }`}
-                  aria-pressed={isSelected}
-                  title={`Translate whole app to ${lang.name}`}
                 >
-                  {isSelected && !isLoading && <Check className="w-3 h-3 stroke-[3]" />}
-                  {isSelected && isLoading && <Loader2 className="w-3 h-3 animate-spin" />}
                   <span>{lang.native}</span>
+                  {isSelected && <Check className="w-3.5 h-3.5 stroke-[2.5]" />}
                 </button>
               );
             })}
           </div>
-
-          {/* Status Indicator */}
-          {currentLang !== "en" && !isLoading && (
-            <div className="hidden md:flex items-center gap-1 pr-2 pl-1 text-[10px] text-emerald-400/80 font-medium">
-              <Sparkles className="w-3 h-3" />
-              <span>Translated</span>
-            </div>
-          )}
-          {isLoading && (
-            <div className="hidden md:flex items-center gap-1 pr-2 pl-1 text-[10px] text-amber-400 font-medium animate-pulse">
-              <span>Translating...</span>
-            </div>
-          )}
         </div>
-      </aside>
-    </>
+      )}
+    </div>
   );
+}
+
+// Export default Translation component for backward compatibility in App.tsx
+export function Translation() {
+  return null;
 }

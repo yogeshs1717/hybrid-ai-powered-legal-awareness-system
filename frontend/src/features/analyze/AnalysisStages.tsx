@@ -30,23 +30,27 @@ export function AnalysisStages() {
 
   return (
     <div
-      className="glass mx-auto max-w-md rounded-3xl p-6 sm:p-8"
+      className="relative rounded-2xl border-2 border-black dark:border-white/30 bg-card p-6 sm:p-8 max-w-md mx-auto shadow-sm select-none"
       role="status"
       aria-live="polite"
       aria-label="Analyzing your situation"
     >
-      {/* Brand pulse — the lens at work. */}
-      <div className="mb-6 flex justify-center">
-        <span className="relative grid place-items-center">
-          <span
-            aria-hidden
-            className="absolute h-14 w-14 animate-pulse-ring rounded-full border border-primary/40 motion-reduce:hidden"
-          />
-          <LensMark className="h-10 w-10" title="" />
-        </span>
+      {/* 4 Corner Handles */}
+      <span className="canvas-handle -top-1.5 -left-1.5" />
+      <span className="canvas-handle -top-1.5 -right-1.5" />
+      <span className="canvas-handle -bottom-1.5 -left-1.5" />
+      <span className="canvas-handle -bottom-1.5 -right-1.5" />
+
+      {/* Brand Icon & Status Pill */}
+      <div className="mb-6 flex flex-col items-center">
+        <LensMark className="h-10 w-10 text-foreground animate-pulse" title="LegalLens" />
+        <div className="mt-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00c5ff]/20 text-[#00c5ff] font-mono text-xs font-bold uppercase tracking-wider">
+          <span className="h-2 w-2 rounded-full bg-[#00c5ff] animate-ping" />
+          <span>STATUTORY ANALYSIS RUNNING</span>
+        </div>
       </div>
 
-      <div className="flex flex-col gap-0.5">
+      <div className="space-y-3">
         {STAGES.map((label, i) => {
           const done = i < active;
           const current = i === active;
@@ -56,32 +60,33 @@ export function AnalysisStages() {
               initial={reduce ? false : { opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: reduce ? 0 : i * 0.08 }}
-              className="flex items-center gap-3.5 py-2"
+              className={cn(
+                "flex items-center justify-between p-2.5 rounded-lg border transition-all duration-200",
+                done
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-950 dark:text-emerald-200"
+                  : current
+                  ? "border-[#00c5ff] bg-[#00c5ff]/10 text-foreground shadow-sm"
+                  : "border-border/60 bg-muted/20 text-muted-foreground opacity-60"
+              )}
             >
-              <span
-                className={cn(
-                  "grid h-7 w-7 shrink-0 place-items-center rounded-full border transition-colors duration-300",
-                  done && "border-primary/40 bg-primary/15 text-primary",
-                  current && "border-primary/50 bg-primary/10 text-primary",
-                  !done && !current && "border-white/10 text-muted-foreground/50",
-                )}
-              >
+              <div className="flex items-center gap-3">
+                <span className="font-mono text-xs font-bold">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-xs sm:text-sm font-medium">
+                  {label}
+                </span>
+              </div>
+
+              <div>
                 {done ? (
-                  <Check className="h-4 w-4" />
+                  <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400 stroke-[3]" />
                 ) : current ? (
-                  <Loader2 className="h-4 w-4 animate-spin" />
+                  <Loader2 className="h-4 w-4 text-[#00c5ff] animate-spin" />
                 ) : (
-                  <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground" />
                 )}
-              </span>
-              <span
-                className={cn(
-                  "text-sm transition-colors duration-300",
-                  (done || current) ? "text-foreground" : "text-muted-foreground/60",
-                )}
-              >
-                {label}
-              </span>
+              </div>
             </motion.div>
           );
         })}

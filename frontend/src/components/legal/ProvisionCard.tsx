@@ -1,6 +1,4 @@
 import { BookOpen, ExternalLink, ShieldCheck } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import type { LegalProvision } from "@/types/contract";
 
 /*
@@ -19,25 +17,35 @@ export function ProvisionCard({
 }) {
   const { official_source } = provision;
   return (
-    <Card className="overflow-hidden transition-colors duration-300 hover:border-white/[0.15]">
-      <div className="border-b border-white/10 bg-white/[0.02] p-5 sm:p-6">
-        <div className="flex flex-wrap items-center gap-2">
-          <Badge variant="default">
-            <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
-            Verified provision
-          </Badge>
-          <span className="text-xs text-muted-foreground/70">#{index + 1}</span>
-        </div>
-        <div className="mt-3 flex items-start gap-3">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-primary/12 text-primary">
-            <BookOpen className="h-5 w-5" aria-hidden />
+    <div className="rounded-xl border-2 border-black dark:border-white/30 bg-card shadow-sm overflow-hidden select-none">
+      {/* Header bar */}
+      <div className="border-b-2 border-border bg-muted/40 p-4 sm:p-5 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#10b981] text-black font-mono text-xs font-black uppercase">
+            <ShieldCheck className="h-3.5 w-3.5 stroke-[2.5]" />
+            <span>VERIFIED STATUTE</span>
           </span>
+          <span className="font-mono text-xs font-bold text-muted-foreground">
+            #{index + 1}
+          </span>
+        </div>
+        <span className="font-mono text-[11px] text-muted-foreground uppercase font-bold hidden sm:inline">
+          OFFICIAL LAW TEXT
+        </span>
+      </div>
+
+      {/* Main Title Section */}
+      <div className="p-5 sm:p-6 border-b border-border/60">
+        <div className="flex items-start gap-3">
+          <div className="h-10 w-10 shrink-0 rounded-lg border-2 border-border bg-muted flex items-center justify-center text-foreground">
+            <BookOpen className="h-5 w-5 stroke-[2]" />
+          </div>
           <div className="min-w-0">
-            <h4 className="font-display text-lg font-semibold leading-tight text-foreground">
+            <h4 className="font-mono text-lg sm:text-xl font-black text-foreground">
               {provision.act} · {provision.section}
             </h4>
             {provision.title && (
-              <p className="mt-0.5 text-sm text-muted-foreground text-pretty">
+              <p className="mt-1 text-xs sm:text-sm font-medium text-muted-foreground">
                 {provision.title}
               </p>
             )}
@@ -45,41 +53,44 @@ export function ProvisionCard({
         </div>
       </div>
 
+      {/* Content Section */}
       <div className="space-y-4 p-5 sm:p-6">
         <div>
-          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground/70">
-            In plain language
+          <p className="font-mono text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+            IN PLAIN WORDS
           </p>
-          <p className="mt-1.5 text-sm leading-relaxed text-foreground/90 text-pretty">
+          <p className="mt-1 text-sm leading-relaxed text-foreground font-medium">
             {provision.simplified_explanation}
           </p>
         </div>
 
-        <div className="rounded-xl border border-primary/15 bg-primary/[0.05] p-3.5">
-          <p className="text-xs font-medium uppercase tracking-wider text-primary/90">
-            Why this may be relevant
+        <div className="rounded-lg border-2 border-[#f59e0b]/40 bg-[#f59e0b]/10 p-4">
+          <p className="font-mono text-[11px] font-black uppercase tracking-wider text-amber-900 dark:text-amber-200">
+            Why this may be relevant to your situation
           </p>
-          <p className="mt-1.5 text-sm leading-relaxed text-foreground/90 text-pretty">
+          <p className="mt-1 text-xs sm:text-sm leading-relaxed text-foreground font-medium">
             {provision.provision_relevance_rationale}
           </p>
         </div>
 
         {official_source?.url ? (
-          <a
-            href={official_source.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-          >
-            <ExternalLink className="h-4 w-4" aria-hidden />
-            View on {official_source.name}
-          </a>
+          <div className="pt-2">
+            <a
+              href={official_source.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border-2 border-foreground bg-foreground text-background font-mono text-xs font-bold tracking-wider hover:bg-transparent hover:text-foreground transition-all"
+            >
+              <span>VIEW ON {official_source.name?.toUpperCase() ?? "OFFICIAL PORTAL"}</span>
+              <ExternalLink className="h-3.5 w-3.5" />
+            </a>
+          </div>
         ) : (
-          <p className="text-xs text-muted-foreground/70">
-            Source: {official_source?.name ?? "Official source"}
+          <p className="text-xs font-mono text-muted-foreground">
+            Source: {official_source?.name ?? "Official Indian Law Gazette"}
           </p>
         )}
       </div>
-    </Card>
+    </div>
   );
 }

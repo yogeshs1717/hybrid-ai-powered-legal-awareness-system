@@ -10,10 +10,10 @@ import type { ConfidenceLabel } from "@/types/contract";
   shown to citizens (Section 6.2, per approved design).
 */
 
-const LABEL_STYLES: Record<ConfidenceLabel, string> = {
-  High: "text-primary",
-  Medium: "text-accent",
-  Low: "text-muted-foreground",
+const LABEL_COLORS: Record<ConfidenceLabel, string> = {
+  High: "bg-[#10b981] text-black",
+  Medium: "bg-[#f59e0b] text-black",
+  Low: "bg-[#e11d48] text-white",
 };
 
 export function ConfidenceMeter({
@@ -25,10 +25,10 @@ export function ConfidenceMeter({
 }) {
   const pct = Math.round(Math.max(0, Math.min(1, value)) * 100);
   return (
-    <div className="w-full">
-      <div className="mb-1.5 flex items-center justify-between text-xs">
-        <span className="inline-flex items-center gap-1.5 text-muted-foreground">
-          Model confidence
+    <div className="w-full select-none">
+      <div className="mb-2 flex items-center justify-between text-xs font-mono">
+        <span className="inline-flex items-center gap-1.5 text-muted-foreground font-bold">
+          <span>MODEL CONFIDENCE</span>
           <Tooltip>
             <TooltipTrigger aria-label="What is model confidence?">
               <HelpCircle className="h-3.5 w-3.5 opacity-70" />
@@ -39,10 +39,12 @@ export function ConfidenceMeter({
             </TooltipContent>
           </Tooltip>
         </span>
-        <span className={cn("font-semibold", LABEL_STYLES[label])}>{label}</span>
+        <span className={cn("px-2 py-0.5 rounded text-[10px] font-black uppercase", LABEL_COLORS[label])}>
+          {label} · {pct}%
+        </span>
       </div>
       <div
-        className="h-1.5 w-full overflow-hidden rounded-full bg-white/[0.07]"
+        className="h-2.5 w-full overflow-hidden rounded-full border border-border bg-muted/50 p-0.5"
         role="meter"
         aria-valuenow={pct}
         aria-valuemin={0}
@@ -50,7 +52,10 @@ export function ConfidenceMeter({
         aria-label="Model confidence"
       >
         <div
-          className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-700 ease-out"
+          className={cn(
+            "h-full rounded-full transition-[width] duration-500 ease-out",
+            label === "High" ? "bg-[#10b981]" : label === "Medium" ? "bg-[#f59e0b]" : "bg-[#e11d48]"
+          )}
           style={{ width: `${pct}%` }}
         />
       </div>

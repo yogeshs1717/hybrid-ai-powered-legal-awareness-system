@@ -13,11 +13,18 @@ export function LowConfidenceBanner({
   return (
     <div
       role="status"
-      className="flex gap-3 rounded-2xl border border-accent/25 bg-accent/[0.07] p-4 sm:p-5"
+      className="rounded-xl border-2 border-amber-400 bg-amber-500/10 p-4 sm:p-5 select-none"
     >
-      <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-      <div className="text-sm leading-relaxed text-pretty">
-        <p className="font-medium text-foreground">
+      <div className="flex items-center gap-2 mb-1.5">
+        <span className="p-1 rounded bg-amber-500 text-black">
+          <AlertTriangle className="h-3.5 w-3.5 stroke-[2.5]" />
+        </span>
+        <span className="font-mono text-xs font-black uppercase text-amber-950 dark:text-amber-200">
+          CLARIFICATION HELPFUL
+        </span>
+      </div>
+      <div className="pl-6 text-xs sm:text-sm leading-relaxed text-foreground font-medium">
+        <p className="font-bold text-foreground">
           This reading is less certain than usual.
         </p>
         <p className="mt-1 text-muted-foreground">
