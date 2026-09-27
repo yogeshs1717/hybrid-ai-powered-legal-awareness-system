@@ -11,6 +11,7 @@ const { validateAnalyzeInput } = require("./validate");
 const { analyzeRateLimiter } = require("./rateLimiter");
 const { buildLogRecord, logAnalysis } = require("./logger");
 const { createMlClient } = require("./mlClient");
+const { translateText, translateArray, detectScript } = require("./translator");
 
 // The five approved Phase 1 domains (CLAUDE.md Section 3.1). Display metadata
 // only — the gateway holds no legal logic.
@@ -64,23 +65,71 @@ function createApp({ mlClient = createMlClient() } = {}) {
     res.json({ success: true, domains: DOMAINS });
   });
 
+  // Translation endpoint for dynamic text translation (English, Hindi, Kannada)
+  app.post("/api/translate", async (req, res) => {
+    const target = req.body?.target || req.body?.targetLang || req.body?.target_lang || "en";
+    const source = req.body?.source || req.body?.sourceLang || req.body?.source_lang || "auto";
+    const { text, texts } = req.body || {};
+    if (!text && !Array.isArray(texts)) {
+      return res.status(400).json({
+        success: false,
+        error: "invalid_input",
+        detail: "Field 'text' (string) or 'texts' (array of strings) is required.",
+      });
+    }
+
+    if (text) {
+      const translated = await translateText(String(text), target, source);
+      return res.json({ success: true, translated, target, source });
+    }
+
+    const translated = await translateArray(texts, target, source);
+    return res.json({ success: true, translated, target, source });
+  });
+
   app.post("/api/analyze", analyzeRateLimiter, validateAnalyzeInput, async (req, res) => {
     const requestId = req.requestId;
     const scenario = req.validatedScenario;
+    const detectedScript = detectScript(scenario);
+
+    // If citizen typed in Hindi or Kannada, translate to English for the ML pipeline
+    let analysisScenario = scenario;
+    let inputLanguage = detectedScript;
+    if (detectedScript !== "en") {
+      try {
+        const engText = await translateText(scenario, "en", detectedScript);
+        if (engText && engText.trim().length >= 10) {
+          analysisScenario = engText.trim();
+        }
+      } catch (_e) {
+        // Fall back to original scenario if translation fails
+      }
+    }
+
     try {
-      const { status, data } = await mlClient.analyze({ scenario, requestId });
+      const { status, data } = await mlClient.analyze({ scenario: analysisScenario, requestId });
 
       // Anonymized logging — never logs scenario text (CLAUDE.md Section 9).
-      logAnalysis(buildLogRecord({ requestId, scenario, statusCode: status, mlBody: data }));
+      logAnalysis(
+        buildLogRecord({
+          requestId,
+          scenario,
+          statusCode: status,
+          mlBody: data,
+          language: inputLanguage,
+        })
+      );
 
-      // Return the ML response body UNCHANGED (contract preserved). Pass the
-      // ML status through (200 including low-confidence; 400 for its own
-      // input validation).
+      // Return the ML response body UNCHANGED (contract preserved, CLAUDE.md Section 8.1).
+      // Pass the ML status through.
+      if (inputLanguage && inputLanguage !== "en") {
+        res.setHeader("X-Detected-Language", inputLanguage);
+      }
       return res.status(status).json(data);
     } catch (err) {
       // ML service unreachable / timed out -> 503; never fabricate a legal answer.
       logAnalysis(
-        buildLogRecord({ requestId, scenario, statusCode: 503, mlBody: null })
+        buildLogRecord({ requestId, scenario, statusCode: 503, mlBody: null, language: inputLanguage })
       );
       return res.status(503).json({
         success: false,

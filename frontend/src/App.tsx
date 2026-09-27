@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { RootLayout } from "@/components/layout/RootLayout";
 import { LandingPage } from "@/pages/LandingPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { Translation } from "@/components/Translation";
 
 // Analyzer and How-it-works are route-split so the landing bundle stays light.
 const AnalyzePage = lazy(() =>
@@ -16,6 +17,7 @@ const HowItWorksPage = lazy(() =>
 export default function App() {
   return (
     <TooltipProvider delayDuration={200}>
+      <Translation />
       <Routes>
         <Route element={<RootLayout />}>
           <Route index element={<LandingPage />} />
