@@ -393,6 +393,52 @@
             "verified_by": "Yogesh",
             "verified_on": "2026-07-16"
           }
+        },
+        "200": {
+          "section_number": "200",
+          "official_section_title": "Composition of certain offences",
+          "official_text": "Composition of certain offences.—(1) Any offence punishable under section 177, section 178, section 179, section 180, section 181, section 182, sub-section (1) or sub-section (3) or sub-section (4) of section 183, section 184, section 186, section 189, sub-section (2) of section 190, section 192, section 192A, section 194, section 194A, section 194B, section 194C, section 194D, section 194E, section 194F, section 196 or section 198, may either before or after the institution of prosecution, be compounded by such officers or authorities and for such amount as the State Government may, by notification in the Official Gazette, specify in this behalf:\nProvided that the State Government may, in addition to such amount, require the offender to undertake a period of community service.\n(2) Where an offence has been compounded under sub-section (1), the offender, if in custody, shall be discharged and no further proceedings shall be taken against him in respect of such offence:\nProvided that notwithstanding compounding under this section, such offence shall be deemed to be a previous commission of the same offence for the purpose of determining whether a subsequent offence has been committed:\nProvided further that compounding of an offence will not discharge the offender from proceedings under sub-section (4) of section 206 or the obligation to complete a driver refresher training course, or the obligation to complete community service, if applicable.",
+          "simplified_explanation": "This provision concerns the composition (compounding) of specified traffic offences, allowing an alleged violation to be settled before or after prosecution by paying a notified compounding fee to an authorised officer or authority. When an offence is compounded lawfully, no further court proceedings are taken for that specific violation.",
+          "applicability_notes": "May be relevant where an officer demands an on-the-spot settlement, or where a citizen receives a challan and wishes to understand whether it can be compounded (paid directly through official transport channels) or whether it must be contested before a court. In any compounding, payment must be made to an authorised authority with an official receipt or e-challan record. Whether a specific violation is compoundable in your state depends on state gazette notifications.",
+          "keywords": [
+            "compounding",
+            "composition of offences",
+            "challan payment",
+            "on the spot fine",
+            "official receipt",
+            "settle fine",
+            "traffic fine"
+          ],
+          "citation": "Section 200, Mot`or Vehicles Act, 1988",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-09-28"
+          }
+        },
+        "208": {
+          "section_number": "208",
+          "official_section_title": "Summary disposal of cases",
+          "official_text": "Summary disposal of cases.—(1) The Court taking cognizance of any offence (other than an offence which the Central Government may by rules specify in this behalf) under this Act,—\n(i) may, if the offence is an offence punishable with imprisonment under this Act; and\n(ii) shall, in any other case,\nstate upon the summons to be served on the accused person that he—\n(a) may appear by pleader or in person; or\n(b) may, by a specified date prior to the hearing of the charge, plead guilty to the charge and remit to the Court, by money order, such sum as the Court may specify or the fine specified in the summons, whichever is less:\nProvided that the summons shall specify that if the accused person pleads guilty he may also forward his driving licence, if any, to the Court with the letter containing his plea of guilt.\n(2) Where the offence is an offence specified by the Central Government by rules for the purposes of this sub-section, the Court shall also state upon the summons that the accused person may plead guilty to the charge in the manner provided in clause (b) of sub-section (1) and remit the sum specified in the summons.\n(3) Where an accused person pleads guilty and remits the sum specified and has complied with the provisions of sub-section (1), or as the case may be, sub-section (1) and sub-section (2), no further proceedings in respect of the offence shall be taken against him, nor shall he be liable, notwithstanding anything contained in section 21 or section 22, to be disqualified for holding or obtaining a licence by reason of his having pleaded guilty.",
+          "simplified_explanation": "This provision concerns the summary procedure followed when a traffic offence case goes to court. When a summons or notice is issued, the citizen has the choice either to appear in person or through an advocate to contest the charge, or to plead guilty and remit the fine specified by the court (including via Virtual Courts) without a full trial.",
+          "applicability_notes": "May be relevant where a citizen disputes a wrongful challan and chooses not to compound it, or where an unpaid or contested challan is forwarded to court. The citizen has the legal right to contest the alleged violation before the Magistrate or Virtual Court rather than paying an unjustified fine. Whether contesting a challan is advisable in a particular case depends on the evidence and facts a qualified legal professional should assess.",
+          "keywords": [
+            "wrongful challan",
+            "contest challan",
+            "virtual court",
+            "summary disposal",
+            "court summons",
+            "plead guilty",
+            "dispute fine"
+          ],
+          "citation": "Section 208, Motor Vehicles Act, 1988",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Yogesh",
+            "verified_on": "2026-09-28"
+          }
         }
       }
     },

@@ -319,27 +319,11 @@ domain (see 2.3/2.5 boundary flag).
   lieu of, or alongside, formal enforcement ("pay me here and no challan").
 - **sibling_boundary:** vs `wrongful_challan` — no formal challan is at issue; the
   demand for unofficial payment is the scenario core.
-- **candidate_official_legal_source (problem case):** The direct legal
-  characterization of bribery is the **Prevention of Corruption Act — explicitly
-  banned from Phase 1** (`CLAUDE.md` §3.3). Non-criminal candidate angle: Motor
-  Vehicles Act 1988 §200 (compounding of offences — official payment routes), the
-  e-challan system and receipt requirements (MoRTH/state rules), and official state
-  transport / vigilance grievance channels as portals.
-- **candidate_provision_support:** **Weak within Phase 1 scope.** Awareness can be
-  framed as "you are entitled to an official challan/receipt and official payment
-  channels" (MV Act §200 + e-challan procedure leads), but no in-scope provision
-  directly addresses the bribe demand itself without entering PCA territory.
-- **expected_action_difference:** Distinct — insist on official challan/receipt,
-  decline unofficial payment, state transport/vigilance grievance routes.
-- **admission_test:** 1 ✅ (very real scenario type); 2 ✅ (cash/no-receipt vocabulary
-  separable); 3 ❌ not yet within scope constraints; 4 ✅; 5 ⚠️ only under the
-  payment-procedure framing.
-- **status:** **provision_research_required**
-- **Recorded conditional recommendation (not applied):** if targeted research cannot
-  establish adequate non-criminal provision support, either (a) reframe the issue as
-  `on_spot_payment_without_official_challan` (a payment-procedure dispute anchored on
-  MV Act §200 / e-challan procedure), or (b) reject it from Phase 1. Decision belongs
-  to the user after research.
+- **candidate_official_legal_source:** India Code — Motor Vehicles Act 1988 §200 (compounding of offences — official payment routes, notified compounding amounts, mandatory discharge upon lawful compounding), §206 (temporary acknowledgment required for any document seizure/retention), and official state transport / vigilance grievance channels.
+- **candidate_provision_support:** Strong within Phase 1 scope under lawful compounding procedure. §200 establishes that compounding can only occur for notified offences through authorised officers and official payment mechanisms; unreceipted cash demands without an official challan violate official procedure. §206 provides statutory protection against unacknowledged document retention.
+- **expected_action_difference:** Distinct — insist on official challan/receipt, decline unofficial payment, demand officer details and specific MV Act section, state transport / vigilance grievance routes.
+- **admission_test:** 1 ✅; 2 ✅; 3 ✅; 4 ✅; 5 ✅.
+- **status:** **taxonomy_supported**
 
 ### 3.2 `wrongful_challan`
 
@@ -349,17 +333,11 @@ domain (see 2.3/2.5 boundary flag).
 - **sibling_boundary:** vs `vehicle_detention` — paper/electronic fine vs physical
   custody of the vehicle (clean boundary). vs `bribe_demand` — a formal (if wrong)
   challan exists here.
-- **candidate_official_legal_source:** India Code — MV Act 1988 penalty/adjudication
-  chapter (Chapter XIII), §200 (option to compound vs contest before court). Official
-  portal: echallan.parivahan.gov.in grievance route (MoRTH/NIC).
-- **candidate_provision_support:** **Moderate but diffuse** — the citizen's concrete
-  "right to contest" pathway (grievance vs court appearance, timelines, consequences of
-  non-payment) spans MV Act procedure and state e-challan rules; the specific section
-  mapping needs targeted research before KB population.
-- **expected_action_difference:** Verify challan details online, portal grievance,
-  contest-vs-compound decision — unique guidance.
-- **admission_test:** 1 ✅; 2 ✅; 3 ⚠️ leads exist, mapping diffuse; 4 ✅; 5 ✅.
-- **status:** **provision_research_required**
+- **candidate_official_legal_source:** India Code — MV Act 1988 §200 (compounding of offences vs court adjudication) and §208 (summary disposal of cases before court / Virtual Courts). Official portals: NextGen eChallan Grievance Portal (`https://echallan.parivahan.gov.in/gsticket/`) and Virtual Courts (`https://vcourts.gov.in`).
+- **candidate_provision_support:** Strong — §200 governs administrative compounding while §208 provides the statutory basis for court summary disposal and the right to contest wrongful summons. Supported by MoRTH NextGen e-challan grievance system and NIC Virtual Courts.
+- **expected_action_difference:** Verify photographic evidence on official portal, submit online grievance ticket, contest via Virtual Court or traffic Magistrate if rejected.
+- **admission_test:** 1 ✅; 2 ✅; 3 ✅; 4 ✅; 5 ✅.
+- **status:** **taxonomy_supported**
 
 ### 3.3 `document_acceptance_or_verification`
 
@@ -611,10 +589,10 @@ dual-tracked (older Act / Code on Wages) purely as research leads.
 |---|---|---|---|---|---|
 | `cyber_fraud` (6) | 5 | 1 (`other_online_financial_fraud`) | 0 | 0 | 0 |
 | `consumer_issues` (5) | 5 | 0 | 0 | 0 | 0 |
-| `traffic_enforcement` (5) | 3 | 2 (`bribe_demand`, `wrongful_challan`) | 0 | 0 | 0 |
+| `traffic_enforcement` (5) | 5 | 0 | 0 | 0 | 0 |
 | `workplace_wage` (4) | 0 | 4 (all — wage-law research gate) | 0 | 0 | 0 |
 | `contractual_disputes` (2) | 1 | 1 (`security_deposit_dispute`) | 0 | 0 | 0 |
-| **Total (22)** | **14** | **8** | **0** | **0** | **0** |
+| **Total (22)** | **16** | **6** | **0** | **0** | **0** |
 
 ### 7.2 Recommendations Recorded (none applied)
 

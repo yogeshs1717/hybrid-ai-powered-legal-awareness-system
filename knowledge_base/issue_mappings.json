@@ -299,19 +299,25 @@
       "issue_id": "vehicle_detention",
       "taxonomy_status": "taxonomy_supported",
       "domain_id": "traffic_enforcement",
-      "display_name": "Vehicle Detention / Impoundment",
-      "issue_definition": "The citizen's vehicle is detained or impounded and the citizen questions the basis or procedure - for example detention for alleged missing registration, permit, or licence, prolonged retention, or an unclear release process.",
+      "display_name": "Vehicle Detention / Impoundment & Key Seizure",
+      "issue_definition": "The citizen's vehicle or ignition keys are seized, detained, or impounded by an enforcement authority and the citizen questions the legal authority, procedure, or grounds - including unauthorized removal of vehicle keys on the road, detention for alleged missing documents or permits, or an unclear release process.",
       "prototype_texts": [
         "The traffic police or transport authority has detained or impounded my vehicle and I want to know on what ground and how to get it released.",
+        "The traffic police took away my bike key or motorcycle ignition key without my permission and stopped my vehicle on the road.",
+        "An officer snatched the keys to my two-wheeler during checking and refused to give them back or provide any seizure memo.",
         "My vehicle was seized and kept at the station or pound, and there is no clear written order explaining why it is being held.",
-        "My auto or commercial vehicle was detained saying the permit was expired, but I have the valid papers and the vehicle is standing idle causing daily loss.",
         "They towed and detained my vehicle and are asking for charges and a fine before releasing it, without explaining the breakup or giving a receipt."
       ],
       "provision_references": [
         {
           "act_id": "mv_act_1988",
           "section_id": "207",
-          "provision_relevance_rationale": "This provision is mapped to this issue type because the curated issue definition concerns the detention of a vehicle by an authorised officer and its release procedure, which is what this provision addresses."
+          "provision_relevance_rationale": "This provision is mapped to this issue type because it governs the statutory power to detain vehicles by authorised officers, requiring compliance with prescribed conditions and release procedures; taking physical custody of a vehicle or its keys outside this provision lacks statutory backing."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because it defines the citizen's statutory duty during routine checking - which is limited to producing licence and registration documents for examination, and does not empower officers to confiscate ignition keys."
         }
       ]
     },
@@ -357,6 +363,57 @@
           "act_id": "it_act_2000",
           "section_id": "4",
           "provision_relevance_rationale": "This provision is mapped to this issue type because disputes about accepting digital documents involve the legal recognition of electronic records, which is what this provision addresses."
+        }
+      ]
+    },
+    "wrongful_challan": {
+      "issue_id": "wrongful_challan",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Wrongful or Disputed Challan",
+      "issue_definition": "A traffic fine or challan is issued incorrectly - for example a challan issued to the wrong vehicle or person, an offence not actually committed, duplicate challans for the same incident, incorrect photographic proof, or a fine issued for an already sold vehicle.",
+      "prototype_texts": [
+        "I received an e-challan on my phone for jumping a red light or speeding, but neither I nor my vehicle was at that location on that date.",
+        "The photo attached to the traffic challan clearly shows a completely different car or motorcycle with a number plate similar to mine.",
+        "I was issued two separate challans for the exact same violation at the same time and place, and the portal shows both as unpaid.",
+        "The traffic camera issued a challan for driving without a helmet or seatbelt even though the photo itself proves I was wearing one.",
+        "A traffic challan came for a vehicle that I sold months ago with proper transfer papers, but the ownership was not updated in the transport records."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because it governs the compounding of traffic offences and payment of prescribed compounding amounts, which is the procedure citizens use if choosing to settle a challan administratively rather than contesting it."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "208",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because it sets out the summary court procedure where a citizen receives a summons for an alleged traffic violation and has the right to contest the charge or plead through the court."
+        }
+      ]
+    },
+    "bribe_demand": {
+      "issue_id": "bribe_demand",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Unofficial Cash Demand / Bribe Demand by Enforcement Officer",
+      "issue_definition": "A traffic police officer or transport enforcement personnel demands an unofficial cash payment on the spot without issuing an official receipt, memo, or e-challan, or threatens an inflated penalty if an informal cash amount is not paid.",
+      "prototype_texts": [
+        "The traffic police stopped me, checked my papers which were completely valid, and demanded cash on the spot without giving any receipt or challan.",
+        "An enforcement officer stopped my two-wheeler and said pay 500 cash now to settle it or he will write a 2000 rupee challan for some made-up violation.",
+        "The transport officer at the checkpost refused to let my commercial vehicle pass unless our driver paid an informal cash entry fee with no government memo.",
+        "A constable stopped my vehicle and demanded cash on the spot for tea and breakfast to let me go without an official challan entry."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because lawful compounding of traffic offences under the Act requires payment of notified amounts to authorised officers or through official channels with proper documentation; unofficial cash collection without an official challan or receipt is not lawful compounding under this section."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "This provision is mapped to this issue type because officers frequently retain or threaten to seize driving licences when demanding unofficial payments, and this section establishes that any lawful document seizure requires an official temporary acknowledgment."
         }
       ]
     },

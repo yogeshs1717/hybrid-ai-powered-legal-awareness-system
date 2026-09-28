@@ -178,11 +178,11 @@
     },
     "vehicle_detention": {
       "action_steps": [
-        "Ask the detaining officer for the written detention order or seizure memo, and note the stated legal ground, the officer's details, and the date and time.",
-        "Collect and keep your vehicle documents - registration certificate, permit (if applicable), insurance, and driving licence - as producing valid papers is usually central to release.",
-        "Ask about the release procedure, any fee or fine payable, and insist on an official receipt for any amount you pay.",
-        "If you believe the detention or the process is improper, escalate in writing to the concerned transport authority or its grievance channel, keeping copies.",
-        "Keep every document, receipt, and communication safely as a record of the detention and the release steps."
+        "If an officer took your ignition keys, politely request their name, rank, and buckle number; police have no statutory power under the Motor Vehicles Act to forcibly remove keys during routine checks.",
+        "Ask whether your vehicle is being formally detained under Section 207 of the Motor Vehicles Act, and insist on a written detention memo or seizure receipt specifying the statutory ground.",
+        "Produce your valid documents (licence, RC, insurance, PUC) for examination under Section 130, reminding the officer that document verification does not warrant confiscating vehicle keys.",
+        "Do not enter into a physical altercation on the road; note the exact time, location, and patrol vehicle registration number, and preserve any video or audio record of the key seizure.",
+        "Escalate unauthorized key removal or vehicle detention immediately to the local Traffic Police Control Room (helpline 112/1033) or file a written grievance with the Traffic Police Commissionerate."
       ],
       "portal_ids": [
         "parivahan"
@@ -207,6 +207,32 @@
         "If you were given time to produce the document, produce it (or a recognised digital copy) at the specified office within the allowed period and take an acknowledgment.",
         "If a genuine document was treated as fake or invalid, obtain a verification printout or confirmation from the issuing office (RTO, insurer, or pollution centre) to attach to your response.",
         "Escalate in writing to the concerned traffic or transport authority's grievance channel with your evidence, and contest the challan through the official process if one was issued."
+      ],
+      "portal_ids": [
+        "parivahan"
+      ]
+    },
+    "wrongful_challan": {
+      "action_steps": [
+        "Verify the challan details and photographic evidence on the official e-challan portal (echallan.parivahan.gov.in) to confirm the vehicle number, date, time, and recorded violation.",
+        "Gather proof showing that the violation was recorded incorrectly - such as GPS records, toll receipts, CCTV or dashcam footage, or clear photos proving your vehicle was elsewhere or compliant.",
+        "Raise an online grievance through the Parivahan eChallan Grievance System (gsticket) or your state traffic police portal, uploading your evidence and challan number.",
+        "If the challan involves a vehicle you previously sold, submit the sale agreement and Form 29/30 transfer acknowledgment to the concerned RTO and traffic department.",
+        "If the administrative grievance is rejected or the challan is sent to court, you have the right under Section 208 to contest the charge before the Virtual Court (vcourts.gov.in) or the local traffic Magistrate."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "bribe_demand": {
+      "action_steps": [
+        "Remain calm and politely refuse to make any cash payment without an official written memo, physical compounding receipt, or digital e-challan generated on the spot.",
+        "Ask the officer for their name, designation, and buckle or ID number, and request the exact section of the Motor Vehicles Act under which they are stopping or checking you.",
+        "Insist that if an offence has occurred, an official e-challan be issued so that you can pay the notified penalty through the government portal or online payment gateway.",
+        "Note down the date, exact time, location, patrol vehicle registration number, and badge numbers of all personnel present, and preserve any dashcam or audio/video documentation.",
+        "Escalate the incident through a formal written complaint to the Traffic Police Commissionerate, State Police Vigilance / Anti-Corruption helpline, or the transport department grievance portal."
       ],
       "portal_ids": [
         "parivahan"
@@ -334,7 +360,34 @@
       "supported_issue_ids": [
         "vehicle_detention",
         "document_seizure_or_retention",
+        "document_acceptance_or_verification",
+        "wrongful_challan",
+        "bribe_demand"
+      ]
+    },
+    "echallan_grievance": {
+      "portal_id": "echallan_grievance",
+      "name": "Parivahan NextGen eChallan Grievance System",
+      "official_url": "https://echallan.parivahan.gov.in/gsticket/",
+      "purpose": "Raise an online dispute or complaint against an incorrect, duplicate, or wrongful traffic e-challan.",
+      "priority": "primary",
+      "usage_condition": "Use when you have the challan number, vehicle registration number, or driving licence number and wish to dispute the challan online with photographic or documentary evidence.",
+      "official_source": "Ministry of Road Transport and Highways (MoRTH) & National Informatics Centre (NIC), Government of India",
+      "supported_issue_ids": [
+        "wrongful_challan",
         "document_acceptance_or_verification"
+      ]
+    },
+    "vcourts": {
+      "portal_id": "vcourts",
+      "name": "Virtual Courts (e-Courts Project)",
+      "official_url": "https://vcourts.gov.in",
+      "purpose": "View, manage, or contest traffic challan cases that have been transferred to the virtual court, or remit court fines online without physical court appearance.",
+      "priority": "secondary",
+      "usage_condition": "Use when a contested or unpaid e-challan has been forwarded to the virtual court in your state and you need to view proceedings or contest the violation before the court.",
+      "official_source": "e-Committee, Supreme Court of India & Ministry of Law and Justice, Government of India",
+      "supported_issue_ids": [
+        "wrongful_challan"
       ]
     },
     "nalsa": {

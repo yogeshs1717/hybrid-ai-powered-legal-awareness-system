@@ -36,20 +36,37 @@ export async function analyzeScenario(
   scenario: string,
   signal?: AbortSignal,
 ): Promise<AnalyzeResponse> {
+  const timeoutMs = 15000;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  if (signal) {
+    signal.addEventListener("abort", () => controller.abort());
+  }
+
   let res: Response;
   try {
     res = await fetch(`${BASE}/analyze`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ scenario }),
-      signal,
+      signal: controller.signal,
     });
   } catch (e) {
-    if ((e as Error).name === "AbortError") throw e;
+    if ((e as Error).name === "AbortError") {
+      if (signal?.aborted) throw e;
+      throw new AnalyzeError(
+        "service_unavailable",
+        "Analysis timed out. Please check that the server is responding and try again.",
+        504,
+      );
+    }
     throw new AnalyzeError(
       "network",
       "Could not reach LegalLens. Please check your connection.",
     );
+  } finally {
+    clearTimeout(timeoutId);
   }
 
   if (res.ok) {
