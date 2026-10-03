@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -21,6 +21,7 @@ import { AnalyzeErrorCard } from "@/features/analyze/AnalyzeError";
 export function LandingPage() {
   const analyze = useAnalyze();
   const { data, error, isPending, isSuccess, isError, reset } = analyze;
+  const [submittedScenario, setSubmittedScenario] = useState<string>("");
 
   useEffect(() => {
     if (isSuccess) {
@@ -241,7 +242,10 @@ export function LandingPage() {
         {!isPending && !isSuccess && !isError && (
           <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
             <ScenarioInput
-              onSubmit={(scenario) => analyze.mutate(scenario)}
+              onSubmit={(scenario) => {
+                setSubmittedScenario(scenario);
+                analyze.mutate(scenario);
+              }}
               loading={isPending}
             />
           </div>
@@ -273,16 +277,19 @@ export function LandingPage() {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={reset}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors"
+                  onClick={() => {
+                    reset();
+                    setSubmittedScenario("");
+                  }}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
                 >
                   <RotateCcw className="h-3.5 w-3.5" />
-                  <span>NEW ANALYSIS</span>
+                  <span>ANALYZE NEW SITUATION</span>
                 </button>
               </div>
             </div>
 
-            <ResultView data={data} />
+            <ResultView data={data} scenario={submittedScenario} />
           </div>
         )}
       </section>

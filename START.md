@@ -44,14 +44,14 @@ Open **3 separate terminal tabs** from the project root and run:
 ```bash
 cd ml-service
 source venv/bin/activate
-uvicorn app.main:app --port 8000 --reload
+uvicorn app.main:app --port 8000 --reload --reload-dir app --reload-dir ../knowledge_base
 ```
 *Health check URL:* `http://localhost:8000/health`
 
 ### Terminal 2: API Gateway
 ```bash
 cd backend
-npm start
+npm run dev
 ```
 *Health check URL:* `http://localhost:5000/api/health`
 

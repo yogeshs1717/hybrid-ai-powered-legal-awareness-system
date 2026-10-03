@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { RotateCcw } from "lucide-react";
@@ -16,10 +16,12 @@ export function AnalyzePage() {
   const { data, error, isPending, isSuccess, isError, reset } = analyze;
 
   const initialScenario = (location.state as { scenario?: string })?.scenario;
+  const [submittedScenario, setSubmittedScenario] = useState<string>(initialScenario || "");
 
   useEffect(() => {
     if (initialScenario && !initialTriggered.current && !isPending && !isSuccess && !data) {
       initialTriggered.current = true;
+      setSubmittedScenario(initialScenario);
       analyze.mutate(initialScenario);
     }
   }, [initialScenario, isPending, isSuccess, data, analyze]);
@@ -32,6 +34,7 @@ export function AnalyzePage() {
 
   const handleReset = () => {
     reset();
+    setSubmittedScenario("");
     initialTriggered.current = false;
     if (location.state) {
       navigate(location.pathname, { replace: true, state: {} });
@@ -76,7 +79,10 @@ export function AnalyzePage() {
 
             <div className="mx-auto max-w-2xl">
               <ScenarioInput
-                onSubmit={(s) => analyze.mutate(s)}
+                onSubmit={(s) => {
+                  setSubmittedScenario(s);
+                  analyze.mutate(s);
+                }}
                 loading={isPending}
                 initialValue={initialScenario || ""}
               />
@@ -129,13 +135,13 @@ export function AnalyzePage() {
               <button
                 type="button"
                 onClick={handleReset}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
               >
                 <RotateCcw className="h-3.5 w-3.5" />
-                <span>NEW ANALYSIS</span>
+                <span>ANALYZE NEW SITUATION</span>
               </button>
             </div>
-            <ResultView data={data} />
+            <ResultView data={data} scenario={submittedScenario} />
           </motion.section>
         )}
       </AnimatePresence>

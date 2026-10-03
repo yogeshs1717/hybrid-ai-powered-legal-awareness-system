@@ -92,3 +92,101 @@ labels: [consumer_issues, contractual_disputes, cyber_fraud, traffic_enforcement
 `models/tfidf_domain_vectorizer.pkl`, `models/domain_classifier.pkl` — regenerable
 from V1 + seed 42; gitignored (not committed). Service confirmed loading in
 `classifier_mode = "trained"`.
+
+---
+
+## Run 2 — Dataset V2 (170 Issues, 89 Sections, 843 Samples)
+
+- **Date:** 2026-10-03
+- **Dataset:** `data/training_data_v2.csv` — 843 rows. Domain distribution:
+  consumer_issues: 181, contractual_disputes: 135, cyber_fraud: 234, traffic_enforcement: 150, workplace_wage: 143.
+  170 distinct `issue_id` values (metadata only).
+- **Model:** TF-IDF (`ngram_range=(1,2)`, `sublinear_tf=True`, `stop_words='english'`) + Logistic Regression (`C=2.5`, `class_weight='balanced'`, `max_iter=1000`, seed 42).
+- **Preprocessing:** `preprocess_text` (lowercase + whitespace normalization).
+- **Evaluation:** Stratified 5-Fold Cross-Validation, stratified by `domain`, seed 42.
+
+### Metrics
+
+| Metric | Value |
+|---|---|
+| Macro F1 (mean of folds) | **0.938** (std 0.011) |
+| Accuracy (out-of-fold) | **0.94** |
+| Macro precision | **0.94** |
+| Macro recall | **0.94** |
+
+Per-fold macro F1: 0.947, 0.937, 0.953, 0.927, 0.926.
+
+Per-class (out-of-fold aggregate):
+
+| Domain | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| consumer_issues | 0.91 | 0.88 | 0.90 | 181 |
+| contractual_disputes | 0.92 | 0.91 | 0.92 | 135 |
+| cyber_fraud | 0.95 | 0.95 | 0.95 | 234 |
+| traffic_enforcement | 0.95 | 0.98 | 0.96 | 150 |
+| workplace_wage | 0.95 | 0.97 | 0.96 | 143 |
+
+### Confusion Matrix (rows = true, cols = predicted)
+
+```
+labels: ['consumer_issues', 'contractual_disputes', 'cyber_fraud', 'traffic_enforcement', 'workplace_wage']
+[[160   6  10   4   1]
+ [  4 123   1   2   5]
+ [  6   2 223   2   1]
+ [  2   0   1 147   0]
+ [  3   2   0   0 138]]
+```
+
+### Knowledge Base Expansion Summary
+- **Statutory Sections:** Expanded from 75 to 89 sections across 6 Acts in [acts_and_sections.json](file:///run/media/shnl/MyFiles/SHNL/Major%20Project/hybrid-ai-powered-legal-awareness-system/knowledge_base/acts_and_sections.json). All sections verified from official Central Acts / India Code with `"provision_status": "in_force"` and `"manually_verified"` status.
+- **Citizen Issues:** Expanded from 143 to 170 issues across all 5 domains in [issue_mappings.json](file:///run/media/shnl/MyFiles/SHNL/Major%20Project/hybrid-ai-powered-legal-awareness-system/knowledge_base/issue_mappings.json).
+- **Guidance & Portals:** 170 guidance entries (maximum 5 chronological action steps each) and 21 verified official portals (including `airsewa` - Ministry of Civil Aviation) in [issue_actions_portals.json](file:///run/media/shnl/MyFiles/SHNL/Major%20Project/hybrid-ai-powered-legal-awareness-system/knowledge_base/issue_actions_portals.json).
+- **Referential Integrity:** 100% valid with 0 errors via `ml-service/app/knowledge_base_loader.py`.
+
+---
+
+## Run 3 — Expanded Dataset V2 (1,069 Samples Across 170 Issues)
+
+- **Date:** 2026-10-03
+- **Dataset:** `data/training_data_v2.csv` — **1,069 rows**. Domain distribution:
+  - `consumer_issues`: 232
+  - `contractual_disputes`: 177
+  - `cyber_fraud`: 284
+  - `traffic_enforcement`: 192
+  - `workplace_wage`: 184
+  - 170 distinct `issue_id` values (metadata only).
+- **Model:** TF-IDF (`ngram_range=(1,2)`, `sublinear_tf=True`, `stop_words='english'`) + Logistic Regression (`C=2.5`, `class_weight='balanced'`, `max_iter=1000`, seed 42).
+- **Preprocessing:** `preprocess_text` (lowercase + whitespace normalization).
+- **Evaluation:** Stratified 5-Fold Cross-Validation, stratified by `domain`, seed 42.
+
+### Metrics
+
+| Metric | Value |
+|---|---|
+| Macro F1 (mean of folds) | **0.954** (std 0.011) |
+| Accuracy (out-of-fold) | **0.95** (95%) |
+| Macro precision | **0.95** |
+| Macro recall | **0.95** |
+
+Per-fold macro F1: 0.972, 0.946, 0.943, 0.947, 0.960.
+
+Per-class (out-of-fold aggregate):
+
+| Domain | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| consumer_issues | 0.95 | 0.90 | 0.92 | 232 |
+| contractual_disputes | 0.94 | 0.93 | 0.93 | 177 |
+| cyber_fraud | 0.94 | 0.98 | 0.96 | 284 |
+| traffic_enforcement | 0.97 | 0.98 | 0.97 | 192 |
+| workplace_wage | 0.97 | 0.99 | 0.98 | 184 |
+
+### Confusion Matrix (rows = true, cols = predicted)
+
+```
+labels: ['consumer_issues', 'contractual_disputes', 'cyber_fraud', 'traffic_enforcement', 'workplace_wage']
+[[208   7  12   3   2]
+ [  4 164   5   1   3]
+ [  2   2 277   2   1]
+ [  3   0   1 188   0]
+ [  1   1   0   0 182]]
+```

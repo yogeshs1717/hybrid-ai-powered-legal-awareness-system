@@ -707,3 +707,364 @@ A facility management vendor refused to defend us against labour penalty claims 
 "The commercial property owner signed an agreement to lease for our retail outlet, but refused to hand over keys and forfeited our advance.",contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
 "After we spent 5 Lakh on architectural drawings and store planning, the landlord backed out of the signed commercial lease without cause.",contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
 A commercial landlord breached the signed letter of intent and lease deed by unilaterally terminating before the agreed fit-out period.,contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
+I sold crypto on Binance P2P and my bank account was put on debit freeze with a cyber police lien from another state.,cyber_fraud,p2p_crypto_bank_freeze
+My bank account was frozen because money received from a P2P crypto trade turned out to be linked to a cyber fraud case.,cyber_fraud,p2p_crypto_bank_freeze
+Cyber cell froze my savings account after I completed a legitimate USDT peer to peer sale and the buyer paid from a compromised account.,cyber_fraud,p2p_crypto_bank_freeze
+Received a notice from bank that my account has an debit lien due to cyber complaint against a P2P crypto transaction.,cyber_fraud,p2p_crypto_bank_freeze
+p2p usdt sell kiya wazirx pe aur cyber cell ne account debit freeze laga diya notice aayi bank se.,cyber_fraud,p2p_crypto_bank_freeze
+I searched for customer care number on Google Maps to track my parcel and the fraudster who answered made me pay 5 rupees registration fee and debited my entire balance.,cyber_fraud,google_maps_fake_helpline_scam
+Called a hospital emergency phone number from Google Maps listing and the person sent a QR code to pay consultation charges which deducted money from my account.,cyber_fraud,google_maps_fake_helpline_scam
+"Found a courier helpline number on Google search maps, the agent asked me to download an app to reroute delivery and withdrew money from my bank.",cyber_fraud,google_maps_fake_helpline_scam
+Fake customer care contact listed on Google Maps tricked me into sharing UPI PIN to cancel an airline booking.,cyber_fraud,google_maps_fake_helpline_scam
+google maps pe fake delivery helpline number mila call kiya to anydesk install karwaya aur account khali ho gaya.,cyber_fraud,google_maps_fake_helpline_scam
+A rogue browser extension altered my copied crypto address and transferred my digital tokens to a scammer wallet.,cyber_fraud,browser_extension_crypto_drainer
+My browser extension replaced the account number I copied into net banking with a fraudster account and money went to wrong person.,cyber_fraud,browser_extension_crypto_drainer
+Installed a Chrome extension for PDF editing and it accessed my crypto web3 wallet and drained all my tokens without my consent.,cyber_fraud,browser_extension_crypto_drainer
+Clipboard malware secretly changed the receiving wallet address when I pasted it into my exchange withdrawal screen.,cyber_fraud,browser_extension_crypto_drainer
+browser plugin replaced copied bank ifsc code and wallet address with hacker address.,cyber_fraud,browser_extension_crypto_drainer
+Scammers hacked our vendor email and sent a fake invoice with altered bank account details which our finance team paid.,cyber_fraud,business_email_compromise_bec
+We received an email from what looked like our regular supplier asking to deposit payment in a new bank account and lost funds to BEC fraud.,cyber_fraud,business_email_compromise_bec
+Fraudster compromised supplier email communication and redirected our company wire transfer to a mule account.,cyber_fraud,business_email_compromise_bec
+Our client was tricked into sending payment to an imposter bank account because our email server was intercepted.,cyber_fraud,business_email_compromise_bec
+vendor ka email hack karke cyber criminals ne modified invoice bheja jisme bank account badal diya tha.,cyber_fraud,business_email_compromise_bec
+Received a call where an AI clone of my son was crying saying he was arrested and caller demanded 2 lakhs ransom immediately.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+Scammers cloned my daughter voice using deepfake audio and demanded immediate money transfer claiming she was kidnapped.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+A fraudster called my elderly parents with my cloned voice begging for urgent emergency funds after a fake car accident.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+Audio deepfake scam call simulated family member voice in trouble to extort urgent UPI money transfer.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+deepfake voice call of my brother asking for urgent bail money scam.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+Coaching institute has a non-refundable clause in their admission contract and refused any refund when I withdrew in the first week.,consumer_issues,unfair_contract_terms_consumer
+Gym membership agreement has completely one-sided terms where they can cancel anytime without refund but customer cannot terminate.,consumer_issues,unfair_contract_terms_consumer
+Edtech platform contract had unfair lock-in clauses forcing automatic EMIs even though course material was never delivered.,consumer_issues,unfair_contract_terms_consumer
+Builder agreement had one-sided clauses charging 18% penalty on buyer delay but paying only 2% for their own construction delay.,consumer_issues,unfair_contract_terms_consumer
+coaching institute fees refund nahi de raha bol rahe agreement me non-refundable clause likha hai.,consumer_issues,unfair_contract_terms_consumer
+Flight booking website automatically sneaked travel insurance and convenience priority charges into my checkout without my consent.,consumer_issues,dark_patterns_basket_sneaking
+Shopping app auto-checked a donation fee and premium subscription charge in my cart which I never selected.,consumer_issues,dark_patterns_basket_sneaking
+Website uses dark patterns to hide the cancel subscription button and refuses to let me stop monthly recurring charges.,consumer_issues,dark_patterns_basket_sneaking
+E-commerce platform added unwanted add-on warranty to my final billing total using deceptive default checkboxes.,consumer_issues,dark_patterns_basket_sneaking
+ticket booking app me apne aap extra insurance aur donation tick ho ke bill me add ho gaya dark pattern.,consumer_issues,dark_patterns_basket_sneaking
+"Airline cancelled my scheduled flight and refuses to issue a cash refund, forcing me to take a credit shell voucher instead.",consumer_issues,airline_flight_cancellation_refund_delay
+Flight was delayed by over 8 hours and airline denied refund or alternate accommodation required under DGCA passenger charter.,consumer_issues,airline_flight_cancellation_refund_delay
+Airline rescheduled my connecting flight making travel impossible but deducted 80% cancellation charges when I requested refund.,consumer_issues,airline_flight_cancellation_refund_delay
+Aviation carrier cancelled my ticket unilaterally and has not refunded my money even after 30 days.,consumer_issues,airline_flight_cancellation_refund_delay
+flight cancel ho gayi airline cash refund dene se mana kar rahi hai aur credit shell thop rahi hai.,consumer_issues,airline_flight_cancellation_refund_delay
+Private school is forcing parents to buy books and uniforms exclusively from one specific vendor at twice the market price.,consumer_issues,school_mandatory_uniform_book_tie_in
+School management mandated purchase of stationery kits from school counter only and prohibited buying standard NCERT books outside.,consumer_issues,school_mandatory_uniform_book_tie_in
+Coerced tie-in sale where private school threatens student disciplinary action if uniforms are not bought from their chosen shop.,consumer_issues,school_mandatory_uniform_book_tie_in
+School tie in arrangement forcing purchase of costly customized notebooks from designated vendor violates fair competition.,consumer_issues,school_mandatory_uniform_book_tie_in
+school wale bol rahe uniform aur copies sirf unke bataye dukan se hi khareedni padegi double price pe.,consumer_issues,school_mandatory_uniform_book_tie_in
+Multiplex security took away my water bottle at entry and inside cinema hall they are selling water bottles above MRP.,consumer_issues,cinema_hall_water_confiscation_mrp
+Cinema hall stopped me from carrying personal drinking water and failed to provide free hygienic drinking water facility inside.,consumer_issues,cinema_hall_water_confiscation_mrp
+Theatre security confiscated sealed water at security check and food counter refused to provide free filtered water.,consumer_issues,cinema_hall_water_confiscation_mrp
+Movie hall prohibited personal water bottle and charges 100 rupees for a water bottle whose printed MRP is 20.,consumer_issues,cinema_hall_water_confiscation_mrp
+cinema hall wale bahar ka paani le jane nahi dete aur andar mrp se mehenga paani bechte hain.,consumer_issues,cinema_hall_water_confiscation_mrp
+Purchased an electric immersion water heater online that lacks BIS ISI mark and caused short circuit shock.,consumer_issues,substandard_unmarked_electronics_bis
+Retailer sold substandard motorcycle helmet without mandatory ISI mark that cracked upon minor impact.,consumer_issues,substandard_unmarked_electronics_bis
+Phone charger bought from online marketplace burst into flames and has no Bureau of Indian Standards certification.,consumer_issues,substandard_unmarked_electronics_bis
+Defective electrical appliance sold without mandatory BIS quality standard mark causing hazardous electrical hazard.,consumer_issues,substandard_unmarked_electronics_bis
+nakli bina ISI mark wala immersion rod blast ho gaya online seller substandard samaan bech raha hai.,consumer_issues,substandard_unmarked_electronics_bis
+Traffic police fined me 1000 rupees for triple riding because my 2-year-old child was sitting between me and my wife.,traffic_enforcement,triple_riding_pillion_child_dispute
+Received a camera challan for carrying three persons on motorcycle when the third person was an infant wearing a safety belt.,traffic_enforcement,triple_riding_pillion_child_dispute
+Challan issued under Section 194C on two-wheeler carrying small child under four years of age.,traffic_enforcement,triple_riding_pillion_child_dispute
+Police impounded licence for three months alleging triple riding while riding with wife and toddler.,traffic_enforcement,triple_riding_pillion_child_dispute
+bike pe wife aur chhota bachha tha traffic police ne 194c me 1000 ka triple riding challan kaat diya.,traffic_enforcement,triple_riding_pillion_child_dispute
+I crossed the red light slightly to let an ambulance pass and received an automated red light camera challan.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Got a 10000 rupees fine under Section 194E for not giving way to ambulance even though traffic was completely gridlocked and unable to move.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Traffic camera clicked my car crossing stop line when moving aside to make path for fire brigade emergency vehicle.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Challaned for signal jump at junction while clearing path for blaring hospital ambulance.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+ambulance ko rasta dene ke liye red light cross kiya to camera ne red light jumping ka challan bhej diya.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Traffic police seized my motorcycle for loud exhaust without using any decibel meter to test noise level.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Fined under Section 190(2) for modified silencer based purely on cop subjective opinion without scientific sound level test.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Police issued challan for aftermarket exhaust on bike without testing decibels against prescribed CMVR limit.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Officer fined me for noisy silencer but refused to test my stock OEM exhaust with an approved sound meter.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+traffic police ne bina decibel meter se sound check kiye exhaust ka challan 190(2) me kaat diya.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Received speed challan for driving at 65 km/h on a highway where the NHAI signboard allowed 80 km/h.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Speed camera ticket issued where the speed limit board was completely hidden behind tree branches and impossible to see.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Traffic camera fined me for exceeding 50 kmph on an open flyover with no visible speed restriction signage posted.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Automated overspeeding fine where road work signboard showed higher limit than camera calibration.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+highway pe board 80 ka tha aur speed camera ne 60 pe overspeeding ka challan kaat diya.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Traffic police fined me 5000 rupees for non-HSRP plate even though I showed my confirmed online HSRP fitment appointment slip.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Challaned for old number plate while waiting for the booked HSRP number plate delivery from authorized dealer.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Received e-challan for number plate violation when State Government had extended the deadline for HSRP installation.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Officer refused to accept my official BookMyHSRP receipt and fined me for lacking high security plate.,traffic_enforcement,hsrp_number_plate_challan_dispute
+hsrp book kar rakha hai slip dikhaya fir bhi police ne number plate ka challan kaat diya.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Commercial vehicle booked under Section 192A for off-route permit violation when police had diverted all traffic due to road repairs.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Taxi driver challaned for deviating from permit route because main highway was blocked by flood water and police directed traffic.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Permit violation fine issued to commercial pickup truck forced onto alternate road by official traffic diversion.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Transport department officer fined commercial carrier for unpermitted route during festival procession diversion.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+police ne khud rasta divert kiya tha road work ki wajah se aur aage jaake permit violation ka challan bana diya.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+"Company deducted 45,000 rupees from my final salary settlement claiming my returned work laptop had scratches without giving me any chance to explain.",workplace_wage,unilateral_laptop_damage_deduction_exit
+Employer withheld my last month wage alleging monitor damage on office equipment that was never inspected in my presence.,workplace_wage,unilateral_laptop_damage_deduction_exit
+HR deducted entire exit pay for company asset damage without issuing a show cause notice or inquiry.,workplace_wage,unilateral_laptop_damage_deduction_exit
+Laptop damage charges deducted arbitrarily from final settlement without giving employee opportunity to contest.,workplace_wage,unilateral_laptop_damage_deduction_exit
+company ne f&f settlement me se 50000 kaat liye bolte hain laptop me scratch tha bina show cause notice diye.,workplace_wage,unilateral_laptop_damage_deduction_exit
+IT employer put me on unpaid bench for two months without salary because their client project ended even though I was available for work.,workplace_wage,layoff_bench_wage_deduction
+Factory management refused daily wages claiming machinery breakdown even though workers reported to work on time.,workplace_wage,layoff_bench_wage_deduction
+Staff forced into unpaid leave because employer could not arrange work assignments.,workplace_wage,layoff_bench_wage_deduction
+Company withheld salary for weeks spent on internal deployment pool while employee was ready and willing to work.,workplace_wage,layoff_bench_wage_deduction
+bench pe daal kar salary rok di bola client project nahi hai jabki hum daily office login kar rahe the.,workplace_wage,layoff_bench_wage_deduction
+Restaurant makes waiters work 7 AM to 11 AM and 6 PM to 11 PM with a 16 hour spreadover without paying any overtime wages.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Hotel staff forced into split shifts spanning over 14 hours daily without overtime compensation at double rate.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Security guard forced to work 16 hour shift without overtime pay in violation of normal working day hours.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Retail outlet employer demands 14 hours total daily presence on split shift without paying statutory overtime.,workplace_wage,split_shift_excessive_spreadover_hospitality
+hotel me subah 4 ghante sham ko 5 ghante split shift karwate hain 15 ghante ka spreadover ho jata hai overtime nahi dete.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Discovered that female colleagues in our team are paid 35% less salary than male counterparts doing the exact same software role.,workplace_wage,gender_wage_gap_unequal_pay
+Employer pays women sales executives lower wages than male peers for identical duties and working hours.,workplace_wage,gender_wage_gap_unequal_pay
+Gender pay discrimination where female architect is paid less remuneration than male colleague hired at same time with same skills.,workplace_wage,gender_wage_gap_unequal_pay
+Company reduced wage rate for female staff members violating equal remuneration statutory provisions.,workplace_wage,gender_wage_gap_unequal_pay
+same post aur same experience hone ke bawajood female employees ko male staff se kam basic salary de rahe hain.,workplace_wage,gender_wage_gap_unequal_pay
+"After I achieved 120% of my annual sales quota, company changed the KPI target retrospectively to deny my 3 lakh variable pay.",workplace_wage,variable_pay_retrospective_target_shifting
+Employer moved the performance goalposts backwards after the quarter ended and refused to disburse committed incentive wages.,workplace_wage,variable_pay_retrospective_target_shifting
+Unilateral retrospective hike in quarterly targets by management to forfeit earned sales commission.,workplace_wage,variable_pay_retrospective_target_shifting
+Company altered incentive plan terms after work was performed to wipe out employee bonus.,workplace_wage,variable_pay_retrospective_target_shifting
+quarter khatam hone ke baad company ne sales target retrospective badha diya taaki incentive commission na dena pade.,workplace_wage,variable_pay_retrospective_target_shifting
+Event contractor failed to assemble our international trade expo stall before the opening hour rendering our entire booking wasted.,contractual_disputes,time_is_of_essence_event_contract
+Wedding decorator failed to deliver banquet hall setup by scheduled reception time causing total failure of event contract.,contractual_disputes,time_is_of_essence_event_contract
+Exhibition booth fabrication vendor delivered incomplete stall 12 hours after trade fair opened causing complete commercial loss.,contractual_disputes,time_is_of_essence_event_contract
+Contractor breached agreement where time was of the essence by missing fixed event deadline completely.,contractual_disputes,time_is_of_essence_event_contract
+expo stall banane ka contractor time pe stall nahi bana paya exhibition shuru ho gayi pura event contract barbad ho gaya.,contractual_disputes,time_is_of_essence_event_contract
+Hotel valet driver crashed my luxury car into a pillar and the hotel management refuses to pay claiming park at owner risk.,contractual_disputes,valet_parking_damage_bailment_liability
+"Mall valet staff took my vehicle keys and returned the car with major dent, pointing to disclaimer printed on the back of parking token.",contractual_disputes,valet_parking_damage_bailment_liability
+Restaurant valet crashed customer car during parking and management denies responsibility under bailment law.,contractual_disputes,valet_parking_damage_bailment_liability
+Valet parking service damaged vehicle transmission and refuses compensation relying on owner risk ticket.,contractual_disputes,valet_parking_damage_bailment_liability
+hotel valet ne gaadi pillar me thonk di aur bole parking slip pe owner risk likha hai hum compensation nahi denge.,contractual_disputes,valet_parking_damage_bailment_liability
+Hired an expert architect for home construction based on his portfolio but he secretly subcontracted everything to an inexperienced third party.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Software agency outsourced our confidential project to unknown freelancers without our knowledge or consent.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Contractor assigned his personal contractual duties to a subcontractor without client approval resulting in ruined work.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Company secretly subcontracted bespoke design contract violating agreement requiring personal performance.,contractual_disputes,unilateral_subcontracting_assignment_breach
+interior design contract personal skill ka tha unhone bina bataye kisi third party saste contractor ko subcontract kar diya.,contractual_disputes,unilateral_subcontracting_assignment_breach
+"Interior contractor demolished our flat, took 5 lakh advance, and has stopped showing up or picking calls for 3 weeks.",contractual_disputes,interior_contractor_midway_abandonment
+Civil renovation contractor abandoned home remodeling midway after taking 80% money and left house uninhabitable.,contractual_disputes,interior_contractor_midway_abandonment
+Home renovation contractor vanished midway through the project refusing to complete pending tasks or refund unspent advance.,contractual_disputes,interior_contractor_midway_abandonment
+"Contractor took advance milestone payment, did 20% defective work, and abandoned the construction site completely.",contractual_disputes,interior_contractor_midway_abandonment
+contractor ne 70 percent advance le liya ghar tod ke chhod diya aur ab call block kar di kaam beech me chhod diya.,contractual_disputes,interior_contractor_midway_abandonment
+Borrower signed a written promissory letter agreeing to pay back an old loan from 5 years ago but now claims debt is time-barred.,contractual_disputes,time_barred_debt_written_promise_breach
+Debtor gave a written promise to clear a 4-year-old commercial debt in installments and defaulted on the first payment.,contractual_disputes,time_barred_debt_written_promise_breach
+Lender holding written signed undertaking to repay expired debt after limitation period where borrower refuses payment.,contractual_disputes,time_barred_debt_written_promise_breach
+Promissory note executed for time-barred debt breached by debtor arguing limitation period has expired.,contractual_disputes,time_barred_debt_written_promise_breach
+purana 4 saal purana loan chukane ka written promise sign kiya tha debtor ne par ab mukar gaya limitation act ka bol ke.,contractual_disputes,time_barred_debt_written_promise_breach
+Someone cloned my voice and called my uncle demanding 50000 rupees saying I had an accident.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+Scammers used artificial intelligence to copy my daughter speech and threatened us on WhatsApp call.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+received an urgent call from an audio bot with my son voice asking for quick bail money.,cyber_fraud,ai_voice_clone_virtual_kidnapping
+Chrome extension replaced the crypto receiving address when I pressed Ctrl+V during transfer.,cyber_fraud,browser_extension_crypto_drainer
+malicious browser plugin emptied my metamask web3 wallet without asking for confirmation.,cyber_fraud,browser_extension_crypto_drainer
+Vendor email was spoofed with one letter difference and sent updated bank details for our raw material invoice.,cyber_fraud,business_email_compromise_bec
+Our company accounts team wired 8 lakh rupees to a fraudster after receiving an altered supplier invoice.,cyber_fraud,business_email_compromise_bec
+Hacker intercepted email thread between buyer and seller and changed beneficiary account number.,cyber_fraud,business_email_compromise_bec
+I called a phone number from an electric supply office listing on Google Maps and lost 30000 to remote desktop app.,cyber_fraud,google_maps_fake_helpline_scam
+Fraudsters edited the contact number of a courier agency on Google search and asked me to share OTP for parcel release.,cyber_fraud,google_maps_fake_helpline_scam
+Google maps helpline for airline ticket cancellation turned out to be a scammer who stole my card credentials.,cyber_fraud,google_maps_fake_helpline_scam
+Binance P2P trade caused my bank account to receive an inter-state cyber cell debit lien freeze.,cyber_fraud,p2p_crypto_bank_freeze
+Police frozen my saving account saying the money I got from selling USDT on crypto exchange was stolen money.,cyber_fraud,p2p_crypto_bank_freeze
+Bank put negative lien on my account following cyber crime department notice against a peer-to-peer crypto deal.,cyber_fraud,p2p_crypto_bank_freeze
+Scammer sent a fake electricity bill SMS warning of power cut at 9:30 PM with an APK download link.,cyber_fraud,utility_disconnection_fraud
+bijli cut off hone ka message aaya link pe click karke 10 rupee recharge kiya to pura balance gayab ho gaya.,cyber_fraud,utility_disconnection_fraud
+Fraudster posing as CBI officer on Skype put me under digital arrest in a hotel room for 48 hours and took all my savings.,cyber_fraud,digital_arrest_extortion
+Fake police officer called on video call in uniform saying my Aadhaar was involved in money laundering case and extorted money.,cyber_fraud,digital_arrest_extortion
+A fake courier customs officer called saying illegal narcotics were found in a package booked in my name to Taiwan.,cyber_fraud,courier_customs_fraud
+FedEx parcel drugs extortion scam where caller threatened immediate arrest if I did not transfer verification funds.,cyber_fraud,courier_customs_fraud
+Part time telegram job scam where they asked me to like YouTube videos and then trapped me in prepaid crypto tasks.,cyber_fraud,part_time_job_fraud
+review rating job task telegram group me phans gaya 50000 deposit karwa ke withdraw block kar diya.,cyber_fraud,google_review_rating_task_scam
+Instant personal loan app downloaded from link accessed all my phone contacts and sent morphed obscene photos to my relatives.,cyber_fraud,loan_app_fraud
+Chinese micro loan app harassment where recovery agents are blackmailing with edited naked pictures of me.,cyber_fraud,loan_app_fraud
+Video call on WhatsApp with unknown naked girl was recorded and blackmailer demanded 25000 threatening to upload on YouTube.,cyber_fraud,sextortion_fraud
+Facebook messenger video call blackmail where scammer recorded screen and demands money to delete video.,cyber_fraud,sextortion_fraud
+QR code bheja bola scan karo paisa aayega par scan karte hi mere account se 15000 kat gaye.,cyber_fraud,qr_code_fraud
+OLX buyer asked me to scan a reverse payment QR code to receive advance token for used sofa but money was debited.,cyber_fraud,qr_code_fraud
+Aadhaar AEPS biometric thumb impression cloned from property registry office and unauthorized cash withdrawals made from bank.,cyber_fraud,aeps_fingerprint_cloning_fraud
+Bina OTP ke bank account se micro ATM AEPS ke through daily 10000 nikal liye kisi ne.,cyber_fraud,aeps_fingerprint_cloning_fraud
+Fraudulent stock investment group on WhatsApp promised 300% returns on pre-IPO institutional quota and blocked funds.,cyber_fraud,fake_stock_ipo_allotment_scam
+Fake SEBI trading application showed huge fake profits on screen but refused withdrawal and demanded 20% release tax.,cyber_fraud,fake_stock_ipo_allotment_scam
+Traffic challan penalty SMS with malicious .apk link downloaded trojan that read all incoming bank OTPs.,cyber_fraud,fake_traffic_challan_apk_scam
+"SMS came saying traffic fine is pending click link to pay, it installed an apk file and bank account was cleaned out.",cyber_fraud,fake_traffic_challan_apk_scam
+Fraudster used my PAN and forged salary slips to take consumer credit card and defaulted on payment.,cyber_fraud,synthetic_identity_credit_card_fraud
+SIM swap fraud where scammer got duplicate SIM issued from telecom store and intercepted all two factor authentication SMS.,cyber_fraud,sim_swap_fraud
+Fake matrimonial profile on Jeevansathi claiming to be UK engineer asked for 2 lakh customs clearance fee for parcel at Delhi airport.,cyber_fraud,matrimonial_romance_fraud
+Customer support number of PhonePe on Twitter turned out to be an imposter who tricked me into installing AnyDesk.,cyber_fraud,customer_care_spoofing
+Credit card reward points expiring today SMS link took me to fake bank portal where CVV and OTP were compromised.,cyber_fraud,credit_card_reward_points_expiry_scam
+WhatsApp account hijacked through call forwarding MMI code *21* entered during verification call.,cyber_fraud,whatsapp_account_call_forwarding_hijack
+Scammer pretending to be Army soldier on OLX said he was posted in cantonment and sent fake payment receipt to steal deposit.,cyber_fraud,fake_defence_armyman_olx_fraud
+FASTag KYC update phishing SMS drained money from my linked bank wallet.,cyber_fraud,fastag_recharge_wallet_phishing
+Fake website offering heavily discounted Goa flight and resort booking took advance payment and switched off phone.,cyber_fraud,hotel_flight_ticket_reseller_scam
+Husband secretly installed hidden stalkerware on my phone that tracks my live GPS location and WhatsApp chats.,cyber_fraud,spyware_stalkerware_device_monitoring
+Telegram crypto arbitrage scheme promised 10% daily automated trading returns and vanished after taking 1 lakh.,cyber_fraud,fake_crypto_arbitrage_telegram_ponzi
+Unauthorized NACH e-mandate autodebit of 4500 rupees every month without my physical or digital signature.,cyber_fraud,nach_unauthorized_autodebit_fraud
+Telecom operator executive leaked my identity documents and sold active SIM cards registered in my name to illegal operators.,cyber_fraud,telecom_kyc_data_leak_sale
+KBC lottery message on WhatsApp showing Amitabh Bachchan photo asking for processing fee to claim 25 lakh lottery prize.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+Someone stole my digital signature certificate (DSC) dongle and filed unauthorized company director resignations on MCA portal.,cyber_fraud,digital_signature_certificate_theft
+Overseas IT job offer in Thailand was actually a human trafficking scam where youth was forced into cyber slave scam compound.,cyber_fraud,overseas_cyber_slave_job_trafficking
+Coaching institute admission form had tiny printed text saying fees once paid will never be refunded even if student leaves on day one.,consumer_issues,unfair_contract_terms_consumer
+Edtech company made me sign an unconscionable contract with automated NBFC loan EMIs for a course they stopped teaching.,consumer_issues,unfair_contract_terms_consumer
+Gym contract says management can cancel membership without refund but user cannot transfer or cancel under any circumstances.,consumer_issues,unfair_contract_terms_consumer
+Real estate builder buyer agreement has 18 percent penalty for delayed buyer installment but only 1 percent penalty for builder possession delay.,consumer_issues,unfair_contract_terms_consumer
+Coaching class refused to return remaining course fee when student withdrew due to severe medical illness.,consumer_issues,coaching_institute_refund_dispute
+Travel booking website added 499 rupees for premium seat selection and carbon offset without any opt-in confirmation.,consumer_issues,dark_patterns_basket_sneaking
+E-commerce checkout automatically checked travel insurance and donation boxes increasing the final invoice amount.,consumer_issues,dark_patterns_basket_sneaking
+Streaming service website makes it impossible to cancel subscription by hiding the cancellation button in deep hidden menus.,consumer_issues,dark_patterns_basket_sneaking
+Online grocery app sneaked a tip and bag fee into my final payment page without showing an unchecked option.,consumer_issues,dark_patterns_basket_sneaking
+Drip pricing on ticketing site added convenience charges at the very last payment screen doubling ticket price.,consumer_issues,dark_patterns_hidden_charges
+"Airline cancelled our direct flight to Mumbai and refused to refund the ticket price in cash, offering only an airline voucher.",consumer_issues,airline_flight_cancellation_refund_delay
+"Flight was delayed by 9 hours at airport and the airline staff refused to provide snacks, water, or hotel accommodation.",consumer_issues,airline_flight_cancellation_refund_delay
+"Aviation company rescheduled flight time by 6 hours, making my connection impossible, but charged 5000 cancellation fee when I cancelled.",consumer_issues,airline_flight_cancellation_refund_delay
+Airline lost my registered check-in luggage containing laptop and valuable clothes and refuses to pay compensation under DGCA rules.,consumer_issues,airline_flight_baggage_dispute
+flight cancel hone ke baad airline bol rahi hai credit shell use karo cash bank account me wapas nahi denge.,consumer_issues,airline_flight_cancellation_refund_delay
+Denied boarding at airport gate due to airline overbooking even though I arrived with valid boarding pass 2 hours prior.,consumer_issues,airline_denied_boarding_overbooking_compensation
+School administration issued circular stating uniforms and notebooks must be purchased only from one vendor inside the school.,consumer_issues,school_mandatory_uniform_book_tie_in
+Private school refuses to let children attend classes if their books are not bought from the designated monopolistic book stall.,consumer_issues,school_mandatory_uniform_book_tie_in
+School forces parents to buy expensive customized shoes and ties exclusively from one shop at three times market rate.,consumer_issues,school_mandatory_uniform_book_tie_in
+Coercive tie-in sale where school mandates specific vendor stationery kit worth 8000 rupees containing basic items.,consumer_issues,school_mandatory_uniform_book_tie_in
+Cinema hall security guard confiscated my sealed water bottle at security frisking and inside water bottle costs 120 rupees.,consumer_issues,cinema_hall_water_confiscation_mrp
+Multiplex cinema does not provide any free drinking water cooler and security stops patrons from carrying their own water.,consumer_issues,cinema_hall_water_confiscation_mrp
+Theatre food stall sold popcorn and soft drinks above the maximum retail price printed on the packaging.,consumer_issues,cinema_hall_water_confiscation_mrp
+Restaurant automatically added 10 percent mandatory service charge to dinner bill and refused to remove it.,consumer_issues,hotel_restaurant_mandatory_service_charge
+The electric water geyser I bought online has no ISI mark and gave severe electric shock during shower.,consumer_issues,substandard_unmarked_electronics_bis
+Motorcycle helmet sold by local retailer had fake ISI sticker and split into two pieces on minor road fall.,consumer_issues,substandard_unmarked_electronics_bis
+Substandard mobile charger without Bureau of Indian Standards certification overheated and melted phone motherboard.,consumer_issues,substandard_unmarked_electronics_bis
+Store sold gold necklace without 6-digit HUID hallmark which turned out to be only 14 karat instead of 22 karat.,consumer_issues,gold_jewellery_hallmarking_purity_scam
+New refrigerator stopped cooling within 10 days of purchase and company technician visited twice but failed to repair defect.,consumer_issues,defective_product
+"Washing machine drum makes loud rattling noise and leaks water from day one, manufacturer refuses replacement.",consumer_issues,defective_product
+"LED TV display panel has dead vertical green lines right after unboxing, brand service center refuses warranty repair.",consumer_issues,warranty_guarantee_denial
+"Brand new split air conditioner does not cool room at all, authorized dealer refuses to replace defective outdoor unit.",consumer_issues,defective_product
+"Brand new car has persistent engine knocking and gearbox failure within 500 km, dealer refuses to acknowledge manufacturing defect.",consumer_issues,automobile_manufacturing_defect_lemon_vehicle
+Electric scooter battery suddenly loses charge from 80% to zero and cuts off mid-traffic on highway.,consumer_issues,ev_battery_thermal_range_defect
+EV battery caught fire while charging inside home garage due to defective thermal management cells.,consumer_issues,ev_battery_thermal_range_defect
+Builder has delayed possession of our booked apartment by over 4 years and refuses to pay statutory monthly delay interest.,consumer_issues,builder_delay_possession_dispute
+"Flat possession delayed by 3 years, builder demanding extra charges for amenities that were originally included in basic price.",consumer_issues,builder_delay_possession_dispute
+Real estate developer changed approved building layout and reduced carpet area without taking written consent of allottees.,consumer_issues,builder_delay_possession_dispute
+Insurance company rejected my health insurance cashless hospitalization claim citing pre-existing condition despite 5 years continuous coverage.,consumer_issues,health_insurance_claim_arbitrary_rejection
+Medical insurance company denied reimbursement of dengue hospitalization bill on arbitrary non-medical grounds.,consumer_issues,health_insurance_claim_arbitrary_rejection
+TPA rejected mother knee surgery claim claiming treatment could have been done as outpatient procedure.,consumer_issues,health_insurance_claim_arbitrary_rejection
+Delivery executive refused open box delivery for expensive laptop ordered online and box contained tile pieces.,consumer_issues,e_commerce_refusal_of_open_box_delivery
+E-commerce delivery agent ran away with package when I asked to inspect contents before sharing delivery OTP.,consumer_issues,e_commerce_refusal_of_open_box_delivery
+Company advertises 100% hair regrowth within 30 days which is scientifically impossible and misleading.,consumer_issues,misleading_advertisement
+"Toothpaste advertisement claims to cure all dental cavities permanently, violating advertising standards council guidelines.",consumer_issues,misleading_advertisement
+Social media financial influencer promoted unlicensed algorithmic trading app that lost all subscriber investments.,consumer_issues,misleading_endorser_influencer_financial_ad
+Telecom operator activated unsolicited caller tune and cricket alert VAS service and deducted 60 rupees from prepaid balance.,consumer_issues,telecom_vas_billing_dispute
+Mobile network company keeps charging international roaming pack fee on bill even though roaming was never activated.,consumer_issues,telecom_vas_billing_dispute
+Dry cleaner ruined expensive silk wedding saree by using harsh bleach and refuses to pay compensation.,consumer_issues,service_deficiency
+"Home internet fiber optic broadband has been dead for 15 days, customer support closes tickets without visiting premises.",consumer_issues,service_deficiency
+"Bank locker was broken into due to lack of security guards in branch, bank refuses liability for lost gold jewelry.",consumer_issues,bank_safe_deposit_locker_theft_loss
+Traffic cop stopped my two wheeler and issued 1000 rupees challan for carrying my wife and 3 year old son.,traffic_enforcement,triple_riding_pillion_child_dispute
+Camera challan sent to my phone showing triple riding because my toddler child was sitting in front of me.,traffic_enforcement,triple_riding_pillion_child_dispute
+Police officer seized driving licence for 3 months under Section 194C because baby was travelling with parents on scooter.,traffic_enforcement,triple_riding_pillion_child_dispute
+motorcycle pe wife aur chhota bachha the helmet pehna tha fir bhi police ne 194c me triple riding ka fine laga diya.,traffic_enforcement,triple_riding_pillion_child_dispute
+I crossed the zebra line and stop line to allow a blaring hospital ambulance to pass through heavy jam and got signal jump challan.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Received automated junction red light camera fine while clearing path for fire engine emergency vehicle.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Fined 10000 rupees under Section 194E for obstructing emergency vehicle when the road was totally choked by bumper to bumper gridlock.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Traffic camera clicked my vehicle moving ahead on red signal solely to clear corridor for emergency cardiac ambulance.,traffic_enforcement,emergency_vehicle_passage_challan_dispute
+Traffic police seized my bike silencer claiming it makes excessive noise without measuring decibels on any scientific meter.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Issued a 190(2) fine for modified exhaust purely by hearing sound with ears without using an approved decibel tester.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+"Police officer confiscated vehicle RC claiming exhaust is loud, but refused to show calibrated sound level meter certificate.",traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Stock original exhaust on Royal Enfield was challaned by traffic constable claiming it is modified without any test.,traffic_enforcement,modified_silencer_exhaust_decibel_challan
+Speed camera caught my car doing 65 kmph on national highway where speed limit board clearly showed 80 kmph.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Challaned for overspeeding on city road where the speed limit sign was hidden behind a giant advertising billboard.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Automated speed radar fine issued on flyover where no speed limit signboard is installed anywhere on the stretch.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Speed camera calibrated at 40 kmph on a four-lane highway where PWD official gazette notified 60 kmph.,traffic_enforcement,conflicting_speed_limit_signboard_camera
+Traffic police fined me 5000 rupees for non-HSRP plate even though I presented the online BookMyHSRP fitment receipt.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Issued challan for old number plate during the period when State High Court had granted extension for HSRP implementation.,traffic_enforcement,hsrp_number_plate_challan_dispute
+Cop refused to look at my authorized dealer appointment slip for high security registration plate and issued ticket.,traffic_enforcement,hsrp_number_plate_challan_dispute
+HSRP number plate challan dispute where vehicle owner has active booking waiting for plate shipment from vendor.,traffic_enforcement,high_security_registration_plate_hsrp_dispute
+Commercial cab was booked under Section 192A for route deviation when traffic police diverted all vehicles due to road collapse.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Goods truck driver fined for entering unauthorized road when official police barricades closed the permitted highway route.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Permit deviation challan on commercial pickup vehicle forced to take bypass road due to VIP movement diversion.,traffic_enforcement,commercial_vehicle_route_diversion_permit_challan
+Traffic police constable pulled my motorcycle keys out of ignition switch and refused to give them back.,traffic_enforcement,vehicle_detention
+Sub-inspector snatched my car keys at traffic signal without issuing any seizure memo or explanation.,traffic_enforcement,vehicle_detention
+Police officer seized vehicle keys during routine vehicle checking on highway without written memo under Section 207.,traffic_enforcement,vehicle_detention
+Breathalyzer test conducted with unsealed dirty straw and officer refused to show digital reading before alleging drunken driving.,traffic_enforcement,drunk_driving_breathalyzer_dispute
+"Booked under Section 185 for drunken driving after consuming cough syrup, police refused blood alcohol test at hospital.",traffic_enforcement,drunk_driving_breathalyzer_dispute
+E-challan issued against my scooter showing photograph of a completely different motorcycle with forged number plate.,traffic_enforcement,wrongful_challan
+Received speed violation ticket for my car in Delhi while my vehicle was parked inside my home garage in Bangalore.,traffic_enforcement,wrongful_challan
+Wrong vehicle registration number entered by traffic camera operator resulting in wrongful challan on innocent owner.,traffic_enforcement,wrongful_challan
+Traffic officer impounded original driving licence and RC book on the spot for minor parking violation.,traffic_enforcement,document_seizure_or_retention
+Police officer refused to accept digital driving licence shown on DigiLocker and mParivahan app and demanded physical card.,traffic_enforcement,document_acceptance_or_verification
+Constable snatched physical documents and told me to collect them from traffic police station next week without seizure receipt.,traffic_enforcement,document_seizure_or_retention
+Traffic tow truck damaged front bumper and suspension while towing my legally parked car.,traffic_enforcement,unlawful_towing
+"Car was towed away while I was sitting inside the vehicle, towing operators demanded 2000 cash on the spot.",traffic_enforcement,unlawful_towing
+Traffic police crane towed vehicle from unmarked spot where no 'No Parking' signboard was erected.,traffic_enforcement,unlawful_towing
+"Fined for not wearing helmet when driving a four-wheeled car, clear camera error by traffic department.",traffic_enforcement,wrongful_challan
+Seatbelt challan issued by automated camera when I was properly wearing shoulder and lap seatbelt.,traffic_enforcement,seatbelt_helmet_camera_dispute
+Camera clicked passenger wearing dark colored shirt and wrongly flagged as not wearing seatbelt.,traffic_enforcement,seatbelt_helmet_camera_dispute
+Overloading challan issued on commercial truck without weighing the vehicle on an approved weighing bridge scale.,traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+RTO officer demanded 20000 overloading fine based on visual estimate without taking vehicle to weighbridge under Section 114.,traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+Company withheld 50000 rupees from my final exit settlement alleging cosmetic scratch on returned laptop without inquiry.,workplace_wage,unilateral_laptop_damage_deduction_exit
+Employer deducted entire last month salary claiming office monitor was damaged without issuing any show cause letter.,workplace_wage,unilateral_laptop_damage_deduction_exit
+HR deducted 40000 from full and final settlement for company equipment wear and tear without giving employee opportunity to explain.,workplace_wage,unilateral_laptop_damage_deduction_exit
+Office IT team claimed returned laptop has cracked hinge and accounts department deducted cost from exit pay without notice.,workplace_wage,unilateral_laptop_damage_deduction_exit
+company ne f&f settlement me se 35000 laptop damage ke naam pe kaat liye bina kisi notice ya investigation ke.,workplace_wage,unilateral_laptop_damage_deduction_exit
+IT employer put 50 engineers on unpaid bench for 3 months without salary because client project was abruptly cancelled.,workplace_wage,layoff_bench_wage_deduction
+Factory workers reported to duty every morning but management refused daily wages citing lack of raw material delivery.,workplace_wage,layoff_bench_wage_deduction
+Company forced staff to sit in office without project allocation and withheld monthly pay claiming non-billable bench status.,workplace_wage,layoff_bench_wage_deduction
+Workers were ready and willing to work but employer locked factory gates and refused daily minimum wages.,workplace_wage,layoff_bench_wage_deduction
+Restaurant staff forced to work 7 AM to 11 AM and 6 PM to 11 PM with a 16 hour spreadover without any overtime wages.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Hotel waiter working split shift spanning 15 hours daily without rest interval compliance or double overtime pay.,workplace_wage,split_shift_excessive_spreadover_hospitality
+Security guard compelled to work 14 hours every single day without weekly rest day or overtime compensation.,workplace_wage,overtime_wage_denial
+Retail chain store employees made to work 12 hour continuous shifts during festive sales without overtime rate.,workplace_wage,overtime_wage_denial
+Female team lead is paid 40% lower remuneration than male team lead doing identical software development responsibilities.,workplace_wage,gender_wage_gap_unequal_pay
+Company pays women sales associates lower basic pay and commission compared to male associates with same targets.,workplace_wage,gender_wage_gap_unequal_pay
+Gender wage discrimination where female doctor in private hospital receives lower stipend than male junior doctors.,workplace_wage,gender_wage_discrimination
+Employer reduced daily wage rate specifically for women agricultural laborers performing identical harvesting work.,workplace_wage,gender_wage_discrimination
+Company moved sales KPI targets retrospectively after the financial quarter closed to deny committed 2 lakh performance bonus.,workplace_wage,variable_pay_retrospective_target_shifting
+Employer arbitrarily increased quarterly revenue targets by 50% retrospectively to avoid paying employee incentive commission.,workplace_wage,variable_pay_retrospective_target_shifting
+Management changed performance incentive formula after employees had already achieved agreed annual metrics.,workplace_wage,sales_commission_incentive_withholding
+Sales manager achieved 110% quota but company refused variable pay claiming revised policy applies retrospectively.,workplace_wage,sales_commission_incentive_withholding
+"Company has not paid salary for the last 4 months, management keeps giving false promises every week.",workplace_wage,unpaid_wages
+Employer stopped paying wages to employees since November and HR has stopped replying to emails.,workplace_wage,unpaid_wages
+Worked in startup for 6 months and founder vanished without paying pending salaries of 12 employees.,workplace_wage,unpaid_wages
+salary 3 mahine se nahi mili boss bolta hai fund aayega tab denge par monthly kharche ruk gaye hain.,workplace_wage,delayed_wages
+Employer is paying daily wage of 250 rupees which is far below the statutory minimum wage notified by the state government.,workplace_wage,minimum_wage_violation
+Garment factory pays workers only 7000 rupees per month for 10 hour work days violating minimum wage code.,workplace_wage,minimum_wage_violation
+Security agency pays guards below the central government floor wage rate.,workplace_wage,minimum_wage_violation
+Employer deducted Provident Fund (PF) and ESI from monthly salary slips but never deposited the money into EPFO account.,workplace_wage,pf_deduction_non_deposit
+Discovered on EPFO portal that employer has not deposited employee PF contribution for over 18 months despite deducting from pay.,workplace_wage,pf_deduction_non_deposit
+Company deducted employee share of PF every month but UAN passbook shows zero contribution credited.,workplace_wage,pf_deduction_non_deposit
+"I worked for 7 years in the company and resigned, but employer refused to pay gratuity amount citing financial crunch.",workplace_wage,gratuity_withholding_dispute
+"HR refused gratuity payment claiming employee left before completing 5 years, even though service period is 5 years 8 months.",workplace_wage,gratuity_withholding_dispute
+Company withheld statutory gratuity payment after employee retirement without any disciplinary inquiry.,workplace_wage,gratuity_withholding_dispute
+"Resigned after serving 3 months notice period as per appointment letter, but company refuses to release full and final settlement.",workplace_wage,final_settlement_withheld
+"Company has not cleared full and final dues, relieving letter, and experience certificate 90 days after resignation.",workplace_wage,final_settlement_withheld
+"F&F settlement pending for over 6 months, HR refuses to release pending leave encashment and bonus.",workplace_wage,final_settlement_withheld
+Employer terminated employee on the spot without paying mandatory 1 month notice pay or retrenchment compensation.,workplace_wage,layoff_retrenchment_compensation_denial
+"Company fired me abruptly via WhatsApp message without any written notice, inquiry, or severance pay.",workplace_wage,layoff_retrenchment_compensation_denial
+Factory management made arbitrary deduction of 5000 rupees from monthly wage alleging machine slowdown without notice.,workplace_wage,unauthorized_deduction
+Employer deducted 10 days salary because employee took 1 day medical sick leave with doctor certificate.,workplace_wage,unauthorized_deduction
+"Exhibition stall fabricator failed to assemble our trade expo booth before the trade fair opened, causing total loss of business.",contractual_disputes,time_is_of_essence_event_contract
+"Wedding hall decorator did not deliver stage and lighting by the scheduled 7 PM reception time, ruining wedding contract.",contractual_disputes,time_is_of_essence_event_contract
+"Trade fair contractor delivered incomplete stall 10 hours after exhibition started, breaching agreement where time was of essence.",contractual_disputes,time_is_of_essence_event_contract
+Event management agency failed to deliver audio visual setup for corporate conference resulting in cancelled event.,contractual_disputes,event_wedding_vendor_cancellation_default
+Hotel valet crashed my luxury car into a pillar and manager denies liability saying parking token says park at owner risk.,contractual_disputes,valet_parking_damage_bailment_liability
+Mall valet driver returned vehicle with deep dents on door and management points to disclaimer printed behind valet slip.,contractual_disputes,valet_parking_damage_bailment_liability
+"Restaurant valet parked car on open road where it was hit by truck, restaurant refuses compensation under bailment law.",contractual_disputes,valet_parking_damage_bailment_liability
+Valet parking attendant damaged car clutch plate during reckless driving and hotel disclaims responsibility.,contractual_disputes,valet_parking_damage_bailment_liability
+Hired an experienced architect based on his reputation but he secretly outsourced entire project to unqualified third party.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Software company outsourced our proprietary web application development to unknown external freelancers without consent.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Civil contractor delegated personal building construction duties to an unlicensed sub-agent who ruined foundation work.,contractual_disputes,unilateral_subcontracting_assignment_breach
+Contract requiring personal performance of renowned mural artist was secretly delegated to art students.,contractual_disputes,unilateral_subcontracting_assignment_breach
+"Interior contractor demolished our apartment flooring, took 6 lakh advance, and abandoned the site midway refusing to answer calls.",contractual_disputes,interior_contractor_midway_abandonment
+"Home renovation contractor took 80% milestone payment, left walls broken and incomplete, and disappeared for a month.",contractual_disputes,interior_contractor_midway_abandonment
+Contractor abandoned commercial shop remodeling halfway through work and refuses to refund unspent advance money.,contractual_disputes,interior_contractor_midway_abandonment
+Civil contractor stopped work midway after taking advance money and demands double contract rate to resume work.,contractual_disputes,interior_contractor_midway_abandonment
+Debtor signed a formal written promise agreeing to repay a 4-year-old expired loan in installments and defaulted on the first payment.,contractual_disputes,time_barred_debt_written_promise_breach
+"Borrower gave written promissory letter acknowledging 5-year-old debt and promising to pay, but now claims debt is time-barred.",contractual_disputes,time_barred_debt_written_promise_breach
+Signed written agreement to clear expired commercial debt breached by debtor arguing limitation period has elapsed.,contractual_disputes,time_barred_debt_written_promise_breach
+Promissory note executed under Section 25(3) for time-barred debt repudiated by borrower after signing.,contractual_disputes,time_barred_debt_written_promise_breach
+Landlord refuses to refund 2 lakh security deposit after tenant vacated flat with no rent dues or utility arrears.,contractual_disputes,security_deposit_dispute
+Commercial office owner deducted entire 5 lakh security deposit claiming arbitrary repainting and renovation expenses.,contractual_disputes,security_deposit_dispute
+Rented flat owner adjusted security deposit without consent and refuses to return balance amount after lease expiry.,contractual_disputes,security_deposit_dispute
+kirayedar ne ghar khali kar diya par makan malik deposit wapas nahi kar raha bolta hai painting ka kharcha kaatunga.,contractual_disputes,security_deposit_dispute
+"Vendor supplied 500 defective steel valves that leaked under pressure, causing shutdown of industrial manufacturing plant.",contractual_disputes,breach_of_contract
+Supplier failed to deliver bulk packaging boxes before export shipping deadline resulting in heavy shipping cancellation penalties.,contractual_disputes,breach_of_contract
+B2B supply agreement breached by raw material supplier who delivered substandard grade aluminum sheets.,contractual_disputes,breach_of_contract
+Freelance graphic designer completed corporate branding project as per contract but corporate client refuses to pay final invoice.,contractual_disputes,freelance_vendor_non_payment
+Independent software consultant delivered agreed software modules but company refuses to clear milestone payment invoice.,contractual_disputes,freelance_vendor_non_payment
+Digital marketing agency completed 3-month retainer contract but client defaulted on monthly retainership fees.,contractual_disputes,consulting_retainer_fee_default
+Former employer sent legal notice attempting to enforce 2-year non-compete clause to prevent employee from joining competitor.,contractual_disputes,non_compete_clause_dispute
+"IT firm trying to restrain ex-employee from working in same industry, non-compete agreement void under Section 27.",contractual_disputes,non_compete_clause_dispute
+Employment bond demanding 5 lakh rupees penalty for resigning before 2 years is unreasonable restraint of trade.,contractual_disputes,non_compete_clause_dispute
+Seller knowingly concealed flood damage on used car and sold vehicle by resetting engine warning light.,contractual_disputes,fraudulent_active_concealment_used_car_sale
+"Used car dealer concealed structural chassis accidental damage during sale, committing fraudulent misrepresentation.",contractual_disputes,fraudulent_active_concealment_used_car_sale
+Second hand car purchase agreement where seller concealed that vehicle had a cracked engine block repaired with putty.,contractual_disputes,fraudulent_active_concealment_used_car_sale
+Commercial lease contract had 3 year lock-in and owner demands rent for entire balance period despite giving 3 months notice.,contractual_disputes,commercial_lease_lock_in_penalty_dispute
+Landlord terminated commercial lease before handover of keys and forfeited token advance money.,contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
+Equipment rental firm provided industrial generator that broke down within 2 hours and refuses to refund advance hiring fee.,contractual_disputes,equipment_lease_machinery_breakdown
+Franchise brand misrepresented monthly net profit figures by 400 percent to induce investor to sign franchise deed.,contractual_disputes,misrepresentation_of_franchise_business_profits
+"Contract clause completely prohibited buyer from filing any legal suit in court, void under Section 28.",contractual_disputes,unreasonable_restraint_on_legal_remedies_clause
+Old grandfather was coerced and unduly influenced into signing land partition deed without independent legal advice.,contractual_disputes,undue_influence_senior_citizen_property_agreement

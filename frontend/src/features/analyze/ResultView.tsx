@@ -1,4 +1,5 @@
 import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { FileText } from "lucide-react";
 import type { AnalyzeResponse } from "@/types/contract";
 import { DomainResultCard } from "@/components/legal/DomainResultCard";
 import { IssueResultCard } from "@/components/legal/IssueResultCard";
@@ -34,7 +35,13 @@ function useVariants() {
   return { container, item };
 }
 
-export function ResultView({ data }: { data: AnalyzeResponse }) {
+export function ResultView({
+  data,
+  scenario,
+}: {
+  data: AnalyzeResponse;
+  scenario?: string;
+}) {
   const { container, item } = useVariants();
   const hasProvisions =
     data.legal_information_status === "provisions_available" &&
@@ -52,6 +59,36 @@ export function ResultView({ data }: { data: AnalyzeResponse }) {
       animate="show"
       className="mx-auto flex w-full max-w-3xl flex-col gap-4 sm:gap-5"
     >
+      {scenario && (
+        <motion.div
+          variants={item}
+          className="relative rounded-xl border-2 border-border bg-card/90 backdrop-blur-sm p-4 sm:p-5 shadow-sm overflow-hidden"
+        >
+          <span className="canvas-handle -top-1.5 -left-1.5" />
+          <span className="canvas-handle -top-1.5 -right-1.5" />
+          <span className="canvas-handle -bottom-1.5 -left-1.5" />
+          <span className="canvas-handle -bottom-1.5 -right-1.5" />
+
+          <div className="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-border/60">
+            <div className="flex items-center gap-2">
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-primary/10 text-primary">
+                <FileText className="h-3.5 w-3.5" />
+              </span>
+              <span className="font-mono text-xs font-black uppercase tracking-wider text-muted-foreground">
+                YOUR REPORTED SITUATION
+              </span>
+            </div>
+            <span className="font-mono text-[10px] font-bold text-muted-foreground uppercase px-2 py-0.5 rounded bg-muted/60">
+              ANALYZED INPUT
+            </span>
+          </div>
+
+          <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed italic select-text whitespace-pre-wrap">
+            "{scenario}"
+          </p>
+        </motion.div>
+      )}
+
       {(data.low_confidence_warning || data.needs_clarification) && (
         <motion.div variants={item}>
           <LowConfidenceBanner clarificationQuestion={data.clarification_question} />

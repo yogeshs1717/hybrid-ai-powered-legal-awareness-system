@@ -3662,6 +3662,766 @@
           "provision_relevance_rationale": "Mandates compensation for direct loss and damages suffered due to breach of contract, including wasted fit-out expenses and lost profits."
         }
       ]
+    },
+    "p2p_crypto_bank_freeze": {
+      "issue_id": "p2p_crypto_bank_freeze",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "P2P Crypto Bank Account Freeze / Cyber Police Lien",
+      "issue_definition": "Citizen sold cryptocurrency legitimately on a peer-to-peer (P2P) exchange, and the buyer paid from an account tied to cyber fraud proceeds, resulting in the citizen's bank account or funds being frozen by cyber police.",
+      "prototype_texts": [
+        "I sold crypto on Binance P2P and my bank account was put on debit freeze with a cyber police lien from another state.",
+        "My bank account was frozen because money received from a P2P crypto trade turned out to be linked to a cyber fraud case.",
+        "Cyber cell froze my savings account after I completed a legitimate USDT peer to peer sale and the buyer paid from a compromised account.",
+        "Received a notice from bank that my account has an debit lien due to cyber complaint against a P2P crypto transaction."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66b",
+          "provision_relevance_rationale": "Applies because authorities must determine whether the received funds represent dishonestly received stolen computer resources or bona fide consideration in good faith without mens rea."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Applies to civil liability aspects and unauthorized interference with bank account operations."
+        }
+      ]
+    },
+    "google_maps_fake_helpline_scam": {
+      "issue_id": "google_maps_fake_helpline_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Google Maps Fake Customer Support Number Poisoning",
+      "issue_definition": "Citizen called a fake customer care number placed by scammers on a Google Maps listing or search snippet for an airline, courier, or hospital, and was tricked into transferring money or downloading remote access tools.",
+      "prototype_texts": [
+        "I searched for customer care number on Google Maps to track my parcel and the fraudster who answered made me pay 5 rupees registration fee and debited my entire balance.",
+        "Called a hospital emergency phone number from Google Maps listing and the person sent a QR code to pay consultation charges which deducted money from my account.",
+        "Found a courier helpline number on Google search maps, the agent asked me to download an app to reroute delivery and withdrew money from my bank.",
+        "Fake customer care contact listed on Google Maps tricked me into sharing UPI PIN to cancel an airline booking."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Applies because the offender cheated by personating legitimate customer care personnel using a communication device."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Applies to penalty and compensation for unauthorized debit access gained through deceptive remote access or phishing."
+        }
+      ]
+    },
+    "browser_extension_crypto_drainer": {
+      "issue_id": "browser_extension_crypto_drainer",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Malicious Browser Extension / Clipboard Hijacker",
+      "issue_definition": "A malicious web extension or malware altered clipboard data to substitute receiving cryptocurrency addresses or banking details, or silently drained digital wallet assets.",
+      "prototype_texts": [
+        "A rogue browser extension altered my copied crypto address and transferred my digital tokens to a scammer wallet.",
+        "My browser extension replaced the account number I copied into net banking with a fraudster account and money went to wrong person.",
+        "Installed a Chrome extension for PDF editing and it accessed my crypto web3 wallet and drained all my tokens without my consent.",
+        "Clipboard malware secretly changed the receiving wallet address when I pasted it into my exchange withdrawal screen."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Applies because the malicious extension accessed computer memory and introduced contaminants without owner consent."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66",
+          "provision_relevance_rationale": "Applies for fraudulently altering computer data and clipboard buffers to divert financial assets."
+        }
+      ]
+    },
+    "business_email_compromise_bec": {
+      "issue_id": "business_email_compromise_bec",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Business Email Compromise (BEC) / Vendor Invoice Fraud",
+      "issue_definition": "Fraudsters gained unauthorized access to vendor or client email communications and substituted bank account details on an upcoming commercial invoice, causing fraudulent wire transfer.",
+      "prototype_texts": [
+        "Scammers hacked our vendor email and sent a fake invoice with altered bank account details which our finance team paid.",
+        "We received an email from what looked like our regular supplier asking to deposit payment in a new bank account and lost funds to BEC fraud.",
+        "Fraudster compromised supplier email communication and redirected our company wire transfer to a mule account.",
+        "Our client was tricked into sending payment to an imposter bank account because our email server was intercepted."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "65",
+          "provision_relevance_rationale": "Applies because the offender tampered with and altered electronic financial records and invoice source files."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Applies because the perpetrator cheated by personating the authorized vendor using electronic communication resources."
+        }
+      ]
+    },
+    "ai_voice_clone_virtual_kidnapping": {
+      "issue_id": "ai_voice_clone_virtual_kidnapping",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "AI Voice Clone / Virtual Kidnapping Extortion",
+      "issue_definition": "Scammers used synthetic voice cloning AI to simulate the distress voice of a family member and coerced urgent ransom money transfer under extortion.",
+      "prototype_texts": [
+        "Received a call where an AI clone of my son was crying saying he was arrested and caller demanded 2 lakhs ransom immediately.",
+        "Scammers cloned my daughter voice using deepfake audio and demanded immediate money transfer claiming she was kidnapped.",
+        "A fraudster called my elderly parents with my cloned voice begging for urgent emergency funds after a fake car accident.",
+        "Audio deepfake scam call simulated family member voice in trouble to extort urgent UPI money transfer."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "Applies because the offender misappropriated and fraudulently utilized the unique electronic biometric voice identity of the victim."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Applies because the fraudster cheated by personating family members using a computer resource and communication device."
+        }
+      ]
+    },
+    "unfair_contract_terms_consumer": {
+      "issue_id": "unfair_contract_terms_consumer",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Unfair One-Sided Contract Terms / Non-Refundable Lock-In",
+      "issue_definition": "Service provider, gym, coaching institute, or builder imposed unilateral, non-negotiable contract clauses with unreasonable forfeiture or zero liability on themselves.",
+      "prototype_texts": [
+        "Coaching institute has a non-refundable clause in their admission contract and refused any refund when I withdrew in the first week.",
+        "Gym membership agreement has completely one-sided terms where they can cancel anytime without refund but customer cannot terminate.",
+        "Edtech platform contract had unfair lock-in clauses forcing automatic EMIs even though course material was never delivered.",
+        "Builder agreement had one-sided clauses charging 18% penalty on buyer delay but paying only 2% for their own construction delay."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_46",
+          "provision_relevance_rationale": "Directly defines such one-sided clauses causing significant change in consumer rights as an unfair contract."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Encompasses imposition of unreasonable and non-negotiable forfeiture clauses as an unfair trade practice."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "39",
+          "provision_relevance_rationale": "Empowers the District Commission to declare unfair terms void, order refunds, and grant compensation."
+        }
+      ]
+    },
+    "dark_patterns_basket_sneaking": {
+      "issue_id": "dark_patterns_basket_sneaking",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Dark Patterns / Sneaking Items into Cart and Forced Subscriptions",
+      "issue_definition": "Online merchant or ticketing platform used deceptive design patterns (dark patterns) such as sneaking unwanted products into checkout or making subscriptions non-cancellable.",
+      "prototype_texts": [
+        "Flight booking website automatically sneaked travel insurance and convenience priority charges into my checkout without my consent.",
+        "Shopping app auto-checked a donation fee and premium subscription charge in my cart which I never selected.",
+        "Website uses dark patterns to hide the cancel subscription button and refuses to let me stop monthly recurring charges.",
+        "E-commerce platform added unwanted add-on warranty to my final billing total using deceptive default checkboxes."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Prohibits deceptive trade practices and unauthorized billing of pre-ticked add-ons as unfair trade practices."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Empowers Central Consumer Protection Authority (CCPA) to enforce guidelines prohibiting dark patterns."
+        }
+      ]
+    },
+    "airline_flight_cancellation_refund_delay": {
+      "issue_id": "airline_flight_cancellation_refund_delay",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Airline Flight Cancellation / Refusal of Cash Refund",
+      "issue_definition": "Airline cancelled flight or made major schedule changes and refused cash refund, illegally forcing passenger into non-expiring credit shells or imposing heavy deduction.",
+      "prototype_texts": [
+        "Airline cancelled my scheduled flight and refuses to issue a cash refund, forcing me to take a credit shell voucher instead.",
+        "Flight was delayed by over 8 hours and airline denied refund or alternate accommodation required under DGCA passenger charter.",
+        "Airline rescheduled my connecting flight making travel impossible but deducted 80% cancellation charges when I requested refund.",
+        "Aviation carrier cancelled my ticket unilaterally and has not refunded my money even after 30 days."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Applies because unilateral flight cancellation and withholding cash refund constitutes statutory deficiency in service."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Applies because forcing passengers into non-consensual credit vouchers constitutes an unfair trade practice."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "39",
+          "provision_relevance_rationale": "Authorizes District Commission to direct immediate refund of ticket fare along with interest and compensation."
+        }
+      ]
+    },
+    "school_mandatory_uniform_book_tie_in": {
+      "issue_id": "school_mandatory_uniform_book_tie_in",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "School Mandatory Uniform and Book Tie-In Sales",
+      "issue_definition": "Private school or institution coerced parents into purchasing uniforms, textbooks, or stationery exclusively from a single designated shop or vendor at inflated prices.",
+      "prototype_texts": [
+        "Private school is forcing parents to buy books and uniforms exclusively from one specific vendor at twice the market price.",
+        "School management mandated purchase of stationery kits from school counter only and prohibited buying standard NCERT books outside.",
+        "Coerced tie-in sale where private school threatens student disciplinary action if uniforms are not bought from their chosen shop.",
+        "School tie in arrangement forcing purchase of costly customized notebooks from designated vendor violates fair competition."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Restricts tying arrangements and coercive conditional sales as unfair trade practices."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Empowers CCPA to investigate and restrain systemic restrictive trade practices affecting large consumer classes."
+        }
+      ]
+    },
+    "cinema_hall_water_confiscation_mrp": {
+      "issue_id": "cinema_hall_water_confiscation_mrp",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Multiplex Cinema Drinking Water Confiscation / Above-MRP Sales",
+      "issue_definition": "Multiplex or cinema hall security confiscated sealed drinking water at entry while failing to provide free potable drinking water inside or charging exorbitant prices.",
+      "prototype_texts": [
+        "Multiplex security took away my water bottle at entry and inside cinema hall they are selling water bottles above MRP.",
+        "Cinema hall stopped me from carrying personal drinking water and failed to provide free hygienic drinking water facility inside.",
+        "Theatre security confiscated sealed water at security check and food counter refused to provide free filtered water.",
+        "Movie hall prohibited personal water bottle and charges 100 rupees for a water bottle whose printed MRP is 20."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Failure to provide clean drinking water inside entertainment venues constitutes deficiency of service."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Charging above printed MRP or creating artificial water monopoly constitutes an unfair trade practice."
+        }
+      ]
+    },
+    "substandard_unmarked_electronics_bis": {
+      "issue_id": "substandard_unmarked_electronics_bis",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Substandard Electronics Without Compulsory BIS ISI Mark",
+      "issue_definition": "Retailer or e-commerce seller sold electrical appliances (heaters, adapters, helmets, power banks) lacking mandatory BIS ISI certification, posing fire and safety hazards.",
+      "prototype_texts": [
+        "Purchased an electric immersion water heater online that lacks BIS ISI mark and caused short circuit shock.",
+        "Retailer sold substandard motorcycle helmet without mandatory ISI mark that cracked upon minor impact.",
+        "Phone charger bought from online marketplace burst into flames and has no Bureau of Indian Standards certification.",
+        "Defective electrical appliance sold without mandatory BIS quality standard mark causing hazardous electrical hazard."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "84",
+          "provision_relevance_rationale": "Imposes strict product liability on manufacturer for deviation from mandatory manufacturing standards causing damage."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "85",
+          "provision_relevance_rationale": "Holds product seller liable for distributing non-conforming or uncertified hazardous goods."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_10",
+          "provision_relevance_rationale": "Defines lack of mandatory statutory quality certification as an actionable defect."
+        }
+      ]
+    },
+    "triple_riding_pillion_child_dispute": {
+      "issue_id": "triple_riding_pillion_child_dispute",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Triple Riding Motorcycle Challan Dispute Involving Child",
+      "issue_definition": "Traffic police issued a challan under Section 194C for triple riding when the rider was carrying a spouse and a small child/infant under age 4 with safety gear.",
+      "prototype_texts": [
+        "Traffic police fined me 1000 rupees for triple riding because my 2-year-old child was sitting between me and my wife.",
+        "Received a camera challan for carrying three persons on motorcycle when the third person was an infant wearing a safety belt.",
+        "Challan issued under Section 194C on two-wheeler carrying small child under four years of age.",
+        "Police impounded licence for three months alleging triple riding while riding with wife and toddler."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "194c",
+          "provision_relevance_rationale": "Directly governs penalties for carrying more than one pillion rider and safety measures under Section 128."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "129",
+          "provision_relevance_rationale": "Governs protective headgear and safety harness standards applicable to children transported on motorcycles."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "Allows compounding of passenger seating offences before designated officers without license disqualification."
+        }
+      ]
+    },
+    "emergency_vehicle_passage_challan_dispute": {
+      "issue_id": "emergency_vehicle_passage_challan_dispute",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Emergency Vehicle Passage Obstruction / False Red Light Challan",
+      "issue_definition": "Citizen received an automated camera challan for crossing stop line / red light while giving way to an emergency ambulance, or was wrongly penalized under Section 194E.",
+      "prototype_texts": [
+        "I crossed the red light slightly to let an ambulance pass and received an automated red light camera challan.",
+        "Got a 10000 rupees fine under Section 194E for not giving way to ambulance even though traffic was completely gridlocked and unable to move.",
+        "Traffic camera clicked my car crossing stop line when moving aside to make path for fire brigade emergency vehicle.",
+        "Challaned for signal jump at junction while clearing path for blaring hospital ambulance."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "194e",
+          "provision_relevance_rationale": "Applies regarding statutory duty to allow free passage to emergency vehicles and exemptions for yielding maneuvers."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "119",
+          "provision_relevance_rationale": "Applies to mandatory traffic signs and legal necessity defenses when yielding right of way to emergency services."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "208",
+          "provision_relevance_rationale": "Provides summary judicial procedure in Virtual Court to contest photographic challans where emergency defense exists."
+        }
+      ]
+    },
+    "modified_silencer_exhaust_decibel_challan": {
+      "issue_id": "modified_silencer_exhaust_decibel_challan",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Modified Exhaust / Decibel Fine Without Sound Meter",
+      "issue_definition": "Traffic officer fined vehicle owner under Section 190(2) for loud exhaust / silencer without measuring noise levels using a calibrated sound level (decibel) meter.",
+      "prototype_texts": [
+        "Traffic police seized my motorcycle for loud exhaust without using any decibel meter to test noise level.",
+        "Fined under Section 190(2) for modified silencer based purely on cop subjective opinion without scientific sound level test.",
+        "Police issued challan for aftermarket exhaust on bike without testing decibels against prescribed CMVR limit.",
+        "Officer fined me for noisy silencer but refused to test my stock OEM exhaust with an approved sound meter."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "190_2",
+          "provision_relevance_rationale": "Governs statutory penalties for violation of safety, pollution, and noise emission standards."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "Permits compounding of emission and noise offences by authorized officers upon verification."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "Defines statutory limits on police officer's power to impound documents and seize vehicles."
+        }
+      ]
+    },
+    "conflicting_speed_limit_signboard_camera": {
+      "issue_id": "conflicting_speed_limit_signboard_camera",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Speed Limit Violation at Obscured or Conflicting Signboard Zone",
+      "issue_definition": "Automated speed radar camera issued overspeeding challan in an area where speed limit signboards were missing, obscured by tree branches, or conflicting with highway authority limits.",
+      "prototype_texts": [
+        "Received speed challan for driving at 65 km/h on a highway where the NHAI signboard allowed 80 km/h.",
+        "Speed camera ticket issued where the speed limit board was completely hidden behind tree branches and impossible to see.",
+        "Traffic camera fined me for exceeding 50 kmph on an open flyover with no visible speed restriction signage posted.",
+        "Automated overspeeding fine where road work signboard showed higher limit than camera calibration."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "112",
+          "provision_relevance_rationale": "Governs statutory speed limits and requirements for publication and erection of speed signboards."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "116",
+          "provision_relevance_rationale": "Mandates proper erection and maintenance of standard traffic signs by road and police authorities."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "119",
+          "provision_relevance_rationale": "Governs legal duty to obey signs, requiring that such mandatory signs must be properly positioned and visible."
+        }
+      ]
+    },
+    "hsrp_number_plate_challan_dispute": {
+      "issue_id": "hsrp_number_plate_challan_dispute",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "High Security Registration Plate (HSRP) Challan Dispute",
+      "issue_definition": "Traffic officer fined vehicle owner for lacking HSRP plate despite the owner holding an active booking receipt with scheduled fitment date or vehicle being in exemption grace period.",
+      "prototype_texts": [
+        "Traffic police fined me 5000 rupees for non-HSRP plate even though I showed my confirmed online HSRP fitment appointment slip.",
+        "Challaned for old number plate while waiting for the booked HSRP number plate delivery from authorized dealer.",
+        "Received e-challan for number plate violation when State Government had extended the deadline for HSRP installation.",
+        "Officer refused to accept my official BookMyHSRP receipt and fined me for lacking high security plate."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "177",
+          "provision_relevance_rationale": "Applies as the general statutory penal section invoked for registration display non-compliance."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "Governs driver's duty to produce vehicle documents and proof of statutory booking compliance."
+        }
+      ]
+    },
+    "commercial_vehicle_route_diversion_permit_challan": {
+      "issue_id": "commercial_vehicle_route_diversion_permit_challan",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Commercial Vehicle Permit Route Deviation Due to Police Diversion",
+      "issue_definition": "Commercial taxi, bus, or truck driver booked under Section 192A for route deviation when official police barricades or road repair forced traffic into an alternate non-permitted road.",
+      "prototype_texts": [
+        "Commercial vehicle booked under Section 192A for off-route permit violation when police had diverted all traffic due to road repairs.",
+        "Taxi driver challaned for deviating from permit route because main highway was blocked by flood water and police directed traffic.",
+        "Permit violation fine issued to commercial pickup truck forced onto alternate road by official traffic diversion.",
+        "Transport department officer fined commercial carrier for unpermitted route during festival procession diversion."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "192a",
+          "provision_relevance_rationale": "Governs statutory penalty for using motor vehicle without permit or in contravention of permit route conditions."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "Enables compounding and dispute resolution where deviations arose from lawful police directions."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "207",
+          "provision_relevance_rationale": "Regulates power to detain commercial vehicles and conditions for immediate administrative release."
+        }
+      ]
+    },
+    "unilateral_laptop_damage_deduction_exit": {
+      "issue_id": "unilateral_laptop_damage_deduction_exit",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Unilateral Laptop / Equipment Damage Deductions at Exit",
+      "issue_definition": "Employer deducted heavy sums from an employee's full and final settlement for alleged cosmetic wear or hardware issues on company laptop without any show-cause notice or inquiry.",
+      "prototype_texts": [
+        "Company deducted 45,000 rupees from my final salary settlement claiming my returned work laptop had scratches without giving me any chance to explain.",
+        "Employer withheld my last month wage alleging monitor damage on office equipment that was never inspected in my presence.",
+        "HR deducted entire exit pay for company asset damage without issuing a show cause notice or inquiry.",
+        "Laptop damage charges deducted arbitrarily from final settlement without giving employee opportunity to contest."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "21",
+          "provision_relevance_rationale": "Explicitly prohibits deductions for damage or loss without giving the employee an opportunity to show cause."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Limits permissible deductions from wages strictly to authorized categories and statutory percentage ceilings."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "17",
+          "provision_relevance_rationale": "Mandates full and final settlement of wages within two working days of resignation or termination."
+        }
+      ]
+    },
+    "layoff_bench_wage_deduction": {
+      "issue_id": "layoff_bench_wage_deduction",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Layoff / Unpaid Bench Wage Denial During Employer Work Stoppage",
+      "issue_definition": "Employer placed employees on unpaid bench or denied daily wages when the employee reported to duty but employer failed to provide work or materials.",
+      "prototype_texts": [
+        "IT employer put me on unpaid bench for two months without salary because their client project ended even though I was available for work.",
+        "Factory management refused daily wages claiming machinery breakdown even though workers reported to work on time.",
+        "Staff forced into unpaid leave because employer could not arrange work assignments.",
+        "Company withheld salary for weeks spent on internal deployment pool while employee was ready and willing to work."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "10",
+          "provision_relevance_rationale": "Mandates that when an employee is willing to work, failure of employer to provide work entitles worker to full daily wages."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "17",
+          "provision_relevance_rationale": "Requires regular monthly payment of wages before expiry of the designated pay cycle."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "45",
+          "provision_relevance_rationale": "Provides procedure for claims before the Authority to recover withheld wages with statutory compensation."
+        }
+      ]
+    },
+    "split_shift_excessive_spreadover_hospitality": {
+      "issue_id": "split_shift_excessive_spreadover_hospitality",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Split Shift Excessive Spreadover / Overtime Wage Theft",
+      "issue_definition": "Hotel, restaurant, or retail worker forced into split shifts spanning 14-16 hours daily without rest intervals compliance, spreadover allowance, or overtime pay.",
+      "prototype_texts": [
+        "Restaurant makes waiters work 7 AM to 11 AM and 6 PM to 11 PM with a 16 hour spreadover without paying any overtime wages.",
+        "Hotel staff forced into split shifts spanning over 14 hours daily without overtime compensation at double rate.",
+        "Security guard forced to work 16 hour shift without overtime pay in violation of normal working day hours.",
+        "Retail outlet employer demands 14 hours total daily presence on split shift without paying statutory overtime."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "13",
+          "provision_relevance_rationale": "Defines hours of work constituting normal working day, mandatory rest intervals, and maximum daily spreadover."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "14",
+          "provision_relevance_rationale": "Mandates payment of wages for overtime work at not less than twice the ordinary rate of wages."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "51",
+          "provision_relevance_rationale": "Empowers Inspector-cum-Facilitators to inspect shift rosters and order rectification of working hour violations."
+        }
+      ]
+    },
+    "gender_wage_gap_unequal_pay": {
+      "issue_id": "gender_wage_gap_unequal_pay",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Gender Wage Disparity for Same or Similar Work",
+      "issue_definition": "Employer paid female employee lower basic salary or reduced remuneration compared to male employees performing the same or similar nature of work.",
+      "prototype_texts": [
+        "Discovered that female colleagues in our team are paid 35% less salary than male counterparts doing the exact same software role.",
+        "Employer pays women sales executives lower wages than male peers for identical duties and working hours.",
+        "Gender pay discrimination where female architect is paid less remuneration than male colleague hired at same time with same skills.",
+        "Company reduced wage rate for female staff members violating equal remuneration statutory provisions."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "3",
+          "provision_relevance_rationale": "Strictly prohibits discrimination on ground of sex in matters relating to wages for same work or work of similar nature."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "45",
+          "provision_relevance_rationale": "Provides statutory remedy before the Authority to recover wage differentials and arrears caused by discriminatory wages."
+        }
+      ]
+    },
+    "variable_pay_retrospective_target_shifting": {
+      "issue_id": "variable_pay_retrospective_target_shifting",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Retrospective Sales Target Shifting / Denied Variable Pay",
+      "issue_definition": "Employer unilaterally increased sales quotas or revised KPI metrics retrospectively after the completion of the quarter to deny earned incentives and performance bonus.",
+      "prototype_texts": [
+        "After I achieved 120% of my annual sales quota, company changed the KPI target retrospectively to deny my 3 lakh variable pay.",
+        "Employer moved the performance goalposts backwards after the quarter ended and refused to disburse committed incentive wages.",
+        "Unilateral retrospective hike in quarterly targets by management to forfeit earned sales commission.",
+        "Company altered incentive plan terms after work was performed to wipe out employee bonus."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "17",
+          "provision_relevance_rationale": "Requires timely disbursement of all earned wage components and performance remuneration as per contract terms."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Prohibits arbitrary non-statutory deductions and withholdings from earned remuneration."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "45",
+          "provision_relevance_rationale": "Enables employees to institute formal statutory claims before the Deputy Labour Commissioner for unpaid variable remuneration."
+        }
+      ]
+    },
+    "time_is_of_essence_event_contract": {
+      "issue_id": "time_is_of_essence_event_contract",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Time is of Essence - Event / Exhibition Stall Setup Failure",
+      "issue_definition": "Vendor or contractor failed to deliver wedding venue setup, exhibition trade stall, or event staging by the agreed deadline, making performance completely worthless.",
+      "prototype_texts": [
+        "Event contractor failed to assemble our international trade expo stall before the opening hour rendering our entire booking wasted.",
+        "Wedding decorator failed to deliver banquet hall setup by scheduled reception time causing total failure of event contract.",
+        "Exhibition booth fabrication vendor delivered incomplete stall 12 hours after trade fair opened causing complete commercial loss.",
+        "Contractor breached agreement where time was of the essence by missing fixed event deadline completely."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "55",
+          "provision_relevance_rationale": "Directly provides that when time is of essence, failure to perform at fixed time makes the contract voidable at the option of the promisee."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Entitles the injured party to compensation for direct financial loss and natural damage resulting from contractual breach."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "75",
+          "provision_relevance_rationale": "Allows party rightfully rescinding contract to recover compensation for damages sustained through non-fulfillment."
+        }
+      ]
+    },
+    "valet_parking_damage_bailment_liability": {
+      "issue_id": "valet_parking_damage_bailment_liability",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Valet Parking Vehicle Crash / 'Owner's Risk' Disclaimer Dispute",
+      "issue_definition": "Hotel or mall valet crashed or damaged a customer's vehicle and refused liability by pointing to a printed disclaimer on the valet token.",
+      "prototype_texts": [
+        "Hotel valet driver crashed my luxury car into a pillar and the hotel management refuses to pay claiming park at owner risk.",
+        "Mall valet staff took my vehicle keys and returned the car with major dent, pointing to disclaimer printed on the back of parking token.",
+        "Restaurant valet crashed customer car during parking and management denies responsibility under bailment law.",
+        "Valet parking service damaged vehicle transmission and refuses compensation relying on owner risk ticket."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "151",
+          "provision_relevance_rationale": "Binds bailee to exercise ordinary prudence in caring for bailed vehicle, which cannot be contracted out via unilateral disclaimer."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Provides damages for loss or injury caused to goods while in the bailee's exclusive possession and control."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "23",
+          "provision_relevance_rationale": "Precludes unconscionable disclaimer clauses that defeat statutory provisions of bailment as contrary to public policy."
+        }
+      ]
+    },
+    "unilateral_subcontracting_assignment_breach": {
+      "issue_id": "unilateral_subcontracting_assignment_breach",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Unilateral Subcontracting Without Client Consent",
+      "issue_definition": "Service provider or architect hired specifically for their personal skill secretly outsourced and subcontracted the entire project to an unauthorized third party, ruining execution.",
+      "prototype_texts": [
+        "Hired an expert architect for home construction based on his portfolio but he secretly subcontracted everything to an inexperienced third party.",
+        "Software agency outsourced our confidential project to unknown freelancers without our knowledge or consent.",
+        "Contractor assigned his personal contractual duties to a subcontractor without client approval resulting in ruined work.",
+        "Company secretly subcontracted bespoke design contract violating agreement requiring personal performance."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "40",
+          "provision_relevance_rationale": "Mandates that if intention was for promisor to perform personally due to skill, it must be performed by promisor himself and not delegated."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "39",
+          "provision_relevance_rationale": "Gives promisee right to terminate when promisor refuses or disables himself from performing promise personally."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Enables recovery of compensation for defective execution and corrective reworking expenses."
+        }
+      ]
+    },
+    "interior_contractor_midway_abandonment": {
+      "issue_id": "interior_contractor_midway_abandonment",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Midway Abandonment by Renovation Contractor After Advance",
+      "issue_definition": "Interior decorator or civil contractor demolished walls/flooring, collected 70% advance, and then abandoned the site midway, refusing to complete work or return money.",
+      "prototype_texts": [
+        "Interior contractor demolished our flat, took 5 lakh advance, and has stopped showing up or picking calls for 3 weeks.",
+        "Civil renovation contractor abandoned home remodeling midway after taking 80% money and left house uninhabitable.",
+        "Home renovation contractor vanished midway through the project refusing to complete pending tasks or refund unspent advance.",
+        "Contractor took advance milestone payment, did 20% defective work, and abandoned the construction site completely."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "39",
+          "provision_relevance_rationale": "Applies because contractor's midway desertion is a total refusal to perform promise, entitling client to terminate agreement."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Entitles client to recover difference between contract price and cost of engaging new contractor to finish work."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "75",
+          "provision_relevance_rationale": "Entitles party rescinding for contractor desertion to statutory compensation for all resultant injuries."
+        }
+      ]
+    },
+    "time_barred_debt_written_promise_breach": {
+      "issue_id": "time_barred_debt_written_promise_breach",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Written Promise to Pay Time-Barred Debt Default",
+      "issue_definition": "Debtor signed a formal written acknowledgment and promise to pay a 4-year-old loan in installments, but subsequently defaulted claiming the debt was legally time-barred.",
+      "prototype_texts": [
+        "Borrower signed a written promissory letter agreeing to pay back an old loan from 5 years ago but now claims debt is time-barred.",
+        "Debtor gave a written promise to clear a 4-year-old commercial debt in installments and defaulted on the first payment.",
+        "Lender holding written signed undertaking to repay expired debt after limitation period where borrower refuses payment.",
+        "Promissory note executed for time-barred debt breached by debtor arguing limitation period has expired."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "25",
+          "provision_relevance_rationale": "Under Section 25(3), a promise made in writing and signed to pay a debt barred by limitation is a valid enforceable contract."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "37",
+          "provision_relevance_rationale": "Obligates parties to perform promises made under the newly created written agreement."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Provides for recovery of agreed debt amount and interest damages caused by breach of written promise."
+        }
+      ]
     }
   }
 }

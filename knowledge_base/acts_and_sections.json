@@ -277,6 +277,51 @@
             "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
             "verified_on": "2026-10-03"
           }
+        },
+        "65": {
+          "section_number": "65",
+          "official_section_title": "Tampering with computer source documents",
+          "official_text": "Whoever knowingly or intentionally conceals, destroys or alters or intentionally or knowingly causes another to conceal, destroy, or alter any computer source code used for a computer, computer programme, computer system or computer network, when the computer source code is required to be kept or maintained by law for the time being in force, shall be punishable with imprisonment up to three years, or with fine which may extend up to two lakh rupees, or with both.",
+          "simplified_explanation": "Makes it an offense to intentionally conceal, destroy, or alter computer source code or digital program instructions that are required to be kept or maintained by law.",
+          "applicability_notes": "Applies in business email compromise, vendor invoice redirection, and corporate computer tampering where source files, mail routing configurations, or financial records are maliciously modified.",
+          "keywords": [
+            "tampering",
+            "source code",
+            "source document",
+            "alteration",
+            "bec fraud",
+            "email compromise",
+            "invoice tampering"
+          ],
+          "citation": "Information Technology Act, 2000 (Act No. 21 of 2000), s. 65",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "71": {
+          "section_number": "71",
+          "official_section_title": "Penalty for misrepresentation",
+          "official_text": "Whoever makes any misrepresentation to, or suppresses any material fact from, the Controller or the Certifying Authority for the purpose of obtaining any licence or Electronic Signature Certificate, as the case may be, shall be punished with imprisonment for a term which may extend to two years, or with fine which may extend to one lakh rupees, or with both.",
+          "simplified_explanation": "Penalizes anyone who misrepresents facts or conceals material information from a Certifying Authority to fraudulently obtain a digital or electronic signature certificate.",
+          "applicability_notes": "Applies when fraudsters forge identity documents or make false representations to acquire digital signature certificates (DSC) in someone else's name for corporate or tax filings.",
+          "keywords": [
+            "misrepresentation",
+            "certifying authority",
+            "digital signature certificate",
+            "dsc fraud",
+            "electronic signature",
+            "suppression of facts"
+          ],
+          "citation": "Information Technology Act, 2000 (Act No. 21 of 2000), s. 71",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
         }
       }
     },
@@ -580,6 +625,51 @@
             "deceptive marketing"
           ],
           "citation": "Section 89, Consumer Protection Act, 2019",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "2_46": {
+          "section_number": "2(46)",
+          "official_section_title": "Definition of 'unfair contract'",
+          "official_text": "'unfair contract' means a contract between a manufacturer or trader or service provider on one hand, and a consumer on the other, having such terms which cause significant change in the rights of such consumer, including requiring excessive security deposits, imposing disproportionate penalties, refusing early repayment, unilateral termination without reasonable cause, or permitting one-sided assignment without consumer consent.",
+          "simplified_explanation": "Defines one-sided contracts where a company imposes unreasonable terms, non-refundable clauses, excessive penalties, or unilateral cancellation rights that significantly prejudice the consumer.",
+          "applicability_notes": "Empowers consumers and Consumer Commissions to declare null and void unconscionable clauses in gym memberships, coaching agreements, builder-buyer agreements, and edtech contracts.",
+          "keywords": [
+            "unfair contract",
+            "one-sided agreement",
+            "non-refundable clause",
+            "disproportionate penalty",
+            "consumer rights",
+            "adhesion contract",
+            "lock-in"
+          ],
+          "citation": "Consumer Protection Act, 2019 (Act No. 35 of 2019), s. 2(46)",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "39": {
+          "section_number": "39",
+          "official_section_title": "Findings of District Commission",
+          "official_text": "Where the District Commission is satisfied that the goods complained against suffer from any defect or that any of the allegations contained in the complaint about the services or unfair trade practice are proved, it shall issue an order to the opposite party directing him to remove the defect, replace the goods, return the price with interest, pay compensation for injury or loss, discontinue unfair trade practice, or recall hazardous goods.",
+          "simplified_explanation": "Grants comprehensive remedial powers to the District Consumer Commission to order product replacement, full refunds with interest, punitive compensation, and injunctions against unfair trade practices.",
+          "applicability_notes": "Core statutory provision enabling consumer courts to grant substantive relief, monetary awards, and injunctive remedies against defective goods or deficient services.",
+          "keywords": [
+            "findings of district commission",
+            "consumer relief",
+            "replacement",
+            "refund with interest",
+            "punitive damages",
+            "order of commission"
+          ],
+          "citation": "Consumer Protection Act, 2019 (Act No. 35 of 2019), s. 39",
           "provision_status": "in_force",
           "verification": {
             "status": "manually_verified",
@@ -1056,6 +1146,72 @@
             "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
             "verified_on": "2026-10-03"
           }
+        },
+        "119": {
+          "section_number": "119",
+          "official_section_title": "Duty to obey traffic signs",
+          "official_text": "Every driver of a motor vehicle shall drive the vehicle in conformity with any indication given by mandatory traffic sign and in conformity with the driving regulations made by the Central Government, and shall comply with all directions given to him by any police officer for the time being engaged in the regulation of traffic in any public place.",
+          "simplified_explanation": "Mandates that every driver must follow mandatory traffic signs, central driving regulations, and official traffic police instructions on public roads.",
+          "applicability_notes": "Applies in signal jumping, lane discipline, one-way violations, and contested automated camera challans where signage visibility or compliance is disputed.",
+          "keywords": [
+            "traffic signs",
+            "mandatory sign",
+            "duty to obey",
+            "driving regulations",
+            "signal violation",
+            "red light"
+          ],
+          "citation": "Motor Vehicles Act, 1988 (Act No. 59 of 1988), s. 119",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "194c": {
+          "section_number": "194C",
+          "official_section_title": "Penalty for violation of safety measures for motor cycle drivers and pillion riders",
+          "official_text": "Whoever drives a motor cycle or causes or allows a motor cycle to be driven in contravention of the provisions of section 128 or the rules or regulations made thereunder shall be punishable with a fine of one thousand rupees and he shall be disqualified for holding a licence for a period of three months.",
+          "simplified_explanation": "Imposes a penalty of 1,000 rupees and a mandatory three-month driving licence disqualification for carrying more than one pillion rider (triple riding) or violating two-wheeler passenger safety rules.",
+          "applicability_notes": "Applies to two-wheeler riders booked for triple riding under Section 128/194C, and in disputes regarding carriage of infants or toddlers under Central Motor Vehicles Rules.",
+          "keywords": [
+            "triple riding",
+            "motorcycle pillion",
+            "safety measures",
+            "194C",
+            "licence disqualification",
+            "passenger limit"
+          ],
+          "citation": "Motor Vehicles Act, 1988 (Act No. 59 of 1988), s. 194C",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "194e": {
+          "section_number": "194E",
+          "official_section_title": "Failure to allow free passage to emergency vehicles",
+          "official_text": "Whoever while driving a motor vehicle fails to draw to the side of the road on the approach of a fire service vehicle or of an ambulance or other emergency vehicle as may be specified by the State Government, shall be punishable with imprisonment for a term which may extend to six months, or with a fine of ten thousand rupees or with both.",
+          "simplified_explanation": "Prescribes imprisonment up to 6 months and a fine up to 10,000 rupees for drivers who fail to yield right of way and pull aside for ambulances or fire service vehicles.",
+          "applicability_notes": "Introduced by 2019 Amendment to protect emergency first responders; invoked in camera challans where motorists moved forward or crossed lines to allow emergency vehicles to pass.",
+          "keywords": [
+            "emergency vehicle",
+            "ambulance passage",
+            "fire brigade",
+            "194E",
+            "right of way",
+            "10000 fine"
+          ],
+          "citation": "Motor Vehicles Act, 1988 (Act No. 59 of 1988), s. 194E",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
         }
       }
     },
@@ -1289,6 +1445,71 @@
             "labour enforcement"
           ],
           "citation": "Section 51, Code on Wages, 2019",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "10": {
+          "section_number": "10",
+          "official_section_title": "Wages of employee who works for less than normal working day",
+          "official_text": "If an employee whose minimum rate of wages has been fixed by the day, works on any day on which he was employed for a number of hours less than the number which constitutes a normal working day, he shall, subject to such conditions as may be prescribed, be entitled to receive wages in respect of work done on that day, as if he had worked for a full normal working day: Provided that he shall not be entitled to receive wages for a full normal working day— (i) in any case where his failure to work is caused by his unwillingness to work and not by the omission of the employer to provide him with work; and (ii) in such other cases and circumstances as may be prescribed.",
+          "simplified_explanation": "Mandates that when a worker reports for duty but is given work for less than a normal working day due to employer's failure or lack of work, they must still be paid full normal daily wages.",
+          "applicability_notes": "Protects daily wage and monthly employees from unpaid bench periods, factory machine breakdowns, or employer-induced downtime where the worker was present and willing to work.",
+          "keywords": [
+            "less than normal working day",
+            "unpaid bench",
+            "layoff wages",
+            "employer failure to provide work",
+            "minimum wage entitlement"
+          ],
+          "citation": "Code on Wages, 2019 (Act No. 29 of 2019), s. 10",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "15": {
+          "section_number": "15",
+          "official_section_title": "Mode of payment of wages",
+          "official_text": "All wages shall be paid in current coin or currency notes or by cheque or by crediting the wages in the bank account of the employee or by the electronic mode: Provided that the appropriate Government may, by notification, specify the industrial or other establishment, the employer of which shall pay to every person employed in such industrial or other establishment, the wages only by cheque or by crediting the wages in his bank account.",
+          "simplified_explanation": "Requires all wages to be paid strictly in legal tender currency, by cheque, through direct bank account transfer, or via recognized electronic banking modes.",
+          "applicability_notes": "Prevents off-the-books cash skimming or barter payments, and mandates verifiable banking records for wage disbursements across commercial establishments.",
+          "keywords": [
+            "mode of payment",
+            "bank transfer",
+            "electronic mode",
+            "cheque",
+            "wage crediting",
+            "currency notes"
+          ],
+          "citation": "Code on Wages, 2019 (Act No. 29 of 2019), s. 15",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "21": {
+          "section_number": "21",
+          "official_section_title": "Deductions for damage or loss",
+          "official_text": "(1) A deduction under clause (c) or clause (n) of sub-section (2) of section 18 for damage to or loss of goods expressly entrusted to the employed person for custody, or for loss of money for which he is required to account, shall not exceed the amount of the damage or loss caused to the employer by the neglect or default of the employee. (2) A deduction shall not be made under sub-section (1) until the employee has been given an opportunity of showing cause against the deduction, or otherwise than in accordance with such procedure as may be prescribed.",
+          "simplified_explanation": "Restricts wage deductions for damaged company goods or lost cash only to the actual loss caused by employee neglect, and strictly prohibits any deduction without first giving the employee a formal show-cause opportunity.",
+          "applicability_notes": "Critical in employment exit settlements where employers arbitrarily deduct money for office laptop cosmetic wear, lost inventory, or damaged equipment without notice.",
+          "keywords": [
+            "damage or loss deduction",
+            "show cause opportunity",
+            "entrusted goods",
+            "neglect or default",
+            "exit pay deduction",
+            "full and final settlement"
+          ],
+          "citation": "Code on Wages, 2019 (Act No. 29 of 2019), s. 21",
           "provision_status": "in_force",
           "verification": {
             "status": "manually_verified",
@@ -1651,6 +1872,93 @@
             "reimbursement of loss"
           ],
           "citation": "Section 124, Indian Contract Act, 1872",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "25": {
+          "section_number": "25",
+          "official_section_title": "Agreement without consideration, void, unless it is in writing and registered, or is a promise to compensate for something done, or is a promise to pay a debt barred by limitation law",
+          "official_text": "An agreement made without consideration is void, unless— (1) it is expressed in writing and registered under the law for the time being in force for the registration of documents, and is made on account of natural love and affection between parties standing in a near relation to each other; or (2) it is a promise to compensate, wholly or in part, a person who has already voluntarily done something for the promisor; or (3) it is a promise, made in writing and signed by the person to be charged therewith, or by his agent generally or specially authorized in that behalf, to pay wholly or in part a debt of which the creditor might have enforced payment but for the law for the limitation of suits.",
+          "simplified_explanation": "While agreements without consideration are generally void, a written and signed promise to pay a time-barred debt (under Section 25(3)) is fully valid and legally enforceable in a court of law.",
+          "applicability_notes": "Invoked when a debtor provides a written undertaking or promissory note acknowledging and promising to repay an expired debt after the 3-year limitation period.",
+          "keywords": [
+            "agreement without consideration",
+            "time-barred debt",
+            "section 25(3)",
+            "promise in writing",
+            "limitation law",
+            "written undertaking"
+          ],
+          "citation": "Indian Contract Act, 1872 (Act No. 9 of 1872), s. 25",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "40": {
+          "section_number": "40",
+          "official_section_title": "Person by whom promise is to be performed",
+          "official_text": "If it appears from the nature of the case that it was the intention of the parties to any contract that any promise contained in it should be performed by the promisor himself, such promise must be performed by the promisor. In other cases, the promisor or his representatives may employ a competent person to perform it.",
+          "simplified_explanation": "Specifies that where a contract involves personal skill, expertise, or trust, the obligation must be performed personally by the promisor and cannot be secretly subcontracted or delegated.",
+          "applicability_notes": "Applies when professional service providers (architects, software developers, bespoke designers) secretly outsource contractual work to unqualified third parties without client consent.",
+          "keywords": [
+            "personal performance",
+            "delegation",
+            "subcontracting",
+            "intention of parties",
+            "promisor himself",
+            "competent person"
+          ],
+          "citation": "Indian Contract Act, 1872 (Act No. 9 of 1872), s. 40",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "55": {
+          "section_number": "55",
+          "official_section_title": "Effect of failure to perform at fixed time, in contract in which time is essential",
+          "official_text": "When a party to a contract promises to do a certain thing at or before a specified time, or certain things at or before specified times, and fails to do any such thing at or before the specified time, the contract, or so much of it as has not been performed, becomes voidable at the option of the promisee, if the intention of the parties was that time should be of the essence of the contract.",
+          "simplified_explanation": "Provides that when time is of the essence of an agreement, failure by a party to perform by the agreed deadline makes the contract voidable at the option of the other party, who can cancel and claim damages.",
+          "applicability_notes": "Governs time-critical contracts such as exhibition stalls, wedding arrangements, seasonal event fabrications, and time-bound supply shipments.",
+          "keywords": [
+            "time of essence",
+            "fixed time failure",
+            "voidable contract",
+            "contract rescission",
+            "event deadline breach"
+          ],
+          "citation": "Indian Contract Act, 1872 (Act No. 9 of 1872), s. 55",
+          "provision_status": "in_force",
+          "verification": {
+            "status": "manually_verified",
+            "verified_by": "Legal Knowledge Base Admin (Verified from India Code)",
+            "verified_on": "2026-10-03"
+          }
+        },
+        "151": {
+          "section_number": "151",
+          "official_section_title": "Care to be taken by bailee",
+          "official_text": "In all cases of bailment, the bailee is bound to take as much care of the goods bailed to him as a man of ordinary prudence would, under similar circumstances, take of his own goods of the same bulk, quantity and value as the goods bailed.",
+          "simplified_explanation": "Establishes a mandatory duty of care for anyone entrusted with custody of goods (bailee) to treat the property with the same prudence as their own, regardless of unilateral disclaimer slips.",
+          "applicability_notes": "Standard basis for liability in valet parking car crashes, dry-cleaner damage, cloakroom losses, and repair garage custody under Supreme Court of India jurisprudence.",
+          "keywords": [
+            "bailment",
+            "bailee duty of care",
+            "ordinary prudence",
+            "valet parking liability",
+            "custody of goods",
+            "disclaimer invalidity"
+          ],
+          "citation": "Indian Contract Act, 1872 (Act No. 9 of 1872), s. 151",
           "provision_status": "in_force",
           "verification": {
             "status": "manually_verified",
