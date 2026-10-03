@@ -58,8 +58,9 @@ class IssueDetection:
 class IssueDetector:
     """Domain-scoped prototype similarity matcher over the curated KB."""
 
-    def __init__(self, kb: KnowledgeBase):
+    def __init__(self, kb: KnowledgeBase, min_similarity_threshold: float = 0.22):
         self._kb = kb
+        self._min_similarity_threshold = min_similarity_threshold
         # Flat corpus: one row per prototype text, remembering its issue.
         self._corpus_issue_ids: List[str] = []
         self._corpus_texts: List[str] = []
@@ -81,10 +82,12 @@ class IssueDetector:
                 return
             self._cosine_similarity = cosine_similarity
             # LOCKED (6.4): fit globally over ALL issue prototypes, in memory,
-            # at startup. No .pkl artifact. Vectorizer parameters are
-            # experiment-level configuration, kept at library defaults until
-            # evaluation motivates changes.
-            self._vectorizer = TfidfVectorizer()
+            # at startup. No .pkl artifact.
+            self._vectorizer = TfidfVectorizer(
+                ngram_range=(1, 2),
+                sublinear_tf=True,
+                stop_words="english",
+            )
             self._prototype_matrix = self._vectorizer.fit_transform(self._corpus_texts)
 
     @property
@@ -95,8 +98,9 @@ class IssueDetector:
         """Detect the issue within the predicted domain, or None.
 
         None is a legitimate state (no prototypes loaded, or the predicted
-        domain has no issues in the KB) — the caller must route it to the
-        explicit safe state, never invent an issue.
+        domain has no issues in the KB, or similarity score falls below the
+        minimum threshold indicating insufficient semantic overlap) — the caller
+        must route it to the explicit safe state, never invent an issue.
         """
         if self._vectorizer is None:
             return None
@@ -116,9 +120,16 @@ class IssueDetector:
             scenario_vector, self._prototype_matrix[candidate_rows]
         )[0]
         best_position = int(similarities.argmax())
+        best_score = float(similarities[best_position])
+
+        # Gating: if the best cosine similarity score falls below the threshold,
+        # there is no reliable match (spurious single-word noise). Returning None
+        # triggers honest clarification rather than a hallucinated issue match.
+        if best_score < self._min_similarity_threshold:
+            return None
+
         best_row = candidate_rows[best_position]
         best_issue_id = self._corpus_issue_ids[best_row]
-        best_score = float(similarities[best_position])
 
         issue = self._kb.issues[best_issue_id]
         display_name = issue.get("display_name") or best_issue_id

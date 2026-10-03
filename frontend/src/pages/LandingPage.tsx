@@ -1,4 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Scale,
@@ -8,11 +9,27 @@ import {
   ArrowRight,
   Sparkles,
   Search,
+  Car,
+  RotateCcw,
 } from "lucide-react";
 import { ScenarioInput } from "@/features/analyze/ScenarioInput";
+import { useAnalyze } from "@/hooks/useAnalyze";
+import { AnalysisStages } from "@/features/analyze/AnalysisStages";
+import { ResultView } from "@/features/analyze/ResultView";
+import { AnalyzeErrorCard } from "@/features/analyze/AnalyzeError";
 
 export function LandingPage() {
-  const navigate = useNavigate();
+  const analyze = useAnalyze();
+  const { data, error, isPending, isSuccess, isError, reset } = analyze;
+
+  useEffect(() => {
+    if (isSuccess) {
+      const el = document.getElementById("analyze-section");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [isSuccess]);
   return (
     <div className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between overflow-x-hidden px-4 sm:px-6 py-10 sm:py-16 select-none">
       {/* ---------- Canvas Sticky Notes / Tags (Like Reference Image 2) ---------- */}
@@ -150,10 +167,10 @@ export function LandingPage() {
       </div>
 
       {/* ---------- Capability Tiles ---------- */}
-      <div className="max-w-4xl mx-auto w-full mt-14 sm:mt-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+      <div className="max-w-5xl mx-auto w-full mt-14 sm:mt-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
           {/* Tile 1: Yellow (Cyber Fraud) */}
-          <div className="flex items-center justify-between bg-[#f59e0b] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+          <div className="flex items-center justify-between bg-[#f59e0b] text-black px-4 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all font-bold text-sm select-none">
             <span>Cyber Fraud</span>
             <span className="grid grid-cols-2 gap-0.5 p-1 bg-black/10 rounded">
               <span className="w-1.5 h-1.5 bg-black rounded-[1px]" />
@@ -164,23 +181,31 @@ export function LandingPage() {
           </div>
 
           {/* Tile 2: Green (Consumer Rights) */}
-          <div className="flex items-center justify-between bg-[#10b981] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+          <div className="flex items-center justify-between bg-[#10b981] text-black px-4 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all font-bold text-sm select-none">
             <span>Consumer Rights</span>
             <span className="p-1 bg-black/10 rounded">
               <ShoppingBag className="w-4 h-4 text-black stroke-[2.5]" />
             </span>
           </div>
 
-          {/* Tile 3: Magenta (Labor & Wages) */}
-          <div className="flex items-center justify-between bg-[#e11d48] text-white px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+          {/* Tile 3: Purple (Traffic Enforcement) */}
+          <div className="flex items-center justify-between bg-[#8b5cf6] text-white px-4 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all font-bold text-sm select-none">
+            <span>Traffic Enforcement</span>
+            <span className="p-1 bg-white/20 rounded">
+              <Car className="w-4 h-4 text-white stroke-[2.5]" />
+            </span>
+          </div>
+
+          {/* Tile 4: Magenta (Labor & Wages) */}
+          <div className="flex items-center justify-between bg-[#e11d48] text-white px-4 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all font-bold text-sm select-none">
             <span>Labor &amp; Wages</span>
             <span className="p-1 bg-white/20 rounded">
               <Briefcase className="w-4 h-4 text-white stroke-[2.5]" />
             </span>
           </div>
 
-          {/* Tile 4: Cyan (Contract Law) */}
-          <div className="flex items-center justify-between bg-[#00c5ff] text-black px-4 py-3 rounded-lg shadow-sm font-bold text-sm select-none">
+          {/* Tile 5: Cyan (Contract Law) */}
+          <div className="flex items-center justify-between bg-[#00c5ff] text-black px-4 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all font-bold text-sm select-none col-span-2 sm:col-span-1">
             <span>Contract Law</span>
             <span className="p-1 bg-black/10 rounded">
               <FileText className="w-4 h-4 text-black stroke-[2.5]" />
@@ -212,13 +237,54 @@ export function LandingPage() {
           </p>
         </div>
 
-        {/* Embedded Scenario Input */}
-        <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
-          <ScenarioInput
-            onSubmit={(scenario) => navigate("/analyze", { state: { scenario } })}
-            loading={false}
-          />
-        </div>
+        {/* Embedded Scenario Input & Results */}
+        {!isPending && !isSuccess && !isError && (
+          <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
+            <ScenarioInput
+              onSubmit={(scenario) => analyze.mutate(scenario)}
+              loading={isPending}
+            />
+          </div>
+        )}
+
+        {isPending && (
+          <div className="py-8">
+            <AnalysisStages />
+          </div>
+        )}
+
+        {isError && error && (
+          <div className="py-6">
+            <AnalyzeErrorCard error={error} onRetry={reset} />
+          </div>
+        )}
+
+        {isSuccess && data && (
+          <div className="space-y-6">
+            <div className="flex items-center justify-between gap-4 border-b-2 border-border pb-4">
+              <div>
+                <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                  LEGAL INTELLIGENCE OUTPUT
+                </span>
+                <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground">
+                  ANALYSIS RESULTS
+                </h3>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                  <span>NEW ANALYSIS</span>
+                </button>
+              </div>
+            </div>
+
+            <ResultView data={data} />
+          </div>
+        )}
       </section>
 
       {/* ---------- Dedicated Section 03: HOW IT WORKS ---------- */}
@@ -281,7 +347,7 @@ export function LandingPage() {
             </div>
             <h3 className="font-mono text-base font-bold text-foreground">Matches verified statutes</h3>
             <p className="mt-1.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Displays relevant sections from Bharatiya Nyaya Sanhita, IPC, IT Act, and Consumer Act.
+              Displays relevant sections from Bharatiya Nyaya Sanhita, Motor Vehicles Act, IT Act, and Consumer Act.
             </p>
           </div>
 

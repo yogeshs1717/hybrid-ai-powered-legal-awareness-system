@@ -37,7 +37,7 @@ const PIPELINE_STEPS = [
     handwritten: "verified laws only",
     icon: ScrollText,
     title: "Matches Verified Statutes",
-    body: "We map your situation to checked provisions from Bharatiya Nyaya Sanhita 2024, IPC, IT Act, and Consumer Protection Act.",
+    body: "We map your situation to checked provisions from Bharatiya Nyaya Sanhita 2024, Motor Vehicles Act 1988, IT Act, and Consumer Protection Act.",
   },
   {
     step: "04",
@@ -91,7 +91,7 @@ export function HowItWorksPage() {
       <div className="relative w-full">
         <div className="hidden lg:block absolute -top-6 left-4 z-10 -rotate-6">
           <div className="bg-[#a7f3d0] dark:bg-[#065f46] text-emerald-950 dark:text-emerald-100 font-mono text-xs px-3.5 py-1.5 rounded shadow-sm border border-emerald-300 dark:border-emerald-700">
-            BNS 2024 · IPC · IT Act
+            BNS 2024 · MV Act · IT Act
           </div>
         </div>
         <div className="hidden lg:block absolute -top-6 right-8 z-10 rotate-6">

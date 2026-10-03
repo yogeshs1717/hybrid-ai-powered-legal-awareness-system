@@ -10,11 +10,13 @@ const MAX = 2000;
 export function ScenarioInput({
   onSubmit,
   loading,
+  initialValue = "",
 }: {
   onSubmit: (scenario: string) => void;
   loading: boolean;
+  initialValue?: string;
 }) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(initialValue);
   const trimmed = value.trim();
   const len = trimmed.length;
   const tooShort = len > 0 && len < MIN;

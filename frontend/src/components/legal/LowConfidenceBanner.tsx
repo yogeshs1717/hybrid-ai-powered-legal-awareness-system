@@ -31,6 +31,9 @@ export function LowConfidenceBanner({
           {clarificationQuestion ??
             "Adding a little more detail about what happened can help LegalLens understand your situation more clearly."}
         </p>
+        <p className="mt-2 text-xs font-mono font-bold text-amber-900 dark:text-amber-300">
+          ↓ Preliminary legal provisions and guidance are available below.
+        </p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { RotateCcw } from "lucide-react";
 import { useAnalyze } from "@/hooks/useAnalyze";
@@ -10,31 +10,46 @@ import { AnalyzeErrorCard } from "@/features/analyze/AnalyzeError";
 
 export function AnalyzePage() {
   const location = useLocation();
-  const triggeredRef = useRef(false);
+  const navigate = useNavigate();
+  const initialTriggered = useRef(false);
   const analyze = useAnalyze();
   const { data, error, isPending, isSuccess, isError, reset } = analyze;
 
   const initialScenario = (location.state as { scenario?: string })?.scenario;
 
   useEffect(() => {
-    if (initialScenario && !triggeredRef.current && !isPending && !isSuccess) {
-      triggeredRef.current = true;
+    if (initialScenario && !initialTriggered.current && !isPending && !isSuccess && !data) {
+      initialTriggered.current = true;
       analyze.mutate(initialScenario);
     }
-  }, [initialScenario, isPending, isSuccess, analyze]);
+  }, [initialScenario, isPending, isSuccess, data, analyze]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [isSuccess]);
+
+  const handleReset = () => {
+    reset();
+    initialTriggered.current = false;
+    if (location.state) {
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  };
 
   const showInput = !isPending && !isSuccess;
 
   return (
     <div className="container max-w-4xl py-10 sm:py-16 select-none">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {showInput && !isError && (
           <motion.section
             key="input"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.35 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
           >
             {/* Header with Canvas Selection Box */}
             <header className="mx-auto mb-10 max-w-2xl text-center flex flex-col items-center">
@@ -60,7 +75,11 @@ export function AnalyzePage() {
             </header>
 
             <div className="mx-auto max-w-2xl">
-              <ScenarioInput onSubmit={(s) => analyze.mutate(s)} loading={isPending} />
+              <ScenarioInput
+                onSubmit={(s) => analyze.mutate(s)}
+                loading={isPending}
+                initialValue={initialScenario || ""}
+              />
             </div>
           </motion.section>
         )}
@@ -87,7 +106,7 @@ export function AnalyzePage() {
             transition={{ duration: 0.3 }}
             className="py-10"
           >
-            <AnalyzeErrorCard error={error} onRetry={reset} />
+            <AnalyzeErrorCard error={error} onRetry={handleReset} />
           </motion.section>
         )}
 
@@ -109,7 +128,7 @@ export function AnalyzePage() {
               </div>
               <button
                 type="button"
-                onClick={reset}
+                onClick={handleReset}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors"
               >
                 <RotateCcw className="h-3.5 w-3.5" />

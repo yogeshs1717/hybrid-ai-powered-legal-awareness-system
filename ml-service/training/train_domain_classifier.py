@@ -122,9 +122,19 @@ def build_model(seed: int, max_features: int | None, ngram_max: int):
                     preprocessor=preprocess_text,  # THE shared function
                     max_features=max_features,
                     ngram_range=(1, ngram_max),
+                    sublinear_tf=True,
+                    stop_words="english",
                 ),
             ),
-            ("logreg", LogisticRegression(max_iter=1000, random_state=seed)),
+            (
+                "logreg",
+                LogisticRegression(
+                    class_weight="balanced",
+                    max_iter=1000,
+                    C=2.5,
+                    random_state=seed,
+                ),
+            ),
         ]
     )
 
@@ -226,7 +236,7 @@ def main() -> None:
     # Experiment-level knobs (CLAUDE.md Section 5) — defaults are library
     # defaults, to be chosen via baseline comparison on Dataset V1:
     parser.add_argument("--max-features", type=int, default=None)
-    parser.add_argument("--ngram-max", type=int, default=1)
+    parser.add_argument("--ngram-max", type=int, default=2)
     parser.add_argument("--no-save", action="store_true",
                         help="Evaluate only; do not write model artifacts.")
     args = parser.parse_args()

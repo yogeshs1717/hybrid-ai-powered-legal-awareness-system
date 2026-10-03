@@ -20,15 +20,15 @@ function useVariants() {
   const container: Variants = {
     hidden: {},
     show: {
-      transition: { staggerChildren: reduce ? 0 : 0.12, delayChildren: 0.05 },
+      transition: { staggerChildren: reduce ? 0 : 0.08, delayChildren: 0.02 },
     },
   };
   const item: Variants = {
-    hidden: reduce ? { opacity: 0 } : { opacity: 0, y: 18 },
+    hidden: reduce ? { opacity: 1, y: 0 } : { opacity: 0, y: 14 },
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
     },
   };
   return { container, item };
@@ -58,19 +58,15 @@ export function ResultView({ data }: { data: AnalyzeResponse }) {
         </motion.div>
       )}
 
-      <div className={hasIssue ? "grid gap-4 sm:gap-5 md:grid-cols-2" : "grid gap-4 sm:gap-5"}>
-        <motion.div variants={item}>
-          <DomainResultCard domain={data.analysis.domain} />
-        </motion.div>
+      <motion.div variants={item} className={hasIssue ? "grid gap-4 sm:gap-5 md:grid-cols-2" : "grid gap-4 sm:gap-5"}>
+        <DomainResultCard domain={data.analysis.domain} />
         {hasIssue && (
-          <motion.div variants={item}>
-            <IssueResultCard
-              issue={issue}
-              signals={data.analysis.scenario_signals}
-            />
-          </motion.div>
+          <IssueResultCard
+            issue={issue}
+            signals={data.analysis.scenario_signals}
+          />
         )}
-      </div>
+      </motion.div>
 
       <motion.div variants={item} className="flex items-center gap-3 px-1 pt-4">
         <span className="shrink-0 font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-foreground">

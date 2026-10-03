@@ -1,0 +1,709 @@
+scenario,domain,issue_id
+"I got a call from someone saying he was from the SBI credit card department and my card would be blocked unless I verified some details. He asked for the OTP that came on my phone and like a fool I told him. Within five minutes Rs 48,000 was gone from my account.",cyber_fraud,otp_fraud
+caller said he is from bank kyc team and my accont will freeze today itself. he askd otp i shared it and 25000 got debited two times,cyber_fraud,otp_fraud
+My father received a phone call about his pension account verification. The person knew his name and branch details. They made him read out the code that came by SMS and then money was transferred out of his savings account.,cyber_fraud,otp_fraud
+"Someone posing as a PhonePe support executive asked me to share the 6 digit code to reverse a failed transaction. After I gave it, Rs 15,000 was sent from my wallet to an unknown number.",cyber_fraud,otp_fraud
+"I ordered a cake online and got a call saying the delivery boy needs a confirmation OTP. I told him the number and immediately got a debit alert of Rs 9,999 from my UPI account.",cyber_fraud,otp_fraud
+Somebody made a fake Instagram account with my photos and my real name and is messaging my relatives asking for money saying I am in hospital.,cyber_fraud,online_impersonation
+"A man called my mother claiming to be a police inspector from the Delhi cyber cell. He said my brother was caught in a case and demanded money on the phone to settle it. It was completely fake, my brother was sitting at home.",cyber_fraud,online_impersonation
+someone is using my boss photo on whatsap dp and messaging office staff to buy amazon gift cards urgent. two people already sent cards worth 10k,cyber_fraud,online_impersonation
+I matched with a person on a matrimonial site who claimed to be an NRI doctor in London. After weeks of chatting he started asking for money for customs clearance of expensive gifts he said he sent me. The whole profile turned out to be fake.,cyber_fraud,online_impersonation
+"A fake customer care number of a courier company was showing on Google search. The person on that number pretended to be from the courier office, took my details and charged my card.",cyber_fraud,online_impersonation
+I received an SMS saying my electricity will be disconnected tonight and to update the bill through a link. The link opened a page looking exactly like the electricity board site asking for card details.,cyber_fraud,phishing
+"recived email looking like income tax dept saying refund of 12340 is pending, click link and login with netbanking. site was fake i enterd my hdfc password there",cyber_fraud,phishing
+My wife clicked on a WhatsApp link offering free festival gift hampers from a big brand. It asked her to forward the link to ten groups and then enter her phone number and bank details on a form.,cyber_fraud,phishing
+A message came saying my SIM will be deactivated due to pending KYC. It opened a page designed like the telecom company website asking me to enter my PAN number and an OTP.,cyber_fraud,phishing
+"Someone sent me a payment request on a UPI app disguised as a refund. The message said accept to receive Rs 5,000 but accepting it would have actually sent money from my side.",cyber_fraud,phishing
+I found out a SIM card was issued in my name in another state which I never applied for. Someone must have used a photocopy of my Aadhaar from somewhere.,cyber_fraud,identity_theft
+When I applied for a car loan the bank said my credit report shows an existing personal loan of 3 lakh which I never took. Somebody used my PAN details to take a loan in my name.,cyber_fraud,identity_theft
+someone opened paytm wallet with my number and aadhar xerox which i gave in shop. now recovery agents calling me daily for loan i never took,cyber_fraud,identity_theft
+"The documents I submitted for a rental agreement were misused. A mobile connection and a payment wallet were created in my name and used for some fraud, and now I have received a notice about it.",cyber_fraud,identity_theft
+I joined a Telegram group for stock tips where an expert promised guaranteed double returns in 30 days through their special app. I invested Rs 2 lakh and the app shows profit but never lets me withdraw anything.,cyber_fraud,other_online_financial_fraud
+"A work from home offer asked me to like videos for money. First they paid small amounts to build trust, then asked me to deposit Rs 30,000 as a task advance to unlock bigger earnings, and then blocked me.",cyber_fraud,other_online_financial_fraud
+"my friend told me about one app giving 3 percent daily interest. i put 50000 in it, site worked for 2 months then suddenly vanished with everyone money",cyber_fraud,other_online_financial_fraud
+"I got an email saying I won 25 lakh in a lucky draw and they asked for a processing fee of Rs 8,500 first. After I paid it they asked for GST charges also, and that is when I realised it was fraud.",cyber_fraud,other_online_financial_fraud
+"I ordered two sarees from an Instagram page after paying the full amount by UPI. They keep posting new collections every day but never shipped my order, and they blocked me when I asked for my money back.",cyber_fraud,other_online_financial_fraud
+My Gmail was hacked yesterday. The password and recovery number were changed and now the hacker is emailing my contacts asking them for money.,cyber_fraud,unauthorized_account_access
+somebody logged into my instgram and posted crypto ads from my accont. i cant login anymore recovery email also changed,cyber_fraud,unauthorized_account_access
+I noticed orders in my food delivery and shopping accounts that I never placed. Someone has my password from somewhere and has been quietly using my saved card.,cyber_fraud,unauthorized_account_access
+My WhatsApp got taken over after I missed a call from an international number and someone entered a verification code. Now my account is being used to ask all my contacts for urgent money transfers.,cyber_fraud,unauthorized_account_access
+I bought a 55 inch smart TV from a local dealer during the festival sale and the display developed lines within ten days. The dealer says only the company can help and the company is not responding.,consumer_issues,defective_product
+The washing machine delivered to us makes a loud grinding noise from day one and stops in the middle of every cycle. The service engineer has visited twice but it is still not fixed.,consumer_issues,defective_product
+"new phone from shop heating too much. battery draining in 2 hrs. shopkeeper says no return, only service center will see",consumer_issues,defective_product
+I ordered a mixer grinder online and received one with a cracked jar and a burning smell from the motor. The seller approved the return request but the pickup never actually happens.,consumer_issues,defective_product
+The pressure cooker I bought last month burst its safety valve while cooking and the lid got deformed. It was sold as ISI marked but it looks like a duplicate product to me now.,consumer_issues,defective_product
+Bought school shoes for my son and the sole came off within one week. The shop is refusing to even look at them saying sale items carry no guarantee.,consumer_issues,defective_product
+"I cancelled my flight ticket well within the free cancellation window but the travel portal has not refunded my Rs 11,200 even after 45 days of promising 7 working days.",consumer_issues,refund_denial
+The clothing website return policy says 15 days but when I raised a return for a kurta on day 5 they rejected it saying offer items cannot be returned. Nothing like that was mentioned while buying.,consumer_issues,refund_denial
+gym took full year fees 18000 and closed branch in 3 months. said refund will come but now not even reciving my calls,consumer_issues,refund_denial
+"I paid an advance booking amount for a scooter and later cancelled because the delivery was delayed by four months. The showroom is refusing to return my booking amount of Rs 5,000.",consumer_issues,refund_denial
+The coaching institute promised a full refund within the first two weeks if not satisfied. I applied on the tenth day and they now say admission fee and kit charges are non refundable and are offering only half.,consumer_issues,refund_denial
+The shopping app collected money twice for one order because of a payment retry. Customer care accepted that a double payment happened but the extra amount has never been credited back.,consumer_issues,refund_denial
+"A skin cream advertised on TV claimed visible results in 7 days with clinical proof. I used it for two months and nothing happened, and later I noticed fine print saying results may vary person to person.",consumer_issues,misleading_advertisement
+The hoarding said flat 70 percent off on all furniture but inside the shop the discount was only on two old sofa models. They are pulling people in with false offers.,consumer_issues,misleading_advertisement
+an institute ad said 100 percent placement guarantee with minimum 6 lakh package. after the course they arranged only one interview for a 12k per month job,consumer_issues,misleading_advertisement
+"The builder brochure showed a swimming pool, gym and club house. Three years after possession none of these amenities exist and the builder says those pictures were only artistic impressions.",consumer_issues,misleading_advertisement
+"The online ad showed a 5000 mAh phone at Rs 3,999 but on adding it to the cart the price becomes Rs 7,999, and the lower price quietly applies to a different basic model shown in the same ad.",consumer_issues,misleading_advertisement
+"I paid a wedding photographer Rs 60,000 in advance and he has delivered only half the edited photos and no album even eight months after the wedding.",consumer_issues,service_deficiency
+The AMC company for my water purifier has skipped two scheduled services this year even after taking the full annual charge in advance.,consumer_issues,service_deficiency
+the lift repair company took payment from our building and did such poor work that the lift stopped again in one week. now they are not coming back to fix it,consumer_issues,service_deficiency
+"I booked a packers and movers service for shifting from Pune to Nagpur. They came a day late, broke my fridge door and TV stand, and are now not responding about any compensation.",consumer_issues,service_deficiency
+The broadband company promised 100 mbps but I hardly get 10 mbps in the evenings and my complaints keep getting closed automatically without any fix.,consumer_issues,service_deficiency
+I paid a beauty salon in advance for a six session package with a written receipt listing the sessions. They cancelled my slots three times from their side and now say the package validity has expired.,consumer_issues,service_deficiency
+The medical shop near the hospital charges 20 to 30 rupees above the printed MRP on medicines at night saying night charges apply.,consumer_issues,unfair_trade_practice
+A mobile shop sold me a demo piece as a brand new sealed phone. The box was resealed and the warranty on the company website had already started five months earlier.,consumer_issues,unfair_trade_practice
+Complaint: restaurant added 10 percent service charge compulsorily and claimed it is a government tax when I questioned it. They refused to remove it from the bill even after a long argument.,consumer_issues,unfair_trade_practice
+"The electronics store forced me to buy an extended warranty and an accessory pack saying the festival discount would not apply otherwise, and billed them without telling me the actual prices.",consumer_issues,unfair_trade_practice
+"A traffic constable stopped me near the signal at night, checked all my papers which were correct, and still said give 200 for tea or he will find some problem to write a challan for.",traffic_enforcement,bribe_demand
+traffic police stopped my bike said helmet strap is loose. asked 500 cash on the spot no receipt. when i asked for a proper challan he said the fine will become 2000 then,traffic_enforcement,bribe_demand
+"During a checking drive the officer took my licence and said the fine for my broken indicator is Rs 1,500 but he can settle it for 500 cash without any entry. I felt cornered and paid him.",traffic_enforcement,bribe_demand
+An official at the border checkpost demanded money from our tempo driver to let the vehicle pass even though the permit and all papers were completely valid.,traffic_enforcement,bribe_demand
+The officer said my car window tint is illegal and I must pay him directly or the car will be seized. He refused to issue any official memo or receipt for the money he was demanding.,traffic_enforcement,bribe_demand
+I received an e-challan for jumping a signal in Hyderabad on a date when I and my car were both in Chennai. The photo on the challan clearly shows a different vehicle with a similar number plate.,traffic_enforcement,wrongful_challan
+"got challan 1000 for no helmet but i was wearing it. camera photo itself showing helmet on my head. still challan came, how?",traffic_enforcement,wrongful_challan
+Two challans got generated for the same offence at the same time and place. I paid one but the second one still shows pending and the late fee on it keeps growing.,traffic_enforcement,wrongful_challan
+"My scooter was sold two years ago with proper transfer forms submitted, but challans of the new owner still keep coming in my name because the record was never updated.",traffic_enforcement,wrongful_challan
+An e-challan says I was driving at 80 in a 40 zone but that stretch has no speed limit board anywhere and every vehicle moves at the same speed there.,traffic_enforcement,wrongful_challan
+I got fined for parking in a no parking zone but there was no sign board at that spot and half the market parks there every single day.,traffic_enforcement,wrongful_challan
+"The traffic police refused to accept my driving licence shown from the DigiLocker app and insisted only the physical card is valid, then wrote a challan for not carrying a licence.",traffic_enforcement,document_acceptance_or_verification
+officer said the insurance copy in the mparivahan app is not valid and he wants a printed paper copy. is soft copy not allowed? he made a challan for no insurance,traffic_enforcement,document_acceptance_or_verification
+"During vehicle checking the officer said my pollution certificate looks fake because the QR code did not scan on his phone, though I got it from an authorised centre only last month.",traffic_enforcement,document_acceptance_or_verification
+"I had left my licence at home and told the officer I could produce it later or show the digital copy, but he refused to give any time and treated me as if I was driving without a licence at all.",traffic_enforcement,document_acceptance_or_verification
+The constable questioned my out of state registration and insurance saying Karnataka documents are not valid in Maharashtra and threatened action unless I re-register the car immediately.,traffic_enforcement,document_acceptance_or_verification
+A traffic officer took away my driving licence on the spot for a mobile phone driving offence and gave me no receipt or any paper about when and how I will get it back.,traffic_enforcement,document_seizure_or_retention
+"police took my RC book last week in checking, said come to station and collect. went two times, nobody there knowing anything about it",traffic_enforcement,document_seizure_or_retention
+"The officer kept my original licence and told me it will be sent to court, but the challan copy he gave me does not mention any seizure of documents anywhere.",traffic_enforcement,document_seizure_or_retention
+"During a drive against autos, the inspector collected permits and licences of many drivers including mine. We were given no acknowledgment and he has not returned them for days.",traffic_enforcement,document_seizure_or_retention
+"My son's learner licence was taken by the traffic police and they are asking him to bring his father to the chowki to get it back, without giving anything in writing about why it was taken.",traffic_enforcement,document_seizure_or_retention
+My bike was towed and kept at the police chowki over a wrong parking issue and now they are asking a big amount as custody charges which nobody is able to explain the breakup of.,traffic_enforcement,vehicle_detention
+"traffic police detained my auto saying permit expired but permit renewal reciept is with me only. auto standing at station 4 days, daily earning fully loss",traffic_enforcement,vehicle_detention
+The police seized my friend's car at a night checkpoint saying the documents need verification. It has been a week and there is no written order about why the car is being held.,traffic_enforcement,vehicle_detention
+"My tempo was stopped and detained for overloading. The goods were within the limit as per the weighbridge slip I have, but they are not releasing the vehicle without some hearing date.",traffic_enforcement,vehicle_detention
+They lifted my scooter with a crane while I had gone into the ATM for two minutes. Now the traffic office wants towing charges plus fine before releasing it and is not showing any receipt for the towing.,traffic_enforcement,vehicle_detention
+My company has been paying salaries 20 to 25 days late for the last four months. Every month HR gives a new excuse about client payments being stuck.,workplace_wage,delayed_wages
+salry of march still not credited and now april also over. manager saying next week next week only,workplace_wage,delayed_wages
+"Our factory is supposed to pay wages by the 7th as per the appointment letter, but since the festival season the payments are coming on the 25th or later and workers are struggling with rent and school fees.",workplace_wage,delayed_wages
+The startup I work at paid half the salary in January and said the rest will come with the February salary. Now it is April and the pending amounts just keep piling up.,workplace_wage,delayed_wages
+I work as a security guard through an agency. The agency receives its payment from the society on time but pays us guards three weeks late every single month.,workplace_wage,delayed_wages
+the school where i teach delays salary every vacation period. june salary comes only in august when school reopens,workplace_wage,delayed_wages
+"My employer has moved everyone to quarterly salary payouts because of funding issues without asking us, so we effectively wait three months for wages we earned monthly.",workplace_wage,delayed_wages
+"I resigned with a full one month notice and completed all handovers, but the company has not paid my last month salary and leave encashment even after five months.",workplace_wage,unpaid_wages
+the contractor took our group for construction work in another city for 2 months. after the work finished he switched off his phone. total 65000 of 5 workers is pending,workplace_wage,unpaid_wages
+"The restaurant I worked in shut down suddenly and the owner is refusing to pay the staff their last 45 days of salary, saying the business made losses.",workplace_wage,unpaid_wages
+"My employer terminated me over WhatsApp without any notice and is now not paying my pending two months salary, claiming I caused losses which is completely false.",workplace_wage,unpaid_wages
+"I worked as a delivery boy for a local courier franchise and when I quit, the owner refused to pay my last three weeks of wages saying staff who leave forfeit their final payment.",workplace_wage,unpaid_wages
+"Our garment unit owner has not paid September wages to about forty tailors and keeps saying the exporter has not released money, but he keeps taking new orders every week.",workplace_wage,unpaid_wages
+i was housekeeping staff in office thru contractor. contractor company changed and old contractor gone without giving my 1 month salry and bonus. owner not giving money saying not his problem,workplace_wage,unpaid_wages
+"My employer deducts Rs 1,500 every month calling it uniform and equipment charges, which was never mentioned anywhere in my offer letter.",workplace_wage,unauthorized_deduction
+company cut 4000 from my salry for laptop screen damage which happened becoz of old battery swelling. nobody even askd me before cutting,workplace_wage,unauthorized_deduction
+"The showroom deducts stock shortage amounts equally from all salesmen whenever the inventory count is short, even from staff who were on leave on those days.",workplace_wage,unauthorized_deduction
+"PF is being cut from my salary every month as per the payslip, but when I checked the EPFO portal nothing has been deposited in my PF account for the past year.",workplace_wage,unauthorized_deduction
+"My salary slip shows a welfare fund and training recovery deduction totalling Rs 2,200 per month that HR cannot explain, and it started without any notice or consent from me.",workplace_wage,unauthorized_deduction
+"The hotel management deducts money for every plate broken by anyone in the shift from all waiters equally. Last month my cuts crossed Rs 3,000 out of a Rs 14,000 salary.",workplace_wage,unauthorized_deduction
+"I work 12 hours a day as a helper in a plastic factory for Rs 6,500 a month, which people tell me is far below the government rate for our state.",workplace_wage,minimum_wage_violation
+security agency pays 9000 per month for 12 hour duty 30 days with no weekly off. the board rate for security guards in our state is much higher than this,workplace_wage,minimum_wage_violation
+The housekeeping contractor of a big mall pays us Rs 280 per day while the notified daily wage for unskilled work in our city is above Rs 400.,workplace_wage,minimum_wage_violation
+"My daughter joined a private nursery school as a helper teacher. They pay only Rs 4,000 a month for full day work saying that is standard for trainees, with no appointment letter or payslip.",workplace_wage,minimum_wage_violation
+"In our packing unit women workers are paid 200 rupees per day and men 300 for the same work, and both amounts are below the minimum rate published by the labour department.",workplace_wage,minimum_wage_violation
+"The dhaba owner pays the cleaning boys Rs 3,500 monthly with food, and says food counts as part of salary so he does not need to follow government wage rates.",workplace_wage,minimum_wage_violation
+I paid a builder 8 lakh advance under a registered agreement for a flat to be delivered in December 2024. There is no construction progress at the site and he has stopped responding to all the buyers.,contractual_disputes,breach_of_contract
+"Our wedding hall booking agreement clearly said full AC and generator backup. On the function day the AC did not work and there was no generator, but they refuse any compensation citing electricity failure.",contractual_disputes,breach_of_contract
+"I am a freelance graphic designer. A company signed a contract with me for a branding project, took all the final files after approval, and has not paid my invoice of Rs 85,000 for six months.",contractual_disputes,breach_of_contract
+interior designer took 3 lakh advance with an agreement to finish the house work in 45 days. 5 months are over and only the false ceiling is done. now he wants more money to continue,contractual_disputes,breach_of_contract
+We supplied vegetables to a restaurant chain for a year under a written supply agreement with 30 day payment terms. Bills worth 2.4 lakh have been pending for more than four months now.,contractual_disputes,breach_of_contract
+A car dealer signed a buyback agreement promising to repurchase my car at 60 percent value after three years. Now he denies the scheme even though I have the stamped agreement paper with me.,contractual_disputes,breach_of_contract
+"My business partner and I had a written agreement to share profits equally. He has taken over the shop accounts, stopped showing me the books, and has not given my share for a year.",contractual_disputes,breach_of_contract
+I gave my agricultural land on a written lease for five years. The party stopped paying the yearly lease amount after the second year but refuses to vacate the land.,contractual_disputes,breach_of_contract
+the event company we hired for our college fest took 50 percent advance and cancelled 2 days before the event saying the artist is not available. no refund and no alternative was given,contractual_disputes,breach_of_contract
+"A courier franchise agreement promised me exclusive rights for my area. The company opened another franchise two streets away within six months against the agreement terms, killing my business.",contractual_disputes,breach_of_contract
+"I booked a modular kitchen with a 45 day installation clause in the agreement. It has been four months, materials are lying half installed in my house and the firm's site engineer has stopped visiting.",contractual_disputes,breach_of_contract
+My printing press signed an annual maintenance contract for our machines with a vendor who took the full year payment and has not done a single scheduled service visit.,contractual_disputes,breach_of_contract
+"A film production house hired my sound equipment on a rental agreement for 20 days. They kept it for two months, returned two damaged speakers, and are not paying the extra rental or the damages.",contractual_disputes,breach_of_contract
+"I sold my shop's goodwill and stock to a buyer with an agreement of payment in three instalments. He paid the first instalment, took possession, and now denies owing the remaining two.",contractual_disputes,breach_of_contract
+i gave my building roof for a mobile tower with an agreement of monthly rent 8000. the company stopped paying after 1 year but the tower is still running on my roof,contractual_disputes,breach_of_contract
+"A software vendor signed a contract to build a billing system for my distribution business in three months. After a year and 70 percent payment, the system still cannot generate a single correct invoice.",contractual_disputes,breach_of_contract
+"I vacated my rented flat in Bangalore after giving two months notice and handed over the keys, but the owner has not returned my Rs 1.2 lakh deposit for four months, citing painting charges without any bill.",contractual_disputes,security_deposit_dispute
+"landlord saying he will cut 40000 from deposit for normal paint fading and small nail holes. flat was in good condition, we cleand everything before leaving. owner not giving money back",contractual_disputes,security_deposit_dispute
+"The PG owner took a Rs 25,000 security deposit and now that I am leaving he says deposits are adjusted against the last month and notice period, which was never told or written anywhere.",contractual_disputes,security_deposit_dispute
+"My shop's landlord is refusing to return the 3 lakh security deposit after the lease ended, saying he will pay it only when a new tenant is found for the premises.",contractual_disputes,security_deposit_dispute
+We gave a refundable caution deposit at my daughter's college admission. The course ended over a year ago and the office keeps postponing the refund saying accounts will process it.,contractual_disputes,security_deposit_dispute
+The gas agency is not refunding my cylinder security deposit even after I surrendered the connection along with the original subscription voucher.,contractual_disputes,security_deposit_dispute
+"I left my rented office space after the agreement period with all dues cleared, yet the landlord returned only half the deposit claiming renovation costs he cannot show any proof for.",contractual_disputes,security_deposit_dispute
+the owner adjusted my full deposit against 2 months rent without asking me. the agreement clearly says deposit is refundable at the time of vacating not adjustable,contractual_disputes,security_deposit_dispute
+"The equipment rental firm has not returned the Rs 50,000 deposit for the construction mixer I hired, though I returned the machine in working condition with their own checklist signed.",contractual_disputes,security_deposit_dispute
+"My landlord in Gurgaon says the deposit will be returned only after he verifies no dues for one full year after I vacate, which was never part of our rent agreement.",contractual_disputes,security_deposit_dispute
+"Someone called me pretending to be from my bank and asked for the OTP that came on my phone, and after I told them money was taken from my account.",cyber_fraud,otp_fraud
+A caller claiming to be from bank or wallet customer support tricked me into sharing an OTP or PIN and an unauthorized transaction happened right after that.,cyber_fraud,otp_fraud
+"I received a phone call about KYC verification or card blocking, the person asked me to read out the code sent by SMS, and then money got debited from my account without my permission.",cyber_fraud,otp_fraud
+A fraudster acting like customer care of a payment app made me share a verification code on call and immediately transferred money out of my wallet or account.,cyber_fraud,otp_fraud
+Someone has created a fake social media profile using my name and photos and is contacting people I know to ask them for money.,cyber_fraud,online_impersonation
+A person called claiming to be a police officer or government official and threatened action against my family member unless money was paid to settle a case.,cyber_fraud,online_impersonation
+Somebody is pretending to be my employer or a senior person on a messaging app and instructing colleagues to make urgent purchases or money transfers.,cyber_fraud,online_impersonation
+A fake profile pretending to be a real company or a known person deceived me during online conversations and took money from me under false pretences.,cyber_fraud,online_impersonation
+I got an SMS or email with a link that opened a page looking exactly like my bank or a government website and it asked me to enter my card details or login password.,cyber_fraud,phishing
+"A message said my electricity or phone bill was unpaid and gave a link to pay immediately, but the link took my banking details and deducted money instead.",cyber_fraud,phishing
+"I clicked on a link received on WhatsApp promising a free reward or subsidy, and it directed me to a fake portal that captured my UPI credentials.",cyber_fraud,phishing
+An email pretending to be from my income tax department asked me to update refund details on a cloned webpage where my credentials were stolen.,cyber_fraud,phishing
+I found out that an unknown person has taken a loan or opened a credit card using my PAN card and Aadhaar details without my knowledge.,cyber_fraud,identity_theft
+Multiple mobile numbers have been registered in my name using my identity documents without my consent.,cyber_fraud,identity_theft
+Someone used my Aadhaar number or forged documents to open an unauthorized bank account that is now being used for fraud.,cyber_fraud,identity_theft
+My identity documents were compromised online and are being used by fraudsters to impersonate me and obtain financial services.,cyber_fraud,identity_theft
+My email account was hacked and the password and recovery phone number were changed so I can no longer access it.,cyber_fraud,unauthorized_account_access
+"Someone broke into my social media account, locked me out, and is posting unauthorized messages or contacting my friends.",cyber_fraud,unauthorized_account_access
+An unknown device accessed my online shopping or gaming account and made unauthorized transactions using saved cards.,cyber_fraud,unauthorized_account_access
+My personal cloud storage account was breached and private documents and photos were accessed without my permission.,cyber_fraud,unauthorized_account_access
+"I invested money in an online trading app that promised guaranteed high daily returns, but now the platform has shut down and will not let me withdraw.",cyber_fraud,other_online_financial_fraud
+"A group on Telegram invited me to invest in a cryptocurrency scheme promising 300% returns, but after depositing funds the admin blocked me.",cyber_fraud,other_online_financial_fraud
+I was induced to deposit money into an online high-yield investment scheme that turned out to be an unregulated Ponzi fraud.,cyber_fraud,other_online_financial_fraud
+A fake stock market advisory portal took subscription money and investment capital promising insider tips and disappeared.,cyber_fraud,other_online_financial_fraud
+"My phone suddenly lost network signal and when I checked with my telecom provider, they said a duplicate SIM card had been issued in my name, followed by money stolen from my bank.",cyber_fraud,sim_swap_fraud
+Fraudsters executed a SIM swap on my mobile number without my authorization and used the intercepted OTPs to empty my savings account.,cyber_fraud,sim_swap_fraud
+My mobile SIM card was deactivated without my request and an unauthorized replacement SIM was issued to a stranger who accessed my banking apps.,cyber_fraud,sim_swap_fraud
+"I experienced an unexpected network blackout on my mobile phone, during which unauthorized banking transactions occurred via intercepted SMS verification codes.",cyber_fraud,sim_swap_fraud
+"A caller pretending to be customer support told me to install AnyDesk or TeamViewer to fix a refund problem, and then they saw my screen and stole money.",cyber_fraud,remote_access_app_fraud
+"I was asked to download a quick support app by someone claiming to be from courier or bank customer care, and they took control of my phone and transferred funds.",cyber_fraud,remote_access_app_fraud
+"Under the pretext of resolving a failed transaction, a fake executive guided me to install a screen-sharing app and viewed my UPI PIN while I typed it.",cyber_fraud,remote_access_app_fraud
+A fraudster claiming to help me with technical support made me install a remote monitoring tool and executed unauthorized transactions while viewing my display.,cyber_fraud,remote_access_app_fraud
+I took a small loan from a mobile app that charged huge hidden fees and is now calling all my contacts and threatening to send morphed pictures if I don't pay more.,cyber_fraud,loan_app_fraud
+An instant loan app accessed my gallery and contacts without proper disclosure and is blackmailing my family members for unauthorized repayment.,cyber_fraud,loan_app_fraud
+Recovery agents from an illegal digital lending app are sending abusive WhatsApp messages to my contacts and circulating edited photos of me.,cyber_fraud,loan_app_fraud
+A quick cash loan app demanded immediate repayment of triple the borrowed amount and is harassing my phone contacts with defamatory messages.,cyber_fraud,loan_app_fraud
+"I received a video call from an unknown person who stripped, and now they have recorded my face and are demanding money or they will send the video to my friends.",cyber_fraud,sextortion_fraud
+A blackmailer is threatening to upload compromising or morphed nude photos of me on social media and send them to my relatives unless I pay extortion money.,cyber_fraud,sextortion_fraud
+"Someone contacted me on WhatsApp, recorded a private video call without my consent, and is threatening to leak it online if I do not pay.",cyber_fraud,sextortion_fraud
+I am being extorted by scammers who edited my face onto obscene pictures and are demanding ransom payments to prevent public distribution.,cyber_fraud,sextortion_fraud
+"I was selling furniture on OLX and the buyer sent me a QR code saying scan this to receive advance payment, but scanning it debited money from my account.",cyber_fraud,qr_code_fraud
+"A person asked me to scan a barcode or QR code on Google Pay or PhonePe to collect prize money, but it deducted funds instead of crediting them.",cyber_fraud,qr_code_fraud
+"I received a payment QR code with instructions to approve the request to accept a deposit, and as soon as I entered my UPI PIN, money was deducted.",cyber_fraud,qr_code_fraud
+A buyer on an online marketplace claimed they could only pay via QR code transfer and tricked me into approving a collect request that drained my wallet.,cyber_fraud,qr_code_fraud
+Callers pretending to be Mumbai police and CBI showed me fake arrest warrants over Skype and made me stay on video call for hours while demanding money for clearance.,cyber_fraud,digital_arrest_extortion
+"I received a call claiming a parcel containing illegal passports or narcotics was caught in my name, and fake officers placed me under digital arrest and forced me to transfer funds.",cyber_fraud,digital_arrest_extortion
+Scammers claiming to be from the Enforcement Directorate threatened me with immediate arrest on video call and coerced me into transferring my savings to a 'verification account'.,cyber_fraud,digital_arrest_extortion
+A fake police official on a WhatsApp video call wearing a uniform threatened me with criminal prosecution unless I paid bail money immediately to avoid arrest.,cyber_fraud,digital_arrest_extortion
+"I received an Instagram message saying I won an expensive smartphone or car in a lucky draw, but I must pay customs duty and GST in advance to receive it.",cyber_fraud,social_media_giveaway_fraud
+A WhatsApp message claimed I won 25 lakh rupees in a KBC lottery and asked me to transfer processing fees to claim the cheque.,cyber_fraud,social_media_giveaway_fraud
+"An online contest promised guaranteed luxury gifts but demanded registration charges and courier insurance, after which the organizers vanished.",cyber_fraud,social_media_giveaway_fraud
+"I paid multiple fees for prize clearance and document processing for an online lottery I supposedly won, but never received any prize money.",cyber_fraud,social_media_giveaway_fraud
+"I was offered a work-from-home job liking YouTube videos and rating hotels on Telegram, but after paying small amounts they made me invest 2 lakhs for VIP tasks that I cannot withdraw.",cyber_fraud,part_time_job_fraud
+"A recruiter on WhatsApp offered me a part-time review job where initial small commissions were paid, but then they locked my money in a fake trading portal demanding more deposits to release it.",cyber_fraud,part_time_job_fraud
+"I joined an online task-based earning scheme where I had to complete merchant rating orders, and now the scammers refuse to refund my deposits unless I pay a 30% tax.",cyber_fraud,part_time_job_fraud
+"Fraudsters promised 3000 rupees daily for simple online rating tasks, lured me into depositing money for higher commission levels, and then blocked me from the group.",cyber_fraud,part_time_job_fraud
+A recorded call claiming to be FedEx informed me that a parcel sent to Taiwan in my name containing 5 passports and illegal drugs was seized by Customs.,cyber_fraud,courier_customs_fraud
+Someone posing as an India Post customs officer called saying my overseas parcel had illegal substances and connected me to a fake police department to extort clearance money.,cyber_fraud,courier_customs_fraud
+I was told by a courier company executive on call that an international package containing contraband had my Aadhaar linked to it and I had to pay penalty fees immediately.,cyber_fraud,courier_customs_fraud
+Scammers claiming to represent DHL Customs demanded penalty payments into a bank account to cancel an arrest warrant for an illegal parcel I never sent.,cyber_fraud,courier_customs_fraud
+"I received an urgent SMS saying electricity will be disconnected tonight by 9:30 PM due to unpaid bill, and when I called the given number they stole my money.",cyber_fraud,utility_disconnection_fraud
+"A message pretending to be from the state electricity board instructed me to call an officer immediately to update my power bill, and they made me install an app that debited my bank.",cyber_fraud,utility_disconnection_fraud
+"I got a text warning that my power connection was being terminated tonight and to pay 10 rupees via an APK link to update KYC, which resulted in unauthorized account deductions.",cyber_fraud,utility_disconnection_fraud
+Fraudsters sent an alert claiming my water or gas supply would be cut off within hours unless I called a customer support helpline where they tricked me into sharing payment details.,cyber_fraud,utility_disconnection_fraud
+"A person I met on a matrimonial site claimed to be an NRI doctor who sent expensive jewelry for me that is stuck at Delhi airport customs, demanding clearance fees.",cyber_fraud,matrimonial_romance_fraud
+Someone on a dating app built a relationship with me over weeks and then asked for urgent financial assistance for a medical emergency abroad and vanished after payment.,cyber_fraud,matrimonial_romance_fraud
+"A fake profile on a marriage portal induced me to send money for business investment and visa processing fees, after which the profile was deleted.",cyber_fraud,matrimonial_romance_fraud
+I was cheated by a stranger on a matrimonial platform who claimed they were detained by immigration authorities and needed immediate funds for release.,cyber_fraud,matrimonial_romance_fraud
+"I searched for my airline customer service number on Google, called the first number that appeared, and the fake executive tricked me into sharing card details for a refund.",cyber_fraud,customer_care_spoofing
+"I looked up the helpline number of a food delivery or courier company online, and the caller made me send money via UPI under the guise of an order cancellation fee.",cyber_fraud,customer_care_spoofing
+A fake bank toll-free number listed on Google Search connected me to fraudsters who asked for my net banking password to resolve a failed transaction.,cyber_fraud,customer_care_spoofing
+"I dialed a customer support number found on Google Maps for a courier refund, and the operator instructed me to install a payment app that deducted funds.",cyber_fraud,customer_care_spoofing
+"Money was withdrawn from an ATM in another state while my physical debit card was in my wallet the whole time, indicating my card was cloned.",cyber_fraud,card_cloning_skimming
+I received multiple unauthorized POS transaction alerts for shopping in a different city after using my credit card at a roadside restaurant.,cyber_fraud,card_cloning_skimming
+"Fraudsters used an ATM skimmer device to copy my debit card magnetic stripe and PIN, and made unauthorized cash withdrawals at 2 AM.",cyber_fraud,card_cloning_skimming
+My bank account was debited through an unauthorized cloned card transaction without any OTP coming to my registered phone.,cyber_fraud,card_cloning_skimming
+I received a phone call with my son's exact cloned voice weeping and saying he was arrested by police and needed 50000 rupees sent urgently for bail.,cyber_fraud,deepfake_extortion
+"A video call showed my friend's face asking for urgent medical funds, but later I realized it was an AI deepfake avatar designed to cheat me.",cyber_fraud,deepfake_extortion
+Scammers cloned my daughter's voice using AI from her social media videos and called me demanding immediate ransom for her release.,cyber_fraud,deepfake_extortion
+A fraudster used an AI deepfake of a company director to instruct accounts staff to transfer company money to an offshore vendor account.,cyber_fraud,deepfake_extortion
+"I deposited money on an online betting app that advertised on Instagram, won 50,000 rupees, but the app blocked my withdrawals and demands a 20% security deposit.",cyber_fraud,online_betting_app_fraud
+"A color prediction game app on Telegram made me deposit money with promises of doubling it, and then banned my account when I requested a payout.",cyber_fraud,online_betting_app_fraud
+"I was duped by an online casino app where algorithmic rigging ensured initial wins, followed by complete forfeiture of my deposited savings.",cyber_fraud,online_betting_app_fraud
+An offshore sports betting application vanished with all my deposited funds after promising tax-free daily payouts.,cyber_fraud,online_betting_app_fraud
+"I bought clothes from an Instagram boutique page and paid 3000 rupees via Google Pay, but the seller blocked me and never shipped the items.",cyber_fraud,ecommerce_fake_seller_fraud
+"An online shopping site advertised heavily discounted electronics, took my advance payment, and immediately shut down without delivering.",cyber_fraud,ecommerce_fake_seller_fraud
+"I ordered shoes from a Facebook marketplace seller who promised same-day delivery, took payment, and switched off their phone.",cyber_fraud,ecommerce_fake_seller_fraud
+A seller on a social media platform provided a fake courier tracking number after receiving advance payment and deleted their account.,cyber_fraud,ecommerce_fake_seller_fraud
+"I received an official-looking job offer letter from a leading airline demanding 15,000 rupees for uniform charges and training security deposit.",cyber_fraud,recruitment_job_offer_fraud
+"Scammers pretending to be TCS HR conducted a fake telephonic interview, sent an appointment letter, and made me pay for laptop courier insurance.",cyber_fraud,recruitment_job_offer_fraud
+A recruitment agency on LinkedIn promised me a high-paying job in Canada and extracted 1 lakh rupees for fake work visa processing.,cyber_fraud,recruitment_job_offer_fraud
+I was cheated by a fake government job portal that collected application and verification fees for non-existent railway vacancies.,cyber_fraud,recruitment_job_offer_fraud
+All the files on my laptop were encrypted with a strange extension and a text file appeared demanding 500 dollars in Bitcoin to unlock them.,cyber_fraud,ransomware_data_hijacking
+"A ransomware attack locked our small business billing software and accounting data, displaying a ransom note with a timer.",cyber_fraud,ransomware_data_hijacking
+"My personal computer was infected by a virus that locked all my family photos and documents, demanding payment to a crypto wallet.",cyber_fraud,ransomware_data_hijacking
+Malicious software took control of our clinic patient database and the attacker is demanding ransom to restore system access.,cyber_fraud,ransomware_data_hijacking
+"My Aadhaar, phone number, and banking details were leaked in a major corporate data breach, leading to endless fraud calls and unauthorized loan attempts.",cyber_fraud,data_breach_victimization
+A hospital database breach exposed my private medical records and financial details on the dark web without the hospital notifying me.,cyber_fraud,data_breach_victimization
+A telecom operator's customer database leak led to hackers obtaining my subscriber details and attempting unauthorized SIM activations.,cyber_fraud,data_breach_victimization
+"My credit card information saved on an e-commerce platform was compromised during a security breach, resulting in unauthorized transactions.",cyber_fraud,data_breach_victimization
+"I donated 5,000 rupees to a flood relief campaign on WhatsApp that had a fake UPI ID slightly misspelled to mimic the Chief Minister Relief Fund.",cyber_fraud,fake_charity_donation_fraud
+"A fake charitable trust website collected donations for cancer patients with emotional photos, but the founders siphoned all funds into personal accounts.",cyber_fraud,fake_charity_donation_fraud
+Scammers created a spoofed PM-CARES donation portal that tricked citizens into transferring money to a private cyber criminal account.,cyber_fraud,fake_charity_donation_fraud
+I contributed to an emergency animal rescue fund on social media that turned out to be an organized fraudulent money extraction scam.,cyber_fraud,fake_charity_donation_fraud
+The television I purchased online arrived with a cracked screen and the seller is refusing to replace it or honor the manufacturer warranty.,consumer_issues,defective_product
+"I bought a refrigerator that stopped cooling within three days of delivery, and the company technician refuses to acknowledge the defect.",consumer_issues,defective_product
+The smartphone I received from an e-commerce platform does not turn on and came with a dead battery and damaged packaging.,consumer_issues,defective_product
+"A brand new washing machine broke down on its first use due to a faulty motor, and both the dealer and company refuse to take it back.",consumer_issues,defective_product
+"I returned an item within the seller's 7-day return window with all tags intact, but the company rejected the return and refuses to give my money back.",consumer_issues,refund_denial
+"My flight or hotel booking was cancelled by the service provider, but they refuse to refund the booking amount and are offering unusable coupons instead.",consumer_issues,refund_denial
+"I cancelled an e-commerce order before it was dispatched, yet the platform deducted the amount and refuses to process my refund.",consumer_issues,refund_denial
+"A store took advance payment for furniture delivery, failed to deliver for two months, and now refuses to cancel the order or return the advance.",consumer_issues,refund_denial
+"A brand advertised 100% natural organic ingredients on the package, but laboratory testing showed it contains prohibited synthetic chemicals.",consumer_issues,misleading_advertisement
+"An advertisement claimed this device would reduce electricity consumption by 50%, but in reality it has zero effect on power usage.",consumer_issues,misleading_advertisement
+An coaching institute advertised guaranteed government job placements and false topper endorsements to collect non-refundable course fees.,consumer_issues,misleading_advertisement
+"A car manufacturer advertised a mileage of 28 km per liter under normal driving, but the vehicle does not deliver even half of that under standard conditions.",consumer_issues,misleading_advertisement
+"An airline delayed my luggage for five days during an international trip, ruining my travel plans, and offered zero assistance or compensation.",consumer_issues,service_deficiency
+"My broadband internet service has been down for two weeks, and despite numerous tickets the telecom company has failed to fix the line or adjust my bill.",consumer_issues,service_deficiency
+"A hospital charged exorbitant unitemized fees and failed to provide standard medical care, resulting in severe health complications.",consumer_issues,service_deficiency
+"An automobile service center charged for replacing genuine parts during routine maintenance, but later inspection showed the original old parts were never changed.",consumer_issues,service_deficiency
+A retail store insisted on charging 30 rupees above the printed Maximum Retail Price for cold drinks and packaged snacks.,consumer_issues,unfair_trade_practice
+"A shopkeeper refused to provide a tax invoice or cash memo for an electronic appliance, claiming prices were higher if a bill was requested.",consumer_issues,unfair_trade_practice
+A cinema theater refused to allow outside water while charging three times the market rate for sealed bottled water inside the premises.,consumer_issues,unfair_trade_practice
+A merchant insisted that I could only purchase a mandatory high-priced accessory package if I wanted to buy the base vehicle.,consumer_issues,unfair_trade_practice
+"My laptop stopped working within the 1-year manufacturer warranty period, but the authorized service center falsely claimed physical damage and refused free repair.",consumer_issues,warranty_guarantee_denial
+"The company is refusing to honor the 5-year compressor warranty on my air conditioner, claiming the spare part is unavailable and demanding full replacement cost.",consumer_issues,warranty_guarantee_denial
+An authorized mobile service center rejected my warranty repair on the grounds of water damage even though the phone was never exposed to liquids.,consumer_issues,warranty_guarantee_denial
+"A dealer refuses to replace a defective battery covered under a written 2-year replacement guarantee, demanding that I pay 50% of the replacement price.",consumer_issues,warranty_guarantee_denial
+An airline ticket booking app added mandatory travel insurance and convenience fees at the final payment screen without my consent.,consumer_issues,dark_patterns_hidden_charges
+An online food delivery app enrolled me in a paid recurring subscription without explicit permission and refuses to cancel or refund the monthly charges.,consumer_issues,dark_patterns_hidden_charges
+"An e-commerce website showed a product price of 500 rupees, but at checkout added multiple hidden platform fees that increased the cost by 50%.",consumer_issues,dark_patterns_hidden_charges
+A ticket booking website used countdown timers and deceptive popups to force me into purchasing unwanted cancellation protection that cannot be removed.,consumer_issues,dark_patterns_hidden_charges
+"The supermarket sold me baby food products that had already passed their expiry date by two months, causing my child food poisoning.",consumer_issues,expired_spurious_goods
+I purchased branded perfume and cosmetics online which turned out to be counterfeit fake copies causing severe allergic reactions on my skin.,consumer_issues,expired_spurious_goods
+A chemist sold expired prescription medicines with the expiry date sticker intentionally scraped off and replaced with a fake label.,consumer_issues,expired_spurious_goods
+"A seller delivered counterfeit vehicle engine oil in genuine branded packaging, which caused major damage to my motorcycle engine.",consumer_issues,expired_spurious_goods
+"The builder promised possession of my apartment within 3 years in the agreement, but it has been 6 years and the project construction is still incomplete.",consumer_issues,builder_delay_possession_dispute
+"I paid 90% of the flat cost, but the real estate developer refuses to hand over keys or pay the contractually agreed delay compensation interest.",consumer_issues,builder_delay_possession_dispute
+The housing society builder unilaterally altered the building sanction plan and eliminated promised common amenities like parking and parks.,consumer_issues,builder_delay_possession_dispute
+"The builder is demanding extra unjustified infrastructure charges before handing over possession, threatening cancellation of my allotment.",consumer_issues,builder_delay_possession_dispute
+"The hospital surgeon performed the operation negligently and left a surgical swab inside the patient, causing life-threatening complications.",consumer_issues,medical_negligence_deficiency
+"A private nursing home administered the wrong medication dosage without checking allergy charts, resulting in severe organ damage.",consumer_issues,medical_negligence_deficiency
+The hospital management refused to release the patient's body until exorbitant disputed ICU charges were cleared in cash.,consumer_issues,medical_negligence_deficiency
+A diagnostic pathology lab issued an incorrect laboratory report that led the patient to undergo unnecessary painful surgical procedures.,consumer_issues,medical_negligence_deficiency
+"I enrolled in a 2-year JEE coaching institute paying 2 lakhs in advance, but when my child left after one month due to poor teaching, they refused any refund.",consumer_issues,coaching_institute_refund_dispute
+A competitive exam coaching center advertised false faculty credentials and refuses to return the advance fee after I discontinued attendance.,consumer_issues,coaching_institute_refund_dispute
+"The coaching academy made us sign a 'fees non-refundable under any circumstances' waiver, which violates consumer guidelines.",consumer_issues,coaching_institute_refund_dispute
+"An educational coaching institute shut down its physical branch abruptly and shifted to low quality online videos, refusing tuition fee refunds.",consumer_issues,coaching_institute_refund_dispute
+"The airline cancelled my domestic flight 3 hours before departure, refused to arrange an alternate flight, and will not pay statutory compensation.",consumer_issues,airline_flight_baggage_dispute
+"My checked-in baggage containing valuable personal belongings was lost by the airline, and they are offering an arbitrary low settlement.",consumer_issues,airline_flight_baggage_dispute
+"The airline delayed our flight by 9 hours, kept passengers locked inside the aircraft without food or air conditioning, and provided zero assistance.",consumer_issues,airline_flight_baggage_dispute
+"I paid for a premium economy ticket, but the airline involuntarily downgraded me to regular economy without refunding the fare difference.",consumer_issues,airline_flight_baggage_dispute
+The health insurance company rejected my cashless hospital claim for emergency surgery citing pre-existing hypertension that had nothing to do with the trauma.,consumer_issues,insurance_claim_rejection_dispute
+My motor insurance claim for accidental vehicle damage was repudiated by the insurer claiming delay of two days in reporting the accident.,consumer_issues,insurance_claim_rejection_dispute
+"The insurance surveyor made arbitrary 60% deductions on genuine hospital bills, refusing to pay approved room rent and ICU charges.",consumer_issues,insurance_claim_rejection_dispute
+The life insurance company denied death claim benefits to the nominee alleging non-disclosure of minor medical records from 10 years ago.,consumer_issues,insurance_claim_rejection_dispute
+The mobile service provider activated a 99-rupee monthly caller tune without my consent and has been deducting my prepaid balance every month.,consumer_issues,telecom_vas_billing_dispute
+My telecom operator enrolled my number in an unsolicited daily gaming subscription that drained my phone balance without any confirmation SMS.,consumer_issues,telecom_vas_billing_dispute
+The cellular company converted my mobile plan to a higher tariff postpaid tier without my authorization and is demanding inflated bill payments.,consumer_issues,telecom_vas_billing_dispute
+A telecom company charged international roaming fees for a period when my phone was switched off and cellular data was disabled.,consumer_issues,telecom_vas_billing_dispute
+A traffic policeman snatched my bike keys from the ignition and detained my motorcycle on the roadside because I forgot to carry my pollution certificate.,traffic_enforcement,vehicle_detention
+A traffic officer forcibly took away my car keys during routine vehicle checking and refused to return them until an on-the-spot cash payment was made.,traffic_enforcement,vehicle_detention
+Traffic police took my car keys or bike key from ignition without my permission during checking on the road.,traffic_enforcement,vehicle_detention
+A police officer took my motorcycle key without my consent and seized my vehicle on the roadside.,traffic_enforcement,vehicle_detention
+Traffic officers impounded my commercial auto rickshaw without issuing an official seizure memo or citing a detainable offence under the Motor Vehicles Act.,traffic_enforcement,vehicle_detention
+An enforcement squad seized and towed my car for a minor parking dispute even though I was present and ready to move the vehicle immediately.,traffic_enforcement,vehicle_detention
+A traffic sub-inspector took away my original driving licence and told me to collect it from the police station next week without giving any paper or receipt.,traffic_enforcement,document_seizure_or_retention
+The police officer seized my vehicle registration certificate (RC) on the spot and refused to provide an official seizure memo.,traffic_enforcement,document_seizure_or_retention
+An enforcement team retained my physical driving licence for a minor lane violation and did not issue a temporary driving acknowledgment.,traffic_enforcement,document_seizure_or_retention
+My original vehicle documents were confiscated during checking and the officer gave no written slip or challan reference to prove where they are.,traffic_enforcement,document_seizure_or_retention
+"A traffic policeman refused to accept my driving licence and RC shown on DigiLocker, insisting that only physical laminated cards are valid.",traffic_enforcement,document_acceptance_or_verification
+The officer demanded my original physical insurance policy and issued a challan even after I presented the verified digital record on mParivahan.,traffic_enforcement,document_acceptance_or_verification
+Traffic police officers told me they do not accept electronic documents on mobile phones and threatened to impound my vehicle unless physical papers were shown.,traffic_enforcement,document_acceptance_or_verification
+"I showed my valid electronic driving licence via the government DigiLocker app, but the officer refused to verify it and fined me for driving without a licence.",traffic_enforcement,document_acceptance_or_verification
+"I received an e-challan on my phone for jumping a red light in a city I have never visited, with a photo of a completely different car model.",traffic_enforcement,wrongful_challan
+A traffic camera issued a speeding challan to my registered scooter showing a photo of a speeding commercial truck with a misread number plate.,traffic_enforcement,wrongful_challan
+"I was issued a wrongful challan for driving without a helmet, but the photographic evidence attached clearly shows I was wearing a certified helmet.",traffic_enforcement,wrongful_challan
+An erroneous e-challan was generated against my vehicle registration number while my car was parked inside my home garage all day.,traffic_enforcement,wrongful_challan
+The traffic police officer stopped me and demanded 500 rupees in cash without giving any receipt or entering the violation on his electronic challan machine.,traffic_enforcement,bribe_demand
+"An enforcement officer threatened to impose a 10,000 rupee fine unless I paid him 1,000 rupees in cash on the spot to let me go.",traffic_enforcement,bribe_demand
+The officer refused my request to pay the penalty online through the official portal and insisted that I hand over cash immediately.,traffic_enforcement,bribe_demand
+A group of traffic personnel demanded personal cash payments at a checkpoint and threatened vehicle detention when I asked for an official receipt.,traffic_enforcement,bribe_demand
+"A towing crane lifted and towed my car away while my elderly mother was sitting inside the vehicle, ignoring our loud calls to stop.",traffic_enforcement,unlawful_towing
+Traffic towing staff towed my motorcycle without making any loudspeaker announcement and damaged the front suspension and handlebar during lifting.,traffic_enforcement,unlawful_towing
+"My car was parked legally in a marked spot, but towing contractors picked it up anyway and scratched the bumper while dragging it onto the flatbed.",traffic_enforcement,unlawful_towing
+Towing operators demanded 2000 rupees in cash at the impound yard for towing charges but refused to provide any official municipal or police receipt.,traffic_enforcement,unlawful_towing
+"The traffic police officer claimed I was drunk driving just by smelling my breath, refused to administer a breathalyzer test, and impounded my car.",traffic_enforcement,drunk_driving_breathalyzer_dispute
+"An officer insisted on using a dirty, used mouthpiece on the breathalyzer machine and threatened to arrest me when I demanded a sealed fresh straw.",traffic_enforcement,drunk_driving_breathalyzer_dispute
+"The breath test showed a false positive reading after I used mouthwash, but the officers refused my request for an immediate hospital blood test.",traffic_enforcement,drunk_driving_breathalyzer_dispute
+"Traffic personnel demanded a 10,000 rupee cash settlement at an alcohol checkpoint and refused to provide the printed digital slip from the testing device.",traffic_enforcement,drunk_driving_breathalyzer_dispute
+"I was issued a 1000-rupee e-challan for driving without a seatbelt, but the camera photo clearly shows the black seatbelt across my dark shirt.",traffic_enforcement,seatbelt_helmet_camera_dispute
+"An automated camera fined my pillion rider for no helmet, but she was wearing a full-face ISI helmet that was obscured by shadow in the low-res photo.",traffic_enforcement,seatbelt_helmet_camera_dispute
+I received a seatbelt violation challan for a car model where the factory seatbelt anchor is positioned lower than the camera's line of sight.,traffic_enforcement,seatbelt_helmet_camera_dispute
+A traffic camera misidentified a Sikh driver wearing a traditional turban and generated an automated helmet penalty.,traffic_enforcement,seatbelt_helmet_camera_dispute
+"I received a 10,000 rupee challan for failing to give way to an ambulance, but my car was trapped in standstill bumper-to-bumper traffic.",traffic_enforcement,emergency_vehicle_obstruction_dispute
+Traffic cameras fined me for obstructing an emergency vehicle when moving left would have caused a head-on collision with pedestrians.,traffic_enforcement,emergency_vehicle_obstruction_dispute
+An enforcement team issued a penalty for not pulling over for a siren vehicle when there was no physical shoulder space on the flyover.,traffic_enforcement,emergency_vehicle_obstruction_dispute
+"I was penalized for stopping at a red signal while an ambulance was behind me, because crossing into the intersection would cause a major accident.",traffic_enforcement,emergency_vehicle_obstruction_dispute
+"The traffic police officer fined me 10,000 rupees for an expired pollution certificate even though my renewed PUC was active on the Parivahan database.",traffic_enforcement,puc_verification_dispute
+An officer refused to look at my valid online PUC record on my phone and demanded a physical printed certificate from a local testing center.,traffic_enforcement,puc_verification_dispute
+I got a PUC violation challan generated at an automated checkpoint while my vehicle had undergone valid emissions testing two days earlier.,traffic_enforcement,puc_verification_dispute
+Traffic personnel threatened to seize my vehicle registration certificate because I did not possess a laminated copy of my pollution slip.,traffic_enforcement,puc_verification_dispute
+My employer has not paid my monthly salary for the past two months and keeps giving false promises of payment dates without clearing dues.,workplace_wage,delayed_wages
+"Our company routinely delays salaries until the end of the next month, violating our employment contract and legal salary payment deadlines.",workplace_wage,delayed_wages
+"My salary for the previous month has been delayed by over 45 days, causing severe personal financial hardship with rent and loans.",workplace_wage,delayed_wages
+The management has withheld salary payments for all employees in our department for over six weeks citing cash flow problems.,workplace_wage,delayed_wages
+"I worked for three months at a private firm, but when I asked for my pending salary, the owner refused to pay and stopped answering my calls.",workplace_wage,unpaid_wages
+The company has completely withheld my last two months of salary after I informed them that I would not be renewing my contract.,workplace_wage,unpaid_wages
+My employer terminated my employment abruptly and refused to clear my outstanding wages for the days already worked.,workplace_wage,unpaid_wages
+"I completed all assigned work for the company, but the management refuses to disburse my earned wages citing fabricated performance issues.",workplace_wage,unpaid_wages
+"My company deducted 15,000 rupees from my monthly pay slip without my consent, claiming it was an internal penalty for missing quarterly targets.",workplace_wage,unauthorized_deduction
+"The employer made a 30% deduction from my wages claiming company-wide cost cutting, even though my employment contract guarantees a fixed salary.",workplace_wage,unauthorized_deduction
+Arbitrary salary deductions were made from my monthly paycheck for alleged office equipment wear-and-tear without any prior notice or proof.,workplace_wage,unauthorized_deduction
+My employer deducted half my salary as a penalty because I took two days of authorized medical leave with a valid doctor certificate.,workplace_wage,unauthorized_deduction
+"I am working 10 hours a day as a security guard, but the agency only pays me 6,000 rupees a month, which is far below the government minimum wage.",workplace_wage,minimum_wage_violation
+"Our factory pays daily wage laborers 250 rupees per day, whereas the state notified minimum wage for our sector is 450 rupees per day.",workplace_wage,minimum_wage_violation
+"The contractor is underpaying all cleaning staff, disbursing wages below the statutory minimum floor wage and threatening termination if we complain.",workplace_wage,minimum_wage_violation
+My monthly wage is lower than the mandatory minimum wage prescribed for skilled workers in our municipal area.,workplace_wage,minimum_wage_violation
+"Our company makes us work 12 hours every day including Saturdays, but refuses to pay any overtime allowance or additional wages for extra hours.",workplace_wage,overtime_wage_denial
+My manager forces me to work 3 extra hours daily after my shift ends and refuses to compensate me at the legal overtime rate of double wages.,workplace_wage,overtime_wage_denial
+I was made to work on weekends and public holidays without any compensatory leave or overtime pay as required by law.,workplace_wage,overtime_wage_denial
+The management regularly demands extended shift work exceeding 55 hours a week without paying the statutory overtime wage rate.,workplace_wage,overtime_wage_denial
+"I served my complete notice period and resigned two months ago, but the company has not released my Full and Final settlement or earned salary.",workplace_wage,final_settlement_withheld
+"My previous employer is holding back my final settlement dues, gratuity, and relieving letter because I refused to sign a non-compete waiver.",workplace_wage,final_settlement_withheld
+The company terminated my services without notice and refuses to disburse my accrued wages and severance pay within the required two working days.,workplace_wage,final_settlement_withheld
+"It has been over 60 days since my last working day, and the HR department refuses to process my pending wage arrears and final clearance.",workplace_wage,final_settlement_withheld
+"My company deducted 1,800 rupees for PF from my salary every month, but when I checked my EPFO passbook online, zero contributions were deposited for a year.",workplace_wage,pf_deduction_non_deposit
+"The employer made monthly statutory PF deductions on my pay slips, but the funds were misappropriated and never credited to my UAN.",workplace_wage,pf_deduction_non_deposit
+I discovered that our firm has not deposited employer or employee PF contributions for the last six months despite active pay cuts.,workplace_wage,pf_deduction_non_deposit
+The management deducted employee provident fund contributions and closed the business without remitting the accumulated deductions to EPFO.,workplace_wage,pf_deduction_non_deposit
+"My male colleague and I were hired for the identical software development role with equal experience, but the company pays him 40% higher salary because he is male.",workplace_wage,gender_wage_discrimination
+Female factory workers on our production line are paid 300 rupees a day while male workers doing the exact same packing work receive 500 rupees.,workplace_wage,gender_wage_discrimination
+The management reduced the compensation scale for women returning from maternity leave while maintaining male compensation levels.,workplace_wage,gender_wage_discrimination
+Our employer systematically discriminates in wage increments and bonuses on the ground of gender for identical work outputs.,workplace_wage,gender_wage_discrimination
+"When I resigned giving 15 days notice instead of 90 days, the company seized my entire 2-month earned salary and demanded an extra 50,000 rupees in cash.",workplace_wage,notice_period_clawback_dispute
+The employer made a massive salary deduction claiming notice period recovery even though my employment contract allows notice buyout at basic pay.,workplace_wage,notice_period_clawback_dispute
+"The management refused to waive notice period after I was hospitalized, and confiscated my pending monthly paycheck to recover buyout fees.",workplace_wage,notice_period_clawback_dispute
+The company deducted full gross salary for 3 months notice buyout from my earned dues rather than adjusting basic wage components.,workplace_wage,notice_period_clawback_dispute
+"I worked continuously for 7 years at a manufacturing firm, but upon retirement the employer refused to pay my statutory gratuity amount.",workplace_wage,gratuity_withholding_dispute
+My previous company withheld my gratuity of 3 lakh rupees citing vague allegations of financial losses without any formal departmental inquiry.,workplace_wage,gratuity_withholding_dispute
+"It has been five months since I resigned after 6 years of service, and the HR department refuses to process my statutory gratuity application.",workplace_wage,gratuity_withholding_dispute
+"The management deducted commercial company losses from my gratuity settlement, in direct violation of statutory gratuity protections.",workplace_wage,gratuity_withholding_dispute
+"The interior designer signed a contract promising to finish home renovation within two months, but took advance money and stopped all work.",contractual_disputes,breach_of_contract
+"A commercial vendor failed to deliver contracted supplies by the agreed deadline, causing heavy financial losses to my manufacturing business.",contractual_disputes,breach_of_contract
+"A service contractor violated the non-disclosure and exclusivity clauses in our signed business agreement, sharing proprietary designs with competitors.",contractual_disputes,breach_of_contract
+The other party broke the explicit terms of our written memorandum of understanding and refused to fulfill their agreed contractual responsibilities.,contractual_disputes,breach_of_contract
+"My landlord refuses to return my rental security deposit of 80,000 rupees after I vacated the flat with one month advance notice as agreed.",contractual_disputes,security_deposit_dispute
+"The property owner made arbitrary deductions of 50,000 rupees from my lease deposit for routine wall repainting that is not permitted under our agreement.",contractual_disputes,security_deposit_dispute
+"I completed my rental tenure and handed over the apartment keys in good condition, but the house owner refuses to refund my caution deposit.",contractual_disputes,security_deposit_dispute
+A commercial landlord is withholding our company lease security deposit four months after the commercial agreement was lawfully terminated.,contractual_disputes,security_deposit_dispute
+"I completed website development and graphic design work for a client who accepted the deliverables, but they now refuse to pay my final invoice.",contractual_disputes,freelance_vendor_non_payment
+"A business hired me as a freelance software consultant, took all the source code and launched the app, but has stopped responding to my payment requests.",contractual_disputes,freelance_vendor_non_payment
+"I delivered photography and video editing services for a corporate event, but the event agency refuses to disburse my professional fees.",contractual_disputes,freelance_vendor_non_payment
+"A client accepted delivery of custom manufactured goods without objection, but has delayed payment of my commercial invoices for over four months.",contractual_disputes,freelance_vendor_non_payment
+A corporate client terminated our annual maintenance contract overnight without giving the mandatory 60 days notice specified in the agreement.,contractual_disputes,unilateral_contract_termination
+"A business partner unilaterally cancelled our vendor supply contract halfway through the term, leaving me with heavy raw material debts.",contractual_disputes,unilateral_contract_termination
+"The project owner cancelled our written construction agreement abruptly without any notice or valid reason, refusing to reimburse expenses already incurred.",contractual_disputes,unilateral_contract_termination
+"A company terminated our service agreement without cause or cure notice, in direct breach of the agreed termination provisions.",contractual_disputes,unilateral_contract_termination
+"My former employer sent a legal notice threatening a 20 lakh lawsuit because I joined another software firm, claiming I violated a 2-year non-compete clause.",contractual_disputes,non_compete_clause_dispute
+A company is withholding my relieving letter and experience certificate because I refused to sign an agreement not to work in the same industry.,contractual_disputes,non_compete_clause_dispute
+A consulting agency claims I cannot practice my lawful profession for three years after leaving their firm and is threatening court injunctions.,contractual_disputes,non_compete_clause_dispute
+My ex-business partner threatens legal action claiming my new independent freelance work breaches an unreasonable post-termination restriction clause.,contractual_disputes,non_compete_clause_dispute
+The builder refused to hand over my house keys until I signed an unfair waiver agreeing not to claim any compensation for 3 years of construction delays.,contractual_disputes,coercion_duress_agreement_dispute
+A contractor locked our factory machinery and threatened physical violence unless we signed an inflated settlement deed accepting exorbitant bills.,contractual_disputes,coercion_duress_agreement_dispute
+I was pressured into signing an unfair release deed while my vehicle and tools were unlawfully detained by the client.,contractual_disputes,coercion_duress_agreement_dispute
+The other party coerced me into signing a revised contract under economic duress while holding back my rightful payments.,contractual_disputes,coercion_duress_agreement_dispute
+A wedding banquet hall cancelled our booking due to unforeseen family tragedy and forfeited our entire 2 lakh advance deposit citing non-refundable terms.,contractual_disputes,advance_deposit_forfeiture_dispute
+"A customized furniture maker failed to deliver on time, but when I cancelled the order they forfeited my 50,000 rupee advance as a contractual penalty.",contractual_disputes,advance_deposit_forfeiture_dispute
+"A training institute forfeited my entire 40,000 rupee advance booking fee even though I informed them 3 months before the batch commencement.",contractual_disputes,advance_deposit_forfeiture_dispute
+An equipment vendor retained my entire advance deposit under a penalty clause when delivery was delayed by supply chain issues.,contractual_disputes,advance_deposit_forfeiture_dispute
+A software contractor signed our strict non-disclosure agreement but uploaded our proprietary source code to a public GitHub repository.,contractual_disputes,nda_breach_trade_secret_dispute
+Our business consulting partner leaked confidential pricing formulas and client databases to a competitor in direct violation of our signed NDA.,contractual_disputes,nda_breach_trade_secret_dispute
+A former executive shared confidential manufacturing designs and prototype blueprints with a rival firm despite an active non-disclosure covenant.,contractual_disputes,nda_breach_trade_secret_dispute
+A vendor shared our unpublished product launch plans with external marketing agencies in breach of contractual confidentiality provisions.,contractual_disputes,nda_breach_trade_secret_dispute
+I was added to a VIP institutional WhatsApp trading group that promised guaranteed allotment in hyped IPOs through a fake FII trading app.,cyber_fraud,fake_stock_ipo_allotment_scam
+"Scammers made me download an unverified trading APK that showed fake allotments of 500 shares in a popular IPO, and then blocked my withdrawal.",cyber_fraud,fake_stock_ipo_allotment_scam
+"I invested 4 lakh rupees in an institutional pre-IPO placement platform that claimed to have direct institutional quota, and the app has vanished.",cyber_fraud,fake_stock_ipo_allotment_scam
+A fake stock trading adviser induced me to deposit funds into a corporate bank account for exclusive IPO allotment and stopped responding.,cyber_fraud,fake_stock_ipo_allotment_scam
+Money was debited from my bank account via an AePS biometric transaction at a customer service point in another district while I was at home.,cyber_fraud,aeps_fingerprint_cloning_fraud
+Scammers lifted my fingerprint from land registration documents online and used silicon clones to steal money through Aadhaar payment system.,cyber_fraud,aeps_fingerprint_cloning_fraud
+"I received an SMS alert that 10,000 rupees was withdrawn using AePS fingerprint authentication without any OTP arriving on my phone.",cyber_fraud,aeps_fingerprint_cloning_fraud
+Unauthorized cash was withdrawn from my rural bank account through micro-ATM AePS terminals using forged biometric credentials.,cyber_fraud,aeps_fingerprint_cloning_fraud
+"My brother was offered a customer support job in Thailand, but on arrival he was taken across the border to Cambodia and forced to run crypto scam calls.",cyber_fraud,overseas_cyber_slave_job_trafficking
+"A recruitment agency sent me for a data operator role in Dubai, but I was trapped in a guarded compound and forced to scam people online under threat.",cyber_fraud,overseas_cyber_slave_job_trafficking
+"Scammers promised high-paying IT jobs in Southeast Asia, seized passports upon arrival, and coerced victims into running dating scams.",cyber_fraud,overseas_cyber_slave_job_trafficking
+My relative is trapped in a call center compound in Myanmar where their phone is monitored and they are forced to run investment frauds.,cyber_fraud,overseas_cyber_slave_job_trafficking
+"I got an SMS saying my India Post parcel could not be delivered due to wrong house number, and clicking the link debited 20,000 rupees from my card.",cyber_fraud,courier_rto_address_update_scam
+"A text message claimed my courier package was held at the hub and demanded a 5-rupee address update fee, which captured my net banking password.",cyber_fraud,courier_rto_address_update_scam
+I received a fake parcel delivery alert with a link asking for my debit card CVV to verify redelivery of an order I had placed on Amazon.,cyber_fraud,courier_rto_address_update_scam
+Scammers sent a WhatsApp notification pretending to be Blue Dart stating my shipment was returned and instructed me to pay a nominal re-dispatch charge.,cyber_fraud,courier_rto_address_update_scam
+My savings account was abruptly frozen by cyber crime police from another state because money from a P2P Binance trade turned out to be stolen cyber fraud funds.,cyber_fraud,bank_account_freeze_mule_involvement
+The bank put a debit freeze on my business account citing an investigation from Telangana Cyber Cell regarding an innocent freelance payment I received.,cyber_fraud,bank_account_freeze_mule_involvement
+"I sold old electronics on OLX and received payment via UPI, but the buyer was a scammer using victim money, and now my entire account is frozen.",cyber_fraud,bank_account_freeze_mule_involvement
+My primary bank account was placed on hold under a cyber police lien because a secondary transaction layer received tainted cybercrime funds.,cyber_fraud,bank_account_freeze_mule_involvement
+"I was offered 150 rupees per Google rating on WhatsApp, earned 450 rupees initially, but then they locked 80,000 rupees in a fake merchant portal.",cyber_fraud,google_review_rating_task_scam
+"Scammers promised daily wages for reviewing restaurants on Google Maps, added me to a Telegram group, and defrauded me of 1.5 lakhs in prepaid tasks.",cyber_fraud,google_review_rating_task_scam
+"I joined an online part-time job rating hotels on travel sites, was induced to pay money to upgrade my rating commission level, and the admin blocked me.",cyber_fraud,google_review_rating_task_scam
+"A work-from-home review job paid me small amounts on UPI to build trust, then demanded 30,000 rupees for a 'combo task' that cannot be withdrawn.",cyber_fraud,google_review_rating_task_scam
+"I received an SMS warning that my car had a pending traffic fine of 1000 rupees, and downloading the Parivahan APK link hacked my phone and emptied my bank.",cyber_fraud,fake_traffic_challan_apk_scam
+"A message asked me to pay an overdue traffic challan through an APK file download, which secretly forwarded all my OTPs to an unknown number.",cyber_fraud,fake_traffic_challan_apk_scam
+"Scammers created a fake e-challan SMS that installed malicious software on my mobile device, allowing them to access my banking apps.",cyber_fraud,fake_traffic_challan_apk_scam
+"I clicked on a link to check a traffic penalty photo, an application installed itself automatically, and unauthorized debits occurred shortly after.",cyber_fraud,fake_traffic_challan_apk_scam
+"I got a text saying my 8,500 SBI card reward points worth 8,500 rupees were expiring today, and clicking the redemption link drained 50,000 from my card.",cyber_fraud,credit_card_reward_points_expiry_scam
+A fake bank message asked me to redeem accumulated reward points into cash by entering my credit card CVV and OTP on a cloned website.,cyber_fraud,credit_card_reward_points_expiry_scam
+"I clicked on a link to claim an expiring credit card voucher, entered the verification code sent by SMS, and an unauthorized merchant transaction occurred.",cyber_fraud,credit_card_reward_points_expiry_scam
+"Scammers sent a fraudulent link promising direct bank credit for unused reward points, which captured my card credentials.",cyber_fraud,credit_card_reward_points_expiry_scam
+"My brand new electric scooter battery caught fire while charging, causing extensive damage, and the manufacturer refuses to replace the vehicle.",consumer_issues,ev_battery_thermal_range_defect
+"The electric car was advertised with a 350 km range per charge, but in real-world driving it barely provides 110 km before dying.",consumer_issues,ev_battery_thermal_range_defect
+The EV manufacturer refuses to honor the 8-year battery warranty after the battery capacity degraded by 60% within the first year of purchase.,consumer_issues,ev_battery_thermal_range_defect
+"An electric two-wheeler suddenly shuts off while driving at high speed due to a defective battery management system (BMS), posing grave safety hazards.",consumer_issues,ev_battery_thermal_range_defect
+The authorized RO technician replaced my water purifier filters with duplicate counterfeit parts that contaminated our drinking water with heavy metals.,consumer_issues,water_purifier_ro_amc_scam
+"I purchased a 2-year comprehensive Annual Maintenance Contract (AMC) for my water purifier, but the company refuses to send technicians for maintenance.",consumer_issues,water_purifier_ro_amc_scam
+"The service technician broke the internal booster pump during routine servicing and demanded 4,000 rupees to fix their own damage.",consumer_issues,water_purifier_ro_amc_scam
+A water purifier company refused to honor the warranty on a newly installed water filter that leaked and ruined our modular kitchen cabinets.,consumer_issues,water_purifier_ro_amc_scam
+"I paid 25,000 rupees for an annual gym membership, but the gym management shut down operations after two months and refuses to refund my balance.",consumer_issues,gym_fitness_club_abrupt_closure
+"A fitness club collected renewal fees for a year, packed up all equipment overnight, and the owners have switched off their phones.",consumer_issues,gym_fitness_club_abrupt_closure
+"The gym promised personal trainer sessions and swimming pool access in our contract, but abruptly cancelled both without refunding the fees.",consumer_issues,gym_fitness_club_abrupt_closure
+A national gym franchise abruptly closed its local branch and refuses to transfer my active membership to another branch or process a refund.,consumer_issues,gym_fitness_club_abrupt_closure
+A domestic courier company completely lost my original university graduation degree certificates and is offering an arbitrary 100-rupee settlement.,consumer_issues,courier_cargo_damage_loss
+"I shipped a laptop via a premium courier with declared insurance value, and the package arrived crushed with the laptop completely destroyed.",consumer_issues,courier_cargo_damage_loss
+"The cargo logistics company delayed delivery of perishable goods by two weeks, causing total spoilage of the consigned inventory.",consumer_issues,courier_cargo_damage_loss
+"A courier tracking portal showed my valuable package was delivered, but it was never handed over to me and the company refuses to investigate.",consumer_issues,courier_cargo_damage_loss
+"After installing the official manufacturer system update, a persistent green line appeared across my AMOLED screen and the company demands 15,000 for a screen replacement.",consumer_issues,electronics_planned_obsolescence
+A software update pushed by the phone manufacturer severely throttled the processor speed and reduced battery life from 24 hours to 4 hours.,consumer_issues,electronics_planned_obsolescence
+The company pushed a firmware update that deliberately disabled third-party replacement battery compatibility on my tablet.,consumer_issues,electronics_planned_obsolescence
+A smart TV manufacturer updated the operating system and removed core streaming apps that were advertised as primary features on the retail box.,consumer_issues,electronics_planned_obsolescence
+"I was invited to a hotel for a free holiday gift voucher and pressured into signing a 25-year vacation membership for 2 lakhs, but can never book any room.",consumer_issues,holiday_timeshare_membership_scam
+"A holiday resort company promised 7 days of free luxury stays annually, but every time I attempt to book, they claim no rooms are available.",consumer_issues,holiday_timeshare_membership_scam
+"The vacation club company demands 20,000 rupees in annual maintenance charges every year despite never providing a single confirmed reservation.",consumer_issues,holiday_timeshare_membership_scam
+The timeshare company refused to cancel my membership within the statutory 10-day cooling-off period and is demanding recurring annual fees.,consumer_issues,holiday_timeshare_membership_scam
+The municipal parking contractor demanded 100 rupees for two hours of car parking when the official government board clearly states 20 rupees.,traffic_enforcement,overcharging_authorized_parking_scam
+Railway station parking attendants refused to let me exit unless I paid 150 rupees in cash without any computer-generated receipt.,traffic_enforcement,overcharging_authorized_parking_scam
+The parking attendant scratched out the printed government fee on the parking slip and wrote an inflated handwritten charge.,traffic_enforcement,overcharging_authorized_parking_scam
+A commercial parking operator demanded overnight parking charges for a 30-minute stay and threatened physical violence when I asked for a receipt.,traffic_enforcement,overcharging_authorized_parking_scam
+A traffic policeman fined me for tinted glass even though my car has factory-fitted OEM glass compliant with the 70% Visual Light Transmission rule.,traffic_enforcement,tinted_glass_sunfilm_fine_dispute
+"The officer scratched my car window with a key claiming I had applied black sunfilm, but the glass came tinted directly from the car manufacturer.",traffic_enforcement,tinted_glass_sunfilm_fine_dispute
+Traffic personnel issued a challan for dark windows without using any lux meter or optical transparency testing device.,traffic_enforcement,tinted_glass_sunfilm_fine_dispute
+I was penalized for factory safety glass on my imported car that satisfies all Central Motor Vehicles Rules visibility requirements.,traffic_enforcement,tinted_glass_sunfilm_fine_dispute
+I received a speeding challan for driving at 65 km/h on a multi-lane expressway where there were no signboards indicating a 50 km/h speed limit.,traffic_enforcement,speed_trap_radar_calibration_dispute
+A speed radar camera issued a fine on a road with conflicting speed signs: one signboard said 70 km/h while a lower sign said 40 km/h.,traffic_enforcement,speed_trap_radar_calibration_dispute
+"The speed interceptor vehicle claimed my small hatchback was travelling at 145 km/h, which is physically impossible for that vehicle model.",traffic_enforcement,speed_trap_radar_calibration_dispute
+An automated camera fined me for speeding on a bridge where speed limit boards were completely hidden behind overgrown tree branches.,traffic_enforcement,speed_trap_radar_calibration_dispute
+Traffic police stopped my Delhi-registered car in Bengaluru and threatened to seize it unless I paid full Karnataka lifetime road tax on the spot.,traffic_enforcement,interstate_vehicle_entry_harassment
+"An officer harassed me for driving my Maharashtra-registered bike in another state during a 2-week vacation, demanding local registration.",traffic_enforcement,interstate_vehicle_entry_harassment
+"Police officers threatened to detain my private vehicle because the number plate belongs to another state, ignoring my temporary visit proofs.",traffic_enforcement,interstate_vehicle_entry_harassment
+Enforcement personnel demanded proof of local address and road tax receipts for an out-of-state car visiting for temporary medical treatment.,traffic_enforcement,interstate_vehicle_entry_harassment
+My employer stopped paying my monthly salary as soon as I took my approved maternity leave and refuses to disburse the statutory 26 weeks wages.,workplace_wage,maternity_benefit_paid_leave_denial
+The company terminated my employment citing performance reasons two weeks after I informed HR about my pregnancy.,workplace_wage,maternity_benefit_paid_leave_denial
+"The management forced me to sign a resignation letter before granting maternity leave, refusing paid maternity compensation.",workplace_wage,maternity_benefit_paid_leave_denial
+A private firm refused to disburse maternity wages claiming their company policy only provides 4 weeks of unpaid leave.,workplace_wage,maternity_benefit_paid_leave_denial
+"I achieved 150% of my annual sales quota, but the company refuses to disburse my contractually agreed 2 lakh sales commission.",workplace_wage,sales_commission_incentive_withholding
+The management changed the incentive calculation policy retrospectively after the financial year closed to deny earned performance bonuses.,workplace_wage,sales_commission_incentive_withholding
+"The employer withheld my quarterly sales incentives after I submitted my resignation, claiming incentives are forfeited upon exit.",workplace_wage,sales_commission_incentive_withholding
+"The company celebrated closing the enterprise deal I brought in, but refused to pay the promised 5% commission specified in my appointment letter.",workplace_wage,sales_commission_incentive_withholding
+"The labour contractor receives 600 rupees per worker from the principal employer, but only gives us 350 rupees in cash at the end of the day.",workplace_wage,daily_wage_contract_worker_wage_theft
+Contract labourers on the construction site are subjected to a daily 100-rupee commission cut by the middleman who threatens dismissal if we object.,workplace_wage,daily_wage_contract_worker_wage_theft
+The contractor makes us sign blank wage registers showing full payment while giving us half the statutory minimum wage in cash.,workplace_wage,daily_wage_contract_worker_wage_theft
+Our factory contractor stopped wage payments for 20 migrant workers and ran away without settling daily wage arrears.,workplace_wage,daily_wage_contract_worker_wage_theft
+"The company hired me as an 'unpaid intern' for 6 months, but makes me do full-time client billable software work for 9 hours every day without a single rupee.",workplace_wage,compulsory_unpaid_training_internship
+"A private firm forced freshers into a 6-month mandatory 'unpaid training period' doing commercial production work, threatening to withhold degrees.",workplace_wage,compulsory_unpaid_training_internship
+"The employer hired marketing trainees with promises of future employment, made them work 50 hours a week for free, and fired them after 3 months.",workplace_wage,compulsory_unpaid_training_internship
+A media agency replaced regular salaried designers with revolving batches of unpaid interns doing full commercial design work without stipend.,workplace_wage,compulsory_unpaid_training_internship
+"The wedding banquet hall cancelled our booking three days before the ceremony claiming a double booking, and refuses to refund our 3 lakh advance deposit.",contractual_disputes,event_wedding_vendor_cancellation_default
+"Our wedding caterer took a 1 lakh advance and stopped answering calls 48 hours before the reception, forcing us to hire an expensive last-minute substitute.",contractual_disputes,event_wedding_vendor_cancellation_default
+The professional event photographer failed to appear for our wedding ceremony after taking advance payment and lost all our event memories.,contractual_disputes,event_wedding_vendor_cancellation_default
+"An event decorator backed out of a signed corporate convention agreement the night before the event, causing severe business embarrassment and losses.",contractual_disputes,event_wedding_vendor_cancellation_default
+"Our marketing consulting firm provided advisory services to a corporate client under a signed monthly retainer, but the client stopped paying invoices 4 months ago.",contractual_disputes,consulting_retainer_fee_default
+"A client engaged me as a financial advisor on a 50,000 monthly retainer, consumed all advisory reports, and refuses to clear outstanding fees.",contractual_disputes,consulting_retainer_fee_default
+The corporate client terminated our consulting contract without notice and refused to pay the pending retainer fees for the completed quarter.,contractual_disputes,consulting_retainer_fee_default
+"A business hired our cybersecurity agency on a monthly retainer, implemented our technical recommendations, but defaulted on our service invoices.",contractual_disputes,consulting_retainer_fee_default
+"We leased an industrial generator on contract for our construction site, but it broke down on the second day and the lessor refuses repair while demanding full rent.",contractual_disputes,equipment_lease_machinery_breakdown
+"The crane rental company provided a defective crane that caused a site shutdown for two weeks, and they refuse to deduct breakdown days from the bill.",contractual_disputes,equipment_lease_machinery_breakdown
+A commercial equipment lessor delivered machinery that failed factory safety inspections and refuses to replace it or refund our advance lease deposit.,contractual_disputes,equipment_lease_machinery_breakdown
+The lessor leased earthmoving equipment with pre-existing engine faults and is attempting to charge our firm for repairing their old defects.,contractual_disputes,equipment_lease_machinery_breakdown
+"We were forced to vacate our leased office because heavy ceiling water leakage ruined our computers, but the landlord is demanding 2 years of lock-in rent.",contractual_disputes,commercial_lease_lock_in_penalty_dispute
+"The building suffered severe structural cracks and municipal condemnation, yet the commercial landlord refuses to refund our deposit citing lock-in terms.",contractual_disputes,commercial_lease_lock_in_penalty_dispute
+"Our startup had to close office operations during a government-ordered shutdown, and the landlord is attempting to enforce an unconscionable lock-in penalty clause.",contractual_disputes,commercial_lease_lock_in_penalty_dispute
+"The landlord failed to provide promised fire safety clearances and electricity load, forcing us to exit, and is suing for 18 months of lock-in period rent.",contractual_disputes,commercial_lease_lock_in_penalty_dispute
+Someone obtained a fraudulent Class 3 Digital Signature Certificate in my name and used it to file unauthorized director resignation forms on MCA21.,cyber_fraud,digital_signature_certificate_theft
+My digital signature token was stolen from my office desk and used to submit unauthorized government procurement bids.,cyber_fraud,digital_signature_certificate_theft
+Fraudsters forged my identity documents to get a duplicate DSC issued by a Certifying Authority and transferred company shares.,cyber_fraud,digital_signature_certificate_theft
+An unauthorized digital signature was affixed to tax audit filings and commercial contracts without my knowledge or consent.,cyber_fraud,digital_signature_certificate_theft
+"A caller told me to dial *401*<phone number> to receive a courier parcel, and within minutes my WhatsApp was hacked and logged out.",cyber_fraud,whatsapp_account_call_forwarding_hijack
+"I dialed an MMI number instructed by a fake customer care executive, which forwarded my calls and allowed scammers to register my WhatsApp on their phone.",cyber_fraud,whatsapp_account_call_forwarding_hijack
+Scammers used call forwarding to intercept the automated voice call verification code and stole my WhatsApp account to solicit money from my contacts.,cyber_fraud,whatsapp_account_call_forwarding_hijack
+"My WhatsApp account was compromised after I dialed a shortcode sent via SMS, and fraudsters are messaging my family asking for emergency transfers.",cyber_fraud,whatsapp_account_call_forwarding_hijack
+"A seller on OLX claimed to be an Indian Army subedar transferred to a military base, showed a fake army canteen card, and took 25,000 for vehicle army transport.",cyber_fraud,fake_defence_armyman_olx_fraud
+Someone posing as a CISF officer at the airport offered to sell a second-hand Royal Enfield motorcycle and demanded gate pass fees before vanishing.,cyber_fraud,fake_defence_armyman_olx_fraud
+A fraudster used a stolen photograph in army uniform to build trust on a classifieds site and tricked me into paying advance freight charges.,cyber_fraud,fake_defence_armyman_olx_fraud
+I paid multiple installments for military transport insurance and gate clearance for furniture I bought from an alleged army officer on OLX.,cyber_fraud,fake_defence_armyman_olx_fraud
+"I got an SMS saying my FASTag was blacklisted and gave a link to update KYC, which opened a fake toll portal that stole 40,000 rupees from my bank.",cyber_fraud,fastag_recharge_wallet_phishing
+"A message warned that highway toll passage would be denied unless I recharged my FASTag immediately via a link, which captured my net banking password.",cyber_fraud,fastag_recharge_wallet_phishing
+Scammers created a fake NPCI NETC FASTag customer care website that extracted my debit card credentials when I called to resolve an overcharged toll.,cyber_fraud,fastag_recharge_wallet_phishing
+"I clicked on a link to claim an expired FASTag cashback and entered an OTP, which resulted in unauthorized electronic transfers.",cyber_fraud,fastag_recharge_wallet_phishing
+"I booked international flight tickets through a travel agent on Instagram offering a 40% discount, but the airline cancelled my tickets at the airport citing credit card fraud.",cyber_fraud,hotel_flight_ticket_reseller_scam
+"A travel reseller took 50,000 rupees in cash for holiday hotel bookings made using compromised credit cards, leaving my family stranded without accommodation.",cyber_fraud,hotel_flight_ticket_reseller_scam
+"An unauthorized ticket booking page issued me a confirmed PNR, but the airline voided the ticket because the booking was made using stolen card credentials.",cyber_fraud,hotel_flight_ticket_reseller_scam
+I was cheated by an online holiday agent who sold me bogus flight itineraries and disappeared after receiving bank transfers.,cyber_fraud,hotel_flight_ticket_reseller_scam
+My CIBIL credit score crashed by 200 points because multiple defaulting credit cards were issued by banks using my PAN number combined with a fake name.,cyber_fraud,synthetic_identity_credit_card_fraud
+Lending apps issued personal loans to an unknown individual who used my authentic tax identification number with forged KYC documents.,cyber_fraud,synthetic_identity_credit_card_fraud
+Debt recovery collection agencies are harassing me for a 3 lakh credit card default taken by a synthetic identity using my PAN credentials.,cyber_fraud,synthetic_identity_credit_card_fraud
+I discovered a fraudulent auto loan registered against my PAN on my credit report for a vehicle purchased in another state.,cyber_fraud,synthetic_identity_credit_card_fraud
+"The jeweller sold me a gold necklace as 22-carat 916 hallmarked, but when tested at a certified BIS assaying center, it was only 14-carat gold.",consumer_issues,gold_jewellery_hallmarking_purity_scam
+A jewellery showroom charged full 24-carat gold rate and issued an unverified hallmark bill that could not be verified on the BIS Care app.,consumer_issues,gold_jewellery_hallmarking_purity_scam
+The jeweller charged for 50 grams of gold including the weight of decorative wax and synthetic stones at the full gold price rate.,consumer_issues,gold_jewellery_hallmarking_purity_scam
+A retail jewellery store sold ornaments with fake etched hallmark symbols and refused to buy back or exchange their own jewellery.,consumer_issues,gold_jewellery_hallmarking_purity_scam
+The restaurant added a mandatory 10% service charge of 450 rupees on my dining bill and the manager refused to let us leave unless it was paid.,consumer_issues,hotel_restaurant_mandatory_service_charge
+"An eatery added a service charge to our food bill and levied 5% GST on the service charge amount, violating CCPA guidelines.",consumer_issues,hotel_restaurant_mandatory_service_charge
+"The cafe menu had fine print stating '10% service charge compulsory', which is directly prohibited under national consumer protection guidelines.",consumer_issues,hotel_restaurant_mandatory_service_charge
+A restaurant staff member threatened us when we requested removal of the service charge from our bill after experiencing terrible service.,consumer_issues,hotel_restaurant_mandatory_service_charge
+"I paid for Open Box Delivery for a 70,000 rupee laptop, but the delivery person refused to open the seal, pressured me for the OTP, and the box contained a piece of wood.",consumer_issues,e_commerce_refusal_of_open_box_delivery
+"The delivery courier refused to let me inspect the smartphone box before sharing the OTP, and when opened inside, the mobile phone was missing.",consumer_issues,e_commerce_refusal_of_open_box_delivery
+An online shopping platform rejected my missing product complaint claiming the delivery was marked successful via customer OTP.,consumer_issues,e_commerce_refusal_of_open_box_delivery
+The delivery agent opened the outer packaging but refused to let me power on the television to verify display damage before demanding the handover OTP.,consumer_issues,e_commerce_refusal_of_open_box_delivery
+"A health drink marketed for children advertised 'Zero Sugar', but laboratory tests proved it contains over 35% hidden maltodextrin and glucose syrup.",consumer_issues,packaged_food_misleading_nutrition_claims
+"A bread manufacturer advertised '100% Whole Wheat Atta Bread', but the ingredient list in tiny font reveals 70% refined maida flour.",consumer_issues,packaged_food_misleading_nutrition_claims
+Packaged cooking oil advertised 'Zero Cholesterol & Heart Healthy' while containing trans fats exceeding statutory FSSAI limits.,consumer_issues,packaged_food_misleading_nutrition_claims
+A fruit beverage marketed as '100% Real Fruit Juice' was found to contain less than 10% fruit pulp with artificial sweeteners and preservatives.,consumer_issues,packaged_food_misleading_nutrition_claims
+"Burglars broke into the bank locker room and stole our ancestral gold jewellery, and the bank management claims zero liability under old rules.",consumer_issues,bank_safe_deposit_locker_theft_loss
+Termites infested my bank safe deposit locker and completely destroyed original property title deeds and shares stored inside.,consumer_issues,bank_safe_deposit_locker_theft_loss
+Bank staff collaborated with unauthorized persons to break open my locker without notice and the contents were stolen.,consumer_issues,bank_safe_deposit_locker_theft_loss
+"Water seepage inside the bank basement locker vault ruined gold ornaments and currency, and the bank refuses any compensation.",consumer_issues,bank_safe_deposit_locker_theft_loss
+"My new car has broken down 7 times in the first 4 months due to engine stalling and transmission locking, and the dealer refuses to replace the defective vehicle.",consumer_issues,automobile_manufacturing_defect_lemon_vehicle
+"The steering system on my new vehicle locks unpredictably while driving at highway speeds, and the authorized workshop cannot diagnose or fix the defect.",consumer_issues,automobile_manufacturing_defect_lemon_vehicle
+"A brand new car suffered complete electrical failure and sudden battery discharge 3 days after delivery, spending 45 days in the service center.",consumer_issues,automobile_manufacturing_defect_lemon_vehicle
+"The vehicle manufacturer refuses to replace a car with recurring chassis cracks and brake failures, offering only cosmetic welding repairs.",consumer_issues,automobile_manufacturing_defect_lemon_vehicle
+"A traffic policeman fined me 5,000 rupees for not having an HSRP plate on my older car, even though I showed the active online booking receipt with an appointment date next week.",traffic_enforcement,high_security_registration_plate_hsrp_dispute
+Traffic officers issued a non-HSRP challan during an enforcement drive while the state transport website was completely down and offline for plate bookings.,traffic_enforcement,high_security_registration_plate_hsrp_dispute
+I was penalized for an older registration plate while driving through another state where HSRP enforcement dates differ from my registered home state.,traffic_enforcement,high_security_registration_plate_hsrp_dispute
+An officer refused to consider my official receipt showing my HSRP installation was delayed due to lack of dealer inventory.,traffic_enforcement,high_security_registration_plate_hsrp_dispute
+"I was issued a 1000-rupee challan for driving down a one-way street, but the 'No Entry' signboard at the junction was completely hidden by dense tree leaves.",traffic_enforcement,one_way_no_entry_signage_obscured
+Traffic police stationed at the end of a street penalized motorists where the 'No Entry' board had fallen down and was lying on the ground.,traffic_enforcement,one_way_no_entry_signage_obscured
+"The one-way traffic sign had been vandalized and painted over, making it completely impossible for visiting drivers to see.",traffic_enforcement,one_way_no_entry_signage_obscured
+An enforcement camera issued an automated fine for wrong-way driving on a newly converted one-way street with zero advance warning boards.,traffic_enforcement,one_way_no_entry_signage_obscured
+"A traffic camera fined me 1000 rupees for stopping over the zebra line, but the painted white stop line on the road was completely erased and invisible.",traffic_enforcement,zebra_crossing_pedestrian_stop_line_dispute
+I was issued a stop line violation challan during heavy monsoon rains where standing water completely covered the road markings.,traffic_enforcement,zebra_crossing_pedestrian_stop_line_dispute
+My car was forced onto the pedestrian crossing because an oversized city bus in front stopped abruptly and blocked the signal line.,traffic_enforcement,zebra_crossing_pedestrian_stop_line_dispute
+An automated camera captured my front bumper inches over a faded stop line that has not been repainted by the municipal corporation in two years.,traffic_enforcement,zebra_crossing_pedestrian_stop_line_dispute
+"Enforcement officers issued a 40,000 rupee overloading challan on my commercial goods truck based solely on visual estimation without weighing the vehicle.",traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+The RTO squad took my truck to a private uncalibrated weighbridge that showed a 5-tonne error compared to my government electronic toll weighbridge receipt.,traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+Officers refused my demand to be weighed on an official electronic weighbridge and demanded cash bribes to avoid off-loading penalties.,traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+A commercial transport truck carrying lightweight bulky goods (foam/boxes) was penalized for overloading despite being well under the gross vehicle weight.,traffic_enforcement,commercial_vehicle_overloading_weighbridge_dispute
+"My company deducted 4,000 rupees from my first monthly salary for company uniform and safety shoes that are mandatory for workplace safety.",workplace_wage,unauthorized_uniform_tool_security_deduction
+The security agency deducts 500 rupees every month from guards' wages as a recurring 'equipment maintenance fee'.,workplace_wage,unauthorized_uniform_tool_security_deduction
+"A private firm deducted 15,000 rupees from my paycheck as a 'laptop security deposit' that was never mentioned in my employment contract.",workplace_wage,unauthorized_uniform_tool_security_deduction
+"The employer made a 20% wage deduction for mandatory company identity cards and parking tags, lowering my net pay below the minimum wage.",workplace_wage,unauthorized_uniform_tool_security_deduction
+The company laid off 50 employees overnight due to cost cutting and refused to pay our statutory retrenchment compensation of 15 days pay per year of service.,workplace_wage,layoff_retrenchment_compensation_denial
+My employer shut down our branch office without warning and refused to provide 1-month notice pay or severance settlement.,workplace_wage,layoff_retrenchment_compensation_denial
+The management terminated my services during an organizational restructuring and withheld my earned salary arrears and severance dues.,workplace_wage,layoff_retrenchment_compensation_denial
+A private firm disguised an involuntary retrenchment as 'voluntary resignation' to evade paying statutory termination compensation.,workplace_wage,layoff_retrenchment_compensation_denial
+The security agency makes us work continuous 12-hour shifts every single day of the month without any weekly off or overtime pay.,workplace_wage,casual_contract_worker_overtime_wage_theft
+Contract sanitation staff are compelled to work 84 hours a week on basic wages without receiving the mandatory double-rate overtime pay.,workplace_wage,casual_contract_worker_overtime_wage_theft
+The contractor threatens immediate termination if any worker asks for their legally mandated weekly day of rest or overtime compensation.,workplace_wage,casual_contract_worker_overtime_wage_theft
+Our warehouse forces contract packing staff to work back-to-back double shifts without meal intervals or overtime allowances.,workplace_wage,casual_contract_worker_overtime_wage_theft
+"I suffered an injury while operating machinery on the factory floor, and the employer stopped paying my salary during my two months of medical recovery.",workplace_wage,illegal_salary_cut_during_medical_quarantine
+The company deducted full wages for three weeks when I was hospitalized with severe pneumonia despite submitting hospital discharge summaries.,workplace_wage,illegal_salary_cut_during_medical_quarantine
+Management terminated my employment while I was on authorized medical sick leave and refuses to disburse my earned salary arrears.,workplace_wage,illegal_salary_cut_during_medical_quarantine
+The employer made a 50% deduction from my monthly paycheck claiming my medical illness caused an unexcused business disruption.,workplace_wage,illegal_salary_cut_during_medical_quarantine
+"I developed a complete mobile app source code and transferred full intellectual property rights to a startup, but they defaulted on my final 2 lakh payment.",contractual_disputes,intellectual_property_assignment_payment_default
+"A client accepted delivery of my commercial brand identity designs, registered the trademark in their name, and refuses to pay the agreed licensing fee.",contractual_disputes,intellectual_property_assignment_payment_default
+An enterprise company deployed our custom software modules on their live servers under an IP assignment contract and has ignored invoices for six months.,contractual_disputes,intellectual_property_assignment_payment_default
+A client took full transfer of patent documentation and proprietary blueprints under contract and ceased all communication without settling dues.,contractual_disputes,intellectual_property_assignment_payment_default
+"The construction contractor signed a fixed-price house building agreement for 30 lakhs, halted work halfway, and demands an extra 10 lakhs to finish.",contractual_disputes,unilateral_price_escalation_in_fixed_contract
+A commercial fabricator stopped delivery of custom industrial machinery demanding a 40% price hike that is not permitted under our fixed contract.,contractual_disputes,unilateral_price_escalation_in_fixed_contract
+The interior designer locked my apartment keys and refused to complete the ongoing renovation unless I agreed to an uncontracted cost increase.,contractual_disputes,unilateral_price_escalation_in_fixed_contract
+A software agency took advance payment on a fixed-scope milestone contract and now refuses to deliver the codebase without double the agreed budget.,contractual_disputes,unilateral_price_escalation_in_fixed_contract
+"The security agency abruptly withdrew all security guards from our apartment society overnight without notice, and multiple vehicle thefts occurred the same week.",contractual_disputes,security_guard_facility_vendor_abrupt_walkout
+A facility management contractor abandoned our commercial office park without giving the mandatory 60 days contractual notice.,contractual_disputes,security_guard_facility_vendor_abrupt_walkout
+"The housekeeping and security vendor walked out halfway through our annual contract after taking a quarterly advance, leaving the premises unattended.",contractual_disputes,security_guard_facility_vendor_abrupt_walkout
+"A private security vendor terminated services with zero transition period, in direct breach of the agreed termination covenants.",contractual_disputes,security_guard_facility_vendor_abrupt_walkout
+"The franchisor showed me falsified store balance sheets promising a guaranteed 1 lakh monthly profit, but the outlet is making continuous heavy losses.",contractual_disputes,misrepresentation_of_franchise_business_profits
+"I paid a 10 lakh franchise fee based on deceptive marketing claims of exclusive territory rights, which the franchisor later sold to another party.",contractual_disputes,misrepresentation_of_franchise_business_profits
+A franchise company induced me into leasing a commercial property based on fake footfall figures and refuses to provide promised supply chain support.,contractual_disputes,misrepresentation_of_franchise_business_profits
+The franchisor misrepresented the operational viability of their retail business model and concealed active regulatory bans on their primary product.,contractual_disputes,misrepresentation_of_franchise_business_profits
+My bank account is getting deducted every month for 5000 rupees through an unauthorized NACH e-mandate that I never approved.,cyber_fraud,nach_unauthorized_autodebit_fraud
+Someone set up a recurring ECS auto-debit on my savings account using forged details or stolen OTP.,cyber_fraud,nach_unauthorized_autodebit_fraud
+Money was debited from my salary account for an automated loan EMI or insurance mandate I never signed up for.,cyber_fraud,nach_unauthorized_autodebit_fraud
+A bogus fintech company created an unauthorized recurring mandate on my netbanking and money is deducting automatically without my permission.,cyber_fraud,nach_unauthorized_autodebit_fraud
+"An employee at a telecom store or customer service centre leaked my Aadhaar, PAN, and call detail records to third parties.",cyber_fraud,telecom_kyc_data_leak_sale
+My personal KYC documents and mobile phone records were sold illegally on Telegram by a company insider without my consent.,cyber_fraud,telecom_kyc_data_leak_sale
+A broadband provider staff leaked my confidential residential and identity documents resulting in harassment and cyber blackmail.,cyber_fraud,telecom_kyc_data_leak_sale
+Someone working in a service provider company breached contract and sold my private personal database for commercial profit.,cyber_fraud,telecom_kyc_data_leak_sale
+"Someone secretly installed a hidden spy app or stalkerware on my smartphone that monitors my WhatsApp messages, calls, and live GPS location.",cyber_fraud,spyware_stalkerware_device_monitoring
+A malicious keylogger APK was installed on my laptop without my permission to capture my passwords and financial credentials.,cyber_fraud,spyware_stalkerware_device_monitoring
+My ex-partner or employer planted spyware on my phone and is blackmailing me with private photos and chat transcripts.,cyber_fraud,spyware_stalkerware_device_monitoring
+My phone battery drains very quickly and an unknown background app is recording my audio conversations and sending them to an external server.,cyber_fraud,spyware_stalkerware_device_monitoring
+I received a WhatsApp voice recording and fake certificate saying my SIM won 25 Lakh in a Kaun Banega Crorepati lucky draw.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+Someone posing as a lottery officer asked me to pay 25000 rupees as GST and processing fee to claim a national lucky draw prize.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+I was duped into transferring advance bank charges to release a foreign lottery cheque that never arrived.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+Fraudsters sent me a WhatsApp banner with photos of Amitabh Bachchan and government logos claiming I won a cash jackpot.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+I was sent a WhatsApp message saying I won 25 lakh in KBC lottery and must pay 25000 GST processing fee.,cyber_fraud,kbc_lottery_whatsapp_prize_scam
+"I invested 2 Lakh rupees in a Telegram automated crypto trading bot promising 50% monthly returns, but they froze my withdrawal.",cyber_fraud,fake_crypto_arbitrage_telegram_ponzi
+Fraudsters created a fake Web3 investment dashboard showing huge crypto profits and are now demanding a 30% tax fee to release my balance.,cyber_fraud,fake_crypto_arbitrage_telegram_ponzi
+I was added to a VIP crypto arbitrage group on Telegram where admins induced me to buy USDT and transfer it to a fraudulent contract address.,cyber_fraud,fake_crypto_arbitrage_telegram_ponzi
+An online crypto staking platform shut down abruptly after collecting funds from hundreds of investors through UPI and Binance transfers.,cyber_fraud,fake_crypto_arbitrage_telegram_ponzi
+The health insurance company rejected my cashless hospitalisation claim citing non-disclosure of pre-existing disease even though my policy is over 5 years old.,consumer_issues,health_insurance_claim_arbitrary_rejection
+TPA repudiated my medical surgery reimbursement claim on flimsy procedural grounds despite full doctor certification.,consumer_issues,health_insurance_claim_arbitrary_rejection
+Insurance company deducted 70% of my hospital bill under arbitrary non-medical expenses without providing statutory justification.,consumer_issues,health_insurance_claim_arbitrary_rejection
+My mediclaim was rejected saying hospitalisation was unnecessary even though the treating physician mandated emergency ICU admission.,consumer_issues,health_insurance_claim_arbitrary_rejection
+A social media influencer promoted an unregulated trading app claiming guaranteed daily returns without disclosing paid sponsorship.,consumer_issues,misleading_endorser_influencer_financial_ad
+A celebrity endorsed a healthcare supplement falsely claiming it cures diabetes within 30 days without clinical proof.,consumer_issues,misleading_endorser_influencer_financial_ad
+"A finfluencer promoted a deceptive crypto trading scheme without statutory risk disclosures, causing me to lose my savings.",consumer_issues,misleading_endorser_influencer_financial_ad
+An online brand published fake testimonial videos and deceptive celebrity endorsements to mislead consumers into buying defective products.,consumer_issues,misleading_endorser_influencer_financial_ad
+"An e-commerce seller delivered duplicate, counterfeit face cream with toxic chemicals that caused severe skin burning and allergies.",consumer_issues,spurious_cosmetics_counterfeit_perfumes
+I purchased branded luxury perfume online which turned out to be a cheap chemical fake with no batch number or manufacturing details.,consumer_issues,spurious_cosmetics_counterfeit_perfumes
+"A store sold me adulterated hair serum in original brand packaging, causing acute hair loss and dermatological damage.",consumer_issues,spurious_cosmetics_counterfeit_perfumes
+The skincare product delivered has a fake ISI mark and no mandatory ingredients list or manufacturer address on the label.,consumer_issues,spurious_cosmetics_counterfeit_perfumes
+The airline overbooked the flight and denied me boarding at the airport despite my having a confirmed ticket and reporting on time.,consumer_issues,airline_denied_boarding_overbooking_compensation
+"I was forcibly offloaded from my domestic flight because the flight was over capacity, and the airline refused to pay statutory DGCA compensation.",consumer_issues,airline_denied_boarding_overbooking_compensation
+"The carrier bumped me to a next-day flight without providing hotel accommodation, food vouchers, or the mandatory 400% compensation.",consumer_issues,airline_denied_boarding_overbooking_compensation
+Airlines staff arbitrarily cancelled my confirmed boarding pass at the boarding gate citing operational overbooking without my consent.,consumer_issues,airline_denied_boarding_overbooking_compensation
+"An ed-tech institute promised 100% guaranteed job placement with minimum 8 LPA package, but provided zero interview calls after taking 1.5 Lakh.",consumer_issues,educational_course_bait_and_switch_placement_guarantee
+A coding bootcamp used deceptive marketing claiming corporate hiring partnerships with top MNCs which turned out completely fabricated.,consumer_issues,educational_course_bait_and_switch_placement_guarantee
+The coaching institute advertised experienced faculty from IIT/IIM but assigned unrecorded substandard video lectures by freshers.,consumer_issues,educational_course_bait_and_switch_placement_guarantee
+"I enrolled in a data science course based on an assured placement warranty, but they refused to refund my course fee when no interviews were arranged.",consumer_issues,educational_course_bait_and_switch_placement_guarantee
+Traffic police issued an automated camera challan for pillion without helmet even though the pillion was wearing a full-face helmet clearly visible in the photo.,traffic_enforcement,two_wheeler_pillion_helmet_challan_dispute
+A police officer fined me 1000 rupees claiming my helmet did not have an ISI sticker even though it is a certified ISI approved helmet.,traffic_enforcement,two_wheeler_pillion_helmet_challan_dispute
+Traffic police issued a Section 129 challan against a Sikh rider wearing a turban in violation of the statutory exemption.,traffic_enforcement,two_wheeler_pillion_helmet_challan_dispute
+An e-challan was generated showing a blurry black-and-white camera image where helmet strap shadow was mistaken for non-wearing of headgear.,traffic_enforcement,two_wheeler_pillion_helmet_challan_dispute
+"I rushed an injured road accident victim to the hospital, but police and hospital staff detained me and demanded I pay admission charges.",traffic_enforcement,good_samaritan_harassment_accident_scene
+Police are harassing me and repeatedly calling me to the police station for interrogation simply because I helped an accident victim.,traffic_enforcement,good_samaritan_harassment_accident_scene
+"A hospital refused to admit an injured pedestrian unless I signed as a guarantor and deposited cash, in violation of Good Samaritan rules.",traffic_enforcement,good_samaritan_harassment_accident_scene
+Enforcement personnel threatened to seize my vehicle because I carried an injured biker to the nearest trauma centre.,traffic_enforcement,good_samaritan_harassment_accident_scene
+"I received a 5000 rupee challan under Section 184 for red light jumping, but the camera snapshot proves I crossed the stop line on amber/yellow.",traffic_enforcement,traffic_signal_camera_red_light_yellow_light_glitch
+An automated traffic camera issued a red light violation when a traffic policeman was manually directing traffic forward against the signal.,traffic_enforcement,traffic_signal_camera_red_light_yellow_light_glitch
+The camera captured a false red light jump because the signal timer malfunctioned and switched from green directly to red without yellow transition.,traffic_enforcement,traffic_signal_camera_red_light_yellow_light_glitch
+"I had to enter the intersection to give immediate passage to an emergency ambulance, but the automated system generated a heavy dangerous driving fine.",traffic_enforcement,traffic_signal_camera_red_light_yellow_light_glitch
+Traffic police or RTO flying squad seized my commercial cab claiming permit violation under Section 192A despite valid all-India tourist permit.,traffic_enforcement,commercial_auto_taxi_permit_harassment
+An enforcement officer demanded 10000 rupees bribe threatening to impound my commercial auto for operating slightly outside municipal limits.,traffic_enforcement,commercial_auto_taxi_permit_harassment
+Police seized my vehicle keys and issued a challan for 'no permit' because the renewed digital permit was not yet printed in physical copy.,traffic_enforcement,commercial_auto_taxi_permit_harassment
+RTO authorities impounded my transport vehicle arbitrarily without issuing a statutory seizure memo or specifying permit contravention.,traffic_enforcement,commercial_auto_taxi_permit_harassment
+Traffic police issued a 2000 rupee challan under Section 196 for 'no insurance' even though I renewed my policy 24 hours earlier.,traffic_enforcement,uninsured_vehicle_challan_portal_sync_delay
+An automated camera captured my car and generated a fine for expired insurance because the insurance company had not uploaded data to IIB/Vahan.,traffic_enforcement,uninsured_vehicle_challan_portal_sync_delay
+A police officer refused to accept my valid insurance policy PDF on my phone and impounded my RC alleging driving an uninsured vehicle.,traffic_enforcement,uninsured_vehicle_challan_portal_sync_delay
+I was fined for driving an uninsured vehicle despite showing the active policy schedule with valid policy number and premium receipt.,traffic_enforcement,uninsured_vehicle_challan_portal_sync_delay
+My employer refused to pay the statutory 8.33% annual bonus claiming the company did not make enough profit this year.,workplace_wage,statutory_bonus_denial_profitable_establishment
+The management withheld Diwali bonus from all factory workers even though we completed over 200 days of work in the accounting year.,workplace_wage,statutory_bonus_denial_profitable_establishment
+The company pays basic salary below 21000 but denies annual bonus to contract and permanent staff in violation of the Code on Wages.,workplace_wage,statutory_bonus_denial_profitable_establishment
+Our employer cancelled annual bonus disbursements citing business expansion expenses without any statutory exemption.,workplace_wage,statutory_bonus_denial_profitable_establishment
+My ex-employer is maliciously refusing to sign and approve my EPFO joint declaration form to correct my name and date of birth.,workplace_wage,pf_uan_mismatch_employer_refusal_to_attest_joint_declaration
+The company is blocking my PF withdrawal by refusing to approve the digital joint declaration request on the EPFO unified employer portal.,workplace_wage,pf_uan_mismatch_employer_refusal_to_attest_joint_declaration
+The establishment closed down or HR is demanding I withdraw my wage complaint before they sign my PF correction documents.,workplace_wage,pf_uan_mismatch_employer_refusal_to_attest_joint_declaration
+My provident fund transfer is rejected because employer entered the wrong father's name and now refuses to upload supporting KYC.,workplace_wage,pf_uan_mismatch_employer_refusal_to_attest_joint_declaration
+A company hired me as an 'unpaid intern' but forces me to work 50 hours a week doing core software development without any stipend.,workplace_wage,unpaid_intern_full_workload_exploitation
+"I was promised a learning internship, but they assigned me full client deliverables and threaten to withhold my certificate if I demand wages.",workplace_wage,unpaid_intern_full_workload_exploitation
+The firm uses 20 college graduates as unpaid trainees to handle regular business operations without paying statutory minimum wages.,workplace_wage,unpaid_intern_full_workload_exploitation
+"I worked 6 months as an unpaid trainee generating direct company revenue, but they fired me without certificate or compensation.",workplace_wage,unpaid_intern_full_workload_exploitation
+My employer pays my salary in lump sum cash without ever issuing a wage slip or explaining deductions.,workplace_wage,non_provision_of_statutory_payslips_records
+"The management refuses to provide written salary slips, preventing workers from seeing PF, ESI, or overtime calculations.",workplace_wage,non_provision_of_statutory_payslips_records
+The company maintains a hidden duplicate muster roll and denies employees official wage documentation.,workplace_wage,non_provision_of_statutory_payslips_records
+Our employer fires workers who ask for monthly payslips and refuses to provide proof of income required for bank loans.,workplace_wage,non_provision_of_statutory_payslips_records
+"A platform company pays remote data entry workers less than 200 rupees for 10 hours of work, below the statutory national floor wage.",workplace_wage,floor_wage_violation_remote_gig_contractors
+An outsourcing agency hires online content moderators at predatory rates that fall far below the central government floor wage.,workplace_wage,floor_wage_violation_remote_gig_contractors
+A gig platform arbitrarily slashes per-task payouts so drastically that net daily earnings violate statutory wage standards.,workplace_wage,floor_wage_violation_remote_gig_contractors
+Remote telecallers working full time are denied baseline statutory floor wages under the pretext of 'independent contractor' status.,workplace_wage,floor_wage_violation_remote_gig_contractors
+My service provider contract has a clause stating that neither party can ever approach a court of law or consumer forum for any dispute.,contractual_disputes,unreasonable_restraint_on_legal_remedies_clause
+A company agreement states that any dispute must be filed within 7 days or all legal rights are permanently extinguished.,contractual_disputes,unreasonable_restraint_on_legal_remedies_clause
+The vendor agreement contains an illegal clause barring me from exercising statutory legal remedies under Indian law.,contractual_disputes,unreasonable_restraint_on_legal_remedies_clause
+A commercial contractor claims I cannot sue them because the contract says 'parties waive all rights to initiate legal action'.,contractual_disputes,unreasonable_restraint_on_legal_remedies_clause
+A tenant took unfair advantage of an elderly landlord's illness and isolation to execute an unconscionable 20-year lease at token rent.,contractual_disputes,undue_influence_senior_citizen_property_agreement
+A caregiver coerced an ailing senior citizen into signing a gift deed or property transfer agreement under mental distress.,contractual_disputes,undue_influence_senior_citizen_property_agreement
+A business associate used a fiduciary relationship of trust to induce a vulnerable partner into signing away their entire company equity.,contractual_disputes,undue_influence_senior_citizen_property_agreement
+An agreement was executed when the signatory was admitted in the hospital ICU under heavy medication and unable to exercise free will.,contractual_disputes,undue_influence_senior_citizen_property_agreement
+A used car dealer actively concealed that the vehicle had met with a total-loss accident and had flood engine damage before selling it to me.,contractual_disputes,fraudulent_active_concealment_used_car_sale
+"The seller fraudulently rolled back the odometer by 80,000 kilometres and concealed structural chassis welding in the sale agreement.",contractual_disputes,fraudulent_active_concealment_used_car_sale
+A seller deliberately hid a major bank hypothecation and outstanding loan lien on machinery sold under a 'free from encumbrances' clause.,contractual_disputes,fraudulent_active_concealment_used_car_sale
+The vendor actively covered up termite infestation and structural wall cracks in a commercial property sale agreement using fresh plaster.,contractual_disputes,fraudulent_active_concealment_used_car_sale
+A software vendor refused to indemnify our company when a third party sued us for software copyright infringement caused by their code.,contractual_disputes,indemnity_refusal_vendor_third_party_tax_liability
+"A contractor failed to pay GST and tax authorities issued a recovery attachment on our accounts, but the vendor refuses to honour the indemnity clause.",contractual_disputes,indemnity_refusal_vendor_third_party_tax_liability
+A logistics vendor refused to compensate us for third-party cargo damages despite an express indemnity clause in the master service agreement.,contractual_disputes,indemnity_refusal_vendor_third_party_tax_liability
+A facility management vendor refused to defend us against labour penalty claims arising from their non-compliance with statutory wages.,contractual_disputes,indemnity_refusal_vendor_third_party_tax_liability
+"A mall developer accepted my 10 Lakh advance deposit and signed a commercial lease agreement, but cancelled unilaterally before handover to lease to a higher bidder.",contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
+"The commercial property owner signed an agreement to lease for our retail outlet, but refused to hand over keys and forfeited our advance.",contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
+"After we spent 5 Lakh on architectural drawings and store planning, the landlord backed out of the signed commercial lease without cause.",contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
+A commercial landlord breached the signed letter of intent and lease deed by unilaterally terminating before the agreed fit-out period.,contractual_disputes,unilateral_cancellation_of_commercial_lease_before_handover
