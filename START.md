@@ -1,9 +1,10 @@
 # How to Run the Project
 
-This project consists of three services that run concurrently:
+This project consists of four services that run concurrently:
 1. **ML Service** (Python / FastAPI) on port `8000`
-2. **API Gateway** (Node.js / Express) on port `5000`
-3. **Frontend** (React / Vite) on port `3000`
+2. **Speech Service** (Python / faster-whisper FastAPI) on port `8001`
+3. **API Gateway** (Node.js / Express) on port `5000`
+4. **Frontend** (React / Vite) on port `3000`
 
 ---
 
@@ -20,14 +21,21 @@ pip install -r requirements.txt
 cd ..
 ```
 
-### Step B: Setup API Gateway (Node.js)
+### Step B: Setup Speech Service (Python / faster-whisper)
+```bash
+# Uses the pre-created virtual environment in speech-service/.venv
+source speech-service/.venv/bin/activate
+pip install -r speech-service/requirements.txt
+```
+
+### Step C: Setup API Gateway (Node.js)
 ```bash
 cd backend
 npm install
 cd ..
 ```
 
-### Step C: Setup Frontend (React)
+### Step D: Setup Frontend (React)
 ```bash
 cd frontend
 npm install
@@ -38,7 +46,7 @@ cd ..
 
 ## 2. Start Commands
 
-Open **3 separate terminal tabs** from the project root and run:
+Open **4 separate terminal tabs** from the project root and run:
 
 ### Terminal 1: ML Service
 ```bash
@@ -48,14 +56,20 @@ uvicorn app.main:app --port 8000 --reload --reload-dir app --reload-dir ../knowl
 ```
 *Health check URL:* `http://localhost:8000/health`
 
-### Terminal 2: API Gateway
+### Terminal 2: Speech Service (Voice Input)
+```bash
+speech-service/.venv/bin/uvicorn app.main:app --app-dir speech-service --host 127.0.0.1 --port 8001 --reload
+```
+*Health check URL:* `http://localhost:8001/health`
+
+### Terminal 3: API Gateway
 ```bash
 cd backend
 npm run dev
 ```
 *Health check URL:* `http://localhost:5000/api/health`
 
-### Terminal 3: Frontend
+### Terminal 4: Frontend
 ```bash
 cd frontend
 npm run dev
@@ -69,17 +83,23 @@ npm run dev
 Open your browser and navigate to:
 👉 **[http://localhost:3000](http://localhost:3000)**
 
-Type a scenario (e.g., *"Someone called pretending to be bank staff and asked for OTP, then money was deducted"*) and click **Analyze**.
+1. **Typed input:** Type a scenario (e.g., *"Someone called pretending to be bank staff and asked for OTP, then money was deducted"*) and click **Run Legal Analysis**.
+2. **Voice input:** Click the **Voice Input (Record)** button, speak in English, Hindi, or Kannada, click **Done Recording**, review the transcribed text and detected language, and click **Run Legal Analysis**.
 
 ---
 
 ## Optional: Run Tests
 
+- **Speech Service Tests:**
+  ```bash
+  speech-service/.venv/bin/python -m unittest speech-service/tests/test_api.py
+  speech-service/.venv/bin/python -m unittest speech-service/tests/test_live.py
+  ```
 - **ML Service Tests:**
   ```bash
   cd ml-service && pytest
   ```
-- **Backend Tests:**
+- **Backend Tests (including Voice Workflow Integration):**
   ```bash
   cd backend && npm test
   ```
@@ -87,3 +107,4 @@ Type a scenario (e.g., *"Someone called pretending to be bank staff and asked fo
   ```bash
   cd frontend && npm run build
   ```
+

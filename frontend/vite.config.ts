@@ -21,6 +21,11 @@ export default defineConfig({
         target: process.env.VITE_GATEWAY_URL || "http://localhost:5000",
         changeOrigin: true,
       },
+      "/speech": {
+        target: process.env.VITE_SPEECH_URL || "http://localhost:8001",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/speech/, ""),
+      },
     },
   },
 });
