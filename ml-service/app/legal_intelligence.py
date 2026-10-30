@@ -32,6 +32,10 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
 from app.knowledge_base_loader import MAX_ACTION_STEPS, KnowledgeBase
+from app.statutory_validator import (
+    detect_historical_incident,
+    evaluate_statutory_provision,
+)
 
 # The gate (CLAUDE.md 7.5). Both must hold; neither alone is sufficient.
 ELIGIBLE_VERIFICATION_STATUS = "manually_verified"
@@ -55,26 +59,35 @@ class LegalIntelligenceResult:
     legal_provisions: List[Dict[str, Any]] = field(default_factory=list)
     action_steps: List[str] = field(default_factory=list)
     portals: List[Dict[str, Any]] = field(default_factory=list)
+    historical_law_note: Optional[str] = None
+    targeted_clarification: Optional[str] = None
 
 
 class LegalIntelligenceEngine:
-    """Deterministic KB retrieval with the citizen-facing eligibility gate."""
+    """Deterministic KB retrieval with statutory validation and eligibility gate."""
 
     def __init__(self, kb: KnowledgeBase):
         self._kb = kb
 
-    def retrieve(self, issue_id: Optional[str]) -> LegalIntelligenceResult:
+    def retrieve(
+        self,
+        issue_id: Optional[str],
+        scenario_text: Optional[str] = None,
+    ) -> LegalIntelligenceResult:
         """Retrieve eligible provisions, action steps, and portals for an issue.
 
         ``issue_id=None`` (Module 2 detected nothing) is a legitimate input
         and yields the explicit safe state.
         """
+        historical_note = detect_historical_incident(scenario_text) if scenario_text else None
+
         if issue_id is None or issue_id not in self._kb.issues:
             return LegalIntelligenceResult(
-                legal_information_status=LEGAL_INFO_NO_VERIFIED_PROVISION
+                legal_information_status=LEGAL_INFO_NO_VERIFIED_PROVISION,
+                historical_law_note=historical_note,
             )
 
-        provisions = self._eligible_provisions(issue_id)
+        provisions, targeted_q = self._eligible_provisions(issue_id, scenario_text)
         status = (
             LEGAL_INFO_PROVISIONS_AVAILABLE
             if provisions
@@ -85,6 +98,8 @@ class LegalIntelligenceEngine:
             legal_provisions=provisions,
             action_steps=self._action_steps(issue_id),
             portals=self._portals(issue_id),
+            historical_law_note=historical_note,
+            targeted_clarification=targeted_q,
         )
 
     # ------------------------------------------------------------------
@@ -101,18 +116,53 @@ class LegalIntelligenceEngine:
         status_ok = section.get("provision_status") in ELIGIBLE_PROVISION_STATUSES
         return verification_ok and status_ok
 
-    def _eligible_provisions(self, issue_id: str) -> List[Dict[str, Any]]:
+    def _eligible_provisions(
+        self,
+        issue_id: str,
+        scenario_text: Optional[str] = None,
+    ) -> Tuple[List[Dict[str, Any]], Optional[str]]:
         issue = self._kb.issues[issue_id]
+        domain_id = issue.get("domain_id", "")
         results: List[Dict[str, Any]] = []
+        targeted_clarification: Optional[str] = None
+
         for ref in issue.get("provision_references", []) or []:
             act_id, section_id = ref.get("act_id"), ref.get("section_id")
             section = self._kb.resolve_provision(act_id, section_id)
             if section is None:
-                continue  # loader guarantees this at startup; defensive anyway
-            if not self._is_citizen_facing_eligible(section):
-                # Discard. No substitution, no generation, no LLM fallback —
-                # the absence itself becomes the explicit safe state.
                 continue
+            if not self._is_citizen_facing_eligible(section):
+                continue
+
+            # Run structured statutory validation against scenario facts
+            relevance_class = ref.get("relevance_classification", "DIRECTLY_APPLICABLE")
+            elements = list(ref.get("applicable_legal_elements", []))
+            conditions = list(ref.get("applicability_conditions", []))
+            missing = list(ref.get("missing_facts", []))
+            exceptions = list(ref.get("exceptions", []))
+
+            if scenario_text:
+                val = evaluate_statutory_provision(
+                    scenario_text=scenario_text,
+                    domain_id=domain_id,
+                    issue_id=issue_id,
+                    act_id=act_id,
+                    section_id=section_id,
+                )
+                if val.is_excluded:
+                    # Filter out provisions where statutory exclusion applies
+                    # (e.g. B2B resale excluded from Consumer Protection forum,
+                    # or police diversion defense to wrong-side driving).
+                    continue
+
+                relevance_class = val.relevance_classification
+                elements = val.applicable_legal_elements or elements
+                conditions = val.applicability_conditions or conditions
+                missing = val.missing_facts or missing
+                exceptions = val.exceptions or exceptions
+                if val.clarification_question and not targeted_clarification:
+                    targeted_clarification = val.clarification_question
+
             act = self._kb.acts[act_id]
             results.append(
                 {
@@ -120,10 +170,7 @@ class LegalIntelligenceEngine:
                     "act": act.get("official_act_name") or act.get("short_name") or act_id,
                     "section": f"Section {section.get('section_number', section_id)}",
                     "title": section.get("official_section_title"),
-                    # Only the simplified explanation is citizen-facing by
-                    # default — full statutory text never appears (8.1).
                     "simplified_explanation": section.get("simplified_explanation"),
-                    # Layer B — human-curated, carried from the issue mapping.
                     "provision_relevance_rationale": ref.get(
                         "provision_relevance_rationale"
                     ),
@@ -131,9 +178,15 @@ class LegalIntelligenceEngine:
                         "name": act.get("official_source_name"),
                         "url": act.get("official_source_url"),
                     },
+                    "relevance_classification": relevance_class,
+                    "applicable_legal_elements": elements,
+                    "applicability_conditions": conditions,
+                    "missing_facts": missing,
+                    "exceptions": exceptions,
+                    "verification_status": "verified",
                 }
             )
-        return results
+        return results, targeted_clarification
 
     # ------------------------------------------------------------------
     # Practical guidance

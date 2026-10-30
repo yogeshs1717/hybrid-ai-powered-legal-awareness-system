@@ -205,5 +205,35 @@ class TestSpeechServiceTranscribe(unittest.TestCase):
             self.assertIn("not loaded", data["detail"].lower())
 
 
+
+class TestScriptNormalization(unittest.TestCase):
+    """Tests for script conversion, repetition cleaning, and Indic acronym normalization."""
+
+    def test_devanagari_to_kannada_conversion(self):
+        from app.transcriber import devanagari_to_kannada
+        dev_sample = "नन्ना खातिंदा हना कदितगून्दिदे"
+        kn_result = devanagari_to_kannada(dev_sample)
+        # Should convert to Kannada script (U+0C80 to U+0CFF)
+        self.assertTrue(any(0x0C80 <= ord(ch) <= 0x0CFF for ch in kn_result))
+        self.assertFalse(any(0x0900 <= ord(ch) <= 0x097F for ch in kn_result))
+
+    def test_clean_repetitions(self):
+        from app.transcriber import clean_repetitions
+        stutter = "ಸಾರಿಲಿಲಿಲಿಲಿಲಿಲಿಲಿಲಿಲಿಲಿ"
+        cleaned = clean_repetitions(stutter)
+        self.assertLess(len(cleaned), len(stutter))
+        self.assertIn("ಸಾರಿಲಿ", cleaned)
+
+    def test_normalize_acronyms(self):
+        from app.transcriber import normalize_acronyms
+        hi_text = "मेरे खाते से बिना किसी ओटीपी के पैसे कट गए"
+        hi_norm = normalize_acronyms(hi_text, "hi")
+        self.assertIn("ओटीपी (OTP)", hi_norm)
+
+        kn_text = "ನನ್ನ ಖಾತೆಯಿಂದ ಯಾವುದೇ ಒಟಿಪಿ ಇಲ್ಲದೆ ಹಣ ಕಡಿತಗೊಂಡಿದೆ"
+        kn_norm = normalize_acronyms(kn_text, "kn")
+        self.assertIn("ಒಟಿಪಿ (OTP)", kn_norm)
+
+
 if __name__ == "__main__":
     unittest.main()

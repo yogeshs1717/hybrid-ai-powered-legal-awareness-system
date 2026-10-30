@@ -35,6 +35,7 @@ export class AnalyzeError extends Error {
 export async function analyzeScenario(
   scenario: string,
   signal?: AbortSignal,
+  language?: string,
 ): Promise<AnalyzeResponse> {
   const timeoutMs = 15000;
   const controller = new AbortController();
@@ -46,12 +47,16 @@ export async function analyzeScenario(
 
   let res: Response;
   try {
+    const payload: { scenario: string; language?: string } = { scenario };
+    if (language) payload.language = language;
+
     res = await fetch(`${BASE}/analyze`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ scenario }),
+      body: JSON.stringify(payload),
       signal: controller.signal,
     });
+
   } catch (e) {
     if ((e as Error).name === "AbortError") {
       if (signal?.aborted) throw e;

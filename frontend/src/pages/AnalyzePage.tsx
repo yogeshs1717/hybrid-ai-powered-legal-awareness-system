@@ -79,13 +79,14 @@ export function AnalyzePage() {
 
             <div className="mx-auto max-w-2xl">
               <ScenarioInput
-                onSubmit={(s) => {
+                onSubmit={(s, lang) => {
                   setSubmittedScenario(s);
-                  analyze.mutate(s);
+                  analyze.mutate({ scenario: s, language: lang });
                 }}
                 loading={isPending}
                 initialValue={initialScenario || ""}
               />
+
             </div>
           </motion.section>
         )}
@@ -141,7 +142,15 @@ export function AnalyzePage() {
                 <span>ANALYZE NEW SITUATION</span>
               </button>
             </div>
-            <ResultView data={data} scenario={submittedScenario} />
+            <ResultView
+              data={data}
+              scenario={submittedScenario}
+              onReset={handleReset}
+              onSelectExample={(exampleScenario) => {
+                setSubmittedScenario(exampleScenario);
+                analyze.mutate(exampleScenario);
+              }}
+            />
           </motion.section>
         )}
       </AnimatePresence>

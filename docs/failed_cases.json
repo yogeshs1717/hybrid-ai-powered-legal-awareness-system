@@ -1,0 +1,5169 @@
+{
+  "metadata": {
+    "total_failed_or_partial_cases": 94,
+    "failure_distribution": {
+      "A": {
+        "count": 1,
+        "name": "Domain classification failure"
+      },
+      "B": {
+        "count": 29,
+        "name": "Issue detection failure"
+      },
+      "C": {
+        "count": 56,
+        "name": "Missing knowledge-base data"
+      },
+      "D": {
+        "count": 39,
+        "name": "Incorrect legal provision mapping"
+      },
+      "E": {
+        "count": 11,
+        "name": "Legal applicability failure"
+      },
+      "F": {
+        "count": 0,
+        "name": "Incorrect official reference"
+      },
+      "G": {
+        "count": 1,
+        "name": "Incorrect action steps"
+      },
+      "H": {
+        "count": 22,
+        "name": "Incorrect uncertainty handling"
+      },
+      "I": {
+        "count": 5,
+        "name": "Historical-law failure"
+      },
+      "J": {
+        "count": 0,
+        "name": "Backend or response-format failure"
+      }
+    }
+  },
+  "failed_cases": [
+    {
+      "test_id": "CF06",
+      "domain": "cyber_fraud",
+      "category": "straightforward",
+      "scenario": "A fraudster posed as a CBI officer on Skype video call showing fake police badges, placed me under digital arrest in a money laundering case, and coerced me into transferring Rs 5 lakhs to a government verification account.",
+      "overall_score": 71.61,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 85.7,
+        "section_accuracy": 25.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['digital_arrest_extortion'], predicted 'sextortion_fraud' (score: 0.32077309030590906)"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['66d', '318', '319', '351'], retrieved ['66e', '67', '308', '351']"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "sextortion_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66E"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 67"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 308"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 351"
+        }
+      ],
+      "expected_issues": [
+        "digital_arrest_extortion"
+      ],
+      "expected_sections": [
+        "66d",
+        "318",
+        "319",
+        "351"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF08",
+      "domain": "cyber_fraud",
+      "category": "moderately_complex",
+      "scenario": "I was added to a Telegram investment group where a self-proclaimed stock trading expert promised 20% weekly returns. I deposited Rs 2 lakhs on their online portal, but when I attempted to withdraw, they demanded a 30% tax deposit and froze my dashboard.",
+      "overall_score": 83.95,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 100.0,
+        "section_accuracy": 76.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['fake_stock_ipo_allotment_scam', 'fake_crypto_arbitrage_telegram_ponzi'], predicted 'other_online_financial_fraud' (score: 0.22763708656986975)"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "other_online_financial_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Banning of Unregulated Deposit Schemes Act, 2019",
+          "section": "Section 3"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [
+        "fake_stock_ipo_allotment_scam",
+        "fake_crypto_arbitrage_telegram_ponzi"
+      ],
+      "expected_sections": [
+        "3",
+        "4",
+        "21",
+        "66d",
+        "318"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF11",
+      "domain": "cyber_fraud",
+      "category": "moderately_complex",
+      "scenario": "An ex-acquaintance has been sending obsessive, vulgar, and threatening messages from multiple fake social media handles every day despite clear blocks and refusal to engage.",
+      "overall_score": 70.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['66e', '67', '78', '79'], retrieved ['66d', '66c', '318', '319']"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "online_impersonation",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66C"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 319"
+        }
+      ],
+      "expected_issues": [
+        "spyware_stalkerware_device_monitoring",
+        "online_impersonation"
+      ],
+      "expected_sections": [
+        "66e",
+        "67",
+        "78",
+        "79"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CF13",
+      "domain": "cyber_fraud",
+      "category": "complex",
+      "scenario": "I voluntarily transferred Rs 15,000 via UPI to an online electronics seller on Instagram for a tablet, but after receiving money the seller failed to deliver the tablet and refuses a refund.",
+      "overall_score": 76.33,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['ecommerce_fake_seller_fraud', 'refund_denial'], predicted 'otp_fraud' (score: 0.15498237388358524)"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "otp_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66C"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [
+        "ecommerce_fake_seller_fraud",
+        "refund_denial"
+      ],
+      "expected_sections": [
+        "66d",
+        "2(11)",
+        "318"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CF14",
+      "domain": "cyber_fraud",
+      "category": "complex",
+      "scenario": "I made a UPI payment of Rs 10,000 to my landlord. My account was debited, but the landlord never received the funds. The bank transaction shows pending for 10 days and bank customer care refuses reversal.",
+      "overall_score": 68.42,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 43.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['rbi_zero_liability_unauthorized_transaction', 'other_online_financial_fraud'], predicted 'remote_access_app_fraud' (score: 0.1816857100976312)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Information Technology Act, 2000', 'Consumer Protection Act, 2019'], retrieved ['Information Technology Act, 2000', 'Information Technology Act, 2000', 'Bharatiya Nyaya Sanhita, 2023']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['43a', '2(11)'], retrieved ['43', '66d', '318']"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "remote_access_app_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 43"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [
+        "rbi_zero_liability_unauthorized_transaction",
+        "other_online_financial_fraud"
+      ],
+      "expected_sections": [
+        "43a",
+        "2(11)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF19",
+      "domain": "cyber_fraud",
+      "category": "ambiguous",
+      "scenario": "My phone made a notification sound and I think some money might have disappeared from my account but I haven't checked my passbook or mobile app yet.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "loan_app_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 43"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66E"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 351"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF20",
+      "domain": "cyber_fraud",
+      "category": "ambiguous",
+      "scenario": "Someone forwarded a WhatsApp message saying click this link to win a prize but I just deleted the message immediately without opening it.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "kbc_lottery_whatsapp_prize_scam",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Banning of Unregulated Deposit Schemes Act, 2019",
+          "section": "Section 3"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF23",
+      "domain": "cyber_fraud",
+      "category": "incomplete",
+      "scenario": "Money debited 5000 suddenly from account",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "rbi_zero_liability_unauthorized_transaction",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 43A"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        },
+        {
+          "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 173"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF24",
+      "domain": "cyber_fraud",
+      "category": "incomplete",
+      "scenario": "Someone called me on phone yesterday asking for details.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "google_maps_fake_helpline_scam",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 43"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF25",
+      "domain": "cyber_fraud",
+      "category": "incomplete",
+      "scenario": "I received an SMS with an OTP code.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "otp_fraud",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66C"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF26",
+      "domain": "cyber_fraud",
+      "category": "incomplete",
+      "scenario": "My debit card was blocked by the bank.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "card_cloning_skimming",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66C"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF28",
+      "domain": "cyber_fraud",
+      "category": "misleading_adversarial",
+      "scenario": "An online scammer hacked my account so traffic police must suspend his driving licence and confiscate his motorcycle immediately.",
+      "overall_score": 69.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in [], predicted 'electricity_bill_sms_apk_scam' (score: 0.13616230972664203)"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "electricity_bill_sms_apk_scam",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 43"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF29",
+      "domain": "cyber_fraud",
+      "category": "historical",
+      "scenario": "In January 2022, an unauthorized debit of Rs 50,000 occurred from my bank account through a phishing website mimicking SBI net banking.",
+      "overall_score": 89.83,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 86.7,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Information Technology Act, 2000'], retrieved ['Information Technology Act, 2000', 'Information Technology Act, 2000', 'Bharatiya Nyaya Sanhita, 2023']"
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "phishing",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66C"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 318"
+        }
+      ],
+      "expected_issues": [
+        "phishing",
+        "otp_fraud"
+      ],
+      "expected_sections": [
+        "66c",
+        "66d"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CF30",
+      "domain": "cyber_fraud",
+      "category": "historical",
+      "scenario": "In October 2021, someone created a fake WhatsApp profile impersonating my business partner and extorted Rs 1 lakh via UPI transfer.",
+      "overall_score": 73.75,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 50.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['online_impersonation', 'other_online_financial_fraud'], predicted 'kbc_lottery_whatsapp_prize_scam' (score: 0.177329402283986)"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['66c', '66d'], retrieved ['66d', '3']"
+        },
+        {
+          "code": "I",
+          "category": "Historical-law failure",
+          "detail": "Pre-July 2024 vs Post-July 2024 nuance: Offence date precedes BNS commencement (01-07-2024)."
+        }
+      ],
+      "predicted_domain": "cyber_fraud",
+      "predicted_issue": "kbc_lottery_whatsapp_prize_scam",
+      "retrieved_provisions": [
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 66D"
+        },
+        {
+          "act": "Banning of Unregulated Deposit Schemes Act, 2019",
+          "section": "Section 3"
+        }
+      ],
+      "expected_issues": [
+        "online_impersonation",
+        "other_online_financial_fraud"
+      ],
+      "expected_sections": [
+        "66c",
+        "66d"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI01",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "I bought a brand new Dell laptop for Rs 65,000 from an authorized electronics dealer, but it repeatedly turns off and restarts automatically during regular use. The dealer and service center refuse replacement or repair.",
+      "overall_score": 89.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 90.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "defective_product",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(10)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        }
+      ],
+      "expected_issues": [
+        "defective_product",
+        "warranty_guarantee_denial"
+      ],
+      "expected_sections": [
+        "2(10)",
+        "2(11)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI02",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "I returned a damaged television to an e-commerce platform within the 7-day return window. The seller picked up the item 3 weeks ago but refuses to process the refund of Rs 28,000 to my bank account.",
+      "overall_score": 92.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 100.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "refund_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "refund_denial"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI03",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "A dietary supplement company advertised that taking their capsule guarantees 10 kg weight loss in 30 days without diet or exercise, which scientific tests proved was completely fabricated and false.",
+      "overall_score": 79.33,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 56.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['2(28)', '2(47)', '21', '89'], retrieved ['2(28)', '89', '35']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "misleading_advertisement",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(28)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 89"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "misleading_advertisement",
+        "unfair_trade_practice"
+      ],
+      "expected_sections": [
+        "2(28)",
+        "2(47)",
+        "21",
+        "89"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CI04",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "My refrigerator stopped cooling 6 months after purchase. The manufacturer warranty is for 1 year, but the service company refuses free repair claiming parts are not covered without any basis in the warranty card.",
+      "overall_score": 75.42,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 33.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['2(11)', '2(47)', '35'], retrieved ['84', '86', '35']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "warranty_guarantee_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 86"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "warranty_guarantee_denial",
+        "service_deficiency"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI05",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "I ordered furniture worth Rs 35,000 on an online shopping portal with guaranteed delivery within 5 days. It has been 45 days and the platform continuously reschedules delivery and denies cancellation and refund.",
+      "overall_score": 92.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 100.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "refund_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "service_deficiency",
+        "refund_denial"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI06",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "scenario": "A broadband internet provider advertised a flat plan of Rs 499 per month, but billed me Rs 899 by adding unnotified router maintenance charges, network access fees, and convenience taxes not mentioned during booking.",
+      "overall_score": 83.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['dark_patterns_hidden_charges', 'unfair_trade_practice'], predicted 'service_deficiency' (score: 0.3763386963431673)"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "service_deficiency",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "dark_patterns_hidden_charges",
+        "unfair_trade_practice"
+      ],
+      "expected_sections": [
+        "2(47)",
+        "2(11)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI08",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "scenario": "My health insurance claim of Rs 2.5 lakhs for emergency gall bladder surgery was repudiated by the insurance company claiming non-disclosure of hypertension, even though the hypertension was diagnosed only 2 months ago and had no relation to gall bladder.",
+      "overall_score": 74.58,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['health_insurance_claim_arbitrary_rejection', 'insurance_claim_arbitrary_rejection'], predicted 'insurance_claim_rejection_dispute' (score: 0.6116041486327621)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "insurance_claim_rejection_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(42)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "health_insurance_claim_arbitrary_rejection",
+        "insurance_claim_arbitrary_rejection"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "35",
+        "69"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI09",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "scenario": "My bank deducted multiple non-maintenance charges and SMS alert fees totaling Rs 4,200 from my savings account despite my average monthly balance being above the prescribed minimum, and customer service closed my ticket without refund.",
+      "overall_score": 83.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['service_deficiency', 'unfair_trade_practice'], predicted 'holiday_timeshare_membership_scam' (score: 0.11942282234919999)"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "holiday_timeshare_membership_scam",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "service_deficiency",
+        "unfair_trade_practice"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI10",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "scenario": "A telecom service provider activated caller tune and gaming VAS packs on my postpaid mobile number without my consent, billing me Rs 200 every month for 6 months and threatening disconnection when I disputed the bill.",
+      "overall_score": 91.75,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 100.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "telecom_vas_billing_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "telecom_vas_billing_dispute",
+        "service_deficiency"
+      ],
+      "expected_sections": [
+        "2(11)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CI11",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "scenario": "An electric water heater geyser bought from a reputed brand burst due to a defective thermostat valve, causing severe scalding burns to my hand and flooding the bathroom.",
+      "overall_score": 82.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 85.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['defective_product', 'service_deficiency'], predicted 'substandard_unmarked_electronics_bis' (score: 0.34769670315399875)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "substandard_unmarked_electronics_bis",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 85"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(10)"
+        }
+      ],
+      "expected_issues": [
+        "defective_product",
+        "service_deficiency"
+      ],
+      "expected_sections": [
+        "84",
+        "85",
+        "86",
+        "2(10)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI12",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "scenario": "I ordered branded sports running shoes on an e-commerce marketplace for Rs 4,000, but the seller delivered cheap counterfeit fake shoes made of substandard rubber with a duplicate logo.",
+      "overall_score": 71.75,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['expired_spurious_goods', 'unfair_trade_practice'], predicted 'spurious_cosmetics_counterfeit_perfumes' (score: 0.18883723364638583)"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['2(47)', '90', '35'], retrieved ['90', '84']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "spurious_cosmetics_counterfeit_perfumes",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 90"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        }
+      ],
+      "expected_issues": [
+        "expired_spurious_goods",
+        "unfair_trade_practice"
+      ],
+      "expected_sections": [
+        "2(47)",
+        "90",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI13",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "scenario": "An e-commerce clothing retailer advertised a 70% flat discount on jackets, but at final checkout added a mandatory Rs 200 platform fee, Rs 150 packing fee, and increased the base price before checkout.",
+      "overall_score": 69.92,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 43.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['dark_patterns_drip_pricing_sneaked_charges', 'unfair_trade_practice'], predicted 'misleading_advertisement' (score: 0.30566740164179795)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['2(47)', '35'], retrieved ['2(28)', '89', '35']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "misleading_advertisement",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(28)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 89"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "dark_patterns_drip_pricing_sneaked_charges",
+        "unfair_trade_practice"
+      ],
+      "expected_sections": [
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI15",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "scenario": "I enrolled my son in a coaching institute for JEE entrance preparation and paid Rs 1,80,000 upfront for a 2-year batch. After 3 weeks he fell sick and discontinued, but the coaching institute refused any pro-rata refund citing a non-refundable clause in the form.",
+      "overall_score": 74.58,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['coaching_institute_dropout_fee_refund_denial', 'coaching_institute_refund_dispute'], predicted 'unfair_contract_terms_consumer' (score: 0.3363764281427904)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "unfair_contract_terms_consumer",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(46)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 39"
+        }
+      ],
+      "expected_issues": [
+        "coaching_institute_dropout_fee_refund_denial",
+        "coaching_institute_refund_dispute"
+      ],
+      "expected_sections": [
+        "2(46)",
+        "2(47)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI17",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "scenario": "A food delivery app delivered biryani that was foul-smelling and infested with insects. Consuming two spoonfuls resulted in severe food poisoning, hospitalization, and Rs 15,000 medical expenses.",
+      "overall_score": 83.62,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 57.1,
+        "section_accuracy": 69.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Food Safety and Standards Act, 2006', 'Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Food Safety and Standards Act, 2006', 'Food Safety and Standards Act, 2006', 'Food Safety and Standards Act, 2006']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "food_delivery_adulterated_contaminated_meal",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 90"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 86"
+        },
+        {
+          "act": "Food Safety and Standards Act, 2006",
+          "section": "Section 26"
+        },
+        {
+          "act": "Food Safety and Standards Act, 2006",
+          "section": "Section 59"
+        },
+        {
+          "act": "Food Safety and Standards Act, 2006",
+          "section": "Section 65"
+        }
+      ],
+      "expected_issues": [
+        "food_delivery_adulterated_contaminated_meal",
+        "defective_product"
+      ],
+      "expected_sections": [
+        "26",
+        "59",
+        "65",
+        "84"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI18",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "scenario": "A real estate builder agreed in writing to deliver possession of my apartment by December 2022. It is now late 2024, construction is stalled at 60%, and the builder refuses to pay monthly delay compensation or refund my Rs 45 lakhs principal.",
+      "overall_score": 91.97,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 57.1,
+        "section_accuracy": 92.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Real Estate (Regulation and Development) Act, 2016', 'Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Real Estate (Regulation and Development) Act, 2016', 'Real Estate (Regulation and Development) Act, 2016']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "builder_delay_possession_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(42)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        },
+        {
+          "act": "Real Estate (Regulation and Development) Act, 2016",
+          "section": "Section 18"
+        },
+        {
+          "act": "Real Estate (Regulation and Development) Act, 2016",
+          "section": "Section 31"
+        }
+      ],
+      "expected_issues": [
+        "builder_delay_possession_dispute"
+      ],
+      "expected_sections": [
+        "18",
+        "31",
+        "2(11)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI24",
+      "domain": "consumer_issues",
+      "category": "incomplete",
+      "scenario": "I want a refund for something I purchased online.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "defective_product",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(10)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI27",
+      "domain": "consumer_issues",
+      "category": "misleading_adversarial",
+      "scenario": "My microwave oven stopped heating soup so the shopkeeper committed criminal breach of trust, grand theft, and fraud and must be arrested immediately.",
+      "overall_score": 87.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "defective_product",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(10)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        }
+      ],
+      "expected_issues": [
+        "defective_product"
+      ],
+      "expected_sections": [
+        "2(10)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CI29",
+      "domain": "consumer_issues",
+      "category": "historical",
+      "scenario": "In March 2018, a car dealer sold me a defective vehicle and refused repair under warranty, governed by the Consumer Protection Act 1986.",
+      "overall_score": 86.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "defective_product",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(10)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 84"
+        }
+      ],
+      "expected_issues": [
+        "defective_product",
+        "automobile_manufacturing_defect_lemon_vehicle"
+      ],
+      "expected_sections": [
+        "2(10)",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CI30",
+      "domain": "consumer_issues",
+      "category": "historical",
+      "scenario": "In 2016 before RERA became operational, a builder took 50% advance for an unapproved apartment project in Mumbai and failed to deliver.",
+      "overall_score": 62.67,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 33.3,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['builder_delay_possession_dispute'], predicted 'refund_denial' (score: 0.18611650573481325)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Real Estate (Regulation and Development) Act, 2016', 'Consumer Protection Act, 2019'], retrieved ['Consumer Protection Act, 2019', 'Consumer Protection Act, 2019', 'Consumer Protection Act, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['18', '31', '35'], retrieved ['2(11)', '2(47)', '35']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        },
+        {
+          "code": "I",
+          "category": "Historical-law failure",
+          "detail": "Pre-July 2024 vs Post-July 2024 nuance: RERA enacted 2016, commenced fully May 2017."
+        }
+      ],
+      "predicted_domain": "consumer_issues",
+      "predicted_issue": "refund_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(11)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 2(47)"
+        },
+        {
+          "act": "Consumer Protection Act, 2019",
+          "section": "Section 35"
+        }
+      ],
+      "expected_issues": [
+        "builder_delay_possession_dispute"
+      ],
+      "expected_sections": [
+        "18",
+        "31",
+        "35"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE01",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "A driver travels on the opposite carriageway because traffic police officers in uniform waved all vehicles into that lane due to road construction, but an automated camera issued a Rs 5,000 challan for wrong-side driving.",
+      "overall_score": 81.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 50.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['119', '177a'], retrieved ['119', '184']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrong_side_police_diversion_defense",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 119"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 184"
+        }
+      ],
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "wrongful_challan"
+      ],
+      "expected_sections": [
+        "119",
+        "177a"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE02",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "I received an e-challan for speeding at 95 km/h on an expressway in Delhi, but on that date and time my car was parked in my residential garage in Bangalore with GPS logs and building CCTV proof.",
+      "overall_score": 71.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['112', '183'], retrieved ['200', '208']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrongful_challan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 200"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "wrongful_challan",
+        "fake_traffic_challan_wrong_vehicle_city"
+      ],
+      "expected_sections": [
+        "112",
+        "183"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE03",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "I received a traffic challan notification with a photo showing a two-wheeler scooter jumping a red light, but the challan was wrongly mapped to my four-wheeler Honda car registration number.",
+      "overall_score": 71.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['184', '177'], retrieved ['200', '208']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrongful_challan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 200"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "fake_traffic_challan_wrong_vehicle_city",
+        "wrongful_challan"
+      ],
+      "expected_sections": [
+        "184",
+        "177"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE04",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "A traffic constable stopped my motorcycle and fined me Rs 1,000 for driving without wearing a protective headgear helmet, and also suspended my driving licence for 3 months.",
+      "overall_score": 77.45,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 56.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['129', '194d', '206'], retrieved ['129', '194d', '138', '194b', '208']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "seatbelt_helmet_camera_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 129"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194D"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 138"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194B"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "two_wheeler_pillion_helmet_challan_dispute",
+        "seatbelt_helmet_camera_dispute"
+      ],
+      "expected_sections": [
+        "129",
+        "194d",
+        "206"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE05",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "A traffic officer issued a challan of Rs 1,000 stating that I was not wearing a seatbelt while driving my car on the main road.",
+      "overall_score": 79.85,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 68.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "seatbelt_helmet_camera_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 129"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194D"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 138"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194B"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "seatbelt_helmet_camera_dispute",
+        "wrongful_challan"
+      ],
+      "expected_sections": [
+        "194b"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE06",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "scenario": "A person was stopped by traffic police while driving a motor vehicle without having ever applied for or holding a valid driving licence.",
+      "overall_score": 89.83,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 86.7,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "driving_without_licence_challan_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 3"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 181"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 200"
+        }
+      ],
+      "expected_issues": [
+        "driving_without_licence_challan_dispute",
+        "document_acceptance_or_verification"
+      ],
+      "expected_sections": [
+        "3",
+        "181"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE09",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "scenario": "A driver entered an intersection on a red traffic signal because an on-duty traffic police constable physically motioned and signaled vehicles to clear the junction for an approaching VIP convoy, but an automated signal camera issued a challan for jumping red light.",
+      "overall_score": 76.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 100.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['119', '184'], retrieved ['208']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "traffic_signal_camera_red_light_yellow_light_glitch",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "traffic_signal_camera_red_light_yellow_light_glitch"
+      ],
+      "expected_sections": [
+        "119",
+        "184"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE10",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "scenario": "A police sub-inspector seized and impounded my motorcycle during a regular routine helmet checking drive, even though I produced my driving licence, RC, insurance, and PUC on the spot.",
+      "overall_score": 62.6,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 38.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['vehicle_detention', 'document_seizure_or_retention'], predicted 'seatbelt_helmet_camera_dispute' (score: 0.30992855966989635)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['207', '129'], retrieved ['129', '194d', '138', '194b', '208']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "seatbelt_helmet_camera_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 129"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194D"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 138"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194B"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "vehicle_detention",
+        "document_seizure_or_retention"
+      ],
+      "expected_sections": [
+        "207",
+        "129"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE11",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "scenario": "A driver collided with a pedestrian crossing the road causing leg fractures and hospital admission. Police registered a criminal FIR for rash driving.",
+      "overall_score": 55.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['mact_accident_compensation_claim'], predicted 'zebra_crossing_pedestrian_stop_line_dispute' (score: 0.16603573301996155)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988', 'Bharatiya Nyaya Sanhita, 2023', 'Bharatiya Nagarik Suraksha Sanhita, 2023'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['134', '166', '281', '125'], retrieved ['177', '208', '177a']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "zebra_crossing_pedestrian_stop_line_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 177"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 177A"
+        }
+      ],
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "expected_sections": [
+        "134",
+        "166",
+        "281",
+        "125"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE12",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "scenario": "A speeding truck hit a motorcycle causing fatal injuries to the rider. The truck driver remained at the scene and helped transport the victim to the hospital.",
+      "overall_score": 71.08,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 56.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['mact_accident_compensation_claim'], predicted 'hit_and_run_solatium_fund_claim' (score: 0.1962366766022054)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['134', '166', '281', '106'], retrieved ['161', '134', '166']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "hit_and_run_solatium_fund_claim",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 161"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 134"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 166"
+        }
+      ],
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "expected_sections": [
+        "134",
+        "166",
+        "281",
+        "106"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE13",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "scenario": "A city road was dug up for flyover construction with concrete barricades blocking the left lane, but no signboards or diversion warnings were installed. A driver entered the right lane and collided with oncoming traffic, and was booked for rash driving.",
+      "overall_score": 76.75,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['116', '119', '281'], retrieved ['119', '184']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrong_side_police_diversion_defense",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 119"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 184"
+        }
+      ],
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "conflicting_speed_limit_signboard_camera"
+      ],
+      "expected_sections": [
+        "116",
+        "119",
+        "281"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE14",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "scenario": "I received an electronic challan for red light jumping with an automated photograph showing that my vehicle's rear wheels were touching the pedestrian zebra line while the signal timer was still displaying green.",
+      "overall_score": 71.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['119', '177a'], retrieved ['184', '208']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "traffic_signal_camera_red_light_yellow_light_glitch",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 184"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [
+        "traffic_signal_camera_red_light_yellow_light_glitch",
+        "zebra_crossing_pedestrian_stop_line_dispute"
+      ],
+      "expected_sections": [
+        "119",
+        "177a"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE15",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "scenario": "A pedestrian was knocked down on a dark highway by an unknown speeding vehicle that fled the scene into the night without stopping, causing severe permanent disability.",
+      "overall_score": 80.58,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "hit_and_run_solatium_fund_claim",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 161"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 134"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 166"
+        }
+      ],
+      "expected_issues": [
+        "hit_and_run_solatium_fund_claim"
+      ],
+      "expected_sections": [
+        "161",
+        "134",
+        "106"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE17",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "scenario": "A traffic police sub-inspector refused to accept my original valid driving licence and vehicle RC displayed on the official DigiLocker and mParivahan smartphone applications, and fined me Rs 5,000 for failing to produce physical documents.",
+      "overall_score": 89.83,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 86.7,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "digital_documents_refusal_digilocker_mparivahan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 139_cmvr"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 130"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 206"
+        }
+      ],
+      "expected_issues": [
+        "digital_documents_refusal_digilocker_mparivahan",
+        "document_acceptance_or_verification"
+      ],
+      "expected_sections": [
+        "130",
+        "139(cmvr)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE19",
+      "domain": "traffic_enforcement",
+      "category": "ambiguous",
+      "scenario": "I saw a traffic police car parked near the flyover with its yellow beacon flashing while I was driving home.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrongful_challan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 200"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE21",
+      "domain": "traffic_enforcement",
+      "category": "ambiguous",
+      "scenario": "I think the speed limit on this highway might be 60 or maybe 80, I am not sure.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "conflicting_speed_limit_signboard_camera",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 112"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 116"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 119"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE23",
+      "domain": "traffic_enforcement",
+      "category": "incomplete",
+      "scenario": "Got a traffic fine on my phone.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "emergency_vehicle_passage_red_light_challan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 119"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 184"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 194E"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE24",
+      "domain": "traffic_enforcement",
+      "category": "incomplete",
+      "scenario": "Police stopped my vehicle.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "interstate_vehicle_entry_harassment",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 47"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 130"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE25",
+      "domain": "traffic_enforcement",
+      "category": "incomplete",
+      "scenario": "Challan 1000 rupees.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "wrongful_challan",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 200"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 208"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE26",
+      "domain": "traffic_enforcement",
+      "category": "incomplete",
+      "scenario": "Driving car on road.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "interstate_vehicle_entry_harassment",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 47"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 130"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE27",
+      "domain": "traffic_enforcement",
+      "category": "misleading_adversarial",
+      "scenario": "A traffic police officer fined me for overspeeding when I was driving at 110 km/h in a 50 km/h city zone, so I want to file an FIR against the police officer for robbery and extortion.",
+      "overall_score": 61.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['wrongful_challan'], predicted 'puc_verification_dispute' (score: 0.21252120559565119)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Information Technology Act, 2000']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['112', '183'], retrieved ['190(2)', '130', '4']"
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "puc_verification_dispute",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 190(2)"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 130"
+        },
+        {
+          "act": "Information Technology Act, 2000",
+          "section": "Section 4"
+        }
+      ],
+      "expected_issues": [
+        "wrongful_challan"
+      ],
+      "expected_sections": [
+        "112",
+        "183"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE28",
+      "domain": "traffic_enforcement",
+      "category": "misleading_adversarial",
+      "scenario": "I had 5 beers and drove on the wrong side of the highway and police arrested me, how do I sue the police for consumer service deficiency?",
+      "overall_score": 13.0,
+      "dimension_scores": {
+        "domain_accuracy": 0.0,
+        "issue_accuracy": 0.0,
+        "act_accuracy": 0.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 0.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 0.0,
+        "portal_accuracy": 0.0,
+        "uncertainty_handling": 60.0
+      },
+      "failures": [
+        {
+          "code": "A",
+          "category": "Domain classification failure",
+          "detail": "Expected domain 'traffic_enforcement', predicted 'unknown'"
+        },
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['drunk_driving_breathalyzer_dispute', 'vehicle_detention'], predicted 'None' (score: None)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved []"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['185', '207'], retrieved []"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        },
+        {
+          "code": "G",
+          "category": "Incorrect action steps",
+          "detail": "Action steps missing or inadequate"
+        }
+      ],
+      "predicted_domain": "unknown",
+      "predicted_issue": null,
+      "retrieved_provisions": [],
+      "expected_issues": [
+        "drunk_driving_breathalyzer_dispute",
+        "vehicle_detention"
+      ],
+      "expected_sections": [
+        "185",
+        "207"
+      ],
+      "is_valid_scenario": false,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "TE29",
+      "domain": "traffic_enforcement",
+      "category": "historical",
+      "scenario": "In April 2023, a speeding car jumped a red light and crashed into my motorcycle injuring my leg, registered under Section 279 and 337 of the Indian Penal Code.",
+      "overall_score": 69.92,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 43.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['mact_accident_compensation_claim'], predicted 'hit_and_run_solatium_fund_claim' (score: 0.2100475345511844)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['166', '184'], retrieved ['161', '134', '166']"
+        },
+        {
+          "code": "I",
+          "category": "Historical-law failure",
+          "detail": "Pre-July 2024 vs Post-July 2024 nuance: Offence date in 2023 precedes BNS commencement (01-07-2024)."
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "hit_and_run_solatium_fund_claim",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 161"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 134"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 166"
+        }
+      ],
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "expected_sections": [
+        "166",
+        "184"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "TE30",
+      "domain": "traffic_enforcement",
+      "category": "historical",
+      "scenario": "In November 2022, an unidentifiable car struck a pedestrian on a national highway and fled without stopping resulting in death, investigated under IPC Section 304A.",
+      "overall_score": 61.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['hit_and_run_solatium_fund_claim'], predicted 'conflicting_speed_limit_signboard_camera' (score: 0.1732437769460089)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Motor Vehicles Act, 1988'], retrieved ['Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988', 'Motor Vehicles Act, 1988']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['161', '134'], retrieved ['112', '116', '119']"
+        },
+        {
+          "code": "I",
+          "category": "Historical-law failure",
+          "detail": "Pre-July 2024 vs Post-July 2024 nuance: Substantive offence governed by IPC 304A (repealed by BNS 106 on 01-07-2024)."
+        }
+      ],
+      "predicted_domain": "traffic_enforcement",
+      "predicted_issue": "conflicting_speed_limit_signboard_camera",
+      "retrieved_provisions": [
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 112"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 116"
+        },
+        {
+          "act": "Motor Vehicles Act, 1988",
+          "section": "Section 119"
+        }
+      ],
+      "expected_issues": [
+        "hit_and_run_solatium_fund_claim"
+      ],
+      "expected_sections": [
+        "161",
+        "134"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW01",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "scenario": "My employer has failed to pay my earned monthly salary of Rs 45,000 for the last two consecutive months despite continuous regular work and written reminders.",
+      "overall_score": 79.95,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 56.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Code on Wages, 2019', 'Payment of Wages Act, 1936', 'Limitation Act, 1963'], retrieved ['Payment of Wages Act, 1936', 'Payment of Wages Act, 1936', 'Minimum Wages Act, 1948', 'Minimum Wages Act, 1948', 'Limitation Act, 1963']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['17', '5', 'art(7)'], retrieved ['5', '15', '12', '20', 'art(7)']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "unpaid_wages",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 5"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 20"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_7"
+        }
+      ],
+      "expected_issues": [
+        "unpaid_wages",
+        "delayed_wages"
+      ],
+      "expected_sections": [
+        "17",
+        "5",
+        "art(7)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW02",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "scenario": "A security agency employs guards for 8 hours daily at Rs 7,000 per month, which is far below the notified state minimum wage rate of Rs 14,500 per month for security staff.",
+      "overall_score": 80.58,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Minimum Wages Act, 1948', 'Code on Wages, 2019'], retrieved ['Minimum Wages Act, 1948', 'Minimum Wages Act, 1948', 'Minimum Wages Act, 1948']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "minimum_wage_violation",
+      "retrieved_provisions": [
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 20"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 22"
+        }
+      ],
+      "expected_issues": [
+        "minimum_wage_violation"
+      ],
+      "expected_sections": [
+        "12",
+        "20",
+        "6"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW03",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "scenario": "My company deducted Rs 10,000 from my monthly salary as a penalty because our project missed an internal software sprint deadline, without any contractual clause or statutory justification.",
+      "overall_score": 71.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 50.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['unauthorized_deduction'], predicted 'unauthorized_uniform_tool_security_deduction' (score: 0.18695608989321993)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Payment of Wages Act, 1936', 'Code on Wages, 2019'], retrieved ['Code on Wages, 2019', 'Code on Wages, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['7', '18'], retrieved ['18', '45']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "unauthorized_uniform_tool_security_deduction",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 18"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 45"
+        }
+      ],
+      "expected_issues": [
+        "unauthorized_deduction"
+      ],
+      "expected_sections": [
+        "7",
+        "18"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW04",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "scenario": "I work 12 hours a day for 6 days a week at a manufacturing facility without receiving any overtime compensation, while regular working hours are 8 hours a day.",
+      "overall_score": 57.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 0.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Code on Wages, 2019'], retrieved ['Minimum Wages Act, 1948', 'Payment of Wages Act, 1936']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['13', '14'], retrieved ['12', '15']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "overtime_wage_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        }
+      ],
+      "expected_issues": [
+        "overtime_wage_denial",
+        "casual_contract_worker_overtime_wage_theft"
+      ],
+      "expected_sections": [
+        "13",
+        "14"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW06",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "scenario": "I resigned from an IT services company after working for 6 years of continuous service, but the company refuses to pay my statutory gratuity of Rs 1,45,000.",
+      "overall_score": 92.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 100.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Payment of Gratuity Act, 1972'], retrieved ['Payment of Gratuity Act, 1972', 'Payment of Gratuity Act, 1972', 'Payment of Gratuity Act, 1972']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "gratuity_withheld_past_5_years_service",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 4"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 7"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 8"
+        }
+      ],
+      "expected_issues": [
+        "gratuity_withheld_past_5_years_service",
+        "gratuity_withholding_dispute"
+      ],
+      "expected_sections": [
+        "4",
+        "7",
+        "8"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW07",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "scenario": "My monthly payslips show that Rs 3,600 was deducted towards Provident Fund every month for the last year, but my EPFO passbook shows that the employer has deposited zero contributions.",
+      "overall_score": 57.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 0.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts [\"Employees' Provident Funds and Miscellaneous Provisions Act, 1952\", 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Code on Wages, 2019', 'Code on Wages, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['6', '7a', '14', '316'], retrieved ['18', '45']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "pf_deduction_non_deposit",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 18"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 45"
+        }
+      ],
+      "expected_issues": [
+        "pf_deducted_not_deposited_epfo",
+        "pf_deduction_non_deposit"
+      ],
+      "expected_sections": [
+        "6",
+        "7a",
+        "14",
+        "316"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW08",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "scenario": "A female software engineer experiences unwelcome sexual advances, vulgar WhatsApp texts, and appraisal threats from her team manager, and the company has not constituted an Internal Committee.",
+      "overall_score": 91.27,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 101.3,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013', 'Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013', 'Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "posh_workplace_sexual_harassment_complaint",
+      "retrieved_provisions": [
+        {
+          "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+          "section": "Section 4"
+        },
+        {
+          "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+          "section": "Section 9"
+        },
+        {
+          "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+          "section": "Section 26"
+        }
+      ],
+      "expected_issues": [
+        "posh_workplace_sexual_harassment_complaint"
+      ],
+      "expected_sections": [
+        "4",
+        "9",
+        "11",
+        "26",
+        "79"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW10",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "scenario": "My employer unilaterally reduced my fixed monthly salary by 30% without my consent or any business hardship agreement, while increasing working hours.",
+      "overall_score": 61.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['unauthorized_deduction', 'unpaid_wages'], predicted 'overtime_wage_denial' (score: 0.15120826155806327)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Code on Wages, 2019', 'Payment of Wages Act, 1936'], retrieved ['Minimum Wages Act, 1948', 'Payment of Wages Act, 1936']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['18', '7'], retrieved ['12', '15']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "overtime_wage_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        }
+      ],
+      "expected_issues": [
+        "unauthorized_deduction",
+        "unpaid_wages"
+      ],
+      "expected_sections": [
+        "18",
+        "7"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW13",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "scenario": "An IT company collected my original B.Tech degree and Class 12 mark sheets at the time of joining as a security condition for a 2-year employment bond, and now refuses to return my original certificates after my resignation.",
+      "overall_score": 75.17,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 43.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Indian Contract Act, 1872', 'Code on Wages, 2019', 'Indian Contract Act, 1872']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['27', '316'], retrieved ['27', '18', '15']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "employment_bond_original_certificate_retention",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 27"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 15"
+        }
+      ],
+      "expected_issues": [
+        "employment_bond_original_certificate_retention"
+      ],
+      "expected_sections": [
+        "27",
+        "316"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "WW14",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "scenario": "A company requires delivery personnel to work exclusive 10-hour daily shifts under strict supervisor control but labels them independent freelance consultants to avoid minimum wages, PF, and overtime.",
+      "overall_score": 62.67,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 33.3,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['floor_wage_violation_remote_gig_contractors', 'daily_wage_contract_worker_wage_theft'], predicted 'casual_contract_worker_overtime_wage_theft' (score: 0.37423876476638385)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Code on Wages, 2019', \"Employees' Provident Funds and Miscellaneous Provisions Act, 1952\"], retrieved ['Code on Wages, 2019', 'Code on Wages, 2019', 'Code on Wages, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['6', '14', '6'], retrieved ['13', '14', '45']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "casual_contract_worker_overtime_wage_theft",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 13"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 14"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 45"
+        }
+      ],
+      "expected_issues": [
+        "floor_wage_violation_remote_gig_contractors",
+        "daily_wage_contract_worker_wage_theft"
+      ],
+      "expected_sections": [
+        "6",
+        "14",
+        "6"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW15",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "scenario": "A commercial firm employed full-time marketing trainees for 6 months requiring 9-hour daily commercial output but refused to pay any stipend or wages, claiming it was an unpaid educational internship.",
+      "overall_score": 75.92,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 43.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Minimum Wages Act, 1948', 'Code on Wages, 2019'], retrieved ['Code on Wages, 2019', 'Code on Wages, 2019', 'Code on Wages, 2019']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['12', '6'], retrieved ['6', '9', '13']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "unpaid_internship_full_commercial_workload",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 6"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 9"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 13"
+        }
+      ],
+      "expected_issues": [
+        "unpaid_internship_full_commercial_workload",
+        "compulsory_unpaid_training_internship"
+      ],
+      "expected_sections": [
+        "12",
+        "6"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW18",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "scenario": "A factory laid off 40 workmen without any statutory notice, approval from the labour department, or 15 days per year retrenchment compensation.",
+      "overall_score": 87.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Industrial Disputes Act, 1947'], retrieved ['Code on Wages, 2019', 'Code on Wages, 2019', 'Industrial Disputes Act, 1947', 'Industrial Disputes Act, 1947']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "layoff_retrenchment_compensation_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 17"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 45"
+        },
+        {
+          "act": "Industrial Disputes Act, 1947",
+          "section": "Section 25F"
+        },
+        {
+          "act": "Industrial Disputes Act, 1947",
+          "section": "Section 33C"
+        }
+      ],
+      "expected_issues": [
+        "layoff_retrenchment_compensation_denial",
+        "layoff_bench_wage_deduction"
+      ],
+      "expected_sections": [
+        "25f",
+        "33c"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW21",
+      "domain": "workplace_wage",
+      "category": "ambiguous",
+      "scenario": "My employer announced that tomorrow is a company-wide holiday for Diwali.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "unauthorized_deduction",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 7"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW23",
+      "domain": "workplace_wage",
+      "category": "incomplete",
+      "scenario": "Employer did not pay.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "statutory_bonus_denial_profitable_establishment",
+      "retrieved_provisions": [
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 26"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 45"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW24",
+      "domain": "workplace_wage",
+      "category": "incomplete",
+      "scenario": "I resigned from company.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "gratuity_withheld_past_5_years_service",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 4"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 7"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 8"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW25",
+      "domain": "workplace_wage",
+      "category": "incomplete",
+      "scenario": "My salary was deducted.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "notice_period_exorbitant_deduction_exit",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 7"
+        },
+        {
+          "act": "Code on Wages, 2019",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW26",
+      "domain": "workplace_wage",
+      "category": "incomplete",
+      "scenario": "Working overtime every day without extra pay.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "overtime_wage_denial",
+      "retrieved_provisions": [
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW29",
+      "domain": "workplace_wage",
+      "category": "historical",
+      "scenario": "In August 2020, an engineering firm withheld my salary for 3 months during COVID lockdown under Payment of Wages Act 1936.",
+      "overall_score": 90.37,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 57.1,
+        "section_accuracy": 84.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Payment of Wages Act, 1936', 'Limitation Act, 1963'], retrieved ['Payment of Wages Act, 1936', 'Payment of Wages Act, 1936', 'Minimum Wages Act, 1948', 'Minimum Wages Act, 1948', 'Limitation Act, 1963']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "unpaid_wages",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 5"
+        },
+        {
+          "act": "Payment of Wages Act, 1936",
+          "section": "Section 15"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 12"
+        },
+        {
+          "act": "Minimum Wages Act, 1948",
+          "section": "Section 20"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_7"
+        }
+      ],
+      "expected_issues": [
+        "unpaid_wages",
+        "delayed_wages"
+      ],
+      "expected_sections": [
+        "5",
+        "15",
+        "art(7)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "WW30",
+      "domain": "workplace_wage",
+      "category": "historical",
+      "scenario": "In 2019, an employee left after 7 years continuous service and employer withheld gratuity under Payment of Gratuity Act 1972.",
+      "overall_score": 89.83,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 86.7,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Payment of Gratuity Act, 1972'], retrieved ['Payment of Gratuity Act, 1972', 'Payment of Gratuity Act, 1972', 'Payment of Gratuity Act, 1972']"
+        }
+      ],
+      "predicted_domain": "workplace_wage",
+      "predicted_issue": "gratuity_withheld_past_5_years_service",
+      "retrieved_provisions": [
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 4"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 7"
+        },
+        {
+          "act": "Payment of Gratuity Act, 1972",
+          "section": "Section 8"
+        }
+      ],
+      "expected_issues": [
+        "gratuity_withheld_past_5_years_service",
+        "gratuity_withholding_dispute"
+      ],
+      "expected_sections": [
+        "4",
+        "7"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD01",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "scenario": "A software development vendor signed a contract and accepted Rs 2 lakhs advance to deliver an e-commerce website within 60 days, but failed to deliver any code or deliverables and refuses to refund the advance.",
+      "overall_score": 61.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 30.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['breach_of_contract', 'advance_deposit_forfeiture_dispute'], predicted 'commercial_vendor_raw_material_delivery_default' (score: 0.15246889035610178)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Limitation Act, 1963'], retrieved ['Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Indian Contract Act, 1872']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['73', '37', 'art(55)'], retrieved ['15', '16', '18', '73']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "commercial_vendor_raw_material_delivery_default",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract",
+        "advance_deposit_forfeiture_dispute"
+      ],
+      "expected_sections": [
+        "73",
+        "37",
+        "art(55)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD03",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "scenario": "I completed a website redesign as a freelance developer and delivered all assets to a corporate client who approved the work in writing, but has refused to pay my final invoice of Rs 80,000 for 4 months.",
+      "overall_score": 68.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 30.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Limitation Act, 1963'], retrieved ['Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Indian Contract Act, 1872']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['73', '70', 'art(55)'], retrieved ['15', '16', '18', '73']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "freelance_vendor_non_payment",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [
+        "freelance_software_developer_invoice_nonpayment",
+        "freelance_vendor_non_payment"
+      ],
+      "expected_sections": [
+        "73",
+        "70",
+        "art(55)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD04",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "scenario": "A wedding photography company accepted an advance booking token of Rs 40,000 under a written agreement, but failed to attend the wedding event, causing huge distress and loss.",
+      "overall_score": 67.92,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 33.3,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['event_wedding_vendor_cancellation_default', 'breach_of_contract'], predicted 'advance_booking_token_money_forfeiture' (score: 0.2666419491733971)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['73', '74', '55'], retrieved ['74', '64', '65']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "advance_booking_token_money_forfeiture",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 64"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 65"
+        }
+      ],
+      "expected_issues": [
+        "event_wedding_vendor_cancellation_default",
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "73",
+        "74",
+        "55"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD06",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "scenario": "A borrower who took a personal loan of Rs 3 lakhs under a written promissory note and loan agreement defaulted on repayment instalments and refuses to pay the outstanding balance.",
+      "overall_score": 76.75,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 100.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['breach_of_contract'], predicted 'time_barred_debt_written_promise_breach' (score: 0.22986800264317217)"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['37', '73', 'art(55)'], retrieved ['art(55)', '25']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "time_barred_debt_written_promise_breach",
+      "retrieved_provisions": [
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 25"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "37",
+        "73",
+        "art(55)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD07",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "A business owner induced me to purchase a restaurant franchise for Rs 10 lakhs by presenting falsified audited financial statements and inflated monthly revenue numbers.",
+      "overall_score": 81.33,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 66.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "misrepresentation_of_franchise_business_profits",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 19"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 75"
+        }
+      ],
+      "expected_issues": [
+        "misrepresentation_of_franchise_business_profits",
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "17",
+        "18",
+        "19"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CD08",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "A client terminated our 2-year annual maintenance contract abruptly after 4 months without serving the mandatory 60 days written termination notice specified in the agreement.",
+      "overall_score": 87.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 80.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Limitation Act, 1963']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "unilateral_contract_termination",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 75"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [
+        "unilateral_contract_termination",
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "39",
+        "73"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD09",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "A client issued a cheque for Rs 3,50,000 towards an unpaid service contract invoice. When presented, the bank returned it with a dishonour memo stating funds insufficient.",
+      "overall_score": 80.08,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 56.7,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Negotiable Instruments Act, 1881'], retrieved ['Negotiable Instruments Act, 1881', 'Negotiable Instruments Act, 1881', 'Negotiable Instruments Act, 1881']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['138', '139', '142', '143a'], retrieved ['138', '141', '142']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "cheque_bounce_statutory_notice_138",
+      "retrieved_provisions": [
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 138"
+        },
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 141"
+        },
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 142"
+        }
+      ],
+      "expected_issues": [
+        "cheque_bounce_statutory_notice_138"
+      ],
+      "expected_sections": [
+        "138",
+        "139",
+        "142",
+        "143a"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD10",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "A buyer paid 90% of the agreed purchase price for commercial land under a registered sale agreement, but the seller refuses to execute the final registered sale deed.",
+      "overall_score": 78.2,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 44.4,
+        "section_accuracy": 51.4,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Specific Relief Act, 1963', 'Indian Contract Act, 1872'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Specific Relief Act, 1963', 'Specific Relief Act, 1963', 'Sale of Goods Act, 1930', 'Limitation Act, 1963']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['10', '20', '37'], retrieved ['73', '74', '39', '10', '20', '57', 'art(55)']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "breach_of_contract",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 10"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 20"
+        },
+        {
+          "act": "Sale of Goods Act, 1930",
+          "section": "Section 57"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "10",
+        "20",
+        "37"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD11",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "A partner in a registered commercial partnership firm siphoned partnership funds into his personal bank account and refuses to share financial accounts or profits.",
+      "overall_score": 67.98,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 22.2,
+        "section_accuracy": 35.7,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Bharatiya Nyaya Sanhita, 2023'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Specific Relief Act, 1963', 'Specific Relief Act, 1963', 'Sale of Goods Act, 1930', 'Limitation Act, 1963']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['73', '316'], retrieved ['73', '74', '39', '10', '20', '57', 'art(55)']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "breach_of_contract",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 10"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 20"
+        },
+        {
+          "act": "Sale of Goods Act, 1930",
+          "section": "Section 57"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "73",
+        "316"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD12",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "scenario": "Two business parties entered into an oral contract for wholesale grain supply witnessed by brokers with part payment made via bank transfer, but seller denies any contract existed.",
+      "overall_score": 55.0,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 33.3,
+        "section_accuracy": 0.0,
+        "applicability_accuracy": 50.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['breach_of_contract'], predicted 'commercial_vendor_raw_material_delivery_default' (score: 0.49066411018695966)"
+        },
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Sale of Goods Act, 1930'], retrieved ['Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Indian Contract Act, 1872']"
+        },
+        {
+          "code": "D",
+          "category": "Incorrect legal provision mapping",
+          "detail": "Expected sections ['10', '37', '57'], retrieved ['15', '16', '18', '73']"
+        },
+        {
+          "code": "E",
+          "category": "Legal applicability failure",
+          "detail": "Retrieved statutory provisions do not legally match the scenario facts"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "commercial_vendor_raw_material_delivery_default",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "10",
+        "37",
+        "57"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD17",
+      "domain": "contractual_disputes",
+      "category": "complex",
+      "scenario": "A registered MSME supplier provided industrial auto components worth Rs 8 lakhs to a large corporate manufacturer under an accepted purchase order, but payment has been delayed for 90 days.",
+      "overall_score": 85.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 66.7,
+        "section_accuracy": 90.0,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "B",
+          "category": "Issue detection failure",
+          "detail": "Expected issue in ['freelance_vendor_non_payment', 'breach_of_contract'], predicted 'commercial_vendor_raw_material_delivery_default' (score: 0.4940136712926304)"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "commercial_vendor_raw_material_delivery_default",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [
+        "freelance_vendor_non_payment",
+        "breach_of_contract"
+      ],
+      "expected_sections": [
+        "15",
+        "16",
+        "18"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD23",
+      "domain": "contractual_disputes",
+      "category": "incomplete",
+      "scenario": "Contract was broken.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "breach_of_contract",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 10"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 20"
+        },
+        {
+          "act": "Sale of Goods Act, 1930",
+          "section": "Section 57"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD24",
+      "domain": "contractual_disputes",
+      "category": "incomplete",
+      "scenario": "I signed an agreement.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "breach_of_contract",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 10"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 20"
+        },
+        {
+          "act": "Sale of Goods Act, 1930",
+          "section": "Section 57"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD26",
+      "domain": "contractual_disputes",
+      "category": "incomplete",
+      "scenario": "Client did not pay my design invoice.",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "freelance_vendor_non_payment",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD27",
+      "domain": "contractual_disputes",
+      "category": "misleading_adversarial",
+      "scenario": "A freelance client delayed payment of my Rs 5,000 design invoice by 2 hours past 5 PM, so I want to file an FIR against the client for violent robbery and kidnapping.",
+      "overall_score": 80.5,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 40.0,
+        "section_accuracy": 70.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 85.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872'], retrieved ['Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Micro, Small and Medium Enterprises Development Act, 2006', 'Indian Contract Act, 1872']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "freelance_vendor_non_payment",
+      "retrieved_provisions": [
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 15"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 16"
+        },
+        {
+          "act": "Micro, Small and Medium Enterprises Development Act, 2006",
+          "section": "Section 18"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        }
+      ],
+      "expected_issues": [
+        "freelance_vendor_non_payment",
+        "freelance_software_developer_invoice_nonpayment"
+      ],
+      "expected_sections": [
+        "73"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": true
+    },
+    {
+      "test_id": "CD28",
+      "domain": "contractual_disputes",
+      "category": "misleading_adversarial",
+      "scenario": "I signed a contract agreeing to pay Rs 10,000 monthly rent and I paid it on time, how do I take legal action against the landlord for taking my money?",
+      "overall_score": 65.25,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 50.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 40.0,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 20.0
+      },
+      "failures": [
+        {
+          "code": "H",
+          "category": "Incorrect uncertainty handling",
+          "detail": "Failed to trigger uncertainty flags/clarification on ambiguous or incomplete input"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "time_barred_debt_written_promise_breach",
+      "retrieved_provisions": [
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 25"
+        }
+      ],
+      "expected_issues": [],
+      "expected_sections": [],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD29",
+      "domain": "contractual_disputes",
+      "category": "historical",
+      "scenario": "In 2017, a business client issued a cheque of Rs 2 lakhs that was dishonoured for insufficient funds, and a statutory demand notice was dispatched under Section 138 of the Negotiable Instruments Act 1881.",
+      "overall_score": 89.83,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 50.0,
+        "section_accuracy": 86.7,
+        "applicability_accuracy": 100.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Negotiable Instruments Act, 1881'], retrieved ['Negotiable Instruments Act, 1881', 'Negotiable Instruments Act, 1881', 'Negotiable Instruments Act, 1881']"
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "cheque_bounce_statutory_notice_138",
+      "retrieved_provisions": [
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 138"
+        },
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 141"
+        },
+        {
+          "act": "Negotiable Instruments Act, 1881",
+          "section": "Section 142"
+        }
+      ],
+      "expected_issues": [
+        "cheque_bounce_statutory_notice_138"
+      ],
+      "expected_sections": [
+        "138",
+        "142"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    },
+    {
+      "test_id": "CD30",
+      "domain": "contractual_disputes",
+      "category": "historical",
+      "scenario": "In 2016, a vendor failed to deliver raw materials under a commercial contract, and suit for damages was filed under Section 73 of the Indian Contract Act 1872.",
+      "overall_score": 82.2,
+      "dimension_scores": {
+        "domain_accuracy": 100.0,
+        "issue_accuracy": 100.0,
+        "act_accuracy": 44.4,
+        "section_accuracy": 71.4,
+        "applicability_accuracy": 75.0,
+        "citation_accuracy": 100.0,
+        "action_steps_accuracy": 100.0,
+        "portal_accuracy": 100.0,
+        "uncertainty_handling": 100.0
+      },
+      "failures": [
+        {
+          "code": "C",
+          "category": "Missing knowledge-base data",
+          "detail": "Expected acts ['Indian Contract Act, 1872', 'Limitation Act, 1963'], retrieved ['Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Indian Contract Act, 1872', 'Specific Relief Act, 1963', 'Specific Relief Act, 1963', 'Sale of Goods Act, 1930', 'Limitation Act, 1963']"
+        },
+        {
+          "code": "I",
+          "category": "Historical-law failure",
+          "detail": "Pre-July 2024 vs Post-July 2024 nuance: Historical commercial breach under Indian Contract Act 1872."
+        }
+      ],
+      "predicted_domain": "contractual_disputes",
+      "predicted_issue": "breach_of_contract",
+      "retrieved_provisions": [
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 73"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 74"
+        },
+        {
+          "act": "Indian Contract Act, 1872",
+          "section": "Section 39"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 10"
+        },
+        {
+          "act": "Specific Relief Act, 1963",
+          "section": "Section 20"
+        },
+        {
+          "act": "Sale of Goods Act, 1930",
+          "section": "Section 57"
+        },
+        {
+          "act": "Limitation Act, 1963",
+          "section": "Section art_55"
+        }
+      ],
+      "expected_issues": [
+        "breach_of_contract",
+        "commercial_vendor_raw_material_delivery_default"
+      ],
+      "expected_sections": [
+        "73",
+        "art(55)"
+      ],
+      "is_valid_scenario": true,
+      "needs_clarification": false
+    }
+  ]
+}

@@ -38,6 +38,8 @@ from app.schemas import (
     OfficialSource,
     PortalOut,
 )
+from app.scenario_validator import evaluate_scenario
+
 
 
 @dataclass(frozen=True)
@@ -105,7 +107,45 @@ class ResponseBuilder:
         domain_prediction: DomainPrediction,
         issue_detection: Optional[IssueDetection],
         intelligence: LegalIntelligenceResult,
+        scenario_text: Optional[str] = None,
     ) -> AnalyzeResponse:
+        # Evaluate scenario legitimacy if text is provided
+        if scenario_text:
+            evaluation = evaluate_scenario(scenario_text, domain_prediction, issue_detection)
+            if not evaluation.is_valid:
+                fallback_msg = evaluation.fallback_message or _DEFAULT_CLARIFICATION
+                analysis = Analysis(
+                    domain=DomainAnalysis(
+                        id="unknown",
+                        display_name="Unrecognized Legal Scenario",
+                        confidence=0.0,
+                        confidence_label="Low",
+                    ),
+                    issue=IssueAnalysis(
+                        id=None,
+                        display_name=None,
+                        similarity_score=None,
+                        issue_match_reason=None,
+                    ),
+                    scenario_signals=[],
+                )
+                return AnalyzeResponse(
+                    success=True,
+                    request_id=request_id,
+                    analysis=analysis,
+                    legal_provisions=[],
+                    legal_information_status="unknown_scenario",
+                    action_steps=[],
+                    portals=[],
+                    low_confidence_warning=True,
+                    needs_clarification=True,
+                    clarification_question=fallback_msg,
+                    is_valid_scenario=False,
+                    fallback_message=fallback_msg,
+                    disclaimer=DISCLAIMER,
+                )
+            issue_detection = evaluation.effective_issue
+
         confidence = domain_prediction.confidence
         low_confidence = confidence < self._thresholds.low
         # Clarify when the model is unsure OR nothing matched at issue level —
@@ -136,11 +176,8 @@ class ResponseBuilder:
             ),
         )
 
-        return AnalyzeResponse(
-            success=True,
-            request_id=request_id,
-            analysis=analysis,
-            legal_provisions=[
+        effective_provisions = (
+            [
                 LegalProvision(
                     act_id=p["act_id"],
                     act=p["act"],
@@ -149,12 +186,26 @@ class ResponseBuilder:
                     simplified_explanation=p.get("simplified_explanation"),
                     provision_relevance_rationale=p["provision_relevance_rationale"],
                     official_source=OfficialSource(**(p.get("official_source") or {})),
+                    relevance_classification=p.get("relevance_classification", "DIRECTLY_APPLICABLE"),
+                    applicable_legal_elements=p.get("applicable_legal_elements", []),
+                    applicability_conditions=p.get("applicability_conditions", []),
+                    missing_facts=p.get("missing_facts", []),
+                    exceptions=p.get("exceptions", []),
+                    verification_status=p.get("verification_status", "verified"),
                 )
                 for p in intelligence.legal_provisions
-            ],
-            legal_information_status=intelligence.legal_information_status,
-            action_steps=list(intelligence.action_steps),
-            portals=[
+            ]
+            if issue_detection is not None
+            else []
+        )
+        effective_status = (
+            intelligence.legal_information_status
+            if issue_detection is not None
+            else "no_verified_provision_available"
+        )
+        effective_actions = list(intelligence.action_steps) if issue_detection is not None else []
+        effective_portals = (
+            [
                 PortalOut(
                     name=portal["name"],
                     official_url=portal.get("official_url"),
@@ -162,15 +213,33 @@ class ResponseBuilder:
                     priority=portal["priority"],
                 )
                 for portal in intelligence.portals
-            ],
-            low_confidence_warning=low_confidence,
-            needs_clarification=needs_clarification,
-            clarification_question=(
-                _CLARIFICATION_QUESTIONS.get(
+            ]
+            if issue_detection is not None
+            else []
+        )
+
+        chosen_clarification = None
+        if needs_clarification:
+            chosen_clarification = (
+                intelligence.targeted_clarification
+                or _CLARIFICATION_QUESTIONS.get(
                     domain_prediction.domain_id, _DEFAULT_CLARIFICATION
                 )
-                if needs_clarification
-                else None
-            ),
+            )
+
+        return AnalyzeResponse(
+            success=True,
+            request_id=request_id,
+            analysis=analysis,
+            legal_provisions=effective_provisions,
+            legal_information_status=effective_status,
+            action_steps=effective_actions,
+            portals=effective_portals,
+            low_confidence_warning=low_confidence,
+            needs_clarification=needs_clarification,
+            clarification_question=chosen_clarification,
+            historical_law_note=intelligence.historical_law_note,
+            is_valid_scenario=True,
+            fallback_message=None,
             disclaimer=DISCLAIMER,
         )

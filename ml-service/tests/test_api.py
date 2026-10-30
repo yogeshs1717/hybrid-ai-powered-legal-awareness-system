@@ -88,3 +88,38 @@ def test_low_confidence_is_http_200_not_error(client):
     )
     assert r.status_code == 200
     assert "low_confidence_warning" in r.json()
+
+
+def test_unknown_scenario_returns_fallback_not_random_domain(client):
+    """An unknown sentence or non-legal chatter must return a clear fallback message
+    with is_valid_scenario=False, domain='unknown', and zero legal provisions."""
+    r = client.post(
+        "/analyze",
+        json={"scenario": "The quick brown fox jumps over the lazy dog in the garden."},
+    )
+    assert r.status_code == 200
+    data = r.json()
+    assert data["is_valid_scenario"] is False
+    assert data["legal_information_status"] == "unknown_scenario"
+    assert data["analysis"]["domain"]["id"] == "unknown"
+    assert len(data["legal_provisions"]) == 0
+    assert data["fallback_message"] is not None
+    assert "legal scenario" in data["fallback_message"].lower()
+
+
+def test_valid_legal_scenario_does_not_trigger_fallback(client):
+    """A valid legal scenario must be recognized as valid and NOT trigger fallback."""
+    r = client.post(
+        "/analyze",
+        json={
+            "scenario": "Someone called pretending to be bank manager and asked for OTP, then 40000 was debited from my account"
+        },
+    )
+    assert r.status_code == 200
+    data = r.json()
+    assert data["is_valid_scenario"] is True
+    assert data["fallback_message"] is None
+    assert data["analysis"]["domain"]["id"] == "cyber_fraud"
+    assert data["legal_information_status"] == "provisions_available"
+    assert len(data["legal_provisions"]) > 0
+

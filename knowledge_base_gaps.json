@@ -1,0 +1,1023 @@
+{
+  "summary": {
+    "total_gaps_identified": 66,
+    "gaps_by_domain": {
+      "cyber_fraud": 5,
+      "consumer_issues": 16,
+      "traffic_enforcement": 18,
+      "workplace_wage": 14,
+      "contractual_disputes": 13
+    }
+  },
+  "identified_gaps": [
+    {
+      "test_id": "CF06",
+      "domain": "cyber_fraud",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "sextortion_fraud",
+      "expected_issues": [
+        "digital_arrest_extortion"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "66d",
+        "318",
+        "319"
+      ],
+      "scenario_summary": "A fraudster posed as a CBI officer on Skype video call showing fake police badges, placed me under digital arrest in a m..."
+    },
+    {
+      "test_id": "CF11",
+      "domain": "cyber_fraud",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "online_impersonation",
+      "expected_issues": [
+        "spyware_stalkerware_device_monitoring",
+        "online_impersonation"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "66e",
+        "67",
+        "78",
+        "79"
+      ],
+      "scenario_summary": "An ex-acquaintance has been sending obsessive, vulgar, and threatening messages from multiple fake social media handles ..."
+    },
+    {
+      "test_id": "CF14",
+      "domain": "cyber_fraud",
+      "category": "complex",
+      "missing_or_incorrect_issue": "remote_access_app_fraud",
+      "expected_issues": [
+        "rbi_zero_liability_unauthorized_transaction",
+        "other_online_financial_fraud"
+      ],
+      "missing_acts": [
+        "Consumer Protection Act, 2019"
+      ],
+      "missing_sections": [
+        "2(11)"
+      ],
+      "scenario_summary": "I made a UPI payment of Rs 10,000 to my landlord. My account was debited, but the landlord never received the funds. The..."
+    },
+    {
+      "test_id": "CF29",
+      "domain": "cyber_fraud",
+      "category": "historical",
+      "missing_or_incorrect_issue": "phishing",
+      "expected_issues": [
+        "phishing",
+        "otp_fraud"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In January 2022, an unauthorized debit of Rs 50,000 occurred from my bank account through a phishing website mimicking S..."
+    },
+    {
+      "test_id": "CF30",
+      "domain": "cyber_fraud",
+      "category": "historical",
+      "missing_or_incorrect_issue": "kbc_lottery_whatsapp_prize_scam",
+      "expected_issues": [
+        "online_impersonation",
+        "other_online_financial_fraud"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "66c"
+      ],
+      "scenario_summary": "In October 2021, someone created a fake WhatsApp profile impersonating my business partner and extorted Rs 1 lakh via UP..."
+    },
+    {
+      "test_id": "CI01",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "defective_product",
+      "expected_issues": [
+        "defective_product",
+        "warranty_guarantee_denial"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "I bought a brand new Dell laptop for Rs 65,000 from an authorized electronics dealer, but it repeatedly turns off and re..."
+    },
+    {
+      "test_id": "CI02",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "refund_denial",
+      "expected_issues": [
+        "refund_denial"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "I returned a damaged television to an e-commerce platform within the 7-day return window. The seller picked up the item ..."
+    },
+    {
+      "test_id": "CI03",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "misleading_advertisement",
+      "expected_issues": [
+        "misleading_advertisement",
+        "unfair_trade_practice"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "2(47)",
+        "21"
+      ],
+      "scenario_summary": "A dietary supplement company advertised that taking their capsule guarantees 10 kg weight loss in 30 days without diet o..."
+    },
+    {
+      "test_id": "CI04",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "warranty_guarantee_denial",
+      "expected_issues": [
+        "warranty_guarantee_denial",
+        "service_deficiency"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "2(11)",
+        "2(47)"
+      ],
+      "scenario_summary": "My refrigerator stopped cooling 6 months after purchase. The manufacturer warranty is for 1 year, but the service compan..."
+    },
+    {
+      "test_id": "CI05",
+      "domain": "consumer_issues",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "refund_denial",
+      "expected_issues": [
+        "service_deficiency",
+        "refund_denial"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "I ordered furniture worth Rs 35,000 on an online shopping portal with guaranteed delivery within 5 days. It has been 45 ..."
+    },
+    {
+      "test_id": "CI08",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "insurance_claim_rejection_dispute",
+      "expected_issues": [
+        "health_insurance_claim_arbitrary_rejection",
+        "insurance_claim_arbitrary_rejection"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "69"
+      ],
+      "scenario_summary": "My health insurance claim of Rs 2.5 lakhs for emergency gall bladder surgery was repudiated by the insurance company cla..."
+    },
+    {
+      "test_id": "CI10",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "telecom_vas_billing_dispute",
+      "expected_issues": [
+        "telecom_vas_billing_dispute",
+        "service_deficiency"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A telecom service provider activated caller tune and gaming VAS packs on my postpaid mobile number without my consent, b..."
+    },
+    {
+      "test_id": "CI11",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "substandard_unmarked_electronics_bis",
+      "expected_issues": [
+        "defective_product",
+        "service_deficiency"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "86"
+      ],
+      "scenario_summary": "An electric water heater geyser bought from a reputed brand burst due to a defective thermostat valve, causing severe sc..."
+    },
+    {
+      "test_id": "CI12",
+      "domain": "consumer_issues",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "spurious_cosmetics_counterfeit_perfumes",
+      "expected_issues": [
+        "expired_spurious_goods",
+        "unfair_trade_practice"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "2(47)",
+        "35"
+      ],
+      "scenario_summary": "I ordered branded sports running shoes on an e-commerce marketplace for Rs 4,000, but the seller delivered cheap counter..."
+    },
+    {
+      "test_id": "CI13",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "missing_or_incorrect_issue": "misleading_advertisement",
+      "expected_issues": [
+        "dark_patterns_drip_pricing_sneaked_charges",
+        "unfair_trade_practice"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "2(47)"
+      ],
+      "scenario_summary": "An e-commerce clothing retailer advertised a 70% flat discount on jackets, but at final checkout added a mandatory Rs 20..."
+    },
+    {
+      "test_id": "CI15",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "missing_or_incorrect_issue": "unfair_contract_terms_consumer",
+      "expected_issues": [
+        "coaching_institute_dropout_fee_refund_denial",
+        "coaching_institute_refund_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "35"
+      ],
+      "scenario_summary": "I enrolled my son in a coaching institute for JEE entrance preparation and paid Rs 1,80,000 upfront for a 2-year batch. ..."
+    },
+    {
+      "test_id": "CI17",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "missing_or_incorrect_issue": "food_delivery_adulterated_contaminated_meal",
+      "expected_issues": [
+        "food_delivery_adulterated_contaminated_meal",
+        "defective_product"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "84"
+      ],
+      "scenario_summary": "A food delivery app delivered biryani that was foul-smelling and infested with insects. Consuming two spoonfuls resulted..."
+    },
+    {
+      "test_id": "CI18",
+      "domain": "consumer_issues",
+      "category": "complex",
+      "missing_or_incorrect_issue": "builder_delay_possession_dispute",
+      "expected_issues": [
+        "builder_delay_possession_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A real estate builder agreed in writing to deliver possession of my apartment by December 2022. It is now late 2024, con..."
+    },
+    {
+      "test_id": "CI27",
+      "domain": "consumer_issues",
+      "category": "misleading_adversarial",
+      "missing_or_incorrect_issue": "defective_product",
+      "expected_issues": [
+        "defective_product"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "My microwave oven stopped heating soup so the shopkeeper committed criminal breach of trust, grand theft, and fraud and ..."
+    },
+    {
+      "test_id": "CI29",
+      "domain": "consumer_issues",
+      "category": "historical",
+      "missing_or_incorrect_issue": "defective_product",
+      "expected_issues": [
+        "defective_product",
+        "automobile_manufacturing_defect_lemon_vehicle"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In March 2018, a car dealer sold me a defective vehicle and refused repair under warranty, governed by the Consumer Prot..."
+    },
+    {
+      "test_id": "CI30",
+      "domain": "consumer_issues",
+      "category": "historical",
+      "missing_or_incorrect_issue": "refund_denial",
+      "expected_issues": [
+        "builder_delay_possession_dispute"
+      ],
+      "missing_acts": [
+        "Real Estate (Regulation and Development) Act, 2016"
+      ],
+      "missing_sections": [
+        "18",
+        "31"
+      ],
+      "scenario_summary": "In 2016 before RERA became operational, a builder took 50% advance for an unapproved apartment project in Mumbai and fai..."
+    },
+    {
+      "test_id": "TE01",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "wrong_side_police_diversion_defense",
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "wrongful_challan"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "177a"
+      ],
+      "scenario_summary": "A driver travels on the opposite carriageway because traffic police officers in uniform waved all vehicles into that lan..."
+    },
+    {
+      "test_id": "TE02",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "wrongful_challan",
+      "expected_issues": [
+        "wrongful_challan",
+        "fake_traffic_challan_wrong_vehicle_city"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "112",
+        "183"
+      ],
+      "scenario_summary": "I received an e-challan for speeding at 95 km/h on an expressway in Delhi, but on that date and time my car was parked i..."
+    },
+    {
+      "test_id": "TE03",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "wrongful_challan",
+      "expected_issues": [
+        "fake_traffic_challan_wrong_vehicle_city",
+        "wrongful_challan"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "184",
+        "177"
+      ],
+      "scenario_summary": "I received a traffic challan notification with a photo showing a two-wheeler scooter jumping a red light, but the challa..."
+    },
+    {
+      "test_id": "TE04",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "seatbelt_helmet_camera_dispute",
+      "expected_issues": [
+        "two_wheeler_pillion_helmet_challan_dispute",
+        "seatbelt_helmet_camera_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "206"
+      ],
+      "scenario_summary": "A traffic constable stopped my motorcycle and fined me Rs 1,000 for driving without wearing a protective headgear helmet..."
+    },
+    {
+      "test_id": "TE05",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "seatbelt_helmet_camera_dispute",
+      "expected_issues": [
+        "seatbelt_helmet_camera_dispute",
+        "wrongful_challan"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A traffic officer issued a challan of Rs 1,000 stating that I was not wearing a seatbelt while driving my car on the mai..."
+    },
+    {
+      "test_id": "TE06",
+      "domain": "traffic_enforcement",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "driving_without_licence_challan_dispute",
+      "expected_issues": [
+        "driving_without_licence_challan_dispute",
+        "document_acceptance_or_verification"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A person was stopped by traffic police while driving a motor vehicle without having ever applied for or holding a valid ..."
+    },
+    {
+      "test_id": "TE09",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "traffic_signal_camera_red_light_yellow_light_glitch",
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "traffic_signal_camera_red_light_yellow_light_glitch"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "119",
+        "184"
+      ],
+      "scenario_summary": "A driver entered an intersection on a red traffic signal because an on-duty traffic police constable physically motioned..."
+    },
+    {
+      "test_id": "TE10",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "seatbelt_helmet_camera_dispute",
+      "expected_issues": [
+        "vehicle_detention",
+        "document_seizure_or_retention"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "207"
+      ],
+      "scenario_summary": "A police sub-inspector seized and impounded my motorcycle during a regular routine helmet checking drive, even though I ..."
+    },
+    {
+      "test_id": "TE11",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "zebra_crossing_pedestrian_stop_line_dispute",
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023",
+        "Bharatiya Nagarik Suraksha Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "134",
+        "166",
+        "281",
+        "125"
+      ],
+      "scenario_summary": "A driver collided with a pedestrian crossing the road causing leg fractures and hospital admission. Police registered a ..."
+    },
+    {
+      "test_id": "TE12",
+      "domain": "traffic_enforcement",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "hit_and_run_solatium_fund_claim",
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "281",
+        "106"
+      ],
+      "scenario_summary": "A speeding truck hit a motorcycle causing fatal injuries to the rider. The truck driver remained at the scene and helped..."
+    },
+    {
+      "test_id": "TE13",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "missing_or_incorrect_issue": "wrong_side_police_diversion_defense",
+      "expected_issues": [
+        "wrong_side_police_diversion_defense",
+        "conflicting_speed_limit_signboard_camera"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "116",
+        "281"
+      ],
+      "scenario_summary": "A city road was dug up for flyover construction with concrete barricades blocking the left lane, but no signboards or di..."
+    },
+    {
+      "test_id": "TE14",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "missing_or_incorrect_issue": "traffic_signal_camera_red_light_yellow_light_glitch",
+      "expected_issues": [
+        "traffic_signal_camera_red_light_yellow_light_glitch",
+        "zebra_crossing_pedestrian_stop_line_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "119",
+        "177a"
+      ],
+      "scenario_summary": "I received an electronic challan for red light jumping with an automated photograph showing that my vehicle's rear wheel..."
+    },
+    {
+      "test_id": "TE15",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "missing_or_incorrect_issue": "hit_and_run_solatium_fund_claim",
+      "expected_issues": [
+        "hit_and_run_solatium_fund_claim"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "106"
+      ],
+      "scenario_summary": "A pedestrian was knocked down on a dark highway by an unknown speeding vehicle that fled the scene into the night withou..."
+    },
+    {
+      "test_id": "TE17",
+      "domain": "traffic_enforcement",
+      "category": "complex",
+      "missing_or_incorrect_issue": "digital_documents_refusal_digilocker_mparivahan",
+      "expected_issues": [
+        "digital_documents_refusal_digilocker_mparivahan",
+        "document_acceptance_or_verification"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A traffic police sub-inspector refused to accept my original valid driving licence and vehicle RC displayed on the offic..."
+    },
+    {
+      "test_id": "TE27",
+      "domain": "traffic_enforcement",
+      "category": "misleading_adversarial",
+      "missing_or_incorrect_issue": "puc_verification_dispute",
+      "expected_issues": [
+        "wrongful_challan"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "112",
+        "183"
+      ],
+      "scenario_summary": "A traffic police officer fined me for overspeeding when I was driving at 110 km/h in a 50 km/h city zone, so I want to f..."
+    },
+    {
+      "test_id": "TE28",
+      "domain": "traffic_enforcement",
+      "category": "misleading_adversarial",
+      "missing_or_incorrect_issue": null,
+      "expected_issues": [
+        "drunk_driving_breathalyzer_dispute",
+        "vehicle_detention"
+      ],
+      "missing_acts": [
+        "Motor Vehicles Act, 1988"
+      ],
+      "missing_sections": [
+        "185",
+        "207"
+      ],
+      "scenario_summary": "I had 5 beers and drove on the wrong side of the highway and police arrested me, how do I sue the police for consumer se..."
+    },
+    {
+      "test_id": "TE29",
+      "domain": "traffic_enforcement",
+      "category": "historical",
+      "missing_or_incorrect_issue": "hit_and_run_solatium_fund_claim",
+      "expected_issues": [
+        "mact_accident_compensation_claim"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "184"
+      ],
+      "scenario_summary": "In April 2023, a speeding car jumped a red light and crashed into my motorcycle injuring my leg, registered under Sectio..."
+    },
+    {
+      "test_id": "TE30",
+      "domain": "traffic_enforcement",
+      "category": "historical",
+      "missing_or_incorrect_issue": "conflicting_speed_limit_signboard_camera",
+      "expected_issues": [
+        "hit_and_run_solatium_fund_claim"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "161",
+        "134"
+      ],
+      "scenario_summary": "In November 2022, an unidentifiable car struck a pedestrian on a national highway and fled without stopping resulting in..."
+    },
+    {
+      "test_id": "WW01",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "unpaid_wages",
+      "expected_issues": [
+        "unpaid_wages",
+        "delayed_wages"
+      ],
+      "missing_acts": [
+        "Code on Wages, 2019"
+      ],
+      "missing_sections": [
+        "17"
+      ],
+      "scenario_summary": "My employer has failed to pay my earned monthly salary of Rs 45,000 for the last two consecutive months despite continuo..."
+    },
+    {
+      "test_id": "WW02",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "minimum_wage_violation",
+      "expected_issues": [
+        "minimum_wage_violation"
+      ],
+      "missing_acts": [
+        "Code on Wages, 2019"
+      ],
+      "missing_sections": [
+        "6"
+      ],
+      "scenario_summary": "A security agency employs guards for 8 hours daily at Rs 7,000 per month, which is far below the notified state minimum ..."
+    },
+    {
+      "test_id": "WW03",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "unauthorized_uniform_tool_security_deduction",
+      "expected_issues": [
+        "unauthorized_deduction"
+      ],
+      "missing_acts": [
+        "Payment of Wages Act, 1936"
+      ],
+      "missing_sections": [
+        "7"
+      ],
+      "scenario_summary": "My company deducted Rs 10,000 from my monthly salary as a penalty because our project missed an internal software sprint..."
+    },
+    {
+      "test_id": "WW04",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "overtime_wage_denial",
+      "expected_issues": [
+        "overtime_wage_denial",
+        "casual_contract_worker_overtime_wage_theft"
+      ],
+      "missing_acts": [
+        "Code on Wages, 2019"
+      ],
+      "missing_sections": [
+        "13",
+        "14"
+      ],
+      "scenario_summary": "I work 12 hours a day for 6 days a week at a manufacturing facility without receiving any overtime compensation, while r..."
+    },
+    {
+      "test_id": "WW06",
+      "domain": "workplace_wage",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "gratuity_withheld_past_5_years_service",
+      "expected_issues": [
+        "gratuity_withheld_past_5_years_service",
+        "gratuity_withholding_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "I resigned from an IT services company after working for 6 years of continuous service, but the company refuses to pay m..."
+    },
+    {
+      "test_id": "WW07",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "pf_deduction_non_deposit",
+      "expected_issues": [
+        "pf_deducted_not_deposited_epfo",
+        "pf_deduction_non_deposit"
+      ],
+      "missing_acts": [
+        "Employees' Provident Funds and Miscellaneous Provisions Act, 1952",
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "6",
+        "7a",
+        "14",
+        "316"
+      ],
+      "scenario_summary": "My monthly payslips show that Rs 3,600 was deducted towards Provident Fund every month for the last year, but my EPFO pa..."
+    },
+    {
+      "test_id": "WW08",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "posh_workplace_sexual_harassment_complaint",
+      "expected_issues": [
+        "posh_workplace_sexual_harassment_complaint"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "11"
+      ],
+      "scenario_summary": "A female software engineer experiences unwelcome sexual advances, vulgar WhatsApp texts, and appraisal threats from her ..."
+    },
+    {
+      "test_id": "WW10",
+      "domain": "workplace_wage",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "overtime_wage_denial",
+      "expected_issues": [
+        "unauthorized_deduction",
+        "unpaid_wages"
+      ],
+      "missing_acts": [
+        "Code on Wages, 2019"
+      ],
+      "missing_sections": [
+        "18",
+        "7"
+      ],
+      "scenario_summary": "My employer unilaterally reduced my fixed monthly salary by 30% without my consent or any business hardship agreement, w..."
+    },
+    {
+      "test_id": "WW13",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "missing_or_incorrect_issue": "employment_bond_original_certificate_retention",
+      "expected_issues": [
+        "employment_bond_original_certificate_retention"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "316"
+      ],
+      "scenario_summary": "An IT company collected my original B.Tech degree and Class 12 mark sheets at the time of joining as a security conditio..."
+    },
+    {
+      "test_id": "WW14",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "missing_or_incorrect_issue": "casual_contract_worker_overtime_wage_theft",
+      "expected_issues": [
+        "floor_wage_violation_remote_gig_contractors",
+        "daily_wage_contract_worker_wage_theft"
+      ],
+      "missing_acts": [
+        "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+      ],
+      "missing_sections": [
+        "6",
+        "6"
+      ],
+      "scenario_summary": "A company requires delivery personnel to work exclusive 10-hour daily shifts under strict supervisor control but labels ..."
+    },
+    {
+      "test_id": "WW15",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "missing_or_incorrect_issue": "unpaid_internship_full_commercial_workload",
+      "expected_issues": [
+        "unpaid_internship_full_commercial_workload",
+        "compulsory_unpaid_training_internship"
+      ],
+      "missing_acts": [
+        "Minimum Wages Act, 1948"
+      ],
+      "missing_sections": [
+        "12"
+      ],
+      "scenario_summary": "A commercial firm employed full-time marketing trainees for 6 months requiring 9-hour daily commercial output but refuse..."
+    },
+    {
+      "test_id": "WW18",
+      "domain": "workplace_wage",
+      "category": "complex",
+      "missing_or_incorrect_issue": "layoff_retrenchment_compensation_denial",
+      "expected_issues": [
+        "layoff_retrenchment_compensation_denial",
+        "layoff_bench_wage_deduction"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A factory laid off 40 workmen without any statutory notice, approval from the labour department, or 15 days per year ret..."
+    },
+    {
+      "test_id": "WW29",
+      "domain": "workplace_wage",
+      "category": "historical",
+      "missing_or_incorrect_issue": "unpaid_wages",
+      "expected_issues": [
+        "unpaid_wages",
+        "delayed_wages"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In August 2020, an engineering firm withheld my salary for 3 months during COVID lockdown under Payment of Wages Act 193..."
+    },
+    {
+      "test_id": "WW30",
+      "domain": "workplace_wage",
+      "category": "historical",
+      "missing_or_incorrect_issue": "gratuity_withheld_past_5_years_service",
+      "expected_issues": [
+        "gratuity_withheld_past_5_years_service",
+        "gratuity_withholding_dispute"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In 2019, an employee left after 7 years continuous service and employer withheld gratuity under Payment of Gratuity Act ..."
+    },
+    {
+      "test_id": "CD01",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "commercial_vendor_raw_material_delivery_default",
+      "expected_issues": [
+        "breach_of_contract",
+        "advance_deposit_forfeiture_dispute"
+      ],
+      "missing_acts": [
+        "Limitation Act, 1963"
+      ],
+      "missing_sections": [
+        "37",
+        "art(55)"
+      ],
+      "scenario_summary": "A software development vendor signed a contract and accepted Rs 2 lakhs advance to deliver an e-commerce website within ..."
+    },
+    {
+      "test_id": "CD03",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "freelance_vendor_non_payment",
+      "expected_issues": [
+        "freelance_software_developer_invoice_nonpayment",
+        "freelance_vendor_non_payment"
+      ],
+      "missing_acts": [
+        "Limitation Act, 1963"
+      ],
+      "missing_sections": [
+        "70",
+        "art(55)"
+      ],
+      "scenario_summary": "I completed a website redesign as a freelance developer and delivered all assets to a corporate client who approved the ..."
+    },
+    {
+      "test_id": "CD04",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "advance_booking_token_money_forfeiture",
+      "expected_issues": [
+        "event_wedding_vendor_cancellation_default",
+        "breach_of_contract"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "73",
+        "55"
+      ],
+      "scenario_summary": "A wedding photography company accepted an advance booking token of Rs 40,000 under a written agreement, but failed to at..."
+    },
+    {
+      "test_id": "CD06",
+      "domain": "contractual_disputes",
+      "category": "straightforward",
+      "missing_or_incorrect_issue": "time_barred_debt_written_promise_breach",
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "37",
+        "73"
+      ],
+      "scenario_summary": "A borrower who took a personal loan of Rs 3 lakhs under a written promissory note and loan agreement defaulted on repaym..."
+    },
+    {
+      "test_id": "CD07",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "misrepresentation_of_franchise_business_profits",
+      "expected_issues": [
+        "misrepresentation_of_franchise_business_profits",
+        "breach_of_contract"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "17"
+      ],
+      "scenario_summary": "A business owner induced me to purchase a restaurant franchise for Rs 10 lakhs by presenting falsified audited financial..."
+    },
+    {
+      "test_id": "CD08",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "unilateral_contract_termination",
+      "expected_issues": [
+        "unilateral_contract_termination",
+        "breach_of_contract"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A client terminated our 2-year annual maintenance contract abruptly after 4 months without serving the mandatory 60 days..."
+    },
+    {
+      "test_id": "CD09",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "cheque_bounce_statutory_notice_138",
+      "expected_issues": [
+        "cheque_bounce_statutory_notice_138"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "139",
+        "143a"
+      ],
+      "scenario_summary": "A client issued a cheque for Rs 3,50,000 towards an unpaid service contract invoice. When presented, the bank returned i..."
+    },
+    {
+      "test_id": "CD10",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "breach_of_contract",
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "missing_acts": [],
+      "missing_sections": [
+        "37"
+      ],
+      "scenario_summary": "A buyer paid 90% of the agreed purchase price for commercial land under a registered sale agreement, but the seller refu..."
+    },
+    {
+      "test_id": "CD11",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "breach_of_contract",
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "missing_acts": [
+        "Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "missing_sections": [
+        "316"
+      ],
+      "scenario_summary": "A partner in a registered commercial partnership firm siphoned partnership funds into his personal bank account and refu..."
+    },
+    {
+      "test_id": "CD12",
+      "domain": "contractual_disputes",
+      "category": "moderately_complex",
+      "missing_or_incorrect_issue": "commercial_vendor_raw_material_delivery_default",
+      "expected_issues": [
+        "breach_of_contract"
+      ],
+      "missing_acts": [
+        "Sale of Goods Act, 1930"
+      ],
+      "missing_sections": [
+        "10",
+        "37",
+        "57"
+      ],
+      "scenario_summary": "Two business parties entered into an oral contract for wholesale grain supply witnessed by brokers with part payment mad..."
+    },
+    {
+      "test_id": "CD27",
+      "domain": "contractual_disputes",
+      "category": "misleading_adversarial",
+      "missing_or_incorrect_issue": "freelance_vendor_non_payment",
+      "expected_issues": [
+        "freelance_vendor_non_payment",
+        "freelance_software_developer_invoice_nonpayment"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "A freelance client delayed payment of my Rs 5,000 design invoice by 2 hours past 5 PM, so I want to file an FIR against ..."
+    },
+    {
+      "test_id": "CD29",
+      "domain": "contractual_disputes",
+      "category": "historical",
+      "missing_or_incorrect_issue": "cheque_bounce_statutory_notice_138",
+      "expected_issues": [
+        "cheque_bounce_statutory_notice_138"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In 2017, a business client issued a cheque of Rs 2 lakhs that was dishonoured for insufficient funds, and a statutory de..."
+    },
+    {
+      "test_id": "CD30",
+      "domain": "contractual_disputes",
+      "category": "historical",
+      "missing_or_incorrect_issue": "breach_of_contract",
+      "expected_issues": [
+        "breach_of_contract",
+        "commercial_vendor_raw_material_delivery_default"
+      ],
+      "missing_acts": [],
+      "missing_sections": [],
+      "scenario_summary": "In 2016, a vendor failed to deliver raw materials under a commercial contract, and suit for damages was filed under Sect..."
+    }
+  ]
+}

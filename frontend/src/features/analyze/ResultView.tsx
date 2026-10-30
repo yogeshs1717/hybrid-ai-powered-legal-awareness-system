@@ -9,6 +9,8 @@ import { PortalList } from "@/components/legal/PortalList";
 import { NoVerifiedProvisionState } from "@/components/legal/NoVerifiedProvisionState";
 import { LowConfidenceBanner } from "@/components/legal/LowConfidenceBanner";
 import { MandatoryDisclaimer } from "@/components/legal/MandatoryDisclaimer";
+import { UnknownScenarioFallbackCard } from "@/components/legal/UnknownScenarioFallbackCard";
+
 
 /*
   Progressive, calm reveal of the analysis. Content is staggered in a readable
@@ -38,11 +40,20 @@ function useVariants() {
 export function ResultView({
   data,
   scenario,
+  onReset,
+  onSelectExample,
 }: {
   data: AnalyzeResponse;
   scenario?: string;
+  onReset?: () => void;
+  onSelectExample?: (scenarioText: string) => void;
 }) {
   const { container, item } = useVariants();
+  const isUnknownScenario =
+    data.is_valid_scenario === false ||
+    data.legal_information_status === "unknown_scenario" ||
+    data.analysis.domain.id === "unknown";
+
   const hasProvisions =
     data.legal_information_status === "provisions_available" &&
     data.legal_provisions.length > 0;
@@ -89,56 +100,73 @@ export function ResultView({
         </motion.div>
       )}
 
-      {(data.low_confidence_warning || data.needs_clarification) && (
-        <motion.div variants={item}>
-          <LowConfidenceBanner clarificationQuestion={data.clarification_question} />
-        </motion.div>
-      )}
-
-      <motion.div variants={item} className={hasIssue ? "grid gap-4 sm:gap-5 md:grid-cols-2" : "grid gap-4 sm:gap-5"}>
-        <DomainResultCard domain={data.analysis.domain} />
-        {hasIssue && (
-          <IssueResultCard
-            issue={issue}
-            signals={data.analysis.scenario_signals}
-          />
-        )}
-      </motion.div>
-
-      <motion.div variants={item} className="flex items-center gap-3 px-1 pt-4">
-        <span className="shrink-0 font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-foreground">
-          {hasProvisions ? "APPLICABLE STATUTORY PROVISIONS" : "LEGAL INFORMATION"}
-        </span>
-        <span aria-hidden className="h-0.5 flex-1 bg-border" />
-      </motion.div>
-
-      {hasProvisions ? (
-        data.legal_provisions.map((p, i) => (
-          <motion.div key={`${p.act_id}-${p.section}-${i}`} variants={item}>
-            <ProvisionCard provision={p} index={i} />
+      {isUnknownScenario ? (
+        <>
+          <motion.div variants={item}>
+            <UnknownScenarioFallbackCard
+              fallbackMessage={data.fallback_message || data.clarification_question}
+              onReset={onReset}
+              onSelectExample={onSelectExample}
+            />
           </motion.div>
-        ))
+          <motion.div variants={item}>
+            <MandatoryDisclaimer text={data.disclaimer} />
+          </motion.div>
+        </>
       ) : (
-        <motion.div variants={item}>
-          <NoVerifiedProvisionState />
-        </motion.div>
-      )}
+        <>
+          {(data.low_confidence_warning || data.needs_clarification) && (
+            <motion.div variants={item}>
+              <LowConfidenceBanner clarificationQuestion={data.clarification_question} />
+            </motion.div>
+          )}
 
-      {data.action_steps?.length > 0 && (
-        <motion.div variants={item}>
-          <ActionSteps steps={data.action_steps} />
-        </motion.div>
-      )}
+          <motion.div variants={item} className={hasIssue ? "grid gap-4 sm:gap-5 md:grid-cols-2" : "grid gap-4 sm:gap-5"}>
+            <DomainResultCard domain={data.analysis.domain} />
+            {hasIssue && (
+              <IssueResultCard
+                issue={issue}
+                signals={data.analysis.scenario_signals}
+              />
+            )}
+          </motion.div>
 
-      {data.portals?.length > 0 && (
-        <motion.div variants={item}>
-          <PortalList portals={data.portals} />
-        </motion.div>
-      )}
+          <motion.div variants={item} className="flex items-center gap-3 px-1 pt-4">
+            <span className="shrink-0 font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-foreground">
+              {hasProvisions ? "APPLICABLE STATUTORY PROVISIONS" : "LEGAL INFORMATION"}
+            </span>
+            <span aria-hidden className="h-0.5 flex-1 bg-border" />
+          </motion.div>
 
-      <motion.div variants={item}>
-        <MandatoryDisclaimer text={data.disclaimer} />
-      </motion.div>
+          {hasProvisions ? (
+            data.legal_provisions.map((p, i) => (
+              <motion.div key={`${p.act_id}-${p.section}-${i}`} variants={item}>
+                <ProvisionCard provision={p} index={i} />
+              </motion.div>
+            ))
+          ) : (
+            <motion.div variants={item}>
+              <NoVerifiedProvisionState />
+            </motion.div>
+          )}
+
+          {data.action_steps?.length > 0 && (
+            <motion.div variants={item}>
+              <ActionSteps steps={data.action_steps} />
+            </motion.div>
+          )}
+
+          {data.portals?.length > 0 && (
+            <motion.div variants={item}>
+              <PortalList portals={data.portals} />
+            </motion.div>
+          )}
+
+          <motion.div variants={item}>
+            <MandatoryDisclaimer text={data.disclaimer} />
+          </motion.div>
+        </>
+      )}
     </motion.div>
   );
 }

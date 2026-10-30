@@ -35,6 +35,9 @@ export function getLanguageLabel(code: string): string {
 }
 
 export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
+  const optionsRef = useRef(options);
+  optionsRef.current = options;
+
   const [isRecording, setIsRecording] = useState(false);
   const [isTranscribing, setIsTranscribing] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
@@ -45,6 +48,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
   const audioStreamRef = useRef<MediaStream | null>(null);
   const timerIntervalRef = useRef<number | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
+
 
   // Cleanup helper to guarantee all tracks in the media stream are stopped
   const stopAllTracks = useCallback(() => {
@@ -154,7 +158,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
         setIsTranscribing(true);
         try {
           const result = await transcribeAudio(recordedBlob, {
-            language: options?.languageHint,
+            language: optionsRef.current?.languageHint,
           });
 
           const langCode = result.language;
@@ -171,7 +175,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
               message: "We couldn't hear any clear speech. Please speak closer to your microphone and try again.",
             });
           } else {
-            options?.onTranscriptionSuccess?.(result);
+            optionsRef.current?.onTranscriptionSuccess?.(result);
           }
         } catch (err: unknown) {
           const speechErr = err as SpeechApiError;

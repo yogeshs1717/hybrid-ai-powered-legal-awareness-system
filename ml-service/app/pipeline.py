@@ -52,9 +52,10 @@ class AnalysisPipeline:
             scenario_text, domain_prediction.domain_id
         )
 
-        # Module 3 — Legal Intelligence Engine (KB lookup + eligibility gate).
+        # Module 3 — Legal Intelligence Engine (KB lookup + statutory validation).
         intelligence = self._legal_engine.retrieve(
-            issue_detection.issue_id if issue_detection else None
+            issue_detection.issue_id if issue_detection else None,
+            scenario_text=scenario_text,
         )
 
         # Module 4 — Response Builder (assembly of the locked contract).
@@ -63,4 +64,6 @@ class AnalysisPipeline:
             domain_prediction=domain_prediction,
             issue_detection=issue_detection,
             intelligence=intelligence,
+            scenario_text=scenario_text,
         )
+

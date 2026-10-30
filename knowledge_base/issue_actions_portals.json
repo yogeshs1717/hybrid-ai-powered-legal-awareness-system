@@ -490,6 +490,7 @@
         "Approach the Consumer Commission via e-Daakhil seeking refund of deposited amounts with interest and compensation for mental agony."
       ],
       "portal_ids": [
+        "rera_portal",
         "edaakhil",
         "consumer_helpline_ingram"
       ]
@@ -862,6 +863,7 @@
         "Seek legal assistance through NALSA or consult an advocate to file a summary recovery suit under commercial law."
       ],
       "portal_ids": [
+        "msme_samadhaan",
         "nalsa",
         "cpgrams"
       ]
@@ -1425,15 +1427,16 @@
     },
     "automobile_manufacturing_defect_lemon_vehicle": {
       "action_steps": [
-        "Compile all job cards, workshop repair sheets, towing receipts, and communication logs documenting every breakdown and repair attempt.",
-        "Calculate the total number of days the vehicle has remained in the workshop since purchase.",
-        "Send a formal legal notice to the automobile manufacturer's CEO and dealership demanding immediate vehicle replacement or full refund.",
-        "Lodge an official grievance on the National Consumer Helpline (consumerhelpline.gov.in).",
-        "File a consumer complaint via e-Daakhil before the Consumer Commission supported by independent automobile engineering inspection reports."
+        "Collect and preserve all job cards, repair invoices, and technician diagnosis reports from the authorized dealership.",
+        "Send a formal legal notice to both the authorized dealership and the vehicle manufacturer demanding vehicle replacement or full refund.",
+        "Lodge a formal complaint on the National Consumer Helpline portal (consumerhelpline.gov.in).",
+        "Request an independent expert mechanical evaluation report from a recognized government automobile testing agency or institution.",
+        "File a product liability consumer complaint on e-Daakhil seeking vehicle replacement, refund, and damages."
       ],
       "portal_ids": [
         "consumer_helpline_ingram",
-        "edaakhil"
+        "edaakhil",
+        "cpgrams"
       ]
     },
     "high_security_registration_plate_hsrp_dispute": {
@@ -2297,6 +2300,613 @@
         "nalsa",
         "cpgrams"
       ]
+    },
+    "electricity_bill_sms_apk_scam": {
+      "action_steps": [
+        "Do not click links or install any APK files sent via SMS or WhatsApp regarding utility bills.",
+        "Call 1930 immediately or lodge a complaint on cybercrime.gov.in within the golden hour if money was debited.",
+        "Inform your bank to freeze compromised accounts and block linked netbanking or debit cards.",
+        "Report the fraudulent SMS and phone numbers on the Department of Telecommunications Chakshu portal (sancharsaathi.gov.in).",
+        "Check your official electricity board website or app directly to verify actual billing status."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_chakshu",
+        "rbi_cms"
+      ]
+    },
+    "fastag_blacklist_phishing_link_scam": {
+      "action_steps": [
+        "Never enter bank details, OTPs, or UPI PINs on third-party links received via SMS claiming FASTag deactivation.",
+        "Report unauthorized debits immediately to 1930 and file a complaint on cybercrime.gov.in.",
+        "Contact your FASTag issuing bank directly to block the wallet or linked account.",
+        "Report the fraudulent sender headers and phishing URLs on Sanchar Saathi Chakshu.",
+        "Manage and recharge your FASTag only through authorized bank portals or the official NHAI MyFASTag app."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_chakshu",
+        "rbi_cms"
+      ]
+    },
+    "aeps_biometric_aadhaar_money_theft": {
+      "action_steps": [
+        "Immediately open the UIDAI mAadhaar app or resident portal and lock your Aadhaar biometrics to prevent further transactions.",
+        "Report unauthorized AePS withdrawals to your bank within 3 days to invoke RBI zero liability protection.",
+        "Lodge a formal cyber financial fraud complaint at cybercrime.gov.in and call 1930.",
+        "File a complaint on the official UIDAI grievance portal (uidai.gov.in) citing unauthorized biometric authentication.",
+        "Escalate to the RBI Integrated Ombudsman if your home bank fails to reverse fraudulent AePS debits within 30 days."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "uidai",
+        "rbi_cms"
+      ]
+    },
+    "wedding_invitation_apk_whatsapp_scam": {
+      "action_steps": [
+        "Immediately switch your smartphone to Airplane Mode or disconnect from the internet to stop data exfiltration.",
+        "Boot into Safe Mode and uninstall the unrecognized wedding card .apk application.",
+        "Contact your bank immediately from another device to freeze your accounts, netbanking, and UPI access.",
+        "Report the cyber incident and malicious APK hash to CERT-In (cert-in.org.in) and cybercrime.gov.in.",
+        "Perform a complete factory reset of your device after backing up essential personal photos and contacts."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "cert_in",
+        "sanchar_saathi_chakshu"
+      ]
+    },
+    "credit_card_reward_points_expiry_link": {
+      "action_steps": [
+        "Immediately call your credit card issuer's emergency helpline to block your card and hotlist compromised credentials.",
+        "Report unauthorized credit card transactions on the 1930 national cyber helpline and cybercrime.gov.in.",
+        "Dispute fraudulent charges with your bank under RBI customer liability circulars within 3 days.",
+        "Forward the phishing SMS and sender ID to the Chakshu facility on sancharsaathi.gov.in.",
+        "Reset all online banking passwords and enable two-factor authentication with token-based authenticators."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "rbi_cms",
+        "sanchar_saathi_chakshu"
+      ]
+    },
+    "fake_job_offer_visa_overseas_scam": {
+      "action_steps": [
+        "Stop sending any further processing, medical, or visa fees to the recruiter or agent.",
+        "Verify the recruiting agency's registration on the Ministry of External Affairs eMigrate portal (emigrate.gov.in).",
+        "File an official cyber fraud complaint on cybercrime.gov.in with bank transaction slips and offer letters.",
+        "Lodge a grievance on the Ministry of External Affairs MADAD portal for overseas recruitment fraud.",
+        "Report fraudulent bank accounts used by the agents to your local police cyber cell and cybercrime portal."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "cpgrams",
+        "rbi_cms"
+      ]
+    },
+    "olx_quikr_qr_code_upi_scam": {
+      "action_steps": [
+        "Remember that you NEVER need to enter your UPI PIN to receive money into your bank account.",
+        "Call 1930 immediately or log in to cybercrime.gov.in to register the fraud transaction within the golden hour.",
+        "Notify your bank to block UPI services and freeze any ongoing unauthorized debit requests.",
+        "Report the buyer profile on OLX or Quikr and submit chat screenshots as evidence.",
+        "File an ombudsman complaint on cms.rbi.org.in if the beneficiary bank fails to cooperate in freezing stolen funds."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "rbi_cms",
+        "sanchar_saathi_chakshu"
+      ]
+    },
+    "ai_voice_clone_emergency_ransom_scam": {
+      "action_steps": [
+        "Hang up immediately and directly call your family member on their known primary number to confirm their safety.",
+        "Establish a private family codeword or ask specific personal questions that only the real family member can answer.",
+        "Do not transfer any money to unfamiliar UPI IDs, wallets, or bank accounts under pressure.",
+        "Report the extortion attempt and caller details to 1930 and on cybercrime.gov.in.",
+        "Report the spoofed or caller phone number on Sanchar Saathi Chakshu."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "sanchar_saathi_chakshu",
+        "cpgrams"
+      ]
+    },
+    "coaching_institute_dropout_fee_refund_denial": {
+      "action_steps": [
+        "Submit a formal written refund application quoting CCPA Guidelines for Prevention of Unfair Trade Practices in Coaching Institutes.",
+        "Attach copies of the fee receipt, admission form, and written notice of discontinuation.",
+        "Call the National Consumer Helpline at 1915 or register an online grievance on consumerhelpline.gov.in.",
+        "Send a formal legal notice giving the coaching institute 15 days to refund the pro-rata fee balance.",
+        "File a consumer complaint on the e-Daakhil portal (edaakhil.nic.in) before the District Consumer Disputes Redressal Commission."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil",
+        "cpgrams"
+      ]
+    },
+    "dark_patterns_drip_pricing_sneaked_charges": {
+      "action_steps": [
+        "Take screenshots of the initial advertised price and the final inflated checkout breakdown showing sneaked charges.",
+        "Submit a formal complaint to the National Consumer Helpline (NCH) portal (consumerhelpline.gov.in) with order screenshots.",
+        "Report the dark pattern to the Central Consumer Protection Authority (CCPA) for violation of Dark Patterns Prevention Guidelines.",
+        "Demand a refund of unauthorized convenience or booking add-ons from customer support in writing.",
+        "File a case on e-Daakhil for compensation against deceptive and unfair trade practices."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil",
+        "cpgrams"
+      ]
+    },
+    "defective_mobile_green_line_display_after_update": {
+      "action_steps": [
+        "Document the exact phone model, IMEI number, OTA software update version, and photograph the vertical green line on screen.",
+        "Visit the manufacturer authorized service center and obtain an official service inspection sheet noting zero physical or water damage.",
+        "Lodge a complaint with National Consumer Helpline (1915 / consumerhelpline.gov.in) asserting manufacturer product liability.",
+        "Escalate to the manufacturer's nodal grievance officer citing established consumer commission rulings on update-induced hardware failures.",
+        "File a consumer complaint on e-Daakhil claiming free screen replacement and compensation for service disruption."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil",
+        "bis_manakonline"
+      ]
+    },
+    "e_commerce_unilateral_order_cancellation_by_seller": {
+      "action_steps": [
+        "Save the order confirmation email, SMS, and invoice showing acceptance of offer and consideration.",
+        "Write to the e-commerce platform grievance officer asserting breach of Consumer Protection (E-Commerce) Rules.",
+        "Lodge a complaint on the National Consumer Helpline (NCH - INGRAM) portal citing unfair trade practice.",
+        "Demand fulfillment of the confirmed purchase at the agreed price or compensation for price differential.",
+        "File a petition on e-Daakhil before the Consumer Commission for compensation against arbitrary cancellation."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil",
+        "cpgrams"
+      ]
+    },
+    "food_delivery_adulterated_contaminated_meal": {
+      "action_steps": [
+        "Immediately take clear photographs and videos of the foreign matter, contamination, or spoiled condition in the food item.",
+        "Preserve the food packaging, restaurant bill, and delivery platform order receipt.",
+        "File an official complaint on the FSSAI consumer grievance portal (foscos.fssai.gov.in) against the food business operator.",
+        "Lodge a grievance on the National Consumer Helpline (NCH) portal (consumerhelpline.gov.in).",
+        "File a claim on e-Daakhil for full refund and medical damages if food poisoning or illness occurred."
+      ],
+      "portal_ids": [
+        "fssai_foscos",
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
+    },
+    "airline_denied_boarding_delay_compensation_refusal": {
+      "action_steps": [
+        "Request a written endorsement or letter from the airline station manager stating the exact reason for denied boarding or delay.",
+        "Preserve your confirmed booking ticket, boarding pass, and meal/hotel expenditure receipts.",
+        "Lodge a complaint on the Ministry of Civil Aviation AirSewa portal (airsewa.gov.in) citing DGCA Civil Aviation Requirements (CAR).",
+        "Escalate the grievance to the airline nodal grievance officer quoting statutory delay compensation slabs.",
+        "File a consumer complaint on e-Daakhil for statutory compensation, ticket refund, and incidental travel damages."
+      ],
+      "portal_ids": [
+        "airsewa",
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
+    },
+    "driving_without_licence_challan_dispute": {
+      "action_steps": [
+        "Check whether you possess a valid driving licence that was merely not in physical possession at the time of the stop.",
+        "If you hold a valid licence, produce the electronic licence from DigiLocker or mParivahan to seek composition or cancellation under Rule 139 CMVR.",
+        "If an unlicensed person or minor drove the vehicle, contest compounding demands exceeding statutory limits.",
+        "Check the e-Challan portal (echallan.parivahan.gov.in) for exact penal sections and compounding fee slabs.",
+        "Appear before the Virtual Court (vcourts.gov.in) or jurisdictional Traffic Special Metropolitan Magistrate to contest or compound."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "fake_traffic_challan_wrong_vehicle_city": {
+      "action_steps": [
+        "Download the photographic evidence attached to the e-challan from the official Parivahan eChallan portal.",
+        "Compare the vehicle model, colour, make, and number plate font with your actual vehicle to document the mismatch.",
+        "File an online grievance on the Parivahan NextGen eChallan Ticket system (echallan.parivahan.gov.in/gsticket/).",
+        "Lodge a written complaint with the Traffic Police Commissionerate of the issuing city requesting challan revocation.",
+        "Contest the incorrect challan on the Virtual Court (vcourts.gov.in) by submitting vehicle RC and proof of physical absence."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "digital_documents_refusal_digilocker_mparivahan": {
+      "action_steps": [
+        "Show the Ministry of Road Transport and Highways (MoRTH) circular and Rule 139 Central Motor Vehicles Rules confirming DigiLocker validity.",
+        "Refuse to pay on-the-spot cash penalties for non-possession of physical documents when digital credentials are shown.",
+        "Note down the badge number, name, and jurisdiction of the enforcement officer demanding physical cards.",
+        "Lodge an official grievance on the Parivahan portal (parivahan.gov.in) and state traffic police grievance cell.",
+        "Contest any wrongful challan issued for document non-production on the Virtual Court portal (vcourts.gov.in)."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "illegal_vehicle_key_confiscation_by_constable": {
+      "action_steps": [
+        "Politely state that under the Motor Vehicles Act, police personnel below the rank of Sub-Inspector cannot seize vehicle keys or impound documents.",
+        "Politely record video or audio evidence of the officer snatching your keys or demanding cash without a challan machine.",
+        "Call the Police Control Room (112) immediately to report unauthorized key confiscation on the public road.",
+        "File a complaint on CPGRAMS (pgportal.gov.in) and before the State Police Complaints Authority.",
+        "Submit a formal written complaint to the Senior Superintendent of Police (Traffic) of the jurisdiction."
+      ],
+      "portal_ids": [
+        "cpgrams",
+        "nalsa",
+        "parivahan"
+      ]
+    },
+    "unlawful_towing_occupant_inside_vehicle": {
+      "action_steps": [
+        "Inform the towing crew immediately that towing a motor vehicle while an occupant or passenger is inside is strictly prohibited by traffic guidelines.",
+        "Take photographs and video of the vehicle being hooked up with occupants seated inside and any resulting body/bumper damage.",
+        "Call 112 immediately to report unsafe towing endangering human life.",
+        "Lodge a formal grievance on Parivahan eChallan and CPGRAMS detailing the physical damage caused by the towing crane.",
+        "File a compensation claim before the District Consumer Disputes Commission or civil court for repair costs and harassment."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "cpgrams",
+        "parivahan"
+      ]
+    },
+    "uninsured_vehicle_vahan_sync_delay_fine": {
+      "action_steps": [
+        "Download your active motor insurance policy schedule and certificate from your insurer or IIB portal showing commencement date before the challan time.",
+        "Raise an e-challan grievance on echallan.parivahan.gov.in/gsticket/ attaching the active insurance certificate and payment receipt.",
+        "Contact your insurance company to expedite the daily policy data push to the central Vahan IIB database.",
+        "Submit the proof of valid insurance before the Virtual Court (vcourts.gov.in) to get the Section 196 penalty dismissed.",
+        "If wrongly compounded, file a representation before the jurisdictional Traffic ACP for challan cancellation."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "emergency_vehicle_passage_red_light_challan": {
+      "action_steps": [
+        "Download the photographic sequence and video recording from the Parivahan eChallan portal showing the ambulance behind or beside your vehicle.",
+        "Highlight that crossing the stop line was mandated under Section 194E of the Motor Vehicles Act to provide unobstructed passage to emergency vehicles.",
+        "Lodge an online challan contest ticket on echallan.parivahan.gov.in/gsticket/ explaining the emergency maneuver.",
+        "Submit the dashcam footage or traffic camera snapshot to the Virtual Court (vcourts.gov.in) to seek complete dismissal.",
+        "Present the case to the Traffic Police Nodal Grievance Cell if automated processing fails to revoke the challan."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts",
+        "parivahan"
+      ]
+    },
+    "gratuity_withheld_past_5_years_service": {
+      "action_steps": [
+        "Submit a formal Form I application for payment of gratuity to your former employer via registered post or official email.",
+        "Note that the employer must determine and disburse the amount within 30 days, failing which 10% statutory interest applies.",
+        "If the employer refuses or fails to pay, file Form N (Application for Direction) before the Controlling Authority under the Gratuity Act.",
+        "Lodge an online complaint on the Ministry of Labour's Samadhan portal (samadhan.labour.gov.in).",
+        "The Controlling Authority can issue a recovery certificate to the District Collector to recover dues as arrears of land revenue."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha",
+        "cpgrams"
+      ]
+    },
+    "maternity_leave_salary_denial_or_termination": {
+      "action_steps": [
+        "Serve written notice to your employer with medical certification of expected delivery date claiming 26 weeks statutory paid maternity leave.",
+        "Document any retaliatory communication, performance warnings, or termination notices issued during pregnancy or maternity leave.",
+        "File an immediate grievance with the Inspector under the Maternity Benefit Act via the Shram Suvidha portal (shramsuvidha.gov.in).",
+        "Lodge a formal complaint on the Samadhan portal (samadhan.labour.gov.in) challenging the unlawful discharge as void ab initio.",
+        "Seek assistance from the National Legal Services Authority (NALSA) or state legal services authority for interim injunction."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha",
+        "nalsa"
+      ]
+    },
+    "pf_deducted_not_deposited_epfo": {
+      "action_steps": [
+        "Download your detailed EPFO Member Passbook from passbook.epfindia.gov.in showing the uncredited contribution months.",
+        "Gather all monthly payslips showing clear line-item deductions for Provident Fund from your gross salary.",
+        "Register a formal grievance on the EPFiGMS portal (epfigms.gov.in) attaching the payslips and passbook extract.",
+        "Request the Regional Provident Fund Commissioner (RPFC) to initiate Section 7A inquiry against the defaulting establishment.",
+        "Lodge a concurrent grievance on the Samadhan and CPGRAMS portals for criminal breach of trust and wage recovery."
+      ],
+      "portal_ids": [
+        "epfigms_portal",
+        "samadhan",
+        "cpgrams"
+      ]
+    },
+    "employment_bond_original_certificate_retention": {
+      "action_steps": [
+        "Send a formal demand letter requesting the immediate unconditional return of your original degree certificates and marksheets.",
+        "Note that withholding an employee's original personal educational documents is completely illegal under Indian law.",
+        "State that exorbitant employment bond penalty clauses are void restraints of trade under Section 27 of the Contract Act.",
+        "File a complaint with the Ministry of Labour Inspector via Samadhan (samadhan.labour.gov.in) and CPGRAMS.",
+        "Issue a legal notice through an advocate or approach the jurisdictional High Court via writ petition for document recovery."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "cpgrams",
+        "nalsa"
+      ]
+    },
+    "forced_resignation_notice_pay_deduction": {
+      "action_steps": [
+        "Immediately send an email to HR stating that your resignation was obtained under duress, coercion, or threat of termination.",
+        "Object in writing to any unauthorized deduction of notice buyout fees from your earned salary or leave encashment.",
+        "Preserve all email trails, meeting recordings, and chat messages showing managerial coercion or threats.",
+        "File a dispute before the Conciliation Officer on the Ministry of Labour's Samadhan portal (samadhan.labour.gov.in).",
+        "Demand full disbursal of unpaid wages within two working days under Section 17(2) of the Code on Wages."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha",
+        "cpgrams"
+      ]
+    },
+    "statutory_annual_bonus_denial": {
+      "action_steps": [
+        "Verify that your monthly wages fall within the statutory bonus threshold and you worked at least 30 working days in the accounting year.",
+        "Submit a formal written representation citing Section 26 of the Code on Wages requiring payment of minimum 8.33% bonus.",
+        "Request copy of the establishment's Form A / Bonus computation register submitted to the Labour Inspector.",
+        "File a formal claim under Section 45 before the Competent Authority on the Samadhan portal.",
+        "Report establishment non-compliance to the Inspector-cum-Facilitator on the Shram Suvidha portal (shramsuvidha.gov.in)."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha",
+        "cpgrams"
+      ]
+    },
+    "unpaid_internship_full_commercial_workload": {
+      "action_steps": [
+        "Preserve logs of your daily work hours, deliverables, client emails, and assigned commercial tasks.",
+        "Document that you performed core operational duties exceeding standard internship learning parameters without remuneration.",
+        "Submit a written claim for statutory minimum wages for hours worked as an employee.",
+        "File an online complaint on the Ministry of Labour Samadhan portal (samadhan.labour.gov.in) for minimum wage violation.",
+        "Report the predatory labor practice to your university placement cell and the Shram Suvidha portal."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha",
+        "cpgrams"
+      ]
+    },
+    "commercial_vendor_raw_material_delivery_default": {
+      "action_steps": [
+        "Issue a formal written notice of breach giving the supplier 15 days to deliver the materials or refund the advance with interest.",
+        "Collate the purchase order, tax invoice, bank RTGS transaction proof, and communication confirming delivery deadlines.",
+        "Invoke the option of substituted performance under Section 20 of Specific Relief Act to procure from another vendor at defaulter's cost.",
+        "File a commercial suit for recovery of money and business damages before the Commercial Court under the Commercial Courts Act.",
+        "Initiate pre-institution mediation at the District Legal Services Authority (DLSA) under the Commercial Courts Rules."
+      ],
+      "portal_ids": [
+        "nalsa",
+        "cpgrams",
+        "mca_portal"
+      ]
+    },
+    "landlord_security_deposit_withheld_unjustly": {
+      "action_steps": [
+        "Take comprehensive photographs and videos of the vacant rented premises upon handing over keys showing good repair.",
+        "Send a formal written notice to the landlord requesting the return of the deposit within 7 days, excluding normal wear and tear.",
+        "Demand detailed itemized repair receipts and prior contractor estimates for any alleged deductions.",
+        "Approach the local Rent Authority or Rent Tribunal under the applicable State Tenancy Act.",
+        "File a summary suit for recovery of debt under Order 37 of the Code of Civil Procedure or initiate DLSA mediation."
+      ],
+      "portal_ids": [
+        "nalsa",
+        "cpgrams"
+      ]
+    },
+    "freelance_software_developer_invoice_nonpayment": {
+      "action_steps": [
+        "Preserve all email agreements, signed statement of work (SOW), GitHub commit logs, and deployed software deliverable proofs.",
+        "Send a formal demand letter stating that services were rendered non-gratuitously and benefit was enjoyed under Section 70.",
+        "Issue a statutory legal notice giving the client 15 days to settle the outstanding invoice amount plus interest.",
+        "If you are registered as an MSME, file a delayed payment case on the MSME Samadhaan portal (samadhaan.msme.gov.in).",
+        "Seek pre-litigation mediation through the District Legal Services Authority (NALSA / DLSA)."
+      ],
+      "portal_ids": [
+        "msme_samadhaan",
+        "nalsa",
+        "cpgrams",
+        "mca_portal"
+      ]
+    },
+    "interior_decorator_abandoning_renovation_advance": {
+      "action_steps": [
+        "Conduct a joint site inspection or hire an independent architect to document unfinished work, demolished structures, and site status.",
+        "Issue a mandatory 30-day written notice under Section 20 of the Specific Relief Act 1963 informing the contractor of substituted performance.",
+        "Get the remaining renovation work completed by another contractor and preserve all invoices and payment receipts.",
+        "Send a formal legal notice demanding reimbursement of the extra expenses and refund of unspent advance money.",
+        "File a civil suit for damages or lodge a complaint with the District Consumer Commission if hired as an individual consumer."
+      ],
+      "portal_ids": [
+        "nalsa",
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
+    },
+    "non_compete_clause_employment_trade_restraint": {
+      "action_steps": [
+        "Consult the settled Supreme Court jurisprudence confirming that post-employment non-compete clauses are completely void under Section 27.",
+        "Reply in writing to the employer's warning letter stating that the Indian Contract Act prohibits any agreement restraining lawful profession.",
+        "Clarify that while you will respect genuine trade secrets and customer data, you retain the constitutional right to earn a livelihood.",
+        "Request a formal no-dues clearance and relieving letter without unlawful restrictive covenants.",
+        "Approach the High Court or civil court for a declaration and perpetual injunction restraining the employer from harassing your new employer."
+      ],
+      "portal_ids": [
+        "nalsa",
+        "cpgrams"
+      ]
+    },
+    "advance_booking_token_money_forfeiture": {
+      "action_steps": [
+        "Send a formal notice pointing out that under Section 74 of the Contract Act, a party can only retain reasonable compensation for actual proved loss.",
+        "Demand full refund of the deposit minus genuine non-refundable expenses directly incurred by the banquet hall or vendor.",
+        "Collate written evidence of early cancellation notice and proof that the vendor was able to re-book the date with another client.",
+        "Lodge a grievance on the National Consumer Helpline (consumerhelpline.gov.in) for unfair contract terms.",
+        "File a consumer complaint on e-Daakhil or initiate pre-litigation mediation at the District Legal Services Authority."
+      ],
+      "portal_ids": [
+        "consumer_helpline_ingram",
+        "edaakhil",
+        "nalsa"
+      ]
+    },
+    "wrong_side_police_diversion_defense": {
+      "action_steps": [
+        "Access the Parivahan e-Challan Grievance portal and select Challan Dispute under Section 119 Proviso of the Motor Vehicles Act, 1988.",
+        "Upload dashcam footage, GPS track logs, or photographs showing the road construction barricade and police diversion in progress.",
+        "Mention in the dispute text that Section 119 Proviso legally mandates that police officer directions prevail over contradictory traffic signs.",
+        "Submit a formal written representation to the jurisdictional Traffic ACP/DCP requesting cancellation of the wrongly generated camera challan.",
+        "If the grievance is rejected, opt to contest the challan before the Virtual Court or jurisdictional Judicial Magistrate."
+      ],
+      "portal_ids": [
+        "echallan_grievance",
+        "vcourts"
+      ]
+    },
+    "hit_and_run_solatium_fund_claim": {
+      "action_steps": [
+        "Ensure immediate registration of an FIR at the nearest police station under Section 106 BNS and Section 134 MV Act.",
+        "Obtain certified copies of the FIR, wound certificate, medico-legal case (MLC) report, or post-mortem report.",
+        "Submit an application in Form I under the Hit and Run Compensation Scheme to the Sub-Divisional Magistrate / Claims Enquiry Officer.",
+        "Cooperate with the Claims Enquiry Officer during the spot verification and submission of inquiry report to the District Magistrate.",
+        "Receive statutory compensation of Rs. 2,00,000 (death) or Rs. 50,000 (grievous hurt) directly into the verified bank account."
+      ],
+      "portal_ids": [
+        "solatium_fund_morth",
+        "cctns_citizen"
+      ]
+    },
+    "mact_accident_compensation_claim": {
+      "action_steps": [
+        "Collect certified copies of FIR, charge sheet, Detailed Accident Report (DAR), medical discharge summaries, and medical bills.",
+        "Obtain a permanent disability certificate from a government medical board if disability was sustained.",
+        "File a claim petition in Form 54 under Section 166 of the MV Act before the jurisdictional MACT within 6 months of accident.",
+        "Serve notice on the offending vehicle owner, driver, and the third-party insurance company.",
+        "Present evidence of income, medical expenditure, and loss of future earning capacity before the tribunal to obtain full compensation."
+      ],
+      "portal_ids": [
+        "ecourts_services",
+        "nalsa"
+      ]
+    },
+    "posh_workplace_sexual_harassment_complaint": {
+      "action_steps": [
+        "Draft a detailed written complaint specifying dates, locations, witnesses, and attach digital evidence (emails, WhatsApp chats, audio).",
+        "Submit the complaint formally to the Presiding Officer of the organization's Internal Committee (IC) within 3 months.",
+        "Seek immediate interim relief under Section 12 of POSH Act (transfer of the respondent, change of supervisor, or 3 months paid leave).",
+        "If the company fails to act or lacks an IC, lodge a complaint on the central SHe-Box portal (Ministry of Women and Child Development).",
+        "File an FIR under Section 79 BNS at the local police station or Cyber Crime Police Station if explicit criminal intimidation occurred."
+      ],
+      "portal_ids": [
+        "shebox_portal",
+        "cpgrams"
+      ]
+    },
+    "cheque_bounce_statutory_notice_138": {
+      "action_steps": [
+        "Obtain the original dishonoured cheque and bank return memo showing insufficiency of funds or account closed.",
+        "Send a formal Legal Demand Notice through an advocate within 30 days of receiving the bank memo, demanding payment within 15 days.",
+        "Send the notice via Speed Post / Registered Post AD to the drawer's official address and preserve postal receipt and tracking delivery proof.",
+        "If the drawer fails to make payment within 15 days from notice delivery, file a complaint under Section 138 NI Act within 30 days before the Judicial Magistrate.",
+        "File an application under Section 143A NI Act seeking 20% interim compensation from the drawer upon summons appearance."
+      ],
+      "portal_ids": [
+        "ecourts_services",
+        "nalsa"
+      ]
+    },
+    "rbi_zero_liability_unauthorized_transaction": {
+      "action_steps": [
+        "Notify your bank immediately within 3 working days in writing and via helpline to establish statutory zero customer liability under RBI circular.",
+        "Request immediate blocking of all cards, net banking, UPI VPAs, and mobile banking services to prevent further debits.",
+        "Call 1930 and register a formal cyber fraud complaint on cybercrime.gov.in within the golden hour to freeze the beneficiary accounts.",
+        "Submit a formal written dispute form at your bank branch and obtain a signed copy with dispute reference number.",
+        "If the bank does not credit shadow reversal within 10 days or rejects refund after 30 days, file an escalation before the RBI Ombudsman on CMS portal."
+      ],
+      "portal_ids": [
+        "cybercrime_gov_in",
+        "rbi_cms"
+      ]
+    },
+    "flight_delay_cancellation_compensation": {
+      "action_steps": [
+        "Request written confirmation of flight cancellation or delay specifying reasons from airline airport duty manager.",
+        "Demand alternate flight arrangements to destination or immediate full cash refund under DGCA Passenger Charter rules.",
+        "Demand free meals, refreshments, and hotel accommodation with transfers if delay exceeds 24 hours or involves night delay.",
+        "File an official passenger grievance on the Ministry of Civil Aviation AirSewa portal attaching tickets and boarding passes.",
+        "Lodge an escalation on National Consumer Helpline (NCH) and file for compensation for deficiency in service on e-Daakhil if unresolved."
+      ],
+      "portal_ids": [
+        "airsewa",
+        "consumer_helpline_ingram",
+        "edaakhil"
+      ]
+    },
+    "tenancy_security_deposit_unlawful_deduction": {
+      "action_steps": [
+        "Issue a formal written demand email and letter to the landlord attaching date-stamped handover photos proving flat was left in good condition.",
+        "Demand an itemized statement with actual GST repair bills for any proposed deduction within 7 days.",
+        "Point out that routine repainting and normal weather wear are landlord obligations under Section 108 of Transfer of Property Act.",
+        "Issue an advocate Legal Demand Notice demanding refund of full deposit with 12% interest for unlawful withholding.",
+        "File a summary suit under Order 37 CPC or money recovery suit in jurisdictional civil court within 3 years."
+      ],
+      "portal_ids": [
+        "ecourts_services",
+        "nalsa"
+      ]
+    },
+    "notice_period_exorbitant_deduction_exit": {
+      "action_steps": [
+        "Submit a formal written protest to HR stating that notice pay recovery must be strictly calculated on basic salary (not gross/CTC) and limited to actual unserved days.",
+        "Cite Section 74 of the Indian Contract Act establishing that employer cannot claim penal damages exceeding actual proved business loss.",
+        "Demand immediate release of earned salary, statutory PF, and gratuity which cannot be legally withheld against notice dispute.",
+        "Lodge an online grievance on Ministry of Labour's Samadhan or Shram Suvidha portal for illegal wage deductions.",
+        "File a claim before the Payment of Wages Authority / Labour Court for recovery of illegally withheld exit settlement."
+      ],
+      "portal_ids": [
+        "samadhan",
+        "shram_suvidha"
+      ]
+    },
+    "insurance_claim_arbitrary_rejection": {
+      "action_steps": [
+        "Obtain a formal written repudiation letter from the insurer specifying the exact policy condition and medical grounds relied upon.",
+        "Collect a medical certificate from the treating hospital surgeon establishing that the treatment was an acute emergency unrelated to pre-existing conditions.",
+        "File a formal internal grievance with the Insurance Company's Grievance Redressal Officer (GRO).",
+        "If no resolution is received within 15 days, lodge a complaint on IRDAI's Bima Bharosa portal.",
+        "Approach the Insurance Ombudsman or file a complaint on e-Daakhil before the District Consumer Commission for claim amount plus compensation."
+      ],
+      "portal_ids": [
+        "irdai_bima_bharosa",
+        "edaakhil",
+        "consumer_helpline_ingram"
+      ]
     }
   },
   "portals": {
@@ -2349,16 +2959,25 @@
         "fastag_recharge_wallet_phishing",
         "hotel_flight_ticket_reseller_scam",
         "synthetic_identity_credit_card_fraud",
-        "spyware_stalkerware_device_monitoring",
-        "fake_crypto_arbitrage_telegram_ponzi",
         "nach_unauthorized_autodebit_fraud",
         "telecom_kyc_data_leak_sale",
+        "spyware_stalkerware_device_monitoring",
         "kbc_lottery_whatsapp_prize_scam",
+        "fake_crypto_arbitrage_telegram_ponzi",
         "p2p_crypto_bank_freeze",
         "google_maps_fake_helpline_scam",
         "browser_extension_crypto_drainer",
         "business_email_compromise_bec",
-        "ai_voice_clone_virtual_kidnapping"
+        "ai_voice_clone_virtual_kidnapping",
+        "electricity_bill_sms_apk_scam",
+        "fastag_blacklist_phishing_link_scam",
+        "aeps_biometric_aadhaar_money_theft",
+        "wedding_invitation_apk_whatsapp_scam",
+        "credit_card_reward_points_expiry_link",
+        "fake_job_offer_visa_overseas_scam",
+        "olx_quikr_qr_code_upi_scam",
+        "ai_voice_clone_emergency_ransom_scam",
+        "rbi_zero_liability_unauthorized_transaction"
       ]
     },
     "rbi_cms": {
@@ -2383,7 +3002,14 @@
         "bank_safe_deposit_locker_theft_loss",
         "nach_unauthorized_autodebit_fraud",
         "google_maps_fake_helpline_scam",
-        "business_email_compromise_bec"
+        "business_email_compromise_bec",
+        "electricity_bill_sms_apk_scam",
+        "fastag_blacklist_phishing_link_scam",
+        "aeps_biometric_aadhaar_money_theft",
+        "credit_card_reward_points_expiry_link",
+        "fake_job_offer_visa_overseas_scam",
+        "olx_quikr_qr_code_upi_scam",
+        "rbi_zero_liability_unauthorized_transaction"
       ]
     },
     "sanchar_saathi_chakshu": {
@@ -2422,7 +3048,13 @@
         "fastag_recharge_wallet_phishing",
         "hotel_flight_ticket_reseller_scam",
         "kbc_lottery_whatsapp_prize_scam",
-        "ai_voice_clone_virtual_kidnapping"
+        "ai_voice_clone_virtual_kidnapping",
+        "electricity_bill_sms_apk_scam",
+        "fastag_blacklist_phishing_link_scam",
+        "wedding_invitation_apk_whatsapp_scam",
+        "credit_card_reward_points_expiry_link",
+        "olx_quikr_qr_code_upi_scam",
+        "ai_voice_clone_emergency_ransom_scam"
       ]
     },
     "sanchar_saathi_tafcop": {
@@ -2449,7 +3081,8 @@
       "supported_issue_ids": [
         "identity_theft",
         "data_breach_victimization",
-        "aeps_fingerprint_cloning_fraud"
+        "aeps_fingerprint_cloning_fraud",
+        "aeps_biometric_aadhaar_money_theft"
       ]
     },
     "sebi_scores": {
@@ -2484,7 +3117,8 @@
         "telecom_kyc_data_leak_sale",
         "spyware_stalkerware_device_monitoring",
         "browser_extension_crypto_drainer",
-        "business_email_compromise_bec"
+        "business_email_compromise_bec",
+        "wedding_invitation_apk_whatsapp_scam"
       ]
     },
     "consumer_helpline_ingram": {
@@ -2524,11 +3158,11 @@
         "packaged_food_misleading_nutrition_claims",
         "bank_safe_deposit_locker_theft_loss",
         "automobile_manufacturing_defect_lemon_vehicle",
+        "health_insurance_claim_arbitrary_rejection",
         "misleading_endorser_influencer_financial_ad",
         "spurious_cosmetics_counterfeit_perfumes",
         "airline_denied_boarding_overbooking_compensation",
         "educational_course_bait_and_switch_placement_guarantee",
-        "health_insurance_claim_arbitrary_rejection",
         "fraudulent_active_concealment_used_car_sale",
         "unfair_contract_terms_consumer",
         "dark_patterns_basket_sneaking",
@@ -2536,7 +3170,17 @@
         "school_mandatory_uniform_book_tie_in",
         "cinema_hall_water_confiscation_mrp",
         "substandard_unmarked_electronics_bis",
-        "valet_parking_damage_bailment_liability"
+        "valet_parking_damage_bailment_liability",
+        "coaching_institute_dropout_fee_refund_denial",
+        "dark_patterns_drip_pricing_sneaked_charges",
+        "defective_mobile_green_line_display_after_update",
+        "e_commerce_unilateral_order_cancellation_by_seller",
+        "food_delivery_adulterated_contaminated_meal",
+        "airline_denied_boarding_delay_compensation_refusal",
+        "interior_decorator_abandoning_renovation_advance",
+        "advance_booking_token_money_forfeiture",
+        "flight_delay_cancellation_compensation",
+        "insurance_claim_arbitrary_rejection"
       ]
     },
     "edaakhil": {
@@ -2574,20 +3218,30 @@
         "packaged_food_misleading_nutrition_claims",
         "bank_safe_deposit_locker_theft_loss",
         "automobile_manufacturing_defect_lemon_vehicle",
-        "fraudulent_active_concealment_used_car_sale",
         "health_insurance_claim_arbitrary_rejection",
         "misleading_endorser_influencer_financial_ad",
         "spurious_cosmetics_counterfeit_perfumes",
         "airline_denied_boarding_overbooking_compensation",
         "educational_course_bait_and_switch_placement_guarantee",
         "unreasonable_restraint_on_legal_remedies_clause",
+        "fraudulent_active_concealment_used_car_sale",
         "unilateral_cancellation_of_commercial_lease_before_handover",
         "unfair_contract_terms_consumer",
         "airline_flight_cancellation_refund_delay",
         "school_mandatory_uniform_book_tie_in",
         "cinema_hall_water_confiscation_mrp",
         "substandard_unmarked_electronics_bis",
-        "valet_parking_damage_bailment_liability"
+        "valet_parking_damage_bailment_liability",
+        "coaching_institute_dropout_fee_refund_denial",
+        "dark_patterns_drip_pricing_sneaked_charges",
+        "defective_mobile_green_line_display_after_update",
+        "e_commerce_unilateral_order_cancellation_by_seller",
+        "food_delivery_adulterated_contaminated_meal",
+        "airline_denied_boarding_delay_compensation_refusal",
+        "interior_decorator_abandoning_renovation_advance",
+        "advance_booking_token_money_forfeiture",
+        "flight_delay_cancellation_compensation",
+        "insurance_claim_arbitrary_rejection"
       ]
     },
     "parivahan": {
@@ -2615,7 +3269,14 @@
         "modified_silencer_exhaust_decibel_challan",
         "conflicting_speed_limit_signboard_camera",
         "hsrp_number_plate_challan_dispute",
-        "commercial_vehicle_route_diversion_permit_challan"
+        "commercial_vehicle_route_diversion_permit_challan",
+        "driving_without_licence_challan_dispute",
+        "fake_traffic_challan_wrong_vehicle_city",
+        "digital_documents_refusal_digilocker_mparivahan",
+        "illegal_vehicle_key_confiscation_by_constable",
+        "unlawful_towing_occupant_inside_vehicle",
+        "uninsured_vehicle_vahan_sync_delay_fine",
+        "emergency_vehicle_passage_red_light_challan"
       ]
     },
     "echallan_grievance": {
@@ -2640,14 +3301,21 @@
         "zebra_crossing_pedestrian_stop_line_dispute",
         "two_wheeler_pillion_helmet_challan_dispute",
         "traffic_signal_camera_red_light_yellow_light_glitch",
-        "uninsured_vehicle_challan_portal_sync_delay",
         "commercial_auto_taxi_permit_harassment",
+        "uninsured_vehicle_challan_portal_sync_delay",
         "triple_riding_pillion_child_dispute",
         "emergency_vehicle_passage_challan_dispute",
         "modified_silencer_exhaust_decibel_challan",
         "conflicting_speed_limit_signboard_camera",
         "hsrp_number_plate_challan_dispute",
-        "commercial_vehicle_route_diversion_permit_challan"
+        "commercial_vehicle_route_diversion_permit_challan",
+        "driving_without_licence_challan_dispute",
+        "fake_traffic_challan_wrong_vehicle_city",
+        "digital_documents_refusal_digilocker_mparivahan",
+        "unlawful_towing_occupant_inside_vehicle",
+        "uninsured_vehicle_vahan_sync_delay_fine",
+        "emergency_vehicle_passage_red_light_challan",
+        "wrong_side_police_diversion_defense"
       ]
     },
     "vcourts": {
@@ -2676,7 +3344,13 @@
         "modified_silencer_exhaust_decibel_challan",
         "conflicting_speed_limit_signboard_camera",
         "hsrp_number_plate_challan_dispute",
-        "commercial_vehicle_route_diversion_permit_challan"
+        "commercial_vehicle_route_diversion_permit_challan",
+        "driving_without_licence_challan_dispute",
+        "fake_traffic_challan_wrong_vehicle_city",
+        "digital_documents_refusal_digilocker_mparivahan",
+        "uninsured_vehicle_vahan_sync_delay_fine",
+        "emergency_vehicle_passage_red_light_challan",
+        "wrong_side_police_diversion_defense"
       ]
     },
     "samadhan": {
@@ -2707,15 +3381,23 @@
         "casual_contract_worker_overtime_wage_theft",
         "illegal_salary_cut_during_medical_quarantine",
         "statutory_bonus_denial_profitable_establishment",
-        "floor_wage_violation_remote_gig_contractors",
         "pf_uan_mismatch_employer_refusal_to_attest_joint_declaration",
         "unpaid_intern_full_workload_exploitation",
         "non_provision_of_statutory_payslips_records",
+        "floor_wage_violation_remote_gig_contractors",
         "unilateral_laptop_damage_deduction_exit",
         "layoff_bench_wage_deduction",
         "split_shift_excessive_spreadover_hospitality",
         "gender_wage_gap_unequal_pay",
-        "variable_pay_retrospective_target_shifting"
+        "variable_pay_retrospective_target_shifting",
+        "gratuity_withheld_past_5_years_service",
+        "maternity_leave_salary_denial_or_termination",
+        "pf_deducted_not_deposited_epfo",
+        "employment_bond_original_certificate_retention",
+        "forced_resignation_notice_pay_deduction",
+        "statutory_annual_bonus_denial",
+        "unpaid_internship_full_commercial_workload",
+        "notice_period_exorbitant_deduction_exit"
       ]
     },
     "shram_suvidha": {
@@ -2745,15 +3427,21 @@
         "layoff_retrenchment_compensation_denial",
         "casual_contract_worker_overtime_wage_theft",
         "illegal_salary_cut_during_medical_quarantine",
+        "statutory_bonus_denial_profitable_establishment",
         "unpaid_intern_full_workload_exploitation",
         "non_provision_of_statutory_payslips_records",
-        "statutory_bonus_denial_profitable_establishment",
         "floor_wage_violation_remote_gig_contractors",
         "unilateral_laptop_damage_deduction_exit",
         "layoff_bench_wage_deduction",
         "split_shift_excessive_spreadover_hospitality",
         "gender_wage_gap_unequal_pay",
-        "variable_pay_retrospective_target_shifting"
+        "variable_pay_retrospective_target_shifting",
+        "gratuity_withheld_past_5_years_service",
+        "maternity_leave_salary_denial_or_termination",
+        "forced_resignation_notice_pay_deduction",
+        "statutory_annual_bonus_denial",
+        "unpaid_internship_full_commercial_workload",
+        "notice_period_exorbitant_deduction_exit"
       ]
     },
     "cpgrams": {
@@ -2786,15 +3474,16 @@
         "consulting_retainer_fee_default",
         "equipment_lease_machinery_breakdown",
         "commercial_lease_lock_in_penalty_dispute",
+        "automobile_manufacturing_defect_lemon_vehicle",
         "commercial_vehicle_overloading_weighbridge_dispute",
         "intellectual_property_assignment_payment_default",
         "unilateral_price_escalation_in_fixed_contract",
         "security_guard_facility_vendor_abrupt_walkout",
         "misrepresentation_of_franchise_business_profits",
-        "good_samaritan_harassment_accident_scene",
         "airline_denied_boarding_overbooking_compensation",
         "educational_course_bait_and_switch_placement_guarantee",
         "two_wheeler_pillion_helmet_challan_dispute",
+        "good_samaritan_harassment_accident_scene",
         "traffic_signal_camera_red_light_yellow_light_glitch",
         "commercial_auto_taxi_permit_harassment",
         "statutory_bonus_denial_profitable_establishment",
@@ -2810,7 +3499,25 @@
         "time_is_of_essence_event_contract",
         "unilateral_subcontracting_assignment_breach",
         "interior_contractor_midway_abandonment",
-        "time_barred_debt_written_promise_breach"
+        "time_barred_debt_written_promise_breach",
+        "fake_job_offer_visa_overseas_scam",
+        "ai_voice_clone_emergency_ransom_scam",
+        "coaching_institute_dropout_fee_refund_denial",
+        "dark_patterns_drip_pricing_sneaked_charges",
+        "e_commerce_unilateral_order_cancellation_by_seller",
+        "illegal_vehicle_key_confiscation_by_constable",
+        "unlawful_towing_occupant_inside_vehicle",
+        "gratuity_withheld_past_5_years_service",
+        "pf_deducted_not_deposited_epfo",
+        "employment_bond_original_certificate_retention",
+        "forced_resignation_notice_pay_deduction",
+        "statutory_annual_bonus_denial",
+        "unpaid_internship_full_commercial_workload",
+        "commercial_vendor_raw_material_delivery_default",
+        "landlord_security_deposit_withheld_unjustly",
+        "freelance_software_developer_invoice_nonpayment",
+        "non_compete_clause_employment_trade_restraint",
+        "posh_workplace_sexual_harassment_complaint"
       ]
     },
     "nalsa": {
@@ -2852,17 +3559,29 @@
         "unilateral_price_escalation_in_fixed_contract",
         "security_guard_facility_vendor_abrupt_walkout",
         "misrepresentation_of_franchise_business_profits",
-        "unreasonable_restraint_on_legal_remedies_clause",
-        "undue_influence_senior_citizen_property_agreement",
-        "unilateral_cancellation_of_commercial_lease_before_handover",
         "good_samaritan_harassment_accident_scene",
         "unpaid_intern_full_workload_exploitation",
+        "unreasonable_restraint_on_legal_remedies_clause",
+        "undue_influence_senior_citizen_property_agreement",
         "fraudulent_active_concealment_used_car_sale",
         "indemnity_refusal_vendor_third_party_tax_liability",
+        "unilateral_cancellation_of_commercial_lease_before_handover",
         "time_is_of_essence_event_contract",
         "unilateral_subcontracting_assignment_breach",
         "interior_contractor_midway_abandonment",
-        "time_barred_debt_written_promise_breach"
+        "time_barred_debt_written_promise_breach",
+        "illegal_vehicle_key_confiscation_by_constable",
+        "maternity_leave_salary_denial_or_termination",
+        "employment_bond_original_certificate_retention",
+        "commercial_vendor_raw_material_delivery_default",
+        "landlord_security_deposit_withheld_unjustly",
+        "freelance_software_developer_invoice_nonpayment",
+        "interior_decorator_abandoning_renovation_advance",
+        "non_compete_clause_employment_trade_restraint",
+        "advance_booking_token_money_forfeiture",
+        "mact_accident_compensation_claim",
+        "cheque_bounce_statutory_notice_138",
+        "tenancy_security_deposit_unlawful_deduction"
       ]
     },
     "bis_manakonline": {
@@ -2875,7 +3594,8 @@
       "official_source": "Bureau of Indian Standards (BIS), Ministry of Consumer Affairs, Food and Public Distribution",
       "supported_issue_ids": [
         "gold_jewellery_hallmarking_purity_scam",
-        "substandard_unmarked_electronics_bis"
+        "substandard_unmarked_electronics_bis",
+        "defective_mobile_green_line_display_after_update"
       ]
     },
     "mca_portal": {
@@ -2888,7 +3608,9 @@
       "official_source": "Ministry of Corporate Affairs, Government of India",
       "supported_issue_ids": [
         "digital_signature_certificate_theft",
-        "indemnity_refusal_vendor_third_party_tax_liability"
+        "indemnity_refusal_vendor_third_party_tax_liability",
+        "commercial_vendor_raw_material_delivery_default",
+        "freelance_software_developer_invoice_nonpayment"
       ]
     },
     "irdai_bima_bharosa": {
@@ -2900,7 +3622,8 @@
       "usage_condition": "When an insurance company or TPA repudiates, delays, or arbitrarily deducts a valid insurance claim and fails to resolve it within 15 days.",
       "official_source": "Insurance Regulatory and Development Authority of India (IRDAI), Government of India",
       "supported_issue_ids": [
-        "health_insurance_claim_arbitrary_rejection"
+        "health_insurance_claim_arbitrary_rejection",
+        "insurance_claim_arbitrary_rejection"
       ]
     },
     "epfigms_portal": {
@@ -2912,7 +3635,8 @@
       "usage_condition": "When an employer fails to deposit deducted PF or maliciously refuses to attest joint declarations for KYC/name correction.",
       "official_source": "Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, Government of India",
       "supported_issue_ids": [
-        "pf_uan_mismatch_employer_refusal_to_attest_joint_declaration"
+        "pf_uan_mismatch_employer_refusal_to_attest_joint_declaration",
+        "pf_deducted_not_deposited_epfo"
       ]
     },
     "airsewa": {
@@ -2924,7 +3648,106 @@
       "usage_condition": null,
       "official_source": "Ministry of Civil Aviation, Government of India",
       "supported_issue_ids": [
-        "airline_flight_cancellation_refund_delay"
+        "airline_flight_cancellation_refund_delay",
+        "airline_denied_boarding_delay_compensation_refusal",
+        "flight_delay_cancellation_compensation"
+      ]
+    },
+    "fssai_foscos": {
+      "portal_id": "fssai_foscos",
+      "name": "FSSAI FoSCoS - Food Safety Consumer Grievance Portal",
+      "official_url": "https://foscos.fssai.gov.in",
+      "purpose": "Official portal of the Food Safety and Standards Authority of India (FSSAI) to lodge complaints against adulterated food, unhygienic restaurants, foreign matter in food, and food safety violations.",
+      "priority": "primary",
+      "usage_condition": "For adulterated, contaminated, expired, or substandard food products and restaurant hygiene violations.",
+      "official_source": "Food Safety and Standards Authority of India (FSSAI), Ministry of Health and Family Welfare",
+      "supported_issue_ids": [
+        "food_delivery_adulterated_contaminated_meal"
+      ]
+    },
+    "rera_portal": {
+      "portal_id": "rera_portal",
+      "name": "RERA (Real Estate Regulatory Authority) State Portals",
+      "official_url": "https://mohua.gov.in",
+      "purpose": "Statutory portal under Real Estate (Regulation and Development) Act for complaints against builders delaying possession, unauthorized layout changes, or refusing statutory interest refunds.",
+      "priority": "primary",
+      "usage_condition": "For real estate disputes involving builder possession delays and developer defaults.",
+      "official_source": "Ministry of Housing and Urban Affairs / State Real Estate Regulatory Authorities",
+      "supported_issue_ids": [
+        "builder_delay_possession_dispute"
+      ]
+    },
+    "trai_dnd": {
+      "portal_id": "trai_dnd",
+      "name": "TRAI DND 3.0 (Do Not Disturb) Grievance System",
+      "official_url": "https://www.trai.gov.in",
+      "purpose": "Telecom Regulatory Authority of India official portal and DND app to report unsolicited commercial communications, spam calls, and fraudulent marketing SMS.",
+      "priority": "secondary",
+      "usage_condition": "For unsolicited spam marketing calls, SMS harassment, and DND registration violations.",
+      "official_source": "Telecom Regulatory Authority of India (TRAI)",
+      "supported_issue_ids": []
+    },
+    "msme_samadhaan": {
+      "portal_id": "msme_samadhaan",
+      "name": "MSME Samadhaan - Delayed Payment Monitoring System",
+      "official_url": "https://samadhaan.msme.gov.in",
+      "purpose": "Statutory portal under MSMED Act 2006 for micro and small enterprises and registered freelancers to lodge delayed payment claims against corporate clients.",
+      "priority": "immediate",
+      "usage_condition": "For registered MSME units and freelancers seeking recovery of delayed payments with 3x RBI bank rate compound interest.",
+      "official_source": "Ministry of Micro, Small and Medium Enterprises",
+      "supported_issue_ids": [
+        "freelance_vendor_non_payment",
+        "freelance_software_developer_invoice_nonpayment"
+      ]
+    },
+    "shebox_portal": {
+      "portal_id": "shebox_portal",
+      "name": "SHe-Box - Sexual Harassment electronic Box",
+      "official_url": "https://shebox.wcd.gov.in",
+      "purpose": "Centralized online complaint portal by Ministry of Women and Child Development for women facing sexual harassment at workplace in organized or unorganized sectors.",
+      "priority": "immediate",
+      "usage_condition": "To be used by female employees to file complaints directly to government authorities when the employer lacks an Internal Committee or ignores grievances.",
+      "official_source": "Ministry of Women and Child Development, Government of India",
+      "supported_issue_ids": [
+        "posh_workplace_sexual_harassment_complaint"
+      ]
+    },
+    "ecourts_services": {
+      "portal_id": "ecourts_services",
+      "name": "e-Courts Services Portal",
+      "official_url": "https://services.ecourts.gov.in",
+      "purpose": "National digital portal for filing, case status tracking, cause lists, and daily orders across all District Courts and High Courts of India.",
+      "priority": "primary",
+      "usage_condition": "To be used for filing and tracking Section 138 NI Act criminal cheque bounce complaints, civil contract suits, and MACT claims.",
+      "official_source": "e-Committee, Supreme Court of India & Ministry of Law and Justice",
+      "supported_issue_ids": [
+        "mact_accident_compensation_claim",
+        "cheque_bounce_statutory_notice_138",
+        "tenancy_security_deposit_unlawful_deduction"
+      ]
+    },
+    "cctns_citizen": {
+      "portal_id": "cctns_citizen",
+      "name": "Digital Police Portal / CCTNS Citizen Services",
+      "official_url": "https://digitalpolice.gov.in",
+      "purpose": "National citizen services portal under Crime and Criminal Tracking Network and Systems (CCTNS) for filing police complaints, tracking FIR status, and viewing missing persons.",
+      "priority": "primary",
+      "usage_condition": "To be used for tracking FIR registrations, hit-and-run crime updates, and police verification.",
+      "official_source": "National Crime Records Bureau (NCRB) & Ministry of Home Affairs",
+      "supported_issue_ids": [
+        "hit_and_run_solatium_fund_claim"
+      ]
+    },
+    "solatium_fund_morth": {
+      "portal_id": "solatium_fund_morth",
+      "name": "Hit and Run Motor Accident Compensation Portal",
+      "official_url": "https://morth.nic.in/schemes-compensation-victims-hit-and-run-motor-accidents",
+      "purpose": "Official portal and guidelines for processing compensation claims from the Motor Vehicle Accident / Solatium Fund for victims of hit and run motor accidents.",
+      "priority": "primary",
+      "usage_condition": "To be used by hit and run accident victims or legal heirs to claim statutory solatium relief (Rs. 2,00,000 death / Rs. 50,000 injury).",
+      "official_source": "Ministry of Road Transport and Highways (MoRTH)",
+      "supported_issue_ids": [
+        "hit_and_run_solatium_fund_claim"
       ]
     }
   }

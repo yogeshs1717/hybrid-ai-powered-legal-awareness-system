@@ -14,7 +14,7 @@ export function ScenarioInput({
   loading,
   initialValue = "",
 }: {
-  onSubmit: (scenario: string) => void;
+  onSubmit: (scenario: string, language?: string) => void;
   loading: boolean;
   initialValue?: string;
 }) {
@@ -40,10 +40,11 @@ export function ScenarioInput({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (canSubmit) onSubmit(trimmed);
+        if (canSubmit) onSubmit(trimmed, voiceLanguage?.code);
       }}
       className="w-full"
     >
+
       {/* Voice Complaint Recorder */}
       <VoiceRecorderPanel
         onTranscriptReceived={handleVoiceTranscript}
@@ -65,9 +66,10 @@ export function ScenarioInput({
           className="min-h-[200px] sm:min-h-[220px] bg-transparent border-0 text-base focus-visible:ring-0 focus-visible:outline-none resize-y pb-10"
           onKeyDown={(e) => {
             if ((e.metaKey || e.ctrlKey) && e.key === "Enter" && canSubmit) {
-              onSubmit(trimmed);
+              onSubmit(trimmed, voiceLanguage?.code);
             }
           }}
+
         />
 
         {/* Bottom Bar inside the box */}

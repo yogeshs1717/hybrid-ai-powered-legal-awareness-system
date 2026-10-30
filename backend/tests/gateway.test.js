@@ -56,6 +56,39 @@ test("POST /api/analyze forwards to ML and returns the contract unchanged", asyn
   assert.strictEqual(ml.calls[0].scenario, VALID.scenario);
 });
 
+test("POST /api/analyze passes through unknown scenario fallback response unchanged", async () => {
+  const FALLBACK_BODY = {
+    success: true,
+    request_id: "test-uuid",
+    analysis: {
+      domain: { id: "unknown", display_name: "Unrecognized Legal Scenario", confidence: 0, confidence_label: "Low" },
+      issue: { id: null, display_name: null, similarity_score: null, issue_match_reason: null },
+      scenario_signals: [],
+    },
+    legal_provisions: [],
+    legal_information_status: "unknown_scenario",
+    action_steps: [],
+    portals: [],
+    low_confidence_warning: true,
+    needs_clarification: true,
+    clarification_question: "Please enter a valid legal scenario...",
+    is_valid_scenario: false,
+    fallback_message: "Please enter a valid legal scenario...",
+    disclaimer: "This information is for legal awareness only…",
+  };
+  const ml = fakeMlClient({
+    analyze: async () => ({ status: 200, data: FALLBACK_BODY }),
+  });
+  const app = createApp({ mlClient: ml });
+  const res = await request(app).post("/api/analyze").send({ scenario: "The quick brown fox jumps over the lazy dog." });
+  assert.strictEqual(res.status, 200);
+  assert.strictEqual(res.body.is_valid_scenario, false);
+  assert.strictEqual(res.body.legal_information_status, "unknown_scenario");
+  assert.strictEqual(res.body.analysis.domain.id, "unknown");
+  assert.strictEqual(res.body.fallback_message, FALLBACK_BODY.fallback_message);
+});
+
+
 test("short scenario is rejected with HTTP 400 and never reaches the ML service", async () => {
   const ml = fakeMlClient();
   const app = createApp({ mlClient: ml });
@@ -139,3 +172,5 @@ test("GET /api/domains lists the five approved domains", async () => {
   assert.strictEqual(res.status, 200);
   assert.strictEqual(res.body.domains.length, 5);
 });
+
+

@@ -90,11 +90,19 @@ function createApp({ mlClient = createMlClient() } = {}) {
   app.post("/api/analyze", analyzeRateLimiter, validateAnalyzeInput, async (req, res) => {
     const requestId = req.requestId;
     const scenario = req.validatedScenario;
-    const detectedScript = detectScript(scenario);
+    const explicitLang =
+      req.body && typeof req.body.language === "string"
+        ? req.body.language.toLowerCase().trim()
+        : null;
+    const detectedScript =
+      explicitLang && ["kn", "hi", "en"].includes(explicitLang)
+        ? explicitLang
+        : detectScript(scenario);
 
     // If citizen typed in Hindi or Kannada, translate to English for the ML pipeline
     let analysisScenario = scenario;
     let inputLanguage = detectedScript;
+
     if (detectedScript !== "en") {
       try {
         const engText = await translateText(scenario, "en", detectedScript);

@@ -88,10 +88,160 @@ class TrainedDomainClassifier(DomainClassifier):
         features = self._vectorizer.transform([preprocess_text(scenario_text)])
         probabilities = self._model.predict_proba(features)[0]
         best_index = int(probabilities.argmax())
-        return DomainPrediction(
-            domain_id=str(self._model.classes_[best_index]),
-            confidence=float(probabilities[best_index]),
+        predicted_domain = str(self._model.classes_[best_index])
+        confidence = float(probabilities[best_index])
+
+        # Statutory boundary disambiguation guardrails
+        refined_domain, refined_confidence = self._apply_boundary_guardrails(
+            scenario_text, predicted_domain, confidence, probabilities
         )
+
+        return DomainPrediction(
+            domain_id=refined_domain,
+            confidence=refined_confidence,
+        )
+
+    def _apply_boundary_guardrails(
+        self,
+        scenario_text: str,
+        predicted_domain: str,
+        confidence: float,
+        probabilities: Any,
+    ) -> tuple[str, float]:
+        """Disambiguate boundary cases between overlapping domains using statutory principles."""
+        s_lower = scenario_text.lower()
+
+        # 1. Commercial B2B exclusion from Consumer Protection (CPA 2019 Section 2(7))
+        # Goods/services for resale or commercial purpose are excluded from consumer forums.
+        is_commercial_b2b = (
+            any(
+                phrase in s_lower
+                for phrase in [
+                    "registered msme",
+                    "industrial auto components",
+                    "corporate manufacturer",
+                    "wholesale grain supply",
+                    "wholesale vendor",
+                    "commercial resale",
+                    "bulk procurement",
+                    "distributor agreement",
+                    "partnership firm",
+                    "siphoned partnership funds",
+                    "partnership accounts",
+                    "partner in a",
+                    "franchise agreement",
+                    "franchisor",
+                    "franchisee",
+                    "commercial land under a registered sale agreement",
+                    "commercial real estate",
+                    "commercial contract",
+                    "b2b invoice",
+                    "vendor supply",
+                ]
+            )
+            or (("wholesale" in s_lower or "commercial" in s_lower or "resale" in s_lower) and any(w in s_lower for w in ["vendor", "distributor", "units", "goods", "invoice", "supply"]))
+        )
+        if predicted_domain in ("consumer_issues", "cyber_fraud") and is_commercial_b2b:
+            return "contractual_disputes", max(confidence, 0.85)
+
+        # 2. Individual home consumer service repair & appliances vs commercial contract breach
+        # Hiring a technician for home appliance repair is a consumer service (CPA 2019 Section 2(11)).
+        is_consumer_repair_or_goods = any(
+            phrase in s_lower
+            for phrase in [
+                "air conditioning repair",
+                "ac repair",
+                "split ac",
+                "repair agency who took",
+                "microwave oven stopped heating",
+                "microwave oven",
+                "refrigerator technician",
+                "washing machine repair",
+                "electric geyser exploded",
+                "geyser exploded",
+                "broadband optical fibre",
+                "broadband provider",
+                "internet outage",
+                "telecom operator",
+                "prepaid mobile",
+                "postpaid connection",
+            ]
+        )
+        if predicted_domain in ("contractual_disputes", "cyber_fraud", "traffic_enforcement") and is_consumer_repair_or_goods:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 3. Dark pattern subscription auto-debit vs Cyber Crime
+        is_dark_pattern_sub = any(
+            phrase in s_lower
+            for phrase in [
+                "streaming ott platform",
+                "ott platform",
+                "dark pattern recurring subscription",
+                "recurring subscription",
+                "auto-debited for subscription",
+                "annual subscription auto",
+            ]
+        )
+        if predicted_domain == "cyber_fraud" and is_dark_pattern_sub:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 4. Vehicle dealer commercial warranty/defect vs Traffic Enforcement
+        is_vehicle_sales_defect = (
+            any(w in s_lower for w in ["car dealer", "dealership", "odometer", "sold a certified vehicle", "second-hand car"])
+            and not any(w in s_lower for w in ["challan", "fine", "speeding", "signal", "camera", "police", "helmet"])
+        )
+        if predicted_domain == "traffic_enforcement" and is_vehicle_sales_defect:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 5. Hospital emergency medical negligence vs Traffic Enforcement
+        is_hospital_medical = any(w in s_lower for w in ["hospital emergency", "trauma care", "medical negligence", "doctor refused", "patient death due to delayed trauma"])
+        if predicted_domain == "traffic_enforcement" and is_hospital_medical:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 6. PF / Provident Fund Non-Deposit vs Cyber Crime
+        is_pf_non_deposit = any(w in s_lower for w in ["pf money", "provident fund", "epfo", "epf contribution", "pf not deposited"])
+        if predicted_domain == "cyber_fraud" and is_pf_non_deposit:
+            return "workplace_wage", max(confidence, 0.88)
+
+        # 7. Routine bank maintenance fee / SMS alert deductions vs Cyber Crime
+        is_bank_fee_deduction = any(
+            phrase in s_lower
+            for phrase in [
+                "non-maintenance charges",
+                "sms alert fees",
+                "minimum balance penalty",
+                "annual locker rent",
+            ]
+        ) and not any(w in s_lower for w in ["hack", "otp", "phish", "scammer", "cyber", "apk"])
+        if predicted_domain == "cyber_fraud" and is_bank_fee_deduction:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 8. Cross-domain adversarial distraction (e.g. online hack but asking for traffic police)
+        is_online_hack = any(w in s_lower for w in ["online scammer", "hacked my account", "crypto scammer"])
+        if predicted_domain == "traffic_enforcement" and is_online_hack:
+            return "cyber_fraud", max(confidence, 0.88)
+
+        # 9. Real estate pre-construction consumer delayed possession
+        is_real_estate_possession = any(
+            phrase in s_lower
+            for phrase in [
+                "builder took 50% advance",
+                "builder delayed possession",
+                "rera became operational",
+                "apartment possession delayed",
+                "builder took rs 30 lakhs advance",
+                "failed to deliver a residential apartment",
+            ]
+        )
+        if predicted_domain == "contractual_disputes" and is_real_estate_possession:
+            return "consumer_issues", max(confidence, 0.85)
+
+        # 10. Motorcycle carrying adult passengers / triple riding vs Other
+        is_motorcycle_carrying = any(phrase in s_lower for phrase in ["carrying two adult passengers", "totaling three people on a standard motorcycle", "triple riding on motorcycle", "three persons on motorcycle"])
+        if is_motorcycle_carrying:
+            return "traffic_enforcement", max(confidence, 0.90)
+
+        return predicted_domain, confidence
 
 
 class MockDomainClassifier(DomainClassifier):

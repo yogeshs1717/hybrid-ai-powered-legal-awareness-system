@@ -41,12 +41,23 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66c",
-          "provision_relevance_rationale": "Applies because the offender extracted and dishonestly used the citizen's unique electronic authentication credential (OTP)."
+          "provision_relevance_rationale": "Governs statutory identity theft for unauthorized use of password or OTP",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies because the offender cheated by impersonating bank personnel using a communication device."
+          "provision_relevance_rationale": "Governs cheating by personation through computer resources and phone calls",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Substantive penal provision for criminal cheating and dishonestly inducing delivery of property",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -72,6 +83,16 @@
           "act_id": "it_act_2000",
           "section_id": "66c",
           "provision_relevance_rationale": "Applies when identity features like photos, names, or electronic credentials are misappropriated."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "319",
+          "provision_relevance_rationale": "Section 319 BNS criminalizes cheating by personation, penalizing fraudsters posing as law enforcement or banking personnel."
         }
       ]
     },
@@ -91,12 +112,23 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66c",
-          "provision_relevance_rationale": "Applies to fraudulent harvesting and unauthorized use of login passwords and financial credentials through deceptive electronic forms."
+          "provision_relevance_rationale": "Identity theft via fraudulent capture of electronic banking credentials",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by personating authentic organizations, banks, or utilities through cloned websites and phishing links."
+          "provision_relevance_rationale": "Cheating by personation through deceptive electronic communications and fake bank URLs",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating and dishonestly inducing delivery of financial assets",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -117,6 +149,11 @@
           "act_id": "it_act_2000",
           "section_id": "66c",
           "provision_relevance_rationale": "Primary statutory provision penalizing fraudulent or dishonest misuse of unique identity features, Aadhaar, PAN, or electronic signatures of another person."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -142,6 +179,11 @@
           "act_id": "it_act_2000",
           "section_id": "66",
           "provision_relevance_rationale": "Criminalizes unauthorized access, hacking, and password altering of computer accounts when committed dishonestly or fraudulently."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -167,6 +209,11 @@
           "act_id": "buds_act_2019",
           "section_id": "3",
           "provision_relevance_rationale": "Statutory prohibition completely banning unregulated deposit schemes and unauthorized investment solicitation."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -185,13 +232,31 @@
       "provision_references": [
         {
           "act_id": "it_act_2000",
-          "section_id": "43",
-          "provision_relevance_rationale": "Applies because unauthorized SIM replacement impairs and diminishes the utility of the citizen's mobile network connection and device access."
+          "section_id": "66c",
+          "provision_relevance_rationale": "Fraudulent acquisition and use of subscriber identity credential",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "it_act_2000",
-          "section_id": "66c",
-          "provision_relevance_rationale": "Applies to the dishonest acquisition and misuse of the subscriber identity credential to extract two-factor authentication codes."
+          "section_id": "66d",
+          "provision_relevance_rationale": "Cheating by personation using telecommunication device to siphon bank funds",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating and wrongful loss of bank funds",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "336",
+          "provision_relevance_rationale": "Forgery of identity verification documents submitted for duplicate SIM issuance",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -217,6 +282,11 @@
           "act_id": "it_act_2000",
           "section_id": "66d",
           "provision_relevance_rationale": "Applies to cheating by personating official customer support staff using digital voice communication and remote management software."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -242,6 +312,16 @@
           "act_id": "it_act_2000",
           "section_id": "66e",
           "provision_relevance_rationale": "Applies to violation of privacy by intentionally capturing, morphing, and transmitting private personal images without consent."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Section 351 BNS penalizes criminal intimidation and extortionate threats to reputation, livelihood, or physical safety."
         }
       ]
     },
@@ -260,18 +340,31 @@
       "provision_references": [
         {
           "act_id": "it_act_2000",
-          "section_id": "67",
-          "provision_relevance_rationale": "Primary statutory prohibition penalizing transmitting or threatening to publish obscene or sexually explicit material in electronic form."
-        },
-        {
-          "act_id": "it_act_2000",
-          "section_id": "67a",
-          "provision_relevance_rationale": "Provides aggravated penal consequences for transmitting sexually explicit visual content or deepfake acts."
-        },
-        {
-          "act_id": "it_act_2000",
           "section_id": "66e",
-          "provision_relevance_rationale": "Applies to privacy violations involving unauthorized capture, dissemination, or morphing of intimate personal imagery."
+          "provision_relevance_rationale": "Violation of bodily privacy by capturing or publishing images of private area",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "67",
+          "provision_relevance_rationale": "Transmitting obscene or sexually explicit material in electronic form",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "308",
+          "provision_relevance_rationale": "Extortion by putting person in fear of injury or reputational disgrace to compel payment",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Criminal intimidation under threat to injure reputation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -291,7 +384,16 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by personation and deceptive manipulation using digital payment systems and computer resources."
+          "provision_relevance_rationale": "Cheating by personation inducing victim to scan QR code under false pretext of receiving money",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Substantive criminal cheating and dishonestly causing wrongful financial loss",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -302,16 +404,40 @@
       "display_name": "Digital Arrest / Fake Customs Extortion",
       "issue_definition": "Fraudsters pose on video/audio calls as CBI, Police, Narcotics, or Customs officers, falsely accusing citizen of crimes and placing them under 'digital arrest' to extort money.",
       "prototype_texts": [
-        "Callers pretending to be Mumbai police and CBI showed me fake arrest warrants over Skype and made me stay on video call for hours while demanding money for clearance.",
-        "I received a call claiming a parcel containing illegal passports or narcotics was caught in my name, and fake officers placed me under digital arrest and forced me to transfer funds.",
-        "Scammers claiming to be from the Enforcement Directorate threatened me with immediate arrest on video call and coerced me into transferring my savings to a 'verification account'.",
-        "A fake police official on a WhatsApp video call wearing a uniform threatened me with criminal prosecution unless I paid bail money immediately to avoid arrest."
+        "Someone called me pretending to be from FedEx, customs, and Mumbai police, claiming a parcel with narcotics in my name and threatening digital arrest.",
+        "Scammers posing as CBI and telecom department put me under fake digital arrest on Skype video call demanding 5 lakh rupees.",
+        "Received a video call from a fraudster dressed in police uniform claiming my Aadhaar is involved in terror funding and forced me into digital arrest.",
+        "A caller impersonating customs officials claimed an international courier had drugs and threatened me with immediate digital arrest unless I transferred funds.",
+        "Fraudsters posing as cyber crime police threatened to arrest me over a Skype video call unless I liquidated my mutual funds into an RBI security account."
       ],
       "provision_references": [
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by impersonating law enforcement officers and government agencies over electronic communication devices to extort funds."
+          "provision_relevance_rationale": "Cheating by personating law enforcement agencies via video communication resources",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "308",
+          "provision_relevance_rationale": "Extortion by placing victim under terror of illegal confinement and seizure",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating to induce transfer of funds to safe accounts",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Criminal intimidation through threat of arrest and public disgrace",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -357,6 +483,21 @@
           "act_id": "buds_act_2019",
           "section_id": "3",
           "provision_relevance_rationale": "Applies because soliciting task-based deposits with promises of guaranteed returns constitutes a banned unregulated deposit scheme."
+        },
+        {
+          "act_id": "buds_act_2019",
+          "section_id": "4",
+          "provision_relevance_rationale": "Bans advertisements and solicitation of deposits under unregulated task and investment schemes."
+        },
+        {
+          "act_id": "buds_act_2019",
+          "section_id": "21",
+          "provision_relevance_rationale": "Prescribes rigorous imprisonment up to seven years for operating fraudulent deposit and task schemes."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -376,7 +517,23 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to fraudulent impersonation of courier services, customs authorities, and parcel delivery services over communication devices."
+          "provision_relevance_rationale": "Cheating by personating customs and police officers via electronic video calls",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating inducing payment under false pretext of avoiding prosecution",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Criminal intimidation by threatening unlawful arrest and detention",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -442,6 +599,16 @@
           "act_id": "it_act_2000",
           "section_id": "66d",
           "provision_relevance_rationale": "Applies to cheating by personating authentic corporate customer care executives using deceptive listings on search engines and communication channels."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "319",
+          "provision_relevance_rationale": "Section 319 BNS criminalizes cheating by personation, penalizing fraudsters posing as law enforcement or banking personnel."
         }
       ]
     },
@@ -460,13 +627,24 @@
       "provision_references": [
         {
           "act_id": "it_act_2000",
-          "section_id": "43",
-          "provision_relevance_rationale": "Applies to unauthorized electronic extraction and copying of card data from payment terminals."
+          "section_id": "66c",
+          "provision_relevance_rationale": "Identity theft by skimming magnetic stripe or chip data",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "it_act_2000",
-          "section_id": "66c",
-          "provision_relevance_rationale": "Applies to identity theft and fraudulent use of the citizen's unique card credentials and PIN code."
+          "section_id": "66d",
+          "provision_relevance_rationale": "Cheating by personation through unauthorized electronic POS/ATM card presentation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating causing wrongful loss of account balance",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -492,6 +670,16 @@
           "act_id": "it_act_2000",
           "section_id": "66c",
           "provision_relevance_rationale": "Applies to the dishonest misappropriation of unique biometric and vocal identification features."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Section 351 BNS penalizes criminal intimidation and extortionate threats to reputation, livelihood, or physical safety."
         }
       ]
     },
@@ -536,7 +724,30 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by personation and inducing payment through electronic commerce interfaces without intention of delivery."
+          "provision_relevance_rationale": "Cheating by personation through fraudulent online marketplace storefronts",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating by accepting payment without intent to supply goods",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Statutory deficiency in electronic commerce marketplace services",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "ecom_rules_2020",
+          "provision_relevance_rationale": "Consumer Protection E-Commerce Rules duties against deceptive sellers",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -556,7 +767,16 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by personating corporate employers and government recruiting agencies using computer resources."
+          "provision_relevance_rationale": "Cheating by personation via fake employment portals and fraudulent recruiters",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating by dishonestly inducing payment of recruitment registration fees",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -607,6 +827,16 @@
           "act_id": "it_act_2000",
           "section_id": "66c",
           "provision_relevance_rationale": "Applies where stolen identity credentials resulting from data breaches are misused by third-party fraudsters."
+        },
+        {
+          "act_id": "dpdp_act_2023",
+          "section_id": "8",
+          "provision_relevance_rationale": "Mandates data fiduciaries to implement reasonable security safeguards and report data breaches to affected citizens."
+        },
+        {
+          "act_id": "dpdp_act_2023",
+          "section_id": "33",
+          "provision_relevance_rationale": "Imposes statutory penalties up to 250 crore rupees for corporate failures to prevent personal data leaks."
         }
       ]
     },
@@ -646,17 +876,30 @@
         {
           "act_id": "cpa_2019",
           "section_id": "2_10",
-          "provision_relevance_rationale": "Statutory definition establishing that the product suffers from a defect in quality, standard, or performance."
+          "provision_relevance_rationale": "Statutory definition establishing that goods suffer from manufacturing or design defect",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Deficiency in post-sale replacement and repair services",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "35",
-          "provision_relevance_rationale": "Enables the consumer to file a formal legal complaint before the District Consumer Commission for replacement or refund."
+          "provision_relevance_rationale": "Enables consumer to file formal complaint before District Consumer Commission",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "84",
-          "provision_relevance_rationale": "Holds the manufacturer legally liable under product liability for manufacturing or design defects."
+          "provision_relevance_rationale": "Statutory product liability holding manufacturer liable for defective product",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -675,13 +918,24 @@
       "provision_references": [
         {
           "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Deficiency in service for arbitrary withholding of legitimate refund",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
           "section_id": "2_47",
-          "provision_relevance_rationale": "Refusing to refund money paid for goods not delivered or returned within specified terms constitutes an unfair trade practice."
+          "provision_relevance_rationale": "Unfair trade practice for refusing refund or replacement of defective goods",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "35",
-          "provision_relevance_rationale": "Provides the statutory avenue to claim full refund, interest, and compensation before the Consumer Forum."
+          "provision_relevance_rationale": "Statutory complaint mechanism before Consumer Commission",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -701,17 +955,23 @@
         {
           "act_id": "cpa_2019",
           "section_id": "2_28",
-          "provision_relevance_rationale": "Statutory definition of misleading advertisements covering false descriptions, deceptive guarantees, and concealment of key facts."
+          "provision_relevance_rationale": "Statutory definition of misleading advertisement conveying false promises",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
-          "section_id": "21",
-          "provision_relevance_rationale": "Empowers the Central Consumer Protection Authority to investigate misleading ads and levy penalties on companies and endorsers."
+          "section_id": "89",
+          "provision_relevance_rationale": "Penal provision providing fine and imprisonment for false or misleading ads",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "35",
-          "provision_relevance_rationale": "Allows affected consumers to seek redress and compensation for losses suffered due to false advertising."
+          "provision_relevance_rationale": "Consumer complaint mechanism to seek compensation and withdrawal of ad",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -731,12 +991,16 @@
         {
           "act_id": "cpa_2019",
           "section_id": "2_11",
-          "provision_relevance_rationale": "Defines statutory deficiency in services for failure to maintain standard quality and negligence in contractual performance."
+          "provision_relevance_rationale": "Statutory definition of deficiency in service for imperfect or delayed performance",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "35",
-          "provision_relevance_rationale": "Enables consumers to initiate formal legal proceedings for damages and rectification before Consumer Commissions."
+          "provision_relevance_rationale": "Statutory mechanism to institute consumer complaint for refund and compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -811,12 +1075,23 @@
         {
           "act_id": "cpa_2019",
           "section_id": "2_47",
-          "provision_relevance_rationale": "Deceptive design methods, drip pricing, and disguised charges are classified as unfair trade practices under the Act and CCPA Dark Pattern Guidelines."
+          "provision_relevance_rationale": "Unfair trade practice for deceptive billing and dark commercial design patterns",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "89",
+          "provision_relevance_rationale": "Statutory penalty for misleading trade representations",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
           "section_id": "35",
-          "provision_relevance_rationale": "Allows consumers to challenge deceptive commercial interface practices and recover unlawfully deducted fees."
+          "provision_relevance_rationale": "Consumer complaint mechanism for refund of hidden fees and compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -847,6 +1122,11 @@
           "act_id": "cpa_2019",
           "section_id": "35",
           "provision_relevance_rationale": "Provides the formal forum to claim compensation for medical expenses and harm caused by expired or counterfeit goods."
+        },
+        {
+          "act_id": "food_safety_act_2006",
+          "section_id": "50",
+          "provision_relevance_rationale": "Imposes penalties up to five lakh rupees for selling substandard or expired food items."
         }
       ]
     },
@@ -877,6 +1157,16 @@
           "act_id": "cpa_2019",
           "section_id": "35",
           "provision_relevance_rationale": "Empowers home buyers to approach District, State, or National Consumer Commissions for refund with interest or possession."
+        },
+        {
+          "act_id": "rera_act_2016",
+          "section_id": "18",
+          "provision_relevance_rationale": "Guarantees homebuyer right to full refund with statutory interest and compensation for possession delay beyond agreed date."
+        },
+        {
+          "act_id": "rera_act_2016",
+          "section_id": "31",
+          "provision_relevance_rationale": "Empowers homebuyer to file fast-track statutory complaint before State Real Estate Regulatory Authority."
         }
       ]
     },
@@ -912,10 +1202,11 @@
       "display_name": "Coaching Institute Fee Refund Denial",
       "issue_definition": "A coaching center or test preparation institute refuses pro-rata refund of lump-sum advance tuition fees when a student withdraws due to poor teaching quality.",
       "prototype_texts": [
-        "I enrolled in a 2-year JEE coaching institute paying 2 lakhs in advance, but when my child left after one month due to poor teaching, they refused any refund.",
-        "A competitive exam coaching center advertised false faculty credentials and refuses to return the advance fee after I discontinued attendance.",
-        "The coaching academy made us sign a 'fees non-refundable under any circumstances' waiver, which violates consumer guidelines.",
-        "An educational coaching institute shut down its physical branch abruptly and shifted to low quality online videos, refusing tuition fee refunds."
+        "I enrolled in a coaching institute for civil services exam and paid 1.5 lakh upfront. Due to family emergency I discontinued after 1 week, but they refuse to refund fees.",
+        "Paid full annual advance fees to a competitive exam coaching center, but dropped out within a month and they refuse to return any refund.",
+        "The coaching institute promised top faculty, but after taking full 1 lakh advance fee, the teachers left and the center refuses to refund remaining term fees.",
+        "I left the JEE coaching classes after attending just three classes due to medical reasons, but management claims their non-refundable clause forbids returning fees.",
+        "A private coaching center refused to return pro-rata advance tuition fees after student withdrew admission within 15 days."
       ],
       "provision_references": [
         {
@@ -1027,12 +1318,11 @@
       "display_name": "Vehicle Detention / Impoundment & Key Seizure",
       "issue_definition": "Enforcement personnel forcibly confiscate vehicle ignition keys or impound a vehicle on the spot without lawful statutory authority or valid documentation.",
       "prototype_texts": [
-        "A traffic policeman snatched my bike keys from the ignition and detained my motorcycle on the roadside because I forgot to carry my pollution certificate.",
-        "A traffic officer forcibly took away my car keys during routine vehicle checking and refused to return them until an on-the-spot cash payment was made.",
-        "Traffic police took my car keys or bike key from ignition without my permission during checking on the road.",
-        "A police officer took my motorcycle key without my consent and seized my vehicle on the roadside.",
-        "Traffic officers impounded my commercial auto rickshaw without issuing an official seizure memo or citing a detainable offence under the Motor Vehicles Act.",
-        "An enforcement squad seized and towed my car for a minor parking dispute even though I was present and ready to move the vehicle immediately."
+        "A traffic constable took away my motorcycle ignition key and vehicle papers and demanded 2000 rupees cash without issuing any official receipt or challan.",
+        "A traffic police officer seized my car keys from the ignition and detained my vehicle without providing any seizure memo or reason.",
+        "The constable impounded my scooter and confiscated my registration papers on the spot without giving an official challan or seizure slip.",
+        "Traffic police detained my vehicle at a checkpost for two hours and snatched the ignition key unlawfully.",
+        "Enforcement personnel forcibly took possession of my car keys and refused to return them until an unofficial cash payment was made."
       ],
       "provision_references": [
         {
@@ -1082,13 +1372,24 @@
       "provision_references": [
         {
           "act_id": "mv_act_1988",
-          "section_id": "130",
-          "provision_relevance_rationale": "Regulates production of vehicle documentation to uniform officers in accordance with Central Government motor vehicle rules."
+          "section_id": "139_cmvr",
+          "provision_relevance_rationale": "Statutory validity of digital documents produced through DigiLocker or mParivahan",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "it_act_2000",
-          "section_id": "4",
-          "provision_relevance_rationale": "Grants full legal validity to electronic records, establishing that electronic documents in DigiLocker/mParivahan satisfy statutory requirements for physical documents."
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "Duty of driver to produce license and vehicle documents upon lawful demand",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "Statutory safeguards regarding seizure and acknowledgment of seized documents",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1178,12 +1479,16 @@
         {
           "act_id": "mv_act_1988",
           "section_id": "185",
-          "provision_relevance_rationale": "Sets the statutory threshold of 30 mg alcohol per 100 ml blood detected via approved breath test or laboratory testing."
+          "provision_relevance_rationale": "Substantive offense of driving by a drunken person or by a person under the influence of drugs",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
           "section_id": "203",
-          "provision_relevance_rationale": "Regulates the lawful procedure for demanding specimens of breath and breath analyser testing by uniformed officers."
+          "provision_relevance_rationale": "Statutory procedure governing breath alcohol test by police officer",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1202,18 +1507,38 @@
       "provision_references": [
         {
           "act_id": "mv_act_1988",
-          "section_id": "194b",
-          "provision_relevance_rationale": "Governs the statutory requirement and one thousand rupee fine for safety belt compliance."
+          "section_id": "129",
+          "provision_relevance_rationale": "Statutory duty for driver and pillion of two-wheeler to wear protective headgear",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
           "section_id": "194d",
-          "provision_relevance_rationale": "Governs the statutory requirement for protective headgear compliance."
+          "provision_relevance_rationale": "Penalty of Rs 1,000 fine and 3-month license disqualification for helmet violation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "138",
+          "provision_relevance_rationale": "State powers to mandate protective safety seat belts for motor vehicles",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "194b",
+          "provision_relevance_rationale": "Penalty of Rs 1,000 fine for driving or traveling without wearing safety belt",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
           "section_id": "208",
-          "provision_relevance_rationale": "Provides the statutory mechanism to contest disputed automated photographic challans before Virtual Courts."
+          "provision_relevance_rationale": "Procedure for contesting automated photographic challans before Virtual Courts",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1286,14 +1611,25 @@
       ],
       "provision_references": [
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "17",
-          "provision_relevance_rationale": "Mandates that monthly wages must be paid before the expiry of the seventh day of the succeeding month."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "5",
+          "provision_relevance_rationale": "Statutory requirement to disburse wages within prescribed statutory window",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "45",
-          "provision_relevance_rationale": "Enables employees to file statutory claims before designated Labour Authorities for wage recovery and compensation."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "15",
+          "provision_relevance_rationale": "Claim before Authority for delayed wages and statutory compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "12",
+          "provision_relevance_rationale": "Payment of statutory minimum wage rates without unauthorized deferral",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1304,21 +1640,47 @@
       "display_name": "Unpaid Wages / Salary Withheld",
       "issue_definition": "An employer completely refuses to pay accrued wages, denies compensation for work performed, or withholds salary indefinitely without legal cause.",
       "prototype_texts": [
-        "I worked for three months at a private firm, but when I asked for my pending salary, the owner refused to pay and stopped answering my calls.",
+        "My employer has withheld my salary for the last 3 months despite multiple reminders and requests.",
         "The company has completely withheld my last two months of salary after I informed them that I would not be renewing my contract.",
-        "My employer terminated my employment abruptly and refused to clear my outstanding wages for the days already worked.",
-        "I completed all assigned work for the company, but the management refuses to disburse my earned wages citing fabricated performance issues."
+        "The company has not paid my monthly salary for 90 days and management refuses to clear my earned wage arrears.",
+        "I worked for three months at a private firm, but when I asked for my pending salary, the owner refused to pay and stopped answering my calls.",
+        "My employer terminated my employment abruptly and refused to clear my outstanding salary and earned wages for the days already worked."
       ],
       "provision_references": [
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "17",
-          "provision_relevance_rationale": "Establishes the employer's strict legal liability to disburse earned wages for all completed work periods."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "5",
+          "provision_relevance_rationale": "Mandatory time of payment of wages within 7 to 10 days of wage period expiration",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "45",
-          "provision_relevance_rationale": "Empowers Labour Authorities to award full unpaid wages plus compensation up to ten times the claimed amount."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "15",
+          "provision_relevance_rationale": "Statutory claims arising out of deductions from wages or delay in payment of wages",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "12",
+          "provision_relevance_rationale": "Employer obligation to disburse wages at rates not less than statutory minimum wage",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "20",
+          "provision_relevance_rationale": "Claims before Minimum Wage Authority with power to award up to 10 times compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_7",
+          "provision_relevance_rationale": "Three-year statutory limitation period for filing suits for wages",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1336,14 +1698,18 @@
       ],
       "provision_references": [
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "18",
-          "provision_relevance_rationale": "Strictly prohibits all unauthorized wage deductions and restricts lawful deductions to specific statutory exceptions under legal limits."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "7",
+          "provision_relevance_rationale": "Exhaustive statutory list of permissible deductions from wages of employees",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "45",
-          "provision_relevance_rationale": "Provides the statutory route for workers to challenge illegal salary deductions and recover withheld sums through the Labour Commissioner."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "15",
+          "provision_relevance_rationale": "Claim before Authority for recovery of unauthorized deductions with compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1361,14 +1727,25 @@
       ],
       "provision_references": [
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "6",
-          "provision_relevance_rationale": "Mandates that employers must pay not less than the statutory minimum rate of wages fixed by the appropriate government."
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "12",
+          "provision_relevance_rationale": "Payment of minimum rates of wages notified by appropriate government",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "45",
-          "provision_relevance_rationale": "Authorizes Labour Authorities to order payment of wage differences and impose penalties up to ten times the shortfall on defaulting employers."
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "20",
+          "provision_relevance_rationale": "Claims before Authority for difference between wages paid and minimum rates",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "22",
+          "provision_relevance_rationale": "Penalties for paying less than minimum rates of wages with imprisonment up to 6 months",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1386,14 +1763,18 @@
       ],
       "provision_references": [
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "14",
-          "provision_relevance_rationale": "Requires employers to pay overtime wages at not less than twice the normal rate of wages for any work performed beyond normal working hours."
+          "act_id": "minimum_wages_act_1948",
+          "section_id": "12",
+          "provision_relevance_rationale": "Payment of minimum rates of wages including statutory overtime rates",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "code_on_wages_2019",
-          "section_id": "45",
-          "provision_relevance_rationale": "Enables workers to claim unpaid overtime dues and statutory compensation through the Labour Commissioner."
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "15",
+          "provision_relevance_rationale": "Statutory claim before Authority for withheld overtime wages",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1419,6 +1800,16 @@
           "act_id": "code_on_wages_2019",
           "section_id": "45",
           "provision_relevance_rationale": "Empowers Labour Authorities to enforce immediate settlement disbursement along with statutory interest and compensation."
+        },
+        {
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "5",
+          "provision_relevance_rationale": "Section 5 of Payment of Wages Act mandates wage disbursement within 7/10 days and exit settlement within 2 working days."
+        },
+        {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_7",
+          "provision_relevance_rationale": "Schedule Article 7 establishes a 3-year statutory limitation period for instituting legal recovery of unpaid wages."
         }
       ]
     },
@@ -1431,8 +1822,9 @@
       "prototype_texts": [
         "My company deducted 1,800 rupees for PF from my salary every month, but when I checked my EPFO passbook online, zero contributions were deposited for a year.",
         "The employer made monthly statutory PF deductions on my pay slips, but the funds were misappropriated and never credited to my UAN.",
-        "I discovered that our firm has not deposited employer or employee PF contributions for the last six months despite active pay cuts.",
-        "The management deducted employee provident fund contributions and closed the business without remitting the accumulated deductions to EPFO."
+        "I discovered that our firm has not deposited employee Provident Fund contributions to EPFO for six months even though PF deductions appear on my salary slip.",
+        "The management deducted employee provident fund contributions from wages and closed the business without remitting the accumulated deductions to EPFO.",
+        "Employer deducts employee provident fund every month from wages but passbook shows zero deposit by company."
       ],
       "provision_references": [
         {
@@ -1534,21 +1926,61 @@
       "display_name": "Breach of Contract",
       "issue_definition": "A contracting party violates express terms, refuses to deliver agreed commitments, or fails to perform obligations specified in a legally binding agreement.",
       "prototype_texts": [
-        "The interior designer signed a contract promising to finish home renovation within two months, but took advance money and stopped all work.",
-        "A commercial vendor failed to deliver contracted supplies by the agreed deadline, causing heavy financial losses to my manufacturing business.",
-        "A service contractor violated the non-disclosure and exclusivity clauses in our signed business agreement, sharing proprietary designs with competitors.",
-        "The other party broke the explicit terms of our written memorandum of understanding and refused to fulfill their agreed contractual responsibilities."
+        "I paid a commercial vendor 2 lakh advance for delivery of raw materials, but they defaulted and never delivered the goods or returned the money.",
+        "A commercial vendor failed to deliver contracted supplies by the agreed deadline, causing our manufacturing plant severe business downtime and financial losses.",
+        "The supplier defaulted on contractual delivery and refused to refund the advance payment received under our signed agreement.",
+        "A service contractor stopped providing contracted maintenance halfway through our annual agreement despite receiving monthly fees.",
+        "The counterparty completely failed to perform their contractual obligations under our commercial contract and caused heavy business losses."
       ],
       "provision_references": [
         {
           "act_id": "contract_act_1872",
           "section_id": "73",
-          "provision_relevance_rationale": "Primary statutory remedy entitling the injured party to compensation for loss or damage caused by breach of contract."
+          "provision_relevance_rationale": "Compensation for loss or damage caused by breach of contract arising naturally",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "74",
+          "provision_relevance_rationale": "Compensation for breach of contract where penalty or liquidated damages stipulated",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "contract_act_1872",
           "section_id": "39",
-          "provision_relevance_rationale": "Permits termination of contract when a party has refused to perform their contractual promises in their entirety."
+          "provision_relevance_rationale": "Effect of refusal of party to perform promise wholly: right to terminate contract",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "specific_relief_act_1963",
+          "section_id": "10",
+          "provision_relevance_rationale": "Specific performance in respect of contracts enforceable by civil court",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "specific_relief_act_1963",
+          "section_id": "20",
+          "provision_relevance_rationale": "Substituted performance of contract through third party at cost of defaulting party",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "sale_of_goods_act_1930",
+          "section_id": "57",
+          "provision_relevance_rationale": "Action for damages for non-delivery of goods by seller",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_55",
+          "provision_relevance_rationale": "Three-year limitation period for compensation for breach of contract",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1568,12 +2000,23 @@
         {
           "act_id": "contract_act_1872",
           "section_id": "73",
-          "provision_relevance_rationale": "Applies to recover financial losses and wrongfully withheld funds under the terms of a breached lease or license agreement."
+          "provision_relevance_rationale": "Damages for unlawful withholding of security deposit and breach of lease covenants",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "contract_act_1872",
-          "section_id": "37",
-          "provision_relevance_rationale": "Enforces the statutory obligation of contracting parties to perform their reciprocal promises to refund deposits."
+          "act_id": "tp_act_1882",
+          "section_id": "106",
+          "provision_relevance_rationale": "Duration of certain leases in absence of written contract and notice to terminate",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "tp_act_1882",
+          "section_id": "108",
+          "provision_relevance_rationale": "Rights and liabilities of lessor and lessee regarding return of property and deposits",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1591,14 +2034,32 @@
       ],
       "provision_references": [
         {
-          "act_id": "contract_act_1872",
-          "section_id": "70",
-          "provision_relevance_rationale": "Establishes the obligation of any person enjoying the benefit of a non-gratuitous lawful service to pay fair compensation for it."
+          "act_id": "msmed_act_2006",
+          "section_id": "15",
+          "provision_relevance_rationale": "Statutory liability of buyer to make payment to MSME supplier within maximum 45 days",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "16",
+          "provision_relevance_rationale": "Mandatory compound interest at 3 times the RBI Bank Rate on delayed payments",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "18",
+          "provision_relevance_rationale": "Statutory reference of payment dispute to Micro and Small Enterprises Facilitation Council",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "contract_act_1872",
           "section_id": "73",
-          "provision_relevance_rationale": "Provides the legal basis for claiming damages, unpaid invoice amounts, and interest for breach of commercial commitments."
+          "provision_relevance_rationale": "Breach of contract damages for unpaid freelance design or development invoices",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1629,6 +2090,11 @@
           "act_id": "contract_act_1872",
           "section_id": "73",
           "provision_relevance_rationale": "Provides damages for direct financial losses resulting from improper contract cancellation."
+        },
+        {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_55",
+          "provision_relevance_rationale": "Schedule Article 55 establishes a 3-year limitation period from the date of contract breach to institute a damages suit."
         }
       ]
     },
@@ -1668,12 +2134,23 @@
         {
           "act_id": "contract_act_1872",
           "section_id": "15",
-          "provision_relevance_rationale": "Defines statutory coercion as committing or threatening unlawful acts or unlawful detention of property to force an agreement."
+          "provision_relevance_rationale": "Statutory definition of coercion as committing or threatening to commit act forbidden by law",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "contract_act_1872",
           "section_id": "19",
-          "provision_relevance_rationale": "Declares that agreements entered into without free consent due to coercion or fraud are voidable at the option of the aggrieved party."
+          "provision_relevance_rationale": "Voidability of agreements in which consent was caused by coercion, fraud, or misrepresentation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Criminal intimidation for threatening injury to person or property to force agreement execution",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1743,12 +2220,23 @@
         {
           "act_id": "it_act_2000",
           "section_id": "66d",
-          "provision_relevance_rationale": "Applies to cheating by personating institutional market intermediaries and brokerage platforms over computer networks."
+          "provision_relevance_rationale": "Online deceptive personation via fake institutional stock trading applications",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating and dishonest inducement to transfer investment capital",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "buds_act_2019",
           "section_id": "3",
-          "provision_relevance_rationale": "Statutory prohibition completely banning unregulated deposit solicitation and unauthorized investment schemes."
+          "provision_relevance_rationale": "Prohibition of promoting or operating unregulated deposit and investment schemes",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -1774,6 +2262,11 @@
           "act_id": "it_act_2000",
           "section_id": "43",
           "provision_relevance_rationale": "Applies to unauthorized digital access and illegal extraction of funds from computer banking systems."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
         }
       ]
     },
@@ -2381,19 +2874,25 @@
       ],
       "provision_references": [
         {
-          "act_id": "contract_act_1872",
-          "section_id": "74",
-          "provision_relevance_rationale": "Restricts contractual penalty stipulations strictly to reasonable compensation for actual proven damage, prohibiting extortionate multi-year lock-in penalties."
+          "act_id": "tp_act_1882",
+          "section_id": "106",
+          "provision_relevance_rationale": "Statutory requirement for notice to terminate month-to-month lease",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "tp_act_1882",
+          "section_id": "108",
+          "provision_relevance_rationale": "Statutory rights and liabilities of lessor and lessee regarding possession",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "contract_act_1872",
-          "section_id": "56",
-          "provision_relevance_rationale": "Applies the doctrine of frustration when structural hazards, municipal orders, or unforeseen events render commercial premises unusable."
-        },
-        {
-          "act_id": "contract_act_1872",
-          "section_id": "65",
-          "provision_relevance_rationale": "Obligates the landlord to restore and refund security deposits when the lease contract becomes frustrated or void."
+          "section_id": "73",
+          "provision_relevance_rationale": "Damages for unlawful breach of commercial lease covenants",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -2696,29 +3195,30 @@
       "issue_id": "automobile_manufacturing_defect_lemon_vehicle",
       "taxonomy_status": "taxonomy_supported",
       "domain_id": "consumer_issues",
-      "display_name": "Automobile Manufacturing Defect (Lemon Car) Dispute",
-      "issue_definition": "A brand new car or commercial vehicle suffers recurring engine, transmission, or electronic failures within the first 6 months, spending weeks in repair garages without resolution.",
+      "display_name": "Automobile Inherent Manufacturing Defect & Replacement Denial",
+      "issue_definition": "Purchasers of brand new cars or two-wheelers facing recurring severe mechanical or electronic engine breakdowns where manufacturer refuses replacement.",
       "prototype_texts": [
-        "My new car has broken down 7 times in the first 4 months due to engine stalling and transmission locking, and the dealer refuses to replace the defective vehicle.",
-        "The steering system on my new vehicle locks unpredictably while driving at highway speeds, and the authorized workshop cannot diagnose or fix the defect.",
-        "A brand new car suffered complete electrical failure and sudden battery discharge 3 days after delivery, spending 45 days in the service center.",
-        "The vehicle manufacturer refuses to replace a car with recurring chassis cracks and brake failures, offering only cosmetic welding repairs."
+        "I bought a brand new car that broke down three times in the first month due to engine failure, but the dealership refuses to replace the defective vehicle.",
+        "New motorcycle has a severe manufacturing defect causing sudden brake jamming at high speeds, and the service center cannot fix it after four visits.",
+        "Brand new electric car stopped functioning completely within two weeks of delivery and dealership refuses full refund or vehicle replacement.",
+        "Automobile manufacturer delivered a lemon vehicle with repeated transmission malfunction and denies product liability replacement.",
+        "Purchased a new four-wheeler with structural steering defects that authorized service technicians could not rectify over six months."
       ],
       "provision_references": [
         {
           "act_id": "cpa_2019",
-          "section_id": "84",
-          "provision_relevance_rationale": "Establishes product manufacturer liability for manufacturing defects, design flaws, and failure to conform to express roadworthiness standards."
-        },
-        {
-          "act_id": "cpa_2019",
           "section_id": "2_10",
-          "provision_relevance_rationale": "Defines persistent vehicle breakdowns and performance failures as statutory product defects."
+          "provision_relevance_rationale": "Defines manufacturing defect in goods failing quality, standard, and fitness requirements."
         },
         {
           "act_id": "cpa_2019",
-          "section_id": "35",
-          "provision_relevance_rationale": "Provides the statutory avenue for consumers to compel vehicle replacement or full refund of on-road vehicle price with interest."
+          "section_id": "84",
+          "provision_relevance_rationale": "Establishes product liability of the vehicle manufacturer for defects in design and manufacture."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "39",
+          "provision_relevance_rationale": "Empowers Consumer Commissions to order replacement of defective goods with new defect-free goods or refund."
         }
       ]
     },
@@ -2794,6 +3294,11 @@
           "act_id": "mv_act_1988",
           "section_id": "208",
           "provision_relevance_rationale": "Provides the statutory mechanism to contest automated camera findings where road markings are unmaintained."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "177A",
+          "provision_relevance_rationale": "Governs penalties for contravention of road safety regulations, pedestrian crossings, and lane discipline."
         }
       ]
     },
@@ -2812,13 +3317,24 @@
       "provision_references": [
         {
           "act_id": "mv_act_1988",
+          "section_id": "113",
+          "provision_relevance_rationale": "Statutory limits of weight and permissible maximum gross vehicle weight",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
           "section_id": "114",
-          "provision_relevance_rationale": "Mandates that suspected overloading must be verified by requiring the driver to drive to an authorized weighbridge or weighing device."
+          "provision_relevance_rationale": "Power to have goods vehicles weighed and require offloading of excess weight at owner risk",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
           "section_id": "194",
-          "provision_relevance_rationale": "Governs statutory penalties for driving vehicles exceeding permissible weight and off-loading procedures."
+          "provision_relevance_rationale": "Statutory penalty for driving vehicle exceeding permissible weight (Rs 20,000 + Rs 2,000/tonne)",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -2869,6 +3385,16 @@
           "act_id": "code_on_wages_2019",
           "section_id": "45",
           "provision_relevance_rationale": "Empowers Labour Authorities to award full unpaid retrenchment compensation, wage arrears, and statutory penalties."
+        },
+        {
+          "act_id": "industrial_disputes_act_1947",
+          "section_id": "25F",
+          "provision_relevance_rationale": "Prohibits retrenchment without one month written notice and 15 days average pay per year of service."
+        },
+        {
+          "act_id": "industrial_disputes_act_1947",
+          "section_id": "33C",
+          "provision_relevance_rationale": "Empowers workers to apply to the Labour Court for recovery of unpaid retrenchment and layoff compensation."
         }
       ]
     },
@@ -3084,6 +3610,11 @@
           "act_id": "it_act_2000",
           "section_id": "43a",
           "provision_relevance_rationale": "Mandates statutory compensation by body corporates failing to maintain reasonable security practices to protect sensitive personal data."
+        },
+        {
+          "act_id": "dpdp_act_2023",
+          "section_id": "8",
+          "provision_relevance_rationale": "Strict statutory duty on telecom providers and corporate fiduciaries to secure citizen KYC data against leaks."
         }
       ]
     },
@@ -3160,6 +3691,16 @@
           "act_id": "it_act_2000",
           "section_id": "66d",
           "provision_relevance_rationale": "Penalizes cheating and financial fraud committed through electronic communication devices and deceptive portals."
+        },
+        {
+          "act_id": "buds_act_2019",
+          "section_id": "4",
+          "provision_relevance_rationale": "Strictly bans promotion of unregulated deposit and Ponzi crypto schemes."
+        },
+        {
+          "act_id": "buds_act_2019",
+          "section_id": "21",
+          "provision_relevance_rationale": "Imposes heavy criminal penalties for accepting deposits in unregulated fraudulent investment schemes."
         }
       ]
     },
@@ -3179,12 +3720,16 @@
         {
           "act_id": "cpa_2019",
           "section_id": "2_11",
-          "provision_relevance_rationale": "Arbitrary repudiation of a valid insurance claim constitutes deficiency in service under the Consumer Protection Act."
+          "provision_relevance_rationale": "Deficiency in insurance services for wrongful repudiation of medical claim",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "cpa_2019",
-          "section_id": "2_47",
-          "provision_relevance_rationale": "Imposing unilateral, unfair exclusions not communicated at policy inception constitutes an unfair trade practice."
+          "section_id": "35",
+          "provision_relevance_rationale": "Statutory complaint before District Commission to compel claim disbursement",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -3304,12 +3849,23 @@
         {
           "act_id": "mv_act_1988",
           "section_id": "129",
-          "provision_relevance_rationale": "Mandates wearing protective headgear conforming to BIS standards, while explicitly granting statutory exemption to Sikhs wearing a turban."
+          "provision_relevance_rationale": "Statutory requirement for two-wheeler driver and pillion to wear certified helmet",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
           "section_id": "194d",
-          "provision_relevance_rationale": "Governs the penalty for failure to wear protective headgear, limiting arbitrary enforcement."
+          "provision_relevance_rationale": "Statutory fine of Rs 1,000 and 3-month license disqualification",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "208",
+          "provision_relevance_rationale": "Procedure to challenge incorrect automated challan",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -3395,21 +3951,26 @@
       "display_name": "Uninsured Vehicle Challan Due to Vahan Portal Sync Delay",
       "issue_definition": "Traffic penalties issued under Section 196 for lack of third-party insurance when the policy was actively renewed but had not yet synced to the central Vahan database.",
       "prototype_texts": [
-        "Traffic police issued a 2000 rupee challan under Section 196 for 'no insurance' even though I renewed my policy 24 hours earlier.",
-        "An automated camera captured my car and generated a fine for expired insurance because the insurance company had not uploaded data to IIB/Vahan.",
-        "A police officer refused to accept my valid insurance policy PDF on my phone and impounded my RC alleging driving an uninsured vehicle.",
-        "I was fined for driving an uninsured vehicle despite showing the active policy schedule with valid policy number and premium receipt."
+        "I was fined 5000 rupees for not having third party insurance even though my policy is active and valid, but not updated yet on Vahan portal.",
+        "Traffic cop issued a heavy challan for uninsured vehicle despite me showing active insurance policy documents.",
+        "An automated camera issued a 2000 rupee challan for driving without insurance, but my policy was renewed last week and Vahan database had not synced.",
+        "Traffic police refused to accept my genuine insurance policy copy claiming the Parivahan portal shows insurance expired.",
+        "Fined for uninsured vehicle under Section 196 because my newly purchased motor third-party policy was not reflected on the government portal."
       ],
       "provision_references": [
         {
           "act_id": "mv_act_1988",
-          "section_id": "196",
-          "provision_relevance_rationale": "Penalizes driving an uninsured vehicle, which cannot be sustained when an active valid insurance contract exists at the time of the alleged offence."
+          "section_id": "146",
+          "provision_relevance_rationale": "Statutory necessity for insurance against third party risk",
+          "relevance_classification": "SUPPORTING_PROVISION",
+          "verification_status": "verified"
         },
         {
           "act_id": "mv_act_1988",
-          "section_id": "130",
-          "provision_relevance_rationale": "Mandates production of certificates of insurance and allows production within statutory timeframe."
+          "section_id": "196",
+          "provision_relevance_rationale": "Statutory penalty for driving uninsured vehicle (imprisonment or fine)",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -3778,13 +4339,31 @@
       "provision_references": [
         {
           "act_id": "it_act_2000",
-          "section_id": "66c",
-          "provision_relevance_rationale": "Applies because the offender misappropriated and fraudulently utilized the unique electronic biometric voice identity of the victim."
+          "section_id": "66d",
+          "provision_relevance_rationale": "Cheating by personating family member using synthetic AI voice generation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         },
         {
-          "act_id": "it_act_2000",
-          "section_id": "66d",
-          "provision_relevance_rationale": "Applies because the fraudster cheated by personating family members using a computer resource and communication device."
+          "act_id": "bns_2023",
+          "section_id": "308",
+          "provision_relevance_rationale": "Extortion by putting mother/relative in terror of death or harm to child",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating and dishonest inducement to pay ransom",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "351",
+          "provision_relevance_rationale": "Criminal intimidation causing extreme terror",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
         }
       ]
     },
@@ -4040,6 +4619,11 @@
           "act_id": "mv_act_1988",
           "section_id": "206",
           "provision_relevance_rationale": "Defines statutory limits on police officer's power to impound documents and seize vehicles."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "194F",
+          "provision_relevance_rationale": "Regulates punishment for exhaust cut-outs and unnecessary noise pollution from vehicles."
         }
       ]
     },
@@ -4407,19 +4991,1429 @@
       ],
       "provision_references": [
         {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_55",
+          "provision_relevance_rationale": "Three-year statutory limitation period for recovery of debt arising from breach of contract",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
           "act_id": "contract_act_1872",
           "section_id": "25",
-          "provision_relevance_rationale": "Under Section 25(3), a promise made in writing and signed to pay a debt barred by limitation is a valid enforceable contract."
+          "provision_relevance_rationale": "Agreement without consideration is void unless it is a fresh written promise to pay time-barred debt",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "electricity_bill_sms_apk_scam": {
+      "issue_id": "electricity_bill_sms_apk_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Fake Electricity Bill Disconnection SMS & Malicious APK Scam",
+      "issue_definition": "Citizens receive deceptive SMS messages threatening immediate power disconnection unless they call a mobile number or install a malicious APK file.",
+      "prototype_texts": [
+        "I received an SMS claiming my electricity bill is unpaid and power will be cut tonight at 9:30 PM unless I call a number and install an APK link.",
+        "A message said dear consumer your electricity will be disconnected tonight because previous month bill was not updated, call officer immediately.",
+        "Got a fraud SMS threatening power disconnection from electricity board, caller asked me to download QuickSupport app and debited 40000 rupees.",
+        "SMS warning that electric supply will be stopped at 10 PM unless I click a link to pay pending 10 rupees bill via APK app.",
+        "Scammer pretending to be electricity department officer sent an APK file on WhatsApp to update power bill which hacked my phone and bank account."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Statutory civil compensation for unauthorized access and malware download",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66",
+          "provision_relevance_rationale": "Computer-related offense for hacking mobile device via APK file",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Cheating by personation under guise of electricity board officer",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating causing fraudulent debit of bank funds",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "fastag_blacklist_phishing_link_scam": {
+      "issue_id": "fastag_blacklist_phishing_link_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "FASTag KYC Suspension & Phishing Recharge Scam",
+      "issue_definition": "Fraudulent messages sent claiming citizen's FASTag wallet is blacklisted or deactivated due to incomplete KYC, directing them to phishing portals.",
+      "prototype_texts": [
+        "I received an SMS stating my FASTag has been blacklisted and deactivated due to KYC, click this link to update KYC immediately.",
+        "Scammers sent a phishing link claiming my vehicle FASTag is blocked and clicking the link deducted 25000 from my bank account.",
+        "Fake NHAI message saying FASTag service will be terminated within 24 hours unless I verify my PAN card on a duplicate web portal.",
+        "Clicked an SMS link to recharge FASTag for 100 rupees and entered OTP, but the fraudsters emptied 50000 from my linked credit card.",
+        "Received WhatsApp message with toll authority logo warning of FASTag suspension and demanding instant biometric KYC verification."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "Punishes fraudulent capture and misuse of digital credentials and payment identifiers."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Penalizes cheating by impersonating toll authorities and banking channels online."
+        }
+      ]
+    },
+    "aeps_biometric_aadhaar_money_theft": {
+      "issue_id": "aeps_biometric_aadhaar_money_theft",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Aadhaar Enabled Payment System (AePS) Biometric Cash Drain",
+      "issue_definition": "Unauthorized cash withdrawals from bank accounts using cloned silicone fingerprints and scraped Aadhaar numbers through AePS micro-ATMs.",
+      "prototype_texts": [
+        "Unauthorized cash was withdrawn from my bank account through AePS without any OTP or SMS notification while my ATM card was with me.",
+        "I noticed three transactions of 10000 rupees each debited via Aadhaar Enabled Payment System from a customer service point in another state.",
+        "Money stolen from my savings bank account through biometric AePS cash withdrawal using cloned fingerprint data.",
+        "My Aadhaar linked bank account was wiped out through unauthorized AePS merchant transactions without my knowledge.",
+        "Fraudster cloned my thumb impression from land registry records and withdrew 50000 rupees through AePS point of sale machine."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66",
+          "provision_relevance_rationale": "Unauthorized access and computer-related offense for biometric data manipulation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "Identity theft by unauthorized use of biometric fingerprint data",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Criminal cheating and dishonest withdrawal of bank balance",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "wedding_invitation_apk_whatsapp_scam": {
+      "issue_id": "wedding_invitation_apk_whatsapp_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Malicious Wedding Invitation APK Android Malware Scam",
+      "issue_definition": "Malicious Android package files disguised as wedding invitation cards or digital greetings sent over WhatsApp to steal SMS OTPs and banking data.",
+      "prototype_texts": [
+        "Received a WhatsApp message with an attachment named Wedding_Invitation.apk, installed it, and my phone started forwarding SMS automatically.",
+        "An unknown contact sent an APK file claiming to be a family wedding card, opening it gave hackers remote control over my device.",
+        "Malware disguised as wedding invitation card installed on my phone stole my banking OTPs and debited 60000 rupees.",
+        "Downloaded an APK file sent on WhatsApp promising a wedding function location card, and my WhatsApp account got hacked and hijacked.",
+        "Fraudulent Android application masked as digital wedding invitation read my confidential banking messages and wiped out my account."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Imposes civil penalties for introducing computer contaminants and spyware into mobile devices."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66",
+          "provision_relevance_rationale": "Punishes dishonest and fraudulent computer-related offenses involving data compromise."
+        }
+      ]
+    },
+    "credit_card_reward_points_expiry_link": {
+      "issue_id": "credit_card_reward_points_expiry_link",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Credit Card Reward Points Expiry Phishing Link Scam",
+      "issue_definition": "Phishing text messages claiming credit card reward points are expiring today, directing victims to fake bank pages that harvest card numbers, CVV, and OTPs.",
+      "prototype_texts": [
+        "I received an SMS claiming 9850 credit card reward points worth 4900 rupees are expiring today, clicked the link and entered card details.",
+        "Phishing message from fake bank portal asking to redeem reward points into cash resulted in 75000 rupees unauthorized debit.",
+        "Entered my credit card details and OTP on a link claiming to convert credit card reward points to cash, but money got stolen.",
+        "Fraudulent SMS saying dear customer your reward points worth 8000 will lapse tonight, link led to clone netbanking page.",
+        "Victim of reward point redemption scam where a clone portal captured my card CVV and executed international transactions."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "Punishes identity theft and theft of credit card credentials and digital passwords."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Penalizes cheating by personating credit card issuers and banking institutions."
+        }
+      ]
+    },
+    "fake_job_offer_visa_overseas_scam": {
+      "issue_id": "fake_job_offer_visa_overseas_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Overseas Employment & Fake Visa Processing Scam",
+      "issue_definition": "Unregistered recruitment agencies and online scammers collecting huge advance fees under false promises of overseas job visas and work permits.",
+      "prototype_texts": [
+        "An agent took 2 lakh rupees for a Canada work visa and job offer, but the visa was fake and the agency vanished.",
+        "Paid 80000 rupees to an online recruitment consultant for a hospital job in Dubai, but they stopped answering calls and issued forged tickets.",
+        "Fraudulent overseas employment agency issued a fake work permit letter and demanded additional visa clearance money.",
+        "Recruiter promised a software developer job in Singapore, took advance fees for medical test and work visa, then blocked me on WhatsApp.",
+        "Cheated by fake travel agent who took 1.5 lakh for Poland work visa and provided fabricated embassy appointment slips."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Punishes cheating by personating authorized overseas recruiters and corporate employers online."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "17",
+          "provision_relevance_rationale": "Defines fraudulent inducement where false promises are made without any intention of performing."
+        }
+      ]
+    },
+    "olx_quikr_qr_code_upi_scam": {
+      "issue_id": "olx_quikr_qr_code_upi_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "Marketplace QR Code 'Receive Money' UPI Scam",
+      "issue_definition": "Scammers on secondhand marketplaces posing as buyers and sending QR codes, deceptively claiming the seller must scan and enter UPI PIN to receive money.",
+      "prototype_texts": [
+        "I listed my old sofa on OLX, a buyer asked to pay via UPI and sent me a QR code saying scan and enter UPI PIN to receive money, but money got debited.",
+        "A prospective buyer on Quikr sent a QR code to transfer advance payment, but scanning it debited 20000 rupees from my bank account.",
+        "Scammer posing as an army officer on OLX sent a payment request QR code claiming UPI verification is required to credit funds.",
+        "Lost 15000 rupees when selling used furniture online because the buyer instructed me to enter my UPI PIN to receive payment.",
+        "Fraudulent online buyer sent a collect request link on PhonePe claiming it was a receipt confirmation for second-hand bicycle sale."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Penalizes cheating by personation using electronic UPI payment applications."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43",
+          "provision_relevance_rationale": "Imposes liability for unauthorized debiting and extraction of funds from a computer resource."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS criminalizes cheating and dishonestly inducing delivery of money or digital assets in financial fraud."
+        }
+      ]
+    },
+    "ai_voice_clone_emergency_ransom_scam": {
+      "issue_id": "ai_voice_clone_emergency_ransom_scam",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "cyber_fraud",
+      "display_name": "AI Voice Cloning Family Emergency Ransom Scam",
+      "issue_definition": "Cyber criminals using deepfake generative AI to clone the voice of a family member and staging a fake accident or kidnapping to demand urgent money.",
+      "prototype_texts": [
+        "A caller used an AI cloned voice of my daughter crying and begging for help, claiming she was in police custody and demanding 2 lakh rupees.",
+        "Received a phone call with my son's exact voice claiming he met with a fatal car accident and urgently needed 50000 rupees for hospital bail.",
+        "Cyber criminals used artificial intelligence audio deepfake of a family member to extort emergency funds from elderly parents.",
+        "Scammers cloned my brother's voice from Instagram reels and called my mother demanding immediate UPI transfer for a fabricated medical emergency.",
+        "Virtual kidnapping scam where AI generated voice audio made parents believe their overseas student child had been arrested."
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66c",
+          "provision_relevance_rationale": "Punishes identity theft and fraudulent personation using electronic synthetic audio assets."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "66d",
+          "provision_relevance_rationale": "Penalizes cheating by personation and digital extortion using communication networks."
+        }
+      ]
+    },
+    "coaching_institute_dropout_fee_refund_denial": {
+      "issue_id": "coaching_institute_dropout_fee_refund_denial",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Coaching Institute Advance Fee Refund Denial After Dropout",
+      "issue_definition": "Competitive exam coaching centers refusing pro-rata refund of hefty upfront advance tuition fees when a student withdraws admission.",
+      "prototype_texts": [
+        "I enrolled in a coaching institute for civil services exam and paid 1.5 lakh upfront. Due to family emergency I discontinued after 1 week, but they refuse to refund fees.",
+        "Paid full annual advance fees to a competitive exam coaching center, but dropped out within a month and they refuse to return any refund.",
+        "The coaching institute promised top faculty, but after taking full 1 lakh advance fee, the teachers left and the center refuses to refund remaining term fees.",
+        "I left the JEE coaching classes after attending just three classes due to medical reasons, but management claims their non-refundable clause forbids returning fees.",
+        "A private coaching center refused to return pro-rata advance tuition fees after student withdrew admission within 15 days."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Deficiency in educational services for refusing refund of advance tuition fees",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Unfair trade practice for retaining lump-sum fees for unavailed quarters",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "Consumer complaint mechanism to enforce CCPA coaching refund guidelines",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "dark_patterns_drip_pricing_sneaked_charges": {
+      "issue_id": "dark_patterns_drip_pricing_sneaked_charges",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "E-Commerce Dark Patterns & Drip Pricing Hidden Surcharges",
+      "issue_definition": "Online marketplaces and ticketing platforms adding hidden convenience fees, pre-ticked add-on services, and drip pricing during the checkout process.",
+      "prototype_texts": [
+        "An online booking platform showed flight tickets for 4000 rupees, but at the final payment screen added 1800 in sneaked convenience and seat selection fees.",
+        "E-commerce app automatically added unwanted travel insurance and donation to my shopping cart without asking my explicit permission.",
+        "Movie ticketing website forces customers to pay internet handling charges and food vouchers that cannot be unticked or removed.",
+        "Drip pricing on e-commerce checkout where extra packaging, handling, and delivery charges are incrementally revealed only at final OTP page.",
+        "Deceptive subscription trap where a website converted a one-time trial purchase into an unauthorized monthly recurring charge."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Defines unfair trade practices including deceptive methods and concealment of material price terms."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Empowers the Central Consumer Protection Authority to investigate and prohibit dark patterns across digital platforms."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "88",
+          "provision_relevance_rationale": "Imposes criminal penalties for non-compliance with CCPA directives on deceptive design practices."
+        }
+      ]
+    },
+    "defective_mobile_green_line_display_after_update": {
+      "issue_id": "defective_mobile_green_line_display_after_update",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Smartphone Display Green Line Hardware Defect After Software Update",
+      "issue_definition": "Smartphones developing vertical green or pink display lines immediately following an official manufacturer software update, with service centers demanding payment for repairs.",
+      "prototype_texts": [
+        "A vertical green line appeared on my smartphone screen right after installing the official software update, and company demands 15000 for screen replacement.",
+        "My mobile display got a permanent bright green line following the latest OTA system update, but the authorized service center denies free repair.",
+        "Official software update caused screen hardware damage on my smartphone and the manufacturer refuses warranty coverage claiming phone is out of warranty.",
+        "Multiple green and pink lines on phone screen after manufacturer system update, service center refuses responsibility and demands paid replacement.",
+        "Smartphone display ruined by manufacturer push update with no physical drop or damage, customer service refuses complimentary screen fix."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_10",
+          "provision_relevance_rationale": "Defines product defect resulting from software and hardware interaction failing fitness standards."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "84",
+          "provision_relevance_rationale": "Holds product manufacturer liable for defective design and post-sale update faults."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "85",
+          "provision_relevance_rationale": "Establishes service provider liability for failing to repair damage caused by authorized software patches."
+        }
+      ]
+    },
+    "e_commerce_unilateral_order_cancellation_by_seller": {
+      "issue_id": "e_commerce_unilateral_order_cancellation_by_seller",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Unilateral E-Commerce Order Cancellation After Confirmation",
+      "issue_definition": "E-commerce platforms or marketplace sellers unilaterally cancelling confirmed and paid orders when the price of the product increases.",
+      "prototype_texts": [
+        "I bought a laptop during a festival sale and received order confirmation, but the seller unilaterally cancelled the order two days later claiming pricing error.",
+        "Online marketplace cancelled my confirmed smartphone order without my consent because the market price went up after the sale.",
+        "Paid for a refrigerator online and got confirmation invoice, but the seller cancelled the order saying stock finished while still selling at higher price.",
+        "Seller on e-commerce portal unilaterally cancelled my purchased item after holding my money for a week, refusing to honor the confirmed contract.",
+        "Confirmed e-commerce purchase cancelled abruptly by merchant claiming logistical constraints while relisting identical item at double cost."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_47",
+          "provision_relevance_rationale": "Classifies arbitrary cancellation of confirmed transactions as unfair trade practice."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_46",
+          "provision_relevance_rationale": "Prohibits one-sided terms in online terms of service that allow sellers to cancel orders unilaterally."
         },
         {
           "act_id": "contract_act_1872",
           "section_id": "37",
-          "provision_relevance_rationale": "Obligates parties to perform promises made under the newly created written agreement."
+          "provision_relevance_rationale": "Mandates that parties to a contract must perform their obligations unless legally excused."
+        }
+      ]
+    },
+    "food_delivery_adulterated_contaminated_meal": {
+      "issue_id": "food_delivery_adulterated_contaminated_meal",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Food Delivery Contamination & Substandard Restaurant Meal",
+      "issue_definition": "Consumers receiving contaminated, insect-infested, adulterated, or unhygienic meals ordered from restaurants or food delivery aggregators.",
+      "prototype_texts": [
+        "I ordered food through a delivery app and found a dead cockroach inside the biryani, but customer support only offered a 50 rupee coupon.",
+        "Restaurant delivered spoiled and smelling paneer curry that caused acute food poisoning and emergency hospital admission for my family.",
+        "Found sharp pieces of glass inside a food delivery meal parcel, posing severe hazard to life, and the restaurant denies responsibility.",
+        "Delivered food item was infested with insects and completely unhygienic, violating statutory food safety standards.",
+        "Received adulterated and stale food from an online cloud kitchen that led to bacterial infection and medical treatment."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "90",
+          "provision_relevance_rationale": "Prescribes punishment and criminal liability for manufacturing, storing, or distributing food containing adulterants."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "86",
+          "provision_relevance_rationale": "Establishes product service provider liability for supplying hazardous or defective food products."
+        },
+        {
+          "act_id": "food_safety_act_2006",
+          "section_id": "26",
+          "provision_relevance_rationale": "Places statutory duty on food business operators and delivery platforms to ensure safe and unadulterated food."
+        },
+        {
+          "act_id": "food_safety_act_2006",
+          "section_id": "59",
+          "provision_relevance_rationale": "Prescribes criminal penalties and imprisonment for serving unsafe food causing illness or bodily injury."
+        },
+        {
+          "act_id": "food_safety_act_2006",
+          "section_id": "65",
+          "provision_relevance_rationale": "Mandates direct statutory compensation to consumer for injury or medical treatment caused by contaminated food."
+        }
+      ]
+    },
+    "airline_denied_boarding_delay_compensation_refusal": {
+      "issue_id": "airline_denied_boarding_delay_compensation_refusal",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "consumer_issues",
+      "display_name": "Airline Denied Boarding & Flight Delay Statutory Compensation Refusal",
+      "issue_definition": "Airlines overbooking flights and denying boarding to passengers with confirmed tickets, or delaying flights for hours without statutory compensation or care.",
+      "prototype_texts": [
+        "Airline denied me boarding despite holding a confirmed ticket and reporting on time because they overbooked the flight, and refused compensation.",
+        "Our flight was delayed by over 8 hours at the airport and the airline refused to provide refreshments, hotel stay, or refund as mandated by DGCA rules.",
+        "Airline abruptly cancelled our connecting flight without prior notice and refused to arrange an alternate flight or provide full compensation.",
+        "Denied boarding on an international flight due to airline system overbooking and management refused to pay statutory passenger compensation.",
+        "Airline staff offloaded passengers holding valid boarding passes due to aircraft downsizing and denied statutory delay remedies."
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Defines service deficiency for airline failure to honor passenger transport obligations under statutory CAR guidelines."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_42",
+          "provision_relevance_rationale": "Brings airline passenger transport and hospitality services squarely under consumer jurisdiction."
+        }
+      ]
+    },
+    "driving_without_licence_challan_dispute": {
+      "issue_id": "driving_without_licence_challan_dispute",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Driving Without Licence Fine & Sub-section 3 / 181 Dispute",
+      "issue_definition": "Disputes relating to penalties for driving without an effective driving licence under Section 181 or vehicle owners penalized under Section 180.",
+      "prototype_texts": [
+        "Traffic police caught me driving a motorcycle and issued a 5000 rupee challan under Section 181 for driving without a valid driving licence.",
+        "Fined 5000 rupees for driving without a licence because I forgot my purse at home, even though I hold a valid licence registered on Sarathi.",
+        "Vehicle owner issued a 5000 penalty under Section 180 for allegedly allowing an unauthorized driver to operate the car.",
+        "Traffic officer levied maximum fine for unlicensed driving without offering compounding option on the spot.",
+        "Challan issued under Section 181 to a learner licence holder who had an accompanying permanent licence driver present."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "3",
+          "provision_relevance_rationale": "Mandates the requirement of holding an effective driving licence to drive in public places."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "181",
+          "provision_relevance_rationale": "Prescribes statutory penalty up to 5000 rupees or imprisonment for driving without a licence."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "200",
+          "provision_relevance_rationale": "Provides for compounding of certain offences on payment of prescribed compounding fee."
+        }
+      ]
+    },
+    "fake_traffic_challan_wrong_vehicle_city": {
+      "issue_id": "fake_traffic_challan_wrong_vehicle_city",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Wrong Vehicle Photo / Clone Plate Fake E-Challan Dispute",
+      "issue_definition": "Automated traffic cameras misreading number plates or clone registration plates generating erroneous challans for vehicles that were never present at the location.",
+      "prototype_texts": [
+        "I received a traffic e-challan from Mumbai showing a car speeding on the sealink, but my vehicle has never left Bangalore and the photo shows a different car.",
+        "Camera challan issued to my motorcycle showing an image of an auto rickshaw with an illegible number plate misread as mine.",
+        "Got an overspeeding fine from a city 500 km away where my car was never driven, clearly indicating automated ANPR camera OCR error.",
+        "Received five red light camera violation fines for a cloned number plate vehicle operating in another district.",
+        "Challan photo on Parivahan portal clearly shows a different make and color of vehicle despite carrying my registration number."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "208",
+          "provision_relevance_rationale": "Provides procedure for summary disposal of cases and challenging incorrect vehicular allegations."
+        },
+        {
+          "act_id": "it_act_2000",
+          "section_id": "4",
+          "provision_relevance_rationale": "Requires legal recognition and accurate verification of electronic photographic records used as evidence."
+        }
+      ]
+    },
+    "digital_documents_refusal_digilocker_mparivahan": {
+      "issue_id": "digital_documents_refusal_digilocker_mparivahan",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Refusal to Accept DigiLocker / mParivahan Digital Documents by Police",
+      "issue_definition": "Traffic police officers unlawfully refusing to accept legally recognized digital driving licences and vehicle registration certificates shown on DigiLocker or mParivahan.",
+      "prototype_texts": [
+        "Traffic police stopped me and demanded physical RC and driving licence, refusing to accept valid digital documents shown on DigiLocker and mParivahan app.",
+        "Constable refused to look at my mParivahan digital RC and issued a 2000 rupee fine claiming only physical paper documents are valid.",
+        "Traffic cop threatened to impound my scooter because I showed my valid digital driving licence on the official DigiLocker application.",
+        "Enforcement officer insisted on original physical insurance certificate and declined to verify electronic documents on government apps.",
+        "Traffic police issued a challan for non-production of documents despite the citizen presenting valid documents via MoRTH integrated apps."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "139_cmvr",
+          "provision_relevance_rationale": "CMVR Rule 139 mandating acceptance of digital driving license and RC on DigiLocker/mParivahan",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "Statutory duty to produce license and certificate of registration to police officer in uniform",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "Police powers of document impounding restricted where electronic credentials are presented",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "illegal_vehicle_key_confiscation_by_constable": {
+      "issue_id": "illegal_vehicle_key_confiscation_by_constable",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Unlawful Vehicle Key Snatching & Sub-Rank Constable Harassment",
+      "issue_definition": "Traffic constables or home guards forcibly snatching motorcycle ignition keys or detaining vehicles without legal authority under the Motor Vehicles Act.",
+      "prototype_texts": [
+        "A traffic constable took away my motorcycle ignition key and vehicle papers and demanded 2000 rupees cash without issuing any official receipt or challan.",
+        "Traffic constable jumped in front of my moving bike, snatched my ignition keys from the lock, and damaged my bike ignition switch.",
+        "Police personnel below sub-inspector rank confiscated my vehicle keys and detained my car on the roadside unlawfully.",
+        "A traffic home guard forcibly removed my motorcycle key at a signal and refused to return it until I paid an arbitrary cash fine.",
+        "Unlawful key seizure by traffic police constable during routine vehicle checking on a city road."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "130",
+          "provision_relevance_rationale": "Statutory duty to produce license and vehicle documents to police officer",
+          "relevance_classification": "SUPPORTING_PROVISION",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "206",
+          "provision_relevance_rationale": "Impounding powers limited to authorized officers with mandatory written acknowledgment",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "unlawful_towing_occupant_inside_vehicle": {
+      "issue_id": "unlawful_towing_occupant_inside_vehicle",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Unlawful Towing While Occupant Inside Vehicle & Towing Damage",
+      "issue_definition": "Towing cranes hooking and hoisting vehicles while drivers or passengers are seated inside, causing severe mechanical damage and safety hazards.",
+      "prototype_texts": [
+        "Traffic police towed away my car while I was sitting inside the vehicle and caused severe damage to the front bumper, demanding exorbitant towing charges.",
+        "Towing truck hoisted my vehicle with my elderly mother seated in the back seat, violating safety protocols and breaking the suspension.",
+        "Traffic authorities towed my parked car without making any loudspeaker announcement and scratched the entire right side body panels.",
+        "Car towed while driver was inside arguing against the no-parking violation, damaging the automatic transmission.",
+        "Private towing contractor engaged by traffic police lifted vehicle with passengers inside and demanded arbitrary cash towing fees."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "127",
+          "provision_relevance_rationale": "Statutory towing power prohibited while vehicle is occupied",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "207",
+          "provision_relevance_rationale": "Power to detain vehicle restricted to specific statutory grounds",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "uninsured_vehicle_vahan_sync_delay_fine": {
+      "issue_id": "uninsured_vehicle_vahan_sync_delay_fine",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Third Party Insurance Challan Due to Vahan Portal Sync Delay",
+      "issue_definition": "Traffic police issuing Section 196 challans for uninsured vehicle because newly purchased or renewed insurance policies have not synced on the Vahan database.",
+      "prototype_texts": [
+        "I was fined 5000 rupees for not having third party insurance even though my policy is active and valid, but not updated yet on Vahan portal.",
+        "Traffic cop issued a heavy challan for uninsured vehicle despite me showing active insurance policy documents.",
+        "An automated camera issued a 2000 rupee challan for driving without insurance, but my policy was renewed last week and Vahan database had not synced.",
+        "Traffic police refused to accept my genuine insurance policy copy claiming the Parivahan portal shows insurance expired.",
+        "Fined for uninsured vehicle under Section 196 because my newly purchased motor third-party policy was not reflected on the government portal."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "146",
+          "provision_relevance_rationale": "Statutory requirement for necessity of insurance against third party risk",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "196",
+          "provision_relevance_rationale": "Statutory penalty for driving uninsured vehicle with imprisonment up to 3 months or fine",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "emergency_vehicle_passage_red_light_challan": {
+      "issue_id": "emergency_vehicle_passage_red_light_challan",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "traffic_enforcement",
+      "display_name": "Red Light Camera Challan for Giving Way to Ambulance / Emergency Vehicle",
+      "issue_definition": "Drivers penalized by automated red light violation detection cameras when moving across the stop line to allow free passage to an approaching ambulance or fire brigade.",
+      "prototype_texts": [
+        "I crossed the stop line at a red signal to make way for an ambulance with blaring sirens, and the camera issued a 1000 rupee red light violation challan.",
+        "Received a traffic fine for jumping red light because I moved forward into the junction to allow free passage to a fire engine.",
+        "Automated traffic camera captured my car violating red signal while giving right of way to an emergency ambulance.",
+        "Fined for crossing traffic stop line when traffic police directed vehicles forward to clear lane for an emergency medical vehicle.",
+        "Challan generated for red light camera breach committed solely to comply with legal duty to allow passage to emergency vehicle."
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "119",
+          "provision_relevance_rationale": "Traffic sign obedience duty with statutory defense of yielding to emergency vehicle",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "184",
+          "provision_relevance_rationale": "Dangerous driving charge challengeable when moving vehicle to yield to ambulance",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "194e",
+          "provision_relevance_rationale": "Mandate to draw to side of the road to allow free passage to emergency vehicles",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "gratuity_withheld_past_5_years_service": {
+      "issue_id": "gratuity_withheld_past_5_years_service",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Statutory Gratuity Withheld After 5 Years Continuous Service",
+      "issue_definition": "Employers refusing or failing to pay statutory gratuity to employees who have completed at least five years of continuous service upon exit.",
+      "prototype_texts": [
+        "I resigned after working for 6 years continuously at an IT company, but the employer is refusing to pay my statutory gratuity.",
+        "Company withheld my gratuity of 1.8 lakh rupees after 7 years of service claiming the firm suffered financial losses.",
+        "Completed 5 years and 4 months of service in a private firm, but HR says gratuity is only for employees who retire, not for resigned staff.",
+        "Employer failed to disburse gratuity within 30 days of my resignation and refuses to pay statutory delay interest.",
+        "Management deducted my gratuity settlement alleging internal company loss without any disciplinary inquiry or order."
+      ],
+      "provision_references": [
+        {
+          "act_id": "payment_of_gratuity_act_1972",
+          "section_id": "4",
+          "provision_relevance_rationale": "Statutory entitlement to gratuity upon completion of 5 continuous years of service",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "payment_of_gratuity_act_1972",
+          "section_id": "7",
+          "provision_relevance_rationale": "Mandatory duty of employer to determine and pay gratuity within 30 days with interest",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "payment_of_gratuity_act_1972",
+          "section_id": "8",
+          "provision_relevance_rationale": "Recovery of unpaid gratuity through Controlling Authority as arrears of land revenue",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "maternity_leave_salary_denial_or_termination": {
+      "issue_id": "maternity_leave_salary_denial_or_termination",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Maternity Leave Salary Denial & Illegal Pregnancy Termination",
+      "issue_definition": "Employers denying 26 weeks paid maternity leave or terminating female employees during pregnancy or maternity absence in violation of the Maternity Benefit Act.",
+      "prototype_texts": [
+        "My employer terminated my job abruptly after I submitted my pregnancy certificate and applied for 26 weeks of paid maternity leave.",
+        "Company refused to pay salary for my 6 months of maternity leave claiming their internal startup policy only allows 4 weeks unpaid leave.",
+        "Management demoted me and slashed my salary during my maternity leave in complete violation of statutory protections.",
+        "Female employee fired without cause while on maternity leave after working for 2 years in a private establishment.",
+        "Employer withholding maternity benefit wages despite employee having completed more than 80 days of continuous service."
+      ],
+      "provision_references": [
+        {
+          "act_id": "maternity_benefit_act_1961",
+          "section_id": "5",
+          "provision_relevance_rationale": "Right to payment of maternity benefit at rate of average daily wage for 26 weeks",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "maternity_benefit_act_1961",
+          "section_id": "12",
+          "provision_relevance_rationale": "Strict statutory prohibition against dismissing or discharging a woman during maternity leave",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "pf_deducted_not_deposited_epfo": {
+      "issue_id": "pf_deducted_not_deposited_epfo",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Provident Fund Salary Deductions Misappropriated & Not Deposited",
+      "issue_definition": "Employers deducting employee Provident Fund contributions on monthly pay slips but failing to remit the money or matching contributions to the EPFO.",
+      "prototype_texts": [
+        "Company deducted PF from my monthly pay slip but when I checked my EPFO passbook no amount was deposited for the last 8 months.",
+        "Employer has been cutting 12% PF from 50 factory workers each month, but the UAN passbook shows zero contribution deposited for two years.",
+        "Management deducted provident fund money from employee paychecks and misappropriated the funds for company operational expenses.",
+        "Discovered that our firm failed to remit employee and employer PF contributions to EPFO despite showing regular monthly salary deductions.",
+        "Employer closed the branch and absconded without depositing accumulated PF deductions amounting to lakhs into employee EPFO accounts."
+      ],
+      "provision_references": [
+        {
+          "act_id": "epf_act_1952",
+          "section_id": "14",
+          "provision_relevance_rationale": "Penal provisions for failing to deposit provident fund contributions",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "epf_act_1952",
+          "section_id": "14B",
+          "provision_relevance_rationale": "Power to recover damages from employer for default in paying PF contributions",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "316",
+          "provision_relevance_rationale": "Criminal breach of trust for dishonestly misappropriating employee wages deducted for PF",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "employment_bond_original_certificate_retention": {
+      "issue_id": "employment_bond_original_certificate_retention",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Employment Bond Coercion & Original Certificate Retention",
+      "issue_definition": "Employers unlawfully retaining employees' original degree certificates, diplomas, or marksheets to enforce restrictive employment bonds and prevent resignation.",
+      "prototype_texts": [
+        "Company took my original engineering degree and 10th marksheets at joining and refuses to return them unless I pay 2 lakh bond money to resign.",
+        "Employer is holding my original educational certificates hostage to force me to stay for a 3-year mandatory employment bond.",
+        "HR department refused to return my passport and graduation degree certificates after I submitted my resignation.",
+        "Company made freshers sign an employment bond with original document retention and threatens legal notice if they resign early.",
+        "Illegal retention of academic marksheets and degree certificates by private firm enforcing an unconscionable service bond."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "27",
+          "provision_relevance_rationale": "Declares agreements in restraint of lawful profession or trade to be void ab initio."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Prohibits arbitrary deductions and forfeiture of wages under unlawful private bond clauses."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "15",
+          "provision_relevance_rationale": "Classifies the unlawful detaining of property to prejudice another as coercion."
+        }
+      ]
+    },
+    "forced_resignation_notice_pay_deduction": {
+      "issue_id": "forced_resignation_notice_pay_deduction",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Constructive Forced Resignation & Coerced Notice Pay Deduction",
+      "issue_definition": "Management forcing employees to sign resignation letters on the spot and then deducting two to three months notice period buyout from their earned salary.",
+      "prototype_texts": [
+        "Management locked me in a conference room, forced me to submit resignation on the spot, and deducted 3 months notice buyout from my salary.",
+        "Company asked me to resign immediately citing organizational restructuring, but deducted 60000 rupees as notice shortfall from my final settlement.",
+        "Coerced into resigning under threat of termination with adverse remarks, and HR deducted my entire final month salary for notice period.",
+        "Employer terminated my access immediately and withheld full settlement claiming I failed to serve the mandatory 90-day notice period.",
+        "Constructive dismissal where company forced immediate resignation and recovered notice pay from employee's earned wages."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "17",
+          "provision_relevance_rationale": "Requires the employer to pay all outstanding wages within two working days of removal, dismissal, or resignation."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Strictly limits permissible wage deductions and prohibits unauthorized notice buyout deductions where employee was ready to serve."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "15",
+          "provision_relevance_rationale": "Renders forced resignation agreements obtained under duress and coercion voidable."
+        },
+        {
+          "act_id": "industrial_disputes_act_1947",
+          "section_id": "33C",
+          "provision_relevance_rationale": "Provides summary statutory recovery through Labour Court for illegal wage deductions."
+        }
+      ]
+    },
+    "statutory_annual_bonus_denial": {
+      "issue_id": "statutory_annual_bonus_denial",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Denial of Mandatory Statutory Annual Minimum Bonus",
+      "issue_definition": "Profitable establishments refusing to pay the statutory minimum annual bonus of 8.33% to eligible employees under the Code on Wages.",
+      "prototype_texts": [
+        "Our company earned record profits this financial year but refused to pay the statutory minimum 8.33% annual bonus to factory workers.",
+        "Employer withheld Diwali festival bonus for all office staff claiming bonuses are purely discretionary and not legally binding.",
+        "Eligible worker denied statutory annual bonus under Code on Wages despite working continuously for 12 months in the establishment.",
+        "Management refuses to distribute statutory annual bonus mandated by labor laws citing fabricated accounting reserves.",
+        "Commercial firm failed to disburse mandatory minimum bonus within eight months of the close of the financial accounting year."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "26",
+          "provision_relevance_rationale": "Guarantees payment of statutory minimum annual bonus of 8.33% of wages to eligible employees."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "45",
+          "provision_relevance_rationale": "Empowers the Competent Authority to hear and determine claims relating to unpaid statutory bonus."
+        }
+      ]
+    },
+    "unpaid_internship_full_commercial_workload": {
+      "issue_id": "unpaid_internship_full_commercial_workload",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "workplace_wage",
+      "display_name": "Exploitative Unpaid Internship Disguised as Commercial Work",
+      "issue_definition": "Commercial companies hiring fresh graduates as unpaid interns but making them perform full-time revenue-generating production work without stipend or minimum wages.",
+      "prototype_texts": [
+        "A company hired me as an unpaid intern but forces me to work 50 hours a week doing core software development without any stipend.",
+        "Commercial firm hired 15 graduates as unpaid trainees to handle customer support shifts and refuses to pay statutory minimum wages.",
+        "Worked 6 months as an unpaid intern delivering live client websites, but management refuses to pay stipend or issue experience letter.",
+        "Company replaced permanent staff with unpaid interns who perform full-time commercial duties without any remuneration.",
+        "Exploitative unpaid internship where intern works 10 hours a day on production deliverables without statutory stipend."
+      ],
+      "provision_references": [
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "6",
+          "provision_relevance_rationale": "Mandates that every employee performing core work must be paid not less than the statutory minimum wage."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "9",
+          "provision_relevance_rationale": "Prohibits payment of wages below the national floor wage set by the Central Government."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "13",
+          "provision_relevance_rationale": "Regulates working hours and overtime for employees engaged in commercial tasks."
+        }
+      ]
+    },
+    "commercial_vendor_raw_material_delivery_default": {
+      "issue_id": "commercial_vendor_raw_material_delivery_default",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Commercial Vendor Supply Default & Advance Payment Non-Refund",
+      "issue_definition": "Commercial suppliers or raw material vendors accepting large advance payments and failing to deliver the promised goods or refund the advance.",
+      "prototype_texts": [
+        "I paid a commercial vendor 2 lakh advance for delivery of raw materials, but they defaulted and never delivered the goods or returned the money.",
+        "A supplier accepted 5 lakh advance payment for industrial machinery parts, missed all agreed deadlines, and refuses to refund the amount.",
+        "Commercial supply contractor failed to deliver contracted wholesale goods and stopped responding to communications after taking advance.",
+        "Vendor defaulted on contracted raw material delivery, causing our factory production halt and 3 lakh rupees in direct commercial loss.",
+        "Supplier breached agreed procurement terms by neither shipping the paid-for goods nor returning our advance deposit."
+      ],
+      "provision_references": [
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "15",
+          "provision_relevance_rationale": "Statutory liability of buyer to make payment to MSME supplier within maximum 45 days",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "16",
+          "provision_relevance_rationale": "Mandatory compound interest at 3 times RBI Bank Rate on delayed MSME payments",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "18",
+          "provision_relevance_rationale": "Statutory reference to Micro and Small Enterprises Facilitation Council",
+          "relevance_classification": "PROCEDURAL_PROVISION",
+          "verification_status": "verified"
         },
         {
           "act_id": "contract_act_1872",
           "section_id": "73",
-          "provision_relevance_rationale": "Provides for recovery of agreed debt amount and interest damages caused by breach of written promise."
+          "provision_relevance_rationale": "Compensation for loss or damage caused by breach of commercial contract",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "landlord_security_deposit_withheld_unjustly": {
+      "issue_id": "landlord_security_deposit_withheld_unjustly",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Landlord Unjust Security Deposit Withholding & Wear-and-Tear Deductions",
+      "issue_definition": "Landlords refusing to refund rental security deposits upon tenant vacating premises, or making arbitrary deductions for normal wear and tear.",
+      "prototype_texts": [
+        "My landlord is refusing to return my security deposit of 80,000 rupees after I vacated the rented flat in clean condition.",
+        "House owner deducted entire 1 lakh rental deposit claiming painting and deep cleaning charges without providing any bills.",
+        "Landlord refuses to refund advance deposit after tenant gave 1 month notice and handed over physical possession with video inspection.",
+        "Rental flat owner withholding 60000 rupees security deposit for six months citing non-existent structural damages.",
+        "Dispute where residential landlord fabricated bogus repair charges to forfeit tenant's security deposit."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Damages for breach of tenancy agreement and unjust enrichment through deposit withholding",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "tp_act_1882",
+          "section_id": "108",
+          "provision_relevance_rationale": "Duty of landlord to return security deposit upon peaceful vacation of premises",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "freelance_software_developer_invoice_nonpayment": {
+      "issue_id": "freelance_software_developer_invoice_nonpayment",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Freelance Software & Creative Work Client Invoice Default",
+      "issue_definition": "Clients accepting completed software, design, or professional freelance deliverables and refusing to clear agreed milestone invoices.",
+      "prototype_texts": [
+        "I completed freelance software development work for a client as agreed, submitted all deliverables, but they stopped responding and refused to clear the invoice.",
+        "Client deployed the web application I developed, accepted all code repositories, but refuses to pay my pending 1.2 lakh freelance invoice.",
+        "Freelance graphic designer completed corporate branding project under signed contract, but client ghosted and refused payment.",
+        "Completed commercial software consultancy assignment, but client company made frivolous excuses to deny final milestone payout.",
+        "Client accepted custom mobile application deliverables and launched to production while withholding freelancer agreed remuneration."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "70",
+          "provision_relevance_rationale": "Obligates a person who has enjoyed the benefit of a non-gratuitous act or service to compensate the service provider."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Entitles the contractor to compensation and interest for breach of payment terms."
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "15",
+          "provision_relevance_rationale": "Mandates that client must clear freelancer and small business invoices within 45 days."
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "16",
+          "provision_relevance_rationale": "Entitles freelancer to penal compound interest at three times the RBI bank rate on delayed invoice payments."
+        },
+        {
+          "act_id": "msmed_act_2006",
+          "section_id": "18",
+          "provision_relevance_rationale": "Enables reference of payment default directly to Micro and Small Enterprise Facilitation Council via MSME Samadhaan."
+        }
+      ]
+    },
+    "interior_decorator_abandoning_renovation_advance": {
+      "issue_id": "interior_decorator_abandoning_renovation_advance",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Contractor Renovation Abandonment After Receiving Advance",
+      "issue_definition": "Interior contractors or home renovation agencies taking large advance payments, demolishing premises, and abandoning the project midway.",
+      "prototype_texts": [
+        "A renovation contractor took 1.5 lakh advance for interior work, demolished walls, and completely abandoned the project midway without completing the work.",
+        "Home interior contractor took 60% advance payment, completed only 10% carpentry work, and stopped answering phone calls.",
+        "Renovation contractor demolished our bathroom and kitchen, took 2 lakh cash advance, and vanished without finishing work.",
+        "Contractor abandoned flat modular kitchen installation midway despite receiving full advance agreed in quotation.",
+        "Interior design agency walked out of residential renovation project halfway, leaving flat inhabitable after taking advance."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Holds the breaching contractor liable for direct losses, costs to complete, and rectification expenses."
+        },
+        {
+          "act_id": "specific_relief_act_1963",
+          "section_id": "20",
+          "provision_relevance_rationale": "Empowers the aggrieved house owner to get the unfinished work completed through a third party and recover all costs from the defaulting contractor."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "75",
+          "provision_relevance_rationale": "Entitles the party rightfully rescinding the contract to compensation for damage sustained."
+        }
+      ]
+    },
+    "non_compete_clause_employment_trade_restraint": {
+      "issue_id": "non_compete_clause_employment_trade_restraint",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Post-Employment Non-Compete Intimidation & Void Trade Restraint",
+      "issue_definition": "Employers threatening former employees with legal notices, damages, or salary recovery under post-employment non-compete clauses.",
+      "prototype_texts": [
+        "My former employer is threatening to sue me under a 2-year non-compete clause in my contract for joining a competitor in the same industry.",
+        "Company sent a legal notice demanding 10 lakh damages because I accepted a software job at a rival tech firm after resigning.",
+        "Former boss threatened an injunction restraining me from practicing my profession under an unfair post-employment restraint covenant.",
+        "Ex-employer intimidating employee with legal action under a restrictive non-compete clause that violates statutory freedom of trade.",
+        "Management claiming an employee cannot work for any competitor in India for 18 months under an agreement signed at joining."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "27",
+          "provision_relevance_rationale": "Every agreement by which anyone is restrained from exercising lawful trade or business is void ab initio",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "74",
+          "provision_relevance_rationale": "Liquidated damages cannot be claimed to enforce a void restrictive covenant",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "advance_booking_token_money_forfeiture": {
+      "issue_id": "advance_booking_token_money_forfeiture",
+      "taxonomy_status": "taxonomy_supported",
+      "domain_id": "contractual_disputes",
+      "display_name": "Unfair Advance Booking & Token Money Forfeiture Dispute",
+      "issue_definition": "Vendors, banquet halls, or sellers forfeiting 100% of advance booking deposits upon cancellation without proving actual financial damage.",
+      "prototype_texts": [
+        "A wedding banquet hall cancelled our booking due to family emergency and forfeited my entire 2 lakh advance deposit refusing any refund.",
+        "Event venue owner refused to refund 1 lakh token advance when event was cancelled 3 months in advance and re-booked the date with another party.",
+        "Commercial seller forfeited 50000 rupees token advance under a one-sided liquidated damages clause without suffering any actual loss.",
+        "Photography studio retained full advance booking fee despite receiving cancellation notice within 48 hours of booking.",
+        "Caterer refused to return 50% advance deposit for event postponed due to unforeseen emergency citing non-refundable clause."
+      ],
+      "provision_references": [
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "74",
+          "provision_relevance_rationale": "Limits forfeiture and liquidated damages only to reasonable compensation for actual damage proved, barring penal forfeitures."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "64",
+          "provision_relevance_rationale": "Requires the party rescinding a voidable contract to restore any benefit received."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "65",
+          "provision_relevance_rationale": "Obligates any person who received an advantage under a void or terminated agreement to restore it or make compensation."
+        }
+      ]
+    },
+    "wrong_side_police_diversion_defense": {
+      "issue_id": "wrong_side_police_diversion_defense",
+      "canonical_name": "Wrong-Side Driving Challan During Police or Road Construction Diversion",
+      "domain_id": "traffic_enforcement",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "I was driving on the wrong side because traffic police waved me into the opposite lane due to metro construction barricades but a camera fined me",
+        "Police officer directed traffic to take the opposite carriageway because of road repair work and I got a 5000 fine for one way violation",
+        "Challan received for driving against one way traffic when police hand signaled all cars to divert into that lane",
+        "Fined for wrong side driving when the regular lane was blocked by road work and police constable guided vehicles into the opposite road",
+        "Traffic police diversion caused me to enter wrong side carriageway and automated traffic camera issued wrongful challan"
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "119",
+          "provision_relevance_rationale": "Statutory duty to obey traffic signs subject to direction of police officer in uniform",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "184",
+          "provision_relevance_rationale": "Dangerous driving provision which is negated by statutory compliance with police diversion",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "hit_and_run_solatium_fund_claim": {
+      "issue_id": "hit_and_run_solatium_fund_claim",
+      "canonical_name": "Hit and Run Motor Accident Solatium Compensation Claim",
+      "domain_id": "traffic_enforcement",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "My relative was hit by an unknown speeding vehicle that fled the scene and we need compensation for hit and run",
+        "A car crashed into my motorcycle at night and ran away without stopping causing severe fractures and injury",
+        "Hit and run accident victim seeking statutory compensation from the government solatium fund",
+        "Unknown driver knocked down pedestrian and escaped from accident spot resulting in fatality",
+        "Speeding unidentified vehicle caused hit and run collision and fled without reporting to police"
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "161",
+          "provision_relevance_rationale": "Special provisions as to compensation in case of hit and run motor accident",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "134",
+          "provision_relevance_rationale": "Duty of driver in case of accident and injury to a person",
+          "relevance_classification": "SUPPORTING_PROVISION",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "166",
+          "provision_relevance_rationale": "Application for compensation before Motor Accidents Claims Tribunal (MACT)",
+          "relevance_classification": "PROCEDURAL_PROVISION",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "mact_accident_compensation_claim": {
+      "issue_id": "mact_accident_compensation_claim",
+      "canonical_name": "Motor Accident Claims Tribunal (MACT) Third-Party Compensation Claim",
+      "domain_id": "traffic_enforcement",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "I suffered permanent disability in a truck accident and want to file a compensation claim before MACT against insurance",
+        "Filing application before Motor Accidents Claims Tribunal for medical treatment expenses and loss of earning capacity",
+        "Severe road accident caused by rash bus driver seeking insurance claim compensation under section 166 mv act",
+        "Family claiming compensation before claims tribunal after breadwinner died in fatal car crash",
+        "How to file MACT claim petition for grievous injury and hospital bills within statutory limitation period"
+      ],
+      "provision_references": [
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "166",
+          "provision_relevance_rationale": "Section 166 provides the statutory right to file a claim petition before the Motor Accidents Claims Tribunal (MACT) within 6 months of accident."
+        },
+        {
+          "act_id": "mv_act_1988",
+          "section_id": "146",
+          "provision_relevance_rationale": "Section 146 establishes compulsory insurance against third-party risk ensuring insurance company liability to pay tribunal award."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "281",
+          "provision_relevance_rationale": "Section 281 BNS criminalizes rash or negligent driving on a public way, forming the evidentiary basis of negligent driving."
+        }
+      ]
+    },
+    "posh_workplace_sexual_harassment_complaint": {
+      "issue_id": "posh_workplace_sexual_harassment_complaint",
+      "canonical_name": "Workplace Sexual Harassment and POSH Internal Committee Inquiry",
+      "domain_id": "workplace_wage",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "My manager sent vulgar sexually explicit messages on WhatsApp and threatened my appraisal if I refused personal meetings",
+        "Colleague making repeated unwelcome sexual advances and creating hostile work environment at my office",
+        "Filing a formal complaint under POSH Act with the Internal Committee for sexual harassment at workplace",
+        "Employer does not have an Internal Committee and dismissed my sexual harassment complaint against director",
+        "Senior executive making inappropriate physical contact and quid pro quo demands for job promotion"
+      ],
+      "provision_references": [
+        {
+          "act_id": "posh_act_2013",
+          "section_id": "4",
+          "provision_relevance_rationale": "Mandatory constitution of Internal Committee (IC) in establishments with 10+ employees",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "posh_act_2013",
+          "section_id": "9",
+          "provision_relevance_rationale": "Statutory right of aggrieved woman to file written complaint of sexual harassment within 3 months",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "posh_act_2013",
+          "section_id": "26",
+          "provision_relevance_rationale": "Statutory penalty for non-compliance with provisions of POSH Act including IC constitution",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "cheque_bounce_statutory_notice_138": {
+      "issue_id": "cheque_bounce_statutory_notice_138",
+      "canonical_name": "Cheque Bounce Dishonour Statutory Notice and Section 138 NI Act Proceedings",
+      "domain_id": "contractual_disputes",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "A client issued a cheque for contract payment but the bank returned it with memo saying insufficient funds",
+        "Cheque bounced due to funds insufficient and drawer is making false excuses instead of paying",
+        "How to issue 15 days statutory demand notice under section 138 negotiable instruments act for bounced cheque",
+        "Contractor issued post-dated cheque towards invoice settlement which got dishonoured by bank",
+        "Filing section 138 criminal complaint for bounced cheque within statutory limitation period"
+      ],
+      "provision_references": [
+        {
+          "act_id": "ni_act_1881",
+          "section_id": "138",
+          "provision_relevance_rationale": "Dishonour of cheque for insufficiency of funds punishable with imprisonment up to 2 years and 2x fine",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "ni_act_1881",
+          "section_id": "141",
+          "provision_relevance_rationale": "Offences by companies and vicarious criminal liability of managing directors",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "ni_act_1881",
+          "section_id": "142",
+          "provision_relevance_rationale": "Cognizance of offences: mandatory demand notice within 30 days and 15 days cure window",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "rbi_zero_liability_unauthorized_transaction": {
+      "issue_id": "rbi_zero_liability_unauthorized_transaction",
+      "canonical_name": "RBI Zero Customer Liability for Unauthorized Electronic Banking Fraud",
+      "domain_id": "cyber_fraud",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "Money was debited from my bank account in unauthorized transactions without my OTP or knowledge and I reported within 3 days",
+        "Bank refusing to reverse unauthorized online transfer despite immediate complaint within 72 hours under rbi rules",
+        "Zero liability claim for fraudulent debit card transaction reported within 3 working days",
+        "Unauthorized electronic fund transfer from bank account without customer consent or fault seeking full reversal",
+        "Fraudulent UPI debit occurred while I was asleep and I notified bank immediately to claim zero customer liability"
+      ],
+      "provision_references": [
+        {
+          "act_id": "it_act_2000",
+          "section_id": "43a",
+          "provision_relevance_rationale": "Section 43A mandates compensation for negligence in implementing reasonable security practices by banking bodies."
+        },
+        {
+          "act_id": "bns_2023",
+          "section_id": "318",
+          "provision_relevance_rationale": "Section 318 BNS penalizes cheating and fraudulent inducement in electronic financial transfers."
+        },
+        {
+          "act_id": "bnss_2023",
+          "section_id": "173",
+          "provision_relevance_rationale": "Section 173 BNSS mandates registration of FIR for cognizable cyber fraud debits."
+        }
+      ]
+    },
+    "flight_delay_cancellation_compensation": {
+      "issue_id": "flight_delay_cancellation_compensation",
+      "canonical_name": "Airline Flight Cancellation and Delay Statutory Compensation Refusal",
+      "domain_id": "consumer_issues",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "Airline cancelled my domestic flight at the airport and refused to provide full refund or alternate flight",
+        "Flight delayed by 7 hours overnight and airline refused hotel accommodation food and passenger compensation",
+        "Airlines arbitrarily cancelled flight without 24 hours notice and refusing statutory dgca passenger charter compensation",
+        "Denied boarding due to overbooked flight and airline refused cash compensation under civil aviation rules",
+        "Airline carrier refused refund for cancelled flight booking and offered only useless travel voucher"
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Deficiency in aviation service for unnotified flight cancellation and refund delay",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "Complaint before Consumer Commission for ticket refund and passenger compensation",
+          "relevance_classification": "DIRECTLY_APPLICABLE",
+          "verification_status": "verified"
+        }
+      ]
+    },
+    "tenancy_security_deposit_unlawful_deduction": {
+      "issue_id": "tenancy_security_deposit_unlawful_deduction",
+      "canonical_name": "Tenancy Security Deposit Arbitrary Withholding and Wear-and-Tear Deductions",
+      "domain_id": "contractual_disputes",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "Landlord refusing to refund my security deposit of 1 lakh claiming routine painting and normal wear and tear after I vacated",
+        "Vacated flat in good condition but house owner withheld rental deposit making baseless deduction claims",
+        "House owner not returning rental deposit after tenancy ended and keys handed over",
+        "Landlord making arbitrary deductions of 50000 from rental advance without providing any repair bills or receipts",
+        "Dispute over unreturned rental deposit following peaceful handover of rented apartment"
+      ],
+      "provision_references": [
+        {
+          "act_id": "tp_act_1882",
+          "section_id": "108",
+          "provision_relevance_rationale": "Section 108 mandates lessor to ensure quiet possession and refund security deposit upon peaceful handover, subject only to actual damages."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "73",
+          "provision_relevance_rationale": "Section 73 provides compensation for loss caused by breach of contractual agreement to refund deposit."
+        },
+        {
+          "act_id": "limitation_act_1963",
+          "section_id": "art_113",
+          "provision_relevance_rationale": "Schedule Article 113 provides a 3-year limitation period from vacation date to file recovery suit in civil court."
+        }
+      ]
+    },
+    "notice_period_exorbitant_deduction_exit": {
+      "issue_id": "notice_period_exorbitant_deduction_exit",
+      "canonical_name": "Notice Period Shortfall Disproportionate Salary Deduction and Clawback",
+      "domain_id": "workplace_wage",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "Company deducted 3 months gross salary from my full and final settlement because I served 1 month notice instead of 3",
+        "Employer deducting massive notice pay penalty exceeding my basic pay for short notice period resignation",
+        "Notice period salary recovery deduction in full and final settlement violating labour wage laws",
+        "Resigned for medical emergency and company withheld all pending wages claiming 90 days notice pay forfeiture",
+        "Employer demanding 2 lakhs payment for notice period shortfall before releasing relieving letter and experience certificate"
+      ],
+      "provision_references": [
+        {
+          "act_id": "payment_of_wages_act_1936",
+          "section_id": "7",
+          "provision_relevance_rationale": "Section 7 strictly limits authorized salary deductions, prohibiting punitive penalty deductions without statutory sanction."
+        },
+        {
+          "act_id": "code_on_wages_2019",
+          "section_id": "18",
+          "provision_relevance_rationale": "Section 18 mandates that total deductions in any wage period shall not exceed 50% of monthly wages."
+        },
+        {
+          "act_id": "contract_act_1872",
+          "section_id": "74",
+          "provision_relevance_rationale": "Section 74 provides that where a contract stipulates a penalty for breach, the employer can recover only reasonable compensation, not exorbitant penalties."
+        }
+      ]
+    },
+    "insurance_claim_arbitrary_rejection": {
+      "issue_id": "insurance_claim_arbitrary_rejection",
+      "canonical_name": "Health or Life Insurance Claim Arbitrary Repudiation by Insurer or TPA",
+      "domain_id": "consumer_issues",
+      "taxonomy_status": "taxonomy_supported",
+      "prototype_texts": [
+        "Insurance company rejected my health insurance cashless claim of 3 lakhs citing pre existing illness exclusions",
+        "TPA repudiated medical insurance reimbursement claim arbitrarily without valid medical justification",
+        "Health insurance claim denied by insurer on false grounds of non disclosure of pre existing disease",
+        "Life insurance claim rejected by company following death of policyholder claiming material suppression",
+        "Arbitrary repudiation of valid hospital surgery insurance claim despite paying regular premiums"
+      ],
+      "provision_references": [
+        {
+          "act_id": "cpa_2019",
+          "section_id": "2_11",
+          "provision_relevance_rationale": "Section 2(11) defines deficiency in service for arbitrary rejection of insurance claims without valid medical reasons."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "35",
+          "provision_relevance_rationale": "Section 35 authorizes filing consumer complaint before the District Consumer Commission."
+        },
+        {
+          "act_id": "cpa_2019",
+          "section_id": "69",
+          "provision_relevance_rationale": "Section 69 provides a 2-year limitation period from repudiation date to file consumer complaint."
         }
       ]
     }

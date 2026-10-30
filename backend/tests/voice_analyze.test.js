@@ -118,6 +118,22 @@ test("Regression test: Typed English complaints continue working unchanged", asy
   assert.strictEqual(ml.calls[0].scenario, typedComplaint);
 });
 
+test("Voice input workflow: Explicit language hint in request body is honored", async () => {
+  const ml = fakeMlClient();
+  const app = createApp({ mlClient: ml });
+
+  const kannadaTranscript = "ನನ್ನ ಖಾತೆಯಿಂದ ಯಾವುದೇ ಒಟಿಪಿ ಇಲ್ಲದೆ ಹಣ ಕಡಿತಗೊಂಡಿದೆ";
+
+  const res = await request(app)
+    .post("/api/analyze")
+    .send({ scenario: kannadaTranscript, language: "kn" });
+
+  assert.strictEqual(res.status, 200);
+  assert.strictEqual(res.headers["x-detected-language"], "kn");
+  assert.strictEqual(ml.calls.length, 1);
+  assert.ok(ml.calls[0].scenario.length >= 10);
+});
+
 test("Regression test: Transcripts under 20 characters are rejected with HTTP 400", async () => {
   const ml = fakeMlClient();
   const app = createApp({ mlClient: ml });
@@ -131,3 +147,4 @@ test("Regression test: Transcripts under 20 characters are rejected with HTTP 40
   assert.strictEqual(res.status, 400);
   assert.strictEqual(ml.calls.length, 0); // never reaches ML
 });
+

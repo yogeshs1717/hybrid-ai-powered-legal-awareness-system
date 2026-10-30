@@ -1,0 +1,16 @@
+{
+  "name": "hybrid-ai-powered-legal-awareness-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hybrid AI-Powered Legal Awareness System",
+  "scripts": {
+    "dev": "node scripts/dev-services.js",
+    "start": "node scripts/dev-services.js",
+    "dev:services": "node scripts/dev-services.js",
+    "dev:ml": "node scripts/dev-services.js --ml",
+    "dev:speech": "node scripts/dev-services.js --speech",
+    "dev:gateway": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:all": "node scripts/dev-services.js --all"
+  }
+}

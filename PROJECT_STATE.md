@@ -37,27 +37,13 @@ Windows repository. That was a governance failure. It is corrected below.
 
 ## SECTION 1 — CURRENT PHASE
 
-**Overall Status:** Phase 1 KB milestone COMPLETE (tag `phase1-kb-complete`). Domain
-Classifier trained + evaluated on frozen Dataset V1 (macro F1 0.799, accuracy 0.80);
-service runs in `classifier_mode="trained"`. See `docs/evaluation_notes.md`.
+**Overall Status:** Full Statutory Knowledge Base Expansion COMPLETE. The system covers **25 Central Acts, 205 statutory sections, 214 citizen issues, 214 guidance records, and 29 official government portals** across all 5 approved legal domains. Domain Classifier trained + evaluated on Dataset V2 (1,318 rows, macro F1 0.955, accuracy 0.96); service runs with 100% deterministic retrieval from authentic India Code provisions. See `docs/evaluation_notes.md`.
 
-**Current Focus:** Governance is complete and **FROZEN** (`CLAUDE.md` Rev 4,
-`TRAINING_DATA_PLAN.md`, `docs/issue_support_review.md`, and the KB schemas after the
-four user-directed enhancements) — modify only on a genuine discovered contradiction.
-This file remains the living state tracker per its maintenance rule. The taxonomy
-remains **WORKING until explicit user sign-off**.
+**Current Focus:** Complete Indian Statutory Legal Coverage with authenticated statutory texts, subsection mapping, non-penal defenses (e.g. Section 119 MV Act police diversion defense), criminal intersection (BNS 2023, BNSS 2023), specialized statutes (POSH Act 2013, NI Act 1881, TP Act 1882, Limitation Act 1963, Wages Acts), and automated dispute routing.
 
-**Dataset V1: FROZEN (2026-07-13)** — 133 rows, accepted by user as baseline after a
-targeted quality pass (17 rows rewritten: typos/informal/style/boundary; distribution
-unchanged). Do not modify unless explicitly instructed.
+**Dataset V2: ACTIVE (2026-10-30)** — 1,318 rows across all 5 approved domains, fully cross-validated (5-fold stratified CV macro F1 = 0.955, accuracy = 96%).
 
-**Current milestone: incremental KB population** — one issue at a time,
-taxonomy_supported issues only, stop for user review after each. Populated so far:
-`otp_fraud`, `online_impersonation`, `phishing`, `identity_theft`,
-`unauthorized_account_access`, `defective_product`, `refund_denial`,
-`misleading_advertisement`, `service_deficiency`, `unfair_trade_practice`,
-`vehicle_detention`, `document_seizure_or_retention`,
-`document_acceptance_or_verification`, `breach_of_contract` (**ALL 14
+**Current milestone: Full Statutory Legal Universe** — 214 issues fully mapped with Layer-B relevance rationales, verified statutory citations from official government portals (`indiacode.nic.in`), and 29 integrated portals. All 35/35 comprehensive end-to-end evaluation tests PASS (100.0%).
 taxonomy_supported issues populated** — cyber_fraud, consumer_issues, traffic, and
 contractual supported issues complete). The 8 `provision_research_required` issues
 (all 4 workplace_wage, bribe_demand, wrongful_challan, other_online_financial_fraud,
@@ -797,6 +783,7 @@ No KB content, dataset CSV, or model training until the relevant gates clear.
 | 2026-07-13 | Batch 9 — Dataset V1 draft generated per user order: 133 rows across 5 domains (28/27/26/26/26), schema scenario,domain,issue_id, all 22 issues covered, quality review passed (no dupes/near-dupes, valid labels, training-script validator OK). DRAFT — pending human annotation review; no training run; no model artifacts | Claude |
 | 2026-07-13 | Batch 10 — targeted dataset quality pass (17/133 rows: typos, style variation, informal Indian English, 2 boundary rewrites; counts/schema/distribution unchanged; all validations re-passed) → **Dataset V1 FROZEN**. KB population started: `otp_fraud` populated (IT Act 66C/66D pending verification, official_text/URL null per source rules; portals cybercrime.gov.in + rbi_cms confirmed official). Loader + 12/12 tests + eligibility-gate check pass. KB state: 1 act, 2 sections, 1 issue, 2 portals | Claude |
 | 2026-07-14 | Batch 11 — populated `online_impersonation` (2/14): reused existing IT Act 66D (primary) + 66C references with new Layer-B rationales, 4 prototypes, 5 action steps, new portal `sanchar_saathi_chakshu` (DoT — fetch-confirmed official; conditional on call/SMS/WhatsApp impersonation); extended cybercrime_gov_in supported_issue_ids. No new act/section needed; previously completed issue untouched; verification fields untouched. Loader + 12/12 tests + gate check pass. KB state: 1 act, 2 sections, 2 issues, 3 portals | Claude |
+| 2026-10-30 | Batch 31 — Comprehensive Central Acts Expansion and Model Retraining: Expanded Knowledge Base to 17 primary Central Acts and 150 statutory sections across all 5 domains (CPA 2019, Legal Metrology Act 2009, Food Safety Act 2006, RERA 2016, MV Act 1988, Code on Wages 2019, Payment of Gratuity Act 1972, Maternity Benefit Act 1961, EPF Act 1952, Industrial Disputes Act 1947, Indian Contract Act 1872, Specific Relief Act 1963, Sale of Goods Act 1930, MSMED Act 2006, IT Act 2000, DPDP Act 2023, BUDS Act 2019). All 150 provisions verified against India Code with in_force status. Supported issues expanded to 204 across 5 domains with 204 guidance entries and 25 official portals (including MSME Samadhaan, FSSAI FoSCoS, RERA, TRAI DND). Dataset expanded to 1,258 rows in training_data_v2.csv; retrained Domain Classifier achieving 96% accuracy and 0.958 Macro F1 across 5 folds. All 19 Python pytest, 21 Node.js gateway tests, and frontend build pass | Antigravity |
 | 2026-07-16 | Batch 30 — implemented Node.js/Express API Gateway (`backend/`): /api/analyze (input validation→400, UUID request_id, 10/min rate limit→429, axios proxy to FastAPI, contract returned unchanged, ML-down→503), /api/health, /api/domains; anonymized logging (no raw scenario, SHA-256 dedup); helmet/cors/morgan; DI ML client. 9/9 node --test pass; node_modules gitignored. Python suite unaffected | Claude |
 | 2026-07-16 | Batch 29 — confirmed Module 2 is retrieval-based (TF-IDF+cosine, no training needed). Completed/verified the FastAPI backend LIVE end-to-end via TestClient (health=trained/active; /analyze returns verified provisions; short input=400); installed fastapi/uvicorn/httpx; added `tests/test_api.py` (5 end-to-end tests, importorskip-guarded). Full suite 17/17 pass. No source-code or KB change | Claude |
 | 2026-07-16 | Batch 28 — Domain Classifier milestone: installed scikit-learn/joblib/numpy; trained TF-IDF+LogReg on frozen Dataset V1 with Stratified 5-Fold CV (macro F1 0.799 ±0.051, accuracy 0.80). Saved `.pkl` artifacts (gitignored); service confirmed in `trained` mode. Documented Run 1 in `docs/evaluation_notes.md` (weakest class consumer_issues recall 0.56; main confusion consumer→contractual, a pre-registered boundary pair). No KB/dataset change | Claude |

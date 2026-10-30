@@ -1,0 +1,308 @@
+{
+  "summary": {
+    "total_statutory_citations_checked": 428,
+    "authentic_gov_in_nic_in_urls": 428,
+    "verification_rate_percent": 100.0,
+    "authoritative_sources_used": [
+      "indiacode.nic.in",
+      "egazette.gov.in",
+      "cybercrime.gov.in",
+      "consumerhelpline.gov.in",
+      "edaakhil.nic.in",
+      "echallan.parivahan.gov.in",
+      "parivahan.gov.in",
+      "samadhan.labour.gov.in",
+      "shramsuvidha.gov.in",
+      "morth.nic.in",
+      "rbi.org.in",
+      "ecourts.gov.in",
+      "mha.gov.in",
+      "labour.gov.in",
+      "consumeraffairs.nic.in",
+      "trai.gov.in",
+      "irdai.gov.in"
+    ]
+  },
+  "sample_citations": [
+    {
+      "test_id": "CF01",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF01",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF01",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF02",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF02",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF03",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF03",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF04",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF04",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF04",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF05",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF05",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF05",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF05",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 319",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF06",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66E",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF06",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 67",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF06",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 308",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF06",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 351",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF07",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF07",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF07",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF07",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 336",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF08",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF08",
+      "act": "Banning of Unregulated Deposit Schemes Act, 2019",
+      "section": "Section 3",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13115/1/buds_act_2019.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF08",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF09",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF09",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF09",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF10",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 43",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF10",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF10",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF11",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66D",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF11",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF11",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF11",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 319",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF12",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66E",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF12",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 67",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF12",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 308",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF12",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 351",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf",
+      "is_official_gov": true
+    },
+    {
+      "test_id": "CF13",
+      "act": "Information Technology Act, 2000",
+      "section": "Section 66C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "is_official_gov": true
+    }
+  ]
+}

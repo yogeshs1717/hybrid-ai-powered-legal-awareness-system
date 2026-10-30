@@ -242,12 +242,13 @@ export function LandingPage() {
         {!isPending && !isSuccess && !isError && (
           <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
             <ScenarioInput
-              onSubmit={(scenario) => {
+              onSubmit={(scenario, lang) => {
                 setSubmittedScenario(scenario);
-                analyze.mutate(scenario);
+                analyze.mutate({ scenario, language: lang });
               }}
               loading={isPending}
             />
+
           </div>
         )}
 

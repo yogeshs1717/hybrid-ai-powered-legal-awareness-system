@@ -1,0 +1,5709 @@
+[
+  {
+    "test_id": "IB_CF01",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A fraudulent caller claiming to be an ICICI bank credit manager tricked me into revealing my card OTP and Rs 32,000 was debited instantly.",
+    "expected_issue_ids": [
+      "otp_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF02",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "I clicked a phishing link in an SMS claiming my Axis bank account was blocked and entered my net banking password resulting in unauthorized debit.",
+    "expected_issue_ids": [
+      "phishing"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF03",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "An OLX buyer asked me to scan a Google Pay QR code to receive Rs 15,000 for my used bicycle, but money was deducted from my account instead.",
+    "expected_issue_ids": [
+      "qr_code_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF04",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A fake HR recruiter on LinkedIn asked for Rs 9,500 security deposit for an airline ground staff job and stopped answering calls after payment.",
+    "expected_issue_ids": [
+      "recruitment_job_offer_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF05",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "Someone cloned my Airtel SIM card by obtaining a duplicate SIM with forged documents and transferred Rs 1.5 lakhs from my bank account.",
+    "expected_issue_ids": [
+      "sim_swap_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318",
+      "336"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF06",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A blackmailer recorded my WhatsApp video call, morphed explicit adult video onto my face, and is demanding Rs 50,000 under threat of sending it to my family.",
+    "expected_issue_ids": [
+      "sextortion_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66e",
+      "67",
+      "308",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF07",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "Rs 10,000 was fraudulently withdrawn from my rural bank account via AePS biometric fingerprint cloning at an unauthorized mini-ATM kiosk.",
+    "expected_issue_ids": [
+      "aeps_biometric_aadhaar_money_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66",
+      "66c",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF08",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "I received a phone call from fake Mumbai Police claiming my Aadhaar was linked to money laundering in a DHL parcel and placed me under digital arrest.",
+    "expected_issue_ids": [
+      "courier_customs_fraud",
+      "digital_arrest_extortion"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "308",
+      "318",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF09",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "Unauthorized overseas ATM cash withdrawals totaling Rs 65,000 occurred on my debit card while the physical card was securely in my pocket in India.",
+    "expected_issue_ids": [
+      "card_cloning_skimming"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF10",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "I installed a malicious electricity bill update APK from an SMS link which hijacked my phone SMS and drained my bank account via net banking.",
+    "expected_issue_ids": [
+      "electricity_bill_sms_apk_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF11",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "A scammer cloned my son's voice using AI generative audio, called my elderly wife crying that he caused a fatal road crash, and extorted Rs 2 lakhs in urgent ransom.",
+    "expected_issue_ids": [
+      "ai_voice_clone_virtual_kidnapping"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "308",
+      "318",
+      "319",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF12",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "I was added to an institutional VIP trading WhatsApp group where admin induced me to invest Rs 4 lakhs into a fake SEBI-approved stock allotment app that froze withdrawals.",
+    "expected_issue_ids": [
+      "fake_stock_ipo_allotment_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Banning of Unregulated Deposit Schemes Act, 2019"
+    ],
+    "expected_sections": [
+      "66d",
+      "318",
+      "3"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF13",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "An Instagram seller advertising premium leather bags took Rs 18,000 via UPI QR code, sent a tracking slip for an empty envelope, and blocked my phone.",
+    "expected_issue_ids": [
+      "ecommerce_fake_seller_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "66d",
+      "318",
+      "2(11)"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF14",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "My mobile device was compromised via spyware sideloaded from a rogue app store, which monitored my WhatsApp chats, captured keystrokes, and forwarded my OTPs.",
+    "expected_issue_ids": [
+      "spyware_stalkerware_device_monitoring",
+      "identity_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "66c",
+      "66e"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF15",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "A cyber criminal created fake social media profiles using my photos and contact details, soliciting money from my professional colleagues under false medical pretexts.",
+    "expected_issue_ids": [
+      "online_impersonation",
+      "identity_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF16",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "I joined a Telegram work-from-home task scheme where they initially paid Rs 500 for rating hotels, then induced me to deposit Rs 1.5 lakhs for cryptocurrency arbitrage.",
+    "expected_issue_ids": [
+      "fake_crypto_arbitrage_telegram_ponzi",
+      "google_review_rating_task_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF17",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "A caller impersonating SBI customer support asked me to install AnyDesk to solve a failed transaction, took control of my screen, and transferred Rs 75,000.",
+    "expected_issue_ids": [
+      "remote_access_app_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF18",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "Fraudsters ported my mobile number to another telecom circle using an unauthorized e-KYC request, bypassed 2FA on my mutual fund portal, and liquidated units.",
+    "expected_issue_ids": [
+      "sim_swap_fraud",
+      "unauthorized_account_access"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF19",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "A matrimonial profile on Shaadi.com claimed to be a British surgeon, promised marriage, sent a fake parcel tracking slip, and customs agent demanded Rs 80,000 clearance.",
+    "expected_issue_ids": [
+      "matrimonial_customs_gift_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF20",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "An unauthorized loan app access my contact list, photos, and gallery, and started sending morphed defamatory photos to all my relatives demanding 300% interest.",
+    "expected_issue_ids": [
+      "instant_loan_app_harassment_defamation"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66e",
+      "67",
+      "308",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF21",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "I made an intentional voluntary UPI transfer of Rs 5,000 to a friend, but entered a wrong phone number by mistyping one digit.",
+    "expected_issue_ids": [
+      "upi_wrong_transfer_reversal_delay"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)"
+    ],
+    "expected_portals": [
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF22",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "My bank account was debited Rs 10,000 for a UPI merchant payment that failed with a timeout error, and auto-reversal has not occurred after 4 days.",
+    "expected_issue_ids": [
+      "rbi_zero_liability_unauthorized_transaction"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)"
+    ],
+    "expected_portals": [
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF23",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "A caller claimed my credit card reward points worth Rs 8,500 were expiring today and sent a link to redeem them for cash, which siphoned my balance.",
+    "expected_issue_ids": [
+      "credit_card_reward_points_expiry_link",
+      "otp_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF24",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "I clicked a phishing link claiming my FASTag wallet was blacklisted and entered my net banking credentials to recharge Rs 500.",
+    "expected_issue_ids": [
+      "fastag_recharge_wallet_phishing",
+      "phishing"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF25",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "An overseas recruiter offered me an IT customer support job in Thailand but on arrival I was trafficked into a cyber crime scam syndicate in Myanmar.",
+    "expected_issue_ids": [
+      "overseas_cyber_slave_job_trafficking",
+      "recruitment_job_offer_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF26",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "Someone set up call forwarding on my mobile phone by dialing a star code trick, intercepted my incoming banking OTP calls, and reset my UPI PIN.",
+    "expected_issue_ids": [
+      "whatsapp_account_call_forwarding_hijack",
+      "sim_swap_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF27",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "An online seller on Facebook marketplace promised to courier an iPhone for Rs 25,000 advance payment but stopped responding once money was credited.",
+    "expected_issue_ids": [
+      "ecommerce_fake_seller_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF28",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "An unknown person cloned my WhatsApp account using a multi-device link trick and messaged all my contacts requesting urgent emergency money loans.",
+    "expected_issue_ids": [
+      "whatsapp_account_call_forwarding_hijack",
+      "online_impersonation"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF29",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "My credit card was charged Rs 4,500 recurring monthly subscription fee by an overseas SaaS platform despite my canceling the auto-debit mandate.",
+    "expected_issue_ids": [
+      "credit_card_auto_debit_international_unauthorized"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "66c"
+    ],
+    "expected_portals": [
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF30",
+    "domain": "cyber_fraud",
+    "category": "closely_related",
+    "scenario": "A fake charity portal mimicking PM CARES fund collected Rs 2,500 donations through a fraudulent UPI handle during flood relief operations.",
+    "expected_issue_ids": [
+      "fake_charity_donation_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF31",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "I transferred Rs 5,000 online to someone who promised to deliver a graphics card, but they are now saying delivery is delayed by customs.",
+    "expected_issue_ids": [
+      "ecommerce_fake_seller_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "66d",
+      "2(11)"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF32",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "Money was debited from my bank account after I answered an unknown phone call, but I do not remember sharing any pin or otp code.",
+    "expected_issue_ids": [
+      "otp_fraud",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF33",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "An acquaintance borrowed Rs 40,000 promising to return it online the next day, but has now blocked me on WhatsApp and deleted their profile.",
+    "expected_issue_ids": [
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF34",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "My net banking login showed a strange device logged in from another city but no funds have been debited from any of my accounts yet.",
+    "expected_issue_ids": [
+      "unauthorized_account_access"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "43",
+      "66"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF35",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Money debited 4000 suddenly from account.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF36",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Someone called asking for bank details.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF37",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Got suspicious link on my smartphone.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF38",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Account hacked yesterday night.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF39",
+    "domain": "cyber_fraud",
+    "category": "misleading",
+    "scenario": "An online scammer hacked my account so traffic police must suspend his driving license immediately.",
+    "expected_issue_ids": [
+      "unauthorized_account_access",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF40",
+    "domain": "cyber_fraud",
+    "category": "misleading",
+    "scenario": "My bank deducted legitimate monthly maintenance fee so I want to file an FIR against the bank manager for cyber terrorism.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF41",
+    "domain": "cyber_fraud",
+    "category": "misleading",
+    "scenario": "I lost money in legal stock trading on Zerodha and want to register a cyber crime complaint against the exchange.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF42",
+    "domain": "cyber_fraud",
+    "category": "misleading",
+    "scenario": "My computer took 5 minutes to restart so the hardware company committed identity theft under Section 66C.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF43",
+    "domain": "cyber_fraud",
+    "category": "multi_provision",
+    "scenario": "A scammer created a phishing website mimicking SBI, stole my credentials, and fraudulently siphoned Rs 2.5 lakhs through multiple UPI accounts.",
+    "expected_issue_ids": [
+      "phishing",
+      "unauthorized_account_access"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF44",
+    "domain": "cyber_fraud",
+    "category": "multi_provision",
+    "scenario": "Cyber criminals cloned my biometric thumb impression, accessed my Aadhaar-linked savings account, and withdrew my complete pension.",
+    "expected_issue_ids": [
+      "aeps_biometric_aadhaar_money_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66",
+      "66c",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF45",
+    "domain": "cyber_fraud",
+    "category": "multi_provision",
+    "scenario": "An extortionist obtained private photos from my cloud backup, threatened public leak, and demanded Rs 1 lakh via cryptocurrency.",
+    "expected_issue_ids": [
+      "sextortion_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66e",
+      "67",
+      "308",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF46",
+    "domain": "cyber_fraud",
+    "category": "multi_provision",
+    "scenario": "Fake customs officials called threatening digital arrest for contraband parcel, forged an official arrest warrant, and coerced Rs 5 lakhs transfer.",
+    "expected_issue_ids": [
+      "courier_customs_fraud",
+      "digital_arrest_extortion"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "308",
+      "318",
+      "351"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF47",
+    "domain": "cyber_fraud",
+    "category": "historical",
+    "scenario": "In May 2023, an online financial fraudster induced me to download an APK file and debited Rs 80,000 from my savings account.",
+    "expected_issue_ids": [
+      "electricity_bill_sms_apk_scam",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Indian Penal Code, 1860"
+    ],
+    "expected_sections": [
+      "66d",
+      "420"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF48",
+    "domain": "cyber_fraud",
+    "category": "historical",
+    "scenario": "In 2021, my net banking password was phished through a fake email and Rs 1.2 lakhs was transferred to an unknown wallet.",
+    "expected_issue_ids": [
+      "phishing"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Indian Penal Code, 1860"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "420"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF49",
+    "domain": "cyber_fraud",
+    "category": "karnataka_specific",
+    "scenario": "A resident of Whitefield Bengaluru lost Rs 50,000 to an electricity disconnection SMS fraud purporting to be from BESCOM Bangalore.",
+    "expected_issue_ids": [
+      "electricity_bill_sms_apk_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CF50",
+    "domain": "cyber_fraud",
+    "category": "karnataka_specific",
+    "scenario": "A tech worker in Koramangala Bengaluru was duped of Rs 2 lakhs through a fake PG rental accommodation listing on NoBroker.",
+    "expected_issue_ids": [
+      "ecommerce_fake_seller_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Cyber fraud analysis under IT Act, BNS 2023, and RBI Master Directions."
+  },
+  {
+    "test_id": "IB_CI01",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "I purchased a brand new flagship smartphone for Rs 65,000 but the display screen developed green vertical lines within 10 days and service centre refuses replacement.",
+    "expected_issue_ids": [
+      "defective_product",
+      "defective_mobile_green_line_display_after_update"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "2(11)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI02",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "Indigo airline canceled my scheduled domestic flight 2 hours before departure and has failed to refund my ticket amount of Rs 8,500 after 30 days.",
+    "expected_issue_ids": [
+      "flight_delay_cancellation_compensation",
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "airsewa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI03",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A private medical coaching institute refused to refund advance tuition fees of Rs 1,40,000 when my daughter withdrew after attending only 4 days of classes.",
+    "expected_issue_ids": [
+      "coaching_institute_dropout_fee_refund_denial",
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI04",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A dietary supplement brand falsely advertised guaranteed 10 kg weight loss in 30 days on television without any scientific clinical testing.",
+    "expected_issue_ids": [
+      "misleading_advertisement"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(28)",
+      "89",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI05",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "An online streaming OTT platform auto-debited Rs 1,499 from my credit card using a dark pattern recurring subscription without my explicit OTP consent.",
+    "expected_issue_ids": [
+      "dark_patterns_hidden_charges",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(47)",
+      "89",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI06",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "My private health insurance claim of Rs 2.8 lakhs for emergency laparoscopic surgery was rejected by the TPA citing an unproven pre-existing disease.",
+    "expected_issue_ids": [
+      "health_insurance_claim_arbitrary_rejection",
+      "insurance_claim_rejection_dispute"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "bima_bharosa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI07",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "I hired an air conditioning repair agency who took Rs 4,500 for compressor servicing, but the technician punctured the cooling coil causing complete gas leakage.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI08",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A newly purchased pressure cooker exploded in my kitchen due to a defective safety valve, causing severe second-degree burn injuries to my face and arms.",
+    "expected_issue_ids": [
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI09",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A retail supermarket store sold packaged branded basmati rice with an MRP of Rs 180 by pasting a sticker of Rs 250 on top of the original manufacturer print.",
+    "expected_issue_ids": [
+      "packaged_goods_dual_mrp_overcharging"
+    ],
+    "expected_acts": [
+      "Legal Metrology Act, 2009",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "18",
+      "36",
+      "2(47)"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI10",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "An e-commerce marketplace delivered a refurbished used laptop instead of the brand new model I ordered, and is refusing return citing non-returnable electronic policy.",
+    "expected_issue_ids": [
+      "refund_denial",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI11",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A real estate builder delayed handing over possession of my residential flat by over 4 years past the registered RERA completion date and refuses statutory delay interest.",
+    "expected_issue_ids": [
+      "real_estate_delayed_possession_interest"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Real Estate (Regulation and Development) Act, 2016"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35",
+      "18"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI12",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A private hospital refused emergency ICU admission for my father suffering from acute myocardial infarction because we could not deposit Rs 1 lakh cash immediately.",
+    "expected_issue_ids": [
+      "hospital_overbilling_cashless_insurance_denial",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI13",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "Food ordered through Swiggy contained fungal mold and dead insect, causing acute food poisoning and 3 days hospitalization of my minor child.",
+    "expected_issue_ids": [
+      "expired_spurious_goods",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Food Safety and Standards Act, 2006",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "26",
+      "59",
+      "2(10)",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI14",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A nationalized bank deducted multiple non-maintenance charges, annual SMS fees, and inactive account penalties totaling Rs 2,400 without sending any prior notice.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI15",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "An electric two-wheeler scooter battery pack caught fire while parked in my residential basement due to thermal runaway defect, damaging my garage.",
+    "expected_issue_ids": [
+      "ev_battery_thermal_range_defect",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI16",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A broadband optical fibre provider failed to resolve complete internet outage for 25 continuous days while demanding full advance monthly rental payments.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "trai_portal"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI17",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A luxury hotel in Goa refused full refund of my Rs 60,000 advance booking when flights were suspended due to cyclone, enforcing an unfair 100% cancellation fee.",
+    "expected_issue_ids": [
+      "refund_denial",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI18",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A second-hand car dealer sold a certified vehicle with altered odometer showing 30,000 km whereas service records at official dealership revealed 1,40,000 km.",
+    "expected_issue_ids": [
+      "unfair_trade_practice",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "2(47)",
+      "35",
+      "318"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI19",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A water purifier company service engineer replaced genuine RO membrane filters with fake duplicate unbranded cartridges causing high TDS water contamination.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI20",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "An authorized automobile showroom delivered a brand new car with persistent steering pull and brake vibration, refusing to acknowledge manufacturing lemon defect.",
+    "expected_issue_ids": [
+      "automobile_manufacturing_defect_lemon_vehicle",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI21",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A warranty claim for television LED panel replacement was rejected because the official service center claims panel burn-in is not covered under warranty.",
+    "expected_issue_ids": [
+      "warranty_guarantee_denial",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI22",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "An online travel portal charged convenience fees of Rs 600 per passenger on air ticket cancellation over and above the airline statutory cancellation deductions.",
+    "expected_issue_ids": [
+      "dark_patterns_hidden_charges",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI23",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A grocery store sold infant milk formula past its expiry date with the expiration date sticker intentionally scratched off.",
+    "expected_issue_ids": [
+      "expired_spurious_goods"
+    ],
+    "expected_acts": [
+      "Food Safety and Standards Act, 2006",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "26",
+      "59",
+      "2(47)"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI24",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A telecom operator arbitrarily converted my lifetime prepaid mobile number to a monthly postpaid connection without my written consent or e-KYC request.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI25",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A diagnostic medical laboratory issued an erroneous blood test report showing zero platelets, causing unnecessary emergency ICU admission trauma.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI26",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A gym membership agreement contained an unconscionable clause stating that advance annual fee of Rs 35,000 is 100% non-refundable under any medical contingency.",
+    "expected_issue_ids": [
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(46)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI27",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "An authorized smartphone service center held my phone for 60 days for a simple battery replacement, causing loss of business communication.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI28",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A multiplex cinema hall security guard confiscated my sealed water bottle at entrance and the concession counter charged Rs 120 for 500ml water.",
+    "expected_issue_ids": [
+      "cinema_hall_water_confiscation_mrp",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Legal Metrology Act, 2009"
+    ],
+    "expected_sections": [
+      "2(47)",
+      "18",
+      "36"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI29",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "A courier service lost an original university degree certificate sent via speed post and offered only Rs 100 statutory compensation citing fine print liability limits.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI30",
+    "domain": "consumer_issues",
+    "category": "closely_related",
+    "scenario": "An online e-commerce website refused to accept return of a damaged washing machine delivered in crushed cardboard packaging.",
+    "expected_issue_ids": [
+      "refund_denial",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI31",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "I purchased an imported air purifier that stopped working after 3 weeks, but the seller claims voltage fluctuations in my house caused the burnout.",
+    "expected_issue_ids": [
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI32",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "A dry cleaner returned my expensive silk wedding suit with discolored chemical stains but points to a printed token disclaiming damage liability.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI33",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "An online furniture portal delivered a sofa set whose color is slightly different from the website photographs, but dimensions are identical.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI34",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "A car repair workshop replaced my car clutch plate but the clutch pedal feels stiff and makes a squeaking sound.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI35",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Service was bad and seller refusing refund.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI36",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Delivered defective item yesterday.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI37",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Airline canceled my travel booking.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI38",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Insurance claim was rejected.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI39",
+    "domain": "consumer_issues",
+    "category": "misleading",
+    "scenario": "My microwave oven stopped heating soup so the shopkeeper committed criminal breach of trust under Section 316 BNS.",
+    "expected_issue_ids": [
+      "defective_product",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI40",
+    "domain": "consumer_issues",
+    "category": "misleading",
+    "scenario": "A restaurant charged legal GST on food bill so I want to file a police case against the owner for cyber fraud.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI41",
+    "domain": "consumer_issues",
+    "category": "misleading",
+    "scenario": "My laptop battery drains in 3 hours during heavy 4K video rendering so I want to arrest the manufacturer for treason.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI42",
+    "domain": "consumer_issues",
+    "category": "misleading",
+    "scenario": "A tailor stitched my shirt loose by half an inch so I want to seize his shop under the National Security Act.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI43",
+    "domain": "consumer_issues",
+    "category": "multi_provision",
+    "scenario": "An electric geyser exploded due to poor wiring, destroying bathroom tiles and causing third-degree burns to a family member.",
+    "expected_issue_ids": [
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "2(11)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI44",
+    "domain": "consumer_issues",
+    "category": "multi_provision",
+    "scenario": "An e-commerce giant sold spurious duplicate cosmetics with toxic heavy metals that caused permanent facial dermatological damage.",
+    "expected_issue_ids": [
+      "expired_spurious_goods",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Drugs and Cosmetics Act, 1940"
+    ],
+    "expected_sections": [
+      "2(10)",
+      "2(47)",
+      "35",
+      "84"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI45",
+    "domain": "consumer_issues",
+    "category": "multi_provision",
+    "scenario": "A builder took Rs 30 lakhs advance for an apartment project in 2020, failed to obtain environmental clearances, and abandoned construction completely.",
+    "expected_issue_ids": [
+      "real_estate_delayed_possession_interest"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Real Estate (Regulation and Development) Act, 2016"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35",
+      "18"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI46",
+    "domain": "consumer_issues",
+    "category": "multi_provision",
+    "scenario": "A hospital emergency ward demanded Rs 2 lakhs deposit before treating a road accident victim, resulting in patient death due to delayed trauma care.",
+    "expected_issue_ids": [
+      "hospital_overbilling_cashless_insurance_denial",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI47",
+    "domain": "consumer_issues",
+    "category": "historical",
+    "scenario": "In 2018, a builder failed to deliver a residential apartment under a pre-RERA agreement and refused to refund advance deposit.",
+    "expected_issue_ids": [
+      "real_estate_delayed_possession_interest"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 1986",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI48",
+    "domain": "consumer_issues",
+    "category": "historical",
+    "scenario": "In 2019, a medical surgeon left surgical gauze inside a patient abdomen during hernia surgery, discovered in 2024.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 1986",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI49",
+    "domain": "consumer_issues",
+    "category": "karnataka_specific",
+    "scenario": "A sudden high-voltage power surge from the BESCOM transformer in Indiranagar Bengaluru burned my television, refrigerator, and microwave oven.",
+    "expected_issue_ids": [
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019",
+      "Electricity Act, 2003"
+    ],
+    "expected_sections": [
+      "2(11)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_CI50",
+    "domain": "consumer_issues",
+    "category": "karnataka_specific",
+    "scenario": "A private water tanker supplier in Bellandur Bengaluru charged Rs 3,500 per tanker against the BBMP government-capped rate of Rs 1,200 during water shortage.",
+    "expected_issue_ids": [
+      "packaged_goods_dual_mrp_overcharging",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2(47)",
+      "35"
+    ],
+    "expected_portals": [
+      "consumer_helpline"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Consumer protection analysis under CPA 2019, Legal Metrology Act, and RERA 2016."
+  },
+  {
+    "test_id": "IB_TE01",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic police constable issued a challan for driving a two-wheeler motorcycle without wearing a protective helmet on the main road.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute",
+      "two_wheeler_pillion_helmet_challan_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE02",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic officer stopped my passenger car and issued a fine for driving without fastening the safety seatbelt.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "138",
+      "194b"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE03",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "An automated speed camera issued a speeding challan alleging 85 km/h on an urban arterial road where the notified maximum speed limit was 50 km/h.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE04",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "I was stopped at a night check-post and a breathalyzer test showed a Blood Alcohol Content (BAC) of 55 mg per 100 ml of blood.",
+    "expected_issue_ids": [
+      "drunk_driving_breathalyzer_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE05",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "I presented my original driving license and registration certificate electronically via DigiLocker, but the traffic constable refused and demanded physical cards.",
+    "expected_issue_ids": [
+      "digital_documents_refusal_digilocker_mparivahan",
+      "document_acceptance_or_verification"
+    ],
+    "expected_acts": [
+      "Central Motor Vehicles Rules, 1989",
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "139(cmvr)",
+      "130",
+      "206"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE06",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic officer issued an electronic challan for driving a motor vehicle without valid third-party insurance coverage.",
+    "expected_issue_ids": [
+      "uninsured_vehicle_vahan_sync_delay_fine",
+      "uninsured_vehicle_challan_portal_sync_delay"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "146",
+      "196"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE07",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "An automated junction camera issued a traffic fine for jumping a red signal light when my vehicle crossed the stop line during amber transition.",
+    "expected_issue_ids": [
+      "emergency_vehicle_passage_red_light_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "184"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE08",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A commercial truck was intercepted at a regional weighbridge and found to be carrying 6 tonnes in excess of the permissible Gross Vehicle Weight.",
+    "expected_issue_ids": [
+      "commercial_vehicle_overloading_weighbridge_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "113",
+      "114",
+      "194"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE09",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic police sub-inspector snatched my car keys from the ignition during a routine vehicle document check at a signal intersection.",
+    "expected_issue_ids": [
+      "illegal_vehicle_key_confiscation_by_constable"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "130",
+      "206"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE10",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A towing crane towed away my car from an unmarked curb while my elderly mother was seated inside the vehicle.",
+    "expected_issue_ids": [
+      "unlawful_towing_occupant_inside_vehicle"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "127",
+      "207"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE11",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "I drove on the wrong side of a dual carriageway solely because uniformed traffic police officers were diverting all vehicles due to metro pillar construction.",
+    "expected_issue_ids": [
+      "wrong_side_police_diversion_defense"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "184"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE12",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A photographic e-challan for dangerous driving was generated against my vehicle registration number showing a completely different make, model, and color car.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "200",
+      "208"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE13",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A 16-year-old minor took his father's car without permission and caused minor property damage to a parked vehicle.",
+    "expected_issue_ids": [
+      "juvenile_minor_driving_parent_penalty"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "199a"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE14",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A driver failed to draw to the side of the road and deliberately blocked an emergency ambulance with sounding siren on a congested flyover.",
+    "expected_issue_ids": [
+      "emergency_vehicle_passage_red_light_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "184",
+      "194e"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE15",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A vehicle fitted with an aftermarket high-decibel pressure horn and loud modified exhaust was seized by transport department inspectors.",
+    "expected_issue_ids": [
+      "pressure_horn_loud_exhaust_challan"
+    ],
+    "expected_acts": [
+      "Central Motor Vehicles Rules, 1989",
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "190(2)"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE16",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A motorist was stopped for having dark tinted sun film with only 15% visual light transmission on front windscreen and all side passenger windows.",
+    "expected_issue_ids": [
+      "tinted_glass_sun_film_challan"
+    ],
+    "expected_acts": [
+      "Central Motor Vehicles Rules, 1989",
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "100(cmvr)",
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE17",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A commercial taxi driver was issued a compounding fine for operating an inter-city passenger service without a valid state transport permit.",
+    "expected_issue_ids": [
+      "driving_without_permit_commercial_vehicle"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "66",
+      "192a"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE18",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A motorist was booked under dangerous driving for continuously holding and browsing a smartphone while maneuvering heavy highway traffic.",
+    "expected_issue_ids": [
+      "using_mobile_phone_while_driving_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "184"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE19",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A vehicle was issued an environmental pollution challan because its Pollution Under Control (PUC) certificate had expired 3 months ago.",
+    "expected_issue_ids": [
+      "puc_verification_dispute"
+    ],
+    "expected_acts": [
+      "Central Motor Vehicles Rules, 1989",
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "190(2)"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE20",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A driver was involved in a hit-and-run road crash where a pedestrian was fatally injured, and the driver fled without rendering medical assistance.",
+    "expected_issue_ids": [
+      "hit_and_run_solatium_fund_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "134",
+      "161",
+      "106"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE21",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A driver failed to produce their driving license immediately when demanded by a police officer, but holds a valid driving license.",
+    "expected_issue_ids": [
+      "document_acceptance_or_verification"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "130",
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE22",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A person who has never obtained or applied for a driving license was caught operating a light motor vehicle on a public highway.",
+    "expected_issue_ids": [
+      "driving_without_licence_challan_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "3",
+      "181"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE23",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A vehicle crossed into an intersection on a red traffic signal solely to allow an emergency ambulance with sounding siren to pass.",
+    "expected_issue_ids": [
+      "emergency_vehicle_passage_red_light_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "184",
+      "194e"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE24",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A pillion passenger on a two-wheeler was not wearing a protective helmet while the main driver was wearing an ISI-certified helmet.",
+    "expected_issue_ids": [
+      "two_wheeler_pillion_helmet_challan_dispute",
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE25",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A rear-seat passenger in a four-wheeler motor car was issued a fine for not wearing a safety seatbelt on the expressway.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "138",
+      "194b"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE26",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A two-wheeler rider was carrying two adult passengers behind him, totaling three people on a standard motorcycle.",
+    "expected_issue_ids": [
+      "triple_riding_pillion_child_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "128",
+      "194c"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE27",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A motorist parked their vehicle in a clearly marked 'No Parking' commercial zone, and the municipal traffic police levied towing charges.",
+    "expected_issue_ids": [
+      "no_parking_zone_vehicle_towing_charges"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "122",
+      "127",
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE28",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A driver refused to stop their motor vehicle when signaled by a uniformed traffic police officer at an inspection barrier.",
+    "expected_issue_ids": [
+      "disobeying_police_traffic_signal_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "132",
+      "179"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE29",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A motor vehicle was driven with high-intensity blinding LED light bars installed on the roof rack dazzling oncoming road traffic.",
+    "expected_issue_ids": [
+      "pressure_horn_loud_exhaust_challan"
+    ],
+    "expected_acts": [
+      "Central Motor Vehicles Rules, 1989",
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE30",
+    "domain": "traffic_enforcement",
+    "category": "closely_related",
+    "scenario": "A commercial auto rickshaw driver refused to ply for hire and demanded Rs 300 for a standard 3 km metered journey.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE31",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "I entered a one-way street because the road sign was completely obscured by overgrown tree branches.",
+    "expected_issue_ids": [
+      "wrong_side_police_diversion_defense",
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "116",
+      "119"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE32",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "My car broke down due to battery failure at a junction and police issued a dangerous parking challan while I was pushing it.",
+    "expected_issue_ids": [
+      "no_parking_zone_vehicle_towing_charges"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "122",
+      "127"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE33",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "I had renewed my motor vehicle insurance online yesterday evening, but the mParivahan database still shows uninsured status.",
+    "expected_issue_ids": [
+      "uninsured_vehicle_vahan_sync_delay_fine",
+      "uninsured_vehicle_challan_portal_sync_delay"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "146",
+      "196"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE34",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "A traffic challan was sent to my mobile phone with a blurry night photograph where only the last two digits of the number plate are legible.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "200",
+      "208"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE35",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Got traffic fine on phone today.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE36",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Police officer stopped my car.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE37",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Vehicle impounded yesterday.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE38",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Challan issued without photo.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE39",
+    "domain": "traffic_enforcement",
+    "category": "misleading",
+    "scenario": "A traffic constable issued an overspeeding ticket so I want to file a consumer court case against the police commissioner.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "208"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE40",
+    "domain": "traffic_enforcement",
+    "category": "misleading",
+    "scenario": "I drove through a red light at 80 km/h because I was getting late for my movie, so traffic police cannot fine me.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE41",
+    "domain": "traffic_enforcement",
+    "category": "misleading",
+    "scenario": "My car steering wheel was dirty so the traffic police violated my fundamental right to clean vehicle under Article 21.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE42",
+    "domain": "traffic_enforcement",
+    "category": "misleading",
+    "scenario": "I was fined for driving without helmet so I want to prosecute the road contractor under the Information Technology Act.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE43",
+    "domain": "traffic_enforcement",
+    "category": "multi_provision",
+    "scenario": "A drunken driver speeding on the wrong side of the road jumped a red signal and collided with a passenger car causing serious injury.",
+    "expected_issue_ids": [
+      "drunk_driving_breathalyzer_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "185",
+      "184",
+      "119",
+      "281",
+      "125"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE44",
+    "domain": "traffic_enforcement",
+    "category": "multi_provision",
+    "scenario": "An uninsured truck overloaded with 10 tonnes of iron rods operated without commercial permit or fitness certificate.",
+    "expected_issue_ids": [
+      "commercial_vehicle_overloading_weighbridge_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "113",
+      "114",
+      "146",
+      "196",
+      "66",
+      "192a",
+      "194"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE45",
+    "domain": "traffic_enforcement",
+    "category": "multi_provision",
+    "scenario": "A two-wheeler rider with two pillion passengers, none wearing helmets, drove recklessly through a crowded pedestrian market.",
+    "expected_issue_ids": [
+      "two_wheeler_pillion_helmet_challan_dispute",
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "128",
+      "129",
+      "184",
+      "194c",
+      "194d"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE46",
+    "domain": "traffic_enforcement",
+    "category": "multi_provision",
+    "scenario": "A hit-and-run goods carrier struck a cyclist, failed to stop or report to nearest police station, and destroyed its vehicle tracking unit.",
+    "expected_issue_ids": [
+      "hit_and_run_solatium_fund_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "134",
+      "161",
+      "106",
+      "281"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE47",
+    "domain": "traffic_enforcement",
+    "category": "historical",
+    "scenario": "In 2019, before the Motor Vehicles Amendment Act came into force, a compounding challan of Rs 100 was issued for driving without helmet.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE48",
+    "domain": "traffic_enforcement",
+    "category": "historical",
+    "scenario": "In 2018, a motor accident claims tribunal petition was filed for a fatal road collision that occurred on the Mumbai-Pune expressway.",
+    "expected_issue_ids": [
+      "hit_and_run_solatium_fund_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "166"
+    ],
+    "expected_portals": [
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE49",
+    "domain": "traffic_enforcement",
+    "category": "karnataka_specific",
+    "scenario": "A motorist in Bengaluru was issued an automated AI camera challan on Outer Ring Road for driving a two-wheeler with defective HSRP number plate.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Central Motor Vehicles Rules, 1989"
+    ],
+    "expected_sections": [
+      "50(cmvr)",
+      "177"
+    ],
+    "expected_portals": [
+      "echallan_parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_TE50",
+    "domain": "traffic_enforcement",
+    "category": "karnataka_specific",
+    "scenario": "Bengaluru Traffic Police (BTP) contactless camera issued a seatbelt fine at Silk Board junction while the driver was wearing a black strap seatbelt.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "138",
+      "194b",
+      "208"
+    ],
+    "expected_portals": [
+      "echallan_parivahan",
+      "virtual_courts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Traffic enforcement analysis under MV Act 1988, CMVR 1989, and BNS 2023."
+  },
+  {
+    "test_id": "IB_WW01",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A manufacturing company has not disbursed monthly salary to factory workers for 3 consecutive months despite full regular attendance.",
+    "expected_issue_ids": [
+      "unpaid_wages",
+      "delayed_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "5",
+      "15",
+      "12",
+      "20"
+    ],
+    "expected_portals": [
+      "samadhan_labour",
+      "shramsuvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW02",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "An employer arbitrarily deducted Rs 6,500 from an administrative assistant's monthly salary for accidental office printer paper jam without inquiry.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW03",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "An employee resigned after completing 6 years and 4 months of continuous service, but the corporate employer refuses to pay statutory gratuity.",
+    "expected_issue_ids": [
+      "gratuity_withheld_past_5_years_service"
+    ],
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7",
+      "8"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW04",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A senior marketing executive in her 7th month of pregnancy was terminated without cause immediately after she applied for 26 weeks paid maternity leave.",
+    "expected_issue_ids": [
+      "maternity_leave_salary_denial_or_termination"
+    ],
+    "expected_acts": [
+      "Maternity Benefit Act, 1961"
+    ],
+    "expected_sections": [
+      "5",
+      "12"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW05",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "Warehouse workers are forced to work 12 hours every day including Sundays without receiving statutory double-rate overtime wages.",
+    "expected_issue_ids": [
+      "overtime_wage_denial"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "12",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW06",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A factory workman with 4 years continuous service was retrenched overnight without 1 month written notice or 15 days per year retrenchment compensation.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "25F",
+      "33C",
+      "73"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW07",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "An IT services firm deducted employee provident fund (PF) contributions from monthly pay slips for 8 months but never deposited them with the EPFO.",
+    "expected_issue_ids": [
+      "pf_deducted_not_deposited_epfo"
+    ],
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "14",
+      "14B",
+      "316"
+    ],
+    "expected_portals": [
+      "epfo_portal"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW08",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A female associate was subjected to unwelcome physical advances by her team manager, and the company with 45 employees has not constituted an Internal Committee.",
+    "expected_issue_ids": [
+      "posh_workplace_sexual_harassment_complaint"
+    ],
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "26"
+    ],
+    "expected_portals": [
+      "she_box"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW09",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A private security agency pays night guards Rs 8,000 per month against the notified state statutory minimum wage rate of Rs 16,500.",
+    "expected_issue_ids": [
+      "minimum_wage_violation"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12",
+      "20",
+      "22"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW10",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "An industrial worker suffered amputation of three fingers in a stamping press machine during his shift, and the factory owner refused medical compensation.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW11",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A software engineer was dismissed on a WhatsApp message without inquiry or notice pay, and the employer withheld full and final settlement of earned salary and leaves.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process",
+      "unpaid_wages"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "25F",
+      "73"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW12",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "Contractual sweepers performing identical cleaning duties alongside permanent sanitation workers are paid only 40% of the permanent workers' basic wage scale.",
+    "expected_issue_ids": [
+      "minimum_wage_violation"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12",
+      "20"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW13",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A pharmaceutical manufacturing unit with 150 workmen abruptly closed its factory gates without serving the mandatory 60 days statutory closure notice to the Labour Department.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "25F",
+      "33C"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW14",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "An employer refused to attest an employee's joint declaration form to rectify a date-of-birth error on the EPFO UAN portal, preventing PF withdrawal.",
+    "expected_issue_ids": [
+      "pf_deducted_not_deposited_epfo"
+    ],
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "14"
+    ],
+    "expected_portals": [
+      "epfo_portal"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW15",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A retail fashion chain deducted Rs 5,000 uniform and name badge charges from sales associates' salaries every quarter without statutory authorization.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW16",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A woman employee returned to work after 26 weeks maternity leave and was demoted to an entry-level clerical role with a 30% reduction in monthly compensation.",
+    "expected_issue_ids": [
+      "maternity_leave_salary_denial_or_termination"
+    ],
+    "expected_acts": [
+      "Maternity Benefit Act, 1961"
+    ],
+    "expected_sections": [
+      "5",
+      "12"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW17",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A delivery gig company classifies full-time delivery riders working 10 hours daily as independent contractors to avoid minimum wage and provident fund liabilities.",
+    "expected_issue_ids": [
+      "minimum_wage_violation"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12",
+      "20"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW18",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A hospital nursing staff working 14-hour continuous rotational shifts was denied overtime pay, spread-over limits, and compensatory weekly rest days.",
+    "expected_issue_ids": [
+      "overtime_wage_denial"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "12",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW19",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "An employee resigned serving 30 days contractual notice, but the company demanded Rs 1.5 lakhs training bond liquidated damages for leaving before 2 years.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27",
+      "74"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW20",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "An employer withheld an employee's relieving letter, experience certificate, and PF account transfer because the employee refused to sign a 3-year non-compete.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27",
+      "73"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW21",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employer delayed monthly wage disbursement by 10 days past the 7th of the month due to a temporary cash flow issue, but pays all arrears.",
+    "expected_issue_ids": [
+      "delayed_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW22",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employer completely refuses to disburse salary for the past 2 months, claiming business losses have wiped out working capital reserves.",
+    "expected_issue_ids": [
+      "unpaid_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "5",
+      "15",
+      "12",
+      "20"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW23",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employer deducted statutory income tax TDS and professional tax from an executive's salary as mandated by state revenue statutes.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW24",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employee resigned after working 3 years and demanded payment of statutory gratuity from the company human resources department.",
+    "expected_issue_ids": [
+      "gratuity_withheld_past_5_years_service"
+    ],
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW25",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An independent freelance UI designer with a service contract claimed unpaid invoice as wages under the Payment of Wages Act.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Micro, Small and Medium Enterprises Development Act, 2006",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "15",
+      "73"
+    ],
+    "expected_portals": [
+      "msme_samadhaan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW26",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employee was dismissed following a formal domestic disciplinary inquiry with full charge-sheet and hearing for proven inventory theft.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "25F"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW27",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "A commercial establishment deducted Rs 1,000 advance salary installment that the employee had explicitly borrowed in writing the previous month.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW28",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "A female employee was sexually harassed in an establishment with 6 employees, where no Internal Committee is required under law.",
+    "expected_issue_ids": [
+      "posh_workplace_sexual_harassment_complaint"
+    ],
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "9"
+    ],
+    "expected_portals": [
+      "she_box"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW29",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "A workman who completed 180 days of service in a calendar year was terminated without retrenchment compensation.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "25F"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW30",
+    "domain": "workplace_wage",
+    "category": "closely_related",
+    "scenario": "An employee working 8 hours a day requested double-time overtime pay for 15 minutes of routine end-of-shift handover discussion.",
+    "expected_issue_ids": [
+      "overtime_wage_denial"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW31",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "My employer asked me to work on alternate Saturdays but has not clarified whether it will be compensated as overtime or compensatory off.",
+    "expected_issue_ids": [
+      "overtime_wage_denial"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW32",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "The company deducted Rs 2,500 from my salary stating client penalty for delayed software delivery, but my employment agreement has no penalty clause.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW33",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "I was told by my manager to take leave without pay for 2 months because the project client paused operations.",
+    "expected_issue_ids": [
+      "unpaid_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW34",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "My company transferred me to a remote branch 800 km away within 3 days notice after I raised concerns about unpaid overtime.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "25F"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW35",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "Working overtime constantly without extra pay.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW36",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "Company cut salary this month.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW37",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "Terminated from job yesterday.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW38",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "PF money not deposited in account.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW39",
+    "domain": "workplace_wage",
+    "category": "misleading",
+    "scenario": "My employer transferred my monthly salary into my bank account on the 1st of the month so I want to file a cyber crime FIR against them.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW40",
+    "domain": "workplace_wage",
+    "category": "misleading",
+    "scenario": "The office AC temperature was set at 22 degrees so I want to prosecute the facility manager under the Minimum Wages Act.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW41",
+    "domain": "workplace_wage",
+    "category": "misleading",
+    "scenario": "My manager gave me constructive feedback on my presentation so I want to register a case under the Industrial Disputes Act.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW42",
+    "domain": "workplace_wage",
+    "category": "misleading",
+    "scenario": "I arrived 2 hours late to office and HR marked half-day leave so they committed criminal breach of trust under BNS Section 316.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW43",
+    "domain": "workplace_wage",
+    "category": "multi_provision",
+    "scenario": "Factory management locked out 200 workmen without notice, withheld 4 months unpaid wages, and defaulted on statutory PF contributions.",
+    "expected_issue_ids": [
+      "unpaid_wages",
+      "pf_deducted_not_deposited_epfo"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "15",
+      "14",
+      "14B",
+      "316"
+    ],
+    "expected_portals": [
+      "samadhan_labour",
+      "epfo_portal"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW44",
+    "domain": "workplace_wage",
+    "category": "multi_provision",
+    "scenario": "A pregnant female worker was denied overtime wages for mandatory extra hours and subsequently terminated when she requested maternity leave.",
+    "expected_issue_ids": [
+      "maternity_leave_salary_denial_or_termination",
+      "overtime_wage_denial"
+    ],
+    "expected_acts": [
+      "Maternity Benefit Act, 1961",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "12",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW45",
+    "domain": "workplace_wage",
+    "category": "multi_provision",
+    "scenario": "An employer paying below minimum wages arbitrarily deducted Rs 3,000 for tool wear-and-tear and threatened termination if workmen complained.",
+    "expected_issue_ids": [
+      "minimum_wage_violation",
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "12",
+      "20",
+      "7",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW46",
+    "domain": "workplace_wage",
+    "category": "multi_provision",
+    "scenario": "A corporate firm with 120 employees has no Internal Committee for sexual harassment and terminated a woman employee who reported harassment to HR.",
+    "expected_issue_ids": [
+      "posh_workplace_sexual_harassment_complaint",
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013",
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "26",
+      "25F"
+    ],
+    "expected_portals": [
+      "she_box",
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW47",
+    "domain": "workplace_wage",
+    "category": "historical",
+    "scenario": "In 2020 during the nationwide pandemic lockdown, an industrial employer refused to disburse full wages to factory workmen.",
+    "expected_issue_ids": [
+      "unpaid_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW48",
+    "domain": "workplace_wage",
+    "category": "historical",
+    "scenario": "In 2021, an employee with 8 years service was terminated without gratuity payment, which was contested before the Controlling Authority.",
+    "expected_issue_ids": [
+      "gratuity_withheld_past_5_years_service"
+    ],
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW49",
+    "domain": "workplace_wage",
+    "category": "karnataka_specific",
+    "scenario": "A software engineer in Electronic City Bengaluru was terminated without 30 days notice pay in violation of Section 39 of Karnataka Shops and Commercial Establishments Act.",
+    "expected_issue_ids": [
+      "unlawful_termination_without_due_process"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "25F",
+      "73"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_WW50",
+    "domain": "workplace_wage",
+    "category": "karnataka_specific",
+    "scenario": "A security guard in Peenya Industrial Area Bengaluru is paid Rs 11,000 per month against Karnataka state scheduled employment minimum wage notification of Rs 17,200.",
+    "expected_issue_ids": [
+      "minimum_wage_violation"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948"
+    ],
+    "expected_sections": [
+      "12",
+      "20"
+    ],
+    "expected_portals": [
+      "samadhan_labour"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Workplace and wage analysis under Payment of Wages Act 1936, Minimum Wages Act 1948, Industrial Disputes Act 1947, and POSH Act 2013."
+  },
+  {
+    "test_id": "IB_CD01",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A commercial client issued an account payee cheque of Rs 4,50,000 for verified invoices which was returned dishonoured by bank for funds insufficient.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "141",
+      "142"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD02",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A residential landlord refuses to refund a tenant's security deposit of Rs 1,80,000 after the tenant peacefully vacated the apartment with zero rental arrears.",
+    "expected_issue_ids": [
+      "security_deposit_dispute",
+      "landlord_security_deposit_withheld_unjustly"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Transfer of Property Act, 1882"
+    ],
+    "expected_sections": [
+      "73",
+      "106",
+      "108"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD03",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "An industrial raw material supplier failed to deliver 20 tonnes of steel bars under an executed purchase order, causing complete shutdown of buyer factory.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "commercial_vendor_raw_material_delivery_default"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Sale of Goods Act, 1930"
+    ],
+    "expected_sections": [
+      "73",
+      "57"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD04",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "An employer filed a civil suit against a former software engineer claiming Rs 12 lakhs in liquidated damages based on a 2-year post-employment non-compete covenant.",
+    "expected_issue_ids": [
+      "non_compete_clause_employment_trade_restraint",
+      "non_compete_clause_dispute"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27",
+      "74"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD05",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A commercial shopping mall landlord locked out a retail store tenant overnight and changed padlocks without serving any statutory 15-day termination notice.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "106",
+      "108",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD06",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A corporate enterprise buyer defaulted on payment of Rs 14 lakhs for auto components supplied by a registered MSME vendor past the 45-day statutory limit.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment",
+      "commercial_vendor_raw_material_delivery_default"
+    ],
+    "expected_acts": [
+      "Micro, Small and Medium Enterprises Development Act, 2006",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "15",
+      "16",
+      "18",
+      "73"
+    ],
+    "expected_portals": [
+      "msme_samadhaan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD07",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A buyer paid 90% purchase price for commercial real estate under a registered agreement of sale, but the seller refuses to execute and register the final sale deed.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Specific Relief Act, 1963",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "10",
+      "20",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD08",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A private creditor is attempting to initiate a civil money recovery lawsuit against a business client for an unpaid commercial invoice dated 6 years ago with no written revival.",
+    "expected_issue_ids": [
+      "time_barred_debt_written_promise_breach"
+    ],
+    "expected_acts": [
+      "Limitation Act, 1963",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "art_55",
+      "25"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD09",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "An unauthorized moneylender coerced a borrower into signing blank stamp papers and registered property mortgage deeds under threat of physical assault.",
+    "expected_issue_ids": [
+      "coercion_duress_agreement_dispute"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "15",
+      "19",
+      "351"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD10",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A service contract contained a clause imposing a flat penalty of Rs 25 lakhs for a single day minor delay in submitting a software status report.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD11",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A partner in a registered commercial partnership firm siphoned Rs 25 lakhs of partnership funds into his personal account and refused to render partnership accounts.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "73",
+      "316"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD12",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "Two wholesale business merchants entered into an oral contract for supply of 500 bags of wheat witnessed by grain brokers, with Rs 1 lakh advance paid.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "commercial_vendor_raw_material_delivery_default"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Sale of Goods Act, 1930"
+    ],
+    "expected_sections": [
+      "73",
+      "57"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD13",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "An interior design contractor took 75% advance payment, completed only 20% rough masonry work, abandoned the commercial site, and refuses to return balance.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Specific Relief Act, 1963"
+    ],
+    "expected_sections": [
+      "39",
+      "73",
+      "20"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD14",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A franchisor induced a franchisee to invest Rs 20 lakhs by providing fabricated revenue audits and false historical profit balance sheets.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "17",
+      "18",
+      "19",
+      "318"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD15",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A commercial client terminated a 2-year annual maintenance contract abruptly after 3 months without serving the mandatory 60 days contractual notice.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD16",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A supplier delivered sub-standard industrial fasteners and grade-B steel bolts that snapped during machine testing, damaging the buyer's hydraulic press.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "commercial_vendor_raw_material_delivery_default"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Sale of Goods Act, 1930"
+    ],
+    "expected_sections": [
+      "73",
+      "59"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD17",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A software development vendor signed an agreement promising 99.9% cloud server uptime, but experienced 72 continuous hours of outage wiping client database.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73",
+      "74"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD18",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A commercial tenant sublet prime office space to a third-party co-working agency in direct violation of an explicit anti-subletting covenant in the master lease.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "108",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD19",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A business firm hired a freelance branding consultant who delivered plagiarized logo artwork copied from an existing trademarked brand, exposing client to copyright suit.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD20",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A commercial agreement stipulated that all disputes must be referred to sole arbitration by the managing director of one of the contracting corporate parties.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "28",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD21",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A customer issued a stop-payment instruction to their bank on a cheque issued for goods that were never delivered by the payee merchant.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD22",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A business party served a written demand notice under Section 138 of NI Act 45 days after receiving the cheque dishonour return memo from the bank.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD23",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A commercial contract was frustrated and rendered impossible of performance due to a sudden total statutory government export ban on wheat.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "56",
+      "65"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD24",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A client delayed payment of an agreed freelance invoice of Rs 8,000 by 5 days past the milestone due date.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD25",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "An elderly property owner executed a gift deed in favor of their caretaker under undue influence and mental distress without independent legal advice.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "16",
+      "19"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD26",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A vendor supplied customized packaging boxes that deviated slightly in cardboard thickness from technical specifications but were accepted and used by buyer.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Sale of Goods Act, 1930",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "59",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD27",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A residential tenant caused severe structural water seepage damage to apartment walls by unapproved internal plumbing alterations.",
+    "expected_issue_ids": [
+      "security_deposit_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "108",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD28",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A contracting party waived written performance of a delivery milestone by explicit email confirmation granting an unconditional 30-day extension.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "63"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD29",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A commercial lessor demanded forfeiture of 6 months advance rental lock-in deposit when tenant terminated lease due to building structural condemnation.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "108",
+      "74"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD30",
+    "domain": "contractual_disputes",
+    "category": "closely_related",
+    "scenario": "A registered partnership firm dissolved and one partner refused to settle outstanding capital contribution accounts with retiring partners.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD31",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "We had a verbal understanding to share 20% profits on a joint software venture, but nothing was reduced to formal written contract.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "10",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD32",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "A client paid 50% advance for architectural drawings, but is now requesting extensive revisions that were not part of the initial email scope.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD33",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "The tenant claims security deposit must be refunded in full, while the landlord claims Rs 45,000 painting and deep cleaning deductions are customary.",
+    "expected_issue_ids": [
+      "security_deposit_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "108",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD34",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "An invoice for consulting services was sent 2 years and 11 months ago, and client has not responded to email payment reminders.",
+    "expected_issue_ids": [
+      "time_barred_debt_written_promise_breach",
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Limitation Act, 1963",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "art_55",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD35",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Client did not pay my invoice.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD36",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Contract breach happened last week.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD37",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Landlord not giving deposit back.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD38",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Cheque returned by bank today.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD39",
+    "domain": "contractual_disputes",
+    "category": "misleading",
+    "scenario": "A freelance client delayed payment of my Rs 5,000 design invoice by 2 hours past 5 PM so I want to file a cyber fraud FIR against him.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD40",
+    "domain": "contractual_disputes",
+    "category": "misleading",
+    "scenario": "A supplier delivered goods in brown cardboard boxes instead of white boxes so I want to execute him under military law.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD41",
+    "domain": "contractual_disputes",
+    "category": "misleading",
+    "scenario": "A business client sent an email politely asking for a 3-day invoice payment extension so they committed criminal extortion.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD42",
+    "domain": "contractual_disputes",
+    "category": "misleading",
+    "scenario": "My commercial landlord smiled at me in the hallway so the commercial lease agreement is automatically void under Section 23.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD43",
+    "domain": "contractual_disputes",
+    "category": "multi_provision",
+    "scenario": "A corporate buyer issued three dishonoured cheques totaling Rs 15 lakhs for raw materials, ignored statutory demand notice, and siphoned assets.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "138",
+      "141",
+      "142",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD44",
+    "domain": "contractual_disputes",
+    "category": "multi_provision",
+    "scenario": "A seller took 80% advance payment for industrial land, refused to register sale deed, and attempted to sell the same plot to a third party.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Specific Relief Act, 1963",
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "10",
+      "20",
+      "73",
+      "318"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD45",
+    "domain": "contractual_disputes",
+    "category": "multi_provision",
+    "scenario": "A corporate enterprise defaulted on Rs 22 lakhs payment to a registered MSME supplier for 120 days, ignoring statutory compound interest mandates.",
+    "expected_issue_ids": [
+      "commercial_vendor_raw_material_delivery_default",
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Micro, Small and Medium Enterprises Development Act, 2006",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "15",
+      "16",
+      "18",
+      "73"
+    ],
+    "expected_portals": [
+      "msme_samadhaan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD46",
+    "domain": "contractual_disputes",
+    "category": "multi_provision",
+    "scenario": "A commercial landlord locked out a retail store tenant, seized inventory worth Rs 10 lakhs inside, and demanded exorbitant lock-in liquidated damages.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "106",
+      "108",
+      "73",
+      "74"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD47",
+    "domain": "contractual_disputes",
+    "category": "historical",
+    "scenario": "In 2017, a business client issued an account payee cheque of Rs 2 lakhs that was dishonoured, and a statutory demand notice was served under Section 138 NI Act.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881",
+      "Code of Criminal Procedure, 1973"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD48",
+    "domain": "contractual_disputes",
+    "category": "historical",
+    "scenario": "In 2018, a commercial construction contract for a warehouse was breached, and an arbitration petition was instituted before the High Court.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "is_karnataka_specific": false,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD49",
+    "domain": "contractual_disputes",
+    "category": "karnataka_specific",
+    "scenario": "A commercial lease agreement executed in Bengaluru was challenged before the civil court for impounding due to insufficient stamp duty under Karnataka Stamp Act.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "106",
+      "73"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  },
+  {
+    "test_id": "IB_CD50",
+    "domain": "contractual_disputes",
+    "category": "karnataka_specific",
+    "scenario": "A startup in HSR Layout Bengaluru entered into a 3-year managed co-working office lease with an arbitrary 12-month lock-in penalty clause.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Transfer of Property Act, 1882"
+    ],
+    "expected_sections": [
+      "74",
+      "108"
+    ],
+    "expected_portals": [
+      "ecourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "is_karnataka_specific": true,
+    "legal_applicability_analysis": "Contractual dispute analysis under Indian Contract Act 1872, Specific Relief Act 1963, NI Act 1881, and MSMED Act 2006."
+  }
+]

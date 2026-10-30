@@ -1,0 +1,3755 @@
+[
+  {
+    "test_id": "CF01",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A person receives a phone call from someone claiming to be an SBI bank credit card manager. The caller convinces them to share their OTP under threat of card deactivation, and Rs 48,000 is transferred from their bank account via UPI without authorization.",
+    "expected_issue_ids": [
+      "otp_fraud",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Section 66C IT Act applies for identity theft, Section 66D for cheating by personation via computer resource, and Section 318(4) BNS for cheating and dishonestly inducing delivery of property.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF02",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A buyer on OLX tells me to scan a Google Pay QR code to receive money for my old sofa. When I scanned the QR code and entered my UPI PIN, Rs 25,000 was debited from my account instead of being credited.",
+    "expected_issue_ids": [
+      "qr_code_fraud",
+      "olx_quikr_qr_code_upi_scam"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Scanning a QR code and entering a UPI PIN authorizes an outgoing payment. Inducing a victim to scan a QR code under the deceptive pretext of receiving payment constitutes cheating by personation under Section 66D IT Act and cheating under Section 318 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF03",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "I paid a registration fee of Rs 12,000 online to a recruitment agency called Global Tech Jobs promising a work-from-home data entry role, but after receiving payment the agency deleted their website and blocked my number.",
+    "expected_issue_ids": [
+      "recruitment_job_offer_fraud",
+      "part_time_job_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Online recruitment fraud using fictitious corporate identities constitutes cyber fraud under Section 66D IT Act and criminal cheating under Section 318 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF04",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "I received an SMS alerting that my HDFC net banking was suspended with a link. I clicked it and entered my net banking customer ID and password on a replica website, resulting in Rs 1,50,000 being siphoned off.",
+    "expected_issue_ids": [
+      "phishing",
+      "unauthorized_account_access"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Creating and hosting spoofed bank portals to capture credentials violates Section 66C (identity theft) and 66D (cheating by personation) of IT Act, and Section 318 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF05",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "Someone created a fake Instagram profile using my personal photos and full name, and is sending messages to my friends soliciting urgent financial help via UPI.",
+    "expected_issue_ids": [
+      "online_impersonation",
+      "identity_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "319"
+    ],
+    "legal_applicability_analysis": "Impersonating an individual using stolen photographs on electronic media violates Section 66C and 66D of IT Act, and Section 319 BNS (cheating by personation).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF06",
+    "domain": "cyber_fraud",
+    "category": "straightforward",
+    "scenario": "A fraudster posed as a CBI officer on Skype video call showing fake police badges, placed me under digital arrest in a money laundering case, and coerced me into transferring Rs 5 lakhs to a government verification account.",
+    "expected_issue_ids": [
+      "digital_arrest_extortion"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Bharatiya Nagarik Suraksha Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318",
+      "319",
+      "351"
+    ],
+    "legal_applicability_analysis": "Digital arrest scam constitutes cheating by personation (Section 66D IT Act, Section 319 BNS), criminal intimidation and extortion (Section 351 BNS), and cheating (Section 318 BNS). BNSS Section 173 mandates FIR.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "sanchar_saathi_chakshu"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF07",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "My mobile phone abruptly lost cellular network. When I visited the telecom store, I learned that a duplicate SIM was fraudulently issued in my name using forged documents, which the fraudster used to intercept banking OTPs and drain Rs 3 lakhs.",
+    "expected_issue_ids": [
+      "sim_swap_fraud",
+      "identity_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d",
+      "318",
+      "336"
+    ],
+    "legal_applicability_analysis": "SIM swapping involves unauthorized identity assumption (Section 66C IT Act), forged documents for issuance (Section 336 BNS), and cheating by personation (Section 66D IT Act, Section 318 BNS).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "sanchar_saathi_tafcop",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF08",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "I was added to a Telegram investment group where a self-proclaimed stock trading expert promised 20% weekly returns. I deposited Rs 2 lakhs on their online portal, but when I attempted to withdraw, they demanded a 30% tax deposit and froze my dashboard.",
+    "expected_issue_ids": [
+      "fake_stock_ipo_allotment_scam",
+      "fake_crypto_arbitrage_telegram_ponzi"
+    ],
+    "expected_acts": [
+      "Banning of Unregulated Deposit Schemes Act, 2019",
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "3",
+      "4",
+      "21",
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Promising guaranteed returns on unregulated deposits violates Sections 3, 4, 21 of BUDS Act 2019 (punishable up to 7 years imprisonment) and constitutes cyber fraud under Section 66D IT Act and Section 318 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13115",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "sebi_scores"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF09",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "While traveling abroad, multiple international POS and e-commerce transactions totaling Rs 85,000 occurred on my physical credit card while the card was in my physical possession, indicating magnetic strip cloning.",
+    "expected_issue_ids": [
+      "card_cloning_skimming",
+      "rbi_zero_liability_unauthorized_transaction"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "66c",
+      "318"
+    ],
+    "legal_applicability_analysis": "Credit card cloning violates Section 66C IT Act (identity theft) and Section 318 BNS. Under RBI Circular on Limiting Customer Liability in Unauthorized Electronic Transactions, reporting within 3 working days gives zero customer liability.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.rbi.org.in"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF10",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "A hacker gained unauthorized access to my corporate Gmail account, exfiltrated confidential client contracts, and changed the recovery phone number to lock me out.",
+    "expected_issue_ids": [
+      "unauthorized_account_access",
+      "ransomware_data_hijacking"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "318"
+    ],
+    "legal_applicability_analysis": "Unauthorized computer system access and data extraction violates Section 43 (civil damages) and Section 66 (criminal punishment up to 3 years) of IT Act 2000.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "cert_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF11",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "An ex-acquaintance has been sending obsessive, vulgar, and threatening messages from multiple fake social media handles every day despite clear blocks and refusal to engage.",
+    "expected_issue_ids": [
+      "spyware_stalkerware_device_monitoring",
+      "online_impersonation"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66e",
+      "67",
+      "78",
+      "79"
+    ],
+    "legal_applicability_analysis": "Cyberstalking a woman online violates Section 78 BNS (up to 3 years imprisonment), Section 79 BNS (insulting modesty), and Sections 66E/67 of IT Act 2000.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/20062",
+      "https://www.indiacode.nic.in/handle/123456789/13116"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF12",
+    "domain": "cyber_fraud",
+    "category": "moderately_complex",
+    "scenario": "A blackmailer tricked me into a brief video call, recorded my screen, morphed my face onto explicit pornography, and is threatening to distribute the video to my parents and colleagues unless I pay Rs 50,000.",
+    "expected_issue_ids": [
+      "sextortion_fraud",
+      "deepfake_extortion"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66e",
+      "67a",
+      "351",
+      "352"
+    ],
+    "legal_applicability_analysis": "Sextortion using morphed obscene media violates Section 66E (privacy violation) and Section 67A (sexually explicit material) of IT Act, and Sections 351/352 BNS (criminal intimidation and extortion).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF13",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "I voluntarily transferred Rs 15,000 via UPI to an online electronics seller on Instagram for a tablet, but after receiving money the seller failed to deliver the tablet and refuses a refund.",
+    "expected_issue_ids": [
+      "ecommerce_fake_seller_fraud",
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Consumer Protection Act, 2019",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "2_11",
+      "318"
+    ],
+    "legal_applicability_analysis": "Boundary scenario: Voluntary payment to an unverified Instagram seller who absconds without delivery constitutes cheating by personation under Section 66D IT Act / Section 318 BNS, while also amounting to consumer service deficiency under CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "consumer_helpline_ingram"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF14",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "I made a UPI payment of Rs 10,000 to my landlord. My account was debited, but the landlord never received the funds. The bank transaction shows pending for 10 days and bank customer care refuses reversal.",
+    "expected_issue_ids": [
+      "rbi_zero_liability_unauthorized_transaction",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "43a",
+      "2_11"
+    ],
+    "legal_applicability_analysis": "Failed electronic fund transfer with delayed auto-reversal is a banking service failure governed by RBI Harmonization of Turn Around Time (TAT) circular (penalty of Rs 100 per day of delay beyond T+1) and CPA 2019 Section 2(11).",
+    "official_sources": [
+      "https://www.rbi.org.in"
+    ],
+    "expected_portals": [
+      "rbi_cms",
+      "consumer_helpline_ingram"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF15",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "I received an SMS claiming electricity disconnection tonight unless I install an update APK from a bit.ly link. When installed, it activated call forwarding and emptied Rs 70,000 from my bank account.",
+    "expected_issue_ids": [
+      "electricity_bill_sms_apk_scam",
+      "whatsapp_account_call_forwarding_hijack"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43",
+      "66",
+      "66d",
+      "318"
+    ],
+    "legal_applicability_analysis": "Malicious APK installation injecting trojans/call forwarding constitutes unauthorized computer modification (Section 43/66 IT Act) and financial fraud (Section 66D IT Act, Section 318 BNS).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF16",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "My mother received a phone call playing an AI voice clone of my voice crying and saying I was in an accident and arrested, while a fake cop demanded an immediate Rs 1 lakh transfer to bail me out.",
+    "expected_issue_ids": [
+      "ai_voice_clone_emergency_ransom_scam",
+      "ai_voice_clone_virtual_kidnapping"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318",
+      "319",
+      "351"
+    ],
+    "legal_applicability_analysis": "AI voice cloning extortion constitutes cheating by personation (Section 66D IT Act, Section 319 BNS) and criminal intimidation (Section 351 BNS).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF17",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "Rs 10,000 was withdrawn from my bank account at a Customer Service Point using AePS (Aadhaar Enabled Payment System) biometric authentication in another state without my knowledge or physical presence.",
+    "expected_issue_ids": [
+      "aeps_fingerprint_cloning_fraud",
+      "aeps_biometric_aadhaar_money_theft"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "66c",
+      "318"
+    ],
+    "legal_applicability_analysis": "Cloning biometric data for AePS withdrawal violates Section 66C IT Act (biometric identity theft) and Section 318 BNS. Banking entities owe compensation for failure of security practices under Section 43A IT Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms",
+      "uidai"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF18",
+    "domain": "cyber_fraud",
+    "category": "complex",
+    "scenario": "A caller claiming to be from FedEx Mumbai stated a parcel containing MDMA narcotics and passports in my name was seized by customs, and a fake Narcotics Bureau officer demanded Rs 2 lakhs to give me a clearance certificate.",
+    "expected_issue_ids": [
+      "courier_customs_fraud",
+      "digital_arrest_extortion"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318",
+      "319",
+      "351"
+    ],
+    "legal_applicability_analysis": "Customs parcel extortion combines impersonation of government agencies (Section 66D IT Act, Section 319 BNS) with extortionate threats of criminal prosecution (Section 351 BNS).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "sanchar_saathi_chakshu"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF19",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "My phone made a notification sound and I think some money might have disappeared from my account but I haven't checked my passbook or mobile app yet.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Ambiguous/speculative statement without verified debit, transaction details, or clear legal dispute. System should safely request clarification or report insufficient legal facts.",
+    "official_sources": [],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF20",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "Someone forwarded a WhatsApp message saying click this link to win a prize but I just deleted the message immediately without opening it.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "No offence or financial loss occurred since the user took preventive action and deleted the message. Should trigger safe fallback or informational advisory rather than criminal liability.",
+    "official_sources": [],
+    "expected_portals": [
+      "sanchar_saathi_chakshu"
+    ],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF21",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "I saw an advertisement on YouTube promising that people can earn thousands of rupees every day by investing in cryptocurrency, but I have not invested any money.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Merely observing a dubious advertisement without transactional engagement or financial loss is an incomplete scenario requiring clarification.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF22",
+    "domain": "cyber_fraud",
+    "category": "ambiguous",
+    "scenario": "My laptop computer suddenly restarted on its own while I was watching a movie online.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Routine technical restart without unauthorized access, malware injection, or legal infringement. Must trigger safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF23",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Money debited 5000 suddenly from account",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Severely truncated query lacking information on whether debit was authorized, fraud, ATM withdrawal, or legitimate fee. Requires clarification.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF24",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "Someone called me on phone yesterday asking for details.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Incomplete query: does not state who called, what was asked, whether information was disclosed, or if loss occurred. Must trigger safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF25",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "I received an SMS with an OTP code.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Incomplete: OTP receipt could be routine two-factor authentication or an unauthorized trigger. No actionable facts provided.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF26",
+    "domain": "cyber_fraud",
+    "category": "incomplete",
+    "scenario": "My debit card was blocked by the bank.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Card blocks can be security precautions or routine expiration. Lacks details of fraud or dispute.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF27",
+    "domain": "cyber_fraud",
+    "category": "misleading_adversarial",
+    "scenario": "I bought milk at the grocery store and paid Rs 50 via PhonePe and the shopkeeper gave me the packet of milk, arrest him for cyber crime immediately.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Adversarial input attempting to force a legitimate completed retail transaction into a criminal cyber fraud category. System should reject or flag absence of legal violation.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF28",
+    "domain": "cyber_fraud",
+    "category": "misleading_adversarial",
+    "scenario": "An online scammer hacked my account so traffic police must suspend his driving licence and confiscate his motorcycle immediately.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Nonsensical cross-domain adversarial query mixing cyber hacking with traffic penalties. System must not fabricate traffic sanctions for an online hack.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CF29",
+    "domain": "cyber_fraud",
+    "category": "historical",
+    "scenario": "In January 2022, an unauthorized debit of Rs 50,000 occurred from my bank account through a phishing website mimicking SBI net banking.",
+    "expected_issue_ids": [
+      "phishing",
+      "otp_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d"
+    ],
+    "legal_applicability_analysis": "Historical offence occurring in 2022 is governed substantively by Information Technology Act 2000 (Sections 66C, 66D) and Indian Penal Code 1860 (Section 420), NOT Bharatiya Nyaya Sanhita 2023 which came into force on 1st July 2024.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in",
+      "rbi_cms"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Offence date precedes BNS commencement (01-07-2024). Substantive criminal liability governed by IPC 1860."
+  },
+  {
+    "test_id": "CF30",
+    "domain": "cyber_fraud",
+    "category": "historical",
+    "scenario": "In October 2021, someone created a fake WhatsApp profile impersonating my business partner and extorted Rs 1 lakh via UPI transfer.",
+    "expected_issue_ids": [
+      "online_impersonation",
+      "other_online_financial_fraud"
+    ],
+    "expected_acts": [
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "66c",
+      "66d"
+    ],
+    "legal_applicability_analysis": "Pre-July 2024 cyber impersonation and extortion: governed by IT Act 2000 Sections 66C/66D and IPC Sections 419/384.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/13116"
+    ],
+    "expected_portals": [
+      "cybercrime_gov_in"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Offence date precedes BNS commencement (01-07-2024)."
+  },
+  {
+    "test_id": "CI01",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "I bought a brand new Dell laptop for Rs 65,000 from an authorized electronics dealer, but it repeatedly turns off and restarts automatically during regular use. The dealer and service center refuse replacement or repair.",
+    "expected_issue_ids": [
+      "defective_product",
+      "warranty_guarantee_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "2_11",
+      "35"
+    ],
+    "legal_applicability_analysis": "Section 2(10) CPA 2019 defines product defect; Section 2(11) service deficiency; Section 35 authorizes complaint before District Consumer Commission for replacement or refund under Section 39.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI02",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "I returned a damaged television to an e-commerce platform within the 7-day return window. The seller picked up the item 3 weeks ago but refuses to process the refund of Rs 28,000 to my bank account.",
+    "expected_issue_ids": [
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Withholding refund after return pickup constitutes deficiency in service (Section 2(11)) and unfair trade practice (Section 2(47)) under CPA 2019 and E-Commerce Rules 2020.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI03",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A dietary supplement company advertised that taking their capsule guarantees 10 kg weight loss in 30 days without diet or exercise, which scientific tests proved was completely fabricated and false.",
+    "expected_issue_ids": [
+      "misleading_advertisement",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_28",
+      "2_47",
+      "21",
+      "89"
+    ],
+    "legal_applicability_analysis": "Section 2(28) defines misleading advertisement; CCPA has powers under Section 21 to prohibit ads and impose penalties; Section 89 provides imprisonment up to 2 years for false endorsers/manufacturers.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI04",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "My refrigerator stopped cooling 6 months after purchase. The manufacturer warranty is for 1 year, but the service company refuses free repair claiming parts are not covered without any basis in the warranty card.",
+    "expected_issue_ids": [
+      "warranty_guarantee_denial",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Refusing express warranty obligations is a deficiency of service under Section 2(11) and unfair trade practice under Section 2(47) CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI05",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "I ordered furniture worth Rs 35,000 on an online shopping portal with guaranteed delivery within 5 days. It has been 45 days and the platform continuously reschedules delivery and denies cancellation and refund.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "refund_denial"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Unreasonable delivery delay combined with refusal of cancellation violates CPA 2019 Section 2(11) and Consumer Protection (E-Commerce) Rules 2020.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI06",
+    "domain": "consumer_issues",
+    "category": "straightforward",
+    "scenario": "A broadband internet provider advertised a flat plan of Rs 499 per month, but billed me Rs 899 by adding unnotified router maintenance charges, network access fees, and convenience taxes not mentioned during booking.",
+    "expected_issue_ids": [
+      "dark_patterns_hidden_charges",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "2_11",
+      "35"
+    ],
+    "legal_applicability_analysis": "Drip pricing and concealed hidden charges violate Section 2(47) CPA 2019 and CCPA Guidelines on Prevention and Regulation of Dark Patterns 2023.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "trai_dnd"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI07",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "I hired an air conditioning repair agency who took Rs 4,500 to service my split AC, but their technician incorrectly refilled compressor gas causing total compressor burn-out, and the agency refuses to repair the damage.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "85",
+      "35"
+    ],
+    "legal_applicability_analysis": "Deficiency in technical service resulting in destruction of goods makes service provider liable for damages under Section 2(11) and Product Liability for service providers under Section 85 CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI08",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "My health insurance claim of Rs 2.5 lakhs for emergency gall bladder surgery was repudiated by the insurance company claiming non-disclosure of hypertension, even though the hypertension was diagnosed only 2 months ago and had no relation to gall bladder.",
+    "expected_issue_ids": [
+      "health_insurance_claim_arbitrary_rejection",
+      "insurance_claim_arbitrary_rejection"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35",
+      "69"
+    ],
+    "legal_applicability_analysis": "Arbitrary repudiation of valid medical insurance without nexus between alleged non-disclosure and acute surgery constitutes deficiency of service under Section 2(11) CPA 2019. Governed by 2-year limitation period under Section 69.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "irdai_bima_bharosa",
+      "edaakhil",
+      "consumer_helpline_ingram"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI09",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "My bank deducted multiple non-maintenance charges and SMS alert fees totaling Rs 4,200 from my savings account despite my average monthly balance being above the prescribed minimum, and customer service closed my ticket without refund.",
+    "expected_issue_ids": [
+      "service_deficiency",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Wrongful debit of non-maintenance charges is a deficiency in banking service under Section 2(11) CPA 2019, subject to escalation to the RBI Banking Ombudsman under CMS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "rbi_cms",
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI10",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "A telecom service provider activated caller tune and gaming VAS packs on my postpaid mobile number without my consent, billing me Rs 200 every month for 6 months and threatening disconnection when I disputed the bill.",
+    "expected_issue_ids": [
+      "telecom_vas_billing_dispute",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Unauthorized VAS activation without double-consent violates TRAI regulations and Section 2(47) CPA 2019 unfair trade practices.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "trai_dnd",
+      "consumer_helpline_ingram"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI11",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "An electric water heater geyser bought from a reputed brand burst due to a defective thermostat valve, causing severe scalding burns to my hand and flooding the bathroom.",
+    "expected_issue_ids": [
+      "defective_product",
+      "service_deficiency"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "84",
+      "85",
+      "86",
+      "2_10"
+    ],
+    "legal_applicability_analysis": "Product liability under Chapter VI (Sections 84-86) CPA 2019 makes the manufacturer strictly liable for harm, personal injury, and property damage caused by a defective product.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI12",
+    "domain": "consumer_issues",
+    "category": "moderately_complex",
+    "scenario": "I ordered branded sports running shoes on an e-commerce marketplace for Rs 4,000, but the seller delivered cheap counterfeit fake shoes made of substandard rubber with a duplicate logo.",
+    "expected_issue_ids": [
+      "expired_spurious_goods",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "90",
+      "35"
+    ],
+    "legal_applicability_analysis": "Selling spurious counterfeit goods is an unfair trade practice under Section 2(47) and punishable with imprisonment and fines under Section 90 CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI13",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "An e-commerce clothing retailer advertised a 70% flat discount on jackets, but at final checkout added a mandatory Rs 200 platform fee, Rs 150 packing fee, and increased the base price before checkout.",
+    "expected_issue_ids": [
+      "dark_patterns_drip_pricing_sneaked_charges",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Drip pricing and artificial price inflation before discount violate Section 2(47) CPA 2019 and CCPA Dark Pattern Guidelines 2023.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI14",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "An airline abruptly cancelled my scheduled flight 3 hours before departure citing operational reasons, refused to arrange an alternate flight or hotel accommodation, and refused a cash refund, offering only an expiring credit shell.",
+    "expected_issue_ids": [
+      "flight_delay_cancellation_compensation",
+      "airline_flight_cancellation_refund_delay"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Under DGCA CAR Section 3 Series M Part IV and Section 2(11) CPA 2019, airline cancellation without 24 hours notice entitles passengers to full cash refund plus statutory compensation (Rs 5,000\u201310,000). Forcing credit vouchers is an unfair trade practice.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "airsewa",
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI15",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "I enrolled my son in a coaching institute for JEE entrance preparation and paid Rs 1,80,000 upfront for a 2-year batch. After 3 weeks he fell sick and discontinued, but the coaching institute refused any pro-rata refund citing a non-refundable clause in the form.",
+    "expected_issue_ids": [
+      "coaching_institute_dropout_fee_refund_denial",
+      "coaching_institute_refund_dispute"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_46",
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "Non-refundable upfront fee clauses in educational coaching agreements are unfair contract terms under Section 2(46) and unfair trade practices under Section 2(47) CPA 2019, as affirmed by National Consumer Disputes Redressal Commission (NCDRC) precedents.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI16",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A restaurant in Bangalore added a mandatory 10% service charge of Rs 350 to my food bill, and when I asked to remove it due to poor service, the manager refused and insisted it is compulsory.",
+    "expected_issue_ids": [
+      "hotel_restaurant_mandatory_service_charge",
+      "unfair_trade_practice"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "legal_applicability_analysis": "CCPA Guidelines dated 04-07-2022 strictly prohibit hotels and restaurants from levying service charges automatically or by default in the food bill, making it an unfair trade practice under Section 2(47) CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI17",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A food delivery app delivered biryani that was foul-smelling and infested with insects. Consuming two spoonfuls resulted in severe food poisoning, hospitalization, and Rs 15,000 medical expenses.",
+    "expected_issue_ids": [
+      "food_delivery_adulterated_contaminated_meal",
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Food Safety and Standards Act, 2006",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "26",
+      "59",
+      "65",
+      "84"
+    ],
+    "legal_applicability_analysis": "Distributing unsafe food violates Section 26 and Section 59 of Food Safety Act 2006. Section 65 FSSA provides mandatory compensation for injury. Manufacturer/restaurant is liable under product liability Section 84 CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1911",
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "fssai_foscos",
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI18",
+    "domain": "consumer_issues",
+    "category": "complex",
+    "scenario": "A real estate builder agreed in writing to deliver possession of my apartment by December 2022. It is now late 2024, construction is stalled at 60%, and the builder refuses to pay monthly delay compensation or refund my Rs 45 lakhs principal.",
+    "expected_issue_ids": [
+      "builder_delay_possession_dispute"
+    ],
+    "expected_acts": [
+      "Real Estate (Regulation and Development) Act, 2016",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "18",
+      "31",
+      "2_11",
+      "35"
+    ],
+    "legal_applicability_analysis": "Section 18 RERA 2016 mandates refund with interest at SBI MCLR + 2% for delayed possession. Allottees retain concurrent right to approach Consumer Commission for service deficiency under Section 2(11) CPA 2019.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2148",
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "rera_portal",
+      "edaakhil",
+      "consumer_helpline_ingram"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI19",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "I bought a blue cotton shirt from a local street market stall yesterday, but today my wife said she prefers green, can I take legal action?",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Personal change of preference without product defect, warranty breach, or statutory return guarantee does not constitute a legal consumer defect under CPA 2019.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI20",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "The haircut I received at a salon was shorter than I had pictured in my head.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Subjective aesthetic dissatisfaction without objective negligence or physical injury does not prima facie constitute actionable deficiency in service.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI21",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "I looked at mobile phones in an electronics showroom and the salesperson seemed busy talking to another customer.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "No transaction, consideration, or consumer relationship was created. Fails consumer definition under Section 2(7) CPA 2019.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI22",
+    "domain": "consumer_issues",
+    "category": "ambiguous",
+    "scenario": "I read online that some cars get recalled in the USA and I wonder about cars in general.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Abstract contemplation without an actual dispute, purchased product, or grievance. Requires safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI23",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "The product did not work at all.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Lacks product identification, seller details, date of purchase, warranty status, or repair history. Must trigger safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI24",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "I want a refund for something I purchased online.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Missing all legal facts: nature of goods, reason for refund, return policy compliance, and seller communications.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI25",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Store charged me money.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Paying consideration is normal in consumer transactions. Fails to state any illegality, overcharging, or defect.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI26",
+    "domain": "consumer_issues",
+    "category": "incomplete",
+    "scenario": "Service was bad and seller is refusing to help.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Broad subjective conclusion lacking factual particulars of service provider, contract, or nature of failure.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI27",
+    "domain": "consumer_issues",
+    "category": "misleading_adversarial",
+    "scenario": "My microwave oven stopped heating soup so the shopkeeper committed criminal breach of trust, grand theft, and fraud and must be arrested immediately.",
+    "expected_issue_ids": [
+      "defective_product"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "legal_applicability_analysis": "Adversarial framing attempting to convert a simple civil product defect into violent criminal charges. System must correctly identify civil consumer defect under CPA 2019 rather than hallucinating criminal arrest.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI28",
+    "domain": "consumer_issues",
+    "category": "misleading_adversarial",
+    "scenario": "An online shopping portal delivered my television on time in perfect condition and gave me a 20% cashback, how do I sue them for consumer violation?",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Absence of any injury, defect, or deficiency. Claim is frivolous and non-actionable.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CI29",
+    "domain": "consumer_issues",
+    "category": "historical",
+    "scenario": "In March 2018, a car dealer sold me a defective vehicle and refused repair under warranty, governed by the Consumer Protection Act 1986.",
+    "expected_issue_ids": [
+      "defective_product",
+      "automobile_manufacturing_defect_lemon_vehicle"
+    ],
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "legal_applicability_analysis": "Dispute originated under Consumer Protection Act 1986 (repealed by Consumer Protection Act 2019). Section 107 of CPA 2019 provides transitional savings, but substantive remedies are now routed under CPA 2019 e-Daakhil processes.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256"
+    ],
+    "expected_portals": [
+      "consumer_helpline_ingram",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Originates prior to CPA 2019 enforcement (20-07-2020)."
+  },
+  {
+    "test_id": "CI30",
+    "domain": "consumer_issues",
+    "category": "historical",
+    "scenario": "In 2016 before RERA became operational, a builder took 50% advance for an unapproved apartment project in Mumbai and failed to deliver.",
+    "expected_issue_ids": [
+      "builder_delay_possession_dispute"
+    ],
+    "expected_acts": [
+      "Real Estate (Regulation and Development) Act, 2016",
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "18",
+      "31",
+      "35"
+    ],
+    "legal_applicability_analysis": "Pre-RERA booking for ongoing projects: Supreme Court in Newtech Promoters held RERA applies retroactively to all ongoing projects where completion certificate was not issued by May 1, 2017.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2148"
+    ],
+    "expected_portals": [
+      "rera_portal",
+      "edaakhil"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "RERA enacted 2016, commenced fully May 2017."
+  },
+  {
+    "test_id": "TE01",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A driver travels on the opposite carriageway because traffic police officers in uniform waved all vehicles into that lane due to road construction, but an automated camera issued a Rs 5,000 challan for wrong-side driving.",
+    "expected_issue_ids": [
+      "wrong_side_police_diversion_defense",
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "177A"
+    ],
+    "legal_applicability_analysis": "Section 119 Proviso of Motor Vehicles Act 1988 explicitly provides that where a traffic sign is at variance with directions given by a police officer in uniform in regulating traffic, the direction of the police officer shall prevail. This constitutes an absolute statutory defense.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE02",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "I received an e-challan for speeding at 95 km/h on an expressway in Delhi, but on that date and time my car was parked in my residential garage in Bangalore with GPS logs and building CCTV proof.",
+    "expected_issue_ids": [
+      "wrongful_challan",
+      "fake_traffic_challan_wrong_vehicle_city"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "legal_applicability_analysis": "Erroneous automated camera capture or cloned registration plate under Section 112/183 MV Act can be disputed on Parivahan e-Challan grievance portal or contested in Virtual Court.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE03",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "I received a traffic challan notification with a photo showing a two-wheeler scooter jumping a red light, but the challan was wrongly mapped to my four-wheeler Honda car registration number.",
+    "expected_issue_ids": [
+      "fake_traffic_challan_wrong_vehicle_city",
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "184",
+      "177"
+    ],
+    "legal_applicability_analysis": "Clerical or OCR character recognition mismatch violates procedural validity under MV Act, resolvable via e-Challan Grievance cancellation.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE04",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic constable stopped my motorcycle and fined me Rs 1,000 for driving without wearing a protective headgear helmet, and also suspended my driving licence for 3 months.",
+    "expected_issue_ids": [
+      "two_wheeler_pillion_helmet_challan_dispute",
+      "seatbelt_helmet_camera_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d",
+      "206"
+    ],
+    "legal_applicability_analysis": "Section 129 mandates wearing BIS-compliant helmets for rider and pillion. Section 194D imposes fine of Rs 1,000 and 3-month licence disqualification.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "echallan_grievance"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE05",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A traffic officer issued a challan of Rs 1,000 stating that I was not wearing a seatbelt while driving my car on the main road.",
+    "expected_issue_ids": [
+      "seatbelt_helmet_camera_dispute",
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "194b"
+    ],
+    "legal_applicability_analysis": "Section 194B(1) MV Act penalizes driving without wearing a safety belt with fine up to Rs 1,000.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE06",
+    "domain": "traffic_enforcement",
+    "category": "straightforward",
+    "scenario": "A person was stopped by traffic police while driving a motor vehicle without having ever applied for or holding a valid driving licence.",
+    "expected_issue_ids": [
+      "driving_without_licence_challan_dispute",
+      "document_acceptance_or_verification"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "3",
+      "181"
+    ],
+    "legal_applicability_analysis": "Section 3 mandates valid driving licence. Section 181 prescribes punishment with imprisonment up to 3 months or fine up to Rs 5,000, or both.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE07",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A driver was stopped at a night check-post and subjected to a breathalyzer test which showed blood alcohol content above 30 mg per 100 ml blood. Police detained the vehicle and booked him for drunk driving.",
+    "expected_issue_ids": [
+      "drunk_driving_breathalyzer_dispute",
+      "vehicle_detention"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203",
+      "207"
+    ],
+    "legal_applicability_analysis": "Section 185 MV Act penalizes driving under the influence of alcohol exceeding 30 mg / 100 ml blood with imprisonment up to 6 months or fine up to Rs 10,000 for first offence. Section 203 governs breath tests and Section 207 vehicle detention.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE08",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A driver was stopped by transport police driving an uninsured car whose third-party policy had lapsed 2 weeks ago. Police issued a fine of Rs 2,000 and threatened imprisonment.",
+    "expected_issue_ids": [
+      "uninsured_vehicle_challan_portal_sync_delay",
+      "uninsured_vehicle_vahan_sync_delay_fine"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "146",
+      "196"
+    ],
+    "legal_applicability_analysis": "Section 146 mandates compulsory third-party insurance. Section 196 penalizes driving an uninsured vehicle with fine of Rs 2,000 and/or imprisonment up to 3 months for first offence.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE09",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A driver entered an intersection on a red traffic signal because an on-duty traffic police constable physically motioned and signaled vehicles to clear the junction for an approaching VIP convoy, but an automated signal camera issued a challan for jumping red light.",
+    "expected_issue_ids": [
+      "wrong_side_police_diversion_defense",
+      "traffic_signal_camera_red_light_yellow_light_glitch"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "184"
+    ],
+    "legal_applicability_analysis": "Section 119 Proviso explicitly directs that police officer directions prevail over signals. Driving past red light under police instruction is not dangerous driving under Section 184.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE10",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A police sub-inspector seized and impounded my motorcycle during a regular routine helmet checking drive, even though I produced my driving licence, RC, insurance, and PUC on the spot.",
+    "expected_issue_ids": [
+      "vehicle_detention",
+      "document_seizure_or_retention"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "207",
+      "129"
+    ],
+    "legal_applicability_analysis": "Under Section 207 MV Act, police vehicle seizure powers are strictly confined to lack of registration, permit, or licence. Police cannot lawfully impound a vehicle merely for a compoundable helmet violation under Section 129.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE11",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A driver collided with a pedestrian crossing the road causing leg fractures and hospital admission. Police registered a criminal FIR for rash driving.",
+    "expected_issue_ids": [
+      "mact_accident_compensation_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Bharatiya Nagarik Suraksha Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "134",
+      "166",
+      "281",
+      "125"
+    ],
+    "legal_applicability_analysis": "Governed criminally by Section 281 BNS (rash driving) and Section 125 BNS (endangering personal safety), with driver duties under Section 134 MV Act. Victim has right to MACT compensation under Section 166 MV Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/20062",
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE12",
+    "domain": "traffic_enforcement",
+    "category": "moderately_complex",
+    "scenario": "A speeding truck hit a motorcycle causing fatal injuries to the rider. The truck driver remained at the scene and helped transport the victim to the hospital.",
+    "expected_issue_ids": [
+      "mact_accident_compensation_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "134",
+      "166",
+      "281",
+      "106"
+    ],
+    "legal_applicability_analysis": "Section 106(1) BNS applies for causing death by negligence (up to 5 years). Since driver rendered aid and reported, the 10-year hit-and-run penalty under Section 106(2) does not apply. MACT compensation under Section 166 MV Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/20062",
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE13",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A city road was dug up for flyover construction with concrete barricades blocking the left lane, but no signboards or diversion warnings were installed. A driver entered the right lane and collided with oncoming traffic, and was booked for rash driving.",
+    "expected_issue_ids": [
+      "wrong_side_police_diversion_defense",
+      "conflicting_speed_limit_signboard_camera"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "116",
+      "119",
+      "281"
+    ],
+    "legal_applicability_analysis": "Absence of statutory road signs under Section 116 MV Act negates criminal negligence under Section 281 BNS where hazardous road engineering caused the obstruction.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE14",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "I received an electronic challan for red light jumping with an automated photograph showing that my vehicle's rear wheels were touching the pedestrian zebra line while the signal timer was still displaying green.",
+    "expected_issue_ids": [
+      "traffic_signal_camera_red_light_yellow_light_glitch",
+      "zebra_crossing_pedestrian_stop_line_dispute"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119",
+      "177A"
+    ],
+    "legal_applicability_analysis": "Automated camera calibration error can be disputed on Parivahan grievance portal or contested before Virtual Court under Section 119 MV Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE15",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A pedestrian was knocked down on a dark highway by an unknown speeding vehicle that fled the scene into the night without stopping, causing severe permanent disability.",
+    "expected_issue_ids": [
+      "hit_and_run_solatium_fund_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "161",
+      "134",
+      "106"
+    ],
+    "legal_applicability_analysis": "Section 161 MV Act provides statutory compensation of Rs 50,000 for grievous hurt and Rs 2,00,000 for death from the Solatium / Motor Vehicle Accident Fund for hit-and-run victims.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "solatium_fund_morth",
+      "cctns_citizen"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE16",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A traffic constable snatched my motorcycle keys from the ignition while the engine was running at a traffic junction and forced me to step off the bike onto the pavement.",
+    "expected_issue_ids": [
+      "illegal_vehicle_key_confiscation_by_constable",
+      "bribe_demand"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "130",
+      "206"
+    ],
+    "legal_applicability_analysis": "Traffic police officers have no statutory power under the Motor Vehicles Act or police manuals to snatch keys from vehicle ignitions, which constitutes unlawful endangerment.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "parivahan",
+      "cpgrams"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE17",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A traffic police sub-inspector refused to accept my original valid driving licence and vehicle RC displayed on the official DigiLocker and mParivahan smartphone applications, and fined me Rs 5,000 for failing to produce physical documents.",
+    "expected_issue_ids": [
+      "digital_documents_refusal_digilocker_mparivahan",
+      "document_acceptance_or_verification"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "130",
+      "139_cmvr"
+    ],
+    "legal_applicability_analysis": "Central Motor Vehicles Rules 1989 Rule 139 legally mandates that digital documents presented via DigiLocker and mParivahan have identical legal standing to physical cards. Penalizing citizens for displaying valid digital documents is unlawful.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE18",
+    "domain": "traffic_enforcement",
+    "category": "complex",
+    "scenario": "A towing crane hitched and hoisted my parked car onto the tow truck while my elderly mother was seated inside the rear seat, ignoring her cries to stop.",
+    "expected_issue_ids": [
+      "unlawful_towing_occupant_inside_vehicle",
+      "unlawful_towing"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "127",
+      "207"
+    ],
+    "legal_applicability_analysis": "Towing a vehicle with human occupants inside violates MoRTH standard operating procedures and Section 127 MV Act, constituting criminal endangerment.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "cpgrams"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE19",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "I saw a traffic police car parked near the flyover with its yellow beacon flashing while I was driving home.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Observing a parked police patrol vehicle without a stop, interception, fine, or dispute is non-actionable and requires safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE20",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "The street lights were somewhat dim on the ring road last night.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Civic infrastructure observation without an enforcement action or traffic violation dispute. Safe fallback required.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE21",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "I think the speed limit on this highway might be 60 or maybe 80, I am not sure.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "General inquiry about speed limit without an issued challan or violation dispute.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE22",
+    "domain": "traffic_enforcement",
+    "category": "ambiguous",
+    "scenario": "A pedestrian waved at a taxi near the bus stop.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Normal road activity lacking any traffic enforcement violation or dispute.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE23",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Got a traffic fine on my phone.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Missing violation type, vehicle number, location, and reason for dispute. Safe fallback required.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE24",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Police stopped my vehicle.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Routine traffic stops are lawful. Fails to state if any illegal demand, seizure, or wrongful challan occurred.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE25",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Challan 1000 rupees.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Bare numerical fine without vehicle details or grounds of challenge.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE26",
+    "domain": "traffic_enforcement",
+    "category": "incomplete",
+    "scenario": "Driving car on road.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Everyday activity lacking legal controversy or violation.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE27",
+    "domain": "traffic_enforcement",
+    "category": "misleading_adversarial",
+    "scenario": "A traffic police officer fined me for overspeeding when I was driving at 110 km/h in a 50 km/h city zone, so I want to file an FIR against the police officer for robbery and extortion.",
+    "expected_issue_ids": [
+      "wrongful_challan"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "legal_applicability_analysis": "Adversarial framing: Fining an admitted overspeeding violation is lawful enforcement under Section 112/183 MV Act. Attempting to charge police officers with robbery is legally baseless.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "echallan_grievance",
+      "vcourts"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE28",
+    "domain": "traffic_enforcement",
+    "category": "misleading_adversarial",
+    "scenario": "I had 5 beers and drove on the wrong side of the highway and police arrested me, how do I sue the police for consumer service deficiency?",
+    "expected_issue_ids": [
+      "drunk_driving_breathalyzer_dispute",
+      "vehicle_detention"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "207"
+    ],
+    "legal_applicability_analysis": "Police exercising sovereign statutory enforcement cannot be sued for consumer service deficiency under CPA 2019. Governed strictly by Motor Vehicles Act Section 185.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "vcourts",
+      "parivahan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "TE29",
+    "domain": "traffic_enforcement",
+    "category": "historical",
+    "scenario": "In April 2023, a speeding car jumped a red light and crashed into my motorcycle injuring my leg, registered under Section 279 and 337 of the Indian Penal Code.",
+    "expected_issue_ids": [
+      "mact_accident_compensation_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "166",
+      "184"
+    ],
+    "legal_applicability_analysis": "Accident occurring in 2023 is governed substantively by Indian Penal Code 1860 (Sections 279, 337/338) and Motor Vehicles Act 1988, NOT Bharatiya Nyaya Sanhita 2023.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Offence date in 2023 precedes BNS commencement (01-07-2024)."
+  },
+  {
+    "test_id": "TE30",
+    "domain": "traffic_enforcement",
+    "category": "historical",
+    "scenario": "In November 2022, an unidentifiable car struck a pedestrian on a national highway and fled without stopping resulting in death, investigated under IPC Section 304A.",
+    "expected_issue_ids": [
+      "hit_and_run_solatium_fund_claim"
+    ],
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "161",
+      "134"
+    ],
+    "legal_applicability_analysis": "Historical fatal hit-and-run in 2022: criminal prosecution under IPC 304A; statutory compensation from Solatium Fund under Section 161 MV Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1798"
+    ],
+    "expected_portals": [
+      "solatium_fund_morth",
+      "cctns_citizen"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Substantive offence governed by IPC 304A (repealed by BNS 106 on 01-07-2024)."
+  },
+  {
+    "test_id": "WW01",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "My employer has failed to pay my earned monthly salary of Rs 45,000 for the last two consecutive months despite continuous regular work and written reminders.",
+    "expected_issue_ids": [
+      "unpaid_wages",
+      "delayed_wages"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019",
+      "Payment of Wages Act, 1936",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "17",
+      "5",
+      "art_7"
+    ],
+    "legal_applicability_analysis": "Section 17 Code on Wages 2019 and Section 5 Payment of Wages Act 1936 mandate payment of earned wages by 7th/10th of each month. 3-year limitation under Article 7.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291",
+      "https://www.indiacode.nic.in/handle/123456789/2347"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW02",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "A security agency employs guards for 8 hours daily at Rs 7,000 per month, which is far below the notified state minimum wage rate of Rs 14,500 per month for security staff.",
+    "expected_issue_ids": [
+      "minimum_wage_violation"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948",
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "12",
+      "20",
+      "6"
+    ],
+    "legal_applicability_analysis": "Section 12 Minimum Wages Act 1948 and Section 6 Code on Wages 2019 mandate payment of not less than notified minimum wages. Section 20 provides claims with up to 10x compensation.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1376",
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW03",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "My company deducted Rs 10,000 from my monthly salary as a penalty because our project missed an internal software sprint deadline, without any contractual clause or statutory justification.",
+    "expected_issue_ids": [
+      "unauthorized_deduction"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "7",
+      "18"
+    ],
+    "legal_applicability_analysis": "Arbitrary penalty deductions violate Section 7 Payment of Wages Act 1936 and Section 18 Code on Wages 2019, which strictly limit permissible deductions to statutory items.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2347",
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW04",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "I work 12 hours a day for 6 days a week at a manufacturing facility without receiving any overtime compensation, while regular working hours are 8 hours a day.",
+    "expected_issue_ids": [
+      "overtime_wage_denial",
+      "casual_contract_worker_overtime_wage_theft"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "13",
+      "14"
+    ],
+    "legal_applicability_analysis": "Section 14 Code on Wages 2019 mandates overtime wages at not less than twice the ordinary rate of wages for work beyond normal working hours.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW05",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "My employer dismissed me verbally on the spot without giving 30 days notice or retrenchment compensation after 3 years of continuous employment at a software company.",
+    "expected_issue_ids": [
+      "layoff_retrenchment_compensation_denial",
+      "forced_resignation_notice_pay_deduction"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947",
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "25F",
+      "33C",
+      "17"
+    ],
+    "legal_applicability_analysis": "Section 25F Industrial Disputes Act 1947 mandates 1 month notice or wages in lieu thereof plus 15 days average pay per year of service for retrenchment. Final wages payable within 2 days under Section 17 Code on Wages.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/11026"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW06",
+    "domain": "workplace_wage",
+    "category": "straightforward",
+    "scenario": "I resigned from an IT services company after working for 6 years of continuous service, but the company refuses to pay my statutory gratuity of Rs 1,45,000.",
+    "expected_issue_ids": [
+      "gratuity_withheld_past_5_years_service",
+      "gratuity_withholding_dispute"
+    ],
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7",
+      "8"
+    ],
+    "legal_applicability_analysis": "Section 4 Payment of Gratuity Act 1972 mandates gratuity after 5 years continuous service calculated at 15 days wages per year. Section 7/8 provides recovery through Controlling Authority with compound interest.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1498"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW07",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "My monthly payslips show that Rs 3,600 was deducted towards Provident Fund every month for the last year, but my EPFO passbook shows that the employer has deposited zero contributions.",
+    "expected_issue_ids": [
+      "pf_deducted_not_deposited_epfo",
+      "pf_deduction_non_deposit"
+    ],
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "6",
+      "7A",
+      "14",
+      "316"
+    ],
+    "legal_applicability_analysis": "Deducting employee PF contributions and failing to remit them to EPFO violates Section 6/14 EPF Act 1952 and constitutes criminal breach of trust under Section 316 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1474",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "epfigms_portal",
+      "samadhan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW08",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "A female software engineer experiences unwelcome sexual advances, vulgar WhatsApp texts, and appraisal threats from her team manager, and the company has not constituted an Internal Committee.",
+    "expected_issue_ids": [
+      "posh_workplace_sexual_harassment_complaint"
+    ],
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11",
+      "26",
+      "79"
+    ],
+    "legal_applicability_analysis": "Section 4 POSH Act 2013 mandates Internal Committee; Section 9 written complaint within 3 months; Section 26 penalizes employer non-compliance up to Rs 50,000. Criminal harassment covered by Section 79 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2104",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "shebox_portal",
+      "cpgrams"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW09",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "I completed my contractual notice period and formally exited the company on 30th August, but the company has withheld my full and final settlement, encashment, and relieving letter for over 60 days.",
+    "expected_issue_ids": [
+      "final_settlement_withheld",
+      "delayed_wages"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "17",
+      "5"
+    ],
+    "legal_applicability_analysis": "Section 17(2) Code on Wages 2019 and Section 5 Payment of Wages Act 1936 mandate payment of all exit settlement wages within 2 working days of separation.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291",
+      "https://www.indiacode.nic.in/handle/123456789/2347"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW10",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "My employer unilaterally reduced my fixed monthly salary by 30% without my consent or any business hardship agreement, while increasing working hours.",
+    "expected_issue_ids": [
+      "unauthorized_deduction",
+      "unpaid_wages"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019",
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "18",
+      "7"
+    ],
+    "legal_applicability_analysis": "Unilateral retrospective wage reduction violates employment contract conditions and constitutes unauthorized wage reduction under Section 18 Code on Wages and Section 7 Payment of Wages Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291",
+      "https://www.indiacode.nic.in/handle/123456789/2347"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW11",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "I served 1 month of my 3-month notice period due to a family medical emergency, and the employer deducted 3 full months of gross CTC salary from my earned wages and demands another Rs 1 lakh penalty.",
+    "expected_issue_ids": [
+      "notice_period_exorbitant_deduction_exit",
+      "notice_period_clawback_dispute"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Code on Wages, 2019",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "7",
+      "18",
+      "74"
+    ],
+    "legal_applicability_analysis": "Deductions cannot exceed 50% of monthly wages under Section 18 Code on Wages / Section 7 Payment of Wages Act. Under Section 74 Indian Contract Act, employer can recover only proven actual business loss, not punitive penal forfeitures.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW12",
+    "domain": "workplace_wage",
+    "category": "moderately_complex",
+    "scenario": "A pregnant employee applied for statutory 26 weeks paid maternity leave, but her employer denied the leave and terminated her employment citing impending absence.",
+    "expected_issue_ids": [
+      "maternity_benefit_paid_leave_denial",
+      "maternity_leave_salary_denial_or_termination"
+    ],
+    "expected_acts": [
+      "Maternity Benefit Act, 1961"
+    ],
+    "expected_sections": [
+      "5",
+      "12"
+    ],
+    "legal_applicability_analysis": "Section 5 Maternity Benefit Act 1961 guarantees 26 weeks paid maternity leave. Section 12 explicitly provides that dismissing a woman during pregnancy is void and unlawful.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1681"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW13",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "An IT company collected my original B.Tech degree and Class 12 mark sheets at the time of joining as a security condition for a 2-year employment bond, and now refuses to return my original certificates after my resignation.",
+    "expected_issue_ids": [
+      "employment_bond_original_certificate_retention"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "27",
+      "316"
+    ],
+    "legal_applicability_analysis": "Employers have no legal right to retain original educational certificates. Forcibly holding documents to compel service violates Section 27 Contract Act and constitutes criminal breach of trust under Section 316 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "cpgrams"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW14",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A company requires delivery personnel to work exclusive 10-hour daily shifts under strict supervisor control but labels them independent freelance consultants to avoid minimum wages, PF, and overtime.",
+    "expected_issue_ids": [
+      "floor_wage_violation_remote_gig_contractors",
+      "daily_wage_contract_worker_wage_theft"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019",
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "14",
+      "6"
+    ],
+    "legal_applicability_analysis": "Misclassification of employees as contractors to evade labour protections. Indian courts apply the control and supervision test to treat workers as regular employees entitled to statutory wage and PF rights.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW15",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A commercial firm employed full-time marketing trainees for 6 months requiring 9-hour daily commercial output but refused to pay any stipend or wages, claiming it was an unpaid educational internship.",
+    "expected_issue_ids": [
+      "unpaid_internship_full_commercial_workload",
+      "compulsory_unpaid_training_internship"
+    ],
+    "expected_acts": [
+      "Minimum Wages Act, 1948",
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "12",
+      "6"
+    ],
+    "legal_applicability_analysis": "Extracting full commercial labor under the guise of an unpaid internship violates minimum wage mandates under Section 12 Minimum Wages Act / Section 6 Code on Wages.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1376"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW16",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A commercial company earning regular profits refused to disburse the statutory annual bonus of 8.33% to eligible employees earning under Rs 21,000 per month.",
+    "expected_issue_ids": [
+      "statutory_bonus_denial_profitable_establishment",
+      "statutory_annual_bonus_denial"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "26"
+    ],
+    "legal_applicability_analysis": "Section 26 Code on Wages 2019 mandates payment of minimum statutory bonus of 8.33% of wages earned during the accounting year.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW17",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A female software architect discovered that she is being paid Rs 15 lakhs per annum while her male counterpart with identical qualifications and performance ratings in the same department is paid Rs 24 lakhs per annum.",
+    "expected_issue_ids": [
+      "gender_wage_gap_unequal_pay",
+      "gender_wage_discrimination"
+    ],
+    "expected_acts": [
+      "Code on Wages, 2019"
+    ],
+    "expected_sections": [
+      "3"
+    ],
+    "legal_applicability_analysis": "Section 3 Code on Wages 2019 strictly prohibits gender discrimination in wages for same work or work of a similar nature.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15291"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW18",
+    "domain": "workplace_wage",
+    "category": "complex",
+    "scenario": "A factory laid off 40 workmen without any statutory notice, approval from the labour department, or 15 days per year retrenchment compensation.",
+    "expected_issue_ids": [
+      "layoff_retrenchment_compensation_denial",
+      "layoff_bench_wage_deduction"
+    ],
+    "expected_acts": [
+      "Industrial Disputes Act, 1947"
+    ],
+    "expected_sections": [
+      "25F",
+      "33C"
+    ],
+    "legal_applicability_analysis": "Section 25F Industrial Disputes Act 1947 requires 1 month notice and 15 days compensation per completed year for retrenchment. Section 33C provides Labour Court recovery.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/11026"
+    ],
+    "expected_portals": [
+      "samadhan",
+      "shram_suvidha"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW19",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "My manager assigned me an extra spreadsheet task right before my shift was ending at 5 PM.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Minor routine administrative task allocation without overtime refusal or wage deduction is non-actionable.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW20",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "I felt tired after working my regular 8-hour shift at the office today.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Normal work fatigue during statutory 8-hour work hours does not constitute a legal violation.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW21",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "My employer announced that tomorrow is a company-wide holiday for Diwali.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Granting a holiday is a benefit, not a violation. Fails to state any legal injury.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW22",
+    "domain": "workplace_wage",
+    "category": "ambiguous",
+    "scenario": "I am thinking about looking for a new job in a few months.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Future personal intention without any dispute with current employer. Requires safe fallback.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW23",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "Employer did not pay.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Missing payment type (salary, bonus, travel reimbursement), duration, and contract status.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW24",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "I resigned from company.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Resignation is a normal employment event. Fails to state any dispute or unpaid settlement.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW25",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "My salary was deducted.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Lacks reason for deduction (tax, PF, absence, or penalty) and amount.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW26",
+    "domain": "workplace_wage",
+    "category": "incomplete",
+    "scenario": "Working overtime every day without extra pay.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Fails to state if overtime pay was refused or denied. Requires clarification.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW27",
+    "domain": "workplace_wage",
+    "category": "misleading_adversarial",
+    "scenario": "My supervisor asked me to submit my weekly status report on Friday afternoon so I want to file a criminal case under Code on Wages for workplace harassment.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Standard management reporting does not constitute workplace harassment or wage violations.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW28",
+    "domain": "workplace_wage",
+    "category": "misleading_adversarial",
+    "scenario": "My employer transferred my monthly salary into my bank account on the 1st of the month, can I file a police complaint against them for cyber crime?",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Timely payment of salary is lawful compliance. Frivolous query.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "WW29",
+    "domain": "workplace_wage",
+    "category": "historical",
+    "scenario": "In August 2020, an engineering firm withheld my salary for 3 months during COVID lockdown under Payment of Wages Act 1936.",
+    "expected_issue_ids": [
+      "unpaid_wages",
+      "delayed_wages"
+    ],
+    "expected_acts": [
+      "Payment of Wages Act, 1936",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "5",
+      "15",
+      "art_7"
+    ],
+    "legal_applicability_analysis": "Pre-Code on Wages dispute: governed substantively by Payment of Wages Act 1936 Section 15. Article 7 Limitation Act provides 3-year limitation from due date.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2347"
+    ],
+    "expected_portals": [
+      "samadhan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Occurred in 2020 prior to Code on Wages full implementation."
+  },
+  {
+    "test_id": "WW30",
+    "domain": "workplace_wage",
+    "category": "historical",
+    "scenario": "In 2019, an employee left after 7 years continuous service and employer withheld gratuity under Payment of Gratuity Act 1972.",
+    "expected_issue_ids": [
+      "gratuity_withheld_past_5_years_service",
+      "gratuity_withholding_dispute"
+    ],
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "legal_applicability_analysis": "Historical gratuity claims are governed by Section 4 and Section 7 Payment of Gratuity Act 1972.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1498"
+    ],
+    "expected_portals": [
+      "samadhan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Governed by legacy Payment of Gratuity Act 1972."
+  },
+  {
+    "test_id": "CD01",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A software development vendor signed a contract and accepted Rs 2 lakhs advance to deliver an e-commerce website within 60 days, but failed to deliver any code or deliverables and refuses to refund the advance.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "advance_deposit_forfeiture_dispute"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "73",
+      "37",
+      "art_55"
+    ],
+    "legal_applicability_analysis": "Section 37 Contract Act mandates performance; Section 73 provides compensation for breach; Article 55 Limitation Act gives 3-year limitation period.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD02",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "My landlord refuses to refund my security deposit of Rs 1,00,000 after I peacefully vacated the rental apartment in good condition, claiming arbitrary painting and deep-cleaning deductions without providing any repair bills.",
+    "expected_issue_ids": [
+      "tenancy_security_deposit_unlawful_deduction",
+      "landlord_security_deposit_withheld_unjustly",
+      "security_deposit_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "108",
+      "73",
+      "art_113"
+    ],
+    "legal_applicability_analysis": "Section 108 Transfer of Property Act 1882 requires lessor to ensure peaceful enjoyment and refund deposit upon quiet vacation. Deductions for normal wear and tear are unlawful. Recovery suit within 3 years under Article 113.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2338",
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD03",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "I completed a website redesign as a freelance developer and delivered all assets to a corporate client who approved the work in writing, but has refused to pay my final invoice of Rs 80,000 for 4 months.",
+    "expected_issue_ids": [
+      "freelance_software_developer_invoice_nonpayment",
+      "freelance_vendor_non_payment"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "73",
+      "70",
+      "art_55"
+    ],
+    "legal_applicability_analysis": "Section 70 Contract Act (quantum meruit) and Section 73 apply for recovery of unpaid invoices for accepted services, with 3-year limitation under Article 55.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa",
+      "msme_samadhaan"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD04",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A wedding photography company accepted an advance booking token of Rs 40,000 under a written agreement, but failed to attend the wedding event, causing huge distress and loss.",
+    "expected_issue_ids": [
+      "event_wedding_vendor_cancellation_default",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73",
+      "74",
+      "55"
+    ],
+    "legal_applicability_analysis": "Section 55 Contract Act applies where time is of the essence; vendor failure to attend gives the injured party the right to full advance refund and damages under Section 73.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD05",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A commercial tenant subleased the rented shop premises to a third party without the landlord's written consent, directly violating Clause 8 of the registered lease agreement.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "commercial_lease_lock_in_penalty_dispute"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "108",
+      "111",
+      "73"
+    ],
+    "legal_applicability_analysis": "Unauthorized subletting violates Section 108(j) TP Act where restricted by contract, entitling the lessor to forfeiture of lease under Section 111(g) and damages under Section 73 Contract Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2338"
+    ],
+    "expected_portals": [
+      "ecourts_services"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD06",
+    "domain": "contractual_disputes",
+    "category": "straightforward",
+    "scenario": "A borrower who took a personal loan of Rs 3 lakhs under a written promissory note and loan agreement defaulted on repayment instalments and refuses to pay the outstanding balance.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "37",
+      "73",
+      "art_55"
+    ],
+    "legal_applicability_analysis": "Section 37 Contract Act obligates borrower to repay; Section 73 gives right to damages/interest; civil summary suit under Order 37 CPC within 3 years under Article 55.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD07",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "A business owner induced me to purchase a restaurant franchise for Rs 10 lakhs by presenting falsified audited financial statements and inflated monthly revenue numbers.",
+    "expected_issue_ids": [
+      "misrepresentation_of_franchise_business_profits",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "17",
+      "18",
+      "19"
+    ],
+    "legal_applicability_analysis": "Fraudulent inducement and false profit representations make the agreement voidable under Sections 17, 18, and 19 Indian Contract Act, entitling the deceived party to rescission and damages.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD08",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "A client terminated our 2-year annual maintenance contract abruptly after 4 months without serving the mandatory 60 days written termination notice specified in the agreement.",
+    "expected_issue_ids": [
+      "unilateral_contract_termination",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "39",
+      "73"
+    ],
+    "legal_applicability_analysis": "Premature unilateral termination without agreed notice is anticipatory breach under Section 39 Contract Act, making client liable for lost profits during the notice period under Section 73.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD09",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "A client issued a cheque for Rs 3,50,000 towards an unpaid service contract invoice. When presented, the bank returned it with a dishonour memo stating funds insufficient.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "139",
+      "142",
+      "143A"
+    ],
+    "legal_applicability_analysis": "Section 138 NI Act criminalizes cheque dishonour (up to 2 years imprisonment / 2x fine). Section 142 mandates 30-day legal notice, 15-day cure period, and 30-day complaint timeline. Interim compensation up to 20% under Section 143A.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD10",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "A buyer paid 90% of the agreed purchase price for commercial land under a registered sale agreement, but the seller refuses to execute the final registered sale deed.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Specific Relief Act, 1963",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "10",
+      "20",
+      "37"
+    ],
+    "legal_applicability_analysis": "Following the 2018 amendment to Section 10 Specific Relief Act 1963, specific performance of a contract is mandatory for courts, subject only to limited exceptions.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1583"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD11",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "A partner in a registered commercial partnership firm siphoned partnership funds into his personal bank account and refuses to share financial accounts or profits.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "73",
+      "316"
+    ],
+    "legal_applicability_analysis": "Breach of partnership agreement under Contract Act Section 73, accompanied by criminal breach of trust under Section 316 BNS for dishonest misappropriation of partnership property.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "mca_portal"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD12",
+    "domain": "contractual_disputes",
+    "category": "moderately_complex",
+    "scenario": "Two business parties entered into an oral contract for wholesale grain supply witnessed by brokers with part payment made via bank transfer, but seller denies any contract existed.",
+    "expected_issue_ids": [
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Sale of Goods Act, 1930"
+    ],
+    "expected_sections": [
+      "10",
+      "37",
+      "57"
+    ],
+    "legal_applicability_analysis": "Section 10 Contract Act recognizes oral agreements as legally valid if supported by mutual consent, lawful consideration, and capacity. Section 57 Sale of Goods Act provides damages for non-delivery.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/2390"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD13",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A borrower was coerced by an unauthorized moneylender into signing blank stamp papers and property deeds under threat of violence to his family.",
+    "expected_issue_ids": [
+      "coercion_duress_agreement_dispute",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "15",
+      "19",
+      "351"
+    ],
+    "legal_applicability_analysis": "Agreements procured through threat of criminal injury constitute coercion under Section 15 Contract Act, making contract voidable under Section 19. Extortionate threats violate Section 351 BNS.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/20062"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD14",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A creditor is attempting to initiate a civil money recovery lawsuit against a vendor for an unpaid invoice dated 6 years ago, without any intervening written acknowledgement of debt.",
+    "expected_issue_ids": [
+      "time_barred_debt_written_promise_breach",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Limitation Act, 1963",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "3",
+      "art_55",
+      "25"
+    ],
+    "legal_applicability_analysis": "Section 3 Limitation Act 1963 bars suits instituted after the prescribed period. Under Schedule Article 55, the limitation period for breach of contract is 3 years. Unless a fresh written promise exists under Section 25(3) Contract Act, the claim is time-barred.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1566",
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD15",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A commercial landlord locked out a retail store tenant overnight and changed padlocks without serving any statutory 15 days written notice to quit under Section 106 of the Transfer of Property Act.",
+    "expected_issue_ids": [
+      "commercial_lease_lock_in_penalty_dispute",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "106",
+      "108",
+      "73"
+    ],
+    "legal_applicability_analysis": "Section 106 TP Act requires mandatory 15-day notice to quit. Forcible extra-judicial eviction violates lessee's right to quiet enjoyment under Section 108(c) TP Act.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2338"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD16",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "An interior decorator took an advance of Rs 4,00,000 for home renovation, demolished kitchen walls, and abandoned the project midway without completing the work or returning the balance.",
+    "expected_issue_ids": [
+      "interior_decorator_abandoning_renovation_advance",
+      "interior_contractor_midway_abandonment"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Specific Relief Act, 1963"
+    ],
+    "expected_sections": [
+      "73",
+      "20",
+      "39"
+    ],
+    "legal_applicability_analysis": "Section 39 Contract Act applies for anticipatory breach; Section 20 Specific Relief Act allows substituted performance through third parties at contractor's cost.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/1583"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD17",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "A registered MSME supplier provided industrial auto components worth Rs 8 lakhs to a large corporate manufacturer under an accepted purchase order, but payment has been delayed for 90 days.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment",
+      "breach_of_contract"
+    ],
+    "expected_acts": [
+      "Micro, Small and Medium Enterprises Development Act, 2006",
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "15",
+      "16",
+      "18"
+    ],
+    "legal_applicability_analysis": "Section 15 MSMED Act 2006 mandates payment within 45 days. Section 16 mandates compound interest at 3 times RBI bank rate. Section 18 provides reference to MSME Facilitation Council.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2012"
+    ],
+    "expected_portals": [
+      "msme_samadhaan",
+      "ecourts_services"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD18",
+    "domain": "contractual_disputes",
+    "category": "complex",
+    "scenario": "An employer filed a civil suit demanding Rs 10 lakhs in liquidated damages from an ex-employee based on a 2-year non-compete clause in the employment contract preventing them from joining any competing software firm.",
+    "expected_issue_ids": [
+      "non_compete_clause_employment_trade_restraint",
+      "non_compete_clause_dispute"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27",
+      "74"
+    ],
+    "legal_applicability_analysis": "Section 27 Indian Contract Act 1872 provides that every agreement by which anyone is restrained from exercising a lawful profession, trade, or business is to that extent void. Post-termination non-compete clauses are strictly void under Supreme Court law (Percept D'Mark v. Zaheer Khan).",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD19",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "A friend and I discussed over coffee that we might collaborate on a startup project someday.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Casual informal conversation without intention to create legal relations, consideration, or definite offer and acceptance. Fails contract definition under Section 10 Contract Act.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD20",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "I received a brochure from a vendor advertising their commercial prices.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "An invitation to offer is not an enforceable contract. No contractual breach exists.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD21",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "I think agreements should always be written in blue ink.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Stylistic opinion lacking any dispute or legal claim. Safe fallback required.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD22",
+    "domain": "contractual_disputes",
+    "category": "ambiguous",
+    "scenario": "Someone told me that contracts are important for business.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "General philosophical statement without factual dispute. Safe fallback required.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD23",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Contract was broken.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Missing terms, parties, nature of breach, dates, and relief sought.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD24",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "I signed an agreement.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Signing an agreement is normal conduct. Fails to describe any grievance or violation.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD25",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Deposit money dispute.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Lacks lease particulars, deposit sum, landlord actions, or reasons for dispute.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD26",
+    "domain": "contractual_disputes",
+    "category": "incomplete",
+    "scenario": "Client did not pay my design invoice.",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Bare assertion lacking contract terms, deliverables, invoice dates, and amounts.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD27",
+    "domain": "contractual_disputes",
+    "category": "misleading_adversarial",
+    "scenario": "A freelance client delayed payment of my Rs 5,000 design invoice by 2 hours past 5 PM, so I want to file an FIR against the client for violent robbery and kidnapping.",
+    "expected_issue_ids": [
+      "freelance_vendor_non_payment",
+      "freelance_software_developer_invoice_nonpayment"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "legal_applicability_analysis": "Adversarial framing attempting to convert a minor commercial payment delay into violent criminal felonies. Must be routed under civil breach of contract Section 73.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services",
+      "nalsa"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD28",
+    "domain": "contractual_disputes",
+    "category": "misleading_adversarial",
+    "scenario": "I signed a contract agreeing to pay Rs 10,000 monthly rent and I paid it on time, how do I take legal action against the landlord for taking my money?",
+    "expected_issue_ids": [],
+    "expected_acts": [],
+    "expected_sections": [],
+    "legal_applicability_analysis": "Full mutual contractual performance without injury. Frivolous query.",
+    "official_sources": [],
+    "expected_portals": [],
+    "should_trigger_fallback": true,
+    "is_historical": false,
+    "historical_notes": null
+  },
+  {
+    "test_id": "CD29",
+    "domain": "contractual_disputes",
+    "category": "historical",
+    "scenario": "In 2017, a business client issued a cheque of Rs 2 lakhs that was dishonoured for insufficient funds, and a statutory demand notice was dispatched under Section 138 of the Negotiable Instruments Act 1881.",
+    "expected_issue_ids": [
+      "cheque_bounce_statutory_notice_138"
+    ],
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "legal_applicability_analysis": "Historical cheque bounce governed by Section 138 NI Act 1881. Interim compensation under Section 143A (inserted via 2018 amendment) applies prospectively only.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Originated in 2017 prior to 2018 NI Act amendment inserting Section 143A."
+  },
+  {
+    "test_id": "CD30",
+    "domain": "contractual_disputes",
+    "category": "historical",
+    "scenario": "In 2016, a vendor failed to deliver raw materials under a commercial contract, and suit for damages was filed under Section 73 of the Indian Contract Act 1872.",
+    "expected_issue_ids": [
+      "breach_of_contract",
+      "commercial_vendor_raw_material_delivery_default"
+    ],
+    "expected_acts": [
+      "Indian Contract Act, 1872",
+      "Limitation Act, 1963"
+    ],
+    "expected_sections": [
+      "73",
+      "art_55"
+    ],
+    "legal_applicability_analysis": "Historical commercial contract breach governed by Indian Contract Act 1872 Section 73 and Limitation Act 1963 Schedule Article 55.",
+    "official_sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2187"
+    ],
+    "expected_portals": [
+      "ecourts_services"
+    ],
+    "should_trigger_fallback": false,
+    "is_historical": true,
+    "historical_notes": "Historical commercial breach under Indian Contract Act 1872."
+  }
+]

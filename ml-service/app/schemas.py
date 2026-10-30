@@ -130,6 +130,30 @@ class LegalProvision(BaseModel):
         description="Layer B — human-curated issue-to-provision rationale."
     )
     official_source: OfficialSource
+    relevance_classification: str = Field(
+        default="DIRECTLY_APPLICABLE",
+        description="Statutory relevance: DIRECTLY_APPLICABLE | CONDITIONALLY_APPLICABLE | PROCEDURAL_PROVISION | SUPPORTING_PROVISION | NOT_APPLICABLE"
+    )
+    applicable_legal_elements: List[str] = Field(
+        default_factory=list,
+        description="Essential statutory ingredients evaluated against the scenario facts."
+    )
+    applicability_conditions: List[str] = Field(
+        default_factory=list,
+        description="Legal predicates required for this provision to apply."
+    )
+    missing_facts: List[str] = Field(
+        default_factory=list,
+        description="Critical factual particulars not yet disclosed by citizen."
+    )
+    exceptions: List[str] = Field(
+        default_factory=list,
+        description="Statutory exceptions or legal defenses that may negate liability."
+    )
+    verification_status: str = Field(
+        default="verified",
+        description="Official legislative verification status: verified | pending_verification"
+    )
 
 
 class PortalOut(BaseModel):
@@ -150,7 +174,11 @@ class AnalyzeResponse(BaseModel):
     low_confidence_warning: bool = False
     needs_clarification: bool = False
     clarification_question: Optional[str] = None
+    is_valid_scenario: bool = True
+    fallback_message: Optional[str] = None
+    historical_law_note: Optional[str] = None
     disclaimer: str = DISCLAIMER
+
 
 
 class HealthResponse(BaseModel):

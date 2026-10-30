@@ -9,7 +9,9 @@ export type ConfidenceLabel = "High" | "Medium" | "Low";
 
 export type LegalInformationStatus =
   | "provisions_available"
-  | "no_verified_provision_available";
+  | "no_verified_provision_available"
+  | "unknown_scenario";
+
 
 export interface DomainAnalysis {
   id: string;
@@ -77,6 +79,8 @@ export interface AnalyzeResponse {
   low_confidence_warning: boolean;
   needs_clarification: boolean;
   clarification_question: string | null;
+  is_valid_scenario?: boolean;
+  fallback_message?: string | null;
   disclaimer: string;
 }
 
