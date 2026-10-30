@@ -109,6 +109,9 @@ class ResponseBuilder:
         intelligence: LegalIntelligenceResult,
         scenario_text: Optional[str] = None,
     ) -> AnalyzeResponse:
+        from app.multilingual import detect_language_and_script
+        lang_info = detect_language_and_script(scenario_text or "")
+
         # Evaluate scenario legitimacy if text is provided
         if scenario_text:
             evaluation = evaluate_scenario(scenario_text, domain_prediction, issue_detection)
@@ -140,6 +143,10 @@ class ResponseBuilder:
                     low_confidence_warning=True,
                     needs_clarification=True,
                     clarification_question=fallback_msg,
+                    detected_language=lang_info.detected_language,
+                    language_confidence=lang_info.language_confidence,
+                    detected_script=lang_info.detected_script,
+                    is_code_mixed=lang_info.is_code_mixed,
                     is_valid_scenario=False,
                     fallback_message=fallback_msg,
                     disclaimer=DISCLAIMER,
@@ -239,6 +246,10 @@ class ResponseBuilder:
             needs_clarification=needs_clarification,
             clarification_question=chosen_clarification,
             historical_law_note=intelligence.historical_law_note,
+            detected_language=lang_info.detected_language,
+            language_confidence=lang_info.language_confidence,
+            detected_script=lang_info.detected_script,
+            is_code_mixed=lang_info.is_code_mixed,
             is_valid_scenario=True,
             fallback_message=None,
             disclaimer=DISCLAIMER,

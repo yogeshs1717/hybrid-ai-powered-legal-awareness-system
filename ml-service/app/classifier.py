@@ -23,6 +23,7 @@ never a fabricated certainty.
 from __future__ import annotations
 
 import hashlib
+import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from pathlib import Path
@@ -85,15 +86,17 @@ class TrainedDomainClassifier(DomainClassifier):
         self._model = joblib.load(model_path)
 
     def predict(self, scenario_text: str) -> DomainPrediction:
-        features = self._vectorizer.transform([preprocess_text(scenario_text)])
+        from app.multilingual import detect_language_and_script
+        lang_info = detect_language_and_script(scenario_text)
+        features = self._vectorizer.transform([preprocess_text(lang_info.canonical_text)])
         probabilities = self._model.predict_proba(features)[0]
         best_index = int(probabilities.argmax())
         predicted_domain = str(self._model.classes_[best_index])
         confidence = float(probabilities[best_index])
 
-        # Statutory boundary disambiguation guardrails
+        # Statutory boundary disambiguation guardrails using canonical representation
         refined_domain, refined_confidence = self._apply_boundary_guardrails(
-            scenario_text, predicted_domain, confidence, probabilities
+            lang_info.canonical_text, predicted_domain, confidence, probabilities
         )
 
         return DomainPrediction(
@@ -194,7 +197,10 @@ class TrainedDomainClassifier(DomainClassifier):
             return "consumer_issues", max(confidence, 0.85)
 
         # 5. Hospital emergency medical negligence vs Traffic Enforcement
-        is_hospital_medical = any(w in s_lower for w in ["hospital emergency", "trauma care", "medical negligence", "doctor refused", "patient death due to delayed trauma"])
+        is_hospital_medical = (
+            any(w in s_lower for w in ["hospital emergency", "trauma care", "medical negligence", "doctor refused", "patient death due to delayed trauma"])
+            and not any(w in s_lower for w in ["challan", "police", "breathalyzer", "drunk driving", "ಸಂಚಾರ ಪೊಲೀಸರು", "ಬ್ರೀತ್‌ಅನಲೈಜರ್", "ಚಲನ್", "ಚಲನ್‌", "ಟ್ರಾಫಿಕ್", "चालान", "पुलिस", "गाड़ी"])
+        )
         if predicted_domain == "traffic_enforcement" and is_hospital_medical:
             return "consumer_issues", max(confidence, 0.85)
 
@@ -240,6 +246,57 @@ class TrainedDomainClassifier(DomainClassifier):
         is_motorcycle_carrying = any(phrase in s_lower for phrase in ["carrying two adult passengers", "totaling three people on a standard motorcycle", "triple riding on motorcycle", "three persons on motorcycle"])
         if is_motorcycle_carrying:
             return "traffic_enforcement", max(confidence, 0.90)
+
+        # 11. Cheque bounce / dishonour vs Cyber Crime or Consumer
+        is_cheque_bounce = (
+            any(w in s_lower for w in [
+                "cheque bounce", "cheque dishonour", "section 138",
+                "ಚೆಕ್ ಬೌನ್ಸ್", "ಖಾತೆಯಲ್ಲಿ ಹಣವಿಲ್ಲದೆ", "ಖಾತೆಯಲ್ಲಿ ಸಾಕಷ್ಟು ಹಣವಿಲ್ಲ",
+                "चेक बाउंस", "चेक अनादर", "पर्याप्त राशि न होने"
+            ])
+            or (any(w in s_lower for w in ["cheque", "ಚೆಕ್", "चेक"]) and any(w in s_lower for w in ["bounce", "dishonour", "ಬೌನ್ಸ್", "बाउंस", "insufficient funds", "138"]))
+        )
+        if predicted_domain in ("cyber_fraud", "consumer_issues") and is_cheque_bounce:
+            return "contractual_disputes", max(confidence, 0.90)
+
+        # 12. E-commerce cancellation & refund denial vs Cyber Crime
+        is_ecommerce_refund_denial = (
+            any(w in s_lower for w in [
+                "order cancel", "stock out", "out of stock",
+                "ಇ-ಕಾಮರ್ಸ್", "ಆರ್ಡರ್ ರದ್ದು", "ಮರುಪಾವತಿಸಿಲ್ಲ",
+                "ई-कॉमर्स", "ऑर्डर रद्द", "रिफंड नहीं", "रिफंड देने से मना",
+                "cancelled my paid order", "ecommerce platform cancelled", "merchant cancelled order"
+            ])
+            and not any(w in s_lower for w in ["otp", "phish", "hacked", "scammer", "digital arrest", "telegram job", "cbi"])
+        )
+        if predicted_domain in ("cyber_fraud", "contractual_disputes") and is_ecommerce_refund_denial:
+            return "consumer_issues", max(confidence, 0.90)
+
+        # 13. Broadband / ISP service deficiency vs Workplace
+        is_broadband_isp = (
+            (
+                any(w in s_lower for w in [
+                    "broadband", "optical fiber", "internet outage", "broadband provider",
+                    "ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್", "ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ", "ಇಂಟರ್ನೆಟ್ ಕಡಿತ",
+                    "ब्रॉडबैंड", "इंटरनेट बंद", "इंटरनेट कनेक्शन"
+                ])
+                or bool(re.search(r"\bisp\b", s_lower))
+            )
+            and not any(w in s_lower for w in ["salary", "wage", "ವೇತನ", "ಸಂಬಳ", "epfo", "gratuity", "harassment", "posh", "tanakhwah", "tankhwah", "rent", "landlord", "flat", "ಬಾಡಿಗೆ", "किराया", "ಮನೆ ಮಾಲೀಕ"])
+        )
+        if predicted_domain in ("workplace_wage", "cyber_fraud") and is_broadband_isp:
+            return "consumer_issues", max(confidence, 0.90)
+
+        # 14. Drunk driving breathalyzer dispute vs Other
+        is_breathalyzer_dispute = (
+            any(w in s_lower for w in [
+                "breathalyzer", "drunk driving", "ಕುಡಿದು ವಾಹನ ಚಾಲನೆ", "ಬ್ರೀತ್‌ಅನಲೈಜರ್",
+                "शराब पीकर गाड़ी", "ब्रेथ एनालाइजर"
+            ])
+            and any(w in s_lower for w in ["challan", "police", "ಚಲನ್", "ಚಲನ್‌", "ಪೊಲೀಸ್", "चालान", "पुलिस"])
+        )
+        if predicted_domain != "traffic_enforcement" and is_breathalyzer_dispute:
+            return "traffic_enforcement", max(confidence, 0.92)
 
         return predicted_domain, confidence
 

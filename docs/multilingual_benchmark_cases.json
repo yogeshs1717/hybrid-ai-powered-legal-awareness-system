@@ -1,0 +1,4042 @@
+[
+  {
+    "test_id": "MB_EN_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "Someone called me posing as a bank executive and asked for the OTP sent to my phone, and 50000 was debited immediately."
+  },
+  {
+    "test_id": "MB_KN_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "ಯಾರೋ ಬ್ಯಾಂಕ್ ಅಧಿಕಾರಿ ಎಂದು ಕರೆ ಮಾಡಿ ನನ್ನ ಮೊಬೈಲ್‌ಗೆ ಬಂದ ಒಟಿಪಿ ಪಡೆದುಕೊಂಡರು ಮತ್ತು ತಕ್ಷಣವೇ 50000 ಹಣ ಕಡಿತವಾಯಿತು."
+  },
+  {
+    "test_id": "MB_HI_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "किसी ने बैंक अधिकारी बनकर फोन किया और फोन पर आया ओटीपी पूछा, और तुरंत खाते से 50000 रुपये कट गए।"
+  },
+  {
+    "test_id": "MB_KNL_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "Yaaro bank manager antha call madi OTP kedi nan account inda 50000 duddu cut madiddare."
+  },
+  {
+    "test_id": "MB_HIL_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "Kisi ne bank manager ban kar call kiya aur OTP manga fir account se 50000 kat gaye."
+  },
+  {
+    "test_id": "MB_KN_EN_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "One fraudster called claiming to be from SBI bank KYC, asked for OTP and immediately account inda 50000 debit aagide."
+  },
+  {
+    "test_id": "MB_HI_EN_CF01",
+    "parallel_group_id": "GRP_CF01",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "A fake caller claiming to be from HDFC fraud department asked for OTP and within minutes mere account se 50000 kat gaye."
+  },
+  {
+    "test_id": "MB_EN_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Money was deducted from my bank account in an unauthorized transaction without my permission or sharing any OTP."
+  },
+  {
+    "test_id": "MB_KN_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "ನನ್ನ ಅನುಮತಿ ಅಥವಾ ಯಾವುದೇ ಒಟಿಪಿ ಹಂಚಿಕೊಳ್ಳದೆ ನನ್ನ ಬ್ಯಾಂಕ್ ಖಾತೆಯಿಂದ ಅನಧಿಕೃತವಾಗಿ ಹಣ ಕಡಿತವಾಗಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "मेरी अनुमति या कोई ओटीपी साझा किए बिना मेरे बैंक खाते से अनधिकृत तरीके से पैसे काट लिए गए।"
+  },
+  {
+    "test_id": "MB_KNL_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Nanna bank account inda permission illade athava yavude OTP share madade unauthorized debit aagide."
+  },
+  {
+    "test_id": "MB_HIL_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Mere bank account se bina meri permission ya koi OTP share kiye unauthorized debit ho gaya hai."
+  },
+  {
+    "test_id": "MB_KN_EN_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Without my permission or OTP sharing, nan bank account inda unauthorized transaction aagi 25000 deduct aagide."
+  },
+  {
+    "test_id": "MB_HI_EN_CF02",
+    "parallel_group_id": "GRP_CF02",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Without my consent or OTP, mere bank account se midnight ko unauthorized electronic debit ho gaya."
+  },
+  {
+    "test_id": "MB_EN_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "A buyer on OLX asked me to scan a QR code to receive money, but as soon as I scanned it, money was debited from my UPI."
+  },
+  {
+    "test_id": "MB_KN_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "ಒಎಲ್‌ಎಕ್ಸ್‌ನಲ್ಲಿ ಖರೀದಿದಾರರು ಹಣ ಸ್ವೀಕರಿಸಲು ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ಹೇಳಿದರು, ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ತಕ್ಷಣ ನನ್ನ ಯುಪಿಐನಿಂದ ಹಣ ಕಡಿತವಾಯಿತು."
+  },
+  {
+    "test_id": "MB_HI_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "ओएलएक्स पर एक खरीदार ने पैसे पाने के लिए क्यूआर कोड स्कैन करने को कहा, लेकिन स्कैन करते ही मेरे यूपीआई से पैसे कट गए।"
+  },
+  {
+    "test_id": "MB_KNL_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "OLX buyer duddu receive madoke QR scan madi antha helidru scan madi nan UPI inda duddu cut aagide."
+  },
+  {
+    "test_id": "MB_HIL_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "OLX buyer ne paise bhejne ke liye QR code bheja bola scan karo par scan karte hi UPI se paise kat gaye."
+  },
+  {
+    "test_id": "MB_KN_EN_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "OLX buyer sent a QR code to receive payment, scan madidmele UPI wallet inda 15000 debit aagide."
+  },
+  {
+    "test_id": "MB_HI_EN_CF03",
+    "parallel_group_id": "GRP_CF03",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "OLX buyer told me to scan QR to receive advance, par QR scan karte hi mere Google Pay se paise deduct ho gaye."
+  },
+  {
+    "test_id": "MB_EN_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "Scammers posing as CBI officers put me under digital arrest via video call and extorted Rs 3 lakhs under threat of arrest."
+  },
+  {
+    "test_id": "MB_KN_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "ಸಿಬಿಐ ಅಧಿಕಾರಿಗಳು ಎಂದು ನಟಿಸಿದ ವಂಚಕರು ವಿಡಿಯೋ ಕಾಲ್ ಮೂಲಕ ಡಿಜಿಟಲ್ ಅರೆಸ್ಟ್ ಹೆಸರಿನಲ್ಲಿ 3 ಲಕ್ಷ ರೂಪಾಯಿ ಸುಲಿಗೆ ಮಾಡಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "सीबीआई अधिकारी बनकर धोखेबाजों ने वीडियो कॉल पर डिजिटल अरेस्ट की धमकी देकर 3 लाख रुपये ऐंठ लिए।"
+  },
+  {
+    "test_id": "MB_KNL_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "CBI police antha video call madi digital arrest warrant torsi 3 lakh rupees extort madiddare."
+  },
+  {
+    "test_id": "MB_HIL_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "CBI officers bankar video call par digital arrest me rakha aur arrest ki dhamki dekar 3 lakh loot liye."
+  },
+  {
+    "test_id": "MB_KN_EN_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "Scammers video call madi police thara fake arrest threats kottu 3 lakhs extortion madiddare."
+  },
+  {
+    "test_id": "MB_HI_EN_CF04",
+    "parallel_group_id": "GRP_CF04",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "Scammers video call par police ban kar digital arrest ki dhamki dekar 3 lakh rupees extort kar liye."
+  },
+  {
+    "test_id": "MB_EN_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "I was duped of Rs 2 lakhs in a Telegram part-time job scam promising daily returns for hotel reviews and task investments."
+  },
+  {
+    "test_id": "MB_KN_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "ಹೋಟೆಲ್ ವಿಮರ್ಶೆ ಮತ್ತು ಹೂಡಿಕೆ ಕೆಲಸದ ಹೆಸರಿನಲ್ಲಿ ಟೆಲಿಗ್ರಾಮ್ ಪಾರ್ಟ್ ಟೈಮ್ ಉದ್ಯೋಗ ವಂಚನೆಯಲ್ಲಿ 2 ಲಕ್ಷ ರೂಪಾಯಿ ಕಳೆದುಕೊಂಡಿದ್ದೇನೆ."
+  },
+  {
+    "test_id": "MB_HI_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "होटल रिव्यू और टास्क इन्वेस्टमेंट के नाम पर टेलीग्राम पार्ट टाइम जॉब घोटाले में मुझसे 2 लाख रुपये ठग लिए गए।"
+  },
+  {
+    "test_id": "MB_KNL_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "Telegram part time job antha hotel rating madi daily commission kodtivi antha 2 lakh duddu cheat madidare."
+  },
+  {
+    "test_id": "MB_HIL_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "Telegram review task job ke naam par daily profits ka lalach dekar mujhse 2 lakh invest karwake fraud kiya."
+  },
+  {
+    "test_id": "MB_KN_EN_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "Joined a Telegram work from home job for YouTube likes, but prepaid task scam nalli 2 lakhs cheat aagide."
+  },
+  {
+    "test_id": "MB_HI_EN_CF05",
+    "parallel_group_id": "GRP_CF05",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "Lured into a Telegram part time job for Google reviews, task investment ke chakkar me 2 lakhs loot liye."
+  },
+  {
+    "test_id": "MB_EN_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "The brand new refrigerator I purchased was delivered with a broken compressor, and the company refuses refund or replacement."
+  },
+  {
+    "test_id": "MB_KN_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "ನಾನು ಖರೀದಿಸಿದ ಹೊಸ ರೆಫ್ರಿಜರೇಟರ್ ಮುರಿದ ಕಂಪ್ರೆಸರ್‌ನೊಂದಿಗೆ ಬಂದಿದ್ದು, ಕಂಪನಿಯು ಮರುಪಾವತಿ ಅಥವಾ ಬದಲಾವಣೆಯನ್ನು ನಿರಾಕರಿಸಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "मेरे द्वारा खरीदा गया नया फ्रिज खराब कंप्रेसर के साथ आया, और कंपनी पैसे वापस करने या बदलने से इनकार कर रही है।"
+  },
+  {
+    "test_id": "MB_KNL_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "Hosa refrigerator purchase madidde broken compressor delivery aagide company refund athava replace madalla anthare."
+  },
+  {
+    "test_id": "MB_HIL_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "Naya fridge khareeda tha delivery par compressor kharab nikla seller na replace kar raha hai na refund de raha."
+  },
+  {
+    "test_id": "MB_KN_EN_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "Delivered brand new washing machine with defective motor, showroom replacement kooda kodalla refund kooda illa."
+  },
+  {
+    "test_id": "MB_HI_EN_CI01",
+    "parallel_group_id": "GRP_CI01",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "Purchased a brand new television online, delivery ke baad screen broken nikla and seller refuses refund under consumer law."
+  },
+  {
+    "test_id": "MB_EN_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "An optical fiber broadband company took full annual advance payment but failed to resolve 20 days of complete internet outage."
+  },
+  {
+    "test_id": "MB_KN_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "ಆಪ್ಟಿಕಲ್ ಫೈಬರ್ ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್ ಕಂಪನಿಯು ಪೂರ್ಣ ವಾರ್ಷಿಕ ಮುಂಗಡ ಪಡೆದರೂ 20 ದಿನಗಳ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಕಡಿತವನ್ನು ಸರಿಪಡಿಸಿಲ್ಲ."
+  },
+  {
+    "test_id": "MB_HI_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "ब्रॉडबैंड कंपनी ने पूरे साल का एडवांस पेमेंट ले लिया लेकिन 20 दिनों से इंटरनेट बंद होने पर भी कोई समाधान नहीं किया।"
+  },
+  {
+    "test_id": "MB_KNL_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Broadband optical fiber company full advance pay madidru 20 days inda internet outage resolve madilla deficiency."
+  },
+  {
+    "test_id": "MB_HIL_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Fiber broadband connection ka full year advance liya par 20 din se internet band hai service deficiency."
+  },
+  {
+    "test_id": "MB_KN_EN_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Paid annual subscription to broadband ISP, 20 days outage aagidru technician call attend madtilla."
+  },
+  {
+    "test_id": "MB_HI_EN_CI02",
+    "parallel_group_id": "GRP_CI02",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Broadband provider took advance payment, 3 weeks se complete line outage hai and consumer complaint support zero."
+  },
+  {
+    "test_id": "MB_EN_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "An e-commerce website cancelled my paid order citing stock out but has refused to refund my Rs 12000 for over two months."
+  },
+  {
+    "test_id": "MB_KN_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "ಇ-ಕಾಮರ್ಸ್ ವೆಬ್‌ಸೈಟ್ ಸ್ಟಾಕ್ ಇಲ್ಲ ಎಂದು ನನ್ನ ಆರ್ಡರ್ ರದ್ದುಗೊಳಿಸಿದೆ ಆದರೆ ಎರಡು ತಿಂಗಳು ಕಳೆದರೂ ನನ್ನ 12000 ರೂಪಾಯಿ ಮರುಪಾವತಿಸಿಲ್ಲ."
+  },
+  {
+    "test_id": "MB_HI_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "ई-कॉमर्स वेबसाइट ने स्टॉक न होने का हवाला देकर मेरा ऑर्डर रद्द कर दिया लेकिन दो महीने बाद भी मेरे 12000 रुपये रिफंड नहीं किए।"
+  },
+  {
+    "test_id": "MB_KNL_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "E-commerce app nalli order cancel madi stock illa antha helidru 2 months aagidru 12000 refund kodtilla."
+  },
+  {
+    "test_id": "MB_HIL_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Ecommerce website ne order cancel kar diya par do mahine se mera 12000 ka refund atka kar rakha hai."
+  },
+  {
+    "test_id": "MB_KN_EN_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "E-commerce platform cancelled electronic item order, 2 months aagidru 12000 refund denial madi harassment."
+  },
+  {
+    "test_id": "MB_HI_EN_CI03",
+    "parallel_group_id": "GRP_CI03",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Merchant cancelled order due to out of stock, par 12000 rupees refund dene se mana kar diya unfair trade practice."
+  },
+  {
+    "test_id": "MB_EN_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "A private hospital doctor left a surgical sponge inside patient abdomen during surgery causing severe infection and emergency re-operation."
+  },
+  {
+    "test_id": "MB_KN_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "ಖಾಸಗಿ ಆಸ್ಪತ್ರೆಯ ವೈದ್ಯರು ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ಸಮಯದಲ್ಲಿ ರೋಗಿಯ ಹೊಟ್ಟೆಯೊಳಗೆ ಸ್ಪಾಂಜ್ ಬಿಟ್ಟು ತೀವ್ರ ಸೋಂಕು ಮತ್ತು ಮರು-ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಗೆ ಕಾರಣರಾಗಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "निजी अस्पताल के डॉक्टर ने सर्जरी के दौरान मरीज के पेट में सर्जिकल स्पंज छोड़ दिया जिससे गंभीर संक्रमण हो गया।"
+  },
+  {
+    "test_id": "MB_KNL_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Private hospital doctor surgery maduvaaga sponge stomach olage bittu infection aagi emergency re-operation aagide."
+  },
+  {
+    "test_id": "MB_HIL_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Private hospital me doctor ne surgery ke waqt pet me sponge chhod diya severe infection hua medical negligence."
+  },
+  {
+    "test_id": "MB_KN_EN_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Doctor surgery maduvaga abdominal cavity nalli surgical sponge bittidare severe infection emergency deficiency."
+  },
+  {
+    "test_id": "MB_HI_EN_CI04",
+    "parallel_group_id": "GRP_CI04",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Hospital doctor ne operation ke dauran pet me sponge chhod diya severe infection hua medical negligence case."
+  },
+  {
+    "test_id": "MB_EN_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "A coaching institute promised 100% money back job placement guarantee in television ads but refused refund when no placement was provided."
+  },
+  {
+    "test_id": "MB_KN_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "ಕೋಚಿಂಗ್ ಸಂಸ್ಥೆಯು ಟಿವಿ ಜಾಹೀರಾತುಗಳಲ್ಲಿ 100% ಉದ್ಯೋಗ ಅಥವಾ ಹಣ ವಾಪಸ್ ಭರವಸೆ ನೀಡಿ ಉದ್ಯೋಗ ಸಿಗದಿದ್ದಾಗ ಮರುಪಾವತಿ ನಿರಾಕರಿಸಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "कोचिंग संस्थान ने विज्ञापनों में 100% नौकरी या पैसे वापसी की गारंटी दी थी लेकिन नौकरी न मिलने पर रिफंड देने से मना कर दिया।"
+  },
+  {
+    "test_id": "MB_KNL_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Coaching institute ads nalli 100% job placement guarantee kottidru placement agilla refund kooda kodalla anthare."
+  },
+  {
+    "test_id": "MB_HIL_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Coaching institute ne 100% placement guarantee ka jhootha ad dikhaya par job nahi mili aur refund bhi reject kar diya."
+  },
+  {
+    "test_id": "MB_KN_EN_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "EdTech coaching 100% job placement guarantee antha ad kottu, placement illa refund kooda kodalla anthare."
+  },
+  {
+    "test_id": "MB_HI_EN_CI05",
+    "parallel_group_id": "GRP_CI05",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Coaching institute ne advertisement me 100% job placement guarantee diya tha par ab fees refund nahi de rahe."
+  },
+  {
+    "test_id": "MB_EN_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "An automated traffic camera issued me an e-challan for driving without helmet even though the photo clearly shows I was wearing an ISI helmet."
+  },
+  {
+    "test_id": "MB_KN_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "ನಾನು ಐಎಸ್‌ಐ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿದ್ದರೂ ಸಂಚಾರ ಕ್ಯಾಮೆರಾ ಹೆಲ್ಮೆಟ್ ಇಲ್ಲದೆ ವಾಹನ ಚಲಾಯಿಸಿದ್ದಕ್ಕಾಗಿ ತಪ್ಪು ಇ-ಚಲನ್ ನೀಡಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "मैंने आईएसआई मार्क वाला हेलमेट पहना हुआ था, फिर भी ट्रैफिक कैमरे ने बिना हेलमेट का गलत ई-चालान भेज दिया।"
+  },
+  {
+    "test_id": "MB_KNL_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Naanu ISI helmet dharisidru traffic camera invalid e-challan issue madide photo nalli helmet clearly kanstide."
+  },
+  {
+    "test_id": "MB_HIL_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Maine ISI helmet pehna tha fir bhi traffic camera ne bina helmet ka 1000 rupaye ka galat e-challan bhej diya."
+  },
+  {
+    "test_id": "MB_KN_EN_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Automated camera sent 1000 rupees fine, photo clearly shows ISI helmet dharisidde grievance appeal madbeku."
+  },
+  {
+    "test_id": "MB_HI_EN_TE01",
+    "parallel_group_id": "GRP_TE01",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Challan issued under Section 194D for no helmet, par photo proof me helmet visible hai challenge karna hai."
+  },
+  {
+    "test_id": "MB_EN_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "I entered a one-way street because a traffic police officer in uniform directed all vehicles there due to an accident, but later got an e-challan."
+  },
+  {
+    "test_id": "MB_KN_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "ಅಪಘಾತದ ಕಾರಣ ಸಮವಸ್ತ್ರದಲ್ಲಿದ್ದ ಸಂಚಾರ ಪೊಲೀಸರು ನಿರ್ದೇಶಿಸಿದ್ದರಿಂದ ಒನ್‌ವೇ ಪ್ರವೇಶಿಸಿದೆ, ಆದರೆ ನಂತರ ತಪ್ಪು ಚಲನ್ ಬಂದಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "दुर्घटना के कारण वर्दीधारी ट्रैफिक पुलिसकर्मी ने सभी वाहनों को उस तरफ मोड़ा था, लेकिन बाद में गलत दिशा का चालान आ गया।"
+  },
+  {
+    "test_id": "MB_KNL_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "Traffic police officer uniform nalli road diversion torsidru one-way street ge aadre camera 184 challan kottide."
+  },
+  {
+    "test_id": "MB_HIL_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "Accident ki wajah se police officer ne diversion bataya tha maine turn liya par camera ne wrong-side challan kaat diya."
+  },
+  {
+    "test_id": "MB_KN_EN_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "Road work salvagi traffic cop diversion instructions kottu one-way enter aagidde camera challan wrongful fine."
+  },
+  {
+    "test_id": "MB_HI_EN_TE02",
+    "parallel_group_id": "GRP_TE02",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "Road construction ke chakkar me traffic police ne diversion diya one-way entry hui fir camera challan aa gaya."
+  },
+  {
+    "test_id": "MB_EN_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Traffic police camera issued a fine claiming pillion rider was without helmet, but photo proof clearly shows both rider and pillion wearing helmets."
+  },
+  {
+    "test_id": "MB_KN_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "ಹಿಂಬದಿ ಸವಾರ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿಲ್ಲ ಎಂದು ಸಂಚಾರ ಪೊಲೀಸರು ದಂಡ ವಿಧಿಸಿದ್ದಾರೆ, ಆದರೆ ಫೋಟೋದಲ್ಲಿ ಇಬ್ಬರೂ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿರುವುದು ಸ್ಪಷ್ಟವಾಗಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "ट्रैफिक कैमरे ने पीछे बैठे व्यक्ति पर बिना हेलमेट का जुर्माना लगाया, जबकि फोटो में दोनों हेलमेट पहने साफ दिख रहे हैं।"
+  },
+  {
+    "test_id": "MB_KNL_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Pillion rider helmet dharisilla antha challan kottiddare aadre photo nalli rider matthe pillion ibbru helmet haakiddare."
+  },
+  {
+    "test_id": "MB_HIL_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Pillion rider ke bina helmet ka challan aaya hai jabki camera photo me dono ne helmet pehna hua hai."
+  },
+  {
+    "test_id": "MB_KN_EN_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Fine under Section 194D for pillion passenger, but clear photo proof nalli ibbaru ISI helmets haakiddare."
+  },
+  {
+    "test_id": "MB_HI_EN_TE03",
+    "parallel_group_id": "GRP_TE03",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Pillion rider helmet case me camera challan bheja jabki photo me dono ne ISI certified helmet pehna hua hai."
+  },
+  {
+    "test_id": "MB_EN_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Traffic police demanded Rs 10000 fine for drunk driving without administering any breathalyzer test or medical blood exam."
+  },
+  {
+    "test_id": "MB_KN_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "ಸಂಚಾರ ಪೊಲೀಸರು ಯಾವುದೇ ಬ್ರೀತ್‌ಅನಲೈಜರ್ ಅಥವಾ ವೈದ್ಯಕೀಯ ರಕ್ತ ಪರೀಕ್ಷೆ ಮಾಡದೆ ಕುಡಿದು ವಾಹನ ಚಾಲನೆ ಎಂದು 10000 ದಂಡ ವಿಧಿಸಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "ट्रैफिक पुलिस ने बिना कोई ब्रेथ एनालाइजर या मेडिकल टेस्ट किए शराब पीकर गाड़ी चलाने का 10000 रुपये का चालान काट दिया।"
+  },
+  {
+    "test_id": "MB_KNL_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Traffic police breathalyzer test madade alcohol consume madilla antha helidru 10000 drink and drive fine ಹಾಕಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HIL_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Bina breathalyzer test liye traffic cop ne drink and drive Section 185 ka 10000 ka court challan bana diya."
+  },
+  {
+    "test_id": "MB_KN_EN_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Cop slapped Section 185 drunk driving penalty without breathalyzer test, duddu kelthiddare fine kattalla."
+  },
+  {
+    "test_id": "MB_HI_EN_TE04",
+    "parallel_group_id": "GRP_TE04",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Traffic cop ne bina breathalyzer machine test liye drink and drive ka 10000 challan bana diya paise mang rahe."
+  },
+  {
+    "test_id": "MB_EN_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Received an overspeeding challan claiming 95 km/h in a 60 km/h zone, but my calibrated GPS log proves my speed never exceeded 45 km/h."
+  },
+  {
+    "test_id": "MB_KN_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "60 ಕಿಮೀ ವಲಯದಲ್ಲಿ 95 ಕಿಮೀ ವೇಗದಲ್ಲಿ ಚಲಿಸಿದ್ದೇನೆ ಎಂದು ಅತಿವೇಗ ಚಲನ್ ಬಂದಿದೆ, ಆದರೆ ನನ್ನ ಜಿಪಿಎಸ್ ವೇಗ 45 ಕಿಮೀ ಮೀರಿಲ್ಲ ಎಂದು ತೋರಿಸುತ್ತದೆ."
+  },
+  {
+    "test_id": "MB_HI_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "60 किमी की सीमा वाले क्षेत्र में 95 किमी की गति का ओवरस्पीडिंग चालan भेजा गया, जबकि जीपीएस लॉग के अनुसार गति 45 किमी ही थी।"
+  },
+  {
+    "test_id": "MB_KNL_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Overspeeding challan 95 kmph antha claim madidare aadre nan vehicle GPS log 45 kmph cross madilla radar calibration issue."
+  },
+  {
+    "test_id": "MB_HIL_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Speed camera ne 95 kmph ka overspeeding challan bhej diya jabki meri gaadi ki speed GPS me 45 kmph hi thi."
+  },
+  {
+    "test_id": "MB_KN_EN_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Speed gun faulty reading record madi 95 kmph challan haakidare, car speed 48 kmph cross aagilla."
+  },
+  {
+    "test_id": "MB_HI_EN_TE05",
+    "parallel_group_id": "GRP_TE05",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Flyover par radar speed sensor uncalibrated tha, gaadi 48 kmph par thi par 95 kmph speeding challan bhej diya."
+  },
+  {
+    "test_id": "MB_EN_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "My employer has delayed paying my monthly salary for the past three months without any explanation or notice."
+  },
+  {
+    "test_id": "MB_KN_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "ನನ್ನ ಉದ್ಯೋಗದಾತರು ಯಾವುದೇ ವಿವರಣೆ ಅಥವಾ ಸೂಚನೆಯಿಲ್ಲದೆ ಕಳೆದ ಮೂರು ತಿಂಗಳಿಂದ ನನ್ನ ಮಾಸಿಕ ವೇತನವನ್ನು ನೀಡಿಲ್ಲ."
+  },
+  {
+    "test_id": "MB_HI_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "मेरे नियोक्ता ने बिना किसी स्पष्टीकरण या सूचना के पिछले तीन महीनों से मेरा मासिक वेतन रोक रखा है।"
+  },
+  {
+    "test_id": "MB_KNL_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "Nanna employer yavude reason illade last 3 months inda monthly salary sambala kottilla unpaid dues."
+  },
+  {
+    "test_id": "MB_HIL_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "Company pichle 3 mahine se bina kisi explanation ke meri monthly salary delay kar rahi hai aur paise nahi de rahi."
+  },
+  {
+    "test_id": "MB_KN_EN_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "Employer has delayed wages for three consecutive months, sambala kottilla notice kalisidru no reply."
+  },
+  {
+    "test_id": "MB_HI_EN_WW01",
+    "parallel_group_id": "GRP_WW01",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "Management ne pichle 3 months se salary withhold kar rakhi hai bina kisi notice ke tankhwah nahi di."
+  },
+  {
+    "test_id": "MB_EN_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "My company deducted Rs 8000 from my salary for laptop maintenance without my consent or any clause in the contract."
+  },
+  {
+    "test_id": "MB_KN_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "ನನ್ನ ಒಪ್ಪಂದದಲ್ಲಿ ಯಾವುದೇ ಷರತ್ತು ಇಲ್ಲದಿದ್ದರೂ ಮತ್ತು ನನ್ನ ಒಪ್ಪಿಗೆಯಿಲ್ಲದೆ ಕಂಪನಿಯು ಲ್ಯಾಪ್‌ಟಾಪ್ ನಿರ್ವಹಣೆಗಾಗಿ ವೇತನದಿಂದ 8000 ಕಡಿತ ಮಾಡಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "कंपनी ने बिना मेरी सहमति के और अनुबंध में कोई शर्त न होने पर भी लैपटॉप मेंटेनेंस के नाम पर सैलरी से 8000 काट लिए।"
+  },
+  {
+    "test_id": "MB_KNL_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "Company nan consent illade laptop maintenance antha salary inda 8000 illegal deduction madiddare."
+  },
+  {
+    "test_id": "MB_HIL_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "Bina kisi agreement ya consent ke company ne laptop maintenance ke naam par salary se 8000 kaat liye."
+  },
+  {
+    "test_id": "MB_KN_EN_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "Employer made unauthorized wage deduction of 8000 for office laptop, salary inda cut madiddare Section 7 violation."
+  },
+  {
+    "test_id": "MB_HI_EN_WW02",
+    "parallel_group_id": "GRP_WW02",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "HR arbitrarily deducted 8000 from my pay slip for laptop asset, bina consent ke salary kaat li."
+  },
+  {
+    "test_id": "MB_EN_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "The employer deducted provident fund contributions from my salary slip every month but failed to deposit it into my EPFO account for a year."
+  },
+  {
+    "test_id": "MB_KN_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "ಉದ್ಯೋಗದಾತರು ಪ್ರತಿ ತಿಂಗಳು ಸಂಬಳದಿಂದ ಪಿಎಫ್ ಕಡಿತಗೊಳಿಸಿದ್ದರೂ ಒಂದು ವರ್ಷದಿಂದ ನನ್ನ ಇಪಿಎಫ್‌ಒ ಖಾತೆಗೆ ಜಮಾ ಮಾಡಿಲ್ಲ."
+  },
+  {
+    "test_id": "MB_HI_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "नियोक्ता हर महीने वेतन पर्ची से पीएफ काटता रहा लेकिन एक साल से मेरे ईपीएफओ खाते में जमा नहीं किया।"
+  },
+  {
+    "test_id": "MB_KNL_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "Employer monthly salary inda PF deduct madidare aadre one year aagidru EPFO account ge deposit aagilla."
+  },
+  {
+    "test_id": "MB_HIL_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "Salary slip me PF deduction dikhta hai par employer ne 1 saal se EPFO me PF ka paisa deposit nahi kiya."
+  },
+  {
+    "test_id": "MB_KN_EN_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "PF deducted on monthly payslip, par EPFO UAN passbook nalli zero remittance aagide action under EPF Act."
+  },
+  {
+    "test_id": "MB_HI_EN_WW03",
+    "parallel_group_id": "GRP_WW03",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "Company ne payslip se PF deduct kiya par EPFO account me deposit nahi kiya statutory default."
+  },
+  {
+    "test_id": "MB_EN_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "I resigned after completing six continuous years of service but the employer refuses to disburse my statutory gratuity payment."
+  },
+  {
+    "test_id": "MB_KN_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "ಆರು ವರ್ಷಗಳ ನಿರಂತರ ಸೇವೆ ಪೂರ್ಣಗೊಳಿಸಿ ರಾಜೀನಾಮೆ ನೀಡಿದರೂ ಉದ್ಯೋಗದಾತರು ಶಾಸನಬದ್ಧ ಗ್ರಾಚ್ಯುಟಿ ಪಾವತಿಸಲು ನಿರಾಕರಿಸಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "छह साल लगातार काम करने के बाद मैंने इस्तीफा दिया लेकिन कंपनी मेरी ग्रेच्युटी की रकम देने से इनकार कर रही है।"
+  },
+  {
+    "test_id": "MB_KNL_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "6 years continuous service aagi resign madidmele company statutory gratuity amount release madalla anthare."
+  },
+  {
+    "test_id": "MB_HIL_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "6 saal kaam karke resign kiya par company meri legal gratuity hold karke baithi hai dene se mana kar rahi."
+  },
+  {
+    "test_id": "MB_KN_EN_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "Completed 6 years continuous service, resignation clearance aagidru company gratuity payment release madtilla."
+  },
+  {
+    "test_id": "MB_HI_EN_WW04",
+    "parallel_group_id": "GRP_WW04",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "Full 6 years continuous service ke baad resign kiya par employer gratuity payment release nahi kar raha."
+  },
+  {
+    "test_id": "MB_EN_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "A senior manager subjected a female employee to unwelcome sexual remarks and management refuses to constitute an Internal Committee under POSH."
+  },
+  {
+    "test_id": "MB_KN_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "ಹಿರಿಯ ಮ್ಯಾನೇಜರ್ ಮಹಿಳಾ ಉದ್ಯೋಗಿಗೆ ಲೈಂಗಿಕ ಕಿರುಕುಳ ನೀಡಿದ್ದು, ನಿರ್ವಹಣೆಯು ಪೋಶ್ ಕಾಯ್ದೆಯಡಿ ಆಂತರಿಕ ಸಮಿತಿಯನ್ನು ರಚಿಸಲು ನಿರಾಕರಿಸಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "सीनियर मैनेजर ने महिला कर्मचारी के साथ अनुचित यौन व्यवहार किया और प्रबंधन पॉश कानून के तहत आंतरिक समिति बनाने से मना कर रहा है।"
+  },
+  {
+    "test_id": "MB_KNL_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "Senior manager female employee ge sexual harassment madidru management POSH internal committee constitute madtilla."
+  },
+  {
+    "test_id": "MB_HIL_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "Office me senior manager ne sexually harass kiya aur company POSH committee me complaint lene se mana kar rahi hai."
+  },
+  {
+    "test_id": "MB_KN_EN_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "Male team lead sent vulgar messages to junior woman, management POSH committee nalli complaint register madtilla."
+  },
+  {
+    "test_id": "MB_HI_EN_WW05",
+    "parallel_group_id": "GRP_WW05",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "Senior manager sexually harassed female colleague, company POSH Internal Committee me action lene se mana kar rahi hai."
+  },
+  {
+    "test_id": "MB_EN_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "I vacated the rented apartment and handed over keys, but the landlord refuses to refund my Rs 1 lakh security deposit citing normal wear and tear."
+  },
+  {
+    "test_id": "MB_KN_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "ನಾನು ಬಾಡಿಗೆ ಅಪಾರ್ಟ್‌ಮೆಂಟ್ ಖಾಲಿ ಮಾಡಿ ಬೀಗಗಳನ್ನು ಹಸ್ತಾಂತರಿಸಿದೆ, ಆದರೆ ಸಾಮಾನ್ಯ ಸವೆತದ ನೆಪವೊಡ್ಡಿ ಮನೆ ಮಾಲೀಕರು 1 ಲಕ್ಷ ಠೇವಣಿ ಮರುಪಾವತಿಸಲು ನಿರಾಕರಿಸಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "मैंने किराए का फ्लैट खाली करके चाबियां सौंप दीं, लेकिन मकान मालिक सामान्य टूट-फूट का बहाना बनाकर 1 लाख का सिक्योरिटी डिपॉजिट नहीं लौटा रहा।"
+  },
+  {
+    "test_id": "MB_KNL_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Flat vacate madi keys kottidru landlord normal wear and tear antha heliddu 1 lakh security deposit thevani refund madtilla."
+  },
+  {
+    "test_id": "MB_HIL_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Flat khali kar diya par landlord normal wear tear ka bahana karke mera 1 lakh ka security deposit wapas nahi kar raha."
+  },
+  {
+    "test_id": "MB_KN_EN_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Vacated rental flat in Bengaluru and keys kottidru, landlord 1 lakh security deposit thevani refund madtilla."
+  },
+  {
+    "test_id": "MB_HI_EN_CD01",
+    "parallel_group_id": "GRP_CD01",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Flat vacate karke keys hand over kar di par landlord security deposit ka 1 lakh refund dene se mana kar raha hai."
+  },
+  {
+    "test_id": "MB_EN_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "A business client issued a cheque of Rs 3 lakhs for goods delivered, but the bank returned it dishonoured with memo funds insufficient."
+  },
+  {
+    "test_id": "MB_KN_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "ಸರಕು ಸರಬರಾಜಿಗಾಗಿ ವ್ಯಾಪಾರ ಗ್ರಾಹಕರು 3 ಲಕ್ಷದ ಚೆಕ್ ನೀಡಿದ್ದು, ಖಾತೆಯಲ್ಲಿ ಹಣವಿಲ್ಲ ಎಂದು ಬ್ಯಾಂಕ್ ಚೆಕ್ ಬೌನ್ಸ್ ಮಾಡಿ ವಾಪಸ್ ನೀಡಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "सप्लाई किए गए माल के लिए ग्राहक ने 3 लाख का चेक दिया था, लेकिन बैंक ने खाते में अपर्याप्त राशि का मेमो देकर चेक बाउंस कर दिया।"
+  },
+  {
+    "test_id": "MB_KNL_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "Goods supply madidda client 3 lakh cheque kottidru bank memo funds insufficient antha bounce aagide Section 138 notice."
+  },
+  {
+    "test_id": "MB_HIL_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "Business client ne 3 lakh ka cheque diya tha jo insufficient funds ki wajah se bank se bounce ho gaya Section 138."
+  },
+  {
+    "test_id": "MB_KN_EN_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "Client issued 3 lakhs cheque, insufficient funds antha bank inda bounce aagide Section 138 legal notice kalisbeku."
+  },
+  {
+    "test_id": "MB_HI_EN_CD02",
+    "parallel_group_id": "GRP_CD02",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "Client ne 3 lakh ka cheque diya tha, insufficient funds ki wajah se bounce ho gaya 15 days statutory notice bhejna hai."
+  },
+  {
+    "test_id": "MB_EN_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "A commercial supplier took 50% advance for 1000 units of raw materials but failed to deliver and breached the supply contract."
+  },
+  {
+    "test_id": "MB_KN_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "ವಾಣಿಜ್ಯ ಸರಬರಾಜುದಾರರು 1000 ಕಚ್ಚಾ ಸಾಮಗ್ರಿಗಳಿಗಾಗಿ 50% ಮುಂಗಡ ಪಡೆದು ಸರಬರಾಜು ಮಾಡದೆ ಒಪ್ಪಂದವನ್ನು ಉಲ್ಲಂಘಿಸಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "व्यावसायिक सप्लायर ने 1000 यूनिट कच्चे माल के लिए 50% एडवांस लिया लेकिन माल की डिलीवरी नहीं की और अनुबंध का उल्लंघन किया।"
+  },
+  {
+    "test_id": "MB_KNL_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Commercial vendor raw materials ge 50% advance thagondiddare delivery madilla contract breach aagide compensation claim."
+  },
+  {
+    "test_id": "MB_HIL_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Commercial supplier ne raw material ke liye 50% advance liya par supply nahi di contract breach ho gaya Section 73."
+  },
+  {
+    "test_id": "MB_KN_EN_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Supplier took advance under commercial agreement, delivery milestone breach aagide damages compensation claim madbeku."
+  },
+  {
+    "test_id": "MB_HI_EN_CD03",
+    "parallel_group_id": "GRP_CD03",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Commercial supplier ne 50% advance liya par supply contract breach kar diya raw materials deliver nahi kiye."
+  },
+  {
+    "test_id": "MB_EN_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "My former employer sent a legal notice threatening court action claiming a non-compete clause prohibits me from joining any competitor for two years."
+  },
+  {
+    "test_id": "MB_KN_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "ನನ್ನ ಹಿಂದಿನ ಕಂಪನಿಯು ಸ್ಪರ್ಧಿ ಸಂಸ್ಥೆಗೆ ಸೇರಬಾರದು ಎಂದು ನಾನ್-ಕಾಂಪೀಟ್ ಷರತ್ತಿನ ನೆಪವೊಡ್ಡಿ ನ್ಯಾಯಾಲಯದ ಕ್ರಮದ ಬೆದರಿಕೆ ನೋಟಿಸ್ ಕಳುಹಿಸಿದೆ."
+  },
+  {
+    "test_id": "MB_HI_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "मेरी पिछली कंपनी ने लीगल नोटिस भेजा है कि नॉन-कम्पीट क्लॉज के तहत मैं दो साल तक किसी प्रतियोगी कंपनी में काम नहीं कर सकता।"
+  },
+  {
+    "test_id": "MB_KNL_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "Former employer legal notice kalisiddare non-compete agreement inda 2 years competitor company join aagbardu antha trade restraint."
+  },
+  {
+    "test_id": "MB_HIL_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "Ex-employer ne non-compete clause ka notice bheja hai ki 2 saal tak competitor me job nahi kar sakte Section 27."
+  },
+  {
+    "test_id": "MB_KN_EN_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "Company sent legal notice enforcing 2-year non compete clause, competitor join aagbardu antha threat madidare."
+  },
+  {
+    "test_id": "MB_HI_EN_CD04",
+    "parallel_group_id": "GRP_CD04",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "Ex-employer ne non-compete clause par legal notice bheja hai ki 2 saal tak competitor join nahi kar sakte Section 27."
+  },
+  {
+    "test_id": "MB_EN_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "A banquet hall management arbitrarily forfeited my Rs 50000 advance booking deposit after event cancellation due to a family medical emergency."
+  },
+  {
+    "test_id": "MB_KN_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "ಕುಟುಂಬದ ವೈದ್ಯಕೀಯ ತುರ್ತುಸ್ಥಿತಿಯಿಂದ ಕಾರ್ಯಕ್ರಮ ರದ್ದುಗೊಳಿಸಿದ ನಂತರ ಕಲ್ಯಾಣ ಮಂಟಪದವರು ನನ್ನ 50000 ಮುಂಗಡ ಠೇವಣಿಯನ್ನು ಅಕ್ರಮವಾಗಿ ಮುಟ್ಟುಗೋಲು ಹಾಕಿಕೊಂಡಿದ್ದಾರೆ."
+  },
+  {
+    "test_id": "MB_HI_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "मेडिकल इमरजेंसी के कारण कार्यक्रम रद्द होने पर बैंक्वेट हॉल प्रबंधन ने मनमाने ढंग से मेरी 50000 की एडवांस बुकिंग जब्त कर ली।"
+  },
+  {
+    "test_id": "MB_KNL_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "kn-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "Medical emergency inda event cancel madidde banquet hall 50000 advance booking deposit forfeit madiddare Section 74 penalty."
+  },
+  {
+    "test_id": "MB_HIL_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "hi-Latn",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "Medical emergency me function cancel kiya to banquet hall ne bina nuksan ke mera 50000 advance forfeit kar liya."
+  },
+  {
+    "test_id": "MB_KN_EN_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "kn-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "Wedding vendor forfeited 50000 advance token money, medical emergency cancellation notice kottidru refund madilla."
+  },
+  {
+    "test_id": "MB_HI_EN_CD05",
+    "parallel_group_id": "GRP_CD05",
+    "language": "hi-en",
+    "script": "Mixed",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "Medical emergency me wedding cancel hone par banquet hall ne 50000 advance token money forfeit kar liya unreasonable penalty."
+  },
+  {
+    "test_id": "MB_EN_VAR_CF01",
+    "parallel_group_id": "GRP_VAR_CF01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "Urgent legal grievance: Someone called me posing as a bank executive and asked for the OTP sent to my phone, and 50000 was debited immediately. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CF01",
+    "parallel_group_id": "GRP_VAR_CF01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಯಾರೋ ಬ್ಯಾಂಕ್ ಅಧಿಕಾರಿ ಎಂದು ಕರೆ ಮಾಡಿ ನನ್ನ ಮೊಬೈಲ್‌ಗೆ ಬಂದ ಒಟಿಪಿ ಪಡೆದುಕೊಂಡರು ಮತ್ತು ತಕ್ಷಣವೇ 50000 ಹಣ ಕಡಿತವಾಯಿತು. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CF01",
+    "parallel_group_id": "GRP_VAR_CF01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "otp_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "66c",
+      "318"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: किसी ने बैंक अधिकारी बनकर फोन किया और फोन पर आया ओटीपी पूछा, और तुरंत खाते से 50000 रुपये कट गए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CF02",
+    "parallel_group_id": "GRP_VAR_CF02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "Urgent legal grievance: Money was deducted from my bank account in an unauthorized transaction without my permission or sharing any OTP. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CF02",
+    "parallel_group_id": "GRP_VAR_CF02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನನ್ನ ಅನುಮತಿ ಅಥವಾ ಯಾವುದೇ ಒಟಿಪಿ ಹಂಚಿಕೊಳ್ಳದೆ ನನ್ನ ಬ್ಯಾಂಕ್ ಖಾತೆಯಿಂದ ಅನಧಿಕೃತವಾಗಿ ಹಣ ಕಡಿತವಾಗಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CF02",
+    "parallel_group_id": "GRP_VAR_CF02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "rbi_zero_liability_unauthorized_transaction",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "43a",
+      "318"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मेरी अनुमति या कोई ओटीपी साझा किए बिना मेरे बैंक खाते से अनधिकृत तरीके से पैसे काट लिए गए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CF03",
+    "parallel_group_id": "GRP_VAR_CF03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "Urgent legal grievance: A buyer on OLX asked me to scan a QR code to receive money, but as soon as I scanned it, money was debited from my UPI. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CF03",
+    "parallel_group_id": "GRP_VAR_CF03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಒಎಲ್‌ಎಕ್ಸ್‌ನಲ್ಲಿ ಖರೀದಿದಾರರು ಹಣ ಸ್ವೀಕರಿಸಲು ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ಹೇಳಿದರು, ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ತಕ್ಷಣ ನನ್ನ ಯುಪಿಐನಿಂದ ಹಣ ಕಡಿತವಾಯಿತು. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CF03",
+    "parallel_group_id": "GRP_VAR_CF03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "qr_code_fraud",
+    "expected_acts": [
+      "Information Technology Act, 2000",
+      "Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "expected_sections": [
+      "66d",
+      "318"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: ओएलएक्स पर एक खरीदार ने पैसे पाने के लिए क्यूआर कोड स्कैन करने को कहा, लेकिन स्कैन करते ही मेरे यूपीआई से पैसे कट गए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CF04",
+    "parallel_group_id": "GRP_VAR_CF04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "Urgent legal grievance: Scammers posing as CBI officers put me under digital arrest via video call and extorted Rs 3 lakhs under threat of arrest. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CF04",
+    "parallel_group_id": "GRP_VAR_CF04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಸಿಬಿಐ ಅಧಿಕಾರಿಗಳು ಎಂದು ನಟಿಸಿದ ವಂಚಕರು ವಿಡಿಯೋ ಕಾಲ್ ಮೂಲಕ ಡಿಜಿಟಲ್ ಅರೆಸ್ಟ್ ಹೆಸರಿನಲ್ಲಿ 3 ಲಕ್ಷ ರೂಪಾಯಿ ಸುಲಿಗೆ ಮಾಡಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CF04",
+    "parallel_group_id": "GRP_VAR_CF04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "digital_arrest_extortion",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "308",
+      "318",
+      "66d"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: सीबीआई अधिकारी बनकर धोखेबाजों ने वीडियो कॉल पर डिजिटल अरेस्ट की धमकी देकर 3 लाख रुपये ऐंठ लिए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CF05",
+    "parallel_group_id": "GRP_VAR_CF05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "Urgent legal grievance: I was duped of Rs 2 lakhs in a Telegram part-time job scam promising daily returns for hotel reviews and task investments. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CF05",
+    "parallel_group_id": "GRP_VAR_CF05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಹೋಟೆಲ್ ವಿಮರ್ಶೆ ಮತ್ತು ಹೂಡಿಕೆ ಕೆಲಸದ ಹೆಸರಿನಲ್ಲಿ ಟೆಲಿಗ್ರಾಮ್ ಪಾರ್ಟ್ ಟೈಮ್ ಉದ್ಯೋಗ ವಂಚನೆಯಲ್ಲಿ 2 ಲಕ್ಷ ರೂಪಾಯಿ ಕಳೆದುಕೊಂಡಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CF05",
+    "parallel_group_id": "GRP_VAR_CF05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "cyber_fraud",
+    "expected_issue": "part_time_job_fraud",
+    "expected_acts": [
+      "Bharatiya Nyaya Sanhita, 2023",
+      "Information Technology Act, 2000"
+    ],
+    "expected_sections": [
+      "318",
+      "66d"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: होटल रिव्यू और टास्क इन्वेस्टमेंट के नाम पर टेलीग्राम पार्ट टाइम जॉब घोटाले में मुझसे 2 लाख रुपये ठग लिए गए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CI01",
+    "parallel_group_id": "GRP_VAR_CI01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "Urgent legal grievance: The brand new refrigerator I purchased was delivered with a broken compressor, and the company refuses refund or replacement. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CI01",
+    "parallel_group_id": "GRP_VAR_CI01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನಾನು ಖರೀದಿಸಿದ ಹೊಸ ರೆಫ್ರಿಜರೇಟರ್ ಮುರಿದ ಕಂಪ್ರೆಸರ್‌ನೊಂದಿಗೆ ಬಂದಿದ್ದು, ಕಂಪನಿಯು ಮರುಪಾವತಿ ಅಥವಾ ಬದಲಾವಣೆಯನ್ನು ನಿರಾಕರಿಸಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CI01",
+    "parallel_group_id": "GRP_VAR_CI01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "defective_product",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_10",
+      "35"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मेरे द्वारा खरीदा गया नया फ्रिज खराब कंप्रेसर के साथ आया, और कंपनी पैसे वापस करने या बदलने से इनकार कर रही है। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CI02",
+    "parallel_group_id": "GRP_VAR_CI02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Urgent legal grievance: An optical fiber broadband company took full annual advance payment but failed to resolve 20 days of complete internet outage. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CI02",
+    "parallel_group_id": "GRP_VAR_CI02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಆಪ್ಟಿಕಲ್ ಫೈಬರ್ ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್ ಕಂಪನಿಯು ಪೂರ್ಣ ವಾರ್ಷಿಕ ಮುಂಗಡ ಪಡೆದರೂ 20 ದಿನಗಳ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಕಡಿತವನ್ನು ಸರಿಪಡಿಸಿಲ್ಲ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CI02",
+    "parallel_group_id": "GRP_VAR_CI02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "service_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: ब्रॉडबैंड कंपनी ने पूरे साल का एडवांस पेमेंट ले लिया लेकिन 20 दिनों से इंटरनेट बंद होने पर भी कोई समाधान नहीं किया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CI03",
+    "parallel_group_id": "GRP_VAR_CI03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Urgent legal grievance: An e-commerce website cancelled my paid order citing stock out but has refused to refund my Rs 12000 for over two months. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CI03",
+    "parallel_group_id": "GRP_VAR_CI03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಇ-ಕಾಮರ್ಸ್ ವೆಬ್‌ಸೈಟ್ ಸ್ಟಾಕ್ ಇಲ್ಲ ಎಂದು ನನ್ನ ಆರ್ಡರ್ ರದ್ದುಗೊಳಿಸಿದೆ ಆದರೆ ಎರಡು ತಿಂಗಳು ಕಳೆದರೂ ನನ್ನ 12000 ರೂಪಾಯಿ ಮರುಪಾವತಿಸಿಲ್ಲ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CI03",
+    "parallel_group_id": "GRP_VAR_CI03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "refund_denial",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: ई-कॉमर्स वेबसाइट ने स्टॉक न होने का हवाला देकर मेरा ऑर्डर रद्द कर दिया लेकिन दो महीने बाद भी मेरे 12000 रुपये रिफंड नहीं किए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CI04",
+    "parallel_group_id": "GRP_VAR_CI04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "Urgent legal grievance: A private hospital doctor left a surgical sponge inside patient abdomen during surgery causing severe infection and emergency re-operation. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CI04",
+    "parallel_group_id": "GRP_VAR_CI04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಖಾಸಗಿ ಆಸ್ಪತ್ರೆಯ ವೈದ್ಯರು ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಯ ಸಮಯದಲ್ಲಿ ರೋಗಿಯ ಹೊಟ್ಟೆಯೊಳಗೆ ಸ್ಪಾಂಜ್ ಬಿಟ್ಟು ತೀವ್ರ ಸೋಂಕು ಮತ್ತು ಮರು-ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಗೆ ಕಾರಣರಾಗಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CI04",
+    "parallel_group_id": "GRP_VAR_CI04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "medical_negligence_deficiency",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_11",
+      "35"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: निजी अस्पताल के डॉक्टर ने सर्जरी के दौरान मरीज के पेट में सर्जिकल स्पंज छोड़ दिया जिससे गंभीर संक्रमण हो गया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CI05",
+    "parallel_group_id": "GRP_VAR_CI05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "Urgent legal grievance: A coaching institute promised 100% money back job placement guarantee in television ads but refused refund when no placement was provided. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CI05",
+    "parallel_group_id": "GRP_VAR_CI05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಕೋಚಿಂಗ್ ಸಂಸ್ಥೆಯು ಟಿವಿ ಜಾಹೀರಾತುಗಳಲ್ಲಿ 100% ಉದ್ಯೋಗ ಅಥವಾ ಹಣ ವಾಪಸ್ ಭರವಸೆ ನೀಡಿ ಉದ್ಯೋಗ ಸಿಗದಿದ್ದಾಗ ಮರುಪಾವತಿ ನಿರಾಕರಿಸಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CI05",
+    "parallel_group_id": "GRP_VAR_CI05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "consumer_issues",
+    "expected_issue": "educational_course_bait_and_switch_placement_guarantee",
+    "expected_acts": [
+      "Consumer Protection Act, 2019"
+    ],
+    "expected_sections": [
+      "2_47",
+      "35"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: कोचिंग संस्थान ने विज्ञापनों में 100% नौकरी या पैसे वापसी की गारंटी दी थी लेकिन नौकरी न मिलने पर रिफंड देने से मना कर दिया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_TE01",
+    "parallel_group_id": "GRP_VAR_TE01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Urgent legal grievance: An automated traffic camera issued me an e-challan for driving without helmet even though the photo clearly shows I was wearing an ISI helmet. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_TE01",
+    "parallel_group_id": "GRP_VAR_TE01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನಾನು ಐಎಸ್‌ಐ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿದ್ದರೂ ಸಂಚಾರ ಕ್ಯಾಮೆರಾ ಹೆಲ್ಮೆಟ್ ಇಲ್ಲದೆ ವಾಹನ ಚಲಾಯಿಸಿದ್ದಕ್ಕಾಗಿ ತಪ್ಪು ಇ-ಚಲನ್ ನೀಡಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_TE01",
+    "parallel_group_id": "GRP_VAR_TE01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "seatbelt_helmet_camera_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मैंने आईएसआई मार्क वाला हेलमेट पहना हुआ था, फिर भी ट्रैफिक कैमरे ने बिना हेलमेट का गलत ई-चालान भेज दिया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_TE02",
+    "parallel_group_id": "GRP_VAR_TE02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "Urgent legal grievance: I entered a one-way street because a traffic police officer in uniform directed all vehicles there due to an accident, but later got an e-challan. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_TE02",
+    "parallel_group_id": "GRP_VAR_TE02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಅಪಘಾತದ ಕಾರಣ ಸಮವಸ್ತ್ರದಲ್ಲಿದ್ದ ಸಂಚಾರ ಪೊಲೀಸರು ನಿರ್ದೇಶಿಸಿದ್ದರಿಂದ ಒನ್‌ವೇ ಪ್ರವೇಶಿಸಿದೆ, ಆದರೆ ನಂತರ ತಪ್ಪು ಚಲನ್ ಬಂದಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_TE02",
+    "parallel_group_id": "GRP_VAR_TE02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "wrong_side_police_diversion_defense",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "119"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: दुर्घटना के कारण वर्दीधारी ट्रैफिक पुलिसकर्मी ने सभी वाहनों को उस तरफ मोड़ा था, लेकिन बाद में गलत दिशा का चालान आ गया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_TE03",
+    "parallel_group_id": "GRP_VAR_TE03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "Urgent legal grievance: Traffic police camera issued a fine claiming pillion rider was without helmet, but photo proof clearly shows both rider and pillion wearing helmets. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_TE03",
+    "parallel_group_id": "GRP_VAR_TE03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಹಿಂಬದಿ ಸವಾರ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿಲ್ಲ ಎಂದು ಸಂಚಾರ ಪೊಲೀಸರು ದಂಡ ವಿಧಿಸಿದ್ದಾರೆ, ಆದರೆ ಫೋಟೋದಲ್ಲಿ ಇಬ್ಬರೂ ಹೆಲ್ಮೆಟ್ ಧರಿಸಿರುವುದು ಸ್ಪಷ್ಟವಾಗಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_TE03",
+    "parallel_group_id": "GRP_VAR_TE03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "two_wheeler_pillion_helmet_challan_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "129",
+      "194d"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: ट्रैफिक कैमरे ने पीछे बैठे व्यक्ति पर बिना हेलमेट का जुर्माना लगाया, जबकि फोटो में दोनों हेलमेट पहने साफ दिख रहे हैं। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_TE04",
+    "parallel_group_id": "GRP_VAR_TE04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "Urgent legal grievance: Traffic police demanded Rs 10000 fine for drunk driving without administering any breathalyzer test or medical blood exam. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_TE04",
+    "parallel_group_id": "GRP_VAR_TE04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಸಂಚಾರ ಪೊಲೀಸರು ಯಾವುದೇ ಬ್ರೀತ್‌ಅನಲೈಜರ್ ಅಥವಾ ವೈದ್ಯಕೀಯ ರಕ್ತ ಪರೀಕ್ಷೆ ಮಾಡದೆ ಕುಡಿದು ವಾಹನ ಚಾಲನೆ ಎಂದು 10000 ದಂಡ ವಿಧಿಸಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_TE04",
+    "parallel_group_id": "GRP_VAR_TE04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "drunk_driving_breathalyzer_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "185",
+      "203"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: ट्रैफिक पुलिस ने बिना कोई ब्रेथ एनालाइजर या मेडिकल टेस्ट किए शराब पीकर गाड़ी चलाने का 10000 रुपये का चालान काट दिया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_TE05",
+    "parallel_group_id": "GRP_VAR_TE05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "Urgent legal grievance: Received an overspeeding challan claiming 95 km/h in a 60 km/h zone, but my calibrated GPS log proves my speed never exceeded 45 km/h. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_TE05",
+    "parallel_group_id": "GRP_VAR_TE05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: 60 ಕಿಮೀ ವಲಯದಲ್ಲಿ 95 ಕಿಮೀ ವೇಗದಲ್ಲಿ ಚಲಿಸಿದ್ದೇನೆ ಎಂದು ಅತಿವೇಗ ಚಲನ್ ಬಂದಿದೆ, ಆದರೆ ನನ್ನ ಜಿಪಿಎಸ್ ವೇಗ 45 ಕಿಮೀ ಮೀರಿಲ್ಲ ಎಂದು ತೋರಿಸುತ್ತದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_TE05",
+    "parallel_group_id": "GRP_VAR_TE05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "traffic_enforcement",
+    "expected_issue": "speed_trap_radar_calibration_dispute",
+    "expected_acts": [
+      "Motor Vehicles Act, 1988"
+    ],
+    "expected_sections": [
+      "112",
+      "183"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: 60 किमी की सीमा वाले क्षेत्र में 95 किमी की गति का ओवरस्पीडिंग चालan भेजा गया, जबकि जीपीएस लॉग के अनुसार गति 45 किमी ही थी। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_WW01",
+    "parallel_group_id": "GRP_VAR_WW01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "Urgent legal grievance: My employer has delayed paying my monthly salary for the past three months without any explanation or notice. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_WW01",
+    "parallel_group_id": "GRP_VAR_WW01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನನ್ನ ಉದ್ಯೋಗದಾತರು ಯಾವುದೇ ವಿವರಣೆ ಅಥವಾ ಸೂಚನೆಯಿಲ್ಲದೆ ಕಳೆದ ಮೂರು ತಿಂಗಳಿಂದ ನನ್ನ ಮಾಸಿಕ ವೇತನವನ್ನು ನೀಡಿಲ್ಲ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_WW01",
+    "parallel_group_id": "GRP_VAR_WW01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "delayed_wages",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "5",
+      "15"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मेरे नियोक्ता ने बिना किसी स्पष्टीकरण या सूचना के पिछले तीन महीनों से मेरा मासिक वेतन रोक रखा है। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_WW02",
+    "parallel_group_id": "GRP_VAR_WW02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "Urgent legal grievance: My company deducted Rs 8000 from my salary for laptop maintenance without my consent or any clause in the contract. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_WW02",
+    "parallel_group_id": "GRP_VAR_WW02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನನ್ನ ಒಪ್ಪಂದದಲ್ಲಿ ಯಾವುದೇ ಷರತ್ತು ಇಲ್ಲದಿದ್ದರೂ ಮತ್ತು ನನ್ನ ಒಪ್ಪಿಗೆಯಿಲ್ಲದೆ ಕಂಪನಿಯು ಲ್ಯಾಪ್‌ಟಾಪ್ ನಿರ್ವಹಣೆಗಾಗಿ ವೇತನದಿಂದ 8000 ಕಡಿತ ಮಾಡಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_WW02",
+    "parallel_group_id": "GRP_VAR_WW02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "unilateral_laptop_damage_deduction_exit",
+    "expected_acts": [
+      "Payment of Wages Act, 1936"
+    ],
+    "expected_sections": [
+      "7",
+      "15"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: कंपनी ने बिना मेरी सहमति के और अनुबंध में कोई शर्त न होने पर भी लैपटॉप मेंटेनेंस के नाम पर सैलरी से 8000 काट लिए। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_WW03",
+    "parallel_group_id": "GRP_VAR_WW03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "Urgent legal grievance: The employer deducted provident fund contributions from my salary slip every month but failed to deposit it into my EPFO account for a year. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_WW03",
+    "parallel_group_id": "GRP_VAR_WW03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಉದ್ಯೋಗದಾತರು ಪ್ರತಿ ತಿಂಗಳು ಸಂಬಳದಿಂದ ಪಿಎಫ್ ಕಡಿತಗೊಳಿಸಿದ್ದರೂ ಒಂದು ವರ್ಷದಿಂದ ನನ್ನ ಇಪಿಎಫ್‌ಒ ಖಾತೆಗೆ ಜಮಾ ಮಾಡಿಲ್ಲ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_WW03",
+    "parallel_group_id": "GRP_VAR_WW03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "pf_deduction_non_deposit",
+    "expected_acts": [
+      "Employees' Provident Funds and Miscellaneous Provisions Act, 1952"
+    ],
+    "expected_sections": [
+      "6",
+      "7a",
+      "14b"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: नियोक्ता हर महीने वेतन पर्ची से पीएफ काटता रहा लेकिन एक साल से मेरे ईपीएफओ खाते में जमा नहीं किया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_WW04",
+    "parallel_group_id": "GRP_VAR_WW04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "Urgent legal grievance: I resigned after completing six continuous years of service but the employer refuses to disburse my statutory gratuity payment. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_WW04",
+    "parallel_group_id": "GRP_VAR_WW04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಆರು ವರ್ಷಗಳ ನಿರಂತರ ಸೇವೆ ಪೂರ್ಣಗೊಳಿಸಿ ರಾಜೀನಾಮೆ ನೀಡಿದರೂ ಉದ್ಯೋಗದಾತರು ಶಾಸನಬದ್ಧ ಗ್ರಾಚ್ಯುಟಿ ಪಾವತಿಸಲು ನಿರಾಕರಿಸಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_WW04",
+    "parallel_group_id": "GRP_VAR_WW04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "gratuity_withholding_dispute",
+    "expected_acts": [
+      "Payment of Gratuity Act, 1972"
+    ],
+    "expected_sections": [
+      "4",
+      "7"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: छह साल लगातार काम करने के बाद मैंने इस्तीफा दिया लेकिन कंपनी मेरी ग्रेच्युटी की रकम देने से इनकार कर रही है। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_WW05",
+    "parallel_group_id": "GRP_VAR_WW05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "Urgent legal grievance: A senior manager subjected a female employee to unwelcome sexual remarks and management refuses to constitute an Internal Committee under POSH. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_WW05",
+    "parallel_group_id": "GRP_VAR_WW05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಹಿರಿಯ ಮ್ಯಾನೇಜರ್ ಮಹಿಳಾ ಉದ್ಯೋಗಿಗೆ ಲೈಂಗಿಕ ಕಿರುಕುಳ ನೀಡಿದ್ದು, ನಿರ್ವಹಣೆಯು ಪೋಶ್ ಕಾಯ್ದೆಯಡಿ ಆಂತರಿಕ ಸಮಿತಿಯನ್ನು ರಚಿಸಲು ನಿರಾಕರಿಸಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_WW05",
+    "parallel_group_id": "GRP_VAR_WW05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "workplace_wage",
+    "expected_issue": "posh_workplace_sexual_harassment_complaint",
+    "expected_acts": [
+      "Sexual Harassment of Women at Workplace Act, 2013"
+    ],
+    "expected_sections": [
+      "4",
+      "9",
+      "11"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: सीनियर मैनेजर ने महिला कर्मचारी के साथ अनुचित यौन व्यवहार किया और प्रबंधन पॉश कानून के तहत आंतरिक समिति बनाने से मना कर रहा है। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CD01",
+    "parallel_group_id": "GRP_VAR_CD01",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Urgent legal grievance: I vacated the rented apartment and handed over keys, but the landlord refuses to refund my Rs 1 lakh security deposit citing normal wear and tear. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CD01",
+    "parallel_group_id": "GRP_VAR_CD01",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನಾನು ಬಾಡಿಗೆ ಅಪಾರ್ಟ್‌ಮೆಂಟ್ ಖಾಲಿ ಮಾಡಿ ಬೀಗಗಳನ್ನು ಹಸ್ತಾಂತರಿಸಿದೆ, ಆದರೆ ಸಾಮಾನ್ಯ ಸವೆತದ ನೆಪವೊಡ್ಡಿ ಮನೆ ಮಾಲೀಕರು 1 ಲಕ್ಷ ಠೇವಣಿ ಮರುಪಾವತಿಸಲು ನಿರಾಕರಿಸಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CD01",
+    "parallel_group_id": "GRP_VAR_CD01",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "security_deposit_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मैंने किराए का फ्लैट खाली करके चाबियां सौंप दीं, लेकिन मकान मालिक सामान्य टूट-फूट का बहाना बनाकर 1 लाख का सिक्योरिटी डिपॉजिट नहीं लौटा रहा। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CD02",
+    "parallel_group_id": "GRP_VAR_CD02",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "Urgent legal grievance: A business client issued a cheque of Rs 3 lakhs for goods delivered, but the bank returned it dishonoured with memo funds insufficient. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CD02",
+    "parallel_group_id": "GRP_VAR_CD02",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಸರಕು ಸರಬರಾಜಿಗಾಗಿ ವ್ಯಾಪಾರ ಗ್ರಾಹಕರು 3 ಲಕ್ಷದ ಚೆಕ್ ನೀಡಿದ್ದು, ಖಾತೆಯಲ್ಲಿ ಹಣವಿಲ್ಲ ಎಂದು ಬ್ಯಾಂಕ್ ಚೆಕ್ ಬೌನ್ಸ್ ಮಾಡಿ ವಾಪಸ್ ನೀಡಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CD02",
+    "parallel_group_id": "GRP_VAR_CD02",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "cheque_bounce_statutory_notice_138",
+    "expected_acts": [
+      "Negotiable Instruments Act, 1881"
+    ],
+    "expected_sections": [
+      "138",
+      "142"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: सप्लाई किए गए माल के लिए ग्राहक ने 3 लाख का चेक दिया था, लेकिन बैंक ने खाते में अपर्याप्त राशि का मेमो देकर चेक बाउंस कर दिया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CD03",
+    "parallel_group_id": "GRP_VAR_CD03",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "Urgent legal grievance: A commercial supplier took 50% advance for 1000 units of raw materials but failed to deliver and breached the supply contract. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CD03",
+    "parallel_group_id": "GRP_VAR_CD03",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ವಾಣಿಜ್ಯ ಸರಬರಾಜುದಾರರು 1000 ಕಚ್ಚಾ ಸಾಮಗ್ರಿಗಳಿಗಾಗಿ 50% ಮುಂಗಡ ಪಡೆದು ಸರಬರಾಜು ಮಾಡದೆ ಒಪ್ಪಂದವನ್ನು ಉಲ್ಲಂಘಿಸಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CD03",
+    "parallel_group_id": "GRP_VAR_CD03",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "breach_of_contract",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "73"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: व्यावसायिक सप्लायर ने 1000 यूनिट कच्चे माल के लिए 50% एडवांस लिया लेकिन माल की डिलीवरी नहीं की और अनुबंध का उल्लंघन किया। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CD04",
+    "parallel_group_id": "GRP_VAR_CD04",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "Urgent legal grievance: My former employer sent a legal notice threatening court action claiming a non-compete clause prohibits me from joining any competitor for two years. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CD04",
+    "parallel_group_id": "GRP_VAR_CD04",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ನನ್ನ ಹಿಂದಿನ ಕಂಪನಿಯು ಸ್ಪರ್ಧಿ ಸಂಸ್ಥೆಗೆ ಸೇರಬಾರದು ಎಂದು ನಾನ್-ಕಾಂಪೀಟ್ ಷರತ್ತಿನ ನೆಪವೊಡ್ಡಿ ನ್ಯಾಯಾಲಯದ ಕ್ರಮದ ಬೆದರಿಕೆ ನೋಟಿಸ್ ಕಳುಹಿಸಿದೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CD04",
+    "parallel_group_id": "GRP_VAR_CD04",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "non_compete_clause_dispute",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "27"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मेरी पिछली कंपनी ने लीगल नोटिस भेजा है कि नॉन-कम्पीट क्लॉज के तहत मैं दो साल तक किसी प्रतियोगी कंपनी में काम नहीं कर सकता। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  },
+  {
+    "test_id": "MB_EN_VAR_CD05",
+    "parallel_group_id": "GRP_VAR_CD05",
+    "language": "en",
+    "script": "Latin",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "Urgent legal grievance: A banquet hall management arbitrarily forfeited my Rs 50000 advance booking deposit after event cancellation due to a family medical emergency. Please advise which legal section applies."
+  },
+  {
+    "test_id": "MB_KN_VAR_CD05",
+    "parallel_group_id": "GRP_VAR_CD05",
+    "language": "kn",
+    "script": "Kannada",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "ತುರ್ತು ಕಾನೂನು ದೂರು: ಕುಟುಂಬದ ವೈದ್ಯಕೀಯ ತುರ್ತುಸ್ಥಿತಿಯಿಂದ ಕಾರ್ಯಕ್ರಮ ರದ್ದುಗೊಳಿಸಿದ ನಂತರ ಕಲ್ಯಾಣ ಮಂಟಪದವರು ನನ್ನ 50000 ಮುಂಗಡ ಠೇವಣಿಯನ್ನು ಅಕ್ರಮವಾಗಿ ಮುಟ್ಟುಗೋಲು ಹಾಕಿಕೊಂಡಿದ್ದಾರೆ. ದಯವಿಟ್ಟು ಕಾನೂನು ಪರಿಹಾರ ಮತ್ತು ಸಂಬಂಧಿತ ವಿಭಾಗಗಳನ್ನು ತಿಳಿಸಿ."
+  },
+  {
+    "test_id": "MB_HI_VAR_CD05",
+    "parallel_group_id": "GRP_VAR_CD05",
+    "language": "hi",
+    "script": "Devanagari",
+    "domain": "contractual_disputes",
+    "expected_issue": "advance_booking_token_money_forfeiture",
+    "expected_acts": [
+      "Indian Contract Act, 1872"
+    ],
+    "expected_sections": [
+      "74"
+    ],
+    "scenario": "महत्वपूर्ण कानूनी शिकायत: मेडिकल इमरजेंसी के कारण कार्यक्रम रद्द होने पर बैंक्वेट हॉल प्रबंधन ने मनमाने ढंग से मेरी 50000 की एडवांस बुकिंग जब्त कर ली। कृपया बताएं कि इसमें कौन सी धारा लगेगी और क्या कदम उठाएं।"
+  }
+]

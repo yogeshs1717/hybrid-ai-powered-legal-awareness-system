@@ -158,13 +158,17 @@ class IssueDetector:
         if not candidate_rows:
             return None
 
-        scenario_vector = self._vectorizer.transform([scenario_text])
+        from app.multilingual import detect_language_and_script
+        lang_info = detect_language_and_script(scenario_text)
+        query_text = lang_info.canonical_text
+
+        scenario_vector = self._vectorizer.transform([query_text])
         similarities = self._cosine_similarity(
             scenario_vector, self._prototype_matrix[candidate_rows]
         )[0]
 
         best_row, best_score, best_issue_id = self._rerank_candidates(
-            scenario_text=scenario_text,
+            scenario_text=query_text,
             domain_id=predicted_domain_id,
             candidate_rows=candidate_rows,
             similarities=similarities,
@@ -178,10 +182,10 @@ class IssueDetector:
 
         issue = self._kb.issues[best_issue_id]
         display_name = issue.get("display_name") or best_issue_id
-        signals = self._overlap_signals(scenario_text, self._corpus_texts[best_row])
+        signals = self._overlap_signals(query_text, self._corpus_texts[best_row])
         if not signals:
             all_issue_prototypes = " ".join(issue.get("prototype_texts", []))
-            signals = self._overlap_signals(scenario_text, all_issue_prototypes)
+            signals = self._overlap_signals(query_text, all_issue_prototypes)
 
         if best_score < 0.18 and not signals:
             return None
@@ -349,7 +353,9 @@ class IssueDetector:
         the matched prototype. Never a decision input."""
 
         def tokenize(text: str) -> set:
-            return set(re.findall(r"[a-z]{3,}", text.lower()))
+            ascii_words = set(re.findall(r"[a-z]{3,}", text.lower()))
+            indic_words = set(re.findall(r"[\u0C80-\u0CFF]{2,}|[\u0900-\u097F]{2,}", text))
+            return ascii_words | indic_words
 
         overlap = (tokenize(scenario_text) & tokenize(prototype_text)) - _SIGNAL_NOISE
         return sorted(overlap)[:_MAX_SIGNALS]

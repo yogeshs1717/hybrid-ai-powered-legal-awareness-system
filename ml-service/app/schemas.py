@@ -177,6 +177,10 @@ class AnalyzeResponse(BaseModel):
     is_valid_scenario: bool = True
     fallback_message: Optional[str] = None
     historical_law_note: Optional[str] = None
+    detected_language: Optional[str] = "en"
+    language_confidence: Optional[float] = 1.0
+    detected_script: Optional[str] = "Latin"
+    is_code_mixed: Optional[bool] = False
     disclaimer: str = DISCLAIMER
 
 

@@ -150,8 +150,12 @@ def evaluate_scenario(
     Returns ScenarioEvaluation with is_valid=True for valid legal scenarios,
     or is_valid=False with fallback_message for unknown/non-legal text.
     """
+    from app.multilingual import detect_language_and_script
+    lang_info = detect_language_and_script(scenario_text)
+    eval_text = lang_info.canonical_text.lower().strip()
+
     text_lower = scenario_text.lower().strip()
-    tokens = set(re.findall(r"[a-z]{3,}", text_lower))
+    tokens = set(re.findall(r"[a-z]{3,}", eval_text))
     stemmed_matches = {t for t in tokens if any(t.startswith(s) for s in LEGAL_ROOT_STEMS)}
     matched_legal = (tokens & ALL_LEGAL_KEYWORDS) | stemmed_matches
 
