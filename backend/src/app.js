@@ -50,6 +50,19 @@ function createApp({ mlClient = createMlClient() } = {}) {
     return next(err);
   });
 
+  app.get("/", (_req, res) => {
+    res.json({
+      success: true,
+      service: "LegalLens Unified Backend & ML Gateway",
+      status: "online",
+      endpoints: {
+        health: "/api/health",
+        domains: "/api/domains",
+        analyze: "/api/analyze",
+      },
+    });
+  });
+
   app.get("/api/health", async (_req, res) => {
     let ml = { reachable: false };
     try {
