@@ -46,23 +46,7 @@ cd ..
 
 ## 2. Start Commands
 
-### Recommended: Start Both AI Services with One Command
-From the project root, run:
-```bash
-npm run dev
-# or
-npm start
-# or
-./start-services.sh
-```
-This concurrently starts **both** `ml-service` (port 8000) and `speech-service` (port 8001) with live hot-reloading and colored prefixed logs. Press `Ctrl+C` to cleanly stop both.
-
-*(Optional: Run `npm run dev:all` to launch all 4 services concurrently — ML service, speech service, API gateway, and frontend).*
-
----
-
-### Alternative: Manual Start (Separate Terminals)
-Open separate terminal tabs from the project root and run:
+Open **4 separate terminal tabs** from the project root and run:
 
 ### Terminal 1: ML Service
 ```bash

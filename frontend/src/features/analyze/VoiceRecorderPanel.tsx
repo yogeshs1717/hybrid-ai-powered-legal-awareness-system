@@ -47,6 +47,7 @@ export function VoiceRecorderPanel({
     isRecording,
     isTranscribing,
     recordingSeconds,
+    audioLevel,
     detectedLanguage,
     error,
     clearError,
@@ -118,9 +119,29 @@ export function VoiceRecorderPanel({
                   <Volume2 className="h-3.5 w-3.5 animate-pulse" />
                   Recording Audio ({formatTime(recordingSeconds)}) • {getActiveLangName()}
                 </span>
-                <span className="text-[11px] text-muted-foreground font-mono">
-                  Speak clearly into your microphone... Whisper will transcribe your voice.
+                <span className="text-[11px] text-muted-foreground font-mono flex items-center gap-2">
+                  {audioLevel > 5 ? (
+                    <span className="text-emerald-600 dark:text-emerald-400 font-medium">
+                      Audio input active ({audioLevel}%) • Speak clearly
+                    </span>
+                  ) : (
+                    <span>Speak clearly into your microphone...</span>
+                  )}
                 </span>
+              </div>
+
+              {/* Dynamic Soundwave Visualizer */}
+              <div className="hidden sm:flex items-center gap-1 h-6 px-2 bg-red-500/10 rounded-md border border-red-500/20">
+                {[0.4, 0.8, 1.3, 0.9, 1.5, 0.7, 0.4].map((mult, i) => {
+                  const barHeight = Math.max(4, Math.min(22, Math.round((audioLevel / 100) * 20 * mult) + 4));
+                  return (
+                    <span
+                      key={i}
+                      className="w-1 bg-red-500 rounded-full transition-all duration-75"
+                      style={{ height: `${barHeight}px` }}
+                    />
+                  );
+                })}
               </div>
             </div>
 

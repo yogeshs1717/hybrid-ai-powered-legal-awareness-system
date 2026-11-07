@@ -5,6 +5,7 @@ export interface VoiceRecorderState {
   isRecording: boolean;
   isTranscribing: boolean;
   recordingSeconds: number;
+  audioLevel: number; // 0 to 100 representing microphone input volume
   detectedLanguage: {
     code: string;
     label: string;
@@ -34,6 +35,29 @@ export function getLanguageLabel(code: string): string {
   }
 }
 
+/**
+ * Finds the best supported audio MIME type across modern browsers (Chrome, Firefox, Safari, Edge).
+ */
+function getOptimalAudioMimeType(): string {
+  if (typeof MediaRecorder === "undefined" || typeof MediaRecorder.isTypeSupported !== "function") {
+    return "";
+  }
+  const candidates = [
+    "audio/webm;codecs=opus",
+    "audio/webm",
+    "audio/ogg;codecs=opus",
+    "audio/ogg",
+    "audio/mp4",
+    "audio/wav",
+  ];
+  for (const candidate of candidates) {
+    if (MediaRecorder.isTypeSupported(candidate)) {
+      return candidate;
+    }
+  }
+  return "";
+}
+
 export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
   const optionsRef = useRef(options);
   optionsRef.current = options;
@@ -41,6 +65,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
   const [isRecording, setIsRecording] = useState(false);
   const [isTranscribing, setIsTranscribing] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
+  const [audioLevel, setAudioLevel] = useState(0);
   const [detectedLanguage, setDetectedLanguage] = useState<VoiceRecorderState["detectedLanguage"]>(null);
   const [error, setError] = useState<VoiceRecorderState["error"]>(null);
 
@@ -49,9 +74,38 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
   const timerIntervalRef = useRef<number | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
 
+  // Web Audio API resources for live audio metering / visualizer
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+  const animFrameIdRef = useRef<number | null>(null);
 
-  // Cleanup helper to guarantee all tracks in the media stream are stopped
-  const stopAllTracks = useCallback(() => {
+  const clearTimer = useCallback(() => {
+    if (timerIntervalRef.current) {
+      clearInterval(timerIntervalRef.current);
+      timerIntervalRef.current = null;
+    }
+  }, []);
+
+  // Cleanup helper to guarantee all tracks in the media stream and audio context are closed
+  const stopAllAudioResources = useCallback(() => {
+    if (animFrameIdRef.current) {
+      cancelAnimationFrame(animFrameIdRef.current);
+      animFrameIdRef.current = null;
+    }
+    setAudioLevel(0);
+
+    if (audioContextRef.current) {
+      try {
+        if (audioContextRef.current.state !== "closed") {
+          audioContextRef.current.close().catch(() => {});
+        }
+      } catch {
+        // ignore
+      }
+      audioContextRef.current = null;
+    }
+    analyserRef.current = null;
+
     if (audioStreamRef.current) {
       audioStreamRef.current.getTracks().forEach((track) => {
         try {
@@ -64,20 +118,13 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
     }
   }, []);
 
-  const clearTimer = useCallback(() => {
-    if (timerIntervalRef.current) {
-      clearInterval(timerIntervalRef.current);
-      timerIntervalRef.current = null;
-    }
-  }, []);
-
   // Cleanup on unmount
   useEffect(() => {
     return () => {
       clearTimer();
-      stopAllTracks();
+      stopAllAudioResources();
     };
-  }, [clearTimer, stopAllTracks]);
+  }, [clearTimer, stopAllAudioResources]);
 
   const clearError = useCallback(() => {
     setError(null);
@@ -86,6 +133,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
   const startRecording = useCallback(async () => {
     clearError();
     setDetectedLanguage(null);
+    setAudioLevel(0);
 
     // 1. Check browser mediaDevices support
     if (
@@ -95,41 +143,75 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
     ) {
       setError({
         title: "Microphone Not Supported",
-        message: "Your current browser does not support audio recording. Please use modern Chrome, Firefox, or Edge.",
+        message: "Your browser does not support audio recording. Please use modern Chrome, Firefox, Edge, or Brave.",
       });
       return;
     }
 
     try {
-      // 2. Request microphone permission
-      const stream = await navigator.mediaDevices.getUserMedia({
-        audio: {
-          echoCancellation: true,
-          noiseSuppression: true,
-          autoGainControl: true,
-        },
-      });
-      audioStreamRef.current = stream;
-
-      // 3. Find optimal supported MIME type
-      let mimeType = "";
-      if (typeof MediaRecorder !== "undefined" && typeof MediaRecorder.isTypeSupported === "function") {
-        if (MediaRecorder.isTypeSupported("audio/webm;codecs=opus")) {
-          mimeType = "audio/webm;codecs=opus";
-        } else if (MediaRecorder.isTypeSupported("audio/webm")) {
-          mimeType = "audio/webm";
-        } else if (MediaRecorder.isTypeSupported("audio/ogg;codecs=opus")) {
-          mimeType = "audio/ogg;codecs=opus";
-        } else if (MediaRecorder.isTypeSupported("audio/mp4")) {
-          mimeType = "audio/mp4";
-        }
+      // 2. Request microphone permission with fallback to unconstrained audio
+      let stream: MediaStream;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({
+          audio: {
+            channelCount: 1,
+            sampleRate: 16000,
+            echoCancellation: true,
+            noiseSuppression: true,
+            autoGainControl: true,
+          },
+        });
+      } catch {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       }
 
+      audioStreamRef.current = stream;
+
+      // 3. Setup Web Audio Analyser for live visual audio metering
+      try {
+        const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+        if (AudioCtx) {
+          const audioCtx = new AudioCtx();
+          if (audioCtx.state === "suspended") {
+            audioCtx.resume().catch(() => {});
+          }
+          const analyser = audioCtx.createAnalyser();
+          analyser.fftSize = 256;
+          analyser.smoothingTimeConstant = 0.5;
+
+          const source = audioCtx.createMediaStreamSource(stream);
+          source.connect(analyser);
+
+          audioContextRef.current = audioCtx;
+          analyserRef.current = analyser;
+
+          const dataArray = new Uint8Array(analyser.frequencyBinCount);
+          const updateLevel = () => {
+            if (!analyserRef.current) return;
+            analyserRef.current.getByteFrequencyData(dataArray);
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+              sum += dataArray[i];
+            }
+            const average = sum / dataArray.length;
+            // Scale and clamp between 0 and 100
+            const level = Math.min(100, Math.round((average / 128) * 100));
+            setAudioLevel(level);
+            animFrameIdRef.current = requestAnimationFrame(updateLevel);
+          };
+          animFrameIdRef.current = requestAnimationFrame(updateLevel);
+        }
+      } catch {
+        // Audio metering is a progressive enhancement; recording proceeds even if AudioContext fails
+      }
+
+      // 4. Determine best MIME type and instantiate MediaRecorder
+      const mimeType = getOptimalAudioMimeType();
       const recorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
       mediaRecorderRef.current = recorder;
       audioChunksRef.current = [];
 
-      recorder.ondataavailable = (event) => {
+      recorder.ondataavailable = (event: BlobEvent) => {
         if (event.data && event.data.size > 0) {
           audioChunksRef.current.push(event.data);
         }
@@ -137,20 +219,20 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
 
       recorder.onstop = async () => {
         // Collect recorded chunks into a single Blob
-        const recordedBlob = new Blob(audioChunksRef.current, {
-          type: recorder.mimeType || "audio/webm",
-        });
+        const recordedType = recorder.mimeType || mimeType || "audio/webm";
+        const recordedBlob = new Blob(audioChunksRef.current, { type: recordedType });
         audioChunksRef.current = [];
 
-        // Stop all hardware tracks immediately
-        stopAllTracks();
+        // Stop all hardware tracks and metering immediately
+        stopAllAudioResources();
 
         if (recordedBlob.size === 0) {
           setError({
             title: "Empty Recording",
-            message: "No audio was captured. Please speak into your microphone and try again.",
+            message: "No audio was captured. Please check that your microphone is unmuted and speak clearly.",
           });
           setIsRecording(false);
+          setIsTranscribing(false);
           return;
         }
 
@@ -172,7 +254,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
           if (!result.transcript || result.transcript.trim().length === 0) {
             setError({
               title: "No Speech Detected",
-              message: "We couldn't hear any clear speech. Please speak closer to your microphone and try again.",
+              message: "We couldn't hear any clear words. Please speak closer to your microphone and try again.",
             });
           } else {
             optionsRef.current?.onTranscriptionSuccess?.(result);
@@ -181,7 +263,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
           const speechErr = err as SpeechApiError;
           setError({
             title: "Transcription Failed",
-            message: speechErr.message || "Could not transcribe audio. Please check speech service status.",
+            message: speechErr.message || "Could not transcribe audio. Ensure the Speech Service is running on port 8001.",
           });
         } finally {
           setIsTranscribing(false);
@@ -189,8 +271,8 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
         }
       };
 
-      // Start recording with timeslice (chunk every 250ms)
-      recorder.start(250);
+      // Start recording with timeslice (chunk every 200ms)
+      recorder.start(200);
       setIsRecording(true);
       setRecordingSeconds(0);
 
@@ -200,7 +282,7 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
         setRecordingSeconds((prev) => prev + 1);
       }, 1000);
     } catch (err: unknown) {
-      stopAllTracks();
+      stopAllAudioResources();
       clearTimer();
       setIsRecording(false);
 
@@ -208,12 +290,12 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
       if (errName === "NotAllowedError" || errName === "PermissionDeniedError") {
         setError({
           title: "Microphone Access Denied",
-          message: "Permission to use your microphone was blocked. Please enable microphone access in your browser site permissions.",
+          message: "Permission to use your microphone was blocked. Please enable microphone permissions in your browser site settings.",
         });
       } else if (errName === "NotFoundError" || errName === "DevicesNotFoundError") {
         setError({
           title: "Microphone Not Found",
-          message: "No audio input device was found on your system. Please plug in a microphone.",
+          message: "No audio input device was found on your system. Please plug in or select a working microphone.",
         });
       } else {
         setError({
@@ -222,40 +304,47 @@ export function useVoiceRecorder(options?: UseVoiceRecorderOptions) {
         });
       }
     }
-  }, [clearError, clearTimer, stopAllTracks, options]);
+  }, [clearError, clearTimer, stopAllAudioResources]);
 
   const stopRecording = useCallback(() => {
     clearTimer();
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state === "recording") {
+    const recorder = mediaRecorderRef.current;
+    if (recorder && recorder.state !== "inactive") {
       try {
-        mediaRecorderRef.current.stop();
-      } catch {
-        // ignore
+        // Flush any remaining audio data before stopping
+        if (typeof recorder.requestData === "function") {
+          recorder.requestData();
+        }
+        recorder.stop();
+      } catch (err) {
+        console.warn("Error stopping MediaRecorder:", err);
       }
     }
   }, [clearTimer]);
 
   const cancelRecording = useCallback(() => {
     clearTimer();
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state === "recording") {
+    const recorder = mediaRecorderRef.current;
+    if (recorder && recorder.state !== "inactive") {
       try {
-        // Remove onstop handler so we don't trigger transcription
-        mediaRecorderRef.current.onstop = null;
-        mediaRecorderRef.current.stop();
+        // Nullify onstop handler so cancellation does not trigger transcription
+        recorder.onstop = null;
+        recorder.stop();
       } catch {
         // ignore
       }
     }
-    stopAllTracks();
+    stopAllAudioResources();
     audioChunksRef.current = [];
     setIsRecording(false);
     setRecordingSeconds(0);
-  }, [clearTimer, stopAllTracks]);
+  }, [clearTimer, stopAllAudioResources]);
 
   return {
     isRecording,
     isTranscribing,
     recordingSeconds,
+    audioLevel,
     detectedLanguage,
     error,
     clearError,

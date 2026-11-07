@@ -114,6 +114,20 @@ ALL_LEGAL_KEYWORDS: Set[str] = set().union(*DOMAIN_SPECIFIC_KEYWORDS.values()) |
     "reminders", "recovery", "fraud", "scam", "penalty", "due", "dues"
 }
 
+# Indic keywords and stems (Kannada & Hindi) for validating non-English legal queries
+INDIC_LEGAL_KEYWORDS: Set[str] = {
+    # Kannada legal core terms
+    "ಬ್ಯಾಂಕ್", "ಖಾತೆ", "ಖಾತೆಯಿಂದ", "ಹಣ", "ದುಡ್ಡು", "ದೂರು", "ವಂಚನೆ", "ಸಂಬಳ", "ವೇತನ", "ಚಲನ್", "ಪೊಲೀಸ್",
+    "ಗ್ರಾಹಕ", "ಬಾಡಿಗೆ", "ಕರಾರು", "ಒಪ್ಪಂದ", "ಚೆಕ್", "ದೋಷ", "ಖರೀದಿ", "ಖರೀದಿಸಿದೆ", "ಕೊಂಡುಕೊಂಡೆ", "ಉತ್ಪನ್ನ",
+    "ವಸ್ತು", "ಅಡ್ವಾನ್ಸ್", "ಠೇವಣಿ", "ಲಂಚ", "ಕಿರುಕುಳ", "ಕೆಲಸ", "ಕಂಪನಿ", "ಪಾರ್ಸೆಲ್", "ಆಸ್ಪತ್ರೆ", "ವೈದ್ಯ",
+    "ಇಂಜೆಕ್ಷನ್", "ಆನ್‌ಲೈನ್", "ಕೊಟ್ಟಿಲ್ಲ", "ತಡೆದು", "ಹಾಕಿದ್ದಾರೆ", "ವಂಚಿಸಿದ್ದಾರೆ", "ಕಡಿತ", "ಓಟಿಪಿ", "ಬೌನ್ಸ್",
+    # Hindi legal core terms
+    "बैंक", "खाता", "खाते", "पैसे", "रुपये", "शिकायत", "धोखाधड़ी", "धोखा", "वेतन", "तनख्वाह", "सैलरी",
+    "चालान", "पुलिस", "उपभोक्ता", "ग्राहक", "किराया", "अनुबंध", "समझौता", "चेक", "खराबी", "खराब", "खरीद",
+    "सामान", "उत्पाद", "सिक्योरिटी", "डिपॉजिट", "रिश्वत", "उत्पीड़न", "नौकरी", "कंपनी", "पार्सल", "अस्पताल",
+    "डॉक्टर", "ऑनलाइन", "रिफंड", "वारंटी", "जुर्माना"
+}
+
 LEGAL_ROOT_STEMS = (
     "fine", "penalt", "challan", "insur", "polic", "vehicl", "licen", "wage", "salar",
     "deduct", "pay", "fraud", "scam", "cheat", "theft", "stolen", "breach", "contract",
@@ -157,7 +171,8 @@ def evaluate_scenario(
     text_lower = scenario_text.lower().strip()
     tokens = set(re.findall(r"[a-z]{3,}", eval_text))
     stemmed_matches = {t for t in tokens if any(t.startswith(s) for s in LEGAL_ROOT_STEMS)}
-    matched_legal = (tokens & ALL_LEGAL_KEYWORDS) | stemmed_matches
+    indic_matches = {w for w in INDIC_LEGAL_KEYWORDS if w in text_lower}
+    matched_legal = (tokens & ALL_LEGAL_KEYWORDS) | stemmed_matches | indic_matches
 
     sim = issue_detection.similarity_score if issue_detection else 0.0
     signals = issue_detection.scenario_signals if issue_detection else []

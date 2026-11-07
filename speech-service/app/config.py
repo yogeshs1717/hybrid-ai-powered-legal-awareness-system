@@ -44,6 +44,8 @@ ALLOWED_EXTENSIONS: Set[str] = {
 ALLOWED_MIME_TYPES: Set[str] = {
     "audio/webm",
     "audio/webm;codecs=opus",
+    "audio/x-webm",
+    "video/webm",
     "audio/ogg",
     "audio/ogg;codecs=opus",
     "audio/wav",

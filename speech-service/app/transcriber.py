@@ -8,7 +8,9 @@ Preserves original spoken language and wording (no silent translation).
 from __future__ import annotations
 
 import logging
+import os
 import re
+import subprocess
 from pathlib import Path
 from typing import Optional, Tuple
 
@@ -29,6 +31,53 @@ except ImportError:
 
 logger = logging.getLogger("speech_service.transcriber")
 
+
+def convert_to_wav_16k(audio_path: str) -> Tuple[str, bool]:
+    """Convert any incoming audio file to standard 16kHz mono 16-bit PCM WAV using ffmpeg.
+
+    This ensures complete compatibility with browser MediaRecorder WebM/Opus, OGG, and MP4 formats,
+    repairing missing metadata headers and demuxing reliably.
+
+    Returns:
+        Tuple of (effective_audio_path, is_temporary_file).
+    """
+    out_path = f"{audio_path}.16k.wav"
+    try:
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-nostdin",
+            "-threads",
+            "1",
+            "-i",
+            audio_path,
+            "-ar",
+            "16000",
+            "-ac",
+            "1",
+            "-c:a",
+            "pcm_s16le",
+            out_path,
+        ]
+        result = subprocess.run(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+            timeout=20,
+        )
+        if result.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+            return out_path, True
+        logger.warning(
+            "ffmpeg audio conversion exited with code %d: %s. Using original audio file.",
+            result.returncode,
+            result.stderr.decode("utf-8", errors="replace"),
+        )
+    except Exception as exc:
+        logger.warning("ffmpeg audio conversion encountered error: %s. Using original audio file.", exc)
+
+    return audio_path, False
+
 # Unicode mapping from Devanagari (0x0900-0x097F) to Kannada (0x0C80-0x0CFF)
 # Used when Whisper outputs Kannada phonetics in Devanagari script.
 DEV_TO_KN_MAP = {
@@ -41,10 +90,10 @@ DEV_TO_KN_MAP = {
     "\u090A": "\u0C8A",  # UU
     "\u090B": "\u0C8B",  # Vocalic R
     "\u090E": "\u0C8E",  # Short E
-    "\u090F": "\u0C8E",  # E -> Short E
+    "\u090F": "\u0C8F",  # E -> Long E
     "\u0910": "\u0C90",  # AI
     "\u0912": "\u0C92",  # Short O
-    "\u0913": "\u0C92",  # O -> Short O
+    "\u0913": "\u0C93",  # O -> Long O
     "\u0914": "\u0C94",  # AU
     # Signs
     "\u0901": "\u0C81",  # Candrabindu
@@ -94,10 +143,10 @@ DEV_TO_KN_MAP = {
     "\u0943": "\u0CC3",  # Vocalic R sign
     "\u0944": "\u0CC4",  # Vocalic RR sign
     "\u0946": "\u0CC6",  # Short E sign
-    "\u0947": "\u0CC6",  # E sign -> Short E sign
+    "\u0947": "\u0CC7",  # E sign -> Long E sign
     "\u0948": "\u0CC8",  # AI sign
     "\u094A": "\u0CCA",  # Short O sign
-    "\u094B": "\u0CCA",  # O sign -> Short O sign
+    "\u094B": "\u0CCB",  # O sign -> Long O sign
     "\u094C": "\u0CCC",  # AU sign
     "\u094D": "\u0CCD",  # Virama (halant)
     # Nukhtas & Urdu/Persian sounds mapped to Kannada bases
@@ -239,38 +288,48 @@ class SpeechTranscriber:
 
         norm_lang = language.strip().lower() if language and language != "auto" else None
 
-        # Priming prompt to anchor Whisper in the target language and legal domain vocabulary
+        # Priming prompt: do NOT pass Kannada script prompt to Whisper because it poisons the decoder
+        # Whisper decodes Kannada acoustically into phonetic Devanagari, which is then mapped to Kannada script
         initial_prompt = None
-        if norm_lang == "kn":
-            initial_prompt = "ಕನ್ನಡ ಭಾಷೆ. ಬ್ಯಾಂಕ್, ಖಾತೆ, ಹಣ, ವಂಚನೆ, ದೂರು, ಒಟಿಪಿ, ಗ್ರಾಹಕ, ಸಂಬಳ, ಪೊಲೀಸ್."
-        elif norm_lang == "hi":
+        if norm_lang == "hi":
             initial_prompt = "हिन्दी भाषा. बैंक, खाता, पैसे, धोखाधड़ी, शिकायत, ओटीपी, उपभोक्ता, वेतन, पुलिस."
         elif norm_lang == "en":
             initial_prompt = "Legal awareness complaint. Bank, fraud, scam, consumer, police, salary, agreement."
 
-        # Configure anti-hallucination and anti-loop parameters
-        segments_gen, info = self._model.transcribe(
-            audio_path,
-            language=norm_lang,
-            task="transcribe",
-            beam_size=5,
-            temperature=0.0,
-            vad_filter=True,
-            vad_parameters=dict(min_silence_duration_ms=400),
-            condition_on_previous_text=False,
-            repetition_penalty=1.2,
-            no_repeat_ngram_size=3,
-            initial_prompt=initial_prompt,
-        )
+        # Configure anti-hallucination and transcription parameters
+        # Convert audio to clean 16kHz mono WAV if possible for maximum format compatibility
+        effective_path, is_temp = convert_to_wav_16k(audio_path)
 
-        # Iterate segments to materialize transcript
-        segment_texts = []
-        for segment in segments_gen:
-            text = segment.text.strip()
-            if text:
-                segment_texts.append(text)
+        try:
+            # vad_filter with min_silence_duration_ms=1000 and speech_pad_ms=400 ensures
+            # non-speech / silence does not cause hallucination loops while preserving speech boundaries.
+            segments_gen, info = self._model.transcribe(
+                effective_path,
+                language=norm_lang,
+                task="transcribe",
+                beam_size=5,
+                temperature=0.0,
+                vad_filter=True,
+                vad_parameters=dict(min_silence_duration_ms=1000, speech_pad_ms=400),
+                condition_on_previous_text=False,
+                repetition_penalty=1.05,
+                initial_prompt=initial_prompt,
+            )
 
-        raw_transcript = " ".join(segment_texts).strip()
+            # Iterate segments to materialize transcript
+            segment_texts = []
+            for segment in segments_gen:
+                text = segment.text.strip()
+                if text:
+                    segment_texts.append(text)
+
+            raw_transcript = " ".join(segment_texts).strip()
+        finally:
+            if is_temp and os.path.exists(effective_path):
+                try:
+                    os.unlink(effective_path)
+                except OSError:
+                    pass
 
         # Clean repeating token loops
         transcript = clean_repetitions(raw_transcript)

@@ -1,0 +1,14 @@
+node_modules
+frontend/dist
+frontend/node_modules
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+ml-service/venv
+speech-service/.venv
+.git
+.gitignore
+.env
+.DS_Store
+reports
+*.log

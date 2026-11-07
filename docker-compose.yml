@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  backend-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - ML_SERVICE_URL=http://127.0.0.1:8000
+    restart: unless-stopped
+
+  speech-service:
+    build:
+      context: .
+      dockerfile: speech-service/Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - SPEECH_SERVICE_HOST=0.0.0.0
+      - SPEECH_SERVICE_PORT=8001
+      - WHISPER_MODEL_SIZE=small
+      - WHISPER_DEVICE=cpu
+      - WHISPER_COMPUTE_TYPE=int8
+    restart: unless-stopped

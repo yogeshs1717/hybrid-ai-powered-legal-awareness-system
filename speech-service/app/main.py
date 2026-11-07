@@ -140,6 +140,17 @@ async def transcribe_audio(
             ),
         )
 
+    # Normalize file extension so ffmpeg / PyAV always receives a standard audio suffix
+    if ext not in config.ALLOWED_EXTENSIONS:
+        if "wav" in content_type:
+            ext = "wav"
+        elif "ogg" in content_type:
+            ext = "ogg"
+        elif "mp4" in content_type or "m4a" in content_type:
+            ext = "m4a"
+        else:
+            ext = "webm"
+
     # Read audio content with size limit enforcement
     temp_file_path = None
     total_bytes = 0
