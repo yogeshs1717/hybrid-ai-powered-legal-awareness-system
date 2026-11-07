@@ -75,6 +75,18 @@ app.add_middleware(
 )
 
 
+@app.get("/", summary="Root status check")
+async def root():
+    """Root endpoint to verify the Speech Service is running in a browser."""
+    return {
+        "status": "ok",
+        "service": "speech-service",
+        "message": "LegalLens Speech Service is online.",
+        "health": "/health",
+        "docs": "/docs",
+    }
+
+
 @app.get(
     "/health",
     response_model=HealthResponse,
