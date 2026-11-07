@@ -14,8 +14,8 @@ services:
 
   speech-service:
     build:
-      context: .
-      dockerfile: speech-service/Dockerfile
+      context: ./speech-service
+      dockerfile: Dockerfile
     ports:
       - "8001:8001"
     environment:

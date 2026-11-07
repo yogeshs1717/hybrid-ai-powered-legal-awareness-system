@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 
 # Service network binding (Security: default to 127.0.0.1 loopback)
 HOST = os.environ.get("SPEECH_SERVICE_HOST", "127.0.0.1")
-PORT = int(os.environ.get("SPEECH_SERVICE_PORT", "8001"))
+PORT = int(os.environ.get("PORT") or os.environ.get("SPEECH_SERVICE_PORT") or "8001")
 
 # Faster-Whisper Model Settings
 MODEL_SIZE = os.environ.get("WHISPER_MODEL_SIZE", "small")
