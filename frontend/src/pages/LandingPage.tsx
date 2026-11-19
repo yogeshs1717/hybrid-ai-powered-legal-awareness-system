@@ -11,6 +11,7 @@ import {
   Search,
   Car,
   RotateCcw,
+  Pencil,
 } from "lucide-react";
 import { ScenarioInput } from "@/features/analyze/ScenarioInput";
 import { useAnalyze } from "@/hooks/useAnalyze";
@@ -242,6 +243,7 @@ export function LandingPage() {
         {!isPending && !isSuccess && !isError && (
           <div className="bg-card/70 backdrop-blur-sm rounded-2xl border-2 border-border p-4 sm:p-6 shadow-sm">
             <ScenarioInput
+              initialValue={submittedScenario}
               onSubmit={(scenario, lang) => {
                 setSubmittedScenario(scenario);
                 analyze.mutate({ scenario, language: lang });
@@ -278,11 +280,21 @@ export function LandingPage() {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
+                  onClick={() => reset()}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border-2 border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-mono text-xs font-bold transition-colors shadow-sm"
+                  title="Edit your previous input text"
+                >
+                  <Pencil className="h-3.5 w-3.5" />
+                  <span>EDIT SITUATION</span>
+                </button>
+                <button
+                  type="button"
                   onClick={() => {
                     reset();
                     setSubmittedScenario("");
                   }}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
+                  title="Clear input and analyze a new situation"
                 >
                   <RotateCcw className="h-3.5 w-3.5" />
                   <span>ANALYZE NEW SITUATION</span>
@@ -290,7 +302,19 @@ export function LandingPage() {
               </div>
             </div>
 
-            <ResultView data={data} scenario={submittedScenario} />
+            <ResultView
+              data={data}
+              scenario={submittedScenario}
+              onReset={() => {
+                reset();
+                setSubmittedScenario("");
+              }}
+              onEdit={() => reset()}
+              onSelectExample={(exampleScenario) => {
+                setSubmittedScenario(exampleScenario);
+                analyze.mutate(exampleScenario);
+              }}
+            />
           </div>
         )}
       </section>

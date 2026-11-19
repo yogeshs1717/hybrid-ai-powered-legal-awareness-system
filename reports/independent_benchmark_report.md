@@ -4,7 +4,7 @@
 **Dataset:** 250 Independent Real-World Citizen Legal Scenarios (`docs/independent_benchmark_cases.json`)  
 **Evaluation Harness:** `scripts/run_independent_benchmark.py`  
 **Execution Date:** October 2026  
-**Auditor:** Senior Indian Legal Auditor & AI Systems Evaluation Engineer  
+**Auditor:** Statutory Knowledge Base Curator & AI Systems Evaluation Engineer  
 
 ---
 

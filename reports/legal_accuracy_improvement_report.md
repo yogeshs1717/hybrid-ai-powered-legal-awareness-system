@@ -4,7 +4,7 @@
 **Jurisdiction:** Republic of India (India Code Statutory Citations & Central Acts)  
 **Baseline Date:** Initial Audit (October 2026)  
 **Improvement Completion:** Final Audit & Independent Benchmark (October 2026)  
-**Auditor & Architect:** Senior Indian Legal Auditor, Legal Data Engineer & ML Systems Architect  
+**Auditor & Architect:** Statutory Knowledge Base Curator, Legal Data Engineer & ML Systems Architect  
 
 ---
 

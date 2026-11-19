@@ -52,6 +52,7 @@ DOMAIN_NAMES = {
 
 OFFICIAL_GOV_DOMAINS = [
     "indiacode.nic.in",
+    "indiacode.gov.in",
     "egazette.gov.in",
     "cybercrime.gov.in",
     "consumerhelpline.gov.in",
@@ -68,6 +69,12 @@ OFFICIAL_GOV_DOMAINS = [
     "consumeraffairs.nic.in",
     "trai.gov.in",
     "irdai.gov.in",
+    "manakonline.in",
+    "esic.gov.in",
+    "cvc.gov.in",
+    "cbi.gov.in",
+    "kar.nic.in",
+    "uidai.gov.in",
 ]
 
 

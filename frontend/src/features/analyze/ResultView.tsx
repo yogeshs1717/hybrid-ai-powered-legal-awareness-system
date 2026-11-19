@@ -1,5 +1,5 @@
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { FileText } from "lucide-react";
+import { FileText, Pencil } from "lucide-react";
 import type { AnalyzeResponse } from "@/types/contract";
 import { DomainResultCard } from "@/components/legal/DomainResultCard";
 import { IssueResultCard } from "@/components/legal/IssueResultCard";
@@ -41,11 +41,13 @@ export function ResultView({
   data,
   scenario,
   onReset,
+  onEdit,
   onSelectExample,
 }: {
   data: AnalyzeResponse;
   scenario?: string;
   onReset?: () => void;
+  onEdit?: () => void;
   onSelectExample?: (scenarioText: string) => void;
 }) {
   const { container, item } = useVariants();
@@ -89,9 +91,22 @@ export function ResultView({
                 YOUR REPORTED SITUATION
               </span>
             </div>
-            <span className="font-mono text-[10px] font-bold text-muted-foreground uppercase px-2 py-0.5 rounded bg-muted/60">
-              ANALYZED INPUT
-            </span>
+            <div className="flex items-center gap-2">
+              {onEdit && (
+                <button
+                  type="button"
+                  onClick={onEdit}
+                  className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-mono font-bold bg-primary/10 hover:bg-primary hover:text-primary-foreground text-primary border border-primary/30 transition-colors shadow-xs"
+                  title="Edit your submitted scenario"
+                >
+                  <Pencil className="h-3 w-3" />
+                  <span>EDIT</span>
+                </button>
+              )}
+              <span className="font-mono text-[10px] font-bold text-muted-foreground uppercase px-2 py-0.5 rounded bg-muted/60">
+                ANALYZED INPUT
+              </span>
+            </div>
           </div>
 
           <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed italic select-text whitespace-pre-wrap">
@@ -106,6 +121,7 @@ export function ResultView({
             <UnknownScenarioFallbackCard
               fallbackMessage={data.fallback_message || data.clarification_question}
               onReset={onReset}
+              onEdit={onEdit}
               onSelectExample={onSelectExample}
             />
           </motion.div>

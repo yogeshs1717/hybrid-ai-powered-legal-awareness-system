@@ -80,7 +80,8 @@
     "category": "straightforward",
     "scenario": "A fake HR recruiter on LinkedIn asked for Rs 9,500 security deposit for an airline ground staff job and stopped answering calls after payment.",
     "expected_issue_ids": [
-      "recruitment_job_offer_fraud"
+      "recruitment_job_offer_fraud",
+      "fake_job_offer_visa_overseas_scam"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -156,7 +157,8 @@
     "category": "straightforward",
     "scenario": "Rs 10,000 was fraudulently withdrawn from my rural bank account via AePS biometric fingerprint cloning at an unauthorized mini-ATM kiosk.",
     "expected_issue_ids": [
-      "aeps_biometric_aadhaar_money_theft"
+      "aeps_biometric_aadhaar_money_theft",
+      "aeps_fingerprint_cloning_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -234,7 +236,8 @@
     "category": "straightforward",
     "scenario": "I installed a malicious electricity bill update APK from an SMS link which hijacked my phone SMS and drained my bank account via net banking.",
     "expected_issue_ids": [
-      "electricity_bill_sms_apk_scam"
+      "electricity_bill_sms_apk_scam",
+      "phishing"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -260,7 +263,8 @@
     "category": "complex",
     "scenario": "A scammer cloned my son's voice using AI generative audio, called my elderly wife crying that he caused a fatal road crash, and extorted Rs 2 lakhs in urgent ransom.",
     "expected_issue_ids": [
-      "ai_voice_clone_virtual_kidnapping"
+      "ai_voice_clone_virtual_kidnapping",
+      "deepfake_extortion"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -313,7 +317,8 @@
     "category": "complex",
     "scenario": "An Instagram seller advertising premium leather bags took Rs 18,000 via UPI QR code, sent a tracking slip for an empty envelope, and blocked my phone.",
     "expected_issue_ids": [
-      "ecommerce_fake_seller_fraud"
+      "ecommerce_fake_seller_fraud",
+      "qr_code_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -341,7 +346,8 @@
     "scenario": "My mobile device was compromised via spyware sideloaded from a rogue app store, which monitored my WhatsApp chats, captured keystrokes, and forwarded my OTPs.",
     "expected_issue_ids": [
       "spyware_stalkerware_device_monitoring",
-      "identity_theft"
+      "identity_theft",
+      "otp_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -394,7 +400,8 @@
     "scenario": "I joined a Telegram work-from-home task scheme where they initially paid Rs 500 for rating hotels, then induced me to deposit Rs 1.5 lakhs for cryptocurrency arbitrage.",
     "expected_issue_ids": [
       "fake_crypto_arbitrage_telegram_ponzi",
-      "google_review_rating_task_scam"
+      "google_review_rating_task_scam",
+      "part_time_job_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -543,7 +550,8 @@
     "category": "closely_related",
     "scenario": "My bank account was debited Rs 10,000 for a UPI merchant payment that failed with a timeout error, and auto-reversal has not occurred after 4 days.",
     "expected_issue_ids": [
-      "rbi_zero_liability_unauthorized_transaction"
+      "rbi_zero_liability_unauthorized_transaction",
+      "card_cloning_skimming"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -643,7 +651,8 @@
     "scenario": "Someone set up call forwarding on my mobile phone by dialing a star code trick, intercepted my incoming banking OTP calls, and reset my UPI PIN.",
     "expected_issue_ids": [
       "whatsapp_account_call_forwarding_hijack",
-      "sim_swap_fraud"
+      "sim_swap_fraud",
+      "otp_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -693,7 +702,8 @@
     "scenario": "An unknown person cloned my WhatsApp account using a multi-device link trick and messaged all my contacts requesting urgent emergency money loans.",
     "expected_issue_ids": [
       "whatsapp_account_call_forwarding_hijack",
-      "online_impersonation"
+      "online_impersonation",
+      "ai_voice_clone_virtual_kidnapping"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -764,7 +774,8 @@
     "category": "ambiguous",
     "scenario": "I transferred Rs 5,000 online to someone who promised to deliver a graphics card, but they are now saying delivery is delayed by customs.",
     "expected_issue_ids": [
-      "ecommerce_fake_seller_fraud"
+      "ecommerce_fake_seller_fraud",
+      "otp_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -814,7 +825,8 @@
     "category": "ambiguous",
     "scenario": "An acquaintance borrowed Rs 40,000 promising to return it online the next day, but has now blocked me on WhatsApp and deleted their profile.",
     "expected_issue_ids": [
-      "other_online_financial_fraud"
+      "other_online_financial_fraud",
+      "matrimonial_romance_fraud"
     ],
     "expected_acts": [
       "Bharatiya Nyaya Sanhita, 2023"
@@ -836,7 +848,8 @@
     "category": "ambiguous",
     "scenario": "My net banking login showed a strange device logged in from another city but no funds have been debited from any of my accounts yet.",
     "expected_issue_ids": [
-      "unauthorized_account_access"
+      "unauthorized_account_access",
+      "phishing"
     ],
     "expected_acts": [
       "Information Technology Act, 2000"
@@ -916,7 +929,8 @@
     "scenario": "An online scammer hacked my account so traffic police must suspend his driving license immediately.",
     "expected_issue_ids": [
       "unauthorized_account_access",
-      "other_online_financial_fraud"
+      "other_online_financial_fraud",
+      "electricity_bill_sms_apk_scam"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -940,7 +954,8 @@
     "category": "misleading",
     "scenario": "My bank deducted legitimate monthly maintenance fee so I want to file an FIR against the bank manager for cyber terrorism.",
     "expected_issue_ids": [
-      "service_deficiency"
+      "service_deficiency",
+      "matrimonial_customs_gift_scam"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -991,7 +1006,8 @@
     "scenario": "A scammer created a phishing website mimicking SBI, stole my credentials, and fraudulently siphoned Rs 2.5 lakhs through multiple UPI accounts.",
     "expected_issue_ids": [
       "phishing",
-      "unauthorized_account_access"
+      "unauthorized_account_access",
+      "google_maps_fake_helpline_scam"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -1017,7 +1033,8 @@
     "category": "multi_provision",
     "scenario": "Cyber criminals cloned my biometric thumb impression, accessed my Aadhaar-linked savings account, and withdrew my complete pension.",
     "expected_issue_ids": [
-      "aeps_biometric_aadhaar_money_theft"
+      "aeps_biometric_aadhaar_money_theft",
+      "aeps_fingerprint_cloning_fraud"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -1042,7 +1059,8 @@
     "category": "multi_provision",
     "scenario": "An extortionist obtained private photos from my cloud backup, threatened public leak, and demanded Rs 1 lakh via cryptocurrency.",
     "expected_issue_ids": [
-      "sextortion_fraud"
+      "sextortion_fraud",
+      "instant_loan_app_harassment_defamation"
     ],
     "expected_acts": [
       "Information Technology Act, 2000",
@@ -1493,7 +1511,8 @@
     "scenario": "Food ordered through Swiggy contained fungal mold and dead insect, causing acute food poisoning and 3 days hospitalization of my minor child.",
     "expected_issue_ids": [
       "expired_spurious_goods",
-      "defective_product"
+      "defective_product",
+      "food_delivery_adulterated_contaminated_meal"
     ],
     "expected_acts": [
       "Food Safety and Standards Act, 2006",
@@ -1644,7 +1663,8 @@
     "scenario": "A water purifier company service engineer replaced genuine RO membrane filters with fake duplicate unbranded cartridges causing high TDS water contamination.",
     "expected_issue_ids": [
       "service_deficiency",
-      "unfair_trade_practice"
+      "unfair_trade_practice",
+      "water_purifier_ro_amc_scam"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -1768,7 +1788,8 @@
     "scenario": "A telecom operator arbitrarily converted my lifetime prepaid mobile number to a monthly postpaid connection without my written consent or e-KYC request.",
     "expected_issue_ids": [
       "service_deficiency",
-      "unfair_trade_practice"
+      "unfair_trade_practice",
+      "telecom_vas_billing_dispute"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -1814,7 +1835,8 @@
     "category": "closely_related",
     "scenario": "A gym membership agreement contained an unconscionable clause stating that advance annual fee of Rs 35,000 is 100% non-refundable under any medical contingency.",
     "expected_issue_ids": [
-      "unfair_trade_practice"
+      "unfair_trade_practice",
+      "unfair_contract_terms_consumer"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -1838,7 +1860,8 @@
     "category": "closely_related",
     "scenario": "An authorized smartphone service center held my phone for 60 days for a simple battery replacement, causing loss of business communication.",
     "expected_issue_ids": [
-      "service_deficiency"
+      "service_deficiency",
+      "warranty_guarantee_denial"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -1887,7 +1910,8 @@
     "category": "closely_related",
     "scenario": "A courier service lost an original university degree certificate sent via speed post and offered only Rs 100 statutory compensation citing fine print liability limits.",
     "expected_issue_ids": [
-      "service_deficiency"
+      "service_deficiency",
+      "courier_cargo_damage_loss"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -2151,7 +2175,8 @@
     "category": "multi_provision",
     "scenario": "An electric geyser exploded due to poor wiring, destroying bathroom tiles and causing third-degree burns to a family member.",
     "expected_issue_ids": [
-      "defective_product"
+      "defective_product",
+      "substandard_unmarked_electronics_bis"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019"
@@ -2178,7 +2203,8 @@
     "scenario": "An e-commerce giant sold spurious duplicate cosmetics with toxic heavy metals that caused permanent facial dermatological damage.",
     "expected_issue_ids": [
       "expired_spurious_goods",
-      "defective_product"
+      "defective_product",
+      "spurious_cosmetics_counterfeit_perfumes"
     ],
     "expected_acts": [
       "Consumer Protection Act, 2019",
@@ -2276,7 +2302,8 @@
     "category": "historical",
     "scenario": "In 2019, a medical surgeon left surgical gauze inside a patient abdomen during hernia surgery, discovered in 2024.",
     "expected_issue_ids": [
-      "service_deficiency"
+      "service_deficiency",
+      "medical_negligence_deficiency"
     ],
     "expected_acts": [
       "Consumer Protection Act, 1986",
@@ -2397,7 +2424,8 @@
     "category": "straightforward",
     "scenario": "An automated speed camera issued a speeding challan alleging 85 km/h on an urban arterial road where the notified maximum speed limit was 50 km/h.",
     "expected_issue_ids": [
-      "wrongful_challan"
+      "wrongful_challan",
+      "speed_trap_radar_calibration_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2494,7 +2522,8 @@
     "category": "straightforward",
     "scenario": "An automated junction camera issued a traffic fine for jumping a red signal light when my vehicle crossed the stop line during amber transition.",
     "expected_issue_ids": [
-      "emergency_vehicle_passage_red_light_challan"
+      "emergency_vehicle_passage_red_light_challan",
+      "traffic_signal_camera_red_light_yellow_light_glitch"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2588,7 +2617,8 @@
     "category": "complex",
     "scenario": "I drove on the wrong side of a dual carriageway solely because uniformed traffic police officers were diverting all vehicles due to metro pillar construction.",
     "expected_issue_ids": [
-      "wrong_side_police_diversion_defense"
+      "wrong_side_police_diversion_defense",
+      "disobeying_police_traffic_signal_challan"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2611,7 +2641,8 @@
     "category": "complex",
     "scenario": "A photographic e-challan for dangerous driving was generated against my vehicle registration number showing a completely different make, model, and color car.",
     "expected_issue_ids": [
-      "wrongful_challan"
+      "wrongful_challan",
+      "fake_traffic_challan_wrong_vehicle_city"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2657,7 +2688,8 @@
     "category": "complex",
     "scenario": "A driver failed to draw to the side of the road and deliberately blocked an emergency ambulance with sounding siren on a congested flyover.",
     "expected_issue_ids": [
-      "emergency_vehicle_passage_red_light_challan"
+      "emergency_vehicle_passage_red_light_challan",
+      "emergency_vehicle_obstruction_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2823,7 +2855,8 @@
     "category": "closely_related",
     "scenario": "A driver failed to produce their driving license immediately when demanded by a police officer, but holds a valid driving license.",
     "expected_issue_ids": [
-      "document_acceptance_or_verification"
+      "document_acceptance_or_verification",
+      "driving_without_licence_challan_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2846,7 +2879,8 @@
     "category": "closely_related",
     "scenario": "A person who has never obtained or applied for a driving license was caught operating a light motor vehicle on a public highway.",
     "expected_issue_ids": [
-      "driving_without_licence_challan_dispute"
+      "driving_without_licence_challan_dispute",
+      "using_mobile_phone_while_driving_challan"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -2869,7 +2903,8 @@
     "category": "closely_related",
     "scenario": "A vehicle crossed into an intersection on a red traffic signal solely to allow an emergency ambulance with sounding siren to pass.",
     "expected_issue_ids": [
-      "emergency_vehicle_passage_red_light_challan"
+      "emergency_vehicle_passage_red_light_challan",
+      "emergency_vehicle_passage_challan_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -3033,7 +3068,8 @@
     "category": "closely_related",
     "scenario": "A commercial auto rickshaw driver refused to ply for hire and demanded Rs 300 for a standard 3 km metered journey.",
     "expected_issue_ids": [
-      "wrongful_challan"
+      "wrongful_challan",
+      "vehicle_detention"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -3056,7 +3092,8 @@
     "scenario": "I entered a one-way street because the road sign was completely obscured by overgrown tree branches.",
     "expected_issue_ids": [
       "wrong_side_police_diversion_defense",
-      "wrongful_challan"
+      "wrongful_challan",
+      "speed_trap_radar_calibration_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988"
@@ -3422,7 +3459,9 @@
     "category": "karnataka_specific",
     "scenario": "A motorist in Bengaluru was issued an automated AI camera challan on Outer Ring Road for driving a two-wheeler with defective HSRP number plate.",
     "expected_issue_ids": [
-      "wrongful_challan"
+      "wrongful_challan",
+      "hsrp_number_plate_challan_dispute",
+      "high_security_registration_plate_hsrp_dispute"
     ],
     "expected_acts": [
       "Motor Vehicles Act, 1988",
@@ -3499,7 +3538,8 @@
     "category": "straightforward",
     "scenario": "An employer arbitrarily deducted Rs 6,500 from an administrative assistant's monthly salary for accidental office printer paper jam without inquiry.",
     "expected_issue_ids": [
-      "unauthorized_deduction"
+      "unauthorized_deduction",
+      "unilateral_laptop_damage_deduction_exit"
     ],
     "expected_acts": [
       "Payment of Wages Act, 1936"
@@ -3738,7 +3778,8 @@
     "category": "complex",
     "scenario": "Contractual sweepers performing identical cleaning duties alongside permanent sanitation workers are paid only 40% of the permanent workers' basic wage scale.",
     "expected_issue_ids": [
-      "minimum_wage_violation"
+      "minimum_wage_violation",
+      "gender_wage_discrimination"
     ],
     "expected_acts": [
       "Minimum Wages Act, 1948"
@@ -3784,6 +3825,7 @@
     "category": "complex",
     "scenario": "An employer refused to attest an employee's joint declaration form to rectify a date-of-birth error on the EPFO UAN portal, preventing PF withdrawal.",
     "expected_issue_ids": [
+      "pf_uan_mismatch_employer_refusal_to_attest_joint_declaration",
       "pf_deducted_not_deposited_epfo"
     ],
     "expected_acts": [
@@ -3922,7 +3964,9 @@
     "category": "complex",
     "scenario": "An employer withheld an employee's relieving letter, experience certificate, and PF account transfer because the employee refused to sign a 3-year non-compete.",
     "expected_issue_ids": [
-      "unlawful_termination_without_due_process"
+      "unlawful_termination_without_due_process",
+      "non_compete_clause_dispute",
+      "non_compete_clause_employment_trade_restraint"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872"
@@ -3968,7 +4012,8 @@
     "category": "closely_related",
     "scenario": "An employer completely refuses to disburse salary for the past 2 months, claiming business losses have wiped out working capital reserves.",
     "expected_issue_ids": [
-      "unpaid_wages"
+      "unpaid_wages",
+      "delayed_wages"
     ],
     "expected_acts": [
       "Payment of Wages Act, 1936",
@@ -4084,7 +4129,8 @@
     "category": "closely_related",
     "scenario": "A commercial establishment deducted Rs 1,000 advance salary installment that the employee had explicitly borrowed in writing the previous month.",
     "expected_issue_ids": [
-      "unauthorized_deduction"
+      "unauthorized_deduction",
+      "delayed_wages"
     ],
     "expected_acts": [
       "Payment of Wages Act, 1936"
@@ -4218,7 +4264,8 @@
     "category": "ambiguous",
     "scenario": "I was told by my manager to take leave without pay for 2 months because the project client paused operations.",
     "expected_issue_ids": [
-      "unpaid_wages"
+      "unpaid_wages",
+      "layoff_bench_wage_deduction"
     ],
     "expected_acts": [
       "Payment of Wages Act, 1936"
@@ -4431,7 +4478,8 @@
     "scenario": "An employer paying below minimum wages arbitrarily deducted Rs 3,000 for tool wear-and-tear and threatened termination if workmen complained.",
     "expected_issue_ids": [
       "minimum_wage_violation",
-      "unauthorized_deduction"
+      "unauthorized_deduction",
+      "unilateral_laptop_damage_deduction_exit"
     ],
     "expected_acts": [
       "Minimum Wages Act, 1948",
@@ -4803,7 +4851,8 @@
     "category": "straightforward",
     "scenario": "A service contract contained a clause imposing a flat penalty of Rs 25 lakhs for a single day minor delay in submitting a software status report.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "advance_deposit_forfeiture_dispute"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872"
@@ -4874,7 +4923,8 @@
     "category": "complex",
     "scenario": "An interior design contractor took 75% advance payment, completed only 20% rough masonry work, abandoned the commercial site, and refuses to return balance.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "interior_contractor_midway_abandonment"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872",
@@ -4899,7 +4949,8 @@
     "category": "complex",
     "scenario": "A franchisor induced a franchisee to invest Rs 20 lakhs by providing fabricated revenue audits and false historical profit balance sheets.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "misrepresentation_of_franchise_business_profits"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872",
@@ -4925,7 +4976,8 @@
     "category": "complex",
     "scenario": "A commercial client terminated a 2-year annual maintenance contract abruptly after 3 months without serving the mandatory 60 days contractual notice.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "unilateral_contract_termination"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872"
@@ -5042,7 +5094,8 @@
     "category": "complex",
     "scenario": "A commercial agreement stipulated that all disputes must be referred to sole arbitration by the managing director of one of the contracting corporate parties.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "security_deposit_dispute"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872"
@@ -5156,7 +5209,8 @@
     "category": "closely_related",
     "scenario": "An elderly property owner executed a gift deed in favor of their caretaker under undue influence and mental distress without independent legal advice.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "undue_influence_senior_citizen_property_agreement"
     ],
     "expected_acts": [
       "Indian Contract Act, 1872"
@@ -5203,7 +5257,8 @@
     "category": "closely_related",
     "scenario": "A residential tenant caused severe structural water seepage damage to apartment walls by unapproved internal plumbing alterations.",
     "expected_issue_ids": [
-      "security_deposit_dispute"
+      "security_deposit_dispute",
+      "tenancy_security_deposit_unlawful_deduction"
     ],
     "expected_acts": [
       "Transfer of Property Act, 1882",
@@ -5537,7 +5592,8 @@
     "category": "multi_provision",
     "scenario": "A seller took 80% advance payment for industrial land, refused to register sale deed, and attempted to sell the same plot to a third party.",
     "expected_issue_ids": [
-      "breach_of_contract"
+      "breach_of_contract",
+      "commercial_vendor_raw_material_delivery_default"
     ],
     "expected_acts": [
       "Specific Relief Act, 1963",
@@ -5664,7 +5720,8 @@
     "scenario": "A commercial lease agreement executed in Bengaluru was challenged before the civil court for impounding due to insufficient stamp duty under Karnataka Stamp Act.",
     "expected_issue_ids": [
       "commercial_lease_lock_in_penalty_dispute",
-      "breach_of_contract"
+      "breach_of_contract",
+      "insufficient_stamp_duty_impounding_dispute"
     ],
     "expected_acts": [
       "Transfer of Property Act, 1882",

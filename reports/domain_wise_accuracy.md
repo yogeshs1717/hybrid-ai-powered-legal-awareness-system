@@ -4,7 +4,7 @@
 **Evaluation Scope:** 5 Locked Statutory Domains across 150-Scenario Ground-Truth Audit and 250-Scenario Independent Benchmark  
 **Jurisdiction:** Republic of India (India Code Statutory Citations & Central Acts)  
 **Date:** October 2026  
-**Auditor / Architect:** Senior Indian Legal Auditor & AI Systems Engineer  
+**Auditor / Architect:** Statutory Knowledge Base Curator & AI Systems Engineer  
 
 ---
 

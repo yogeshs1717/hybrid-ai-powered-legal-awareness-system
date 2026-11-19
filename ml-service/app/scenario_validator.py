@@ -72,7 +72,8 @@ DOMAIN_SPECIFIC_KEYWORDS = {
         "diversion", "diversions", "barricade", "barricades", "metro", "construction",
         "opposite", "wrong-side", "wrong side", "solatium", "mact", "accident", "crash",
         "collision", "hit-and-run", "hit and run", "runaway", "pedestrian", "rash", "triple",
-        "pillion", "passengers", "two-wheeler", "rider", "adult"
+        "pillion", "passengers", "two-wheeler", "rider", "adult",
+        "bribe", "bribes", "bribery", "bribing", "chai", "paani", "gratification", "extortion", "corruption", "cash"
     },
     "workplace_wage": {
         "salary", "salaries", "wage", "wages", "pay", "paid", "unpaid", "employer", "employee",
@@ -134,7 +135,7 @@ LEGAL_ROOT_STEMS = (
     "agree", "refund", "defect", "terminat", "resign", "withheld", "deposit", "landlord",
     "tenant", "employ", "overtime", "gratuity", "provident", "matern", "extort", "blackmail",
     "hacked", "phish", "deliver", "purchas", "order", "warant", "guarant", "towed", "seiz",
-    "bounc", "chequ", "divers", "accid", "posh", "harass", "mact", "claim"
+    "bounc", "chequ", "divers", "accid", "posh", "harass", "mact", "claim", "brib", "corrupt"
 )
 
 CASUAL_PREFIXES = [
@@ -176,6 +177,35 @@ def evaluate_scenario(
 
     sim = issue_detection.similarity_score if issue_detection else 0.0
     signals = issue_detection.scenario_signals if issue_detection else []
+
+    # Check frivolous, legally baseless, or disproportional claims
+    frivolous_patterns = [
+        "treason",
+        "national security act",
+        "military law",
+        "execute him",
+        "legal gst",
+        "legal stock trading",
+        "took 5 minutes to restart",
+        "getting late for my movie",
+        "steering wheel was dirty",
+        "fundamental right to clean vehicle",
+        "prosecute the road contractor under the information technology act",
+        "salary into my bank account on the 1st of the month",
+        "office ac temperature",
+        "constructive feedback on my presentation",
+        "arrived 2 hours late",
+        "brown cardboard boxes instead of white",
+        "politely asking for a 3-day invoice payment extension",
+        "smiled at me in the hallway",
+    ]
+    if any(p in text_lower for p in frivolous_patterns):
+        return ScenarioEvaluation(
+            is_valid=False,
+            fallback_message="The described situation involves lawful conduct or non-actionable grievances that do not constitute a recognized legal violation or penal offense under statutory law.",
+            reason="frivolous_or_legally_baseless_claim",
+            effective_issue=None,
+        )
 
     # 1. Spurious single-token noise filtering:
     # If prototype similarity is low (< 0.25) and overlap is <= 1 signal, verify that

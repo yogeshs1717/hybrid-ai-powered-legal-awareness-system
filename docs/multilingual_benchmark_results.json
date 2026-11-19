@@ -1,28 +1,28 @@
 {
   "benchmark_summary": {
     "total_cases": 250,
-    "cross_language_group_consistency_percent": 84.0,
+    "cross_language_group_consistency_percent": 80.0,
     "parallel_scenario_groups": 50,
-    "consistent_parallel_groups": 42
+    "consistent_parallel_groups": 40
   },
   "language_wise_performance": {
     "en": {
       "total_cases": 50,
       "language_detection_accuracy": 100.0,
       "domain_classification_accuracy": 100.0,
-      "issue_detection_accuracy": 100.0,
+      "issue_detection_accuracy": 96.0,
       "section_recall": 80.67,
-      "section_precision": 57.44,
-      "average_latency_ms": 3.51
+      "section_precision": 54.03,
+      "average_latency_ms": 4.36
     },
     "hi": {
       "total_cases": 50,
       "language_detection_accuracy": 100.0,
       "domain_classification_accuracy": 100.0,
-      "issue_detection_accuracy": 100.0,
-      "section_recall": 80.67,
-      "section_precision": 55.44,
-      "average_latency_ms": 3.54
+      "issue_detection_accuracy": 96.0,
+      "section_recall": 78.67,
+      "section_precision": 50.7,
+      "average_latency_ms": 4.44
     },
     "hi-Latn": {
       "total_cases": 25,
@@ -30,8 +30,8 @@
       "domain_classification_accuracy": 100.0,
       "issue_detection_accuracy": 92.0,
       "section_recall": 76.67,
-      "section_precision": 54.77,
-      "average_latency_ms": 3.31
+      "section_precision": 51.37,
+      "average_latency_ms": 4.26
     },
     "hi-en": {
       "total_cases": 25,
@@ -39,8 +39,8 @@
       "domain_classification_accuracy": 100.0,
       "issue_detection_accuracy": 92.0,
       "section_recall": 82.67,
-      "section_precision": 60.1,
-      "average_latency_ms": 3.36
+      "section_precision": 56.7,
+      "average_latency_ms": 3.93
     },
     "kn": {
       "total_cases": 50,
@@ -48,8 +48,8 @@
       "domain_classification_accuracy": 100.0,
       "issue_detection_accuracy": 100.0,
       "section_recall": 80.67,
-      "section_precision": 55.44,
-      "average_latency_ms": 3.5
+      "section_precision": 52.03,
+      "average_latency_ms": 4.57
     },
     "kn-Latn": {
       "total_cases": 25,
@@ -57,17 +57,17 @@
       "domain_classification_accuracy": 100.0,
       "issue_detection_accuracy": 92.0,
       "section_recall": 82.67,
-      "section_precision": 58.77,
-      "average_latency_ms": 3.39
+      "section_precision": 55.37,
+      "average_latency_ms": 4.0
     },
     "kn-en": {
       "total_cases": 25,
       "language_detection_accuracy": 92.0,
       "domain_classification_accuracy": 100.0,
-      "issue_detection_accuracy": 84.0,
-      "section_recall": 80.0,
-      "section_precision": 57.04,
-      "average_latency_ms": 3.26
+      "issue_detection_accuracy": 88.0,
+      "section_recall": 76.0,
+      "section_precision": 49.37,
+      "average_latency_ms": 4.24
     }
   },
   "case_level_results": [
@@ -83,7 +83,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 10.42908800081932
+      "latency_ms": 8.930621002946282
     },
     {
       "test_id": "MB_KN_CF01",
@@ -97,7 +97,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.578875999868615
+      "latency_ms": 4.904995999822859
     },
     {
       "test_id": "MB_HI_CF01",
@@ -111,7 +111,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.8171960004547145
+      "latency_ms": 3.8959669982432388
     },
     {
       "test_id": "MB_KNL_CF01",
@@ -125,7 +125,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.205617002095096
+      "latency_ms": 5.486113997903885
     },
     {
       "test_id": "MB_HIL_CF01",
@@ -139,7 +139,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.37898400175618
+      "latency_ms": 4.645647000870667
     },
     {
       "test_id": "MB_KN_EN_CF01",
@@ -153,7 +153,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.032900000311201
+      "latency_ms": 3.680716999951983
     },
     {
       "test_id": "MB_HI_EN_CF01",
@@ -167,7 +167,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.58764200063888
+      "latency_ms": 3.628695001680171
     },
     {
       "test_id": "MB_EN_CF02",
@@ -181,7 +181,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1261849981092382
+      "latency_ms": 5.929541999648791
     },
     {
       "test_id": "MB_KN_CF02",
@@ -195,7 +195,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.5569890023907647
+      "latency_ms": 4.273675000149524
     },
     {
       "test_id": "MB_HI_CF02",
@@ -209,7 +209,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.269673001341289
+      "latency_ms": 3.741301999980351
     },
     {
       "test_id": "MB_KNL_CF02",
@@ -223,7 +223,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.9399689994752407
+      "latency_ms": 3.730845000973204
     },
     {
       "test_id": "MB_HIL_CF02",
@@ -237,7 +237,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.6336430021037813
+      "latency_ms": 6.035717997292522
     },
     {
       "test_id": "MB_KN_EN_CF02",
@@ -251,7 +251,7 @@
       "issue_correct": false,
       "section_recall": 0.5,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.338652997626923
+      "latency_ms": 3.829224999208236
     },
     {
       "test_id": "MB_HI_EN_CF02",
@@ -265,7 +265,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.2826090027811006
+      "latency_ms": 3.749147999769775
     },
     {
       "test_id": "MB_EN_CF03",
@@ -279,7 +279,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.196114001184469
+      "latency_ms": 4.502862000663299
     },
     {
       "test_id": "MB_KN_CF03",
@@ -293,7 +293,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.488421996735269
+      "latency_ms": 5.3054790005262475
     },
     {
       "test_id": "MB_HI_CF03",
@@ -307,7 +307,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.2414509987575
+      "latency_ms": 4.134277998673497
     },
     {
       "test_id": "MB_KNL_CF03",
@@ -321,7 +321,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.380127000127686
+      "latency_ms": 3.544282000802923
     },
     {
       "test_id": "MB_HIL_CF03",
@@ -335,7 +335,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.437258998019388
+      "latency_ms": 5.3677410032832995
     },
     {
       "test_id": "MB_KN_EN_CF03",
@@ -349,7 +349,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.1876709981588647
+      "latency_ms": 4.039236999233253
     },
     {
       "test_id": "MB_HI_EN_CF03",
@@ -363,7 +363,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.303765999589814
+      "latency_ms": 3.803147999860812
     },
     {
       "test_id": "MB_EN_CF04",
@@ -377,7 +377,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.2351080008083954
+      "latency_ms": 3.611703999922611
     },
     {
       "test_id": "MB_KN_CF04",
@@ -391,7 +391,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.3796540010371245
+      "latency_ms": 5.829522000567522
     },
     {
       "test_id": "MB_HI_CF04",
@@ -405,7 +405,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.1627770003979094
+      "latency_ms": 4.129085002205102
     },
     {
       "test_id": "MB_KNL_CF04",
@@ -419,7 +419,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.1088989999261685
+      "latency_ms": 3.665236999950139
     },
     {
       "test_id": "MB_HIL_CF04",
@@ -433,7 +433,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.1801280019863043
+      "latency_ms": 3.9224840002134442
     },
     {
       "test_id": "MB_KN_EN_CF04",
@@ -447,7 +447,7 @@
       "issue_correct": false,
       "section_recall": 0.3333333333333333,
       "section_precision": 0.25,
-      "latency_ms": 3.2422750009573065
+      "latency_ms": 5.873217000043951
     },
     {
       "test_id": "MB_HI_EN_CF04",
@@ -461,7 +461,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.3247130013478454
+      "latency_ms": 4.239047000737628
     },
     {
       "test_id": "MB_EN_CF05",
@@ -475,7 +475,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.102123002463486
+      "latency_ms": 4.146350001974497
     },
     {
       "test_id": "MB_KN_CF05",
@@ -489,7 +489,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.2470050027768593
+      "latency_ms": 5.703790000552544
     },
     {
       "test_id": "MB_HI_CF05",
@@ -503,7 +503,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.745719997823471
+      "latency_ms": 4.52576500174473
     },
     {
       "test_id": "MB_KNL_CF05",
@@ -517,7 +517,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.923946002032608
+      "latency_ms": 3.8475199980894104
     },
     {
       "test_id": "MB_HIL_CF05",
@@ -531,7 +531,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.4664739978325088
+      "latency_ms": 3.645487999165198
     },
     {
       "test_id": "MB_KN_EN_CF05",
@@ -545,7 +545,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.4631529997568578
+      "latency_ms": 5.790922998130554
     },
     {
       "test_id": "MB_HI_EN_CF05",
@@ -559,7 +559,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.9453530007449444
+      "latency_ms": 3.8724389996787068
     },
     {
       "test_id": "MB_EN_CI01",
@@ -573,7 +573,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.359344002092257
+      "latency_ms": 3.473051998298615
     },
     {
       "test_id": "MB_KN_CI01",
@@ -587,7 +587,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.085741998802405
+      "latency_ms": 3.5274430010758806
     },
     {
       "test_id": "MB_HI_CI01",
@@ -601,7 +601,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.115781000815332
+      "latency_ms": 5.795309996756259
     },
     {
       "test_id": "MB_KNL_CI01",
@@ -615,7 +615,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.1942699970386457
+      "latency_ms": 3.5622680006781593
     },
     {
       "test_id": "MB_HIL_CI01",
@@ -629,7 +629,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.137897998385597
+      "latency_ms": 3.681672998936847
     },
     {
       "test_id": "MB_KN_EN_CI01",
@@ -643,7 +643,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.0516379993059672
+      "latency_ms": 3.108537999651162
     },
     {
       "test_id": "MB_HI_EN_CI01",
@@ -657,7 +657,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.347106001456268
+      "latency_ms": 4.876470000453992
     },
     {
       "test_id": "MB_EN_CI02",
@@ -671,7 +671,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0253219993028324
+      "latency_ms": 3.823856997769326
     },
     {
       "test_id": "MB_KN_CI02",
@@ -685,7 +685,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.121765999821946
+      "latency_ms": 3.7378120032371953
     },
     {
       "test_id": "MB_HI_CI02",
@@ -699,7 +699,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.9176380012359004
+      "latency_ms": 3.5698589999810793
     },
     {
       "test_id": "MB_KNL_CI02",
@@ -713,7 +713,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0237639984989073
+      "latency_ms": 5.214092998357955
     },
     {
       "test_id": "MB_HIL_CI02",
@@ -727,7 +727,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.86356399737997
+      "latency_ms": 3.8505670017912053
     },
     {
       "test_id": "MB_KN_EN_CI02",
@@ -741,7 +741,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.6170560015307274
+      "latency_ms": 3.3317980014544446
     },
     {
       "test_id": "MB_HI_EN_CI02",
@@ -755,7 +755,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0243729997891933
+      "latency_ms": 3.183841999998549
     },
     {
       "test_id": "MB_EN_CI03",
@@ -769,7 +769,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.0187090014806017
+      "latency_ms": 4.891518998192623
     },
     {
       "test_id": "MB_KN_CI03",
@@ -783,7 +783,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.9846379986556713
+      "latency_ms": 4.9196820000361186
     },
     {
       "test_id": "MB_HI_CI03",
@@ -791,13 +791,13 @@
       "domain": "consumer_issues",
       "predicted_domain": "consumer_issues",
       "expected_issue": "refund_denial",
-      "predicted_issue": "refund_denial",
+      "predicted_issue": "packaged_commodity_mrp_tampering_overcharging",
       "detected_language": "hi",
       "domain_correct": true,
-      "issue_correct": true,
-      "section_recall": 1.0,
-      "section_precision": 0.6666666666666666,
-      "latency_ms": 3.3087009978771675
+      "issue_correct": false,
+      "section_recall": 0.5,
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.8586479968216736
     },
     {
       "test_id": "MB_KNL_CI03",
@@ -811,7 +811,7 @@
       "issue_correct": false,
       "section_recall": 0.5,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.3145349989354145
+      "latency_ms": 3.187128000718076
     },
     {
       "test_id": "MB_HIL_CI03",
@@ -825,7 +825,7 @@
       "issue_correct": false,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1903070012049284
+      "latency_ms": 4.9066829997173045
     },
     {
       "test_id": "MB_KN_EN_CI03",
@@ -839,7 +839,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.296399001555983
+      "latency_ms": 3.9991860030568205
     },
     {
       "test_id": "MB_HI_EN_CI03",
@@ -853,7 +853,7 @@
       "issue_correct": false,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.2136010013346095
+      "latency_ms": 3.5964250018878374
     },
     {
       "test_id": "MB_EN_CI04",
@@ -867,7 +867,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.400413999770535
+      "latency_ms": 3.4189399993920233
     },
     {
       "test_id": "MB_KN_CI04",
@@ -881,7 +881,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.284706003090832
+      "latency_ms": 5.206181998801185
     },
     {
       "test_id": "MB_HI_CI04",
@@ -895,7 +895,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.720713000802789
+      "latency_ms": 4.527171000518138
     },
     {
       "test_id": "MB_KNL_CI04",
@@ -909,7 +909,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.2454700014786795
+      "latency_ms": 3.4349449997534975
     },
     {
       "test_id": "MB_HIL_CI04",
@@ -923,7 +923,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.4759709997160826
+      "latency_ms": 3.3024830008798745
     },
     {
       "test_id": "MB_KN_EN_CI04",
@@ -937,7 +937,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.3136509991891216
+      "latency_ms": 5.139436001627473
     },
     {
       "test_id": "MB_HI_EN_CI04",
@@ -951,7 +951,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.9605370000354014
+      "latency_ms": 3.9888900028017815
     },
     {
       "test_id": "MB_EN_CI05",
@@ -965,7 +965,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 4.084460000740364
+      "latency_ms": 3.508673999021994
     },
     {
       "test_id": "MB_KN_CI05",
@@ -979,7 +979,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 4.013267000118503
+      "latency_ms": 3.4248499978275504
     },
     {
       "test_id": "MB_HI_CI05",
@@ -993,7 +993,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.3354369988956023
+      "latency_ms": 4.904684999928577
     },
     {
       "test_id": "MB_KNL_CI05",
@@ -1007,7 +1007,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1558279988530558
+      "latency_ms": 4.343598000559723
     },
     {
       "test_id": "MB_HIL_CI05",
@@ -1021,7 +1021,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1172889976005536
+      "latency_ms": 3.5717129976546858
     },
     {
       "test_id": "MB_KN_EN_CI05",
@@ -1035,7 +1035,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.8446440012194216
+      "latency_ms": 3.531158999976469
     },
     {
       "test_id": "MB_HI_EN_CI05",
@@ -1049,7 +1049,7 @@
       "issue_correct": false,
       "section_recall": 0.5,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.3697899998514913
+      "latency_ms": 4.956548000336625
     },
     {
       "test_id": "MB_EN_TE01",
@@ -1062,8 +1062,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 2.9430009999487083
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.350273000454763
     },
     {
       "test_id": "MB_KN_TE01",
@@ -1076,8 +1076,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.381465998245403
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.5638210028992034
     },
     {
       "test_id": "MB_HI_TE01",
@@ -1090,8 +1090,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 2.97236899859854
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.438158000790281
     },
     {
       "test_id": "MB_KNL_TE01",
@@ -1104,8 +1104,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.020308999111876
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.230575999827124
     },
     {
       "test_id": "MB_HIL_TE01",
@@ -1118,8 +1118,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.164478999678977
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.567561998555902
     },
     {
       "test_id": "MB_KN_EN_TE01",
@@ -1132,8 +1132,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.0327129970828537
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.5438480008451734
     },
     {
       "test_id": "MB_HI_EN_TE01",
@@ -1146,8 +1146,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.1817640010558534
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.4921719998237677
     },
     {
       "test_id": "MB_EN_TE02",
@@ -1161,7 +1161,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.9319319983187597
+      "latency_ms": 4.123578997678123
     },
     {
       "test_id": "MB_KN_TE02",
@@ -1175,7 +1175,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 2.866456998162903
+      "latency_ms": 4.924592001771089
     },
     {
       "test_id": "MB_HI_TE02",
@@ -1189,7 +1189,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.204699001798872
+      "latency_ms": 3.679607998492429
     },
     {
       "test_id": "MB_KNL_TE02",
@@ -1203,7 +1203,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.9186020001361612
+      "latency_ms": 3.420596000069054
     },
     {
       "test_id": "MB_HIL_TE02",
@@ -1217,7 +1217,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0677149989060126
+      "latency_ms": 3.3842019984149374
     },
     {
       "test_id": "MB_KN_EN_TE02",
@@ -1231,7 +1231,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.002729998115683
+      "latency_ms": 5.691135000233771
     },
     {
       "test_id": "MB_HI_EN_TE02",
@@ -1245,7 +1245,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.674463998322608
+      "latency_ms": 3.4647270003915764
     },
     {
       "test_id": "MB_EN_TE03",
@@ -1259,7 +1259,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.6166729987598956
+      "latency_ms": 3.37772900093114
     },
     {
       "test_id": "MB_KN_TE03",
@@ -1273,7 +1273,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1620360023225658
+      "latency_ms": 3.5684770009538624
     },
     {
       "test_id": "MB_HI_TE03",
@@ -1287,7 +1287,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.9868530000385363
+      "latency_ms": 6.598361000214936
     },
     {
       "test_id": "MB_KNL_TE03",
@@ -1301,7 +1301,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.005621998454444
+      "latency_ms": 3.870450997055741
     },
     {
       "test_id": "MB_HIL_TE03",
@@ -1315,7 +1315,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1446140019397717
+      "latency_ms": 3.802275001362432
     },
     {
       "test_id": "MB_KN_EN_TE03",
@@ -1328,8 +1328,8 @@
       "domain_correct": true,
       "issue_correct": false,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.1590830003551673
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 5.949067999608815
     },
     {
       "test_id": "MB_HI_EN_TE03",
@@ -1343,7 +1343,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.7576819995592814
+      "latency_ms": 4.355029999715043
     },
     {
       "test_id": "MB_EN_TE04",
@@ -1356,8 +1356,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.218724999896949
+      "section_precision": 0.4,
+      "latency_ms": 4.297513998608338
     },
     {
       "test_id": "MB_KN_TE04",
@@ -1370,8 +1370,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.3036259992513806
+      "section_precision": 0.4,
+      "latency_ms": 4.742176999570802
     },
     {
       "test_id": "MB_HI_TE04",
@@ -1384,8 +1384,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.636096000263933
+      "section_precision": 0.4,
+      "latency_ms": 11.179352997714886
     },
     {
       "test_id": "MB_KNL_TE04",
@@ -1398,8 +1398,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.6782180031877942
+      "section_precision": 0.4,
+      "latency_ms": 3.8288940013444517
     },
     {
       "test_id": "MB_HIL_TE04",
@@ -1412,8 +1412,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.1460329992114566
+      "section_precision": 0.4,
+      "latency_ms": 5.815825999889057
     },
     {
       "test_id": "MB_KN_EN_TE04",
@@ -1426,8 +1426,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 2.8711910017591435
+      "section_precision": 0.4,
+      "latency_ms": 3.643003001343459
     },
     {
       "test_id": "MB_HI_EN_TE04",
@@ -1440,8 +1440,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 2.90043199856882
+      "section_precision": 0.4,
+      "latency_ms": 3.4775789972627535
     },
     {
       "test_id": "MB_EN_TE05",
@@ -1454,8 +1454,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 2.882574000977911
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.3517519987071864
     },
     {
       "test_id": "MB_KN_TE05",
@@ -1468,8 +1468,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 2.922760999354068
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 5.736406001233263
     },
     {
       "test_id": "MB_HI_TE05",
@@ -1482,8 +1482,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 3.640440001618117
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 6.970565002120566
     },
     {
       "test_id": "MB_KNL_TE05",
@@ -1496,8 +1496,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 3.292064997367561
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 6.247351000638446
     },
     {
       "test_id": "MB_HIL_TE05",
@@ -1510,8 +1510,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 2.9958730010548607
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.712088997621322
     },
     {
       "test_id": "MB_KN_EN_TE05",
@@ -1524,8 +1524,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 2.963375998660922
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.1920579969882965
     },
     {
       "test_id": "MB_HI_EN_TE05",
@@ -1538,8 +1538,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 3.36175899792579
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.206585999781964
     },
     {
       "test_id": "MB_EN_WW01",
@@ -1553,7 +1553,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1954240002960432
+      "latency_ms": 6.106677999923704
     },
     {
       "test_id": "MB_KN_WW01",
@@ -1567,7 +1567,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.335872999741696
+      "latency_ms": 3.646398999990197
     },
     {
       "test_id": "MB_HI_WW01",
@@ -1581,7 +1581,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 4.233587998896837
+      "latency_ms": 3.345508997881552
     },
     {
       "test_id": "MB_KNL_WW01",
@@ -1595,7 +1595,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.4861800013459288
+      "latency_ms": 3.482961001282092
     },
     {
       "test_id": "MB_HIL_WW01",
@@ -1609,7 +1609,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.750529001990799
+      "latency_ms": 5.88981999680982
     },
     {
       "test_id": "MB_KN_EN_WW01",
@@ -1623,7 +1623,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1739499972900376
+      "latency_ms": 3.7501250008062925
     },
     {
       "test_id": "MB_HI_EN_WW01",
@@ -1637,7 +1637,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.2155400003830437
+      "latency_ms": 3.3664330003375653
     },
     {
       "test_id": "MB_EN_WW02",
@@ -1651,7 +1651,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.26615700032562
+      "latency_ms": 3.4880650018749293
     },
     {
       "test_id": "MB_KN_WW02",
@@ -1665,7 +1665,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.29919299838366
+      "latency_ms": 5.810874001326738
     },
     {
       "test_id": "MB_HI_WW02",
@@ -1679,7 +1679,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.271452002081787
+      "latency_ms": 3.6010399999213405
     },
     {
       "test_id": "MB_KNL_WW02",
@@ -1693,7 +1693,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.049392998946132
+      "latency_ms": 3.1574019994877744
     },
     {
       "test_id": "MB_HIL_WW02",
@@ -1707,7 +1707,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1352890000562184
+      "latency_ms": 3.292928999144351
     },
     {
       "test_id": "MB_KN_EN_WW02",
@@ -1715,13 +1715,13 @@
       "domain": "workplace_wage",
       "predicted_domain": "workplace_wage",
       "expected_issue": "unilateral_laptop_damage_deduction_exit",
-      "predicted_issue": "unauthorized_deduction",
+      "predicted_issue": "unilateral_laptop_damage_deduction_exit",
       "detected_language": "kn-en",
       "domain_correct": true,
-      "issue_correct": false,
-      "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.063954001845559
+      "issue_correct": true,
+      "section_recall": 0.0,
+      "section_precision": 0.0,
+      "latency_ms": 5.938177997450111
     },
     {
       "test_id": "MB_HI_EN_WW02",
@@ -1735,7 +1735,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.469212999334559
+      "latency_ms": 3.556897001544712
     },
     {
       "test_id": "MB_EN_WW03",
@@ -1749,7 +1749,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.2365629995183554
+      "latency_ms": 3.4731089981505647
     },
     {
       "test_id": "MB_KN_WW03",
@@ -1763,7 +1763,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 4.088123001565691
+      "latency_ms": 3.7547729989455547
     },
     {
       "test_id": "MB_HI_WW03",
@@ -1777,7 +1777,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.3514809983898886
+      "latency_ms": 5.5889010000100825
     },
     {
       "test_id": "MB_KNL_WW03",
@@ -1791,7 +1791,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.990942997712409
+      "latency_ms": 3.5265549995529
     },
     {
       "test_id": "MB_HIL_WW03",
@@ -1805,7 +1805,7 @@
       "issue_correct": false,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.46536299912259
+      "latency_ms": 3.4348250010225456
     },
     {
       "test_id": "MB_KN_EN_WW03",
@@ -1819,7 +1819,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.3725329994922504
+      "latency_ms": 3.3333339997625444
     },
     {
       "test_id": "MB_HI_EN_WW03",
@@ -1833,7 +1833,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.088934998231707
+      "latency_ms": 5.73852800152963
     },
     {
       "test_id": "MB_EN_WW04",
@@ -1847,7 +1847,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.0716790024598595
+      "latency_ms": 3.978398999606725
     },
     {
       "test_id": "MB_KN_WW04",
@@ -1861,7 +1861,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.170505999150919
+      "latency_ms": 3.797705998294987
     },
     {
       "test_id": "MB_HI_WW04",
@@ -1875,7 +1875,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.203363998181885
+      "latency_ms": 3.689634999318514
     },
     {
       "test_id": "MB_KNL_WW04",
@@ -1889,7 +1889,7 @@
       "issue_correct": false,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.884796998841921
+      "latency_ms": 5.673514999216422
     },
     {
       "test_id": "MB_HIL_WW04",
@@ -1903,7 +1903,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.022553999471711
+      "latency_ms": 3.6425219986995216
     },
     {
       "test_id": "MB_KN_EN_WW04",
@@ -1917,7 +1917,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.798000001348555
+      "latency_ms": 3.1845529993006494
     },
     {
       "test_id": "MB_HI_EN_WW04",
@@ -1931,7 +1931,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.9494350019376725
+      "latency_ms": 3.3996380007010885
     },
     {
       "test_id": "MB_EN_WW05",
@@ -1945,7 +1945,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1454579984711017
+      "latency_ms": 5.076228000689298
     },
     {
       "test_id": "MB_KN_WW05",
@@ -1959,7 +1959,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.1428270012838766
+      "latency_ms": 3.956461001507705
     },
     {
       "test_id": "MB_HI_WW05",
@@ -1973,7 +1973,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.0875800002831966
+      "latency_ms": 3.530437003064435
     },
     {
       "test_id": "MB_KNL_WW05",
@@ -1987,7 +1987,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.9005219985265285
+      "latency_ms": 3.2573429998592474
     },
     {
       "test_id": "MB_HIL_WW05",
@@ -2001,7 +2001,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.9481710007530637
+      "latency_ms": 5.149371001607506
     },
     {
       "test_id": "MB_KN_EN_WW05",
@@ -2015,7 +2015,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.798574998450931
+      "latency_ms": 3.7374379971879534
     },
     {
       "test_id": "MB_HI_EN_WW05",
@@ -2029,7 +2029,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.9506569990189746
+      "latency_ms": 3.1912590020510834
     },
     {
       "test_id": "MB_EN_CD01",
@@ -2037,13 +2037,13 @@
       "domain": "contractual_disputes",
       "predicted_domain": "contractual_disputes",
       "expected_issue": "security_deposit_dispute",
-      "predicted_issue": "security_deposit_dispute",
+      "predicted_issue": "tenancy_security_deposit_unlawful_deduction",
       "detected_language": "en",
       "domain_correct": true,
-      "issue_correct": true,
+      "issue_correct": false,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.9715170021518134
+      "latency_ms": 3.3990970005106647
     },
     {
       "test_id": "MB_KN_CD01",
@@ -2057,7 +2057,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.0723210002179258
+      "latency_ms": 5.2474529984465335
     },
     {
       "test_id": "MB_HI_CD01",
@@ -2071,7 +2071,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.0622679987573065
+      "latency_ms": 4.276453000784386
     },
     {
       "test_id": "MB_KNL_CD01",
@@ -2085,7 +2085,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.881959000660572
+      "latency_ms": 3.4600819999468513
     },
     {
       "test_id": "MB_HIL_CD01",
@@ -2099,7 +2099,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.0316039992612787
+      "latency_ms": 3.6542650013871025
     },
     {
       "test_id": "MB_KN_EN_CD01",
@@ -2113,7 +2113,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.9714320007769857
+      "latency_ms": 4.894023997621844
     },
     {
       "test_id": "MB_HI_EN_CD01",
@@ -2127,7 +2127,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.5940959969593678
+      "latency_ms": 4.083183997863671
     },
     {
       "test_id": "MB_EN_CD02",
@@ -2141,7 +2141,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.4808800010068808
+      "latency_ms": 3.320996998809278
     },
     {
       "test_id": "MB_KN_CD02",
@@ -2155,7 +2155,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.3768749999580905
+      "latency_ms": 3.5755999997491017
     },
     {
       "test_id": "MB_HI_CD02",
@@ -2169,7 +2169,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.293578000011621
+      "latency_ms": 3.626186997280456
     },
     {
       "test_id": "MB_KNL_CD02",
@@ -2183,7 +2183,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 5.392536000726977
+      "latency_ms": 5.409340999904089
     },
     {
       "test_id": "MB_HIL_CD02",
@@ -2197,7 +2197,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 5.266218002361711
+      "latency_ms": 3.559537002729485
     },
     {
       "test_id": "MB_KN_EN_CD02",
@@ -2211,7 +2211,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 4.471584001294104
+      "latency_ms": 3.4204120020149276
     },
     {
       "test_id": "MB_HI_EN_CD02",
@@ -2225,7 +2225,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 5.169257998204557
+      "latency_ms": 3.4090629997081123
     },
     {
       "test_id": "MB_EN_CD03",
@@ -2238,8 +2238,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 4.735384998639347
+      "section_precision": 0.125,
+      "latency_ms": 5.68682599987369
     },
     {
       "test_id": "MB_KN_CD03",
@@ -2252,8 +2252,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 4.130485001951456
+      "section_precision": 0.125,
+      "latency_ms": 3.5827479987347033
     },
     {
       "test_id": "MB_HI_CD03",
@@ -2266,8 +2266,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.51881099777529
+      "section_precision": 0.125,
+      "latency_ms": 3.429734002565965
     },
     {
       "test_id": "MB_KNL_CD03",
@@ -2280,8 +2280,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.9518400008091703
+      "section_precision": 0.125,
+      "latency_ms": 3.282034998846939
     },
     {
       "test_id": "MB_HIL_CD03",
@@ -2294,8 +2294,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.340560997457942
+      "section_precision": 0.125,
+      "latency_ms": 5.7967129978351295
     },
     {
       "test_id": "MB_KN_EN_CD03",
@@ -2308,8 +2308,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.418528998736292
+      "section_precision": 0.125,
+      "latency_ms": 3.4948850006912835
     },
     {
       "test_id": "MB_HI_EN_CD03",
@@ -2322,8 +2322,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.297963001386961
+      "section_precision": 0.125,
+      "latency_ms": 3.5648430020955857
     },
     {
       "test_id": "MB_EN_CD04",
@@ -2337,7 +2337,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.002129000582499
+      "latency_ms": 3.471675001492258
     },
     {
       "test_id": "MB_KN_CD04",
@@ -2351,7 +2351,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.102589999092743
+      "latency_ms": 5.763984998338856
     },
     {
       "test_id": "MB_HI_CD04",
@@ -2365,7 +2365,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.544593997707125
+      "latency_ms": 3.9139350010373164
     },
     {
       "test_id": "MB_KNL_CD04",
@@ -2379,7 +2379,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.909945000486914
+      "latency_ms": 3.502674000628758
     },
     {
       "test_id": "MB_HIL_CD04",
@@ -2393,7 +2393,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.500279002764728
+      "latency_ms": 3.504664997308282
     },
     {
       "test_id": "MB_KN_EN_CD04",
@@ -2407,7 +2407,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.260066998336697
+      "latency_ms": 5.822906001412775
     },
     {
       "test_id": "MB_HI_EN_CD04",
@@ -2421,7 +2421,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0669820007460658
+      "latency_ms": 3.6367729990161024
     },
     {
       "test_id": "MB_EN_CD05",
@@ -2435,7 +2435,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.9222449993540067
+      "latency_ms": 3.202030999091221
     },
     {
       "test_id": "MB_KN_CD05",
@@ -2449,7 +2449,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.0798050029261503
+      "latency_ms": 3.3018049980455544
     },
     {
       "test_id": "MB_HI_CD05",
@@ -2463,7 +2463,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.227008000976639
+      "latency_ms": 5.770823998318519
     },
     {
       "test_id": "MB_KNL_CD05",
@@ -2477,7 +2477,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.994492999278009
+      "latency_ms": 3.5405339986027684
     },
     {
       "test_id": "MB_HIL_CD05",
@@ -2491,7 +2491,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.974093997181626
+      "latency_ms": 3.2680530021025334
     },
     {
       "test_id": "MB_KN_EN_CD05",
@@ -2505,7 +2505,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.8339080017758533
+      "latency_ms": 3.1556799985992257
     },
     {
       "test_id": "MB_HI_EN_CD05",
@@ -2519,7 +2519,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 2.871258999221027
+      "latency_ms": 5.404783001722535
     },
     {
       "test_id": "MB_EN_VAR_CF01",
@@ -2533,7 +2533,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.306345999590121
+      "latency_ms": 4.059762999531813
     },
     {
       "test_id": "MB_KN_VAR_CF01",
@@ -2547,7 +2547,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.677846998471068
+      "latency_ms": 4.133487997023622
     },
     {
       "test_id": "MB_HI_VAR_CF01",
@@ -2561,7 +2561,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.9051280000421684
+      "latency_ms": 4.258109998772852
     },
     {
       "test_id": "MB_EN_VAR_CF02",
@@ -2575,7 +2575,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.853744001389714
+      "latency_ms": 6.1227559999679215
     },
     {
       "test_id": "MB_KN_VAR_CF02",
@@ -2589,7 +2589,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.6097699994570576
+      "latency_ms": 4.2687650020525325
     },
     {
       "test_id": "MB_HI_VAR_CF02",
@@ -2603,7 +2603,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.749112001969479
+      "latency_ms": 3.7780759994348045
     },
     {
       "test_id": "MB_EN_VAR_CF03",
@@ -2617,7 +2617,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.881394000927685
+      "latency_ms": 5.79478600047878
     },
     {
       "test_id": "MB_KN_VAR_CF03",
@@ -2631,7 +2631,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.6747929989360273
+      "latency_ms": 4.419078002683818
     },
     {
       "test_id": "MB_HI_VAR_CF03",
@@ -2645,7 +2645,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.469555998890428
+      "latency_ms": 3.8930829978198744
     },
     {
       "test_id": "MB_EN_VAR_CF04",
@@ -2659,7 +2659,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.3362249996571336
+      "latency_ms": 3.8106489992060233
     },
     {
       "test_id": "MB_KN_VAR_CF04",
@@ -2673,7 +2673,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.611849002481904
+      "latency_ms": 6.483956000010949
     },
     {
       "test_id": "MB_HI_VAR_CF04",
@@ -2687,7 +2687,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.75,
-      "latency_ms": 3.8365270011126995
+      "latency_ms": 4.345107001427095
     },
     {
       "test_id": "MB_EN_VAR_CF05",
@@ -2701,7 +2701,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.61738599895034
+      "latency_ms": 4.1925280020223
     },
     {
       "test_id": "MB_KN_VAR_CF05",
@@ -2715,7 +2715,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.6228860008122865
+      "latency_ms": 6.7370670003583655
     },
     {
       "test_id": "MB_HI_VAR_CF05",
@@ -2729,7 +2729,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.4,
-      "latency_ms": 3.4398960015096236
+      "latency_ms": 4.544610001175897
     },
     {
       "test_id": "MB_EN_VAR_CI01",
@@ -2743,7 +2743,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.651163999165874
+      "latency_ms": 3.6311860021669418
     },
     {
       "test_id": "MB_KN_VAR_CI01",
@@ -2757,7 +2757,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.498149999359157
+      "latency_ms": 5.2150340015941765
     },
     {
       "test_id": "MB_HI_VAR_CI01",
@@ -2771,7 +2771,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.1485889994655736
+      "latency_ms": 4.7621670018997975
     },
     {
       "test_id": "MB_EN_VAR_CI02",
@@ -2785,7 +2785,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 2.9500950004148763
+      "latency_ms": 3.8332479998643976
     },
     {
       "test_id": "MB_KN_VAR_CI02",
@@ -2799,7 +2799,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.2719350019760896
+      "latency_ms": 3.7762090032629203
     },
     {
       "test_id": "MB_HI_VAR_CI02",
@@ -2813,7 +2813,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.1320009984483477
+      "latency_ms": 5.650371000228915
     },
     {
       "test_id": "MB_EN_VAR_CI03",
@@ -2827,7 +2827,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.217164001398487
+      "latency_ms": 4.1417600004933774
     },
     {
       "test_id": "MB_KN_VAR_CI03",
@@ -2841,7 +2841,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.3230370027013123
+      "latency_ms": 4.33953099854989
     },
     {
       "test_id": "MB_HI_VAR_CI03",
@@ -2849,13 +2849,13 @@
       "domain": "consumer_issues",
       "predicted_domain": "consumer_issues",
       "expected_issue": "refund_denial",
-      "predicted_issue": "refund_denial",
+      "predicted_issue": "packaged_commodity_mrp_tampering_overcharging",
       "detected_language": "hi",
       "domain_correct": true,
-      "issue_correct": true,
-      "section_recall": 1.0,
-      "section_precision": 0.6666666666666666,
-      "latency_ms": 3.073648000281537
+      "issue_correct": false,
+      "section_recall": 0.5,
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 4.124441002204549
     },
     {
       "test_id": "MB_EN_VAR_CI04",
@@ -2869,7 +2869,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.193532000295818
+      "latency_ms": 6.453794001572533
     },
     {
       "test_id": "MB_KN_VAR_CI04",
@@ -2883,7 +2883,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.8064750006014947
+      "latency_ms": 5.082626001239987
     },
     {
       "test_id": "MB_HI_VAR_CI04",
@@ -2897,7 +2897,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.6984299986215774
+      "latency_ms": 4.410878002090612
     },
     {
       "test_id": "MB_EN_VAR_CI05",
@@ -2911,7 +2911,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 4.187877999356715
+      "latency_ms": 5.948477999481838
     },
     {
       "test_id": "MB_KN_VAR_CI05",
@@ -2925,7 +2925,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.771649000555044
+      "latency_ms": 4.012482000689488
     },
     {
       "test_id": "MB_HI_VAR_CI05",
@@ -2939,7 +2939,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 4.402351001772331
+      "latency_ms": 3.744875000847969
     },
     {
       "test_id": "MB_EN_VAR_TE01",
@@ -2952,8 +2952,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.4666030005610082
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.497997000522446
     },
     {
       "test_id": "MB_KN_VAR_TE01",
@@ -2966,8 +2966,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.5043460011365823
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 6.65678699806449
     },
     {
       "test_id": "MB_HI_VAR_TE01",
@@ -2980,8 +2980,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.4,
-      "latency_ms": 3.187163998518372
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.7898490008956287
     },
     {
       "test_id": "MB_EN_VAR_TE02",
@@ -2995,7 +2995,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.789950998907443
+      "latency_ms": 3.6080299978493713
     },
     {
       "test_id": "MB_KN_VAR_TE02",
@@ -3009,7 +3009,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.705301998707
+      "latency_ms": 5.524377000256209
     },
     {
       "test_id": "MB_HI_VAR_TE02",
@@ -3023,7 +3023,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.5,
-      "latency_ms": 3.4934029972646385
+      "latency_ms": 4.204209999443265
     },
     {
       "test_id": "MB_EN_VAR_TE03",
@@ -3037,7 +3037,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.8285230002657045
+      "latency_ms": 3.6475069973676
     },
     {
       "test_id": "MB_KN_VAR_TE03",
@@ -3051,7 +3051,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 5.296303999784868
+      "latency_ms": 3.7274360001902096
     },
     {
       "test_id": "MB_HI_VAR_TE03",
@@ -3065,7 +3065,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 10.632345998601522
+      "latency_ms": 5.747352999605937
     },
     {
       "test_id": "MB_EN_VAR_TE04",
@@ -3078,8 +3078,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.6574009973264765
+      "section_precision": 0.4,
+      "latency_ms": 3.945214000850683
     },
     {
       "test_id": "MB_KN_VAR_TE04",
@@ -3092,8 +3092,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 4.041964002681198
+      "section_precision": 0.4,
+      "latency_ms": 4.348906000814168
     },
     {
       "test_id": "MB_HI_VAR_TE04",
@@ -3106,8 +3106,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 1.0,
-      "latency_ms": 3.3867550009745173
+      "section_precision": 0.4,
+      "latency_ms": 3.8840070010337513
     },
     {
       "test_id": "MB_EN_VAR_TE05",
@@ -3120,8 +3120,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 2.957693999633193
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 5.915672998526134
     },
     {
       "test_id": "MB_KN_VAR_TE05",
@@ -3134,8 +3134,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 3.067360998102231
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.9159910011221655
     },
     {
       "test_id": "MB_HI_VAR_TE05",
@@ -3148,8 +3148,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 0.5,
-      "section_precision": 0.5,
-      "latency_ms": 3.080390000832267
+      "section_precision": 0.3333333333333333,
+      "latency_ms": 3.7925789984001312
     },
     {
       "test_id": "MB_EN_VAR_WW01",
@@ -3163,7 +3163,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.7458519982465077
+      "latency_ms": 5.129796998517122
     },
     {
       "test_id": "MB_KN_VAR_WW01",
@@ -3177,7 +3177,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.2448689999000635
+      "latency_ms": 4.414582999743288
     },
     {
       "test_id": "MB_HI_VAR_WW01",
@@ -3191,7 +3191,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.0250870004238095
+      "latency_ms": 3.783314998145215
     },
     {
       "test_id": "MB_EN_VAR_WW02",
@@ -3205,7 +3205,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.9441789993143175
+      "latency_ms": 3.467565999017097
     },
     {
       "test_id": "MB_KN_VAR_WW02",
@@ -3219,7 +3219,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.172823002387304
+      "latency_ms": 5.2483600011328235
     },
     {
       "test_id": "MB_HI_VAR_WW02",
@@ -3233,7 +3233,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1508810025115963
+      "latency_ms": 4.064205000759102
     },
     {
       "test_id": "MB_EN_VAR_WW03",
@@ -3247,7 +3247,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.0343130019900855
+      "latency_ms": 3.6204429998178966
     },
     {
       "test_id": "MB_KN_VAR_WW03",
@@ -3261,7 +3261,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.1032490005600266
+      "latency_ms": 3.6552259989548475
     },
     {
       "test_id": "MB_HI_VAR_WW03",
@@ -3275,7 +3275,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.9388369985099416
+      "latency_ms": 5.238149999058805
     },
     {
       "test_id": "MB_EN_VAR_WW04",
@@ -3289,7 +3289,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 2.9131430019333493
+      "latency_ms": 3.910062998329522
     },
     {
       "test_id": "MB_KN_VAR_WW04",
@@ -3303,7 +3303,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.262315000029048
+      "latency_ms": 3.9323350029007997
     },
     {
       "test_id": "MB_HI_VAR_WW04",
@@ -3317,7 +3317,7 @@
       "issue_correct": true,
       "section_recall": 0.0,
       "section_precision": 0.0,
-      "latency_ms": 3.2704879995435476
+      "latency_ms": 3.6629610003728885
     },
     {
       "test_id": "MB_EN_VAR_WW05",
@@ -3331,7 +3331,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.8826339987281244
+      "latency_ms": 5.588661002548179
     },
     {
       "test_id": "MB_KN_VAR_WW05",
@@ -3345,7 +3345,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.5836540009768214
+      "latency_ms": 3.9633790001971647
     },
     {
       "test_id": "MB_HI_VAR_WW05",
@@ -3359,7 +3359,7 @@
       "issue_correct": true,
       "section_recall": 0.6666666666666666,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.3623889976297505
+      "latency_ms": 3.690132001793245
     },
     {
       "test_id": "MB_EN_VAR_CD01",
@@ -3367,13 +3367,13 @@
       "domain": "contractual_disputes",
       "predicted_domain": "contractual_disputes",
       "expected_issue": "security_deposit_dispute",
-      "predicted_issue": "security_deposit_dispute",
+      "predicted_issue": "tenancy_security_deposit_unlawful_deduction",
       "detected_language": "en",
       "domain_correct": true,
-      "issue_correct": true,
+      "issue_correct": false,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 4.011406002973672
+      "latency_ms": 3.4053549970849417
     },
     {
       "test_id": "MB_KN_VAR_CD01",
@@ -3387,7 +3387,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.4184369978902396
+      "latency_ms": 5.692818998795701
     },
     {
       "test_id": "MB_HI_VAR_CD01",
@@ -3401,7 +3401,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.0365699967660476
+      "latency_ms": 3.924484997696709
     },
     {
       "test_id": "MB_EN_VAR_CD02",
@@ -3415,7 +3415,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 2.866031998564722
+      "latency_ms": 3.6009309988003224
     },
     {
       "test_id": "MB_KN_VAR_CD02",
@@ -3429,7 +3429,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.021528998942813
+      "latency_ms": 3.7239689991110936
     },
     {
       "test_id": "MB_HI_VAR_CD02",
@@ -3443,7 +3443,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.6666666666666666,
-      "latency_ms": 3.291714998340467
+      "latency_ms": 6.110424001235515
     },
     {
       "test_id": "MB_EN_VAR_CD03",
@@ -3456,8 +3456,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.0775989980611484
+      "section_precision": 0.125,
+      "latency_ms": 3.568647000065539
     },
     {
       "test_id": "MB_KN_VAR_CD03",
@@ -3470,8 +3470,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.1298289977712557
+      "section_precision": 0.125,
+      "latency_ms": 3.8595229998463765
     },
     {
       "test_id": "MB_HI_VAR_CD03",
@@ -3484,8 +3484,8 @@
       "domain_correct": true,
       "issue_correct": true,
       "section_recall": 1.0,
-      "section_precision": 0.14285714285714285,
-      "latency_ms": 3.068539001105819
+      "section_precision": 0.125,
+      "latency_ms": 3.643076997832395
     },
     {
       "test_id": "MB_EN_VAR_CD04",
@@ -3499,7 +3499,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0036149983061478
+      "latency_ms": 5.9579980006674305
     },
     {
       "test_id": "MB_KN_VAR_CD04",
@@ -3513,7 +3513,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 3.0720150025445037
+      "latency_ms": 4.024208999908296
     },
     {
       "test_id": "MB_HI_VAR_CD04",
@@ -3527,7 +3527,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 1.0,
-      "latency_ms": 4.140443001233507
+      "latency_ms": 3.5157839993189555
     },
     {
       "test_id": "MB_EN_VAR_CD05",
@@ -3541,7 +3541,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.5510470006556716
+      "latency_ms": 4.194690998701844
     },
     {
       "test_id": "MB_KN_VAR_CD05",
@@ -3555,7 +3555,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.382961996976519
+      "latency_ms": 5.54931700025918
     },
     {
       "test_id": "MB_HI_VAR_CD05",
@@ -3569,7 +3569,7 @@
       "issue_correct": true,
       "section_recall": 1.0,
       "section_precision": 0.3333333333333333,
-      "latency_ms": 3.234259998862399
+      "latency_ms": 3.9513310002803337
     }
   ]
 }

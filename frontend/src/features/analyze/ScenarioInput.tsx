@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Loader2, Scale } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,6 +20,10 @@ export function ScenarioInput({
 }) {
   const [value, setValue] = useState(initialValue);
   const [voiceLanguage, setVoiceLanguage] = useState<VoiceRecorderState["detectedLanguage"]>(null);
+
+  useEffect(() => {
+    setValue(initialValue);
+  }, [initialValue]);
 
   const trimmed = value.trim();
   const len = trimmed.length;

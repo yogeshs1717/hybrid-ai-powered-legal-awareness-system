@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { RotateCcw } from "lucide-react";
+import { RotateCcw, Pencil } from "lucide-react";
 import { useAnalyze } from "@/hooks/useAnalyze";
 import { ScenarioInput } from "@/features/analyze/ScenarioInput";
 import { AnalysisStages } from "@/features/analyze/AnalysisStages";
@@ -39,6 +39,11 @@ export function AnalyzePage() {
     if (location.state) {
       navigate(location.pathname, { replace: true, state: {} });
     }
+  };
+
+  const handleEdit = () => {
+    reset();
+    initialTriggered.current = true;
   };
 
   const showInput = !isPending && !isSuccess;
@@ -84,7 +89,7 @@ export function AnalyzePage() {
                   analyze.mutate({ scenario: s, language: lang });
                 }}
                 loading={isPending}
-                initialValue={initialScenario || ""}
+                initialValue={submittedScenario || initialScenario || ""}
               />
 
             </div>
@@ -133,19 +138,32 @@ export function AnalyzePage() {
                   ANALYSIS RESULTS
                 </h2>
               </div>
-              <button
-                type="button"
-                onClick={handleReset}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
-              >
-                <RotateCcw className="h-3.5 w-3.5" />
-                <span>ANALYZE NEW SITUATION</span>
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleEdit}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border-2 border-primary bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-mono text-xs font-bold transition-colors shadow-sm"
+                  title="Edit your previous input text"
+                >
+                  <Pencil className="h-3.5 w-3.5" />
+                  <span>EDIT SITUATION</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleReset}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border-2 border-foreground hover:bg-foreground hover:text-background font-mono text-xs font-bold transition-colors shadow-sm"
+                  title="Clear input and analyze a new situation"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                  <span>ANALYZE NEW SITUATION</span>
+                </button>
+              </div>
             </div>
             <ResultView
               data={data}
               scenario={submittedScenario}
               onReset={handleReset}
+              onEdit={handleEdit}
               onSelectExample={(exampleScenario) => {
                 setSubmittedScenario(exampleScenario);
                 analyze.mutate(exampleScenario);

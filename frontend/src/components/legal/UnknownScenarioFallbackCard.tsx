@@ -1,9 +1,10 @@
-import { AlertTriangle, ArrowRight, RotateCcw, ShieldAlert, Sparkles } from "lucide-react";
+import { AlertTriangle, ArrowRight, RotateCcw, ShieldAlert, Sparkles, Pencil } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface UnknownScenarioFallbackCardProps {
   fallbackMessage?: string | null;
   onReset?: () => void;
+  onEdit?: () => void;
   onSelectExample?: (scenarioText: string) => void;
 }
 
@@ -53,6 +54,7 @@ const SAMPLE_SCENARIOS = [
 export function UnknownScenarioFallbackCard({
   fallbackMessage,
   onReset,
+  onEdit,
   onSelectExample,
 }: UnknownScenarioFallbackCardProps) {
   const defaultMsg =
@@ -95,16 +97,28 @@ export function UnknownScenarioFallbackCard({
             </span>
           </div>
 
-          {onReset && (
-            <button
-              type="button"
-              onClick={onReset}
-              className="mt-1 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-amber-600/50 bg-amber-500/20 hover:bg-amber-500/30 text-amber-950 dark:text-amber-100 font-mono text-xs font-bold transition-colors"
-            >
-              <RotateCcw className="h-3.5 w-3.5" />
-              <span>Enter a Different Scenario</span>
-            </button>
-          )}
+          <div className="flex items-center gap-2 mt-1">
+            {onEdit && (
+              <button
+                type="button"
+                onClick={onEdit}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-primary/50 bg-primary/20 hover:bg-primary/30 text-foreground font-mono text-xs font-bold transition-colors"
+              >
+                <Pencil className="h-3.5 w-3.5" />
+                <span>Edit Input</span>
+              </button>
+            )}
+            {onReset && (
+              <button
+                type="button"
+                onClick={onReset}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-amber-600/50 bg-amber-500/20 hover:bg-amber-500/30 text-amber-950 dark:text-amber-100 font-mono text-xs font-bold transition-colors"
+              >
+                <RotateCcw className="h-3.5 w-3.5" />
+                <span>New Scenario</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

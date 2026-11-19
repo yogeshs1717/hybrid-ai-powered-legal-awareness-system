@@ -20,11 +20,11 @@ export function NoVerifiedProvisionState() {
       </div>
 
       <h3 className="font-mono text-base sm:text-lg font-bold text-foreground">
-        No verified legal provision to show yet
+        No mapped legal provision to show yet
       </h3>
       <p className="mt-2 text-xs sm:text-sm leading-relaxed text-muted-foreground font-medium">
-        LegalLens only displays legal provisions that have been human-verified against official government sources.
-        For this situation, there isn't a verified provision mapped yet — so rather than guess or fabricate legal text,
+        LegalLens only displays legal provisions sourced from official statutory records (India Code).
+        For this situation, there isn't a provision mapped yet — so rather than guess or fabricate legal text,
         we are transparent about it. Please refer to the suggested next steps and official grievance portals below.
       </p>
     </div>

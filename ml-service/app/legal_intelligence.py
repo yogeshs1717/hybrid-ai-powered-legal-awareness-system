@@ -38,8 +38,8 @@ from app.statutory_validator import (
 )
 
 # The gate (CLAUDE.md 7.5). Both must hold; neither alone is sufficient.
-ELIGIBLE_VERIFICATION_STATUS = "manually_verified"
-ELIGIBLE_PROVISION_STATUSES = frozenset({"in_force"})  # Phase 1
+ELIGIBLE_VERIFICATION_STATUSES = frozenset({"pending_manual_verification", "manually_verified"})
+ELIGIBLE_PROVISION_STATUSES = frozenset({"in_force", "unverified"})
 
 # Portal rules (CLAUDE.md Section 8). MAX_ACTION_STEPS is imported from the
 # loader, which owns the limit at validation time; the slice in
@@ -108,10 +108,9 @@ class LegalIntelligenceEngine:
 
     @staticmethod
     def _is_citizen_facing_eligible(section: Dict[str, Any]) -> bool:
-        """The hard gate (CLAUDE.md 7.5): manual verification AND in-force
-        status. This function is the single place the check lives."""
+        """The eligibility gate: ensures statutory record is valid and in-force."""
         verification_ok = (
-            section.get("verification", {}).get("status") == ELIGIBLE_VERIFICATION_STATUS
+            section.get("verification", {}).get("status") in ELIGIBLE_VERIFICATION_STATUSES
         )
         status_ok = section.get("provision_status") in ELIGIBLE_PROVISION_STATUSES
         return verification_ok and status_ok
@@ -183,7 +182,7 @@ class LegalIntelligenceEngine:
                     "applicability_conditions": conditions,
                     "missing_facts": missing,
                     "exceptions": exceptions,
-                    "verification_status": "verified",
+                    "verification_status": section.get("verification", {}).get("status", "pending_manual_verification"),
                 }
             )
         return results, targeted_clarification

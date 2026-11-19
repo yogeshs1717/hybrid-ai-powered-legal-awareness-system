@@ -21,9 +21,9 @@ export function ProvisionCard({
       {/* Header bar */}
       <div className="border-b-2 border-border bg-muted/40 p-4 sm:p-5 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#10b981] text-black font-mono text-xs font-black uppercase">
-            <ShieldCheck className="h-3.5 w-3.5 stroke-[2.5]" />
-            <span>VERIFIED STATUTE</span>
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary/20 text-foreground font-mono text-xs font-black uppercase">
+            <ShieldCheck className="h-3.5 w-3.5 stroke-[2.5] text-primary" />
+            <span>APPLICABLE STATUTE</span>
           </span>
           <span className="font-mono text-xs font-bold text-muted-foreground">
             #{index + 1}

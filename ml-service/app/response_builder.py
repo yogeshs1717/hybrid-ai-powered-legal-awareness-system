@@ -155,9 +155,14 @@ class ResponseBuilder:
 
         confidence = domain_prediction.confidence
         low_confidence = confidence < self._thresholds.low
-        # Clarify when the model is unsure OR nothing matched at issue level —
-        # both are honest uncertainty, both are HTTP 200 states (8.2).
-        needs_clarification = low_confidence or issue_detection is None
+        # Check if the scenario is too brief (< 8 words) to make a reliable statutory assessment
+        is_brief_or_incomplete = (
+            scenario_text is not None
+            and len(scenario_text.split()) < 8
+            and not any(k in scenario_text.lower() for k in ["fir", "arrest", "bribe", "assault"])
+        )
+        # Clarify when the model is unsure OR nothing matched at issue level OR text is incomplete
+        needs_clarification = low_confidence or issue_detection is None or is_brief_or_incomplete
 
         analysis = Analysis(
             domain=DomainAnalysis(

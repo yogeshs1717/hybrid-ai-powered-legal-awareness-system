@@ -1,6 +1,6 @@
 # LegalLens – Comprehensive Legal Accuracy and Reliability Audit Report
 
-**Auditor Role:** Senior Indian Legal Auditor, AI Evaluation Engineer & Software Quality Assurance Engineer  
+**Auditor Role:** Statutory Knowledge Base Curator, AI Evaluation Engineer & Software Quality Assurance Engineer  
 **System Evaluated:** LegalLens – Hybrid AI-Powered Legal Awareness System  
 **Evaluation Scope:** 5 Statutory Domains | 150 Ground-Truth Test Cases | Live `/analyze` Endpoint  
 **Date of Audit:** October 30, 2026  

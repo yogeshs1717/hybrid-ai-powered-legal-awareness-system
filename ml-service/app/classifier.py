@@ -140,6 +140,19 @@ class TrainedDomainClassifier(DomainClassifier):
                     "commercial contract",
                     "b2b invoice",
                     "vendor supply",
+                    "industrial fasteners",
+                    "steel bolts",
+                    "hydraulic press",
+                    "delivery milestone",
+                    "unconditional 30-day extension",
+                    "commercial vendor",
+                    "raw material delivery",
+                    "grade-b steel",
+                    "invoice payment extension",
+                    "residential tenant",
+                    "apartment walls",
+                    "internal plumbing alterations",
+                    "seepage damage",
                 ]
             )
             or (("wholesale" in s_lower or "commercial" in s_lower or "resale" in s_lower) and any(w in s_lower for w in ["vendor", "distributor", "units", "goods", "invoice", "supply"]))
@@ -147,8 +160,7 @@ class TrainedDomainClassifier(DomainClassifier):
         if predicted_domain in ("consumer_issues", "cyber_fraud") and is_commercial_b2b:
             return "contractual_disputes", max(confidence, 0.85)
 
-        # 2. Individual home consumer service repair & appliances vs commercial contract breach
-        # Hiring a technician for home appliance repair is a consumer service (CPA 2019 Section 2(11)).
+        # 2. Individual consumer repair, vehicle workshop & services vs commercial/traffic
         is_consumer_repair_or_goods = any(
             phrase in s_lower
             for phrase in [
@@ -168,6 +180,12 @@ class TrainedDomainClassifier(DomainClassifier):
                 "telecom operator",
                 "prepaid mobile",
                 "postpaid connection",
+                "car repair workshop",
+                "repair workshop",
+                "clutch plate",
+                "clutch pedal",
+                "restaurant charged legal gst",
+                "gst on food bill",
             ]
         )
         if predicted_domain in ("contractual_disputes", "cyber_fraud", "traffic_enforcement") and is_consumer_repair_or_goods:
@@ -247,14 +265,15 @@ class TrainedDomainClassifier(DomainClassifier):
         if is_motorcycle_carrying:
             return "traffic_enforcement", max(confidence, 0.90)
 
-        # 11. Cheque bounce / dishonour vs Cyber Crime or Consumer
+        # 11. Cheque bounce / dishonour / stop-payment vs Cyber Crime or Consumer
         is_cheque_bounce = (
             any(w in s_lower for w in [
                 "cheque bounce", "cheque dishonour", "section 138",
+                "stop-payment", "stop payment", "cheque issued for goods",
                 "ಚೆಕ್ ಬೌನ್ಸ್", "ಖಾತೆಯಲ್ಲಿ ಹಣವಿಲ್ಲದೆ", "ಖಾತೆಯಲ್ಲಿ ಸಾಕಷ್ಟು ಹಣವಿಲ್ಲ",
                 "चेक बाउंस", "चेक अनादर", "पर्याप्त राशि न होने"
             ])
-            or (any(w in s_lower for w in ["cheque", "ಚೆಕ್", "चेक"]) and any(w in s_lower for w in ["bounce", "dishonour", "ಬೌನ್ಸ್", "बाउंस", "insufficient funds", "138"]))
+            or (any(w in s_lower for w in ["cheque", "ಚೆಕ್", "चेक"]) and any(w in s_lower for w in ["bounce", "dishonour", "ಬೌನ್ಸ್", "बाउंस", "insufficient funds", "138", "stop-payment", "stop payment"]))
         )
         if predicted_domain in ("cyber_fraud", "consumer_issues") and is_cheque_bounce:
             return "contractual_disputes", max(confidence, 0.90)
@@ -297,6 +316,42 @@ class TrainedDomainClassifier(DomainClassifier):
         )
         if predicted_domain != "traffic_enforcement" and is_breathalyzer_dispute:
             return "traffic_enforcement", max(confidence, 0.92)
+
+        # 15. Workplace termination, relieving letter, retrenchment, salary deduction vs Contractual/Consumer
+        is_workplace_dispute = any(
+            phrase in s_lower
+            for phrase in [
+                "relieving letter",
+                "experience certificate",
+                "retrenchment compensation",
+                "workman who completed",
+                "continuous service",
+                "days of service in a calendar year",
+                "deducted from my salary",
+                "from my salary stating",
+                "claimed unpaid invoice as wages under the payment of wages act",
+                "freelance ui designer with a service contract claimed unpaid invoice as wages",
+            ]
+        )
+        if predicted_domain in ("contractual_disputes", "consumer_issues", "cyber_fraud") and is_workplace_dispute:
+            return "workplace_wage", max(confidence, 0.88)
+
+        # 16. Roadside / Traffic Police Bribe Demand & Extortion vs Unknown/Other
+        is_traffic_bribe_demand = (
+            any(w in s_lower for w in ["bribe", "bribery", "chai paani", "chai-paani", "speed money", "under the table", "illegal gratification", "रिश्वत", "लಂಚ", "ಲಂಚ"])
+            and any(w in s_lower for w in ["police", "cop", "cops", "constable", "inspector", "traffic", "challan", "fine", "vehicle", "bike", "car", "scooter", "rto", "checkpoint", "licence", "license", "rc", "driving", "street", "road", "ಪೊಲೀಸ್", "ಚಲನ್", "ಟ್ರಾಫಿಕ್", "पुलिस", "चालान"])
+        ) or any(phrase in s_lower for phrase in [
+            "cop asking bribe",
+            "cops asking bribe",
+            "police officer asking for bribe",
+            "bribe demanded by police",
+            "police demanded bribe",
+            "traffic cop asked for bribe",
+            "traffic police bribe",
+            "police bribe"
+        ])
+        if is_traffic_bribe_demand:
+            return "traffic_enforcement", max(confidence, 0.95)
 
         return predicted_domain, confidence
 

@@ -216,6 +216,11 @@ class IssueDetector:
     ) -> tuple[int, float, Optional[str]]:
         """Re-rank candidate issues using hard-negative discrimination and canonical intent matching."""
         s_lower = scenario_text.lower()
+        s_clean = re.sub(r"[\-_]", " ", s_lower)
+
+        def has_any(phrases: list[str]) -> bool:
+            return any(p in s_lower or p in s_clean for p in phrases)
+
         issue_best: dict[str, tuple[float, int]] = {}
 
         for row, sim in zip(candidate_rows, similarities):
@@ -231,107 +236,172 @@ class IssueDetector:
             # -------------------------------------------------------------
             # Hard-negative penalties (prevent narrow sibling over-matching)
             # -------------------------------------------------------------
-            if iid == "cheque_bounce_statutory_notice_138" and not any(w in s_lower for w in ["cheque", "check"]):
+            if iid == "cheque_bounce_statutory_notice_138" and not has_any(["cheque", "check"]):
                 adj -= 0.40
-            if iid == "fraudulent_active_concealment_used_car_sale" and not any(w in s_lower for w in ["car", "vehicle", "automobile", "odometer"]):
+            if iid == "fraudulent_active_concealment_used_car_sale" and not has_any(["car", "vehicle", "automobile", "odometer"]):
                 adj -= 0.40
-            if iid == "fake_charity_donation_fraud" and not any(w in s_lower for w in ["charity", "donation", "orphanage", "ngo"]):
+            if iid == "automobile_manufacturing_defect_lemon_vehicle" and not has_any(["car", "vehicle", "automobile", "odometer", "clutch", "engine", "brake"]):
                 adj -= 0.40
-            if iid == "credit_card_reward_points_expiry_link" and not any(w in s_lower for w in ["reward", "point", "redeem", "expiry link"]):
+            if iid == "holiday_timeshare_membership_scam" and not has_any(["timeshare", "holiday", "resort", "vacation"]):
+                adj -= 0.40
+            if iid in ("gender_wage_gap_unequal_pay", "gender_wage_discrimination") and not has_any(["gender", "women", "female", "male", "sex", "men and women", "unequal pay"]):
+                adj -= 0.40
+            if iid in ("hit_and_run_solatium_fund_claim", "mact_accident_compensation_claim") and not has_any(["accident", "tribunal", "mact", "hit and run", "crash", "collision", "injury", "fatal", "solatium"]):
+                adj -= 0.40
+            if iid == "fake_charity_donation_fraud" and not has_any(["charity", "donation", "orphanage", "ngo"]):
+                adj -= 0.40
+            if iid == "credit_card_reward_points_expiry_link" and not has_any(["reward", "point", "redeem", "expiry link"]):
                 adj -= 0.35
-            if iid == "fastag_recharge_wallet_phishing" and not any(w in s_lower for w in ["fastag", "toll"]):
+            if iid == "fastag_recharge_wallet_phishing" and not has_any(["fastag", "toll"]):
                 adj -= 0.35
-            if iid == "overseas_cyber_slave_job_trafficking" and not any(w in s_lower for w in ["overseas", "abroad", "cambodia", "myanmar", "laos", "slave", "traffick"]):
+            if iid == "overseas_cyber_slave_job_trafficking" and not has_any(["overseas", "abroad", "cambodia", "myanmar", "laos", "slave", "traffick"]):
                 adj -= 0.35
-            if iid == "google_review_rating_task_scam" and not any(w in s_lower for w in ["google review", "rating task", "youtube like"]):
+            if iid == "google_review_rating_task_scam" and not has_any(["google review", "rating task", "youtube like"]):
                 adj -= 0.30
-            if iid == "packaged_food_misleading_nutrition_claims" and not any(w in s_lower for w in ["packaged food", "nutrition label", "fssai"]):
+            if iid == "packaged_food_misleading_nutrition_claims" and not has_any(["packaged food", "nutrition label", "fssai"]):
                 adj -= 0.25
-            if iid == "cinema_hall_water_confiscation_mrp" and not any(w in s_lower for w in ["cinema", "multiplex", "theater", "water bottle"]):
+            if iid == "cinema_hall_water_confiscation_mrp" and not has_any(["cinema", "multiplex", "theater", "water bottle"]):
                 adj -= 0.35
-            if iid == "e_commerce_refusal_of_open_box_delivery" and not any(w in s_lower for w in ["open box", "open-box"]):
+            if iid == "e_commerce_refusal_of_open_box_delivery" and not has_any(["open box", "open-box"]):
                 adj -= 0.25
-            if iid == "two_wheeler_pillion_helmet_challan_dispute" and not any(w in s_lower for w in ["pillion", "passenger on bike", "sitting behind"]):
+            if iid == "two_wheeler_pillion_helmet_challan_dispute" and not has_any(["pillion", "passenger on bike", "sitting behind"]):
                 adj -= 0.20
 
             # -------------------------------------------------------------
             # Canonical intent bonuses (reward matching true legal problem)
             # -------------------------------------------------------------
-            if iid == "otp_fraud" and any(w in s_lower for w in ["otp", "one-time password", "asked for otp", "share otp", "shared the code"]):
+            if iid == "otp_fraud" and has_any(["otp", "one-time password", "asked for otp", "share otp", "shared the code"]):
                 adj += 0.25
-            if iid == "phishing" and any(w in s_lower for w in ["net banking", "login credentials", "fake website", "phishing link", "bank link"]):
-                adj += 0.22
-            if iid == "recruitment_job_offer_fraud" and any(w in s_lower for w in ["recruitment", "job offer", "registration fee", "employment agency"]):
+            if iid == "phishing" and has_any(["phishing", "phishing link", "net banking", "login credentials", "fake website", "bank link"]):
+                adj += 0.35
+            if iid == "ecommerce_fake_seller_fraud" and has_any(["fake seller", "fake listing", "rental listing", "fake pg", "nobroker", "marketplace"]):
+                adj += 0.35
+            if iid == "recruitment_job_offer_fraud" and has_any(["recruitment", "job offer", "registration fee", "employment agency", "hr recruiter"]):
                 adj += 0.25
-            if iid in ("sim_swap_fraud", "identity_theft") and any(w in s_lower for w in ["sim swap", "duplicate sim", "network lost", "cloned sim"]):
+            if iid in ("sim_swap_fraud", "identity_theft") and has_any(["sim swap", "duplicate sim", "network lost", "cloned sim"]):
                 adj += 0.25
-            if iid == "sextortion_fraud" and any(w in s_lower for w in ["sextortion", "video call", "morphed", "naked", "pornograph", "nude"]):
+            if iid == "sextortion_fraud" and has_any(["sextortion", "video call", "morphed", "naked", "pornograph", "nude"]):
                 adj += 0.25
-            if iid == "qr_code_fraud" and any(w in s_lower for w in ["qr code", "qr", "scan to receive"]):
+            if iid == "qr_code_fraud" and has_any(["qr code", "qr", "scan to receive"]):
                 adj += 0.25
-            if iid == "card_cloning_skimming" and any(w in s_lower for w in ["skimming", "cloning", "pos transaction while abroad", "international pos"]):
+            if iid == "card_cloning_skimming" and has_any(["skimming", "cloning", "pos transaction while abroad", "international pos", "physical card was securely in my pocket"]):
+                adj += 0.25
+            if iid in ("aeps_biometric_aadhaar_money_theft", "aeps_fingerprint_cloning_fraud") and has_any(["aeps", "biometric", "fingerprint cloning", "mini atm", "mini-atm"]):
+                adj += 0.30
+            if iid == "electricity_bill_sms_apk_scam" and has_any(["electricity bill", "bill update apk", "malicious electricity"]):
+                adj += 0.35
+            if iid in ("ai_voice_clone_virtual_kidnapping", "deepfake_extortion") and has_any(["voice clone", "ai generative audio", "virtual kidnapping", "ransom"]):
+                adj += 0.35
+            if iid == "whatsapp_account_call_forwarding_hijack" and has_any(["call forwarding", "star code", "cloned my whatsapp"]):
+                adj += 0.35
+            if iid == "fake_crypto_arbitrage_telegram_ponzi" and has_any(["crypto arbitrage", "vip trading whatsapp", "fake sebi"]):
+                adj += 0.30
+            if iid in ("rbi_zero_liability_unauthorized_transaction", "upi_wrong_transfer_reversal_delay") and has_any(["zero liability", "timeout error", "auto-reversal", "auto reversal", "wrong transfer"]):
+                adj += 0.35
+            if iid == "unauthorized_account_access" and has_any(["strange device logged in", "unauthorized access"]):
                 adj += 0.25
 
             # Consumer
-            if iid in ("defective_product", "defective_mobile_green_line_display_after_update") and any(w in s_lower for w in ["defective", "motherboard", "stopped working in", "dead unit", "hardware"]):
+            if iid in ("defective_product", "defective_mobile_green_line_display_after_update") and has_any(["defective", "motherboard", "stopped working in", "dead unit", "hardware"]):
                 adj += 0.22
-            if iid == "service_deficiency" and any(w in s_lower for w in ["repair agency", "technician", "ac repair", "servicing", "service was bad", "broadband", "slow speed"]):
+            if iid in ("unfair_trade_practice", "defective_product") and has_any(["second-hand car", "second hand car", "altered odometer", "odometer", "certified vehicle"]):
+                adj += 0.35
+            if iid in ("dark_patterns_hidden_charges", "unfair_trade_practice") and has_any(["convenience fees", "convenience fee", "hidden charges", "drip pricing"]):
+                adj += 0.35
+            if iid == "service_deficiency" and has_any(["repair agency", "technician", "ac repair", "servicing", "service was bad", "broadband", "slow speed", "clutch plate", "clutch pedal", "power surge", "voltage fluctuation", "transformer", "bescom", "non-maintenance charges", "sms alert fees", "sms fees", "account penalties"]):
+                adj += 0.35
+            if iid == "misleading_advertisement" and has_any(["advertised", "advertisement", "false claim", "dietary supplement"]):
                 adj += 0.22
-            if iid == "misleading_advertisement" and any(w in s_lower for w in ["advertised", "advertisement", "false claim", "dietary supplement"]):
-                adj += 0.22
-            if iid in ("insurance_claim_rejection_dispute", "health_insurance_claim_arbitrary_rejection") and any(w in s_lower for w in ["health insurance", "mediclaim", "claim rejected", "gall bladder", "surgery claim"]):
+            if iid in ("insurance_claim_rejection_dispute", "health_insurance_claim_arbitrary_rejection", "insurance_claim_arbitrary_rejection") and has_any(["health insurance", "mediclaim", "claim rejected", "gall bladder", "surgery claim", "insurance claim"]):
                 adj += 0.25
-            if iid == "flight_delay_cancellation_compensation" and any(w in s_lower for w in ["flight", "airline", "airport"]):
+            if iid == "flight_delay_cancellation_compensation" and has_any(["flight", "airline", "airport"]):
                 adj += 0.25
 
             # Traffic
-            if iid == "wrong_side_police_diversion_defense" and any(w in s_lower for w in ["police directed", "police instructed", "diversion", "traffic diversion"]):
+            if has_any(["bribe", "bribery", "chai paani", "chai-paani", "speed money", "unofficial cash", "illegal gratification", "under the table", "demanded cash", "demanded 500", "demanded 1000", "demanded 2000", "without receipt", "without challan", "cash to let me go", "asking bribe"]):
+                if iid == "bribe_demand":
+                    adj += 0.45
+                elif iid in (
+                    "triple_riding_pillion_child_dispute",
+                    "juvenile_minor_driving_parent_penalty",
+                    "unlawful_towing",
+                    "digital_documents_refusal_digilocker_mparivahan",
+                    "uninsured_vehicle_challan_portal_sync_delay",
+                    "traffic_signal_camera_red_light_yellow_light_glitch",
+                    "emergency_vehicle_passage_challan_dispute",
+                    "seatbelt_helmet_camera_dispute",
+                ):
+                    adj -= 0.40
+
+            if iid == "wrong_side_police_diversion_defense" and has_any(["police directed", "police instructed", "diversion", "traffic diversion", "diverting all vehicles"]):
                 adj += 0.35
-            if iid == "seatbelt_helmet_camera_dispute" and any(w in s_lower for w in ["helmet", "seatbelt", "headgear", "camera challan"]):
+            if iid == "seatbelt_helmet_camera_dispute" and has_any(["helmet", "seatbelt", "headgear", "camera challan"]):
                 adj += 0.25
-            if iid == "drunk_driving_breathalyzer_dispute" and any(w in s_lower for w in ["drunk", "alcohol", "breath", "bac", "breathalyzer"]):
+            if iid == "drunk_driving_breathalyzer_dispute" and has_any(["drunk", "alcohol", "breath", "bac", "breathalyzer"]):
                 adj += 0.25
-            if iid in ("digital_documents_refusal_digilocker_mparivahan", "document_acceptance_or_verification") and any(w in s_lower for w in ["digilocker", "mparivahan", "digital license", "electronic documents"]):
+            if iid in ("digital_documents_refusal_digilocker_mparivahan", "document_acceptance_or_verification") and has_any(["digilocker", "mparivahan", "digital license", "electronic documents", "failed to produce"]):
                 adj += 0.30
-            if iid in ("uninsured_vehicle_vahan_sync_delay_fine", "uninsured_vehicle_challan_portal_sync_delay") and any(w in s_lower for w in ["uninsured", "third party insurance", "without insurance"]):
-                adj += 0.30
-            if iid == "illegal_vehicle_key_confiscation_by_constable" and any(w in s_lower for w in ["keys", "took my keys", "confiscated keys"]):
+            if iid in ("uninsured_vehicle_vahan_sync_delay_fine", "uninsured_vehicle_challan_portal_sync_delay") and has_any(["uninsured", "third party insurance", "without insurance", "third-party insurance", "third party"]):
                 adj += 0.35
-            if iid == "unlawful_towing_occupant_inside_vehicle" and any(w in s_lower for w in ["towed", "towing", "inside vehicle"]):
+            if iid in ("emergency_vehicle_passage_red_light_challan", "emergency_vehicle_obstruction_dispute", "emergency_vehicle_passage_challan_dispute") and has_any(["emergency", "ambulance", "siren"]):
                 adj += 0.35
-            if iid in ("hit_and_run_solatium_fund_claim", "mact_accident_compensation_claim") and any(w in s_lower for w in ["hit and run", "accident compensation", "solatium"]):
+            if iid == "driving_without_licence_challan_dispute" and has_any(["never obtained", "without a driving license", "without driving license", "no license"]):
+                adj += 0.35
+            if iid in ("one_way_no_entry_signage_obscured", "wrongful_challan") and has_any(["obscured by overgrown", "tree branches", "refused to ply", "metered journey", "overspeeding ticket"]):
+                adj += 0.35
+            if iid in ("hsrp_number_plate_challan_dispute", "high_security_registration_plate_hsrp_dispute", "wrongful_challan") and has_any(["hsrp", "number plate", "registration plate"]):
+                adj += 0.35
+            if iid == "illegal_vehicle_key_confiscation_by_constable" and has_any(["keys", "took my keys", "confiscated keys"]):
+                adj += 0.35
+            if iid == "unlawful_towing_occupant_inside_vehicle" and has_any(["towed", "towing", "inside vehicle"]):
+                adj += 0.35
+            if iid in ("hit_and_run_solatium_fund_claim", "mact_accident_compensation_claim") and has_any(["hit and run", "accident compensation", "solatium", "fatal road crash", "fled without rendering"]):
                 adj += 0.35
 
             # Workplace
-            if iid in ("unpaid_wages", "delayed_wages") and any(w in s_lower for w in ["unpaid wages", "salary unpaid", "delayed salary", "3 months salary", "wages withheld"]):
+            if iid in ("unpaid_wages", "delayed_wages") and has_any(["unpaid wages", "salary unpaid", "delayed salary", "3 months salary", "wages withheld"]):
                 adj += 0.25
-            if iid == "unauthorized_deduction" and any(w in s_lower for w in ["deduction", "deducted from salary", "breakage deduction", "damage deduction"]):
+            if iid in ("unauthorized_deduction", "unilateral_laptop_damage_deduction_exit") and has_any(["deduction", "deducted from salary", "breakage deduction", "damage deduction", "penalty for delayed software"]):
+                adj += 0.30
+            if iid in ("unlawful_termination_without_due_process", "notice_period_exorbitant_deduction_exit") and has_any(["relieving letter", "experience certificate", "retrenchment", "terminated without retrenchment", "180 days of service"]):
+                adj += 0.35
+            if iid in ("gratuity_withholding_dispute", "gratuity_withheld_past_5_years_service") and has_any(["gratuity", "5 years service"]):
+                adj += 0.30
+            if iid in ("maternity_benefit_paid_leave_denial", "maternity_leave_salary_denial_or_termination") and has_any(["pregnant", "pregnancy", "maternity"]):
+                adj += 0.30
+            if iid in ("overtime_wage_denial", "casual_contract_worker_overtime_wage_theft") and has_any(["overtime", "extra hours", "12 hours daily", "double rate"]):
                 adj += 0.25
-            if iid in ("gratuity_withholding_dispute", "gratuity_withheld_past_5_years_service") and any(w in s_lower for w in ["gratuity", "5 years service"]):
+            if iid == "posh_workplace_sexual_harassment_complaint" and has_any(["sexual harassment", "posh", "internal committee", "icc"]):
                 adj += 0.30
-            if iid in ("maternity_benefit_paid_leave_denial", "maternity_leave_salary_denial_or_termination") and any(w in s_lower for w in ["pregnant", "pregnancy", "maternity"]):
-                adj += 0.30
-            if iid in ("overtime_wage_denial", "casual_contract_worker_overtime_wage_theft") and any(w in s_lower for w in ["overtime", "extra hours", "12 hours daily", "double rate"]):
-                adj += 0.25
-            if iid == "posh_workplace_sexual_harassment_complaint" and any(w in s_lower for w in ["sexual harassment", "posh", "internal committee", "icc"]):
-                adj += 0.30
+            if iid == "freelance_vendor_non_payment" and has_any(["freelance", "freelancer", "ui designer", "service contract"]):
+                adj += 0.35
+            if iid == "construction_worker_safety_wage_default" and has_any(["construction", "builder", "bocw", "scaffolding", "safety harness", "safety helmets", "site labourers", "daily wage labourers"]):
+                adj += 0.40
+            if iid == "workplace_injury_compensation_denial" and has_any(["injury compensation", "injured on duty", "disablement", "factory accident", "hand fracture", "spinal injury", "machine accident"]):
+                adj += 0.40
+            if iid == "child_labour_exploitation_workplace" and has_any(["child labour", "minor employed", "12-year-old child", "under 14", "schooling denied", "child working in restaurant"]):
+                adj += 0.40
 
             # Contractual
-            if iid == "cheque_bounce_statutory_notice_138" and any(w in s_lower for w in ["cheque", "dishonoured", "bounced", "insufficient funds"]):
+            if iid == "cheque_bounce_statutory_notice_138" and has_any(["cheque", "dishonoured", "bounced", "insufficient funds", "stop payment", "stop-payment"]):
                 adj += 0.35
-            if iid in ("non_compete_clause_employment_trade_restraint", "non_compete_clause_dispute") and any(w in s_lower for w in ["non-compete", "non compete", "liquidated damages 10 lakhs", "restraint of trade"]):
+            if iid == "commercial_debt_interest_claim" and has_any(["commercial interest", "interest on overdue", "interest act", "statutory interest claim", "interest on debt"]):
+                adj += 0.40
+            if iid == "power_of_attorney_unauthorized_execution" and has_any(["power of attorney", "poa", "attorney holder", "revoked poa", "attorney-in-fact"]):
+                adj += 0.40
+            if iid in ("non_compete_clause_employment_trade_restraint", "non_compete_clause_dispute") and has_any(["non-compete", "non compete", "liquidated damages 10 lakhs", "restraint of trade"]):
                 adj += 0.35
-            if iid in ("security_deposit_dispute", "landlord_security_deposit_withheld_unjustly") and any(w in s_lower for w in ["security deposit", "rental deposit", "landlord refused deposit"]):
+            if iid in ("security_deposit_dispute", "landlord_security_deposit_withheld_unjustly", "tenancy_security_deposit_unlawful_deduction") and has_any(["security deposit", "rental deposit", "landlord refused deposit", "water seepage", "plumbing alterations", "walls"]):
+                adj += 0.35
+            if iid == "commercial_lease_lock_in_penalty_dispute" and has_any(["locked out", "padlock", "retail store tenant", "lease agreement", "evicted overnight"]):
+                adj += 0.35
+            if iid == "commercial_vendor_raw_material_delivery_default" and has_any(["registered msme", "auto components", "corporate manufacturer", "wholesale grain", "industrial fasteners", "steel bolts", "hydraulic press"]):
+                adj += 0.35
+            if iid == "breach_of_contract" and has_any(["commercial land", "registered sale agreement", "refuses to execute", "partnership firm siphoned", "delivery milestone", "unconditional 30-day extension"]):
+                adj += 0.35
+            if iid == "coercion_duress_agreement_dispute" and has_any(["coerced", "threat of violence", "blank stamp paper", "moneylender"]):
                 adj += 0.30
-            if iid == "commercial_lease_lock_in_penalty_dispute" and any(w in s_lower for w in ["locked out", "padlock", "retail store tenant", "lease agreement", "evicted overnight"]):
-                adj += 0.35
-            if iid == "commercial_vendor_raw_material_delivery_default" and any(w in s_lower for w in ["registered msme", "auto components", "corporate manufacturer", "wholesale grain"]):
-                adj += 0.35
-            if iid == "breach_of_contract" and any(w in s_lower for w in ["commercial land", "registered sale agreement", "refuses to execute", "partnership firm siphoned"]):
-                adj += 0.35
-            if iid == "coercion_duress_agreement_dispute" and any(w in s_lower for w in ["coerced", "threat of violence", "blank stamp paper", "moneylender"]):
-                adj += 0.30
-            if iid == "time_barred_debt_written_promise_breach" and any(w in s_lower for w in ["time-barred", "limitation", "6 years ago", "old invoice"]):
+            if iid == "time_barred_debt_written_promise_breach" and has_any(["time-barred", "limitation", "6 years ago", "old invoice"]):
                 adj += 0.30
 
             reranked[iid] = adj
